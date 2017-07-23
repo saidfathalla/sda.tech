@@ -34,7 +34,7 @@ var width = window.innerWidth,
 var fill = d3.scale.category10();
 
 var nodes = [], labels = [],
-    foci = [{x: 0, y: 150}, {x: 350, y: 150}, {x: 200, y: 150}];
+    foci = [{x: 0, y: 190}, {x: 400, y: 190}, {x: 200, y: 190}];
 
 var svg = d3.select("#basic").append("svg:svg")
     .attr("width", "100%")

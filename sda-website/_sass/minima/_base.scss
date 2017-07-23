@@ -219,8 +219,11 @@ pre {
  */
 
  .horizontal-separator {
-   margin-top: 80px;
-   margin-bottom: 80px;
+   line-height: 80px;
+ }
+
+ .horizontal-separator2 {
+   line-height: 480px;
  }
 
  /**

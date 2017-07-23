@@ -277,7 +277,7 @@ text-align: center;
 }
 
 .twoCol1, .twoCol2 {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
@@ -291,4 +291,19 @@ text-align: center;
 
 .quote-alignment {
   text-align: center;
+}
+
+.information-element-icon {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.content-container-separation {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.col-content {
+  padding-left: 12px;
+  padding-right: 12px;
 }
