@@ -1,6 +1,6 @@
 # sda.tech
 This is the source of the sda.tech website which is served with 
-[OntoWiki](http://ontowiki.net) and [Jekyll-RDF](https://github.com/white-gecko/jekyll-rdf)'s plugin.
+[OntoWiki](http://ontowiki.net), [Jekyll](https://jekyllrb.com/) and [Jekyll-RDF](https://github.com/white-gecko/jekyll-rdf)'s plugin.
 
 # Contents
 
@@ -13,10 +13,16 @@ This is the source of the sda.tech website which is served with
 
 # Setup
 
+# Plugins & Externals Used
+
+# File Structure & Architecture 
+
 # Usage
+
 ## Integrate with Jekyll
 
 ## Make use of RDF data
+
 ### Templates
 
 ## Configuration
