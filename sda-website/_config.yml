@@ -32,6 +32,9 @@ linkedIn_username: SDA
 googlePlus_username: SDA
 youtube_username: SDA
 
+#activeVars
+activePeople: Professors
+
 # Build settings
 markdown: kramdown
 theme: minima
