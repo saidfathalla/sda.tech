@@ -42,6 +42,7 @@ plugins:
   - jekyll-feed
   - jekyll-rdf
   - jekyll-twitter-plugin
+  - bourbon
 
 #Configuration of jekyll-rdf in our template
 jekyll_rdf:
