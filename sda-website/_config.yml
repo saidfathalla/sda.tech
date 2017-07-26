@@ -42,14 +42,14 @@ plugins:
 
 #Configuration of jekyll-rdf in our template
 jekyll_rdf:
-  path: "rdf-data/aksw.ttl"
+  path: "rdf-data/simpsons.ttl"
   language: "en"
   include_blank: true
   restriction: "SELECT ?s WHERE { ?s ?p ?o}"
   default_template: "rdf_index.html"
   template_mappings:
-    "<http://aksw.org/Projects/>": "person.html"
-    "<http://aksw.org/Partner/>": "abraham.html"
+   "http://xmlns.com/foaf/0.1/Person": "person.html"
+   "http://www.ifi.uio.no/INF3580/simpsons#Abraham": "abraham.html"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
