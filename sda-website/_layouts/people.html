@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
+  <!-- <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+  </header> -->
 
   <script>
       function changeActivePersons(name)
@@ -79,44 +78,40 @@ layout: default
       }
 
   </script>
+      <div class="pagination">
+        {% for people in site.data.peopleTypes %}
+          {% assign p = people.name %}
+          {% if site.activePeople == p %}
+            <a href="#" id="{{people.name | remove: " " }}" class="active" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+     {{people.name}}</a>
+          {% else %}
+            <a href="#" id="{{people.name | remove: " " }}" onclick="changeActivePersons('{{people.name}}')">{{people.name}}</a>
+          {% endif%}
+        {% endfor %}
+        <!-- <a href="#" class="active">2016</a> -->
+        <br/><br/><hr class="ruleh"/>
+      </div>
 
-  <div class="pagination">
-    {% for people in site.data.peopleTypes %}
-      {% assign p = people.name %}
-      {% if site.activePeople == p %}
-        <a href="#" id="{{people.name | remove: " " }}" class="active" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
- {{people.name}}</a>
-      {% else %}
-        <a href="#" id="{{people.name | remove: " " }}" onclick="changeActivePersons('{{people.name}}')">{{people.name}}</a>
-      {% endif%}
-    {% endfor %}
-    <!-- <a href="#" class="active">2016</a> -->
-  </div>
-
-    <div id="Prof" style="display:block">
-      {% include professors.html %}
-    </div>
-    <div id="SeniorResch" style="display:none">
-      adssadasdsa
-    </div>
-    <div id="Phd" style="display:none">
-      adsasdsaa
-    </div>
-    <div id="AR" style="display:none">
-      adsdadsada
-    </div>
-    <div id="SA" style="display:none">
-      asddadsa
-    </div>
-    <div id="Int" style="display:none">
-      {% include professors.html %}
-    </div>
-    <div id="Former" style="display:none">
-      {% include professors.html %}
-    </div>
-
-
-
-
-
-</article>
+      <div class="content-people">
+        <div id="Prof" class="content-people" style="display:flex">
+          {% include professors.html %}
+        </div>
+        <div id="SeniorResch" class="content-people"style="display:none">
+          adssadasdsa
+        </div>
+        <div id="Phd" class="content-people" style="display:none">
+          adsasdsaa
+        </div>
+        <div id="AR" style="display:none">
+          adsdadsada
+        </div>
+        <div id="SA" style="display:none">
+          asddadsa
+        </div>
+        <div id="Int" style="display:none">
+          {% include professors.html %}
+        </div>
+        <div id="Former" style="display:none">
+          {% include professors.html %}
+        </div>
+      </div>

@@ -1,5 +1,5 @@
 ---
-layout: rdf_index
+layout: groups
 title: Groups
 permalink: /groups/
 ---

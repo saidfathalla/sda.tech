@@ -10,8 +10,11 @@
 - name: Deep Learning
   description: Deep learning models consist of multiple non-linear processing layers which allow for the hierarchical extraction of more and more abstract characteristics of the data and the discovery of the intricate structure in large data sets by building distributed representations.
 
-- name: Geospatial analysis
-  description: Geospatial analysis is the gathering, display, and manipulation of imagery, GPS, satellite photography and historical data, described explicitly in terms of geographic coordinates or implicitly, in terms of a street address, postal code, or forest stand identifier as they are applied to geographic models.
+- name: Semantic Data Management
+  description: The group's research focus is on knowledge and data representation, integration, and management based on semantic technologies.
 
 - name: Software Engineering for Data Science
   description: The group researches on how data and software engineering methods can be aligned and how those two closely related areas can benefit from each other.
+
+- name: Knowledge Extraction and Validation
+  description: The group is addressing problems for knowledge extraction, representation, storage, and management that the information era has brought in various segments of today's life.

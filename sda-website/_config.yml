@@ -34,6 +34,7 @@ youtube_username: SDA
 
 #activeVars
 activePeople: Professors
+activeGroup: Distributed Semantic Analytics
 
 # Build settings
 markdown: kramdown

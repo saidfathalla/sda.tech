@@ -3,54 +3,59 @@ layout: default
 ---
 <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+  <script>
+    function changeActiveGroups(groups)
+    {
 
-  <div class="post-content">
-    {{ content }}
+    }
+
+    function clearAllGroupTypes()
+    {
+
+    }
+
+    function clearAllGroupTabs()
+    {
+
+    }
+  </script>
+
+  <div class="pagination">
+    {% for group in site.data.groupTypes %}
+      {% assign g = group.name %}
+      {% if site.activeGroup == g %}
+        <a href="#" id="{{group.name | remove: " " }}" class="active" onclick="changeActiveGroups('{{group.name}}')"><i class="fa fa-bar-chart"></i>
+ {{group.name}}</a>
+      {% else %}
+        <a href="#" id="{{group.name | remove: " " }}"
+           onclick="changeActiveGroups('{{group.name}}')">
+           {% if group.name == site.data.groupTypes[1].name %}
+            <i class="fa fa-search"></i>
+           {% elsif group.name == site.data.groupTypes[2].name %}
+            <i class="fa fa-cube"></i>
+           {% elsif group.name == site.data.groupTypes[3].name %}
+            <i class="fa fa-line-chart"></i>
+           {% elsif group.name == site.data.groupTypes[4].name %}
+            <i class="fa fa-cogs"></i>
+           {% elsif group.name == site.data.groupTypes[5].name %}
+            <i class="fa fa-bar-chart"></i>
+           {% elsif group.name == site.data.groupTypes[6].name %}
+            <i class="fa fa-bar-chart"></i>
+           {% else %}
+            <i class="fa fa-bar-chart"></i>
+           {% endif %}
+           {{group.name}}</a>
+      {% endif%}
+      {% if group.name == site.data.groupTypes[3].name %}
+        <br/><br/>
+      {% endif%}
+    {% endfor %}
+    <!-- <a href="#" class="active">2016</a> -->
+    <br/>
+    <br/>
+    <hr>
+    {% include groups.html %}
+
   </div>
-
-  <h1 class="page-heading"><b>Person: {{ page.rdf.name }}</b></h1>
-
-    <table>
-      <tbody>
-        <tr>
-          <td>Age</td>
-          <td>{{ page.rdf | rdf_property: 'http://xmlns.com/foaf/0.1/age' }} </td>
-        </tr>
-        <tr>
-          <td>Sisters</td>
-          <td>
-            {% assign resultset = page.rdf | rdf_property_list: 'http://www.ifi.uio.no/INF3580/family#hasSister' %}
-            {% for result in resultset %}
-              <ul>{{ result }}</ul>
-            {% endfor %}
-          </td>
-        </tr>
-        <tr>
-          <td>Translated job</td>
-          <td>{{ page.rdf | rdf_property: 'http://xmlns.com/foaf/0.1/job','en' }}</td>
-        </tr>
-        <tr>
-          <td>Translated Interest</td>
-          <td>{{ page.rdf | rdf_property: 'http://xmlns.com/foaf/0.1/interest','de' }}</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p>
-      <h3>Statements in which {{ page.rdf.name }} occurs as subject:</h3>
-      {% include statements_table.html collection=page.rdf.statements_as_subject %}
-    </p>
-    <p>
-      <h3>Statements in which {{ page.rdf.name }} occurs as predicate:</h3>
-      {% include statements_table.html collection=page.rdf.statements_as_predicate %}
-    </p>
-    <p>
-      <h3>Statements in which {{ page.rdf.name }} occurs as object:</h3>
-      {% include statements_table.html collection=page.rdf.statements_as_object %}
-    </p>
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </article>
