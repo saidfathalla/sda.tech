@@ -12,6 +12,16 @@
   position: relative;
 }
 
+.site-rootHead {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 2px 0;
+  color: $carbon-color;
+  height: 40px;
+  background-color: #424242;
+  text-align: right;
+  vertical-align: middle;
+}
+
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
@@ -320,6 +330,15 @@ text-align: center;
   width: 100%;
   background-color: #ffffff;
 
+  > .post-content {
+    text-align: left;
+    padding-bottom: 64px;
+    padding-top: 32px;
+    margin-left: 32px;
+    margin-right: 120px;
+    width: 100%;
+  }
+
 }
 
 .pagination a {
@@ -381,11 +400,12 @@ img {
     padding: 2px 16px;
 }
 
-// .humans {
-//   width: 35%;
-//   float: left;
-//   margin: 64px;
-// }
+
+.humans {
+  width: 38%;
+  float: left;
+  margin: 64px;;
+}
 hr {
     display: block;
     height: 1.0px;
@@ -394,4 +414,26 @@ hr {
     margin: 0em 0;
     padding: 0;
     background-color: #E0E0E0;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.person-project {
+  height: 7%;
+  width: 7%;
+  float: left;
+  text-align: center;
+  margin: 0 auto;
+}
+
+// group card layouts
+
+.group-Members, .group-partners {
+  width: 100%;
+  float: left;
+  text-align: center;
 }

@@ -3,28 +3,91 @@ layout: default
 ---
 <article class="post">
 
-  <header class="post-header">
+  <!-- <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+  </header> -->
 
 </article>
 
-<div class="viz-portfolio-delinquent-status"></div>
+<!-- <div class="viz-portfolio-delinquent-status"></div>
 
-<script type="text/javascript" src="{{ "/assets/doughnutChart.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/doughnutChart.js" | relative_url }}"></script> -->
+
+
 
 <div class="pagination">
-  <a href="#">2017</a>
+  <!-- <a href="#">2017</a>
   <a href="#" class="active">2016</a>
-  <a href="#">2015</a>
+  <a href="#">2015</a> -->
 
   <div class="post-content">
-    <h3>2017</h3>
+    <!-- <h3>2017</h3>
     <ol>
       <li class="list-item">LOG4MEX: A Library to Export Machine Learning Experiments by Diego Esteves, Diego Moussallem, Tommaso Soru, Ciro Baron Neto, Jens Lehmann, Axel-Cyrille Ngonga Ngomo and Julio Cesar Duarte in The International Conference on Web Intelligence (WI2017), Leipzig, Germany 23th – 26th of August 2017.</li>
       <li class="list-item">LOG4MEX: A Library to Export Machine Learning Experiments by Diego Esteves, Diego Moussallem, Tommaso Soru, Ciro Baron Neto, Jens Lehmann, Axel-Cyrille Ngonga Ngomo and Julio Cesar Duarte in The International Conference on Web Intelligence (WI2017), Leipzig, Germany 23th – 26th of August 2017.</li>
       <li class="list-item">LOG4MEX: A Library to Export Machine Learning Experiments by Diego Esteves, Diego Moussallem, Tommaso Soru, Ciro Baron Neto, Jens Lehmann, Axel-Cyrille Ngonga Ngomo and Julio Cesar Duarte in The International Conference on Web Intelligence (WI2017), Leipzig, Germany 23th – 26th of August 2017.</li>
-    </ol>
+    </ol> -->
 
   </div>
+
+  <table id="pubTable" class="display"></table>
+  <pre id="bibtex">
+
+
+  @InProceedings{	  DiIorioEtAl:SemPub15,
+    file		= {http://arxiv.org/pdf/1508.06206v1},
+    author	= {Di Iorio Angelo and Christoph Lange and Anastasia Dimou
+        and Sahar Vahdati},
+    speaker	= {Di Iorio Angelo and Christoph Lange},
+    crossref	= {semwebeval15},
+    eprint	= {1508.06206},
+    eprintclass	= {cs.DL},
+    eprinttype	= {arxiv},
+    pages		= {65--80},
+    pubs		= {clange},
+    subtitle	= {Assessing the Quality of Scientific Output by Information
+        Extraction and Interlinking},
+    title		= {Semantic Publishing Challenge},
+    vgwortseiten	= 27,
+    funded-by-name= {OpenAIRE2020},
+    funded-by-number={643410}
+  }
+
+  @Article{	  DebattistaEtAl:Luzzu16,
+  author	= {Jeremy Debattista and Christoph Lange and S{\"o}ren Auer},
+  date-modified	= {2016-05-23 12:43:11 +0000},
+  pubs		= {clange},
+  file		= {https://github.com/EIS-Bonn/Papers/raw/master/2016/JDIQ_Luzzu/camera-ready.pdf},
+  title		= {Luzzu -- A Methodology and Framework for Linked Data
+		  Quality Assessment},
+  journal	= {Data and Information Quality},
+  publisher	= {ACM},
+  year		= 2016,
+  month		= oct,
+  volume	= 8,
+  number	= 1,
+  vgwortseiten	= 72
+}
+
+@Article{	  Zaveri2012:LODQ,
+  author	= {Zaveri and Amrapali and Rula Anisa and Maurino  Andrea and
+		  Pietrobon Ricardo and Lehmann Jens and Auer S{\"o}ren},
+  journal	= {Semantic Web Journal},
+  number	= 1,
+  title		= {Quality Assessment for Linked Data},
+  url		= {http://www.semantic-web-journal.net/content/quality-assessment-linked-data-survey},
+  volume	= 7,
+  pages		= {63--93},
+  year		= {2016},
+  bdsk-url-1	= {http://www.semantic-web-journal.net/content/quality-assessment-linked-data-survey}
+}
+
+
+  </pre>
+
+
+<script>
+
+  bibtexify("#bibtex", "pubTable");
+</script>
 </div>
