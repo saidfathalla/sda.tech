@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+url: http://example.org/ # the base hostname & protocol for your site, e.g. http://example.com
 title: Smart Data Analytics
 author: Institut für Informatik III
 email: jens.lehmann@cs.uni-bonn.de
@@ -24,7 +25,6 @@ fax: +49 228 73-4382
 description: The Smart Data Analytics (SDA) research group, led by Prof. Dr. Jens Lehmann, has members from the Institute for Computer Science at the University of Bonn, the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS) and the Institute for Applied Computer Science Leipzig. At its core, the group investigates machine learning techniques ("analytics") using structured knowledge ("smart data"). The group aims at covering the full spectrum of research including theoretical foundations, algorithms, prototypes and industrial applications.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SDA_Research
 github_username: SDA
 facebook_username: SDAResearch
@@ -47,15 +47,29 @@ plugins:
 
 #Configuration of jekyll-rdf in our template
 jekyll_rdf:
-  path: "rdf-data/simpsons.ttl"
-  language: "en"
-  include_blank: true
-  restriction: "SELECT ?s WHERE { ?s ?p ?o}"
-  default_template: "rdf_index.html"
-  template_mappings:
-   "http://xmlns.com/foaf/0.1/Person": "person.html"
-   "http://www.ifi.uio.no/INF3580/simpsons#Abraham": "abraham.html"
-
+    path: "rdf-data/simpsons.ttl"
+    language: "en"
+    include_blank: true
+    render_orphaned_uris: true
+    restriction: "SELECT ?resourceUri WHERE {
+                 { ?resourceUri a <http://example.org/group> . }
+                UNION { ?resourceUri a <http://example.org/project> . }
+                UNION { ?resourceUri a <http://example.org/publication> . }
+                UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Person> . }
+                UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Document> . }
+                }"
+    default_template: "default.html"
+    class_template_mappings:
+        "http://xmlns.com/foaf/0.1/Person" : "person.html"
+        "http://example.org/group" : "group.html"
+        "http://example.org/project" : "project.html"
+        "http://example.org/publication" : "publication.html"
+        "http://xmlns.com/foaf/0.1/Document" : "document.html"
+    instance_template_mappings:
+        "http://example.org/" : "home.html"
+        "http://example.org/group" : "groupmain.html"
+        "http://example.org/publication" : "publicationmain.html"
+        "http://example.org/project" : "projectmain.html"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -1,0 +1,45 @@
+---
+rdf_prefix_path: simpsons.pref
+layout: default
+---
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <div class="container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-block">
+                    <h4 class="card-title">Our Projects</h4>
+                    {% capture query %}
+                    SELECT ?project ?description WHERE{
+                        ?project a ex:project .
+                        ?project ex:description ?description .
+                        ?project ex:longdescription ?longdescription
+                    }
+                    {% endcapture %}
+                    {% assign resultset = page.rdf | sparql_query: query %}
+                    <div class="list-group">
+                    {% for result in resultset %}
+                        {% for site in site.pages %}
+                        {% if site.rdf.iri == result.project.iri %}
+                        <div class="list-group-item"><a href="{{site.url}}">{{ result.description }}</a></div>
+                        <p>{{result.longdescription}}</p>
+                        {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</article>

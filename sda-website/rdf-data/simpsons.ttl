@@ -1,147 +1,122 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix fam: <http://www.ifi.uio.no/INF3580/family#> .
-@prefix sim: <http://www.ifi.uio.no/INF3580/simpsons#> .
-@prefix simc: <http://www.ifi.uio.no/INF3580/simpson-collection#> .
-@prefix simcon: <http://www.ifi.uio.no/INF3580/simpson-container#> .
-@prefix base: <http://www.ifi.uio.no/INF3580/>.
+@prefix ex: <http://example.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-@prefix dtp16: <http://pcai042.informatik.uni-leipzig.de/~dtp16/#> .
-@prefix plh: <http://placeholder.host.plh/placeholder#> .
+<http://example.org/> a foaf:Document .
 
-# uncomment this if you want to include the simpsons family as a resource
-<http://www.ifi.uio.no/INF3580/simpsons> a <http://www.ifi.uio.no/INF3580/family>.         #test purpose
+ex:OliverOctopus a foaf:Person ;
+    foaf:name "Oliver Octopus" ;
+    foaf:familyName "van Octopus" ;
+    foaf:firstName "Oliver" ;
+    foaf:title "Sir" ;
+    foaf:status "C.E.O." ;
+    ex:room "A-quarium" ;
+    foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+    foaf:mbox <mailto:Octopus@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:Saltwaterbusiness ;
+    ex:project ex:SHORE ,
+        ex:WAVE .
 
-dtp16:SpecialPerson rdfs:subClassOf foaf:Person .
-dtp16:SpecialPerson rdfs:subClassOf dtp16:AnotherSpecialPerson .         #test purpose
-dtp16:AnotherSpecialPerson rdfs:subClassOf foaf:Person .         #test purpose
-dtp16:ThirdSpecialPerson rdfs:subClassOf dtp16:AnotherSpecialPerson .         #test purpose
-dtp16:MagridsSpecialClass rdfs:subClassOf dtp16:SpecialPerson .         #test purpose
-dtp16:MagridsSpecialClass rdfs:subClassOf dtp16:ThirdSpecialPerson .         #test purpose
-dtp16:PersonClass rdfs:subClassOf dtp16:SimpsonPerson .
-dtp16:PersonClass rdfs:subClassOf foaf:Person .
+ex:CorneliusCrab a foaf:Person ;
+    foaf:name "Cornelius Crab" ;
+    foaf:familyName "Crab" ;
+    foaf:firstName "Cornelius" ;
+    foaf:title "Dr." ;
+    foaf:status "Marketing Manager" ;
+    ex:room "A-quarium" ;
+    foaf:depiction <http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png> ;
+    foaf:mbox <mailto:Cornelius@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:Freshwaterbusiness ,
+        ex:Saltwaterbusiness ;
+    ex:project ex:WAVE .
 
-foaf:Person plh:predicate plh:object.
-plh:TPerson foaf:name sim:Homer.         #test purpose
-#Homer
-sim:Homer rdf:type dtp16:SpecialPerson .
-sim:Homer rdf:type dtp16:AnotherSpecialPerson .
-sim:Homer foaf:name "Homer Simpson" .
-sim:Homer foaf:age "36"^^xsd:int .
-sim:Homer foaf:job "unknown"@en .
-sim:Homer foaf:job "unbekannt"@de .
-sim:Homer foaf:job "unbekannter Job 2"@de .
-sim:Homer foaf:job "unknown Job 2"@en .
-sim:Homer foaf:job sim:Marge. #just for test purposes
-#Marge
-sim:Marge rdf:type foaf:Person ;
-          foaf:name "Marge Simpson" ;
-          foaf:age "34"^^xsd:int .
+ex:LarryLobster a foaf:Person ;
+    foaf:name "Larry Lobster" ;
+    foaf:familyName "Lobster" ;
+    foaf:firstName "Larry" ;
+    foaf:title "Dr." ;
+    foaf:status "HR Manager" ;
+    ex:room "A-quarium" ;
+    foaf:depiction <https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png> ;
+    foaf:mbox <mailto:Larry@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:Saltwaterbusiness ;
+    ex:project ex:SHORE .
 
-#Bart
-sim:Bart rdf:type foaf:Person ;
-         foaf:name "Bart Simpson" ;
-         foaf:age "10"^^xsd:int ;
-         foaf:interest "skateboarding"@en ;
-         foaf:interest "Skateboard fahren"@de .
+ex:AlfredEel a foaf:Person ;
+    foaf:name "Alfred Eel" ;
+    foaf:familyName "E. Eel" ;
+    foaf:firstName "Alfred" ;
+    foaf:title "Mr." ;
+    foaf:status "Head Office" ;
+    ex:room "A-quarium" ;
+    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
+    foaf:mbox <mailto:Alfred@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:Freshwaterbusiness ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
-#Lisa
-sim:Lisa rdf:type foaf:Person ;
-         foaf:name "Lisa Simpson" ;
-         foaf:age "8"^^xsd:int .
+ex:Freshwaterbusiness a ex:group ;
+    rdfs:label "Freshwaterbusiness".
 
-#Maggie
-sim:Maggie rdf:type foaf:Person ;
-           foaf:name "Maggie Simpson" ;
-           foaf:age "1"^^xsd:int .
+ex:Saltwaterbusiness a ex:group ;
+    rdfs:label "Saltwaterbusiness".
 
-#Grandparents
-sim:Abraham rdf:type foaf:Person .
-sim:Mona rdf:type foaf:Person .
 
-#Aunts and Uncles
-sim:Patty rdf:type foaf:Person .
-sim:Selma rdf:type foaf:Person .
-sim:Herb rdf:type foaf:Person .
+ex:SHORE a ex:project ;
+    rdfs:label "SHORE" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
-sim:Patty fam:hasSister sim:Selma .
-sim:Selma fam:hasSister sim:Patty .
+ex:WAVE a ex:project ;
+    rdfs:label "WAVE" ;
+    ex:description "Wealth Acquisition and Value Evaluation" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
-#The Simpson
-sim:TheSimpsons rdf:type fam:Family ;
-                fam:hasFamilyMember sim:Homer ,
-                                    sim:Marge ,
-                                    sim:Bart ,
-                                    sim:Lisa ,
-                                    sim:Maggie .
+ex:CORALS a ex:project ;
+    rdfs:label "CORALS" ;
+    ex:description "CORporate Architecture Level and business strategy triggerS" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
-#Family relationships
-sim:Homer fam:hasSpouse sim:Marge .
-sim:Marge fam:hasSpouse sim:Homer .
+ex:Publication1 a ex:publication ;
+    rdfs:label "business opportunities" ;
+    dc:title "Powerful rewards as milestone towards accelerated control-based business opportunities" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+    dc:author ex:AlfredEel .
 
-sim:Bart fam:hasFather sim:Homer ;
-         fam:hasMother sim:Marge ;
-         fam:hasSister sim:Lisa ;
-         fam:hasSister sim:Maggie .
+ex:Publication2 a ex:publication ;
+    rdfs:label "net value" ;
+    dc:title "Global perspectives for objective driven net value" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+    dc:author ex:LarryLobster ,
+        ex:CorneliusCrab ,
+        ex:AlfredEel .
 
-sim:Lisa fam:hasFather sim:Homer ;
-         fam:hasMother sim:Marge ;
-         fam:hasBrother sim:Bart ;
-         fam:hasSister sim:Maggie .
+ex:Mainnav a ex:navigation ;
+    rdf:_1 ex:group ;
+    rdf:_2 ex:project ;
+    rdf:_3 ex:publication .
 
-sim:Maggie fam:hasFather sim:Homer ;
-           fam:hasMother sim:Marge ;
-           fam:hasBrother sim:Bart ;
-           fam:hasSister sim:Lisa .
+ex:group a foaf:Document ;
+    rdfs:label "Groups" ;
+    rdf:_1 ex:Saltwaterbusiness ;
+    rdf:_2 ex:Freshwaterbusiness .
 
-#Maggies Grandparents
-sim:Maggie fam:hasParent [
-    fam:hasFather sim:Abraham
-] .
+ex:project a foaf:Document ;
+    rdfs:label "Projects" .
 
-sim:Maggie fam:hasParent [
-    fam:hasMother sim:Mona
-] .
+ex:publication a foaf:Document ;
+    rdfs:label "Publications" .
 
-#Lisas Aunts and Uncles
-sim:Lisa fam:hasParent [
-    fam:hasSister sim:Selma ;
-    fam:hasSister sim:Patty
-] .
-
-sim:Lisa fam:hasParent [
-    fam:hasBrother sim:Herb
-] .
-
-#Marge father in law
-sim:Marge fam:hasSpouse [
-    fam:hasFather sim:Abraham
-] .
-
-dtp16:TestPersonMagrid rdf:type dtp16:MagridsSpecialClass.         #test purpose
-dtp16:TestPersonIra rdf:type foaf:Person,
-                             dtp16:SimpsonPerson.
-<http://www.ifi.uio.no/INF3580> rdf:type foaf:Person.
-simc:Collection a rdf:List.
-simc:Collection rdf:first sim:Homer.
-simc:Collection rdf:rest simc:c1.
-simc:c1 rdf:first sim:Marge.
-simc:c1 rdf:rest simc:c2.
-simc:c2 rdf:first sim:Bart.
-simc:c2 rdf:rest simc:c3.
-simc:c3 rdf:first sim:Maggie.
-simc:c3 rdf:rest simc:c4.
-simc:c4 rdf:first sim:Lisa.
-simc:c4 rdf:rest rdf:nil.
-simcon:Container a rdf:Seq.
-simcon:Container rdf:_1 sim:Homer.
-simcon:Container rdf:_2 sim:Marge.
-simcon:Container rdf:_3 sim:Bart.
-simcon:Container rdf:_4 sim:Lisa.
-simcon:Container rdf:_5 sim:Maggie.
-dtp16:SparqlClient a plh:object.
-plh:object1 plh:predicate2 plh:object2.
-plh:subject1 plh:predicate1 plh:object1.
+rdf:_1 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "1" .
+rdf:_2 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "2" .
+rdf:_3 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "3" .
