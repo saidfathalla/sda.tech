@@ -69,6 +69,8 @@ jekyll_rdf:
         "http://example.org/group" : "groupmain.html"
         "http://example.org/publication" : "publicationmain.html"
         "http://example.org/project" : "projectmain.html"
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
