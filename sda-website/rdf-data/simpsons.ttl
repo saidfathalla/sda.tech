@@ -98,10 +98,20 @@ ex:Publication2 a ex:publication ;
         ex:CorneliusCrab ,
         ex:AlfredEel .
 
+ex:inhouse a ex:job ;
+    rdfs:label "inhouse" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
 ex:Mainnav a ex:navigation ;
-    rdf:_1 ex:group ;
-    rdf:_2 ex:project ;
-    rdf:_3 ex:publication .
+    rdf:_1 ex:about ;
+    rdf:_2 ex:people ;
+    rdf:_3 ex:group ;
+    rdf:_4 ex:project ;
+    rdf:_5 ex:publication ;
+    rdf:_6 ex:job ;
+    rdf:_7 ex:teaching ;
+    rdf:_8 ex:partners .
 
 ex:group a foaf:Document ;
     rdfs:label "Groups" ;
@@ -111,8 +121,23 @@ ex:group a foaf:Document ;
 ex:project a foaf:Document ;
     rdfs:label "Projects" .
 
+ex:job a foaf:Document ;
+    rdfs:label "Jobs" .
+
 ex:publication a foaf:Document ;
     rdfs:label "Publications" .
+
+ex:about a foaf:Document ;
+    rdfs:label "About" .
+
+ex:people a foaf:Document ;
+    rdfs:label "People" .
+
+ex:teaching a foaf:Document ;
+    rdfs:label "teaching" .
+
+ex:partners a foaf:Document ;
+    rdfs:label "Partners" .
 
 rdf:_1 a rdfs:ContainerMembershipProperty ;
     rdfs:label "1" .
@@ -120,3 +145,13 @@ rdf:_2 a rdfs:ContainerMembershipProperty ;
     rdfs:label "2" .
 rdf:_3 a rdfs:ContainerMembershipProperty ;
     rdfs:label "3" .
+rdf:_4 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "4" .
+rdf:_5 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "5" .
+rdf:_6 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "6" .
+rdf:_7 a rdfs:ContainerMembershipProperty ;
+        rdfs:label "7" .
+rdf:_8 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "8" .
