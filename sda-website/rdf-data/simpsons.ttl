@@ -98,10 +98,37 @@ ex:Publication2 a ex:publication ;
         ex:CorneliusCrab ,
         ex:AlfredEel .
 
+ex:bad a ex:teaching ;
+    rdfs:label "bad" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
+ex:easy a ex:teaching ;
+    rdfs:label "easy" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
+ex:comfort a ex:teaching ;
+    rdfs:label "comfort" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
+
 ex:inhouse a ex:job ;
     rdfs:label "inhouse" ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
+ex:outhouse a ex:job ;
+    rdfs:label "outhouse" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
+ex:aksw a ex:partners ;
+    rdfs:label "aksw" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
 
 ex:Mainnav a ex:navigation ;
     rdf:_1 ex:about ;
@@ -134,7 +161,7 @@ ex:people a foaf:Document ;
     rdfs:label "People" .
 
 ex:teaching a foaf:Document ;
-    rdfs:label "teaching" .
+    rdfs:label "Teaching" .
 
 ex:partners a foaf:Document ;
     rdfs:label "Partners" .
