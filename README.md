@@ -42,16 +42,25 @@ bundle exec jekyll build
 # A New Users Guide
 For anyone who wants to maintain the sda.tech website and keep updating the latest updates, following is a page by page guide to sda.tech website:
 
-##About
-##People
-##Groups
-##Projects
-##Publications
-##Jobs
-##Teaching
-##Partners
-##Blog
-##Contact
+## About
+
+## People
+
+## Groups
+
+## Projects
+
+## Publications
+
+## Jobs
+
+## Teaching
+
+## Partners
+
+## Blog
+
+## Contact
 
 # Advanced Usage
 
