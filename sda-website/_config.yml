@@ -54,6 +54,9 @@ jekyll_rdf:
                  { ?resourceUri a <http://example.org/group> . }
                 UNION { ?resourceUri a <http://example.org/project> . }
                 UNION { ?resourceUri a <http://example.org/publication> . }
+                UNION { ?resourceUri a <http://example.org/job> . }
+                UNION { ?resourceUri a <http://example.org/teaching> . }
+                UNION { ?resourceUri a <http://example.org/partners> . }
                 UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Person> . }
                 UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Document> . }
                 }"
@@ -62,13 +65,20 @@ jekyll_rdf:
         "http://xmlns.com/foaf/0.1/Person" : "person.html"
         "http://example.org/group" : "group.html"
         "http://example.org/project" : "project.html"
+        "http://example.org/job" : "job.html"
+        "http://example.org/teaching" : "teaching.html"
         "http://example.org/publication" : "publication.html"
         "http://xmlns.com/foaf/0.1/Document" : "document.html"
     instance_template_mappings:
         "http://example.org/" : "home.html"
         "http://example.org/group" : "groupmain.html"
         "http://example.org/publication" : "publicationmain.html"
+        "http://example.org/job" : "jobmain.html"
+        "http://example.org/teaching" : "teachingmain.html"
         "http://example.org/project" : "projectmain.html"
+        "http://example.org/partners" : "partners.html"
+        "http://example.org/about" : "page.html"
+        "http://example.org/people" : "people.html"
 
 
 # Exclude from processing.
