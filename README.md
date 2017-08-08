@@ -39,7 +39,21 @@ bundle exec jekyll build
 
 # File Structure & Architecture 
 
-# Usage
+# A New Users Guide
+For anyone who wants to maintain the sda.tech website and keep updating the latest updates, following is a page by page guide to sda.tech website:
+
+##About
+##People
+##Groups
+##Projects
+##Publications
+##Jobs
+##Teaching
+##Partners
+##Blog
+##Contact
+
+# Advanced Usage
 
 ## Integrate with Jekyll
 
