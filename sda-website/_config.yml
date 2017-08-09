@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 url: http://example.org/ # the base hostname & protocol for your site, e.g. http://example.com
 title: Smart Data Analytics
+titleWithAcronym: Smart Data Analytics
 author: Institut für Informatik III
 email: jens.lehmann@cs.uni-bonn.de
 copyrights: Smart Data Analytics, © 2017
@@ -35,6 +36,7 @@ youtube_username: SDA
 #activeVars
 activePeople: Professors
 activeGroup: Distributed Semantic Analytics
+leader: OLIVER OCTOPUS
 
 # Build settings
 markdown: kramdown
