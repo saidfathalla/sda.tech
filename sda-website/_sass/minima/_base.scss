@@ -95,12 +95,12 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($blue-sda-color, 15%);
+    color: darken($blue-sda-color, 5%);
   }
 
   &:hover {
     color: #fafafa;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 
   .social-media-list &:hover {
@@ -108,6 +108,14 @@ a {
 
     .username {
       text-decoration: underline;
+    }
+  }
+
+  .nav-list-item {
+    color: $carbon-color;
+
+    &:hover {
+      color: $blue-sda-color;
     }
   }
 }

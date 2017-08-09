@@ -14,12 +14,20 @@
 
 .site-rootHead {
   border-bottom: 1px solid #e0e0e0;
-  padding: 2px 0;
+  padding: 0px 0;
   color: $carbon-color;
-  height: 40px;
+  height: 50px;
   background-color: #424242;
   text-align: right;
   vertical-align: middle;
+
+    a {
+      display: inline-flex;
+    }
+    h6 {
+      padding-top: 20px;
+      padding-left: 16px;
+    }
 }
 
 .site-title {
@@ -55,6 +63,10 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover {
+      color: $blue-sda-color;
     }
   }
 
