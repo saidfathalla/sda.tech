@@ -95,7 +95,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($blue-sda-color, 5%);
+    color: darken($blue-sda-color, 2%);
   }
 
   &:hover {
@@ -107,15 +107,7 @@ a {
     text-decoration: none;
 
     .username {
-      text-decoration: underline;
-    }
-  }
-
-  .nav-list-item {
-    color: $carbon-color;
-
-    &:hover {
-      color: $blue-sda-color;
+      // text-decoration: underline;
     }
   }
 }

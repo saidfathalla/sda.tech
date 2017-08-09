@@ -26,13 +26,23 @@ fax: +49 228 73-4382
 description: The Smart Data Analytics (SDA) research group, led by Prof. Dr. Jens Lehmann, has members from the Institute for Computer Science at the University of Bonn, the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS) and the Institute for Applied Computer Science Leipzig. At its core, the group investigates machine learning techniques ("analytics") using structured knowledge ("smart data"). The group aims at covering the full spectrum of research including theoretical foundations, algorithms, prototypes and industrial applications.
 logo: http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/candidate1m.png
 
+eisName: Institute for Computer Science
+eisHomePage: https://www.iai.uni-bonn.de/en
+
+uniBonnName: University of Bonn
+uniBonnHomePage: https://www.uni-bonn.de/
+
+fraunhoferDepartmentName: Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS)
+fraunhoferHomePage: https://www.iais.fraunhofer.de/
+
+leipzigDepName: Institute for Applied Computer Science Leipzig
+LeipzigHomePage: http://infai.org/de/Aktuelles
+
+
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: SDA_Research
 github_username: SDA
 facebook_username: SDAResearch
-linkedIn_username: SDA
-googlePlus_username: SDA
-youtube_username: SDA
 
 #activeVars
 activePeople: Professors
