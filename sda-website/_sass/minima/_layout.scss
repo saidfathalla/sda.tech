@@ -57,7 +57,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $purple-sda-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -123,8 +123,6 @@
     }
   }
 }
-
-
 
 /**
  * Site footer
@@ -286,6 +284,15 @@
       @include relative-font-size(1.125);
     }
   }
+
+  a {
+      color: $purple-sda-color;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue-sda-color;
+    }
+  }
 }
 
 /**
@@ -299,7 +306,7 @@ text-align: center;
 }
 
 .twoCol1, .twoCol2 {
-  width: 100%;
+  width: 50%;
   float: left;
 }
 

@@ -1,5 +1,4 @@
 <header class="site-header" role="banner">
-
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
@@ -50,7 +49,7 @@
               {% for result2 in resultset2 %}
                   {% for page in site.pages %}
                       {% if page.rdf.iri == result2.resource.iri %}
-                        <a class="page-link nav-list-item" href="{{ page.url }}">
+                        <a class="page-link" href="{{ page.url }}">
                           {{ result2.label }}
                         </a>
                       {% endif %}

@@ -28,6 +28,7 @@ ex:CorneliusCrab a foaf:Person ;
     foaf:title "Dr." ;
     foaf:status "Marketing Manager" ;
     ex:room "A-quarium" ;
+    ex:leader "leader" ;
     foaf:depiction <http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png> ;
     foaf:mbox <mailto:Cornelius@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -42,6 +43,7 @@ ex:LarryLobster a foaf:Person ;
     foaf:title "Dr." ;
     foaf:status "HR Manager" ;
     ex:room "A-quarium" ;
+    ex:leader "leader" ;
     foaf:depiction <https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png> ;
     foaf:mbox <mailto:Larry@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -139,7 +141,8 @@ ex:Mainnav a ex:navigation ;
     rdf:_5 ex:publication ;
     rdf:_6 ex:job ;
     rdf:_7 ex:teaching ;
-    rdf:_8 ex:partners .
+    rdf:_8 ex:thesis ;
+    rdf:_9 ex:partners .
 
 ex:group a foaf:Document ;
     rdfs:label "Groups" ;
@@ -167,6 +170,9 @@ ex:leader a foaf:Document ;
 ex:teaching a foaf:Document ;
     rdfs:label "Teaching" .
 
+ex:thesis a foaf:Document ;
+    rdfs:label "Thesis" .
+
 ex:partners a foaf:Document ;
     rdfs:label "Partners" .
 
@@ -186,3 +192,5 @@ rdf:_7 a rdfs:ContainerMembershipProperty ;
         rdfs:label "7" .
 rdf:_8 a rdfs:ContainerMembershipProperty ;
     rdfs:label "8" .
+rdf:_9 a rdfs:ContainerMembershipProperty ;
+    rdfs:label "9" .

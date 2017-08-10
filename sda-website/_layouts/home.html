@@ -3,16 +3,14 @@ rdf_prefix_path: simpsons.pref
 layout: default
 ---
 <div class="home">
-
-
   <!-- Main informative content -->
   <article class="post">
-
     <header class="post-header">
       <h1 class="post-title">{{ site.title | escape }}</h1>
     </header>
     <br class="horizontal-separator"/>
 
+    <!-- Query to Get the department leaders -->
     {% capture query %}
     SELECT ?Person ?name ?leader WHERE{
         ?Person a foaf:Person .
@@ -21,14 +19,35 @@ layout: default
     }
     {% endcapture %}
     {% assign resultset = page.rdf | sparql_query: query %}
-    <div class="post-content">
-      The <b>{{site.titleWithAcronym}}</b> research group, led by {% for result in resultset %} {{result.name}} {% endfor %}, has members from the [Institute for Computer Science](https://www.iai.uni-bonn.de/en) at the [University of Bonn](https://www.uni-bonn.de/), the [Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS)](https://www.iais.fraunhofer.de/) and the [Institute for Applied Computer Science Leipzig](http://infai.org/de/Aktuelles). At its core, the group investigates machine learning techniques ("analytics") using structured knowledge ("smart data"). The group aims at covering the full spectrum of research including theoretical foundations, algorithms, prototypes and industrial applications.
-    </div>
 
+    <div class="post-content">
+      The <b>{{site.titleWithAcronym}}</b> research group, led by
+      {% assign numberOfLeaders = resultset.size %}
+      {% if numberOfLeaders <= 1 %}
+        {% for result in resultset %}
+          {{result.name}},
+        {% endfor %}
+      {% elsif numberOfLeaders > 1 %}
+        {% assign count = 1 %}
+        {% assign secondlast = numberOfLeaders %}
+        {% assign secondlast = secondlast | minus:1 %}
+        {% for result in resultset %}
+          {% if count == secondlast %}
+            {{result.name}} and
+          {% elsif count <= numberOfLeaders %}
+            {{result.name}},
+          {% else %}
+            the group leader
+          {% endif %}
+          {% assign count = count | plus: 1 %}
+        {% endfor %}
+      {% else %}
+        the group leader
+      {% endif %}
+      has members from the <a href="{{site.eisHomePage}}">{{site.eisName}}</a> at the <a href="{{site.uniBonnHomePage}}">{{site.uniBonnName}}</a>, the <a href="{{site.fraunhoferHomePage}}">{{site.fraunhoferDepartmentName}}</a> and the <a href="{{site.LeipzigHomePage}}">{{site.leipzigDepName}}</a>. At its core, the group investigates machine learning techniques ("analytics") using structured knowledge ("smart data"). The group aims at covering the full spectrum of research including theoretical foundations, algorithms, prototypes and industrial applications.
+    </div>
     <br class="horizontal-separator"/>
   </article>
-  <!--  -->
-
   <!--Heat Map Area for representing research areas.  -->
   <article class="post">
     <div id="basic">
@@ -116,7 +135,14 @@ layout: default
   <!--Blog posts excerpt: List of lates three or four blog posts  -->
   <article class="post">
     <div class="twoCol1">
-      dsads
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.permalink }}">{{ post.title }}</a>
+              <p>{{ post.excerpt }}</p>
+            </li>
+          {% endfor %}
+        </ul>
     </div>
     <div class="twoCol2">
       <div class='jekyll-twitter-plugin'>
