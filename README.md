@@ -39,11 +39,41 @@ bundle exec jekyll build
 
 # File Structure & Architecture 
 
-# Usage
+# A New Users Guide
+
+# Advanced Usage
 
 ## Integrate with Jekyll
 
+
 ## Make use of RDF data
+
+
+For anyone who wants to maintain the sda.tech website and keep updating the latest updates, following is a page by page guide to sda.tech website:
+
+## About
+
+## People
+
+## Groups
+
+## Projects
+
+## Publications
+
+## Jobs
+
+## Teaching
+
+## Partners
+
+## Blog
+
+## Contact
+
+
+
+
 
 ### Templates
 
