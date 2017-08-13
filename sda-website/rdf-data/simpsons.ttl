@@ -17,7 +17,7 @@ ex:OliverOctopus a foaf:Person ;
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     foaf:mbox <mailto:Octopus@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
-    ex:group ex:Saltwaterbusiness ;
+    ex:group ex:DistributedSemanticAnalytics ;
     ex:project ex:SHORE ,
         ex:WAVE .
 
@@ -32,8 +32,8 @@ ex:CorneliusCrab a foaf:Person ;
     foaf:depiction <http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png> ;
     foaf:mbox <mailto:Cornelius@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
-    ex:group ex:Freshwaterbusiness ,
-        ex:Saltwaterbusiness ;
+    ex:group ex:SemanticQuestionAnswering ,
+        ex:DistributedSemanticAnalytics ;
     ex:project ex:WAVE .
 
 ex:LarryLobster a foaf:Person ;
@@ -47,7 +47,7 @@ ex:LarryLobster a foaf:Person ;
     foaf:depiction <https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png> ;
     foaf:mbox <mailto:Larry@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
-    ex:group ex:Saltwaterbusiness ;
+    ex:group ex:DistributedSemanticAnalytics ;
     ex:project ex:SHORE .
 
 ex:AlfredEel a foaf:Person ;
@@ -60,16 +60,16 @@ ex:AlfredEel a foaf:Person ;
     foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
     foaf:mbox <mailto:Alfred@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
-    ex:group ex:Freshwaterbusiness ;
+    ex:group ex:SemanticQuestionAnswering ;
     ex:project ex:SHORE ,
         ex:WAVE ,
         ex:CORALS .
 
-ex:Freshwaterbusiness a ex:group ;
-    rdfs:label "Freshwaterbusiness".
+ex:SemanticQuestionAnswering a ex:group ;
+    rdfs:label "Semantic Question Answering".
 
-ex:Saltwaterbusiness a ex:group ;
-    rdfs:label "Saltwaterbusiness".
+ex:DistributedSemanticAnalytics a ex:group ;
+    rdfs:label "Distributed Semantic Analytics".
 
 
 ex:SHORE a ex:project ;
@@ -146,8 +146,13 @@ ex:Mainnav a ex:navigation ;
 
 ex:group a foaf:Document ;
     rdfs:label "Groups" ;
-    rdf:_1 ex:Saltwaterbusiness ;
-    rdf:_2 ex:Freshwaterbusiness .
+    rdf:_1 ex:DistributedSemanticAnalytics;
+    rdf:_2 ex:SemanticQuestionAnswering ;
+    rdf:_3 ex:StructuredMachineLearning ;
+    rdf:_4 ex:DeepLearning ;
+    rdf:_5 ex:SemanticDataManagement ;
+    rdf:_6 ex:SoftwareEngineeringforDataScience ;
+    rdf:_7 ex:KnowledgeExtractionandValidation .
 
 ex:project a foaf:Document ;
     rdfs:label "Projects" .

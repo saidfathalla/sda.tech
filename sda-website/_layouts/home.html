@@ -4,12 +4,11 @@ layout: default
 ---
 <div class="home">
   <!-- Main informative content -->
-  <article class="post">
+  <article class="post maininfo">
     <header class="post-header">
       <h1 class="post-title">{{ site.title | escape }}</h1>
     </header>
     <br class="horizontal-separator"/>
-
     <!-- Query to Get the department leaders -->
     {% capture query %}
     SELECT ?Person ?name ?leader WHERE{
@@ -19,9 +18,9 @@ layout: default
     }
     {% endcapture %}
     {% assign resultset = page.rdf | sparql_query: query %}
-
     <div class="post-content">
       The <b>{{site.titleWithAcronym}}</b> research group, led by
+      <!-- Logic for presenting a leader or multiple leaders -->
       {% assign numberOfLeaders = resultset.size %}
       {% if numberOfLeaders <= 1 %}
         {% for result in resultset %}
@@ -46,21 +45,64 @@ layout: default
       {% endif %}
       has members from the <a href="{{site.eisHomePage}}">{{site.eisName}}</a> at the <a href="{{site.uniBonnHomePage}}">{{site.uniBonnName}}</a>, the <a href="{{site.fraunhoferHomePage}}">{{site.fraunhoferDepartmentName}}</a> and the <a href="{{site.LeipzigHomePage}}">{{site.leipzigDepName}}</a>. At its core, the group investigates machine learning techniques ("analytics") using structured knowledge ("smart data"). The group aims at covering the full spectrum of research including theoretical foundations, algorithms, prototypes and industrial applications.
     </div>
-    <br class="horizontal-separator"/>
-  </article>
-  <!--Heat Map Area for representing research areas.  -->
-  <article class="post">
+    <br class="horizontal-separator2"/>
+    <!--Heat Map Area for representing research areas.  -->
     <div id="basic">
+      <!-- HeatMap goes into this div id, called by the script heatmaptechnologies.js -->
     </div>
     <div class="post-content quote-alignment">
       <q>Our researchers and developers are working continoulsy on emerging technolgies and research as shown above.</q>
     </div>
   </article>
-  <!--  -->
-
   <!-- Icon representation of Group and the Activities -->
   <article class="post content-container-separation">
-    <div class="col1">
+    <!--Query to GET all the groupnames and descriptions  -->
+    {% capture query %}
+    SELECT DISTINCT ?person ?name ?title ?firstName ?familyName ?phone ?mbox ?status ?depiction WHERE{
+        ?person a foaf:Person ;
+        foaf:name ?name .
+        OPTIONAL { ?person foaf:familyName ?familyName }
+        OPTIONAL { ?person foaf:firstName ?firstName }
+        OPTIONAL { ?person foaf:title ?title }
+        OPTIONAL { ?person foaf:status ?status }
+        OPTIONAL { ?person foaf:depiction ?depiction }
+        OPTIONAL { ?person foaf:mbox ?mbox }
+        OPTIONAL { ?person foaf:phone ?phone }
+    }
+    {% endcapture %}
+    {% assign groups = page.rdf | sparql_query: query %}
+    <header class="post-header">
+      <h2 class="post-title">Specialized Groups Working under SDA</h2>
+    </header>
+    <br class="horizontal-separator"/>
+    <div class="groupCard">
+      <div class="groupImage">
+          <i class="fa fa-bar-chart fa-5x"></i>
+      </div>
+      <div class="groupName">
+        <h2>Smart Data Analytics</h2>
+        <div class="chip">RDF</div> <div class="chip">Semantic</div> <div class="chip">dads</div>
+      </div>
+    </div>
+    <div class="groupCard">
+
+    </div>
+    <div class="groupCard">
+
+    </div>
+    <div class="groupCard">
+
+    </div>
+    <div class="groupCard">
+
+    </div>
+    <div class="groupCard">
+
+    </div>
+    <div class="groupCard">
+
+    </div>
+    <!-- <div class="col1">
       <div class="information-element-icon">
         <i class="fa fa-bar-chart fa-5x"></i>
       </div>
@@ -125,40 +167,33 @@ layout: default
       <div class="col-content">
         <h4>{{site.data.groupTypes[5].description}}</h4>
       </div>
-    </div>
+    </div> -->
   </article>
-  <!--  -->
-
-
-  <br class="horizontal-separator2"/>
-
   <!--Blog posts excerpt: List of lates three or four blog posts  -->
-  <article class="post">
-    <div class="twoCol1">
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.permalink }}">{{ post.title }}</a>
-              <p>{{ post.excerpt }}</p>
-            </li>
-          {% endfor %}
-        </ul>
-    </div>
-    <div class="twoCol2">
-      <div class='jekyll-twitter-plugin'>
-        {% twitter https://twitter.com/sda_research maxwidth=500 align=right link-color=#0896fe limit=3 %}
+  <article class="post blogAndTweetPosts">
+    <header class="post-header">
+      <h2 class="post-title">Keep Connected with Our Posts</h2>
+    </header>
+    <br class="horizontal-separator"/>
+    <div class="blogAndTweet">
+      <div class="twoCol1">
+          <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.permalink }}">{{ post.title }}</a>
+                <p>{{ post.excerpt }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+      </div>
+      <div class="twoCol2">
+        <div class='jekyll-twitter-plugin'>
+          {% twitter https://twitter.com/sda_research maxwidth=500 align=right link-color=#0896fe limit=3 %}
+        </div>
       </div>
     </div>
   </article>
-  <!--  -->
-
-  <br class="horizontal-separator"/>
-
-  <!--twitter handler for SDA research -->
-  <article class="sda-research">
-
-  </article>
-
+  <br class="horizontal-separator2"/>
 
   <!-- <h1 class="page-heading">Posts</h1>
 

@@ -219,17 +219,17 @@ pre {
  */
 
  .horizontal-separator {
-   line-height: 40px;
+   line-height: $spacing-unit;
  }
 
  .horizontal-separator2 {
-   line-height: 480px;
+   line-height: $spacing-unit*1.5;
  }
 
  /**
   * Font Awesome Icon Colors
   */
  .fa {
-  color: #0896fe;
+  color: $purple-sda-color ;
   align-self: center;
 }

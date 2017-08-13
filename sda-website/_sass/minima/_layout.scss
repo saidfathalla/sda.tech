@@ -305,6 +305,65 @@ float: left;
 text-align: center;
 }
 
+.groupCard {
+  background-color: #FAFAFA;
+  height: 16%;
+  width: 45%;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #EEEEEE;
+  float: left;
+  display: inline-flex;
+}
+
+.groupImage {
+  width: 30%;
+  text-align: center;
+  padding: 10%;
+  padding-left: 8px;
+  padding-right: 8px;
+  vertical-align: middle;
+  border-right: 1px solid;
+  border-color: #e0e0e0;
+}
+
+.groupName {
+  width: 70%;
+  color: $purple-sda-color;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 24px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 25px;
+    background-color: #F1F1F1;
+}
+
+
+
+.blogandTweetPosts {
+    height: 100vh;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.blogAndTweet {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.maininfo {
+  height: 88vh;
+}
+
 .twoCol1, .twoCol2 {
   width: 50%;
   float: left;
@@ -328,8 +387,9 @@ text-align: center;
 }
 
 .content-container-separation {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+  height: 100vh;
 }
 
 .col-content {
@@ -359,6 +419,9 @@ text-align: center;
 
 }
 
+.home{
+  width: 100%;
+}
 .pagination a {
     color: black;
     float: center;
