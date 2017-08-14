@@ -6,6 +6,34 @@ layout: default
   <div class="content-people">
     <h1 class="text-uppercase">{{ page.rdf | rdf_property: 'foaf:name' }}</h1>
     <br class="horizontal-separator" />
-
+    <h3>{{ page.rdf | rdf_property: 'foaf:status'}}</h3>
+    <h3>Profiles: <a></a></h3>
+    <h3>{{ page.rdf | rdf_property: 'ex:room'}}</h3>
+    <h4>{{page.rdf | rdf_property: 'foaf:mailto'}}</h4>
+    {% capture query %}
+        SELECT ?researchinterests ?projectname WHERE{
+            <{{page.rdf}}> ex:researchinterests ?researchinterests .
+            ?researchinterests rdfs:label ?projectname .
+        }
+        {% endcapture %}
+        {% assign resultset = page.rdf | sparql_query: query %}
+        {% if resultset.size > 0 %}
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-block">
+                    <h4 class="card-title">Current Projects</h4>
+                    <table class="table table-bordered table-hover">
+                    <tbody>
+                    {% for result in resultset %}
+                    <tr>
+                        <td><a href="../{{ result.project | remove_first: baseurl }}">{{result.projectname}}</a></td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% endif %}
   </div>
 </article>

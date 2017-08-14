@@ -18,6 +18,7 @@ ex:OliverOctopus a foaf:Person ;
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     foaf:mbox <mailto:Octopus@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
+    ex:researchinterests ex:linkeddata, ex:opendata;
     ex:group ex:DistributedSemanticAnalytics ;
     ex:project ex:SHORE ,
         ex:WAVE .
@@ -134,6 +135,15 @@ ex:aksw a ex:partners ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
+ex:opendata a ex:researchinterests ;
+    rdfs:label "bdsw" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
+ex:linkeddata a ex:researchinterests ;
+    rdfs:label "aksw" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
 ex:Mainnav a ex:navigation ;
     rdf:_1 ex:about ;
@@ -185,6 +195,9 @@ ex:partners a foaf:Document ;
 
 ex:professor a foaf:Document ;
     rdfs:label "Professors" .
+
+ex:researchinterests a foaf:Document ;
+    rdfs:label "Research Interests" .
 
 rdf:_1 a rdfs:ContainerMembershipProperty ;
     rdfs:label "1" .

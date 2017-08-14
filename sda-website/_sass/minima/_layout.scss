@@ -522,11 +522,12 @@ hr {
 // profile cards
 
 .cardProfile {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 0 rgba(224, 224, 224, 1.0);
     width: 320px;
     text-align: center;
     float: left;
     margin: 16px;
+    background-color: #FAFAFA;
 
     button {
         border: none;
@@ -553,13 +554,17 @@ hr {
     }
 
     img {
-      width: 100%;
-      height: 280px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 16px;
+      margin-bottom: 32px;
+
     }
 }
 
 .containerProfile {
-    padding: 0 16px;
+    padding: 0 8px;
 }
 
 .titleProfile {
