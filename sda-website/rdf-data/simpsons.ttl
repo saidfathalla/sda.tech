@@ -14,6 +14,7 @@ ex:OliverOctopus a foaf:Person ;
     foaf:status "C.E.O." ;
     ex:room "A-quarium" ;
     ex:leader "leader" ;
+    ex:professor "Professors";
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     foaf:mbox <mailto:Octopus@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -29,6 +30,7 @@ ex:CorneliusCrab a foaf:Person ;
     foaf:status "Marketing Manager" ;
     ex:room "A-quarium" ;
     ex:leader "leader" ;
+    ex:professor "Professors";
     foaf:depiction <http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png> ;
     foaf:mbox <mailto:Cornelius@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -180,6 +182,9 @@ ex:thesis a foaf:Document ;
 
 ex:partners a foaf:Document ;
     rdfs:label "Partners" .
+
+ex:professor a foaf:Document ;
+    rdfs:label "Professors" .
 
 rdf:_1 a rdfs:ContainerMembershipProperty ;
     rdfs:label "1" .

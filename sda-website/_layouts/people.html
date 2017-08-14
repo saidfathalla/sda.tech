@@ -2,79 +2,55 @@
 rdf_prefix_path: simpsons.pref
 layout: default
 ---
+<script>
+    function changeActivePersons(name){
+      clearAllTypes();
+      clearAllTabs();
 
-  <script>
-      function changeActivePersons(name)
-      {
-        console.log(name);
+      if( name == "{{site.data.peopleTypes[0].name}}" ){
+        document.getElementById('Prof').style.display = 'inline-block';
+        document.getElementById('Professors').classList.add('active');
+      }else if( name == "{{site.data.peopleTypes[1].name}}" ){
+        document.getElementById('SeniorResch').style.display = 'inline-block';
+        document.getElementById('SeniorResearchers').classList.add('active');
+      }else if( name == "{{site.data.peopleTypes[2].name}}" ){
+        document.getElementById('Phd').style.display = 'inline-block';
+        document.getElementById('PhDStudents').classList.add('active');
+      }else if( name == "{{site.data.peopleTypes[3].name}}" ){
+        document.getElementById('AR').style.display = 'inline-block';
+        document.getElementById('Associatedresearches').classList.add('active');
+      }else if( name == "{{site.data.peopleTypes[4].name}}"){
+        document.getElementById('SA').style.display = 'inline-block';
+        document.getElementById('StudentAssistants').classList.add('active');
+      }else if( name == "{{site.data.peopleTypes[5].name}}" ){
+        document.getElementById('Int').style.display = 'inline-block';
+        document.getElementById('Interns').classList.add('active');
+      }else if( name == "{{site.data.peopleTypes[6].name}}" ){
+        document.getElementById('Former').style.display = 'inline-block';
+        document.getElementById('FormerMembers').classList.add('active');
+      }else
+        console.log("Invalid People Type Name");
+    }
+    function clearAllTypes(){
+        document.getElementById('Prof').style.display = 'none';
+        document.getElementById('SeniorResch').style.display = 'none';
+        document.getElementById('Phd').style.display = 'none';
+        document.getElementById('AR').style.display = 'none';
+        document.getElementById('SA').style.display = 'none';
+        document.getElementById('Int').style.display = 'none';
+        document.getElementById('Former').style.display = 'none';
+    }
+    function clearAllTabs(){
+      document.getElementById('Professors').classList.remove('active');
+      document.getElementById('SeniorResearchers').classList.remove('active');
+      document.getElementById('PhDStudents').classList.remove('active');
+      document.getElementById('Associatedresearches').classList.remove('active');
+      document.getElementById('StudentAssistants').classList.remove('active');
+      document.getElementById('Interns').classList.remove('active');
+      document.getElementById('FormerMembers').classList.remove('active');
 
-        clearAllTypes();
-        clearAllTabs();
-
-        if( name == "{{site.data.peopleTypes[0].name}}" )
-        {
-          document.getElementById('Prof').style.display = 'block';
-          document.getElementById('Professors').classList.add('active');
-
-        }else if( name == "{{site.data.peopleTypes[1].name}}" )
-        {
-          document.getElementById('SeniorResch').style.display = 'block';
-          document.getElementById('SeniorResearchers').classList.add('active');
-
-        }else if( name == "{{site.data.peopleTypes[2].name}}" )
-        {
-          document.getElementById('Phd').style.display = 'block';
-          document.getElementById('PhDStudents').classList.add('active');
-
-        }else if( name == "{{site.data.peopleTypes[3].name}}" )
-        {
-          document.getElementById('AR').style.display = 'block';
-          document.getElementById('Associatedresearches').classList.add('active');
-
-        }else if( name == "{{site.data.peopleTypes[4].name}}")
-        {
-          document.getElementById('SA').style.display = 'block';
-          document.getElementById('StudentAssistants').classList.add('active');
-
-        }else if( name == "{{site.data.peopleTypes[5].name}}" )
-        {
-          document.getElementById('Int').style.display = 'block';
-          document.getElementById('Interns').classList.add('active');
-
-        }else if( name == "{{site.data.peopleTypes[6].name}}" )
-        {
-          document.getElementById('Former').style.display = 'block';
-          document.getElementById('FormerMembers').classList.add('active');
-
-        }else{
-          console.log("Invalid People Type Name");
-        }
-      }
-
-      function clearAllTypes()
-      {
-          document.getElementById('Prof').style.display = 'none';
-          document.getElementById('SeniorResch').style.display = 'none';
-          document.getElementById('Phd').style.display = 'none';
-          document.getElementById('AR').style.display = 'none';
-          document.getElementById('SA').style.display = 'none';
-          document.getElementById('Int').style.display = 'none';
-          document.getElementById('Former').style.display = 'none';
-      }
-
-      function clearAllTabs()
-      {
-        document.getElementById('Professors').classList.remove('active');
-        document.getElementById('SeniorResearchers').classList.remove('active');
-        document.getElementById('PhDStudents').classList.remove('active');
-        document.getElementById('Associatedresearches').classList.remove('active');
-        document.getElementById('StudentAssistants').classList.remove('active');
-        document.getElementById('Interns').classList.remove('active');
-        document.getElementById('FormerMembers').classList.remove('active');
-
-      }
-
-  </script>
+    }
+</script>
       <div class="pagination">
         {% for people in site.data.peopleTypes %}
           {% assign p = people.name %}
@@ -85,13 +61,24 @@ layout: default
             <a href="#" id="{{people.name | remove: " " }}" onclick="changeActivePersons('{{people.name}}')">{{people.name}}</a>
           {% endif%}
         {% endfor %}
-        <!-- <a href="#" class="active">2016</a> -->
         <br/><br/><hr class="ruleh"/>
       </div>
-
       <div class="content-people">
         <div id="Prof" style="display:inline-block">
-          {% include professors.html %}
+          <!-- GET  querry for Professors -->
+          {% capture query %}
+          SELECT ?Person ?name ?leader WHERE{
+              ?Person a foaf:Person .
+              ?Person foaf:name ?name .
+              ?Person ex:leader ?leader .
+          }
+          {% endcapture %}
+          {% assign resultset = page.rdf | sparql_query: query %}
+          <!-- Displaying Results  -->
+          {% for result in resultset %}
+          {% assign url =  result.Person | remove: "http://example.org/" %}
+          {% include professors.html name=result.name  urlp=url %}
+          {% endfor %}
         </div>
         <div id="SeniorResch" class="content-people"style="display:none">
           adssadasdsa

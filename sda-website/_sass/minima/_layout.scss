@@ -319,7 +319,7 @@ text-align: center;
 }
 
 .groupImage {
-  width: 30%;
+  width: 40%;
   text-align: center;
   padding: 10%;
   padding-left: 8px;
@@ -327,13 +327,19 @@ text-align: center;
   vertical-align: middle;
   border-right: 1px solid;
   border-color: #e0e0e0;
+  float: left;
+
+  h3 {
+    color: $purple-sda-color;
+  }
 }
 
 .groupName {
-  width: 70%;
+  width: 60%;
   color: $purple-sda-color;
   padding-top: 16px;
   text-align: center;
+  float:left;
 }
 
 .chip {
@@ -404,7 +410,7 @@ text-align: center;
 .pagination {
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 64px;
+  padding-bottom: 48px;
   padding-top: 32px;
   width: 100%;
   background-color: #ffffff;
@@ -439,7 +445,10 @@ text-align: center;
 
 .content-people {
   background-color: #ffffff;
-  padding:16px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 32px;
 }
 /**
  * list items
@@ -456,11 +465,13 @@ text-align: center;
     width: 30%;
     border-radius: 5px;
     float: left;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    margin-right: 32px;
+    margin-bottom: 32px;
     background-color: #ffffff;
 
 }
+
+div.content-people:nth-child(3) { margin-right: 0px; }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

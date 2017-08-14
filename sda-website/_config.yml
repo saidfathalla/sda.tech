@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 url: http://example.org/ # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
 title: Smart Data Analytics
 titleWithAcronym: Smart Data Analytics
 author: Institut für Informatik III
@@ -38,8 +39,7 @@ fraunhoferHomePage: https://www.iais.fraunhofer.de/
 leipzigDepName: Institute for Applied Computer Science Leipzig
 LeipzigHomePage: http://infai.org/de/Aktuelles
 
-
-baseurl: "" # the subpath of your site, e.g. /blog
+ # the subpath of your site, e.g. /blog
 twitter_username: SDA_Research
 github_username: SDA
 facebook_username: SDAResearch
