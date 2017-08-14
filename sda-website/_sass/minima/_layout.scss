@@ -446,8 +446,6 @@ text-align: center;
 .content-people {
   background-color: #ffffff;
   text-align: center;
-  display: block;
-  margin: auto;
   padding: 32px;
 }
 /**
@@ -470,8 +468,6 @@ text-align: center;
     background-color: #ffffff;
 
 }
-
-div.content-people:nth-child(3) { margin-right: 0px; }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -498,6 +494,7 @@ img {
   float: left;
   margin: 64px;;
 }
+
 hr {
     display: block;
     height: 1.0px;
@@ -521,6 +518,56 @@ hr {
   text-align: center;
   margin: 0 auto;
 }
+
+// profile cards
+
+.cardProfile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    float: left;
+    margin: 16px;
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: $purple-sda-color;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: $purple-sda-color;
+        margin-right: 8px;
+    }
+
+    button:hover, a:hover {
+        opacity: 0.7;
+    }
+
+    img {
+      width: 100%;
+      height: 280px;
+    }
+}
+
+.containerProfile {
+    padding: 0 16px;
+}
+
+.titleProfile {
+    color: grey;
+    font-size: 18px;
+}
+
+
 
 // group card layouts
 

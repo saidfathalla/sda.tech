@@ -67,35 +67,45 @@ layout: default
         <div id="Prof" style="display:inline-block">
           <!-- GET  querry for Professors -->
           {% capture query %}
-          SELECT ?Person ?name ?leader WHERE{
+          SELECT ?Person ?name ?professor ?status ?room WHERE{
               ?Person a foaf:Person .
               ?Person foaf:name ?name .
-              ?Person ex:leader ?leader .
+              ?Person ex:professor ?professor .
+              ?Person foaf:status ?status .
+              ?Person ex:room ?room .
+
           }
           {% endcapture %}
           {% assign resultset = page.rdf | sparql_query: query %}
           <!-- Displaying Results  -->
           {% for result in resultset %}
           {% assign url =  result.Person | remove: "http://example.org/" %}
-          {% include professors.html name=result.name  urlp=url %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room %}
           {% endfor %}
         </div>
         <div id="SeniorResch" class="content-people"style="display:none">
-          adssadasdsa
+          <!--GET querry for Senior Researchers  -->
+
+          <!-- Display results for Senior Researchers  -->
         </div>
         <div id="Phd" class="content-people" style="display:none">
-          adsasdsaa
+          <!--GET querry for Phd Setudents  -->
+          <!--Display Results for Phd Students  -->
         </div>
         <div id="AR" style="display:none">
-          adsdadsada
+          <!--Get querry for Senior Researchers  -->
+          <!--Display results for Senior Researchers  -->
         </div>
         <div id="SA" style="display:none">
-          asddadsa
+          <!--GET querry for Student Assistants  -->
+          <!--Display Results for Student Assistants -->
         </div>
         <div id="Int" style="display:none">
-          {% include professors.html %}
+          <!--GET querry for Internees -->
+          <!--Display Results for Interness -->
         </div>
         <div id="Former" style="display:none">
-          {% include professors.html %}
+          <!--GET querry for Former Students  -->
+          <!--Display Results for Former Students -->
         </div>
       </div>

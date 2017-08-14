@@ -7,7 +7,7 @@
 <http://example.org/> a foaf:Document .
 
 ex:OliverOctopus a foaf:Person ;
-    foaf:name "Prof. Dr. Jens Lehmann" ;
+    foaf:name "Jens Lehmann" ;
     foaf:familyName "van Octopus" ;
     foaf:firstName "Oliver" ;
     foaf:title "Sir" ;
@@ -23,7 +23,7 @@ ex:OliverOctopus a foaf:Person ;
         ex:WAVE .
 
 ex:CorneliusCrab a foaf:Person ;
-    foaf:name "Cornelius Crab" ;
+    foaf:name "Vitalis Veins" ;
     foaf:familyName "Crab" ;
     foaf:firstName "Cornelius" ;
     foaf:title "Dr." ;

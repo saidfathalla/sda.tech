@@ -2,3 +2,10 @@
 rdf_prefix_path: simpsons.pref
 layout: default
 ---
+<article class="post">
+  <div class="content-people">
+    <h1 class="text-uppercase">{{ page.rdf | rdf_property: 'foaf:name' }}</h1>
+    <br class="horizontal-separator" />
+
+  </div>
+</article>
