@@ -7,58 +7,111 @@ layout: default
 
 
   <script>
-    function changeActiveGroups(groups)
+    function changeActiveGroups(name)
     {
+      clearAllGroupTypes();
+      clearAllGroupTabs();
 
+      if( name == "{{site.data.groupTypes[0].name}}" ){
+        document.getElementById('dsa').style.display = 'inline-block';
+        document.getElementById('DistributedSemanticAnalytics').classList.add('active');
+      }else if( name == "{{site.data.groupTypes[1].name}}" ){
+        document.getElementById('sqa').style.display = 'inline-block';
+        document.getElementById('SemanticQuestionAnswering').classList.add('active');
+      }else if( name == "{{site.data.groupTypes[2].name}}" ){
+        document.getElementById('sml').style.display = 'inline-block';
+        document.getElementById('StructuredMachineLearning').classList.add('active');
+      }else if( name == "{{site.data.groupTypes[3].name}}" ){
+        document.getElementById('dl').style.display = 'inline-block';
+        document.getElementById('DeepLearning').classList.add('active');
+      }else if( name == "{{site.data.groupTypes[4].name}}"){
+        document.getElementById('sdm').style.display = 'inline-block';
+        document.getElementById('SemanticDataManagement').classList.add('active');
+      }else if( name == "{{site.data.groupTypes[5].name}}" ){
+        document.getElementById('seds').style.display = 'inline-block';
+        document.getElementById('SoftwareEngineeringforDataScience').classList.add('active');
+      }else if( name == "{{site.data.groupTypes[6].name}}" ){
+        document.getElementById('knv').style.display = 'inline-block';
+        document.getElementById('KnowledgeExtractionandValidation').classList.add('active');
+      }else
+        console.log("Invalid People Type Name");
     }
 
-    function clearAllGroupTypes()
-    {
-
+    function clearAllGroupTypes(){
+        document.getElementById('dsa').style.display = 'none';
+        document.getElementById('sqa').style.display = 'none';
+        document.getElementById('sml').style.display = 'none';
+        document.getElementById('dl').style.display = 'none';
+        document.getElementById('sdm').style.display = 'none';
+        document.getElementById('seds').style.display = 'none';
+        document.getElementById('knv').style.display = 'none';
     }
-
-    function clearAllGroupTabs()
-    {
-
+    function clearAllGroupTabs(){
+      document.getElementById('DistributedSemanticAnalytics').classList.remove('active');
+      document.getElementById('SemanticQuestionAnswering').classList.remove('active');
+      document.getElementById('StructuredMachineLearning').classList.remove('active');
+      document.getElementById('DeepLearning').classList.remove('active');
+      document.getElementById('SemanticDataManagement').classList.remove('active');
+      document.getElementById('SoftwareEngineeringforDataScience').classList.remove('active');
+      document.getElementById('KnowledgeExtractionandValidation').classList.remove('active');
     }
   </script>
 
   <div class="pagination">
-    {% for group in site.data.groupTypes %}
-      {% assign g = group.name %}
-      {% if site.activeGroup == g %}
-        <a href="#" id="{{group.name | remove: " " }}" class="active" onclick="changeActiveGroups('{{group.name}}')"><i class="fa fa-bar-chart"></i>
- {{group.name}}</a>
-      {% else %}
+      {% for group in site.data.groupTypes %}
+        {% assign g = group.name %}
+        {% if site.activeGroup == g %}
+          <a href="#" id="{{group.name | remove: " " }}" class="active"
+            onclick="changeActiveGroups('{{group.name}}')"><i class="fa fa-bar-chart"></i>
+            {{group.name}}</a>
+        {% else %}
         <a href="#" id="{{group.name | remove: " " }}"
-           onclick="changeActiveGroups('{{group.name}}')">
-           {% if group.name == site.data.groupTypes[1].name %}
-            <i class="fa fa-search"></i>
-           {% elsif group.name == site.data.groupTypes[2].name %}
-            <i class="fa fa-cube"></i>
-           {% elsif group.name == site.data.groupTypes[3].name %}
-            <i class="fa fa-line-chart"></i>
-           {% elsif group.name == site.data.groupTypes[4].name %}
-            <i class="fa fa-cogs"></i>
-           {% elsif group.name == site.data.groupTypes[5].name %}
-            <i class="fa fa-bar-chart"></i>
-           {% elsif group.name == site.data.groupTypes[6].name %}
-            <i class="fa fa-bar-chart"></i>
-           {% else %}
-            <i class="fa fa-bar-chart"></i>
-           {% endif %}
-           {{group.name}}</a>
-      {% endif%}
-      {% if group.name == site.data.groupTypes[3].name %}
-        <br/><br/>
-      {% endif%}
-    {% endfor %}
-    <!-- <a href="#" class="active">2016</a> -->
-    <br/>
-    <br/>
-    <hr>
-    {% include groups.html %}
-
+         onclick="changeActiveGroups('{{group.name}}')">
+         {% if group.name == site.data.groupTypes[1].name %}
+          <i class="fa fa-search"></i>
+         {% elsif group.name == site.data.groupTypes[2].name %}
+          <i class="fa fa-cube"></i>
+         {% elsif group.name == site.data.groupTypes[3].name %}
+          <i class="fa fa-line-chart"></i>
+         {% elsif group.name == site.data.groupTypes[4].name %}
+          <i class="fa fa-cogs"></i>
+         {% elsif group.name == site.data.groupTypes[5].name %}
+          <i class="fa fa-bar-chart"></i>
+         {% elsif group.name == site.data.groupTypes[6].name %}
+          <i class="fa fa-bar-chart"></i>
+         {% else %}
+          <i class="fa fa-bar-chart"></i>
+         {% endif %}
+         {{group.name}}</a>
+        {% endif%}
+        {% if group.name == site.data.groupTypes[3].name %}
+          <br/><br/>
+        {% endif%}
+      {% endfor %}
+      <br/>
+      <br/><hr class="ruleh"/>
+      <div class="post-content">
+      <div id="dsa"  style="display:inline-block">
+        {% include groups.html %}
+      </div>
+      <div id="sqa" style="display:none">
+      </div>
+      <div id="sml" style="display:none">
+      {% include groups.html %}
+      </div>
+      <div id="dl" style="display:none">
+      {% include groups.html %}
+      </div>
+      <div id="sdm" style="display:none">
+      {% include groups.html %}
+      </div>
+      <div id="seds" style="display:none">
+      {% include groups.html %}
+      </div>
+      <div id="knv" style="display:none">
+      {% include groups.html %}
+      </div>
+    </div>
   </div>
 
 </article>

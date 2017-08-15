@@ -48,7 +48,6 @@ layout: default
       document.getElementById('StudentAssistants').classList.remove('active');
       document.getElementById('Interns').classList.remove('active');
       document.getElementById('FormerMembers').classList.remove('active');
-
     }
 </script>
       <div class="pagination">
@@ -83,12 +82,12 @@ layout: default
           {% include professors.html name=result.name  urlp=url status=result.status room=result.room %}
           {% endfor %}
         </div>
-        <div id="SeniorResch" class="content-people"style="display:none">
+        <div id="SeniorResch" style="display:none">
           <!--GET querry for Senior Researchers  -->
 
           <!-- Display results for Senior Researchers  -->
         </div>
-        <div id="Phd" class="content-people" style="display:none">
+        <div id="Phd" style="display:none">
           <!--GET querry for Phd Setudents  -->
           <!--Display Results for Phd Students  -->
         </div>
