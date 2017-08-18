@@ -1,0 +1,25 @@
+---
+rdf_prefix_path: simpsons.pref
+layout: default
+---
+
+<!--Querry to GET all the groups of the thesis   -->
+{% capture query %}
+    SELECT ?group ?projectname WHERE{
+        <{{page.rdf}}> ex:group ?group .
+        ?group rdfs:label ?projectname .
+}
+{% endcapture %}
+{% assign resultset = page.rdf | sparql_query: query %}
+
+<!-- Presentation of thesis Items  -->
+<article class="post">
+  <div class="pagination">
+    {{ page.rdf | rdf_property: 'ex:description'}}
+    {% for group in resultset %}
+      {{group.projectname}} <br/>,
+    {% endfor %}
+    {{ page.rdf | rdf_property: 'ex:longdescription' }}
+
+  </div>
+</article>

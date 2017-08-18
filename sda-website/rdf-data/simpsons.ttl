@@ -210,18 +210,14 @@ ex:Mainnav a ex:navigation ;
     rdf:_8 ex:thesis ;
     rdf:_9 ex:partners .
 
-ex:group a foaf:Document ;
-    rdfs:label "Groups" ;
-    rdf:_1 ex:DistributedSemanticAnalytics;
-    rdf:_2 ex:SemanticQuestionAnswering ;
-    rdf:_3 ex:StructuredMachineLearning ;
-    rdf:_4 ex:DeepLearning ;
-    rdf:_5 ex:SemanticDataManagement ;
-    rdf:_6 ex:SoftwareEngineeringforDataScience ;
-    rdf:_7 ex:KnowledgeExtractionandValidation .
+
 
 ex:description a foaf:Document ;
     rdfs:label "Description" .
+
+
+ex:group a foaf:Document ;
+    rdfs:label "Groups" .
 
 ex:project a foaf:Document ;
     rdfs:label "Projects" .
@@ -245,7 +241,12 @@ ex:teaching a foaf:Document ;
     rdfs:label "Teaching" .
 
 ex:thesis a foaf:Document ;
-    rdfs:label "Thesis" .
+    rdfs:label "Thesis";
+    ex:description "The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas" ;
+    ex:longdescription "Please note that the list below is only a small sample of possible topics and ideas. Please contact us to discuss further, to find new topics, or to suggest a topic of your own." ;
+    ex:group ex:DistributedSemanticAnalytics  ,
+             ex:DeepLearning ,
+             ex:StructuredMachineLearning .
 
 ex:partners a foaf:Document ;
     rdfs:label "Partners" .

@@ -94,6 +94,8 @@ jekyll_rdf:
         "http://example.org/people" : "people.html"
         "http://example.org/contact" : "contact.html"
         "http://example.org/blog" : "blog.html"
+        "http://example.org/thesis" : "thesis.html"
+
 
 
 
