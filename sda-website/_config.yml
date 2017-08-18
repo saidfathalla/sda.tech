@@ -57,6 +57,7 @@ plugins:
   - jekyll-rdf
   - jekyll-twitter-plugin
 
+
 #Configuration of jekyll-rdf in our template
 jekyll_rdf:
     path: "rdf-data/simpsons.ttl"

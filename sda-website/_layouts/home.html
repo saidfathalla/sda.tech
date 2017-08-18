@@ -58,16 +58,9 @@ layout: default
   <article class="post content-container-separation">
     <!--Query to GET all the groupnames and descriptions  -->
     {% capture query %}
-    SELECT DISTINCT ?person ?name ?title ?firstName ?familyName ?phone ?mbox ?status ?depiction WHERE{
-        ?person a foaf:Person ;
-        foaf:name ?name .
-        OPTIONAL { ?person foaf:familyName ?familyName }
-        OPTIONAL { ?person foaf:firstName ?firstName }
-        OPTIONAL { ?person foaf:title ?title }
-        OPTIONAL { ?person foaf:status ?status }
-        OPTIONAL { ?person foaf:depiction ?depiction }
-        OPTIONAL { ?person foaf:mbox ?mbox }
-        OPTIONAL { ?person foaf:phone ?phone }
+    SELECT ?group ?description  WHERE{
+        ?group a ex:group .
+        ?group rdfs:label ?description .
     }
     {% endcapture %}
     {% assign groups = page.rdf | sparql_query: query %}
@@ -75,6 +68,19 @@ layout: default
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
     <br class="horizontal-separator"/>
+
+    {% for group in groups %}
+      <div class="groupCard">
+        <div class="groupImage">
+            <i class="fa fa-bar-chart fa-3x"></i>
+            <h3>{{group.description}}</h3>
+        </div>
+        <div class="groupName">
+          <div class="chip">RDF</div> <div class="chip">Semantic</div> <div class="chip">dads</div>
+        </div>
+      </div>
+    {% endfor %}
+
     <div class="groupCard">
       <div class="groupImage">
           <i class="fa fa-bar-chart fa-3x"></i>
@@ -83,24 +89,6 @@ layout: default
       <div class="groupName">
         <div class="chip">RDF</div> <div class="chip">Semantic</div> <div class="chip">dads</div>
       </div>
-    </div>
-    <div class="groupCard">
-
-    </div>
-    <div class="groupCard">
-
-    </div>
-    <div class="groupCard">
-
-    </div>
-    <div class="groupCard">
-
-    </div>
-    <div class="groupCard">
-
-    </div>
-    <div class="groupCard">
-
     </div>
   </article>
   <!--Blog posts excerpt: List of lates three or four blog posts  -->
