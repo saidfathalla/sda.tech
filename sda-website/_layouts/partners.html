@@ -2,16 +2,24 @@
 rdf_prefix_path: simpsons.pref
 layout: default
 ---
+<!-- QUERRY to GET the PARTNERS -->
+{% capture query %}
+SELECT ?partners ?title ?description ?image  WHERE{
+    ?partners a ex:partners .
+    ?partners rdfs:label ?title .
+    ?partners ex:longdescription ?description .
+    ?partners foaf:depiction ?image .
+}
+{% endcapture %}
+{% assign partners = page.rdf | sparql_query: query %}
+
+<!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">
     <br class="horizontal-separator" />
-    <div class="partner-item">
-      <div class="partner-icon">
-        
-      </div>
-      <div class="partner-description">
-      </div>
-    </div>
+    {% for partner in partners %}
+      {% include partnerItem.html title=partner.title  image=partner.image description=partner.description %}
+    {% endfor %}
     <br class="horizontal-separator" />
   </div>
 </article>
