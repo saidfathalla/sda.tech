@@ -336,7 +336,7 @@ text-align: center;
 
 .groupName {
   width: 60%;
-  color: $purple-sda-color;
+  color: $blue-sda-color;
   padding-top: 16px;
   text-align: center;
   float:left;
@@ -344,15 +344,21 @@ text-align: center;
 
 .chip {
     display: inline-block;
-    padding: 0 24px;
-    height: 40px;
+    padding: 0 25px;
+    height: 50px;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 50px;
     border-radius: 25px;
     background-color: #F1F1F1;
 }
 
-
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 
 .blogandTweetPosts {
     height: 100vh;

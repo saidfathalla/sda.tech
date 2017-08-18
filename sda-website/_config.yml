@@ -16,7 +16,7 @@
 url: http://example.org/ # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""
 title: Smart Data Analytics
-titleWithAcronym: Smart Data Analytics
+titleWithAcronym: Smart Data Analytics (SDA)
 author: Institut für Informatik III
 email: jens.lehmann@cs.uni-bonn.de
 copyrights: Smart Data Analytics, © 2017
@@ -92,6 +92,11 @@ jekyll_rdf:
         "http://example.org/partners" : "partners.html"
         "http://example.org/about" : "page.html"
         "http://example.org/people" : "people.html"
+        "http://example.org/contact" : "contact.html"
+        "http://example.org/blog" : "blog.html"
+
+
+
 
 
 # Exclude from processing.
