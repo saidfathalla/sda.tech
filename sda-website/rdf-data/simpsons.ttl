@@ -15,6 +15,8 @@ ex:OliverOctopus a foaf:Person ;
     ex:room "A-quarium" ;
     ex:leader "leader" ;
     ex:professor "Professors";
+    ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
+    ex:website "http://jens-lehmann.org/" ;
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     foaf:mbox <mailto:Octopus@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -47,6 +49,7 @@ ex:LarryLobster a foaf:Person ;
     foaf:status "HR Manager" ;
     ex:room "A-quarium" ;
     ex:leader "leader" ;
+    ex:seniorResearchers "Senior Researchers";
     foaf:depiction <https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png> ;
     foaf:mbox <mailto:Larry@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -60,6 +63,72 @@ ex:AlfredEel a foaf:Person ;
     foaf:title "Mr." ;
     foaf:status "Head Office" ;
     ex:room "A-quarium" ;
+    ex:phdStudents "Phd Students";
+    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
+    foaf:mbox <mailto:Alfred@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:SemanticQuestionAnswering ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
+
+ex:AlfredEel a foaf:Person ;
+    foaf:name "Alfred Eel" ;
+    foaf:familyName "E. Eel" ;
+    foaf:firstName "Alfred" ;
+    foaf:title "Mr." ;
+    foaf:status "Head Office" ;
+    ex:room "A-quarium" ;
+    ex:associateResearchers "Associate Researchers";
+    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
+    foaf:mbox <mailto:Alfred@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:SemanticQuestionAnswering ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
+
+ex:AlfredEel a foaf:Person ;
+    foaf:name "Alfred Eel" ;
+    foaf:familyName "E. Eel" ;
+    foaf:firstName "Alfred" ;
+    foaf:title "Mr." ;
+    foaf:status "Head Office" ;
+    ex:room "A-quarium" ;
+    ex:studentAssistants "Student Students";
+    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
+    foaf:mbox <mailto:Alfred@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:SemanticQuestionAnswering ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
+
+ex:AlfredEel a foaf:Person ;
+    foaf:name "Alfred Eel" ;
+    foaf:familyName "E. Eel" ;
+    foaf:firstName "Alfred" ;
+    foaf:title "Mr." ;
+    foaf:status "Head Office" ;
+    ex:room "A-quarium" ;
+    ex:interns "Interns";
+    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
+    foaf:mbox <mailto:Alfred@aksw.org> ;
+    foaf:phone <tel:+49-341-123456789> ;
+    ex:group ex:SemanticQuestionAnswering ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
+
+
+ex:AlfredEel a foaf:Person ;
+    foaf:name "Alfred Eel" ;
+    foaf:familyName "E. Eel" ;
+    foaf:firstName "Alfred" ;
+    foaf:title "Mr." ;
+    foaf:status "Head Office" ;
+    ex:room "A-quarium" ;
+    ex:formerMembers "Former Memebers";
     foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
     foaf:mbox <mailto:Alfred@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -253,6 +322,24 @@ ex:partners a foaf:Document ;
 
 ex:professor a foaf:Document ;
     rdfs:label "Professors" .
+
+ex:seniorResearchers a foaf:Document ;
+    rdfs:label "Senior Researchers" .
+
+ex:phdStudents a foaf:Document ;
+    rdfs:label "Phd Students" .
+
+ex:associateresearchers a foaf:Document ;
+    rdfs:label "Associate Researchers" .
+
+ex:studentAssistants a foaf:Document ;
+    rdfs:label "Student Assistants" .
+
+ex:interns a foaf:Document ;
+    rdfs:label "Interns" .
+
+ex:formerMembers a foaf:Document ;
+    rdfs:label "Former Members" .
 
 ex:researchinterests a foaf:Document ;
     rdfs:label "Research Interests" .

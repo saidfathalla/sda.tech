@@ -66,11 +66,14 @@ layout: default
         <div id="Prof" style="display:inline-block">
           <!-- GET  querry for Professors -->
           {% capture query %}
-          SELECT ?Person ?name ?professor ?status ?room WHERE{
+          SELECT ?Person ?name ?professor ?status ?room ?linkedin ?website ?mailto WHERE{
               ?Person a foaf:Person .
               ?Person foaf:name ?name .
               ?Person ex:professor ?professor .
               ?Person foaf:status ?status .
+              ?Person ex:linkedin ?linkedin .
+              ?Person ex:website ?website .
+              ?Person foaf:mbox ?mailto .
               ?Person ex:room ?room .
 
           }
@@ -79,16 +82,31 @@ layout: default
           <!-- Displaying Results  -->
           {% for result in resultset %}
           {% assign url =  result.Person | remove: "http://example.org/" %}
-          {% include professors.html name=result.name  urlp=url status=result.status room=result.room %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto %}
           {% endfor %}
         </div>
         <div id="SeniorResch" style="display:none">
           <!--GET querry for Senior Researchers  -->
+          {% capture query %}
+          SELECT ?Person ?name ?seniorResearchers ?status ?room WHERE{
+              ?Person a foaf:Person .
+              ?Person foaf:name ?name .
+              ?Person ex:seniorResearchers ?seniorResearchers .
+              ?Person foaf:status ?status .
+              ?Person ex:room ?room .
 
-          <!-- Display results for Senior Researchers  -->
+          }
+          {% endcapture %}
+          {% assign resultset2 = page.rdf | sparql_query: query %}
+          <!-- Displaying Results for Senior Researchers  -->
+          {% for result in resultset2 %}
+          {% assign url =  result.Person | remove: "http://example.org/" %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room %}
+          {% endfor %}
         </div>
         <div id="Phd" style="display:none">
           <!--GET querry for Phd Setudents  -->
+
           <!--Display Results for Phd Students  -->
         </div>
         <div id="AR" style="display:none">

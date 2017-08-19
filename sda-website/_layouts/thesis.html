@@ -15,11 +15,59 @@ layout: default
 <!-- Presentation of thesis Items  -->
 <article class="post">
   <div class="pagination">
-    {{ page.rdf | rdf_property: 'ex:description'}}
-    {% for group in resultset %}
-      {{group.projectname}} <br/>,
-    {% endfor %}
+    <div class="thesis-detail">
+      {{ page.rdf | rdf_property: 'ex:description'}}
+    </div>
+    <div class="thesis-research-areas">
+      <ul>
+        {% for group in resultset %}
+          <li>
+            {{group.projectname}}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="thesis-note">
     {{ page.rdf | rdf_property: 'ex:longdescription' }}
+    </div>
+    <br/>
+    <div class="topic-tabs">
+      <hr/>
+      <br/>
+      {% for group in site.data.groupTypes %}
+        {% assign g = group.name %}
+        {% if site.activeGroup == g %}
+          <a href="#" id="{{group.name | remove: " " }}" class="active" onclick="changeActiveGroups('{{group.name}}')"><i class="fa fa-bar-chart"></i>
+   {{group.name}}</a>
+        {% else %}
+          <a href="#" id="{{group.name | remove: " " }}"
+             onclick="changeActiveGroups('{{group.name}}')">
+             {% if group.name == site.data.groupTypes[1].name %}
+              <i class="fa fa-search"></i>
+             {% elsif group.name == site.data.groupTypes[2].name %}
+              <i class="fa fa-cube"></i>
+             {% elsif group.name == site.data.groupTypes[3].name %}
+              <i class="fa fa-line-chart"></i>
+             {% elsif group.name == site.data.groupTypes[4].name %}
+              <i class="fa fa-cogs"></i>
+             {% elsif group.name == site.data.groupTypes[5].name %}
+              <i class="fa fa-bar-chart"></i>
+             {% elsif group.name == site.data.groupTypes[6].name %}
+              <i class="fa fa-bar-chart"></i>
+             {% else %}
+              <i class="fa fa-bar-chart"></i>
+             {% endif %}
+             {{group.name}}</a>
+        {% endif%}
+        {% if group.name == site.data.groupTypes[3].name %}
+          <br/><br/>
+        {% endif%}
+      {% endfor %}
+      <br/>
+      <br/>
+      <hr/>
+    </div>
+    
 
   </div>
 </article>

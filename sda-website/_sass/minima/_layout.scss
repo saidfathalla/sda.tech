@@ -416,7 +416,7 @@ text-align: center;
 .pagination {
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 48px;
+  padding-bottom: 24px;
   padding-top: 32px;
   width: 100%;
   background-color: #ffffff;
@@ -452,7 +452,8 @@ text-align: center;
 .content-people {
   background-color: #ffffff;
   text-align: center;
-  padding: 32px;
+  padding: 24px;
+  padding-top: 0px;
 }
 /**
  * list items
