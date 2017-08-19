@@ -89,7 +89,7 @@ layout: default
         <div id="SeniorResch" style="display:none">
           <!--GET querry for Senior Researchers  -->
           {% capture query %}
-          SELECT ?Person ?name ?seniorResearchers ?status ?room ?linkedin ?website ?mailto WHERE{
+          SELECT ?Person ?name ?seniorResearchers ?status ?room ?linkedin ?website ?mailto ?image WHERE{
               ?Person a foaf:Person .
               ?Person foaf:name ?name .
               ?Person ex:seniorResearchers ?seniorResearchers .
@@ -97,6 +97,7 @@ layout: default
               ?Person ex:linkedin ?linkedin .
               ?Person ex:website ?website .
               ?Person foaf:mbox ?mailto .
+              ?Person foaf:depiction ?image .
               ?Person ex:room ?room .
 
           }
@@ -105,28 +106,123 @@ layout: default
           <!-- Displaying Results for Senior Researchers  -->
           {% for result in resultset2 %}
           {% assign url =  result.Person | remove: "http://example.org/" %}
-          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto image=result.image %}
           {% endfor %}
         </div>
         <div id="Phd" style="display:none">
           <!--GET querry for Phd Setudents  -->
+          {% capture query %}
+          SELECT ?Person ?name ?phdStudents ?status ?room ?linkedin ?website ?mailto ?image WHERE{
+              ?Person a foaf:Person .
+              ?Person foaf:name ?name .
+              ?Person ex:phdStudents ?phdStudents .
+              ?Person foaf:status ?status .
+              ?Person ex:linkedin ?linkedin .
+              ?Person ex:website ?website .
+              ?Person foaf:mbox ?mailto .
+              ?Person foaf:depiction ?image .
+              ?Person ex:room ?room .
 
+          }
+          {% endcapture %}
+          {% assign resultset3 = page.rdf | sparql_query: query %}
           <!--Display Results for Phd Students  -->
+          {% for result in resultset3 %}
+          {% assign url =  result.Person | remove: "http://example.org/" %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto image=result.image %}
+          {% endfor %}
         </div>
         <div id="AR" style="display:none">
           <!--Get querry for Senior Researchers  -->
+          {% capture query %}
+          SELECT ?Person ?name ?associateResearchers ?status ?room ?linkedin ?website ?mailto ?image WHERE{
+              ?Person a foaf:Person .
+              ?Person foaf:name ?name .
+              ?Person ex:associateResearchers ?associateResearchers .
+              ?Person foaf:status ?status .
+              ?Person ex:linkedin ?linkedin .
+              ?Person ex:website ?website .
+              ?Person foaf:mbox ?mailto .
+              ?Person foaf:depiction ?image .
+              ?Person ex:room ?room .
+
+          }
+          {% endcapture %}
+          {% assign resultset4 = page.rdf | sparql_query: query %}
           <!--Display results for Senior Researchers  -->
+          {% for result in resultset4 %}
+          {% assign url =  result.Person | remove: "http://example.org/" %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto image=result.image %}
+          {% endfor %}
         </div>
         <div id="SA" style="display:none">
           <!--GET querry for Student Assistants  -->
+          {% capture query %}
+          SELECT ?Person ?name ?studentAssistants ?status ?room ?linkedin ?website ?mailto ?image WHERE{
+              ?Person a foaf:Person .
+              ?Person foaf:name ?name .
+              ?Person ex:studentAssistants ?studentAssistants .
+              ?Person foaf:status ?status .
+              ?Person ex:linkedin ?linkedin .
+              ?Person ex:website ?website .
+              ?Person foaf:mbox ?mailto .
+              ?Person foaf:depiction ?image .
+              ?Person ex:room ?room .
+
+          }
+          {% endcapture %}
+          {% assign resultset5 = page.rdf | sparql_query: query %}
           <!--Display Results for Student Assistants -->
+          {% for result in resultset5 %}
+          {% assign url =  result.Person | remove: "http://example.org/" %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto image=result.image %}
+          {% endfor %}
         </div>
         <div id="Int" style="display:none">
           <!--GET querry for Internees -->
+          {% capture query %}
+          SELECT ?Person ?name ?interns ?status ?room ?linkedin ?website ?mailto ?image WHERE{
+              ?Person a foaf:Person .
+              ?Person foaf:name ?name .
+              ?Person ex:interns ?interns .
+              ?Person foaf:status ?status .
+              ?Person ex:linkedin ?linkedin .
+              ?Person ex:website ?website .
+              ?Person foaf:mbox ?mailto .
+              ?Person foaf:depiction ?image .
+              ?Person ex:room ?room .
+
+          }
+          {% endcapture %}
+          {% assign resultset6 = page.rdf | sparql_query: query %}
           <!--Display Results for Interness -->
+          {% for result in resultset6 %}
+          {% assign url =  result.Person | remove: "http://example.org/" %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto image=result.image %}
+          {% endfor %}
         </div>
         <div id="Former" style="display:none">
           <!--GET querry for Former Students  -->
+          {% capture query %}
+          SELECT ?Person ?name ?formerMembers ?status ?room ?linkedin ?website ?mailto ?image WHERE{
+              ?Person a foaf:Person .
+              ?Person foaf:name ?name .
+              ?Person ex:formerMembers ?formerMembers .
+              ?Person foaf:status ?status .
+              ?Person ex:linkedin ?linkedin .
+              ?Person ex:website ?website .
+              ?Person foaf:mbox ?mailto .
+              ?Person foaf:depiction ?image .
+              ?Person ex:room ?room .
+
+          }
+          {% endcapture %}
+          {% assign resultset7 = page.rdf | sparql_query: query %}
           <!--Display Results for Former Students -->
+          {% for result in resultset7 %}
+          {% assign url =  result.Person | remove: "http://example.org/" %}
+          {% include professors.html name=result.name  urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto image=result.image %}
+          {% endfor %}
+
         </div>
       </div>
