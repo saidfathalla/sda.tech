@@ -16,10 +16,9 @@ SELECT ?partners ?title ?description ?image  WHERE{
 <!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">
-    <br class="horizontal-separator" />
     {% for partner in partners %}
       {% include partnerItem.html title=partner.title  image=partner.image description=partner.description %}
     {% endfor %}
-    <br class="horizontal-separator" />
+    <br class="horizontal-separator2" />
   </div>
 </article>

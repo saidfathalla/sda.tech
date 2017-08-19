@@ -580,6 +580,38 @@ hr {
 }
 
 
+// Partner Specifics
+.partner-item {
+  width: 90%;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  display: inline-block;
+  text-align: left;
+
+    img {
+        width: 20%;
+        height: 20%;
+        float: left;
+        margin: 4px;
+
+    }
+
+
+}
+
+.partner-title {
+  margin-left: 8px;
+
+  a {
+    color: $blue-sda-color;
+    padding: 0px;
+    margin: 0px;
+    webkit-margin-after: 0px;
+    webkit-margin-before: 0px;
+  }
+
+}
 
 // group card layouts
 
