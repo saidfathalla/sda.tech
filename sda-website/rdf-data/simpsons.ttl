@@ -272,14 +272,23 @@ ex:linkeddata a ex:researchinterests ;
 ex:agroknow a ex:partners ;
     rdfs:label "Agroknow" ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
-    foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+    ex:homepage "http://www.agroknow.com/agroknow/" ;
+    foaf:depiction <http://www.agroknow.com/agroknow/sites/default/files/agroknowlogo.png> ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
 ex:agt a ex:partners ;
     rdfs:label "AGT Group R&D GmbH" ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
-    foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+    foaf:depiction <https://www.agtinternational.com/wp-content/themes/AGT/homepage/agt3.png> ;
+    ex:homepage "https://www.agtinternational.com/" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+
+ex:ai4BD a ex:partners ;
+    rdfs:label "AI4BD GmbH" ;
+    ex:description "The future of SHared Ontology REfining for enterprise business" ;
+    foaf:depiction <http://ai4bd.com/wp-content/uploads/2016/09/final-logo-ai4bd.png> ;
+    ex:homepage "http://ai4bd.com/?page_id=4" ;
+    ex:longdescription "AI4BD is based in Switzerland. Provides software solutions across Europe vertical markets such as Health, Security, and Automotive. It develops a semantic framework supporting the Linked Data life-cycle and solutions including a Natural Language Processing (NLP) engine, an RDF store and different Web services and data analytics based on RDF data.  The solutions are distributed on-premise as Software and as a Service (SaaS). AI4BD has expertise in software component integration and in Linked Data technologies. " .
 
 
 ex:Mainnav a ex:navigation ;

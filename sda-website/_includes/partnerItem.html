@@ -1,6 +1,6 @@
 <br class="horizontal-separator"/>
 <div class="partner-title">
-  <a href="">  <h1>{{include.title}}</h1></a>
+  <a href="{{include.href}}" target="_blank"> <h1>{{include.title}}</h1></a>
 </div>
 <div class="partner-item">
   <br class="horizontal-separator"/>
@@ -14,4 +14,7 @@
   </div>
   <br class="horizontal-separator"/>
 </div>
-<hr />
+<!-- NO RULE FOR LAST ELEMENT -->
+{% if include.last != 1 %}
+  <hr />
+{% endif %}

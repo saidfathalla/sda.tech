@@ -4,11 +4,12 @@ layout: default
 ---
 <!-- QUERRY to GET the PARTNERS -->
 {% capture query %}
-SELECT ?partners ?title ?description ?image  WHERE{
+SELECT ?partners ?title ?description ?image ?homepage WHERE{
     ?partners a ex:partners .
     ?partners rdfs:label ?title .
     ?partners ex:longdescription ?description .
     ?partners foaf:depiction ?image .
+    ?partners ex:homepage ?homepage .
 }
 {% endcapture %}
 {% assign partners = page.rdf | sparql_query: query %}
@@ -16,8 +17,15 @@ SELECT ?partners ?title ?description ?image  WHERE{
 <!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">
+    {% assign length = partners | size %}
+    {% assign mainCount = 1 %}
     {% for partner in partners %}
-      {% include partnerItem.html title=partner.title  image=partner.image description=partner.description %}
+      {% if mainCount != length %}
+        {% include partnerItem.html title=partner.title  image=partner.image description=partner.description last=0 href=partner.homepage %}
+      {% else %}
+        {% include partnerItem.html title=partner.title  image=partner.image description=partner.description last=1 href=partner.homepage %}
+      {% endif %}
+        {% assign mainCount = mainCount | plus:1 %}
     {% endfor %}
     <br class="horizontal-separator2" />
   </div>
