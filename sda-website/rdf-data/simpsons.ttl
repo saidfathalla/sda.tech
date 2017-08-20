@@ -338,7 +338,9 @@ ex:thesis a foaf:Document ;
     ex:longdescription "Please note that the list below is only a small sample of possible topics and ideas. Please contact us to discuss further, to find new topics, or to suggest a topic of your own." ;
     ex:group ex:DistributedSemanticAnalytics  ,
              ex:DeepLearning ,
-             ex:StructuredMachineLearning .
+             ex:StructuredMachineLearning ,
+             ex:SemanticQuestionAnswering ,
+             ex:SoftwareEngineeringforDataScience .
 
 ex:partners a foaf:Document ;
     rdfs:label "Partners" .
