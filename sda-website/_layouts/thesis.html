@@ -72,15 +72,43 @@ layout: default
           <div id="openThesis" style="display:inline-block">
             <!--Querry to GET Open Thesis Items-->
             {% capture query %}
-                SELECT ?group ?projectname WHERE{
-                    <{{page.rdf}}> ex:group ?group .
-                    ?group rdfs:label ?projectname .
+            SELECT ?thesisItem ?topic ?level ?website ?open ?long  WHERE{
+                ?thesisItem a ex:thesisItem .
+                ?thesisItem rdfs:label ?topic .
+                ?thesisItem ex:level ?level .
+                ?thesisItem ex:homepage ?website .
+                ?thesisItem ex:open ?open .
+                ?thesisItem ex:longdescription ?long .
+
             }
             {% endcapture %}
             {% assign resultset = page.rdf | sparql_query: query %}
             <!--Querry to Present All the Open Thesis Items  -->
+            {% for result in resultset %}
+              <!--QUERY to GET all the people associated with the thesis topic  -->
+              {% capture query2 %}
+              SELECT ?thesisItem ?open ?person ?name ?topic WHERE{
+                  ?thesisItem a ex:thesisItem .
+                  ?thesisItem rdfs:label ?topic .
+                  ?thesisItem ex:open ?open .
+                  ?thesisItem foaf:Person ?person .
+                  ?person foaf:name ?name .
+              }
+              {% endcapture %}
+              {% assign resultset2 = page.rdf | sparql_query: query2 %}
+                {% capture labelname %}{{result.topic}}{% endcapture %}
+                <h1>{{result.topic}}</h1>
+              <!--Presentation of the resultset  -->
+              {% for result2 in resultset2 %}
+                {% capture topicname %}{{result2.topic}}{% endcapture %}
 
-          OPEN
+                {% if topicname == labelname  %}
+                {{result2.name}}
+                <br/>
+                {% else %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
         </div>
         <div id="finishedThesis" style="display:none">
           CLOSED

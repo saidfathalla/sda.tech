@@ -298,6 +298,14 @@ ex:disSparql a ex:thesisItem ;
     ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
     foaf:Person ex:OliverOctopus, ex:AlfredEel .
 
+ex:abc a ex:thesisItem ;
+    rdfs:label "Distributed in-memory Processig" ;
+    ex:homepage "http://ai4bd.com/?page_id=4" ;
+    ex:level "Bachelors,Master";
+    ex:open "Open";
+    ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+
 ex:entRes a ex:thesisItem ;
     rdfs:label "Entity Resolution" ;
     ex:homepage "http://ai4bd.com/?page_id=4" ;
@@ -361,7 +369,7 @@ ex:thesis a foaf:Document ;
 ex:partners a foaf:Document ;
     rdfs:label "Partners" .
 
-ex:thesisItem a foaf:Document ;
+ex:thesisItem a ex:thesis ;
     rdfs:label "Thesis Item" .
 
 ex:professor a foaf:Document ;
