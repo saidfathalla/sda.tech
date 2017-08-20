@@ -613,6 +613,36 @@ hr {
 
 }
 
+// Contact Specifics
+
+.adressSectionOne {
+
+  a {
+    color: $blue-sda-color;
+    padding: 0px;
+    margin: 0px;
+    webkit-margin-after: 0px;
+    webkit-margin-before: 0px;
+    text-decoration: none;
+    transition: background-color .3s;
+
+    &:hover {
+      text-decoration: none;
+      color: $purple-sda-color;
+    }
+  }
+
+  a.active {
+   background-color: white;
+  }
+
+  a:hover:not(.active) {background-color: white;}
+
+  h1 {
+    color: $purple-sda-color;
+  }
+}
+
 // group card layouts
 
 .group-Members, .group-partners {
