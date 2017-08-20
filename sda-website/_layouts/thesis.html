@@ -2,6 +2,27 @@
 rdf_prefix_path: simpsons.pref
 layout: default
 ---
+<!-- SCRIPT FOR open and finished thesis filters -->
+<script>
+  function activeOpenThesis()
+  {
+    document.getElementById('finishedThesis').style.display = 'none';
+    document.getElementById('end').classList.remove('active');
+    document.getElementById('openThesis').style.display = 'inline-block';
+    document.getElementById('start').classList.add('active');
+    console.log("dsada");
+  }
+
+  function activeFinishedThesis()
+  {
+    document.getElementById('openThesis').style.display = 'none';
+    document.getElementById('start').classList.remove('active');
+    document.getElementById('finishedThesis').style.display = 'inline-block';
+    document.getElementById('end').classList.add('active');
+    console.log("edn");
+  }
+</script>
+<!--END SCRIPT  -->
 
 <!--Querry to GET all the groups of the thesis   -->
 {% capture query %}
@@ -15,57 +36,47 @@ layout: default
 <!-- Presentation of thesis Items  -->
 <article class="post">
   <div class="pagination">
-    <div class="thesis-detail">
-      {{ page.rdf | rdf_property: 'ex:description'}}
-    </div>
-    <div class="thesis-research-areas">
-      <ul>
-        {% for group in resultset %}
-          <li>
-            {{group.projectname}}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="thesis-note">
-    {{ page.rdf | rdf_property: 'ex:longdescription' }}
-    </div>
+    <br class="horizontal-separator"/>
+    <h1 class="post-title">Interested to do thesis? We have 3 Open Topics for you !</h1>
     <br/>
-    <div class="topic-tabs">
+    <div class="main-thesis-text">
+      <div class="thesis-detail">
+        {{ page.rdf | rdf_property: 'ex:description'}}
+      </div>
+      <div class="thesis-research-areas">
+        <ul>
+          {% for group in resultset %}
+            <li>
+              {{group.projectname}}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="thesis-note">
+      {{ page.rdf | rdf_property: 'ex:longdescription' }}
+      </div>
+    </div>
+    <br class="horizontal-separator"/>
+    <div class="status-thesis">
       <hr/>
       <br/>
-      {% for group in site.data.groupTypes %}
-        {% assign g = group.name %}
-        {% if site.activeGroup == g %}
-          <a href="#" id="{{group.name | remove: " " }}" class="active" onclick="changeActiveGroups('{{group.name}}')"><i class="fa fa-bar-chart"></i>
-   {{group.name}}</a>
-        {% else %}
-          <a href="#" id="{{group.name | remove: " " }}"
-             onclick="changeActiveGroups('{{group.name}}')">
-             {% if group.name == site.data.groupTypes[1].name %}
-              <i class="fa fa-search"></i>
-             {% elsif group.name == site.data.groupTypes[2].name %}
-              <i class="fa fa-cube"></i>
-             {% elsif group.name == site.data.groupTypes[3].name %}
-              <i class="fa fa-line-chart"></i>
-             {% elsif group.name == site.data.groupTypes[4].name %}
-              <i class="fa fa-cogs"></i>
-             {% elsif group.name == site.data.groupTypes[5].name %}
-              <i class="fa fa-bar-chart"></i>
-             {% elsif group.name == site.data.groupTypes[6].name %}
-              <i class="fa fa-bar-chart"></i>
-             {% else %}
-              <i class="fa fa-bar-chart"></i>
-             {% endif %}
-             {{group.name}}</a>
-        {% endif%}
-        {% if group.name == site.data.groupTypes[3].name %}
-          <br/><br/>
-        {% endif%}
-      {% endfor %}
+      <a href="#" id="start" class="active" onclick="activeOpenThesis()"><i class="fa fa-hourglass-start" aria-hidden="true"></i>
+      Open Thesis Topics</a>
+      <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-hourglass-end" aria-hidden="true"></i>
+      Completed Thesis List</a>
       <br/>
       <br/>
       <hr/>
+      <br class="horizontal-separator2" />
+      <div class="thesis-items">
+          <div id="openThesis" style="display:inline-block">
+          OPEN
+        </div>
+        <div id="finishedThesis" style="display:none">
+          CLOSED
+        </div>
+      </div>
+      <br class="horizontal-separator2" />
     </div>
 
 
