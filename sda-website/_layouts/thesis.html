@@ -70,6 +70,16 @@ layout: default
       <br class="horizontal-separator2" />
       <div class="thesis-items">
           <div id="openThesis" style="display:inline-block">
+            <!--Querry to GET Open Thesis Items-->
+            {% capture query %}
+                SELECT ?group ?projectname WHERE{
+                    <{{page.rdf}}> ex:group ?group .
+                    ?group rdfs:label ?projectname .
+            }
+            {% endcapture %}
+            {% assign resultset = page.rdf | sparql_query: query %}
+            <!--Querry to Present All the Open Thesis Items  -->
+
           OPEN
         </div>
         <div id="finishedThesis" style="display:none">

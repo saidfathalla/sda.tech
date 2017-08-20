@@ -290,6 +290,21 @@ ex:ai4BD a ex:partners ;
     ex:homepage "http://ai4bd.com/?page_id=4" ;
     ex:longdescription "AI4BD is based in Switzerland. Provides software solutions across Europe vertical markets such as Health, Security, and Automotive. It develops a semantic framework supporting the Linked Data life-cycle and solutions including a Natural Language Processing (NLP) engine, an RDF store and different Web services and data analytics based on RDF data.  The solutions are distributed on-premise as Software and as a Service (SaaS). AI4BD has expertise in software component integration and in Linked Data technologies. " .
 
+ex:disSparql a ex:thesisItem ;
+    rdfs:label "Distributed in-memory SPARQL Processing" ;
+    ex:homepage "http://ai4bd.com/?page_id=4" ;
+    ex:level "Bachelors,Master";
+    ex:open "Open";
+    ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+
+ex:entRes a ex:thesisItem ;
+    rdfs:label "Entity Resolution" ;
+    ex:homepage "http://ai4bd.com/?page_id=4" ;
+    ex:level "B,M";
+    ex:finished "finished";
+    ex:longdescription "Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy." ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel .
 
 ex:Mainnav a ex:navigation ;
     rdf:_1 ex:about ;
@@ -342,8 +357,12 @@ ex:thesis a foaf:Document ;
              ex:SemanticQuestionAnswering ,
              ex:SoftwareEngineeringforDataScience .
 
+
 ex:partners a foaf:Document ;
     rdfs:label "Partners" .
+
+ex:thesisItem a foaf:Document ;
+    rdfs:label "Thesis Item" .
 
 ex:professor a foaf:Document ;
     rdfs:label "Professors" .
