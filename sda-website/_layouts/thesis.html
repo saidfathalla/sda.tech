@@ -8,7 +8,7 @@ layout: default
   {
     document.getElementById('finishedThesis').style.display = 'none';
     document.getElementById('end').classList.remove('active');
-    document.getElementById('openThesis').style.display = 'inline-block';
+    document.getElementById('openThesis').style.display = 'block';
     document.getElementById('start').classList.add('active');
     console.log("dsada");
   }
@@ -17,7 +17,7 @@ layout: default
   {
     document.getElementById('openThesis').style.display = 'none';
     document.getElementById('start').classList.remove('active');
-    document.getElementById('finishedThesis').style.display = 'inline-block';
+    document.getElementById('finishedThesis').style.display = 'block';
     document.getElementById('end').classList.add('active');
     console.log("edn");
   }
@@ -69,7 +69,7 @@ layout: default
       <hr/>
       <br class="horizontal-separator2" />
       <div class="thesis-items">
-          <div id="openThesis" style="display:inline-block">
+          <div id="openThesis" style="display:block">
             <!--Querry to GET Open Thesis Items-->
             {% capture query %}
             SELECT ?thesisItem ?topic ?level ?website ?open ?long  WHERE{
@@ -107,7 +107,9 @@ layout: default
                 <br/>
                 {% else %}
                 {% endif %}
+
               {% endfor %}
+              <br/><hr/><br/>
             {% endfor %}
         </div>
         <div id="finishedThesis" style="display:none">
