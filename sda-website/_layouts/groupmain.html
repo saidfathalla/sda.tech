@@ -58,88 +58,119 @@ layout: default
   <div class="pagination">
     <!--QUERY to GET all the GROUP Items  -->
     {% capture query %}
-    SELECT ?group ?topic ?desc  WHERE{
-        ?group a ex:DeepLearning .
-        ?group rdfs:label ?topic .
-        ?group ex:description ?desc .
+    SELECT ?group ?name ?desc ?imageclass  WHERE{
+        ?group a ex:group .
+        ?group rdfs:label ?name .
+        ?group ex:longdescription ?desc .
+        ?group ex:imageclass ?imageclass .
     }
     {% endcapture %}
     {% assign resultset = page.rdf | sparql_query: query %}
-
-      {% for group in site.data.groupTypes %}
-        {% assign g = group.name %}
-        {% if site.activeGroup == g %}
-          <a href="#" id="{{group.name | remove: " " }}" class="active"
-            onclick="changeActiveGroups('{{group.name}}')"><i class="fa fa-bar-chart"></i>
-            {{group.name}}</a>
+    <!-- Paginating logic for all the GROUPS -->
+      {% for result in resultset %}
+        {% capture groupname %}{{result.name}}{% endcapture %}
+        {% if site.activeGroup == groupname %}
+          <a href="#" id="{{groupname | remove: " " }}" class="active"
+            onclick="changeActiveGroups('{{groupname}}')"><i class="{{result.imageclass}}"></i>
+            {{groupname}}</a>
         {% else %}
-        <a href="#" id="{{group.name | remove: " " }}"
-         onclick="changeActiveGroups('{{group.name}}')">
-         {% if group.name == site.data.groupTypes[1].name %}
-          <i class="fa fa-search"></i>
-         {% elsif group.name == site.data.groupTypes[2].name %}
-          <i class="fa fa-cube"></i>
-         {% elsif group.name == site.data.groupTypes[3].name %}
-          <i class="fa fa-line-chart"></i>
-         {% elsif group.name == site.data.groupTypes[4].name %}
-          <i class="fa fa-cogs"></i>
-         {% elsif group.name == site.data.groupTypes[5].name %}
-          <i class="fa fa-bar-chart"></i>
-         {% elsif group.name == site.data.groupTypes[6].name %}
-          <i class="fa fa-bar-chart"></i>
-         {% else %}
-          <i class="fa fa-bar-chart"></i>
-         {% endif %}
-         {{group.name}}</a>
-        {% endif%}
-        {% if group.name == site.data.groupTypes[3].name %}
+        <a href="#" id="{{groupname | remove: " " }}"
+         onclick="changeActiveGroups('{{groupname}}')">
+          <i class="{{result.imageclass}}"></i>
+         {{groupname}}</a>
+        {% endif %}
+        {% if groupname == site.data.groupTypes[3].name %}
           <br/><br/>
-        {% endif%}
+        {% endif %}
       {% endfor %}
       <br/>
       <br/><hr class="ruleh"/>
       <div class="post-content">
-      <div id="dsa"  style="display:inline-block">
+      {% for result in resultset %}
+        {% capture name %}{{result.name}}{% endcapture %}
+        <!--QUERY to GET all the projects for a GROUP  -->
+
         <!--GET querry for Distributed Semantic Analytics  -->
-
-        <!--Presentation for Distributed Semantic Analytics  -->
-        {% include groups.html %}
-      </div>
-      <div id="sqa" style="display:none">
+        {% if name == site.data.groupTypes[0].name %}
+          <div id="dsa"  style="display:inline-block">
+            {% capture querytwo %}
+            SELECT ?group ?project ?name ?nameproject WHERE{
+                ?group a ex:group .
+                ?group rdfs:label ?name .
+                ?group ex:project ?project .
+                ?project rdfs:label ?nameproject .
+            }
+            {% endcapture %}
+            {% assign resultset2 = page.rdf | sparql_query: querytwo %}
+            {% capture querythree %}
+            SELECT ?group ?project ?name ?nameperson WHERE{
+                ?group a ex:group .
+                ?group rdfs:label ?name .
+                ?group foaf:Person ?person .
+                ?person foaf:name ?nameperson .
+            }
+            {% endcapture %}
+            {% assign resultset3 = page.rdf | sparql_query: querythree %}
+            <div>
+                <div class="container">
+                  <br/>
+                  <h2><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <p>{{result.desc}}</p>
+                  <br/>
+                  <h2>Projects:</h2>
+                  {% for result2 in resultset2 %}
+                    {% capture groupname %}{{result2.name}}{% endcapture %}
+                    {% if groupname == name %}
+                      <p>{{result2.nameproject}}</p>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <h2>Group Members:</h2>
+                {% for result3 in resultset3 %}
+                  {% capture groupname %}{{result3.name}}{% endcapture %}
+                  {% if groupname == name %}
+                    <p>{{result3.nameperson}}</p>
+                  {% endif %}
+                {% endfor %}
+              </div>
+                <br/>
+            </div>
+          </div>
+        {% endif %}
         <!--GET querry for Semantic Question Answering  -->
-
-        <!--Presentation for Semantic Question Answering  -->
-      </div>
-      <div id="sml" style="display:none">
+        {% if name == site.data.groupTypes[1].name %}
+          <div id="sqa" style="display:none">
+          </div>
+        {% endif %}
         <!--GET querry for Structured Machine Learning  -->
-
-        <!--Presentation for Structured Machine Learning  -->
-      {% include groups.html %}
-      </div>
-      <div id="dl" style="display:none">
+        {% if name == site.data.groupTypes[2].name %}
+          <div id="sml" style="display:none">
+            {% include groups.html %}
+          </div>
+        {% endif %}
         <!--GET querry for Deep Learning  -->
-
-        <!--Presentation for Deep Learning  -->
-      {% include groups.html %}
-      </div>
-      <div id="sdm" style="display:none">
+        {% if name == site.data.groupTypes[3].name %}
+          <div id="dl" style="display:none">
+            {% include groups.html %}
+          </div>
+        {% endif %}
         <!--GET querry for Semantic Data Management  -->
-
-        <!--Presentation for Semantic Data Management  -->
-      {% include groups.html %}
-      </div>
-      <div id="seds" style="display:none">
+        {% if name == site.data.groupTypes[4].name %}
+          <div id="sdm" style="display:none">
+            {% include groups.html %}
+          </div>
+        {% endif %}
         <!--GET querry for SoftwareEngineeringforDataScience  -->
-
-        <!--Presentation for SoftwareEngineeringforDataScience  -->
-      {% include groups.html %}
-      </div>
-      <div id="knv" style="display:none">
+        {% if name == site.data.groupTypes[5].name %}
+          <div id="seds" style="display:none">
+          </div>
+        {% endif %}
         <!--GET querry for KnowledgeExtractionandValidation  -->
-
-        <!--Presentation for KnowledgeExtractionandValidation  -->
-      {% include groups.html %}
-      </div>
+        {% if name == site.data.groupTypes[6].name %}
+          <div id="knv" style="display:none">
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 
