@@ -156,21 +156,30 @@ ex:SemanticQuestionAnswering a ex:group ;
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
-    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
 ex:DistributedSemanticAnalytics a ex:group ;
     rdfs:label "Distributed Semantic Analytics";
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
 ex:StructuredMachineLearning a ex:group ;
     rdfs:label "Structured Machine Learning";
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
 
 ex:DeepLearning a ex:group ;
@@ -178,14 +187,20 @@ ex:DeepLearning a ex:group ;
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
 ex:SemanticDataManagement a ex:group ;
     rdfs:label "Semantic Data Management";
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
 
 ex:SoftwareEngineeringforDataScience a ex:group ;
@@ -193,14 +208,20 @@ ex:SoftwareEngineeringforDataScience a ex:group ;
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
 ex:KnowledgeExtractionandValidation a ex:group ;
     rdfs:label "Knowledge Extraction and Validation";
     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:project ex:SHORE ,
+        ex:WAVE ,
+        ex:CORALS .
 
 
 
@@ -306,11 +327,27 @@ ex:abc a ex:thesisItem ;
     ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
     foaf:Person ex:OliverOctopus, ex:AlfredEel .
 
-ex:entRes a ex:thesisItem ;
-    rdfs:label "Entity Resolution" ;
+ex:entResOne a ex:thesisItem ;
+    rdfs:label "Entity Resolution of Closed Subjects" ;
     ex:homepage "http://ai4bd.com/?page_id=4" ;
     ex:level "B,M";
-    ex:finished "finished";
+    ex:closed "Closed";
+    ex:longdescription "Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy." ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+
+ex:entRes a ex:thesisItem ;
+    rdfs:label "Entity Resolution of Unfinished topics" ;
+    ex:homepage "http://ai4bd.com/?page_id=4" ;
+    ex:level "B,M";
+    ex:closed "Closed";
+    ex:longdescription "Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy." ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+
+ex:entityRes a ex:thesisItem ;
+    rdfs:label "Entity Resolution of particular Topics" ;
+    ex:homepage "http://ai4bd.com/?page_id=4" ;
+    ex:level "B,M";
+    ex:closed "Closed";
     ex:longdescription "Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy." ;
     foaf:Person ex:OliverOctopus, ex:AlfredEel .
 

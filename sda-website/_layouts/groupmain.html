@@ -4,8 +4,6 @@ layout: default
 ---
 
 <article class="post">
-
-
   <script>
     function changeActiveGroups(name)
     {
@@ -58,6 +56,16 @@ layout: default
   </script>
 
   <div class="pagination">
+    <!--QUERY to GET all the GROUP Items  -->
+    {% capture query %}
+    SELECT ?group ?topic ?desc  WHERE{
+        ?group a ex:DeepLearning .
+        ?group rdfs:label ?topic .
+        ?group ex:description ?desc .
+    }
+    {% endcapture %}
+    {% assign resultset = page.rdf | sparql_query: query %}
+
       {% for group in site.data.groupTypes %}
         {% assign g = group.name %}
         {% if site.activeGroup == g %}

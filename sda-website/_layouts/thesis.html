@@ -98,12 +98,14 @@ layout: default
               {% assign resultset2 = page.rdf | sparql_query: query2 %}
                 {% capture labelname %}{{result.topic}}{% endcapture %}
                 <h1>{{result.topic}}</h1>
+                <p>{{result.long}}</p>
               <!--Presentation of the resultset  -->
               {% for result2 in resultset2 %}
                 {% capture topicname %}{{result2.topic}}{% endcapture %}
 
                 {% if topicname == labelname  %}
-                {{result2.name}}
+                {% assign url =  result2.person | remove: "http://example.org/" %}
+                <a href="../{{url}}">{{result2.name}}</a>
                 <br/>
                 {% else %}
                 {% endif %}
@@ -113,12 +115,53 @@ layout: default
             {% endfor %}
         </div>
         <div id="finishedThesis" style="display:none">
-          CLOSED
+          <!--QUERY to GET the CLOSED Thesis-->
+          {% capture query3 %}
+          SELECT ?thesisItem ?topic ?level ?website ?closed ?long  WHERE{
+              ?thesisItem a ex:thesisItem .
+              ?thesisItem rdfs:label ?topic .
+              ?thesisItem ex:level ?level .
+              ?thesisItem ex:homepage ?website .
+              ?thesisItem ex:closed ?closed .
+              ?thesisItem ex:longdescription ?long .
+
+          }
+          {% endcapture %}
+          {% assign resultsetclosed = page.rdf | sparql_query: query3 %}
+          <!--Presentation of CLOSED Thesis Items  -->
+          {% for result3 in resultsetclosed %}
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+            {% capture query4 %}
+            SELECT ?thesisItem ?open ?person ?name ?topic WHERE{
+                ?thesisItem a ex:thesisItem .
+                ?thesisItem rdfs:label ?topic .
+                ?thesisItem ex:closed ?closed .
+                ?thesisItem foaf:Person ?person .
+                ?person foaf:name ?name .
+            }
+            {% endcapture %}
+            {% assign resultset2closed = page.rdf | sparql_query: query4 %}
+              {% capture labelname %}{{result3.topic}}{% endcapture %}
+              <h1>{{result3.topic}}</h1>
+              <p>{{result3.long}}</p>
+            <!--Presentation of the resultset  -->
+            {% for result4 in resultset2closed %}
+              {% capture topicname %}{{result4.topic}}{% endcapture %}
+
+              {% if topicname == labelname  %}
+
+              {% assign url =  result4.person | remove: "http://example.org/" %}
+              <a href="../{{url}}">{{result4.name}}</a>
+              <br/>
+              {% else %}
+              {% endif %}
+
+            {% endfor %}
+            <br/><hr/><br/>
+          {% endfor %}
         </div>
       </div>
       <br class="horizontal-separator2" />
     </div>
-
-
   </div>
 </article>
