@@ -2,3 +2,65 @@
 rdf_prefix_path: simpsons.pref
 layout: default
 ---
+<!-- Script for the Pagination of the different types of the Projects  -->
+<script>
+function activeFundedProjects(){
+  document.getElementById('fundedProjects').style.display = 'block';
+  document.getElementById('funded').classList.add('active');
+  document.getElementById('openSourceProjects').style.display = 'none';
+  document.getElementById('opensrc').classList.remove('active');
+  document.getElementById('incubatorProjects').style.display = 'none';
+  document.getElementById('incubators').classList.remove('active');
+}
+
+function activeOpenSourceProjects(){
+  document.getElementById('fundedProjects').style.display = 'none';
+  document.getElementById('funded').classList.remove('active');
+  document.getElementById('openSourceProjects').style.display = 'block';
+  document.getElementById('opensrc').classList.add('active');
+  document.getElementById('incubatorProjects').style.display = 'none';
+  document.getElementById('incubators').classList.remove('active');
+}
+
+function incubatorProjects(){
+  document.getElementById('fundedProjects').style.display = 'none';
+  document.getElementById('funded').classList.remove('active');
+  document.getElementById('openSourceProjects').style.display = 'none';
+  document.getElementById('opensrc').classList.remove('active');
+  document.getElementById('incubatorProjects').style.display = 'block';
+  document.getElementById('incubators').classList.add('active');
+}
+
+</script>
+
+<div class="post">
+  <div class="pagination">
+    <br class="horizontal-separator"/>
+    <div class="status-thesis">
+      <hr/>
+      <br/>
+      <a href="#" id="funded" class="active" onclick="activeFundedProjects()" ><i class="fa fa-hourglass-start" aria-hidden="true"></i>
+      Funded Projects</a>
+      <a href="#" id="opensrc" class="" onclick="activeOpenSourceProjects()"><i class="fa fa-hourglass-end" aria-hidden="true"></i>
+      Opern Source Projects</a>
+      <a href="#" id="incubators" class="" onclick="incubatorProjects()"><i class="fa fa-hourglass-end" aria-hidden="true"></i>
+      Incubator Projects</a>
+      <br/>
+      <br/>
+      <hr/>
+      <br class="horizontal-separator2" />
+    </div>
+    <div class="projects">
+      <div id="fundedProjects" style="display:block">
+        <div class="project-item">
+          
+        </div>
+      </div>
+      <div id="openSourceProjects" style="display:none">
+
+      </div>
+      <div id="incubatorProjects" style="display:none">
+
+      </div>
+    </div>
+</div>
