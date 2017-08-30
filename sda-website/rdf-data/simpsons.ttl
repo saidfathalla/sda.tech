@@ -235,18 +235,56 @@ ex:KnowledgeExtractionandValidation a ex:group ;
 
 ex:SHORE a ex:project ;
     rdfs:label "SHORE" ;
-    ex:description "The future of SHared Ontology REfining for enterprise business" ;
-    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+    ex:description "The power of the Qrowd combines with RDF" ;
+    ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
+    ex:funded "Funded Project" ;
+    foaf:depiction  <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+    ex:twitter "https://twitter.com/SDA_Research" ;
+    ex:homepage "" ;
+    ex:source "" ;
+    ex:download "" ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:partners ex:agroknow .
+
+ex:HOBBIT a ex:project ;
+    rdfs:label "Hobbit" ;
+    ex:description "The power of the Qrowd combines with RDF" ;
+    ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
+    ex:funded "Funded Project" ;
+    foaf:depiction  <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/BDE-valuechain-300x262.png> ;
+    ex:twitter "undefined" ;
+    ex:homepage "" ;
+    ex:source "" ;
+    ex:download "" ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    ex:partners ex:agroknow .
+
 
 ex:WAVE a ex:project ;
-    rdfs:label "WAVE" ;
-    ex:description "Wealth Acquisition and Value Evaluation" ;
-    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+  rdfs:label "WAVE" ;
+  ex:description "The power of the Qrowd combines with RDF" ;
+  ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
+  ex:incubator "Incubator Project";
+  foaf:depiction  <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+  ex:twitter "";
+  ex:homepage "";
+  ex:source "";
+  ex:download "";
+  foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+  ex:partners ex:agroknow .
 
 ex:CORALS a ex:project ;
-    rdfs:label "CORALS" ;
-    ex:description "CORporate Architecture Level and business strategy triggerS" ;
-    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
+  rdfs:label "CORALS" ;
+  ex:description "The power of the Qrowd combines with RDF" ;
+  ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
+  ex:opensource "Open Source";
+  foaf:depiction  <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+  ex:twitter "";
+  ex:homepage "";
+  ex:source "";
+  ex:download "";
+  foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+  ex:partners ex:agroknow .
 
 ex:Publication1 a ex:publication ;
     rdfs:label "business opportunities" ;

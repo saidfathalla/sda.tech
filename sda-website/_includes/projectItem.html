@@ -1,6 +1,6 @@
 <br class="horizontal-separator"/>
 <div class="partner-title">
-  <a href="{{include.href}}" target="_blank"> <h1>{{include.title}}</h1></a>
+  <a href="../{{include.href}}"> <h1>{{include.title}}</h1></a>
 </div>
 <div class="partner-item">
   <br class="horizontal-separator"/>
@@ -11,6 +11,16 @@
     <div class="partner-description">
       {{include.description}}
     </div>
+  </div>
+  <br class="horizontal-separator" />
+  <div class="links-to-social">
+    {% capture count %}{{include.twitter}}{% endcapture %}
+    {% if count != 'undefined' %}
+    <a href="{{include.twitter}}">Twitter</a>
+    {% endif %}
+    <button type="button">Homepage</button>
+    <button type="button">Source</button>
+    <button type="button">Download</button>
   </div>
   <br class="horizontal-separator"/>
 </div>
