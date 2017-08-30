@@ -2,3 +2,9 @@
 rdf_prefix_path: simpsons.pref
 layout: default
 ---
+<div class="post">
+  <div class="pagination">
+    <h1 class="text-uppercase">{{ page.rdf | rdf_property: 'rdfs:label' }}</h1>
+
+  </div>
+</div>

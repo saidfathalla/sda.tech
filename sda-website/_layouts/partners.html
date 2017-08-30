@@ -25,7 +25,7 @@ SELECT ?partners ?title ?description ?image ?homepage WHERE{
     {% assign mainCount = 1 %}
     {% for partner in partners %}
       {% if mainCount != length %}
-        {% include partnerItem.html title=partner.title  image=partner.image description=partner.description last=0 href=partner.homepage %}
+        {% include projectItem.html title=partner.title  image=partner.image description=partner.description last=0 href=partner.homepage %}
       {% else %}
         {% include partnerItem.html title=partner.title  image=partner.image description=partner.description last=1 href=partner.homepage %}
       {% endif %}

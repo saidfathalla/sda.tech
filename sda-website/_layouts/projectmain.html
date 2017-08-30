@@ -36,7 +36,13 @@ function incubatorProjects(){
 <div class="post">
   <div class="pagination">
     <br class="horizontal-separator"/>
-    <div class="status-thesis">
+    <div class="status-projects">
+      <h1 class="post-title">10 projects are being currently maintained by SDA Group</h1>
+      <br class="horizontal-separator" />
+        <div class="main-project-text">
+          <p>Below is the list of all the active projects:</p>
+        </div>
+      <br class="horizontal-separator" />
       <hr/>
       <br/>
       <a href="#" id="funded" class="active" onclick="activeFundedProjects()" ><i class="fa fa-hourglass-start" aria-hidden="true"></i>
@@ -48,18 +54,72 @@ function incubatorProjects(){
       <br/>
       <br/>
       <hr/>
-      <br class="horizontal-separator2" />
     </div>
     <div class="projects">
       <div id="fundedProjects" style="display:block">
-        <div class="project-item">
-          
-        </div>
+        <!-- QUERRY to GET the FundedProjects -->
+        {% capture query %}
+        SELECT ?project ?funded ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
+            ?project a ex:project .
+            ?project ex:funded ?funded .
+            ?project rdfs:label ?title .
+            ?project ex:description ?description .
+            ?project ex:longdescription ?longdescription .
+            ?project foaf:depiction ?image .
+            ?project ex:homepage ?homepage .
+            ?project ex:twitter ?twitter .
+            ?project ex:source ?source .
+            ?project ex:download ?download .
+        }
+        {% endcapture %}
+        {% assign fundprojects = page.rdf | sparql_query: query %}
+        <!-- Presentation of the Funded Projects  -->
+        {% for project in fundprojects %}
+          {% include projectItem.html title=project.title  image=project.image
+            description=project.longdescription last=0 href=project.homepage
+            homepage=project.homepage twitter=project.twitter source=project.source
+            download=project.download
+          %}
+        {% endfor %}
       </div>
       <div id="openSourceProjects" style="display:none">
+        <!-- QUERRY to GET the FundedProjects -->
+        {% capture query %}
+        SELECT ?project ?opensource ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
+            ?project a ex:project .
+            ?project ex:opensource ?opensource .
+            ?project rdfs:label ?title .
+            ?project ex:description ?description .
+            ?project ex:longdescription ?longdescription .
+            ?project foaf:depiction ?image .
+            ?project ex:homepage ?homepage .
+            ?project ex:twitter ?twitter .
+            ?project ex:source ?source .
+            ?project ex:download ?download .
+        }
+        {% endcapture %}
+        {% assign opensource = page.rdf | sparql_query: query %}
+        <!-- Presentation of the Incubators Projects  -->
 
       </div>
       <div id="incubatorProjects" style="display:none">
+        <!-- QUERRY to GET the FundedProjects -->
+        {% capture query %}
+        SELECT ?project ?incubator ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
+            ?project a ex:project .
+            ?project ex:incubator ?incubator .
+            ?project rdfs:label ?title .
+            ?project ex:description ?description .
+            ?project ex:longdescription ?longdescription .
+            ?project foaf:depiction ?image .
+            ?project ex:homepage ?homepage .
+            ?project ex:twitter ?twitter .
+            ?project ex:source ?source .
+            ?project ex:download ?download .
+        }
+        {% endcapture %}
+        {% assign incubators = page.rdf | sparql_query: query %}
+        <!-- Presentation of the Open Source Projects  -->
 
       </div>
     </div>

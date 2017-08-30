@@ -58,9 +58,10 @@ layout: default
   <article class="post content-container-separation">
     <!--Query to GET all the groupnames and descriptions  -->
     {% capture query %}
-    SELECT ?group ?description  WHERE{
+    SELECT ?group ?description ?imageclass WHERE{
         ?group a ex:group .
         ?group rdfs:label ?description .
+        ?group ex:imageclass ?imageclass .
     }
     {% endcapture %}
     {% assign groups = page.rdf | sparql_query: query %}
@@ -71,9 +72,11 @@ layout: default
 
     {% for group in groups %}
     {% assign url= group.group | remove: "http://example.org/" %}
+    {% capture imageClass %}{{group.imageclass}}{% endcapture %}
+    {% assign image=imageClass | append:' fa-3x' %}
       <div class="groupCard">
         <div class="groupImage">
-            <a href="../{{url}}"><i class="fa fa-bar-chart fa-3x"></i></a>
+            <a href="../{{url}}"><i class="{{image}}"></i></a>
             <h3>{{group.description}}</h3>
         </div>
         <div class="groupName">
