@@ -1,5 +1,5 @@
 <br class="horizontal-separator"/>
-<div class="partner-title">
+<div class="partner-title" style="text-align:center;">
   <a href="../{{include.href}}"> <h1>{{include.title}}</h1></a>
 </div>
 <div class="partner-item">
@@ -13,14 +13,23 @@
     </div>
   </div>
   <br class="horizontal-separator" />
-  <div class="links-to-social">
+  <div class="links-to-social" style="text-align:left;">
     {% capture count %}{{include.twitter}}{% endcapture %}
     {% if count != 'undefined' %}
-    <a href="{{include.twitter}}">Twitter</a>
+      <a href="{{include.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
     {% endif %}
-    <button type="button">Homepage</button>
-    <button type="button">Source</button>
-    <button type="button">Download</button>
+    {% capture count %}{{include.homepage}}{% endcapture %}
+    {% if count != 'undefined' %}
+      <a href="{{include.homepage}}"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
+    {% endif %}
+    {% capture count %}{{include.source}}{% endcapture %}
+    {% if count != 'undefined' %}
+      <a href="{{include.source}}"><i class="fa fa-file" aria-hidden="true"></i> Source</a>
+    {% endif %}
+    {% capture count %}{{include.download}}{% endcapture %}
+    {% if count != 'undefined' %}
+      <a href="{{include.download}}"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+    {% endif %}
   </div>
   <br class="horizontal-separator"/>
 </div>

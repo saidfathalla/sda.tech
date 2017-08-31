@@ -34,7 +34,7 @@ layout: default
 <!-- Presentation of thesis Items  -->
 <article class="post">
   <div class="pagination">
-    <br class="horizontal-separator"/>
+    <!-- <br class="horizontal-separator"/>
     <h1 class="post-title">Interested to do thesis? We have 3 Open Topics for you !</h1>
     <br/>
     <div class="main-thesis-text">
@@ -53,14 +53,11 @@ layout: default
       <div class="thesis-note">
       {{ page.rdf | rdf_property: 'ex:longdescription' }}
       </div>
-    </div>
-    <br class="horizontal-separator"/>
+    </div> -->
     <div class="status-thesis">
-      <hr/>
-      <br/>
-      <a href="#" id="start" class="active" onclick="activeOpenThesis()"><i class="fa fa-hourglass-start" aria-hidden="true"></i>
+      <a href="#" id="start" class="active" onclick="activeOpenThesis()"><i class="fa fa-folder-open-o" aria-hidden="true"></i>
       Open Thesis Topics</a>
-      <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-hourglass-end" aria-hidden="true"></i>
+      <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-folder-o" aria-hidden="true"></i>
       Completed Thesis List</a>
       <br/>
       <br/>

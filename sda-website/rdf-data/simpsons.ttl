@@ -199,7 +199,7 @@ ex:HOBBIT a ex:project ;
     ex:funded "Funded Project" ;
     foaf:depiction  <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/BDE-valuechain-300x262.png> ;
     ex:twitter "undefined" ;
-    ex:homepage "" ;
+    ex:homepage "undefined" ;
     ex:source "" ;
     ex:download "" ;
     foaf:Person ex:OliverOctopus, ex:AlfredEel ;

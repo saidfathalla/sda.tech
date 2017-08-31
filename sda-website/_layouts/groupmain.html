@@ -85,29 +85,29 @@ layout: default
       {% endfor %}
       <br/>
       <br/><hr class="ruleh"/>
-      <div class="post-content">
       {% for result in resultset %}
         {% capture name %}{{result.name}}{% endcapture %}
-        <!--QUERY to GET all the projects for a GROUP  -->
-
         <!--GET querry for Distributed Semantic Analytics  -->
         {% if name == site.data.groupTypes[0].name %}
           <div id="dsa"  style="display:inline-block">
+            <div class="post-content">
             {% capture querytwo %}
-            SELECT ?group ?project ?name ?nameproject WHERE{
+            SELECT ?group ?project ?name ?nameproject ?image WHERE{
                 ?group a ex:group .
                 ?group rdfs:label ?name .
                 ?group ex:project ?project .
                 ?project rdfs:label ?nameproject .
+                ?project foaf:depiction ?image .
             }
             {% endcapture %}
             {% assign resultset2 = page.rdf | sparql_query: querytwo %}
             {% capture querythree %}
-            SELECT ?group ?project ?name ?nameperson WHERE{
+            SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{
                 ?group a ex:group .
                 ?group rdfs:label ?name .
                 ?group foaf:Person ?person .
                 ?person foaf:name ?nameperson .
+                ?person foaf:depiction ?image .
             }
             {% endcapture %}
             {% assign resultset3 = page.rdf | sparql_query: querythree %}
@@ -117,30 +117,114 @@ layout: default
                   <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
                   <br class="horizontal-separator" />
                   <p>{{result.desc}}</p>
-                  <br/>
-                  <h2>Projects:</h2>
-                  {% for result2 in resultset2 %}
-                    {% capture groupname %}{{result2.name}}{% endcapture %}
-                    {% if groupname == name %}
-                      <p>{{result2.nameproject}}</p>
-                    {% endif %}
-                  {% endfor %}
-                  <h2>Group Members:</h2>
-                  {% for result3 in resultset3 %}
-                    {% capture groupname %}{{result3.name}}{% endcapture %}
-                    {% if groupname == name %}
-                      <p>{{result3.nameperson}}</p>
-                    {% endif %}
-                  {% endfor %}
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Group Members</h2>
+                  <div class="membersofProject">
+                    {% for result3 in resultset3 %}
+                      {% capture groupname %}{{result3.name}}{% endcapture %}
+                      {% if groupname == name %}
+                      {% assign url= result3.person | remove: "http://example.org/" %}
+                        <div class="chip">
+                          <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                          <a href="../{{url}}">{{result3.nameperson}}</a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Projects</h2>
+                  <div class="partnersOfProject">
+                    {% for result2 in resultset2 %}
+                      {% capture groupname %}{{result2.name}}{% endcapture %}
+                      {% if groupname == name %}
+                        {% assign url= result2.project | remove: "http://example.org/" %}
+                          <div class="chip">
+                            <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                            <a href="../{{url}}">{{result2.nameproject}}</a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Publications </h2>
+                  <br class="horizontal-separator2" />
                 </div>
               </div>
-                <br/>
+              <br class="horizontal-separator" />
+              </div>
             </div>
-          </div>
         {% endif %}
         <!--GET querry for Semantic Question Answering  -->
         {% if name == site.data.groupTypes[1].name %}
           <div id="sqa" style="display:none">
+            <div class="post-content">
+              {% capture querytwo %}
+              SELECT ?group ?project ?name ?nameproject ?image WHERE{
+                  ?group a ex:group .
+                  ?group rdfs:label ?name .
+                  ?group ex:project ?project .
+                  ?project rdfs:label ?nameproject .
+                  ?project foaf:depiction ?image .
+              }
+              {% endcapture %}
+              {% assign resultset2 = page.rdf | sparql_query: querytwo %}
+              {% capture querythree %}
+              SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{
+                  ?group a ex:group .
+                  ?group rdfs:label ?name .
+                  ?group foaf:Person ?person .
+                  ?person foaf:name ?nameperson .
+                  ?person foaf:depiction ?image .
+              }
+              {% endcapture %}
+              {% assign resultset3 = page.rdf | sparql_query: querythree %}
+            <div>
+                <div class="container">
+                  <br/>
+                  <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <br class="horizontal-separator" />
+                  <p>{{result.desc}}</p>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Group Members</h2>
+                  <div class="membersofProject">
+                    {% for result3 in resultset3 %}
+                      {% capture groupname %}{{result3.name}}{% endcapture %}
+                      {% if groupname == name %}
+                      {% assign url= result3.person | remove: "http://example.org/" %}
+                        <div class="chip">
+                          <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                          <a href="../{{url}}">{{result3.nameperson}}</a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Projects</h2>
+                  <div class="partnersOfProject">
+                    {% for result2 in resultset2 %}
+                      {% capture groupname %}{{result2.name}}{% endcapture %}
+                      {% if groupname == name %}
+                        {% assign url= result2.project | remove: "http://example.org/" %}
+                          <div class="chip">
+                            <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                            <a href="../{{url}}">{{result2.nameproject}}</a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Publications </h2>
+                  <br class="horizontal-separator2" />
+                </div>
+              </div>
+              <br class="horizontal-separator" />
+            </div>
           </div>
         {% endif %}
         <!--GET querry for Structured Machine Learning  -->
