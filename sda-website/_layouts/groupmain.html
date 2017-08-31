@@ -114,7 +114,8 @@ layout: default
             <div>
                 <div class="container">
                   <br/>
-                  <h2><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <br class="horizontal-separator" />
                   <p>{{result.desc}}</p>
                   <br/>
                   <h2>Projects:</h2>
@@ -124,14 +125,14 @@ layout: default
                       <p>{{result2.nameproject}}</p>
                     {% endif %}
                   {% endfor %}
+                  <h2>Group Members:</h2>
+                  {% for result3 in resultset3 %}
+                    {% capture groupname %}{{result3.name}}{% endcapture %}
+                    {% if groupname == name %}
+                      <p>{{result3.nameperson}}</p>
+                    {% endif %}
+                  {% endfor %}
                 </div>
-                <h2>Group Members:</h2>
-                {% for result3 in resultset3 %}
-                  {% capture groupname %}{{result3.name}}{% endcapture %}
-                  {% if groupname == name %}
-                    <p>{{result3.nameperson}}</p>
-                  {% endif %}
-                {% endfor %}
               </div>
                 <br/>
             </div>

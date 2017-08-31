@@ -60,17 +60,17 @@ ex:LarryLobster a foaf:Person ;
     ex:group ex:DistributedSemanticAnalytics ;
     ex:project ex:SHORE .
 
-ex:AlfredEel a foaf:Person ;
-    foaf:name "Alfred Eel" ;
-    foaf:familyName "E. Eel" ;
-    foaf:firstName "Alfred" ;
-    foaf:title "Mr." ;
+ex:AlexanderKister a foaf:Person ;
+    foaf:name "Dr.Alexander Kister" ;
+    foaf:familyName "Kister" ;
+    foaf:firstName "Alexander" ;
+    foaf:title "Dr." ;
     foaf:status "Head Office" ;
     ex:room "A-quarium" ;
     ex:phdStudents "Phd Students";
     ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
     ex:website "http://jens-lehmann.org/" ;
-    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
+    foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
     foaf:mbox <mailto:Alfred@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
     ex:group ex:SemanticQuestionAnswering ;
@@ -88,7 +88,7 @@ ex:AlfredEel a foaf:Person ;
     ex:associateResearchers "Associate Researchers";
     ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
     ex:website "http://jens-lehmann.org/" ;
-    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
+    foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
     foaf:mbox <mailto:Alfred@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
     ex:group ex:SemanticQuestionAnswering ;
@@ -96,60 +96,6 @@ ex:AlfredEel a foaf:Person ;
         ex:WAVE ,
         ex:CORALS .
 
-ex:AlfredEel a foaf:Person ;
-    foaf:name "Alfred Eel" ;
-    foaf:familyName "E. Eel" ;
-    foaf:firstName "Alfred" ;
-    foaf:title "Mr." ;
-    foaf:status "Head Office" ;
-    ex:room "A-quarium" ;
-    ex:studentAssistants "Student Students";
-    ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-    ex:website "http://jens-lehmann.org/" ;
-    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
-    foaf:mbox <mailto:Alfred@aksw.org> ;
-    foaf:phone <tel:+49-341-123456789> ;
-    ex:group ex:SemanticQuestionAnswering ;
-    ex:project ex:SHORE ,
-        ex:WAVE ,
-        ex:CORALS .
-
-ex:AlfredEel a foaf:Person ;
-    foaf:name "Alfred Eel" ;
-    foaf:familyName "E. Eel" ;
-    foaf:firstName "Alfred" ;
-    foaf:title "Mr." ;
-    foaf:status "Head Office" ;
-    ex:room "A-quarium" ;
-    ex:interns "Interns";
-    ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-    ex:website "http://jens-lehmann.org/" ;
-    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
-    foaf:mbox <mailto:Alfred@aksw.org> ;
-    foaf:phone <tel:+49-341-123456789> ;
-    ex:group ex:SemanticQuestionAnswering ;
-    ex:project ex:SHORE ,
-        ex:WAVE ,
-        ex:CORALS .
-
-
-ex:AlfredEel a foaf:Person ;
-    foaf:name "Alfred Eel" ;
-    foaf:familyName "E. Eel" ;
-    foaf:firstName "Alfred" ;
-    foaf:title "Mr." ;
-    foaf:status "Head Office" ;
-    ex:room "A-quarium" ;
-    ex:formerMembers "Former Memebers" ;
-    ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-    ex:website "http://jens-lehmann.org/" ;
-    foaf:depiction <https://thecliparts.com/wp-content/uploads/2016/09/free-eel-clipart.png> ;
-    foaf:mbox <mailto:Alfred@aksw.org> ;
-    foaf:phone <tel:+49-341-123456789> ;
-    ex:group ex:SemanticQuestionAnswering ;
-    ex:project ex:SHORE ,
-        ex:WAVE ,
-        ex:CORALS .
 
 ex:DistributedSemanticAnalytics a ex:group ;
     rdfs:label "Distributed Semantic Analytics";
@@ -169,7 +115,7 @@ ex:SemanticQuestionAnswering a ex:group ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
     ex:imageclass "fa fa-search" ;
-    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+    foaf:Person ex:OliverOctopus, ex:AlfredEel, ex:CorneliusCrab, ex:LarryLobster, ex:AlexanderKister ;
     ex:project ex:SHORE ,
         ex:WAVE ,
         ex:CORALS .
@@ -238,7 +184,7 @@ ex:SHORE a ex:project ;
     ex:description "The power of the Qrowd combines with RDF" ;
     ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
     ex:funded "Funded Project" ;
-    foaf:depiction  <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+    foaf:depiction  <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/Slipo_vertical_1.png> ;
     ex:twitter "https://twitter.com/SDA_Research" ;
     ex:homepage "" ;
     ex:source "" ;

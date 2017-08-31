@@ -4,7 +4,49 @@ layout: default
 ---
 <div class="post">
   <div class="pagination">
-    <h1 class="text-uppercase">{{ page.rdf | rdf_property: 'rdfs:label' }}</h1>
-
+    <div class="project-heading">
+      <h1 class="text-uppercase">{{ page.rdf | rdf_property: 'rdfs:label' }}</h1>
+    </div>
+    <div class="main-content">
+      <div class="logo-project">
+        <img src="{{ page.rdf | rdf_property: 'foaf:depiction' }}"
+        alt="{{ page.rdf | rdf_property: 'ex:description' }}">
+      </div>
+      <div class="title-project">
+        <p class="text-uppercase">{{ page.rdf | rdf_property: 'ex:description' }}</p>
+      </div>
+      <div class="main-description-project">
+        <p class="text-uppercase">{{ page.rdf | rdf_property: 'ex:longdescription' }}</p>
+      </div>
+      <div class="links-social">
+      </div>
+    </div>
+    <div class="project-team">
+      {% capture query %}
+          SELECT ?person ?personname WHERE{
+              <{{page.rdf}}> foaf:Person ?person .
+              ?person foaf:name ?personname .
+      }
+      {% endcapture %}
+      {% assign team = page.rdf | sparql_query: query %}
+      {% for person in team %}
+        <p>{{person.personname }}</p><br/>
+      {% endfor %}
+    </div>
+    <div class="partners">
+      {% capture query %}
+          SELECT ?partner ?partnername WHERE{
+              <{{page.rdf}}> ex:partners ?partner .
+              ?partner rdfs:label ?partnername .
+      }
+      {% endcapture %}
+      {% assign partners = page.rdf | sparql_query: query %}
+      {% for partner in partners %}
+        <p>{{partner.partnername }}</p><br/>
+      {% endfor %}
+    </div>
+    <div class="publications-project">
+    <div>
+    <br class="horizontal-separator2" />
   </div>
 </div>
