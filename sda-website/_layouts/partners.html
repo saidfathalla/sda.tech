@@ -14,13 +14,19 @@ SELECT ?partners ?title ?description ?image ?homepage WHERE{
 {% endcapture %}
 {% assign partners = page.rdf | sparql_query: query %}
 {% assign length = partners | size %}
-
 <!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">
-    <br class="horizontal-separator"/>
-    <h1 class="post-title">Looking for our Partners ? Yes we have {{length}} partners.</h1>
-    <br />
+    <a href="#" id="funded" class="active" onclick="activeFundedProjects()" ><i class="fa fa-list-alt" aria-hidden="true"></i>
+    All Partners</a>
+    <a href="#" id="funded" class="" onclick="activeFundedProjects()" ><i class="fa fa-industry" aria-hidden="true"></i>
+    Industry Partners</a>
+    <a href="#" id="opensrc" class="" onclick="activeOpenSourceProjects()"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    Academic Partners</a>
+    <!-- <h1 class="post-title">Looking for our Partners ? Yes we have {{length}} partners.</h1> -->
+    <br/>
+    <br/>
+    <hr />
     {% assign length = partners | size %}
     {% assign mainCount = 1 %}
     {% for partner in partners %}

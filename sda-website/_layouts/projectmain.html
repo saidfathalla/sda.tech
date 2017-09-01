@@ -11,6 +11,8 @@ function activeFundedProjects(){
   document.getElementById('opensrc').classList.remove('active');
   document.getElementById('incubatorProjects').style.display = 'none';
   document.getElementById('incubators').classList.remove('active');
+  document.getElementById('allProjects').style.display = 'none';
+  document.getElementById('all').classList.remove('active');
 }
 
 function activeOpenSourceProjects(){
@@ -20,6 +22,8 @@ function activeOpenSourceProjects(){
   document.getElementById('opensrc').classList.add('active');
   document.getElementById('incubatorProjects').style.display = 'none';
   document.getElementById('incubators').classList.remove('active');
+  document.getElementById('allProjects').style.display = 'none';
+  document.getElementById('all').classList.remove('active');
 }
 
 function incubatorProjects(){
@@ -29,14 +33,29 @@ function incubatorProjects(){
   document.getElementById('opensrc').classList.remove('active');
   document.getElementById('incubatorProjects').style.display = 'block';
   document.getElementById('incubators').classList.add('active');
+  document.getElementById('allProjects').style.display = 'none';
+  document.getElementById('all').classList.remove('active');
 }
 
+function allProjectItems(){
+  document.getElementById('fundedProjects').style.display = 'none';
+  document.getElementById('funded').classList.remove('active');
+  document.getElementById('openSourceProjects').style.display = 'none';
+  document.getElementById('opensrc').classList.remove('active');
+  document.getElementById('incubatorProjects').style.display = 'none';
+  document.getElementById('incubators').classList.remove('active');
+  document.getElementById('allProjects').style.display = 'block';
+  document.getElementById('all').classList.add('active');
+
+}
 </script>
 
 <div class="post">
   <div class="pagination">
     <div class="status-projects">
-      <a href="#" id="funded" class="active" onclick="activeFundedProjects()" ><i class="fa fa-money" aria-hidden="true"></i>
+      <a href="#" id="all" class="active" onclick="allProjectItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
+      All Projects</a>
+      <a href="#" id="funded" class="" onclick="activeFundedProjects()" ><i class="fa fa-money" aria-hidden="true"></i>
       Funded Projects</a>
       <a href="#" id="opensrc" class="" onclick="activeOpenSourceProjects()"><i class="fa fa-code-fork" aria-hidden="true"></i>
       Open Source Projects</a>
@@ -47,7 +66,9 @@ function incubatorProjects(){
       <hr/>
     </div>
     <div class="projects">
-      <div id="fundedProjects" style="display:block">
+      <div id="allProjects" style="display:none">
+      </div>
+      <div id="fundedProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
         {% capture query %}
         SELECT ?project ?funded ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{

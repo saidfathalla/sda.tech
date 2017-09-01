@@ -8,6 +8,8 @@ layout: default
   {
     document.getElementById('finishedThesis').style.display = 'none';
     document.getElementById('end').classList.remove('active');
+    document.getElementById('allThesis').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
     document.getElementById('openThesis').style.display = 'block';
     document.getElementById('start').classList.add('active');
   }
@@ -16,8 +18,20 @@ layout: default
   {
     document.getElementById('openThesis').style.display = 'none';
     document.getElementById('start').classList.remove('active');
+    document.getElementById('allThesis').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
     document.getElementById('finishedThesis').style.display = 'block';
     document.getElementById('end').classList.add('active');
+  }
+
+  function allThesisItems()
+  {
+    document.getElementById('openThesis').style.display = 'none';
+    document.getElementById('start').classList.remove('active');
+    document.getElementById('allThesis').style.display = 'block';
+    document.getElementById('all').classList.add('active');
+    document.getElementById('finishedThesis').style.display = 'none';
+    document.getElementById('end').classList.remove('active');
   }
 </script>
 <!--END SCRIPT  -->
@@ -55,16 +69,20 @@ layout: default
       </div>
     </div> -->
     <div class="status-thesis">
-      <a href="#" id="start" class="active" onclick="activeOpenThesis()"><i class="fa fa-folder-open-o" aria-hidden="true"></i>
+      <a href="#" id="all" class="active" onclick="allThesisItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
+      All Thesis Topics</a>
+      <a href="#" id="start" class="" onclick="activeOpenThesis()"><i class="fa fa-folder-open" aria-hidden="true"></i>
       Open Thesis Topics</a>
-      <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-folder-o" aria-hidden="true"></i>
+      <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-folder" aria-hidden="true"></i>
       Completed Thesis List</a>
       <br/>
       <br/>
       <hr/>
       <br class="horizontal-separator2" />
       <div class="thesis-items">
-          <div id="openThesis" style="display:block">
+          <div id="allThesis" style="display:block">
+          </div>
+          <div id="openThesis" style="display:none">
             <!--Querry to GET Open Thesis Items-->
             {% capture query %}
             SELECT ?thesisItem ?topic ?level ?website ?open ?long  WHERE{
