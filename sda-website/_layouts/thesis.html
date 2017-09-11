@@ -100,26 +100,37 @@ layout: default
             {% for result in resultset %}
               <!--QUERY to GET all the people associated with the thesis topic  -->
               {% capture query2 %}
-              SELECT ?thesisItem ?open ?person ?name ?topic WHERE{
+              SELECT ?thesisItem ?open ?person ?name ?topic ?img WHERE{
                   ?thesisItem a ex:thesisItem .
                   ?thesisItem rdfs:label ?topic .
                   ?thesisItem ex:open ?open .
                   ?thesisItem foaf:Person ?person .
                   ?person foaf:name ?name .
+                  ?person foaf:depiction ?img .
               }
               {% endcapture %}
               {% assign resultset2 = page.rdf | sparql_query: query2 %}
                 {% capture labelname %}{{result.topic}}{% endcapture %}
-                <h1>{{result.topic}}</h1>
-                <p>{{result.long}}</p>
+                <div class="partner-title">
+                  <a><h1>{{result.topic}}</h1></a>
+                </div>
+                <div class="partner-detail">
+                  <p style="text-align:left; margin:32px;">{{result.long}}</p>
+                </div>
+                <br class="horizontal-separator" />
+                <h3>Contact Person(s)</h3>
               <!--Presentation of the resultset  -->
               {% for result2 in resultset2 %}
                 {% capture topicname %}{{result2.topic}}{% endcapture %}
 
                 {% if topicname == labelname  %}
                 {% assign url =  result2.person | remove: "http://example.org/" %}
-                <a href="../{{url}}">{{result2.name}}</a>
-                <br/>
+                <div class="partnersOfProject">
+                  <div class="chip">
+                    <img src="{{result2.img}}" alt="Person" width="96" height="96">
+                    <a href="../{{url}}">{{result2.name}}</a>
+                  </div>
+                </div>
                 {% else %}
                 {% endif %}
 
@@ -155,8 +166,12 @@ layout: default
             {% endcapture %}
             {% assign resultset2closed = page.rdf | sparql_query: query4 %}
               {% capture labelname %}{{result3.topic}}{% endcapture %}
-              <h1>{{result3.topic}}</h1>
-              <p>{{result3.long}}</p>
+              <div class="partner-title">
+                <a><h1>{{result3.topic}}</h1></a>
+              </div>
+              <div class="partner-detail">
+                <p style="text-align:left; margin:8px;">{{result3.long}}</p>
+              </div>
             <!--Presentation of the resultset  -->
             {% for result4 in resultset2closed %}
               {% capture topicname %}{{result4.topic}}{% endcapture %}

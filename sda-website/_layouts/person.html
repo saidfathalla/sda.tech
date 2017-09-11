@@ -3,35 +3,66 @@ rdf_prefix_path: simpsons.pref
 layout: default
 ---
 <article class="post">
-  <div class="content-people">
-    <h1 class="text-uppercase">{{ page.rdf | rdf_property: 'foaf:name' }}</h1>
-    <br class="horizontal-separator" />
-    <h3>{{ page.rdf | rdf_property: 'foaf:status'}}</h3>
-    <h3>Profiles: <a></a></h3>
-    <h3>{{ page.rdf | rdf_property: 'ex:room'}}</h3>
-    <h4>{{page.rdf | rdf_property: 'foaf:mailto'}}</h4>
-    <!--Querry to GET all the research interests of the person   -->
-    {% capture query %}
-        SELECT ?researchinterests ?projectname WHERE{
-            <{{page.rdf}}> ex:researchinterests ?researchinterests .
-            ?researchinterests rdfs:label ?projectname .
-    }
-    {% endcapture %}
-    {% assign resultset = page.rdf | sparql_query: query %}
-    <!--Displaying all the reseach interests of the person x  -->
-    {% include researchInterests.html result=resultset %}
+  <div class="pagination">
+    <div class="post-content">
+      <br class="horizontal-separator"/>
+      <h2 style="text-align:center;"><img class="img-circle-small" src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img> {{ page.rdf | rdf_property: 'foaf:name' }}</h2>
+      <br class="horizontal-separator2" />
+      <div class="description-project">
+        <p>{{page.rdf | rdf_property: 'cv:aboutPerson'}}</p>
+      </div>
+      <br class="horizontal-separator"/>
+      <div class="members-projects">
+        <h3>Contact</h3>
+        <div class="membersofProject">
 
-    <!--Querry to GET all the projects of the person   -->
-    {% capture query %}
-        SELECT ?project ?projectname WHERE{
-            <{{page.rdf}}> ex:project ?project .
-            ?project rdfs:label ?projectname .
-    }
-    {% endcapture %}
-    {% assign resultset2 = page.rdf | sparql_query: query %}
-    <!--Displaying all the reseach interests of the person x  -->
-    {% include projects.html result=resultset2 %}
-
-
+        </div>
+        <br class="horizontal-separator2" />
+        <br class="horizontal-separator2" />
+        <h3>Research Groups</h3>
+        <div class="partnersOfProject">
+          {% capture query %}
+              SELECT ?researchinterests ?projectname ?img WHERE{
+                  <{{page.rdf}}> ex:group ?researchinterests .
+                  ?researchinterests rdfs:label ?projectname .
+                  ?researchinterests ex:imageclass ?img .
+          }
+          {% endcapture %}
+          {% assign resultset = page.rdf | sparql_query: query %}
+          <!--Displaying all the reseach interests of the person x  -->
+          {% for result in resultset %}
+            {% assign url= result.researchinterests | remove: "http://example.org/" %}
+            <div class="chip">
+              <i class="{{result.img}}"  width="96" height="96"></i>
+              <a href="../{{url}}">{{result.projectname}}</a>
+            </div>
+          {% endfor %}
+        </div>
+        <br class="horizontal-separator2" />
+        <br class="horizontal-separator2" />
+        <h3>Projects</h3>
+        <div class="membersofProject">
+          {% capture query %}
+              SELECT ?project ?projectname ?image WHERE{
+                  <{{page.rdf}}> ex:project ?project .
+                  ?project rdfs:label ?projectname .
+                  ?project foaf:depiction ?image .
+          }
+          {% endcapture %}
+          {% assign resultset2 = page.rdf | sparql_query: query %}
+          <!--Displaying all the reseach interests of the person x  -->
+          {% for result in resultset2 %}
+            {% assign url= result.project | remove: "http://example.org/" %}
+            <div class="chip">
+              <img src="{{result.image}}" alt="Person" width="96" height="96">
+              <a href="../{{url}}">{{result.projectname}}</a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <br class="horizontal-separator2" />
+      <h3>Publications</h3>
+      <br class="horizontal-separator" />
+    </div>
   </div>
 </article>

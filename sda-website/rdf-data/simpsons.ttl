@@ -3,6 +3,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ex: <http://example.org/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@PREFIX cv: <http://rdfs.org/resume-rdf/>
 
 <http://example.org/> a foaf:Document .
 
@@ -17,6 +18,7 @@ ex:OliverOctopus a foaf:Person ;
     ex:professor "Professors";
     ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
     ex:website "http://jens-lehmann.org/" ;
+    cv:aboutPerson "Claus Stadler is a PhD Student at the University of Leipzig. Claus’s research interests are in the area of Geospatial Data Lifecycle.";
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg> ;
     foaf:mbox <mailto:Octopus@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -36,6 +38,7 @@ ex:CorneliusCrab a foaf:Person ;
     ex:professor "Professors";
     ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
     ex:website "http://jens-lehmann.org/" ;
+    cv:aboutPerson "Lorem ispum espagol";
     foaf:depiction <http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png> ;
     foaf:mbox <mailto:Cornelius@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -54,6 +57,7 @@ ex:LarryLobster a foaf:Person ;
     ex:seniorResearchers "Senior Researchers";
     ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
     ex:website "http://jens-lehmann.org/" ;
+    cv:aboutPerson "Lorem ispum espagol";
     foaf:depiction <https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png> ;
     foaf:mbox <mailto:Larry@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -70,6 +74,7 @@ ex:AlexanderKister a foaf:Person ;
     ex:phdStudents "Phd Students";
     ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
     ex:website "http://jens-lehmann.org/" ;
+    cv:aboutPerson "Lorem ispum espagol";
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
     foaf:mbox <mailto:Alfred@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -88,6 +93,7 @@ ex:AlfredEel a foaf:Person ;
     ex:associateResearchers "Associate Researchers";
     ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
     ex:website "http://jens-lehmann.org/" ;
+    cv:aboutPerson "Lorem ispum espagol";
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
     foaf:mbox <mailto:Alfred@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
@@ -273,12 +279,12 @@ ex:outhouse a ex:job ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
 ex:opendata a ex:researchinterests ;
-    rdfs:label "bdsw" ;
+    rdfs:label "open data" ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
 ex:linkeddata a ex:researchinterests ;
-    rdfs:label "aksw" ;
+    rdfs:label "linked data" ;
     ex:description "The future of SHared Ontology REfining for enterprise business" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
@@ -353,7 +359,6 @@ ex:Mainnav a ex:navigation ;
     rdf:_7 ex:teaching ;
     rdf:_8 ex:thesis ;
     rdf:_9 ex:partners .
-
 
 
 ex:description a foaf:Document ;
