@@ -83,6 +83,7 @@ layout: default
           <div id="allThesis" style="display:block">
           </div>
           <div id="openThesis" style="display:none">
+            {% assign count=0 %}
             <!--Querry to GET Open Thesis Items-->
             {% capture query %}
             SELECT ?thesisItem ?topic ?level ?website ?open ?long  WHERE{
@@ -110,6 +111,7 @@ layout: default
               }
               {% endcapture %}
               {% assign resultset2 = page.rdf | sparql_query: query2 %}
+              {% assign size = resultset | size %}
                 {% capture labelname %}{{result.topic}}{% endcapture %}
                 <div class="partner-title">
                   <a><h1>{{result.topic}}</h1></a>
@@ -117,25 +119,27 @@ layout: default
                 <div class="partner-detail">
                   <p style="text-align:left; margin:32px;">{{result.long}}</p>
                 </div>
-                <br class="horizontal-separator" />
-                <h3>Contact Person(s)</h3>
+                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
               <!--Presentation of the resultset  -->
-              {% for result2 in resultset2 %}
-                {% capture topicname %}{{result2.topic}}{% endcapture %}
+              <div class="person-chips" style="text-align:left; margin-left:32px;">
+                {% for result2 in resultset2 %}
+                  {% capture topicname %}{{result2.topic}}{% endcapture %}
 
-                {% if topicname == labelname  %}
-                {% assign url =  result2.person | remove: "http://example.org/" %}
-                <div class="partnersOfProject">
-                  <div class="chip">
-                    <img src="{{result2.img}}" alt="Person" width="96" height="96">
-                    <a href="../{{url}}">{{result2.name}}</a>
+                  {% if topicname == labelname  %}
+                  {% assign url =  result2.person | remove: "http://example.org/" %}
+                  <div class="partnersOfProject">
+                    <div class="chip">
+                      <img src="{{result2.img}}" alt="Person" width="96" height="96">
+                      <a href="../{{url}}">{{result2.name}}</a>
+                    </div>
                   </div>
-                </div>
-                {% else %}
-                {% endif %}
+                  {% else %}
+                  {% endif %}
 
-              {% endfor %}
-              <br/><hr/><br/>
+                {% endfor %}
+              </div>
+              <br/>{% if count != size %}<hr/>{% endif %}<br class="horizontal-separator" />
+              {% assign count = count | plus: 1 %}
             {% endfor %}
         </div>
         <div id="finishedThesis" style="display:none">
