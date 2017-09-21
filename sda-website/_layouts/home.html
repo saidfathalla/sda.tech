@@ -73,6 +73,7 @@ layout: default
     {% for group in groups %}
     {% assign url= group.group | remove: "http://example.org/" %}
     {% capture imageClass %}{{group.imageclass}}{% endcapture %}
+    {% capture name %}{{group.description}}{% endcapture %}
     {% assign image=imageClass | append:' fa-3x' %}
       <div class="groupCard">
         <div class="groupImage">
@@ -80,9 +81,10 @@ layout: default
             <h3>{{group.description}}</h3>
         </div>
         <div class="groupName">
-          <div class="chip">
+
+          <div class="chip chipForSmall">
             <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-            John Doe
+            Jens Lehmann
           </div>
         </div>
       </div>

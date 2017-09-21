@@ -230,29 +230,246 @@ layout: default
         <!--GET querry for Structured Machine Learning  -->
         {% if name == site.data.groupTypes[2].name %}
           <div id="sml" style="display:none">
-            {% include groups.html %}
+            <div class="post-content">
+              <div>
+                <div class="container">
+                  <br/>
+                  <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <br class="horizontal-separator" />
+                  <p>{{result.desc}}</p>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Group Members</h2>
+                  <div class="membersofProject">
+                    {% for result3 in resultset3 %}
+                      {% capture groupname %}{{result3.name}}{% endcapture %}
+                      {% if groupname == name %}
+                      {% assign url= result3.person | remove: "http://example.org/" %}
+                        <div class="chip">
+                          <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                          <a href="../{{url}}">{{result3.nameperson}}</a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Projects</h2>
+                  <div class="partnersOfProject">
+                    {% for result2 in resultset2 %}
+                      {% capture groupname %}{{result2.name}}{% endcapture %}
+                      {% if groupname == name %}
+                        {% assign url= result2.project | remove: "http://example.org/" %}
+                          <div class="chip">
+                            <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                            <a href="../{{url}}">{{result2.nameproject}}</a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Publications </h2>
+                  <br class="horizontal-separator2" />
+                </div>
+              </div>
+            </div>
           </div>
         {% endif %}
         <!--GET querry for Deep Learning  -->
         {% if name == site.data.groupTypes[3].name %}
           <div id="dl" style="display:none">
-            {% include groups.html %}
+            <div class="post-content">
+              <div>
+                <div class="container">
+                  <br/>
+                  <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <br class="horizontal-separator" />
+                  <p>{{result.desc}}</p>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Group Members</h2>
+                  <div class="membersofProject">
+                    {% for result3 in resultset3 %}
+                      {% capture groupname %}{{result3.name}}{% endcapture %}
+                      {% if groupname == name %}
+                      {% assign url= result3.person | remove: "http://example.org/" %}
+                        <div class="chip">
+                          <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                          <a href="../{{url}}">{{result3.nameperson}}</a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Projects</h2>
+                  <div class="partnersOfProject">
+                    {% for result2 in resultset2 %}
+                      {% capture groupname %}{{result2.name}}{% endcapture %}
+                      {% if groupname == name %}
+                        {% assign url= result2.project | remove: "http://example.org/" %}
+                          <div class="chip">
+                            <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                            <a href="../{{url}}">{{result2.nameproject}}</a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Publications </h2>
+                  <br class="horizontal-separator2" />
+                </div>
+              </div>
+            </div>
           </div>
         {% endif %}
         <!--GET querry for Semantic Data Management  -->
         {% if name == site.data.groupTypes[4].name %}
           <div id="sdm" style="display:none">
-            {% include groups.html %}
+            <div class="post-content">
+              <div>
+                <div class="container">
+                  <br/>
+                  <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <br class="horizontal-separator" />
+                  <p>{{result.desc}}</p>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Group Members</h2>
+                  <div class="membersofProject">
+                    {% for result3 in resultset3 %}
+                      {% capture groupname %}{{result3.name}}{% endcapture %}
+                      {% if groupname == name %}
+                      {% assign url= result3.person | remove: "http://example.org/" %}
+                        <div class="chip">
+                          <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                          <a href="../{{url}}">{{result3.nameperson}}</a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Projects</h2>
+                  <div class="partnersOfProject">
+                    {% for result2 in resultset2 %}
+                      {% capture groupname %}{{result2.name}}{% endcapture %}
+                      {% if groupname == name %}
+                        {% assign url= result2.project | remove: "http://example.org/" %}
+                          <div class="chip">
+                            <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                            <a href="../{{url}}">{{result2.nameproject}}</a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Publications </h2>
+                  <br class="horizontal-separator2" />
+                </div>
+              </div>
+            </div>
           </div>
         {% endif %}
         <!--GET querry for SoftwareEngineeringforDataScience  -->
         {% if name == site.data.groupTypes[5].name %}
           <div id="seds" style="display:none">
+            <div class="post-content">
+              <div>
+                <div class="container">
+                  <br/>
+                  <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <br class="horizontal-separator" />
+                  <p>{{result.desc}}</p>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Group Members</h2>
+                  <div class="membersofProject">
+                    {% for result3 in resultset3 %}
+                      {% capture groupname %}{{result3.name}}{% endcapture %}
+                      {% if groupname == name %}
+                      {% assign url= result3.person | remove: "http://example.org/" %}
+                        <div class="chip">
+                          <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                          <a href="../{{url}}">{{result3.nameperson}}</a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Projects</h2>
+                  <div class="partnersOfProject">
+                    {% for result2 in resultset2 %}
+                      {% capture groupname %}{{result2.name}}{% endcapture %}
+                      {% if groupname == name %}
+                        {% assign url= result2.project | remove: "http://example.org/" %}
+                          <div class="chip">
+                            <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                            <a href="../{{url}}">{{result2.nameproject}}</a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Publications </h2>
+                  <br class="horizontal-separator2" />
+                </div>
+              </div>
+            </div>
           </div>
         {% endif %}
         <!--GET querry for KnowledgeExtractionandValidation  -->
         {% if name == site.data.groupTypes[6].name %}
           <div id="knv" style="display:none">
+            <div class="post-content">
+              <div>
+                <div class="container">
+                  <br/>
+                  <h2 style="text-align:center;"><i class="{{result.imageclass}}"></i> {{result.name}}</h2>
+                  <br class="horizontal-separator" />
+                  <p>{{result.desc}}</p>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Group Members</h2>
+                  <div class="membersofProject">
+                    {% for result3 in resultset3 %}
+                      {% capture groupname %}{{result3.name}}{% endcapture %}
+                      {% if groupname == name %}
+                      {% assign url= result3.person | remove: "http://example.org/" %}
+                        <div class="chip">
+                          <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                          <a href="../{{url}}">{{result3.nameperson}}</a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Projects</h2>
+                  <div class="partnersOfProject">
+                    {% for result2 in resultset2 %}
+                      {% capture groupname %}{{result2.name}}{% endcapture %}
+                      {% if groupname == name %}
+                        {% assign url= result2.project | remove: "http://example.org/" %}
+                          <div class="chip">
+                            <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                            <a href="../{{url}}">{{result2.nameproject}}</a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <br class="horizontal-separator" />
+                  <br class="horizontal-separator" />
+                  <h2>Publications </h2>
+                  <br class="horizontal-separator2" />
+                </div>
+              </div>
+            </div>
           </div>
         {% endif %}
       {% endfor %}

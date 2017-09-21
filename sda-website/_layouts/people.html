@@ -10,33 +10,24 @@ layout: default
       if( name == "{{site.data.peopleTypes[0].name}}" ){
         document.getElementById('Prof').style.display = 'inline-block';
         document.getElementById('Professors').classList.add('active');
-        activePType='Professor';
       }else if( name == "{{site.data.peopleTypes[1].name}}" ){
         document.getElementById('SeniorResch').style.display = 'inline-block';
         document.getElementById('SeniorResearchers').classList.add('active');
-        activePType='Senior Researcher';
-        console.log(activePType);
       }else if( name == "{{site.data.peopleTypes[2].name}}" ){
         document.getElementById('Phd').style.display = 'inline-block';
         document.getElementById('PhDStudents').classList.add('active');
-        activePType='PhD Student';
       }else if( name == "{{site.data.peopleTypes[3].name}}" ){
         document.getElementById('AR').style.display = 'inline-block';
         document.getElementById('Associatedresearches').classList.add('active');
-        activePType='Associated Researcher';
       }else if( name == "{{site.data.peopleTypes[4].name}}"){
         document.getElementById('SA').style.display = 'inline-block';
         document.getElementById('StudentAssistants').classList.add('active');
-        activePType='Student Assistants';
       }else if( name == "{{site.data.peopleTypes[5].name}}" ){
         document.getElementById('Int').style.display = 'inline-block';
         document.getElementById('Interns').classList.add('active');
-        activePType='Intern';
       }else if( name == "{{site.data.peopleTypes[6].name}}" ){
         document.getElementById('Former').style.display = 'inline-block';
         document.getElementById('FormerMembers').classList.add('active');
-        activePType='Former Member';
-
       }else
         console.log("Invalid People Type Name");
     }
@@ -66,7 +57,7 @@ layout: default
             <a href="#" id="{{people.name | remove: " " }}" class="active" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
      {{people.name}}</a>
           {% else %}
-            <a href="#" id="{{people.name | remove: " " }}" onclick="changeActivePersons('{{people.name}}')">{{people.name}}</a>
+            <a href="#" id="{{people.name | remove: " " }}" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-level-up" aria-hidden="true"></i> {{people.name}}</a>
           {% endif%}
         {% endfor %}
         <br/><br/><hr class="ruleh"/>
