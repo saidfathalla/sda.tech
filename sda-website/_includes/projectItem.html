@@ -16,19 +16,19 @@
   <div class="links-to-social" style="text-align:left;">
     {% capture count %}{{include.twitter}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+      <a href="{{include.twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
     {% endif %}
     {% capture count %}{{include.homepage}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.homepage}}"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
+      <a href="{{include.homepage}}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
     {% endif %}
     {% capture count %}{{include.source}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.source}}"><i class="fa fa-file" aria-hidden="true"></i> Source</a>
+      <a href="{{include.source}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
     {% endif %}
     {% capture count %}{{include.download}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.download}}"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+      <a href="{{include.download}}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
     {% endif %}
   </div>
   <br class="horizontal-separator"/>

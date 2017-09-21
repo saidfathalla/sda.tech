@@ -66,7 +66,40 @@ function allProjectItems(){
       <hr/>
     </div>
     <div class="projects">
-      <div id="allProjects" style="display:none">
+      <div id="allProjects" style="display:block">
+        <!-- QUERRY to GET ALL the FundedProjects -->
+        {% capture query %}
+        SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
+            ?project a ex:project .
+            ?project rdfs:label ?title .
+            ?project ex:description ?description .
+            ?project ex:longdescription ?longdescription .
+            ?project foaf:depiction ?image .
+            ?project ex:homepage ?homepage .
+            ?project ex:twitter ?twitter .
+            ?project ex:source ?source .
+            ?project ex:download ?download .
+        }
+        {% endcapture %}
+        {% assign allProjects = page.rdf | sparql_query: query %}
+        <!-- Presentation of the Funded Projects  -->
+        {% assign allProjectCount = allProjects | size %}
+        {% assign iterator = 1 %}
+        {% assign lastItem = 0 %}
+        {% for project in allProjects %}
+          {% if iterator == allProjectCount %}
+            {% assign lastItem = 1 %}
+          {% else %}
+            {% assign lastItem = 0 %}
+          {% endif %}
+          {% assign url= project.project | remove: "http://example.org/" %}
+          {% include projectItem.html title=project.title  image=project.image
+            description=project.longdescription last=lastItem href=url
+            homepage=project.homepage twitter=project.twitter source=project.source
+            download=project.download
+          %}
+          {% assign iterator = iterator | plus:1 %}
+        {% endfor %}
       </div>
       <div id="fundedProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
