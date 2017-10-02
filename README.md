@@ -1,5 +1,5 @@
 # sda.tech
-This is the source of the [sda.tech](http://sda.tech/) website which is served with 
+This is the source of the [sda.tech](http://sda.tech/) website which is served with
 [OntoWiki](http://ontowiki.net), [Jekyll](https://jekyllrb.com/) and [Jekyll-RDF](https://github.com/white-gecko/jekyll-rdf)'s plugin.
 
 # Contents
@@ -24,6 +24,12 @@ So after setting up Jekyll on your computer you can clone sda.tech repository at
 ```sh
 bundle exec jekyll serve
 ```
+## Using Docker
+We make use of a [docker image](https://github.com/white-gecko/dockerjekyllpages) to build a sda.tech page from a Git repository or local sources. This is essentially githubpages in a docker image. This docker image uses nginx, Jekyll, uwsgi and supervisor.
+
+```sh
+docker run -d --name sdatech --hostname sda.tech -p 8080:80 -v /var/www/sda.tech/:/data/jekyll/ whitegecko/dockerjekyllpages
+```
 
 # Plugins & Externals Used
 Following plugins have been used for building up the sda website:
@@ -37,7 +43,7 @@ You just have to run the following command inorder to include them in your proje
 bundle exec jekyll build
 ```
 
-# File Structure & Architecture 
+# File Structure & Architecture
 
 # A New Users Guide
 
@@ -80,4 +86,3 @@ For anyone who wants to maintain the sda.tech website and keep updating the late
 ## Configuration
 
 # Setting up Sites and Templates
-
