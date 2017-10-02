@@ -6,75 +6,43 @@ layout: default
   <div class="pagination">
     <div class="post-content">
       <div class="main-content">
-        <!-- <div class="logo-project">
-          <img src="{{ page.rdf | rdf_property: 'foaf:depiction' }}"
-          alt="{{ page.rdf | rdf_property: 'ex:description' }}">
-        </div>
-        <div class="title-project">
-          <p class="text-uppercase">{{ page.rdf | rdf_property: 'ex:description' }}</p>
-        </div>
-        <div class="main-description-project">
-          <p class="text-uppercase">{{ page.rdf | rdf_property: 'ex:longdescription' }}</p>
-        </div>
-        <div class="links-social">
-        </div> -->
-        {% assign title= page.rdf | rdf_property: 'rdfs:label' %}
-        {% assign image= page.rdf | rdf_property: 'foaf:depiction' %}
-        {% assign description= page.rdf |rdf_property: 'ex:longdescription' %}
-        {% include projectItem.html title=title  image=image
-          description=description last=1 href=url
-          homepage=project.homepage twitter=project.twitter source=project.source
-          download=project.download
-        %}
+        {% assign title= page.rdf | rdf_property: 'rdfs:label' %} {% assign image= page.rdf | rdf_property: 'foaf:depiction' %} {% assign description= page.rdf |rdf_property: 'ex:longdescription' %} {% include projectItem.html title=title image=image description=description
+        last=1 href=url homepage=project.homepage twitter=project.twitter source=project.source download=project.download %}
       </div>
       <br class="hosizontal-separator" />
       <br class="hosizontal-separator" />
       <div class="members-projects">
         <h3>Team</h3>
         <div class="membersofProject">
-          {% capture query %}
-              SELECT ?person ?personname ?image WHERE{
-                  <{{page.rdf}}> foaf:Person ?person .
-                  ?person foaf:name ?personname .
-                  ?person foaf:depiction ?image .
-          }
-          {% endcapture %}
-          {% assign team = page.rdf | sparql_query: query %}
-          {% for person in team %}
-            {% assign url= person.person | remove: "http://example.org/" %}
+          {% capture query %} SELECT ?person ?personname ?image WHERE{
+          <{{page.rdf}}> foaf:Person ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image . } {% endcapture %} {% assign team = page.rdf | sparql_query: query %} {% for person in team %} {% assign url= person.person | remove: "http://example.org/"
+            %}
             <div class="chip">
               <img src="{{person.image}}" alt="Person" width="96" height="96">
               <a href="../{{url}}">{{person.personname}}</a>
             </div>
-          {% endfor %}
+            {% endfor %}
         </div>
         <br class="horizontal-separator2" />
         <br class="horizontal-separator2" />
         <h3>Partners</h3>
         <div class="partnersOfProject">
-          {% capture query %}
-              SELECT ?partner ?partnername ?image WHERE{
-                  <{{page.rdf}}> ex:partners ?partner .
-                  ?partner rdfs:label ?partnername .
-                  ?partner foaf:depiction ?image .
-          }
-          {% endcapture %}
-          {% assign partners = page.rdf | sparql_query: query %}
-          {% for partner in partners %}
-            {% assign url= partner.partner | remove: "http://example.org/" %}
+          {% capture query %} SELECT ?partner ?partnername ?image WHERE{
+          <{{page.rdf}}> ex:partners ?partner . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% for partner in partners %} {% assign url= partner.partner | remove: "http://example.org/"
+            %}
             <div class="chip">
               <img src="{{partner.image}}" alt="Person" width="96" height="96">
               <a href="../{{url}}">{{partner.partnername}}</a>
             </div>
-          {% endfor %}
+            {% endfor %}
         </div>
       </div>
       <br class="horizontal-separator" />
       <br class="horizontal-separator" />
       <h3>Publications</h3>
       <div class="publications-project">
-      <div>
-      <br class="horizontal-separator2" />
+        <div>
+          <br class="horizontal-separator2" />
+        </div>
+      </div>
     </div>
-  </div>
-</div>

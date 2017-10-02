@@ -4,50 +4,50 @@ layout: default
 ---
 <!-- Script for the Pagination of the different types of the Projects  -->
 <script>
-function activeFundedProjects(){
-  document.getElementById('fundedProjects').style.display = 'block';
-  document.getElementById('funded').classList.add('active');
-  document.getElementById('openSourceProjects').style.display = 'none';
-  document.getElementById('opensrc').classList.remove('active');
-  document.getElementById('incubatorProjects').style.display = 'none';
-  document.getElementById('incubators').classList.remove('active');
-  document.getElementById('allProjects').style.display = 'none';
-  document.getElementById('all').classList.remove('active');
-}
+  function activeFundedProjects() {
+    document.getElementById('fundedProjects').style.display = 'block';
+    document.getElementById('funded').classList.add('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
 
-function activeOpenSourceProjects(){
-  document.getElementById('fundedProjects').style.display = 'none';
-  document.getElementById('funded').classList.remove('active');
-  document.getElementById('openSourceProjects').style.display = 'block';
-  document.getElementById('opensrc').classList.add('active');
-  document.getElementById('incubatorProjects').style.display = 'none';
-  document.getElementById('incubators').classList.remove('active');
-  document.getElementById('allProjects').style.display = 'none';
-  document.getElementById('all').classList.remove('active');
-}
+  function activeOpenSourceProjects() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'block';
+    document.getElementById('opensrc').classList.add('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
 
-function incubatorProjects(){
-  document.getElementById('fundedProjects').style.display = 'none';
-  document.getElementById('funded').classList.remove('active');
-  document.getElementById('openSourceProjects').style.display = 'none';
-  document.getElementById('opensrc').classList.remove('active');
-  document.getElementById('incubatorProjects').style.display = 'block';
-  document.getElementById('incubators').classList.add('active');
-  document.getElementById('allProjects').style.display = 'none';
-  document.getElementById('all').classList.remove('active');
-}
+  function incubatorProjects() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'block';
+    document.getElementById('incubators').classList.add('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
 
-function allProjectItems(){
-  document.getElementById('fundedProjects').style.display = 'none';
-  document.getElementById('funded').classList.remove('active');
-  document.getElementById('openSourceProjects').style.display = 'none';
-  document.getElementById('opensrc').classList.remove('active');
-  document.getElementById('incubatorProjects').style.display = 'none';
-  document.getElementById('incubators').classList.remove('active');
-  document.getElementById('allProjects').style.display = 'block';
-  document.getElementById('all').classList.add('active');
+  function allProjectItems() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'block';
+    document.getElementById('all').classList.add('active');
 
-}
+  }
 </script>
 
 <div class="post">
@@ -55,7 +55,7 @@ function allProjectItems(){
     <div class="status-projects">
       <a href="#" id="all" class="active" onclick="allProjectItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
       All Projects</a>
-      <a href="#" id="funded" class="" onclick="activeFundedProjects()" ><i class="fa fa-money" aria-hidden="true"></i>
+      <a href="#" id="funded" class="" onclick="activeFundedProjects()"><i class="fa fa-money" aria-hidden="true"></i>
       Funded Projects</a>
       <a href="#" id="opensrc" class="" onclick="activeOpenSourceProjects()"><i class="fa fa-code-fork" aria-hidden="true"></i>
       Open Source Projects</a>
@@ -68,146 +68,41 @@ function allProjectItems(){
     <div class="projects">
       <div id="allProjects" style="display:block">
         <!-- QUERRY to GET ALL the FundedProjects -->
-        {% capture query %}
-        SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
-            ?project a ex:project .
-            ?project rdfs:label ?title .
-            ?project ex:description ?description .
-            ?project ex:longdescription ?longdescription .
-            ?project foaf:depiction ?image .
-            ?project ex:homepage ?homepage .
-            ?project ex:twitter ?twitter .
-            ?project ex:source ?source .
-            ?project ex:download ?download .
-        }
-        {% endcapture %}
-        {% assign allProjects = page.rdf | sparql_query: query %}
+        {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a ex:project . ?project rdfs:label ?title . ?project ex:description ?description . ?project ex:longdescription ?longdescription
+        . ?project foaf:depiction ?image . ?project ex:homepage ?homepage . ?project ex:twitter ?twitter . ?project ex:source ?source . ?project ex:download ?download . } {% endcapture %} {% assign allProjects = page.rdf | sparql_query: query %}
         <!-- Presentation of the Funded Projects  -->
-        {% assign allProjectCount = allProjects | size %}
-        {% assign iterator = 1 %}
-        {% assign lastItem = 0 %}
-        {% for project in allProjects %}
-          {% if iterator == allProjectCount %}
-            {% assign lastItem = 1 %}
-          {% else %}
-            {% assign lastItem = 0 %}
-          {% endif %}
-          {% assign url= project.project | remove: "http://example.org/" %}
-          {% include projectItem.html title=project.title  image=project.image
-            description=project.longdescription last=lastItem href=url
-            homepage=project.homepage twitter=project.twitter source=project.source
-            download=project.download
-          %}
-          {% assign iterator = iterator | plus:1 %}
-        {% endfor %}
+        {% assign allProjectCount = allProjects | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %} {% for project in allProjects %} {% if iterator == allProjectCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign
+        url= project.project | remove: "http://example.org/" %} {% include projectItem.html title=project.title image=project.image description=project.longdescription last=lastItem href=url homepage=project.homepage twitter=project.twitter source=project.source
+        download=project.download %} {% assign iterator = iterator | plus:1 %} {% endfor %}
       </div>
       <div id="fundedProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
-        {% capture query %}
-        SELECT ?project ?funded ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
-            ?project a ex:project .
-            ?project ex:funded ?funded .
-            ?project rdfs:label ?title .
-            ?project ex:description ?description .
-            ?project ex:longdescription ?longdescription .
-            ?project foaf:depiction ?image .
-            ?project ex:homepage ?homepage .
-            ?project ex:twitter ?twitter .
-            ?project ex:source ?source .
-            ?project ex:download ?download .
-        }
-        {% endcapture %}
-        {% assign fundprojects = page.rdf | sparql_query: query %}
+        {% capture query %} SELECT ?project ?funded ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a ex:project . ?project ex:funded ?funded . ?project rdfs:label ?title . ?project ex:description ?description
+        . ?project ex:longdescription ?longdescription . ?project foaf:depiction ?image . ?project ex:homepage ?homepage . ?project ex:twitter ?twitter . ?project ex:source ?source . ?project ex:download ?download . } {% endcapture %} {% assign fundprojects
+        = page.rdf | sparql_query: query %}
         <!-- Presentation of the Funded Projects  -->
-        {% assign fundedProjectCount = fundprojects | size %}
-        {% assign iterator = 1 %}
-        {% assign lastItem = 0 %}
-        {% for project in fundprojects %}
-          {% if iterator == fundedProjectCount %}
-            {% assign lastItem = 1 %}
-          {% else %}
-            {% assign lastItem = 0 %}
-          {% endif %}
-          {% assign url= project.project | remove: "http://example.org/" %}
-          {% include projectItem.html title=project.title  image=project.image
-            description=project.longdescription last=lastItem href=url
-            homepage=project.homepage twitter=project.twitter source=project.source
-            download=project.download
-          %}
-          {% assign iterator = iterator | plus:1 %}
-        {% endfor %}
+        {% assign fundedProjectCount = fundprojects | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %} {% for project in fundprojects %} {% if iterator == fundedProjectCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif
+        %} {% assign url= project.project | remove: "http://example.org/" %} {% include projectItem.html title=project.title image=project.image description=project.longdescription last=lastItem href=url homepage=project.homepage twitter=project.twitter
+        source=project.source download=project.download %} {% assign iterator = iterator | plus:1 %} {% endfor %}
       </div>
       <div id="openSourceProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
-        {% capture query %}
-        SELECT ?project ?opensource ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
-            ?project a ex:project .
-            ?project ex:opensource ?opensource .
-            ?project rdfs:label ?title .
-            ?project ex:description ?description .
-            ?project ex:longdescription ?longdescription .
-            ?project foaf:depiction ?image .
-            ?project ex:homepage ?homepage .
-            ?project ex:twitter ?twitter .
-            ?project ex:source ?source .
-            ?project ex:download ?download .
-        }
-        {% endcapture %}
-        {% assign opensource = page.rdf | sparql_query: query %}
-        {% assign opensourceCount = opensource | size %}
-        {% assign iterator = 1 %}
-        {% assign lastItem = 0 %}
+        {% capture query %} SELECT ?project ?opensource ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a ex:project . ?project ex:opensource ?opensource . ?project rdfs:label ?title . ?project ex:description ?description
+        . ?project ex:longdescription ?longdescription . ?project foaf:depiction ?image . ?project ex:homepage ?homepage . ?project ex:twitter ?twitter . ?project ex:source ?source . ?project ex:download ?download . } {% endcapture %} {% assign opensource
+        = page.rdf | sparql_query: query %} {% assign opensourceCount = opensource | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
         <!-- Presentation of the Incubators Projects  -->
-        {% for open in opensource %}
-          {% if iterator == opensourceCount %}
-            {% assign lastItem = 1 %}
-          {% else %}
-            {% assign lastItem = 0 %}
-          {% endif %}
-          {% assign url= open.project | remove: "http://example.org/" %}
-          {% include projectItem.html title=open.title  image=open.image
-            description=open.longdescription last=lastItem href=url
-            homepage=open.homepage twitter=open.twitter source=open.source
-            download=open.download
-          %}
-          {% assign iterator = iterator | plus:1 %}
-        {% endfor %}
+        {% for open in opensource %} {% if iterator == opensourceCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign url= open.project | remove: "http://example.org/" %} {% include projectItem.html title=open.title image=open.image
+        description=open.longdescription last=lastItem href=url homepage=open.homepage twitter=open.twitter source=open.source download=open.download %} {% assign iterator = iterator | plus:1 %} {% endfor %}
       </div>
       <div id="incubatorProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
-        {% capture query %}
-        SELECT ?project ?incubator ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{
-            ?project a ex:project .
-            ?project ex:incubator ?incubator .
-            ?project rdfs:label ?title .
-            ?project ex:description ?description .
-            ?project ex:longdescription ?longdescription .
-            ?project foaf:depiction ?image .
-            ?project ex:homepage ?homepage .
-            ?project ex:twitter ?twitter .
-            ?project ex:source ?source .
-            ?project ex:download ?download .
-        }
-        {% endcapture %}
-        {% assign incubators = page.rdf | sparql_query: query %}
-        {% assign incubatorsCount = incubators | size %}
-        {% assign iterator = 1 %}
-        {% assign lastItem = 0 %}
+        {% capture query %} SELECT ?project ?incubator ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a ex:project . ?project ex:incubator ?incubator . ?project rdfs:label ?title . ?project ex:description ?description
+        . ?project ex:longdescription ?longdescription . ?project foaf:depiction ?image . ?project ex:homepage ?homepage . ?project ex:twitter ?twitter . ?project ex:source ?source . ?project ex:download ?download . } {% endcapture %} {% assign incubators
+        = page.rdf | sparql_query: query %} {% assign incubatorsCount = incubators | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
         <!-- Presentation of the Open Source Projects  -->
-        {% for incubator in incubators %}
-          {% if iterator == incubatorsCount %}
-            {% assign lastItem = 1 %}
-          {% else %}
-            {% assign lastItem = 0 %}
-          {% endif %}
-          {% assign url= incubator.project | remove: "http://example.org/" %}
-          {% include projectItem.html title=incubator.title  image=incubator.image
-            description=incubator.longdescription last=lastItem href=url
-            homepage=incubator.homepage twitter=incubator.twitter source=incubator.source
-            download=incubator.download url=url
-          %}
-          {% assign iterator = iterator | plus:1 %}
-        {% endfor %}
+        {% for incubator in incubators %} {% if iterator == incubatorsCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign url= incubator.project | remove: "http://example.org/" %} {% include projectItem.html title=incubator.title
+        image=incubator.image description=incubator.longdescription last=lastItem href=url homepage=incubator.homepage twitter=incubator.twitter source=incubator.source download=incubator.download url=url %} {% assign iterator = iterator | plus:1 %} {%
+        endfor %}
       </div>
     </div>
-</div>
+  </div>

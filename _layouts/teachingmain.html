@@ -4,8 +4,7 @@ layout: default
 ---
 
 <script>
-  function activeSummerCourses()
-  {
+  function activeSummerCourses() {
     document.getElementById('summerCourses').style.display = 'block';
     document.getElementById('summer').classList.add('active');
     document.getElementById('winterCourses').style.display = 'none';
@@ -15,8 +14,7 @@ layout: default
 
   }
 
-  function activeWinterCourses()
-  {
+  function activeWinterCourses() {
     document.getElementById('summerCourses').style.display = 'none';
     document.getElementById('summer').classList.remove('active');
     document.getElementById('winterCourses').style.display = 'block';
@@ -25,8 +23,7 @@ layout: default
     document.getElementById('old').classList.remove('active');
   }
 
-  function allOldCourses()
-  {
+  function allOldCourses() {
     document.getElementById('summerCourses').style.display = 'none';
     document.getElementById('summer').classList.remove('active');
     document.getElementById('winterCourses').style.display = 'none';

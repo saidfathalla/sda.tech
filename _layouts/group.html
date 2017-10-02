@@ -2,38 +2,24 @@
 rdf_prefix_path: simpsons.pref
 layout: default
 ---
-{% capture query %}
-    SELECT ?projects ?projectname ?image WHERE{
-        <{{page.rdf}}> ex:project ?projects .
-        ?projects rdfs:label ?projectname .
-        ?projects foaf:depiction ?image .
-}
-{% endcapture %}
-{% assign resultset = page.rdf | sparql_query: query %}
-{% capture query %}
-    SELECT ?person ?personname ?image WHERE{
-        <{{page.rdf}}> foaf:Person ?person .
-        ?person foaf:name ?personname .
-        ?person foaf:depiction ?image .
-}
-{% endcapture %}
-{% assign resultset2 = page.rdf | sparql_query: query %}
-<!--Presentation of the GROUP Items-->
-<article class="post">
-  <div class="pagination">
-    <div class="post-content">
-      <br class="horizontal-separator"/>
-      <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'ex:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
-      <br class="horizontal-separator2" />
-      <div class="description-project">
-        <p>{{ page.rdf | rdf_property: 'ex:longdescription'}}</p>
-      </div>
-      <br class="horizontal-separator"/>
-      <div class="members-projects">
-        <h3>Members</h3>
-        <div class="membersofProject">
-          {% for result in resultset2 %}
-            {% assign url= result.person | remove: "http://example.org/" %}
+{% capture query %} SELECT ?projects ?projectname ?image WHERE{
+<{{page.rdf}}> ex:project ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
+  <{{page.rdf}}> foaf:Person ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+    <!--Presentation of the GROUP Items-->
+    <article class="post">
+      <div class="pagination">
+        <div class="post-content">
+          <br class="horizontal-separator" />
+          <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'ex:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
+          <br class="horizontal-separator2" />
+          <div class="description-project">
+            <p>{{ page.rdf | rdf_property: 'ex:longdescription'}}</p>
+          </div>
+          <br class="horizontal-separator" />
+          <div class="members-projects">
+            <h3>Members</h3>
+            <div class="membersofProject">
+              {% for result in resultset2 %} {% assign url= result.person | remove: "http://example.org/" %}
               <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
               <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
               <div class="chip">
@@ -41,24 +27,23 @@ layout: default
                 <a href="../{{url}}">{{result.personname}}</a>
               </div>
 
-          {% endfor %}
-        </div>
-        <br class="horizontal-separator2" />
-        <br class="horizontal-separator2" />
-        <h3>Partners</h3>
-        <div class="partnersOfProject">
-          {% for result in resultset %}
-          {% assign url= result.projects | remove: "http://example.org/" %}
-            <div class="chip">
-              <img src="{{result.image}}" alt="Person" width="96" height="96">
-              <a href="../{{url}}">{{result.projectname}}</a>
+              {% endfor %}
             </div>
-          {% endfor %}
+            <br class="horizontal-separator2" />
+            <br class="horizontal-separator2" />
+            <h3>Partners</h3>
+            <div class="partnersOfProject">
+              {% for result in resultset %} {% assign url= result.projects | remove: "http://example.org/" %}
+              <div class="chip">
+                <img src="{{result.image}}" alt="Person" width="96" height="96">
+                <a href="../{{url}}">{{result.projectname}}</a>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <br class="horizontal-separator2" />
+          <h3>Publications</h3>
+          <br class="horizontal-separator" />
         </div>
       </div>
-      <br class="horizontal-separator2" />
-      <h3>Publications</h3>
-      <br class="horizontal-separator" />
-    </div>
-  </div>
-</article>
+    </article>

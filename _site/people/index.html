@@ -1323,102 +1323,74 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <script>
-    function changeActivePersons(name){
-      clearAllTypes();
-      clearAllTabs();
+  function changeActivePersons(name) {
+    clearAllTypes();
+    clearAllTabs();
 
-      if( name == "Professors" ){
-        document.getElementById('Prof').style.display = 'inline-block';
-        document.getElementById('Professors').classList.add('active');
-      }else if( name == "Senior Researchers" ){
-        document.getElementById('SeniorResch').style.display = 'inline-block';
-        document.getElementById('SeniorResearchers').classList.add('active');
-      }else if( name == "PhD Students" ){
-        document.getElementById('Phd').style.display = 'inline-block';
-        document.getElementById('PhDStudents').classList.add('active');
-      }else if( name == "Associated researches" ){
-        document.getElementById('AR').style.display = 'inline-block';
-        document.getElementById('Associatedresearches').classList.add('active');
-      }else if( name == "Student Assistants"){
-        document.getElementById('SA').style.display = 'inline-block';
-        document.getElementById('StudentAssistants').classList.add('active');
-      }else if( name == "Interns" ){
-        document.getElementById('Int').style.display = 'inline-block';
-        document.getElementById('Interns').classList.add('active');
-      }else if( name == "Former Members" ){
-        document.getElementById('Former').style.display = 'inline-block';
-        document.getElementById('FormerMembers').classList.add('active');
-      }else
-        console.log("Invalid People Type Name");
-    }
-    function clearAllTypes(){
-        document.getElementById('Prof').style.display = 'none';
-        document.getElementById('SeniorResch').style.display = 'none';
-        document.getElementById('Phd').style.display = 'none';
-        document.getElementById('AR').style.display = 'none';
-        document.getElementById('SA').style.display = 'none';
-        document.getElementById('Int').style.display = 'none';
-        document.getElementById('Former').style.display = 'none';
-    }
-    function clearAllTabs(){
-      document.getElementById('Professors').classList.remove('active');
-      document.getElementById('SeniorResearchers').classList.remove('active');
-      document.getElementById('PhDStudents').classList.remove('active');
-      document.getElementById('Associatedresearches').classList.remove('active');
-      document.getElementById('StudentAssistants').classList.remove('active');
-      document.getElementById('Interns').classList.remove('active');
-      document.getElementById('FormerMembers').classList.remove('active');
-    }
+    if (name == "Professors") {
+      document.getElementById('Prof').style.display = 'inline-block';
+      document.getElementById('Professors').classList.add('active');
+    } else if (name == "Senior Researchers") {
+      document.getElementById('SeniorResch').style.display = 'inline-block';
+      document.getElementById('SeniorResearchers').classList.add('active');
+    } else if (name == "PhD Students") {
+      document.getElementById('Phd').style.display = 'inline-block';
+      document.getElementById('PhDStudents').classList.add('active');
+    } else if (name == "Associated researches") {
+      document.getElementById('AR').style.display = 'inline-block';
+      document.getElementById('Associatedresearches').classList.add('active');
+    } else if (name == "Student Assistants") {
+      document.getElementById('SA').style.display = 'inline-block';
+      document.getElementById('StudentAssistants').classList.add('active');
+    } else if (name == "Interns") {
+      document.getElementById('Int').style.display = 'inline-block';
+      document.getElementById('Interns').classList.add('active');
+    } else if (name == "Former Members") {
+      document.getElementById('Former').style.display = 'inline-block';
+      document.getElementById('FormerMembers').classList.add('active');
+    } else
+      console.log("Invalid People Type Name");
+  }
+
+  function clearAllTypes() {
+    document.getElementById('Prof').style.display = 'none';
+    document.getElementById('SeniorResch').style.display = 'none';
+    document.getElementById('Phd').style.display = 'none';
+    document.getElementById('AR').style.display = 'none';
+    document.getElementById('SA').style.display = 'none';
+    document.getElementById('Int').style.display = 'none';
+    document.getElementById('Former').style.display = 'none';
+  }
+
+  function clearAllTabs() {
+    document.getElementById('Professors').classList.remove('active');
+    document.getElementById('SeniorResearchers').classList.remove('active');
+    document.getElementById('PhDStudents').classList.remove('active');
+    document.getElementById('Associatedresearches').classList.remove('active');
+    document.getElementById('StudentAssistants').classList.remove('active');
+    document.getElementById('Interns').classList.remove('active');
+    document.getElementById('FormerMembers').classList.remove('active');
+  }
 </script>
-      <div class="pagination">
-        
-          
-          
-            <a href="#" id="Professors" class="active" onclick="changeActivePersons('Professors')"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-     Professors</a>
-          
-        
-          
-          
-            <a href="#" id="SeniorResearchers" onclick="changeActivePersons('Senior Researchers')"><i class="fa fa-level-up" aria-hidden="true"></i> Senior Researchers</a>
-          
-        
-          
-          
-            <a href="#" id="PhDStudents" onclick="changeActivePersons('PhD Students')"><i class="fa fa-level-up" aria-hidden="true"></i> PhD Students</a>
-          
-        
-          
-          
-            <a href="#" id="Associatedresearches" onclick="changeActivePersons('Associated researches')"><i class="fa fa-level-up" aria-hidden="true"></i> Associated researches</a>
-          
-        
-          
-          
-            <a href="#" id="StudentAssistants" onclick="changeActivePersons('Student Assistants')"><i class="fa fa-level-up" aria-hidden="true"></i> Student Assistants</a>
-          
-        
-          
-          
-            <a href="#" id="Interns" onclick="changeActivePersons('Interns')"><i class="fa fa-level-up" aria-hidden="true"></i> Interns</a>
-          
-        
-          
-          
-            <a href="#" id="FormerMembers" onclick="changeActivePersons('Former Members')"><i class="fa fa-level-up" aria-hidden="true"></i> Former Members</a>
-          
-        
-        <br/><br/><hr class="ruleh"/>
-      </div>
-      <div class="content-people">
-        <div id="Prof" style="display:inline-block">
-          <!-- GET  querry for Professors -->
-          
-          
-          <!-- Displaying Results  -->
-          
-          
-          <div class="cardProfile">
+<div class="pagination">
+    
+  <a href="#" id="Professors" class="active" onclick="changeActivePersons('Professors')"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+     Professors</a>    
+  <a href="#" id="SeniorResearchers" onclick="changeActivePersons('Senior Researchers')"><i class="fa fa-level-up" aria-hidden="true"></i> Senior Researchers</a>    
+  <a href="#" id="PhDStudents" onclick="changeActivePersons('PhD Students')"><i class="fa fa-level-up" aria-hidden="true"></i> PhD Students</a>    
+  <a href="#" id="Associatedresearches" onclick="changeActivePersons('Associated researches')"><i class="fa fa-level-up" aria-hidden="true"></i> Associated researches</a>    
+  <a href="#" id="StudentAssistants" onclick="changeActivePersons('Student Assistants')"><i class="fa fa-level-up" aria-hidden="true"></i> Student Assistants</a>    
+  <a href="#" id="Interns" onclick="changeActivePersons('Interns')"><i class="fa fa-level-up" aria-hidden="true"></i> Interns</a>    
+  <a href="#" id="FormerMembers" onclick="changeActivePersons('Former Members')"><i class="fa fa-level-up" aria-hidden="true"></i> Former Members</a>  
+  <br/><br/>
+  <hr class="ruleh" />
+</div>
+<div class="content-people">
+  <div id="Prof" style="display:inline-block">
+    <!-- GET  querry for Professors -->
+     
+    <!-- Displaying Results  -->
+      <div class="cardProfile">
   <a href="../OliverOctopus"><h4>Jens Lehmann</h4></a>
   <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Jens Lehmann" >
   <hr/>
@@ -1433,10 +1405,7 @@
    </div>
   </div>
 </div>
-
-          
-          
-          <div class="cardProfile">
+   <div class="cardProfile">
   <a href="../CorneliusCrab"><h4>Vitalis Veins</h4></a>
   <img src="http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png" alt="Vitalis Veins" >
   <hr/>
@@ -1451,17 +1420,13 @@
    </div>
   </div>
 </div>
-
-          
-        </div>
-        <div id="SeniorResch" style="display:none">
-          <!--GET querry for Senior Researchers  -->
-          
-          
-          <!-- Displaying Results for Senior Researchers  -->
-          
-          
-          <div class="cardProfile">
+ 
+  </div>
+  <div id="SeniorResch" style="display:none">
+    <!--GET querry for Senior Researchers  -->
+     
+    <!-- Displaying Results for Senior Researchers  -->
+      <div class="cardProfile">
   <a href="../LarryLobster"><h4>Larry Lobster</h4></a>
   <img src="https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png" alt="Larry Lobster" >
   <hr/>
@@ -1476,17 +1441,13 @@
    </div>
   </div>
 </div>
-
-          
-        </div>
-        <div id="Phd" style="display:none">
-          <!--GET querry for Phd Setudents  -->
-          
-          
-          <!--Display Results for Phd Students  -->
-          
-          
-          <div class="cardProfile">
+ 
+  </div>
+  <div id="Phd" style="display:none">
+    <!--GET querry for Phd Setudents  -->
+     
+    <!--Display Results for Phd Students  -->
+      <div class="cardProfile">
   <a href="../AlexanderKister"><h4>Dr.Alexander Kister</h4></a>
   <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Dr.Alexander Kister" >
   <hr/>
@@ -1501,17 +1462,13 @@
    </div>
   </div>
 </div>
-
-          
-        </div>
-        <div id="AR" style="display:none">
-          <!--Get querry for Senior Researchers  -->
-          
-          
-          <!--Display results for Senior Researchers  -->
-          
-          
-          <div class="cardProfile">
+ 
+  </div>
+  <div id="AR" style="display:none">
+    <!--Get querry for Senior Researchers  -->
+     
+    <!--Display results for Senior Researchers  -->
+      <div class="cardProfile">
   <a href="../AlfredEel"><h4>Alfred Eel</h4></a>
   <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Alfred Eel" >
   <hr/>
@@ -1526,32 +1483,28 @@
    </div>
   </div>
 </div>
+ 
+  </div>
+  <div id="SA" style="display:none">
+    <!--GET querry for Student Assistants  -->
+     
+    <!--Display Results for Student Assistants -->
+    
+  </div>
+  <div id="Int" style="display:none">
+    <!--GET querry for Internees -->
+     
+    <!--Display Results for Interness -->
+    
+  </div>
+  <div id="Former" style="display:none">
+    <!--GET querry for Former Students  -->
+     
+    <!--Display Results for Former Students -->
+    
 
-          
-        </div>
-        <div id="SA" style="display:none">
-          <!--GET querry for Student Assistants  -->
-          
-          
-          <!--Display Results for Student Assistants -->
-          
-        </div>
-        <div id="Int" style="display:none">
-          <!--GET querry for Internees -->
-          
-          
-          <!--Display Results for Interness -->
-          
-        </div>
-        <div id="Former" style="display:none">
-          <!--GET querry for Former Students  -->
-          
-          
-          <!--Display Results for Former Students -->
-          
-
-        </div>
-      </div>
+  </div>
+</div>
 
       </div>
       <div class="wrapper">

@@ -1324,8 +1324,7 @@
       <div class="wrapper">
         <!-- SCRIPT FOR open and finished thesis filters -->
 <script>
-  function activeOpenThesis()
-  {
+  function activeOpenThesis() {
     document.getElementById('finishedThesis').style.display = 'none';
     document.getElementById('end').classList.remove('active');
     document.getElementById('allThesis').style.display = 'none';
@@ -1334,8 +1333,7 @@
     document.getElementById('start').classList.add('active');
   }
 
-  function activeFinishedThesis()
-  {
+  function activeFinishedThesis() {
     document.getElementById('openThesis').style.display = 'none';
     document.getElementById('start').classList.remove('active');
     document.getElementById('allThesis').style.display = 'none';
@@ -1344,8 +1342,7 @@
     document.getElementById('end').classList.add('active');
   }
 
-  function allThesisItems()
-  {
+  function allThesisItems() {
     document.getElementById('openThesis').style.display = 'none';
     document.getElementById('start').classList.remove('active');
     document.getElementById('allThesis').style.display = 'block';
@@ -1357,875 +1354,336 @@
 <!--END SCRIPT  -->
 
 <!--Querry to GET all the groups of the thesis   -->
+ 
 
-
-
-<!-- Presentation of thesis Items  -->
-<article class="post">
-  <div class="pagination">
-    <!-- <br class="horizontal-separator"/>
-    <h1 class="post-title">Interested to do thesis? We have 3 Open Topics for you !</h1>
-    <br/>
-    <div class="main-thesis-text">
-      <div class="thesis-detail">
-        The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas
-      </div>
-      <div class="thesis-research-areas">
-        <ul>
-          
-            <li>
-              Distributed Semantic Analytics
-            </li>
-          
-            <li>
-              Deep Learning
-            </li>
-          
-            <li>
-              Structured Machine Learning
-            </li>
-          
-            <li>
-              Semantic Question Answering
-            </li>
-          
-            <li>
-              Software Engineering for Data Science
-            </li>
-          
-        </ul>
-      </div>
-      <div class="thesis-note">
-      Please note that the list below is only a small sample of possible topics and ideas. Please contact us to discuss further, to find new topics, or to suggest a topic of your own.
-      </div>
-    </div> -->
-    <div class="status-thesis">
-      <a href="#" id="all" class="active" onclick="allThesisItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
+  <!-- Presentation of thesis Items  -->
+  <article class="post">
+    <div class="pagination">
+      <div class="status-thesis">
+        <a href="#" id="all" class="active" onclick="allThesisItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
       All Thesis Topics</a>
-      <a href="#" id="start" class="" onclick="activeOpenThesis()"><i class="fa fa-folder-open" aria-hidden="true"></i>
+        <a href="#" id="start" class="" onclick="activeOpenThesis()"><i class="fa fa-folder-open" aria-hidden="true"></i>
       Open Thesis Topics</a>
-      <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-folder" aria-hidden="true"></i>
+        <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-folder" aria-hidden="true"></i>
       Completed Thesis List</a>
-      <br/>
-      <br/>
-      <hr/>
-      <br class="horizontal-separator2" />
-      <div class="thesis-items">
+        <br/>
+        <br/>
+        <hr/>
+        <br class="horizontal-separator2" />
+        <div class="thesis-items">
           <div id="allThesis" style="display:block">
             
             <!--Querry to GET ALL Thesis Items-->
-            
-            
+             
             <!--Querry to Present All the Open Thesis Items  -->
             
-              <!--QUERY to GET all the people associated with the thesis topic  -->
-              
-              
-              
-                
-                <div class="partner-title">
-                  <a><h1>Distributed in-memory SPARQL Processing</h1></a>
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Distributed in-memory SPARQL Processing</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                 
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
                 </div>
-                <div class="partner-detail">
-                  <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-                </div>
-                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-              <!--Presentation of the resultset  -->
-              <div class="person-chips" style="text-align:left; margin-left:32px;">
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                      <a href="../OliverOctopus">Jens Lehmann</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                      <a href="../AlfredEel">Alfred Eel</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
               </div>
-              <br/><hr/><br class="horizontal-separator" />
-              
-            
-              <!--QUERY to GET all the people associated with the thesis topic  -->
-              
-              
-              
-                
-                <div class="partner-title">
-                  <a><h1>Distributed in-memory Processig</h1></a>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
                 </div>
-                <div class="partner-detail">
-                  <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-                </div>
-                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-              <!--Presentation of the resultset  -->
-              <div class="person-chips" style="text-align:left; margin-left:32px;">
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                      <a href="../OliverOctopus">Jens Lehmann</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                      <a href="../AlfredEel">Alfred Eel</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
               </div>
-              <br/><hr/><br class="horizontal-separator" />
-              
-            
-              <!--QUERY to GET all the people associated with the thesis topic  -->
-              
-              
-              
-                
-                <div class="partner-title">
-                  <a><h1>Entity Resolution of Closed Subjects</h1></a>
+                                               
+            </div>
+            <br/>
+            <hr/><br class="horizontal-separator" />  
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Distributed in-memory Processig</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                         
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
                 </div>
-                <div class="partner-detail">
-                  <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-                </div>
-                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-              <!--Presentation of the resultset  -->
-              <div class="person-chips" style="text-align:left; margin-left:32px;">
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                      <a href="../OliverOctopus">Jens Lehmann</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                      <a href="../AlfredEel">Alfred Eel</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
               </div>
-              <br/><hr/><br class="horizontal-separator" />
-              
-            
-              <!--QUERY to GET all the people associated with the thesis topic  -->
-              
-              
-              
-                
-                <div class="partner-title">
-                  <a><h1>Entity Resolution of Unfinished topics</h1></a>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
                 </div>
-                <div class="partner-detail">
-                  <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-                </div>
-                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-              <!--Presentation of the resultset  -->
-              <div class="person-chips" style="text-align:left; margin-left:32px;">
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                      <a href="../OliverOctopus">Jens Lehmann</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                      <a href="../AlfredEel">Alfred Eel</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
               </div>
-              <br/><hr/><br class="horizontal-separator" />
-              
-            
-              <!--QUERY to GET all the people associated with the thesis topic  -->
-              
-              
-              
-                
-                <div class="partner-title">
-                  <a><h1>Entity Resolution of particular Topics</h1></a>
+                                       
+            </div>
+            <br/>
+            <hr/><br class="horizontal-separator" />  
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Entity Resolution of Closed Subjects</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                                 
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
                 </div>
-                <div class="partner-detail">
-                  <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-                </div>
-                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-              <!--Presentation of the resultset  -->
-              <div class="person-chips" style="text-align:left; margin-left:32px;">
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                      <a href="../OliverOctopus">Jens Lehmann</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                      <a href="../AlfredEel">Alfred Eel</a>
-                    </div>
-                  </div>
-                  
-
-                
               </div>
-              <br/><br class="horizontal-separator" />
-              
-            
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
+                </div>
+              </div>
+                               
+            </div>
+            <br/>
+            <hr/><br class="horizontal-separator" />  
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Entity Resolution of Unfinished topics</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                                         
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
+                </div>
+              </div>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
+                </div>
+              </div>
+                       
+            </div>
+            <br/>
+            <hr/><br class="horizontal-separator" />  
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Entity Resolution of particular Topics</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                                                 
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
+                </div>
+              </div>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
+                </div>
+              </div>
+               
+            </div>
+            <br/><br class="horizontal-separator" />  
           </div>
           <div id="openThesis" style="display:none">
             
             <!--Querry to GET Open Thesis Items-->
-            
-            
+             
             <!--Querry to Present All the Open Thesis Items  -->
             
-              <!--QUERY to GET all the people associated with the thesis topic  -->
-              
-              
-              
-                
-                <div class="partner-title">
-                  <a><h1>Distributed in-memory SPARQL Processing</h1></a>
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Distributed in-memory SPARQL Processing</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                 
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
                 </div>
-                <div class="partner-detail">
-                  <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-                </div>
-                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-              <!--Presentation of the resultset  -->
-              <div class="person-chips" style="text-align:left; margin-left:32px;">
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                      <a href="../OliverOctopus">Jens Lehmann</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                      <a href="../AlfredEel">Alfred Eel</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
               </div>
-              <br/><hr/><br class="horizontal-separator" />
-              
-            
-              <!--QUERY to GET all the people associated with the thesis topic  -->
-              
-              
-              
-                
-                <div class="partner-title">
-                  <a><h1>Distributed in-memory Processig</h1></a>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
                 </div>
-                <div class="partner-detail">
-                  <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-                </div>
-                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-              <!--Presentation of the resultset  -->
-              <div class="person-chips" style="text-align:left; margin-left:32px;">
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                      <a href="../OliverOctopus">Jens Lehmann</a>
-                    </div>
-                  </div>
-                  
-
-                
-                  
-
-                  
-                  
-                  <div class="partnersOfProject">
-                    <div class="chip">
-                      <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                      <a href="../AlfredEel">Alfred Eel</a>
-                    </div>
-                  </div>
-                  
-
-                
               </div>
-              <br/><br class="horizontal-separator" />
-              
+                       
+            </div>
+            <br/>
+            <hr/><br class="horizontal-separator" />  
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Distributed in-memory Processig</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                         
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
+                </div>
+              </div>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
+                </div>
+              </div>
+               
+            </div>
+            <br/><br class="horizontal-separator" />  
+          </div>
+          <div id="finishedThesis" style="display:none">
             
+            <!--Querry to GET Open Thesis Items-->
+             
+            <!--Querry to Present All the Open Thesis Items  -->
+            
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Entity Resolution of Closed Subjects</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                 
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
+                </div>
+              </div>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
+                </div>
+              </div>
+                               
+            </div>
+            <br/>
+            <hr/><br class="horizontal-separator" />  
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Entity Resolution of Unfinished topics</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                         
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
+                </div>
+              </div>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
+                </div>
+              </div>
+                       
+            </div>
+            <br/>
+            <hr/><br class="horizontal-separator" />  
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+               
+            <div class="partner-title">
+              <a><h1>Entity Resolution of particular Topics</h1></a>
+            </div>
+            <div class="partner-detail">
+              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
+            </div>
+            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!--Presentation of the resultset  -->
+            <div class="person-chips" style="text-align:left; margin-left:32px;">
+                                 
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                  <a href="../OliverOctopus">Jens Lehmann</a>
+                </div>
+              </div>
+                  
+              <div class="partnersOfProject">
+                <div class="chip">
+                  <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                  <a href="../AlfredEel">Alfred Eel</a>
+                </div>
+              </div>
+               
+            </div>
+            <br/><br class="horizontal-separator" />  
+          </div>
         </div>
-        <div id="finishedThesis" style="display:none">
-          
-          <!--Querry to GET Open Thesis Items-->
-          
-          
-          <!--Querry to Present All the Open Thesis Items  -->
-          
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            
-            
-            
-              
-              <div class="partner-title">
-                <a><h1>Entity Resolution of Closed Subjects</h1></a>
-              </div>
-              <div class="partner-detail">
-                <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-              </div>
-              <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-                
-
-                
-                
-                <div class="partnersOfProject">
-                  <div class="chip">
-                    <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                    <a href="../OliverOctopus">Jens Lehmann</a>
-                  </div>
-                </div>
-                
-
-              
-                
-
-                
-                
-                <div class="partnersOfProject">
-                  <div class="chip">
-                    <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                    <a href="../AlfredEel">Alfred Eel</a>
-                  </div>
-                </div>
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-            </div>
-            <br/><hr/><br class="horizontal-separator" />
-            
-          
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            
-            
-            
-              
-              <div class="partner-title">
-                <a><h1>Entity Resolution of Unfinished topics</h1></a>
-              </div>
-              <div class="partner-detail">
-                <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-              </div>
-              <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-                <div class="partnersOfProject">
-                  <div class="chip">
-                    <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                    <a href="../OliverOctopus">Jens Lehmann</a>
-                  </div>
-                </div>
-                
-
-              
-                
-
-                
-                
-                <div class="partnersOfProject">
-                  <div class="chip">
-                    <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                    <a href="../AlfredEel">Alfred Eel</a>
-                  </div>
-                </div>
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-            </div>
-            <br/><hr/><br class="horizontal-separator" />
-            
-          
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            
-            
-            
-              
-              <div class="partner-title">
-                <a><h1>Entity Resolution of particular Topics</h1></a>
-              </div>
-              <div class="partner-detail">
-                <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-              </div>
-              <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-
-              
-                
-
-                
-                
-                <div class="partnersOfProject">
-                  <div class="chip">
-                    <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                    <a href="../OliverOctopus">Jens Lehmann</a>
-                  </div>
-                </div>
-                
-
-              
-                
-
-                
-                
-                <div class="partnersOfProject">
-                  <div class="chip">
-                    <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                    <a href="../AlfredEel">Alfred Eel</a>
-                  </div>
-                </div>
-                
-
-              
-            </div>
-            <br/><br class="horizontal-separator" />
-            
-          
-        </div>
+        <br class="horizontal-separator2" />
       </div>
-      <br class="horizontal-separator2" />
     </div>
-  </div>
-</article>
+  </article>
 
       </div>
       <div class="wrapper">

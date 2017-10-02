@@ -1324,50 +1324,50 @@
       <div class="wrapper">
         <!-- Script for the Pagination of the different types of the Projects  -->
 <script>
-function activeFundedProjects(){
-  document.getElementById('fundedProjects').style.display = 'block';
-  document.getElementById('funded').classList.add('active');
-  document.getElementById('openSourceProjects').style.display = 'none';
-  document.getElementById('opensrc').classList.remove('active');
-  document.getElementById('incubatorProjects').style.display = 'none';
-  document.getElementById('incubators').classList.remove('active');
-  document.getElementById('allProjects').style.display = 'none';
-  document.getElementById('all').classList.remove('active');
-}
+  function activeFundedProjects() {
+    document.getElementById('fundedProjects').style.display = 'block';
+    document.getElementById('funded').classList.add('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
 
-function activeOpenSourceProjects(){
-  document.getElementById('fundedProjects').style.display = 'none';
-  document.getElementById('funded').classList.remove('active');
-  document.getElementById('openSourceProjects').style.display = 'block';
-  document.getElementById('opensrc').classList.add('active');
-  document.getElementById('incubatorProjects').style.display = 'none';
-  document.getElementById('incubators').classList.remove('active');
-  document.getElementById('allProjects').style.display = 'none';
-  document.getElementById('all').classList.remove('active');
-}
+  function activeOpenSourceProjects() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'block';
+    document.getElementById('opensrc').classList.add('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
 
-function incubatorProjects(){
-  document.getElementById('fundedProjects').style.display = 'none';
-  document.getElementById('funded').classList.remove('active');
-  document.getElementById('openSourceProjects').style.display = 'none';
-  document.getElementById('opensrc').classList.remove('active');
-  document.getElementById('incubatorProjects').style.display = 'block';
-  document.getElementById('incubators').classList.add('active');
-  document.getElementById('allProjects').style.display = 'none';
-  document.getElementById('all').classList.remove('active');
-}
+  function incubatorProjects() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'block';
+    document.getElementById('incubators').classList.add('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
 
-function allProjectItems(){
-  document.getElementById('fundedProjects').style.display = 'none';
-  document.getElementById('funded').classList.remove('active');
-  document.getElementById('openSourceProjects').style.display = 'none';
-  document.getElementById('opensrc').classList.remove('active');
-  document.getElementById('incubatorProjects').style.display = 'none';
-  document.getElementById('incubators').classList.remove('active');
-  document.getElementById('allProjects').style.display = 'block';
-  document.getElementById('all').classList.add('active');
+  function allProjectItems() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'block';
+    document.getElementById('all').classList.add('active');
 
-}
+  }
 </script>
 
 <div class="post">
@@ -1375,7 +1375,7 @@ function allProjectItems(){
     <div class="status-projects">
       <a href="#" id="all" class="active" onclick="allProjectItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
       All Projects</a>
-      <a href="#" id="funded" class="" onclick="activeFundedProjects()" ><i class="fa fa-money" aria-hidden="true"></i>
+      <a href="#" id="funded" class="" onclick="activeFundedProjects()"><i class="fa fa-money" aria-hidden="true"></i>
       Funded Projects</a>
       <a href="#" id="opensrc" class="" onclick="activeOpenSourceProjects()"><i class="fa fa-code-fork" aria-hidden="true"></i>
       Open Source Projects</a>
@@ -1388,16 +1388,9 @@ function allProjectItems(){
     <div class="projects">
       <div id="allProjects" style="display:block">
         <!-- QUERRY to GET ALL the FundedProjects -->
-        
-        
+         
         <!-- Presentation of the Funded Projects  -->
-        
-        
-        
-        
-          
-          
-          <br class="horizontal-separator"/>
+              <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../BigDataEurope"> <h1>Big Data Europe</h1></a>
 </div>
@@ -1432,12 +1425,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../HOBBIT"> <h1>HOBBIT</h1></a>
 </div>
@@ -1472,12 +1460,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../GEISER"> <h1>GEISER</h1></a>
 </div>
@@ -1510,12 +1493,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../SLIPO"> <h1>SLIPO</h1></a>
 </div>
@@ -1550,12 +1528,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../QROWD"> <h1>QROWD</h1></a>
 </div>
@@ -1588,12 +1561,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../WAVE"> <h1>WAVE</h1></a>
 </div>
@@ -1632,12 +1600,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../SANSAStack"> <h1>SANSA Stack</h1></a>
 </div>
@@ -1676,12 +1639,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../AskNow"> <h1>AskNow</h1></a>
 </div>
@@ -1720,12 +1678,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../DLLearner"> <h1>DL-Learner</h1></a>
 </div>
@@ -1764,12 +1717,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../SMLBench"> <h1>SML-Bench</h1></a>
 </div>
@@ -1806,12 +1754,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../DeFacto"> <h1>DeFacto</h1></a>
 </div>
@@ -1844,12 +1787,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../MEXVocabulary"> <h1>MEX Vocabulary</h1></a>
 </div>
@@ -1882,22 +1820,13 @@ function allProjectItems(){
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
 
-
-          
-        
+  
       </div>
       <div id="fundedProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
-        
-        
+         
         <!-- Presentation of the Funded Projects  -->
-        
-        
-        
-        
-          
-          
-          <br class="horizontal-separator"/>
+              <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../BigDataEurope"> <h1>Big Data Europe</h1></a>
 </div>
@@ -1932,12 +1861,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../HOBBIT"> <h1>HOBBIT</h1></a>
 </div>
@@ -1972,12 +1896,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../GEISER"> <h1>GEISER</h1></a>
 </div>
@@ -2010,12 +1929,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../SLIPO"> <h1>SLIPO</h1></a>
 </div>
@@ -2050,12 +1964,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../QROWD"> <h1>QROWD</h1></a>
 </div>
@@ -2086,22 +1995,13 @@ function allProjectItems(){
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
 
-
-          
-        
+  
       </div>
       <div id="openSourceProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
-        
-        
-        
-        
-        
+            
         <!-- Presentation of the Incubators Projects  -->
-        
-          
-          
-          <br class="horizontal-separator"/>
+           <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../SANSAStack"> <h1>SANSA Stack</h1></a>
 </div>
@@ -2140,12 +2040,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../AskNow"> <h1>AskNow</h1></a>
 </div>
@@ -2184,12 +2079,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../DLLearner"> <h1>DL-Learner</h1></a>
 </div>
@@ -2228,12 +2118,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../SMLBench"> <h1>SML-Bench</h1></a>
 </div>
@@ -2270,12 +2155,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../DeFacto"> <h1>DeFacto</h1></a>
 </div>
@@ -2308,12 +2188,7 @@ function allProjectItems(){
 
   <hr />
 
-
-          
-        
-          
-          
-          <br class="horizontal-separator"/>
+     <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../MEXVocabulary"> <h1>MEX Vocabulary</h1></a>
 </div>
@@ -2346,22 +2221,13 @@ function allProjectItems(){
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
 
-
-          
-        
+  
       </div>
       <div id="incubatorProjects" style="display:none">
         <!-- QUERRY to GET the FundedProjects -->
-        
-        
-        
-        
-        
+            
         <!-- Presentation of the Open Source Projects  -->
-        
-          
-          
-          <br class="horizontal-separator"/>
+           <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
   <a href="../WAVE"> <h1>WAVE</h1></a>
 </div>
@@ -2398,12 +2264,10 @@ function allProjectItems(){
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
 
-
-          
-        
+  
       </div>
     </div>
-</div>
+  </div>
 
       </div>
       <div class="wrapper">
