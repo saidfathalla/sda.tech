@@ -6,33 +6,60 @@ layout: default
 <script>
   function activeSummerCourses()
   {
+    document.getElementById('summerCourses').style.display = 'block';
+    document.getElementById('summer').classList.add('active');
+    document.getElementById('winterCourses').style.display = 'none';
+    document.getElementById('winter').classList.remove('active');
+    document.getElementById('allCourses').style.display = 'none';
+    document.getElementById('old').classList.remove('active');
 
   }
 
   function activeWinterCourses()
   {
-
+    document.getElementById('summerCourses').style.display = 'none';
+    document.getElementById('summer').classList.remove('active');
+    document.getElementById('winterCourses').style.display = 'block';
+    document.getElementById('winter').classList.add('active');
+    document.getElementById('allCourses').style.display = 'none';
+    document.getElementById('old').classList.remove('active');
   }
 
   function allOldCourses()
   {
-
+    document.getElementById('summerCourses').style.display = 'none';
+    document.getElementById('summer').classList.remove('active');
+    document.getElementById('winterCourses').style.display = 'none';
+    document.getElementById('winter').classList.remove('active');
+    document.getElementById('allCourses').style.display = 'block';
+    document.getElementById('old').classList.add('active');
   }
 </script>
 
 <article class="post">
   <div class="pagination">
     <div class="course-section">
-      <a href="#" id="all" class="active" onclick="activeWinterCourses()"><i class="fa fa-cloud" aria-hidden="true"></i>
+      <a href="#" id="winter" class="active" onclick="activeWinterCourses()"><i class="fa fa-cloud" aria-hidden="true"></i>
       Winter Semester 2017/18</a>
-      <a href="#" id="start" class="" onclick="activeSummerCourses()"><i class="fa fa-fire" aria-hidden="true"></i>
+      <a href="#" id="summer" class="" onclick="activeSummerCourses()"><i class="fa fa-fire" aria-hidden="true"></i>
       Summer Semester 2017</a>
-      <a href="#" id="end" class="" onclick="allOldCourses()"><i class="fa fa-archive" aria-hidden="true"></i>
+      <a href="#" id="old" class="" onclick="allOldCourses()"><i class="fa fa-archive" aria-hidden="true"></i>
       Old Courses</a>
       <br/>
       <br/>
       <hr/>
       <br class="horizontal-separator2" />
+    </div>
+    <div class="course-items">
+      <div id="winterCourses" style="display:block">
+        WS
+      </div>
+      <div id="summerCourses" style="display:none">
+        SS
+      </div>
+      <div id="allCourses" style="display:none">
+        AA
+      </div>
     </div>
   </div>
 </article>

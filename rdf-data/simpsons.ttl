@@ -340,7 +340,15 @@ ex:MEXVocabulary a ex:project ;
   ex:source "https://github.com/METArchive/mex-vocabulary";
   ex:download "undefined";
   foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-  ex:partners ex:agroknow
+  ex:partners ex:agroknow .
+
+  ex:SemanticDataWebTechnologies a ex:course ;
+    rdfs:label "Semantic Data Web Technologies" ;
+    ex:description "The Web accompanies the transition from an industrial to an information society and provides the infrastructure for a new quality of information handling regarding acquisition as well as provisioning " ;
+    ex:homepage "http://mex.aksw.org/";
+    ex:language "English" ;
+    ex:summer2017 "Summer Semester 2017";
+    foaf:Person ex:OliverOctopus, ex:AlfredEel .
 
 ex:Publication1 a ex:publication ;
     rdfs:label "business opportunities" ;
@@ -468,6 +476,8 @@ ex:Mainnav a ex:navigation ;
 ex:description a foaf:Document ;
     rdfs:label "Description" .
 
+ex:course a foaf:Document ;
+  rdfs:label "course" .
 
 ex:group a foaf:Document ;
     rdfs:label "Groups" .
