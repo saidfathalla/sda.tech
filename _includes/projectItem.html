@@ -1,0 +1,39 @@
+<br class="horizontal-separator"/>
+<div class="partner-title" style="text-align:center;">
+  <a href="../{{include.href}}"> <h1>{{include.title}}</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      {{include.description}}
+    </div>
+  </div>
+  <br class="horizontal-separator" />
+  <div class="links-to-social" style="text-align:left;">
+    {% capture count %}{{include.twitter}}{% endcapture %}
+    {% if count != 'undefined' %}
+      <a href="{{include.twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+    {% endif %}
+    {% capture count %}{{include.homepage}}{% endcapture %}
+    {% if count != 'undefined' %}
+      <a href="{{include.homepage}}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
+    {% endif %}
+    {% capture count %}{{include.source}}{% endcapture %}
+    {% if count != 'undefined' %}
+      <a href="{{include.source}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
+    {% endif %}
+    {% capture count %}{{include.download}}{% endcapture %}
+    {% if count != 'undefined' %}
+      <a href="{{include.download}}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+    {% endif %}
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+{% if include.last != 1 %}
+  <hr />
+{% endif %}

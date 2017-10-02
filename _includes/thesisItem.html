@@ -1,0 +1,22 @@
+<br class="horizontal-separator"/>
+<div class="partner-title" style="text-align:center;">
+  <a href="../{{include.href}}"> <h1>{{include.title}}</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-detail">
+    <div class="partner-description">
+      {{include.description}}
+    </div>
+  </div>
+  <br class="horizontal-separator" />
+  <h2>Contact Persons </h2>
+  <div class="contact-persons" style="text-align:left;">
+
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+{% if include.last != 1 %}
+  <hr />
+{% endif %}

@@ -1,0 +1,255 @@
+---
+rdf_prefix_path: simpsons.pref
+layout: default
+---
+<!-- SCRIPT FOR open and finished thesis filters -->
+<script>
+  function activeOpenThesis()
+  {
+    document.getElementById('finishedThesis').style.display = 'none';
+    document.getElementById('end').classList.remove('active');
+    document.getElementById('allThesis').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+    document.getElementById('openThesis').style.display = 'block';
+    document.getElementById('start').classList.add('active');
+  }
+
+  function activeFinishedThesis()
+  {
+    document.getElementById('openThesis').style.display = 'none';
+    document.getElementById('start').classList.remove('active');
+    document.getElementById('allThesis').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+    document.getElementById('finishedThesis').style.display = 'block';
+    document.getElementById('end').classList.add('active');
+  }
+
+  function allThesisItems()
+  {
+    document.getElementById('openThesis').style.display = 'none';
+    document.getElementById('start').classList.remove('active');
+    document.getElementById('allThesis').style.display = 'block';
+    document.getElementById('all').classList.add('active');
+    document.getElementById('finishedThesis').style.display = 'none';
+    document.getElementById('end').classList.remove('active');
+  }
+</script>
+<!--END SCRIPT  -->
+
+<!--Querry to GET all the groups of the thesis   -->
+{% capture query %}
+    SELECT ?group ?projectname WHERE{
+        <{{page.rdf}}> ex:group ?group .
+        ?group rdfs:label ?projectname .
+}
+{% endcapture %}
+{% assign resultset = page.rdf | sparql_query: query %}
+
+<!-- Presentation of thesis Items  -->
+<article class="post">
+  <div class="pagination">
+    <!-- <br class="horizontal-separator"/>
+    <h1 class="post-title">Interested to do thesis? We have 3 Open Topics for you !</h1>
+    <br/>
+    <div class="main-thesis-text">
+      <div class="thesis-detail">
+        {{ page.rdf | rdf_property: 'ex:description'}}
+      </div>
+      <div class="thesis-research-areas">
+        <ul>
+          {% for group in resultset %}
+            <li>
+              {{group.projectname}}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="thesis-note">
+      {{ page.rdf | rdf_property: 'ex:longdescription' }}
+      </div>
+    </div> -->
+    <div class="status-thesis">
+      <a href="#" id="all" class="active" onclick="allThesisItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
+      All Thesis Topics</a>
+      <a href="#" id="start" class="" onclick="activeOpenThesis()"><i class="fa fa-folder-open" aria-hidden="true"></i>
+      Open Thesis Topics</a>
+      <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-folder" aria-hidden="true"></i>
+      Completed Thesis List</a>
+      <br/>
+      <br/>
+      <hr/>
+      <br class="horizontal-separator2" />
+      <div class="thesis-items">
+          <div id="allThesis" style="display:block">
+            {% assign count=0 %}
+            <!--Querry to GET ALL Thesis Items-->
+            {% capture query %}
+            SELECT ?thesisItem ?topic ?level ?website ?open ?long  WHERE{
+                ?thesisItem a ex:thesisItem .
+                ?thesisItem rdfs:label ?topic .
+                ?thesisItem ex:level ?level .
+                ?thesisItem ex:homepage ?website .
+                ?thesisItem ex:longdescription ?long .
+
+            }
+            {% endcapture %}
+            {% assign resultset = page.rdf | sparql_query: query %}
+            <!--Querry to Present All the Open Thesis Items  -->
+            {% for result in resultset %}
+              <!--QUERY to GET all the people associated with the thesis topic  -->
+              {% capture query2 %}
+              SELECT ?thesisItem ?person ?name ?topic ?img WHERE{
+                  ?thesisItem a ex:thesisItem .
+                  ?thesisItem rdfs:label ?topic .
+                  ?thesisItem foaf:Person ?person .
+                  ?person foaf:name ?name .
+                  ?person foaf:depiction ?img .
+              }
+              {% endcapture %}
+              {% assign resultset2 = page.rdf | sparql_query: query2 %}
+              {% assign size = resultset | size %}
+                {% capture labelname %}{{result.topic}}{% endcapture %}
+                <div class="partner-title">
+                  <a><h1>{{result.topic}}</h1></a>
+                </div>
+                <div class="partner-detail">
+                  <p style="text-align:left; margin:32px;">{{result.long}}</p>
+                </div>
+                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+              <!--Presentation of the resultset  -->
+              <div class="person-chips" style="text-align:left; margin-left:32px;">
+                {% for result2 in resultset2 %}
+                  {% capture topicname %}{{result2.topic}}{% endcapture %}
+
+                  {% if topicname == labelname  %}
+                  {% assign url =  result2.person | remove: "http://example.org/" %}
+                  <div class="partnersOfProject">
+                    <div class="chip">
+                      <img src="{{result2.img}}" alt="Person" width="96" height="96">
+                      <a href="../{{url}}">{{result2.name}}</a>
+                    </div>
+                  </div>
+                  {% else %}
+                  {% endif %}
+
+                {% endfor %}
+              </div>
+              <br/>{% if count != size %}<hr/>{% endif %}<br class="horizontal-separator" />
+              {% assign count = count | plus: 1 %}
+            {% endfor %}
+          </div>
+          <div id="openThesis" style="display:none">
+            {% assign count=0 %}
+            <!--Querry to GET Open Thesis Items-->
+            {% capture query %}
+            SELECT ?thesisItem ?topic ?level ?website ?open ?long  WHERE{
+                ?thesisItem a ex:thesisItem .
+                ?thesisItem rdfs:label ?topic .
+                ?thesisItem ex:level ?level .
+                ?thesisItem ex:homepage ?website .
+                ?thesisItem ex:open ?open .
+                ?thesisItem ex:longdescription ?long .
+
+            }
+            {% endcapture %}
+            {% assign resultset = page.rdf | sparql_query: query %}
+            <!--Querry to Present All the Open Thesis Items  -->
+            {% for result in resultset %}
+              <!--QUERY to GET all the people associated with the thesis topic  -->
+              {% capture query2 %}
+              SELECT ?thesisItem ?open ?person ?name ?topic ?img WHERE{
+                  ?thesisItem a ex:thesisItem .
+                  ?thesisItem rdfs:label ?topic .
+                  ?thesisItem ex:open ?open .
+                  ?thesisItem foaf:Person ?person .
+                  ?person foaf:name ?name .
+                  ?person foaf:depiction ?img .
+              }
+              {% endcapture %}
+              {% assign resultset2 = page.rdf | sparql_query: query2 %}
+              {% assign size = resultset | size %}
+                {% capture labelname %}{{result.topic}}{% endcapture %}
+                <div class="partner-title">
+                  <a><h1>{{result.topic}}</h1></a>
+                </div>
+                <div class="partner-detail">
+                  <p style="text-align:left; margin:32px;">{{result.long}}</p>
+                </div>
+                <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+              <!--Presentation of the resultset  -->
+              <div class="person-chips" style="text-align:left; margin-left:32px;">
+                {% for result2 in resultset2 %}
+                  {% capture topicname %}{{result2.topic}}{% endcapture %}
+
+                  {% if topicname == labelname  %}
+                  {% assign url =  result2.person | remove: "http://example.org/" %}
+                  <div class="partnersOfProject">
+                    <div class="chip">
+                      <img src="{{result2.img}}" alt="Person" width="96" height="96">
+                      <a href="../{{url}}">{{result2.name}}</a>
+                    </div>
+                  </div>
+                  {% else %}
+                  {% endif %}
+
+                {% endfor %}
+              </div>
+              <br/>{% if count != size %}<hr/>{% endif %}<br class="horizontal-separator" />
+              {% assign count = count | plus: 1 %}
+            {% endfor %}
+        </div>
+        <div id="finishedThesis" style="display:none">
+          <!--QUERY to GET the CLOSED Thesis-->
+          {% capture query3 %}
+          SELECT ?thesisItem ?topic ?level ?website ?closed ?long  WHERE{
+              ?thesisItem a ex:thesisItem .
+              ?thesisItem rdfs:label ?topic .
+              ?thesisItem ex:level ?level .
+              ?thesisItem ex:homepage ?website .
+              ?thesisItem ex:closed ?closed .
+              ?thesisItem ex:longdescription ?long .
+
+          }
+          {% endcapture %}
+          {% assign resultsetclosed = page.rdf | sparql_query: query3 %}
+          <!--Presentation of CLOSED Thesis Items  -->
+          {% for result3 in resultsetclosed %}
+            <!--QUERY to GET all the people associated with the thesis topic  -->
+            {% capture query4 %}
+            SELECT ?thesisItem ?open ?person ?name ?topic WHERE{
+                ?thesisItem a ex:thesisItem .
+                ?thesisItem rdfs:label ?topic .
+                ?thesisItem ex:closed ?closed .
+                ?thesisItem foaf:Person ?person .
+                ?person foaf:name ?name .
+            }
+            {% endcapture %}
+            {% assign resultset2closed = page.rdf | sparql_query: query4 %}
+              {% capture labelname %}{{result3.topic}}{% endcapture %}
+              <div class="partner-title">
+                <a><h1>{{result3.topic}}</h1></a>
+              </div>
+              <div class="partner-detail">
+                <p style="text-align:left; margin:8px;">{{result3.long}}</p>
+              </div>
+            <!--Presentation of the resultset  -->
+            {% for result4 in resultset2closed %}
+              {% capture topicname %}{{result4.topic}}{% endcapture %}
+
+              {% if topicname == labelname  %}
+
+              {% assign url =  result4.person | remove: "http://example.org/" %}
+              <a href="../{{url}}">{{result4.name}}</a>
+              <br/>
+              {% else %}
+              {% endif %}
+
+            {% endfor %}
+            <br/><hr/><br/>
+          {% endfor %}
+        </div>
+      </div>
+      <br class="horizontal-separator2" />
+    </div>
+  </div>
+</article>

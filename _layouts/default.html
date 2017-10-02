@@ -1,0 +1,37 @@
+---
+rdf_prefix_path: simpsons.pref
+---
+<!DOCTYPE html>
+<html xmlns:xlink="http://www.w3.org/1999/xlink" lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include rootHead.html %}
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+      <div class="wrapper">
+        <ul>
+        {% for member in site.data.members %}
+          <li>
+            <a href="https://github.com/{{ member.github }}">
+              {{ member.name }}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include foot.html %}
+
+    <script type="text/javascript" src="{{ "/assets/heatMapTechnologies.js" | relative_url }}"></script>
+  </body>
+
+</html>
