@@ -66,6 +66,7 @@ For anyone who wants to maintain the sda.tech website and keep updating the late
 ## Projects
 
 ## Publications
+For publications, we use exteral bib file(sda.bib) to present our bib entries. In order to customize the logic of presentation you need to customize the script in assets called, "bib-list-min.js" and to customize the style you can play with "bib-publication-list.css".
 
 ## Jobs
 
