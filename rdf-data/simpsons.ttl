@@ -350,6 +350,14 @@ ex:MEXVocabulary a ex:project ;
     ex:summer2017 "Summer Semester 2017";
     foaf:Person ex:OliverOctopus, ex:AlfredEel .
 
+  ex:SemanticDataWebTechnologies a ex:course ;
+    rdfs:label "Semantic Data Web Technologies" ;
+    ex:description "The Web accompanies the transition from an industrial to an information society and provides the infrastructure for a new quality of information handling regarding acquisition as well as provisioning " ;
+    ex:homepage "http://mex.aksw.org/";
+    ex:language "English" ;
+    ex:winter2017 "Summer Semester 2017";
+    foaf:Person ex:OliverOctopus, ex:AlfredEel .
+
 ex:Publication1 a ex:publication ;
     rdfs:label "business opportunities" ;
     dc:title "Powerful rewards as milestone towards accelerated control-based business opportunities" ;

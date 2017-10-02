@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
-  <footer class="site-rootHead">
+<html xmlns:xlink="http://www.w3.org/1999/xlink" lang=" en ">
+<footer class="site-rootHead">
   <div class="wrapper">
     <a href="../blog"><h6 class="root-heading">
       Blog
@@ -8,9 +8,7 @@
     <a href="../contact"><h6 class="root-heading">Contact</h6></a>
   </div>
 </footer>
-
-
-  <head>
+ <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,8 +33,8 @@
 </head>
 
 
-  <body>
-    <header class="site-header" role="banner">
+<body>
+  <header class="site-header" role="banner">
   <div class="wrapper">
     
     
@@ -1320,50 +1318,50 @@
 </header>
 
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post">
   <script>
-    function changeActiveGroups(name)
-    {
+    function changeActiveGroups(name) {
       clearAllGroupTypes();
       clearAllGroupTabs();
 
-      if( name == "Distributed Semantic Analytics" ){
+      if (name == "Distributed Semantic Analytics") {
         document.getElementById('dsa').style.display = 'inline-block';
         document.getElementById('DistributedSemanticAnalytics').classList.add('active');
-      }else if( name == "Semantic Question Answering" ){
+      } else if (name == "Semantic Question Answering") {
         document.getElementById('sqa').style.display = 'inline-block';
         document.getElementById('SemanticQuestionAnswering').classList.add('active');
-      }else if( name == "Structured Machine Learning" ){
+      } else if (name == "Structured Machine Learning") {
         document.getElementById('sml').style.display = 'inline-block';
         document.getElementById('StructuredMachineLearning').classList.add('active');
-      }else if( name == "Deep Learning" ){
+      } else if (name == "Deep Learning") {
         document.getElementById('dl').style.display = 'inline-block';
         document.getElementById('DeepLearning').classList.add('active');
-      }else if( name == "Semantic Data Management"){
+      } else if (name == "Semantic Data Management") {
         document.getElementById('sdm').style.display = 'inline-block';
         document.getElementById('SemanticDataManagement').classList.add('active');
-      }else if( name == "Software Engineering for Data Science" ){
+      } else if (name == "Software Engineering for Data Science") {
         document.getElementById('seds').style.display = 'inline-block';
         document.getElementById('SoftwareEngineeringforDataScience').classList.add('active');
-      }else if( name == "Knowledge Extraction and Validation" ){
+      } else if (name == "Knowledge Extraction and Validation") {
         document.getElementById('knv').style.display = 'inline-block';
         document.getElementById('KnowledgeExtractionandValidation').classList.add('active');
-      }else
+      } else
         console.log("Invalid People Type Name");
     }
 
-    function clearAllGroupTypes(){
-        document.getElementById('dsa').style.display = 'none';
-        document.getElementById('sqa').style.display = 'none';
-        document.getElementById('sml').style.display = 'none';
-        document.getElementById('dl').style.display = 'none';
-        document.getElementById('sdm').style.display = 'none';
-        document.getElementById('seds').style.display = 'none';
-        document.getElementById('knv').style.display = 'none';
+    function clearAllGroupTypes() {
+      document.getElementById('dsa').style.display = 'none';
+      document.getElementById('sqa').style.display = 'none';
+      document.getElementById('sml').style.display = 'none';
+      document.getElementById('dl').style.display = 'none';
+      document.getElementById('sdm').style.display = 'none';
+      document.getElementById('seds').style.display = 'none';
+      document.getElementById('knv').style.display = 'none';
     }
-    function clearAllGroupTabs(){
+
+    function clearAllGroupTabs() {
       document.getElementById('DistributedSemanticAnalytics').classList.remove('active');
       document.getElementById('SemanticQuestionAnswering').classList.remove('active');
       document.getElementById('StructuredMachineLearning').classList.remove('active');
@@ -1376,1091 +1374,477 @@
 
   <div class="pagination">
     <!--QUERY to GET all the GROUP Items  -->
-    
-    
+     
     <!-- Paginating logic for all the GROUPS -->
       
-        
-        
-          <a href="#" id="DistributedSemanticAnalytics" class="active"
-            onclick="changeActiveGroups('Distributed Semantic Analytics')"><i class="fa fa-bar-chart"></i>
-            Distributed Semantic Analytics</a>
-        
-        
-      
-        
-        
-        <a href="#" id="SemanticQuestionAnswering"
-         onclick="changeActiveGroups('Semantic Question Answering')">
+    <a href="#" id="DistributedSemanticAnalytics" class="active" onclick="changeActiveGroups('Distributed Semantic Analytics')"><i class="fa fa-bar-chart"></i>
+            Distributed Semantic Analytics</a>     
+    <a href="#" id="SemanticQuestionAnswering" onclick="changeActiveGroups('Semantic Question Answering')">
           <i class="fa fa-search"></i>
-         Semantic Question Answering</a>
-        
-        
-      
-        
-        
-        <a href="#" id="StructuredMachineLearning"
-         onclick="changeActiveGroups('Structured Machine Learning')">
+         Semantic Question Answering</a>     
+    <a href="#" id="StructuredMachineLearning" onclick="changeActiveGroups('Structured Machine Learning')">
           <i class="fa fa-cube"></i>
-         Structured Machine Learning</a>
-        
-        
-      
-        
-        
-        <a href="#" id="DeepLearning"
-         onclick="changeActiveGroups('Deep Learning')">
+         Structured Machine Learning</a>     
+    <a href="#" id="DeepLearning" onclick="changeActiveGroups('Deep Learning')">
           <i class="fa fa-line-chart"></i>
-         Deep Learning</a>
-        
-        
-          <br/><br/>
-        
-      
-        
-        
-        <a href="#" id="SemanticDataManagement"
-         onclick="changeActiveGroups('Semantic Data Management')">
+         Deep Learning</a>  
+    <br/><br/>    
+    <a href="#" id="SemanticDataManagement" onclick="changeActiveGroups('Semantic Data Management')">
           <i class="fa fa-cogs"></i>
-         Semantic Data Management</a>
-        
-        
-      
-        
-        
-        <a href="#" id="SoftwareEngineeringforDataScience"
-         onclick="changeActiveGroups('Software Engineering for Data Science')">
+         Semantic Data Management</a>     
+    <a href="#" id="SoftwareEngineeringforDataScience" onclick="changeActiveGroups('Software Engineering for Data Science')">
           <i class="fa fa-bar-chart"></i>
-         Software Engineering for Data Science</a>
-        
-        
-      
-        
-        
-        <a href="#" id="KnowledgeExtractionandValidation"
-         onclick="changeActiveGroups('Knowledge Extraction and Validation')">
+         Software Engineering for Data Science</a>     
+    <a href="#" id="KnowledgeExtractionandValidation" onclick="changeActiveGroups('Knowledge Extraction and Validation')">
           <i class="fa fa-search"></i>
-         Knowledge Extraction and Validation</a>
-        
-        
-      
-      <br/>
-      <br/><hr class="ruleh"/>
-      
-        
-        <!--GET querry for Distributed Semantic Analytics  -->
-        
-          <div id="dsa"  style="display:inline-block">
-            <div class="post-content">
-            
-            
-            
-            
-            <div>
-                <div class="container">
-                  <br/>
-                  <h2 style="text-align:center;"><i class="fa fa-bar-chart"></i> Distributed Semantic Analytics</h2>
-                  <br class="horizontal-separator" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Group Members</h2>
-                  <div class="membersofProject">
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                          <a href="../OliverOctopus">Jens Lehmann</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlfredEel">Alfred Eel</a>
-                        </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Projects</h2>
-                  <div class="partnersOfProject">
-                    
-                      
-                      
-                        
-                          <div class="chip">
-                            <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
-                            <a href="../WAVE">WAVE</a>
-                          </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Publications </h2>
-                  <br class="horizontal-separator2" />
-                </div>
+         Knowledge Extraction and Validation</a>   
+    <br/>
+    <br/>
+    <hr class="ruleh" />  
+    <!--GET querry for Distributed Semantic Analytics  -->
+    
+    <div id="dsa" style="display:inline-block">
+      <div class="post-content">
+           
+        <div>
+          <div class="container">
+            <br/>
+            <h2 style="text-align:center;"><i class="fa fa-bar-chart"></i> Distributed Semantic Analytics</h2>
+            <br class="horizontal-separator" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Group Members</h2>
+            <div class="membersofProject">
+                 
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                <a href="../OliverOctopus">Jens Lehmann</a>
               </div>
-              <br class="horizontal-separator" />
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlfredEel">Alfred Eel</a>
               </div>
+                                                               
             </div>
-        
-        <!--GET querry for Semantic Question Answering  -->
-        
-        <!--GET querry for Structured Machine Learning  -->
-        
-        <!--GET querry for Deep Learning  -->
-        
-        <!--GET querry for Semantic Data Management  -->
-        
-        <!--GET querry for SoftwareEngineeringforDataScience  -->
-        
-        <!--GET querry for KnowledgeExtractionandValidation  -->
-        
-      
-        
-        <!--GET querry for Distributed Semantic Analytics  -->
-        
-        <!--GET querry for Semantic Question Answering  -->
-        
-          <div id="sqa" style="display:none">
-            <div class="post-content">
-              
-              
-              
-              
-            <div>
-                <div class="container">
-                  <br/>
-                  <h2 style="text-align:center;"><i class="fa fa-search"></i> Semantic Question Answering</h2>
-                  <br class="horizontal-separator" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Group Members</h2>
-                  <div class="membersofProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                          <a href="../OliverOctopus">Jens Lehmann</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlfredEel">Alfred Eel</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png" alt="Person" width="96" height="96">
-                          <a href="../CorneliusCrab">Vitalis Veins</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png" alt="Person" width="96" height="96">
-                          <a href="../LarryLobster">Larry Lobster</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlexanderKister">Dr.Alexander Kister</a>
-                        </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Projects</h2>
-                  <div class="partnersOfProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                        
-                          <div class="chip">
-                            <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
-                            <a href="../WAVE">WAVE</a>
-                          </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Publications </h2>
-                  <br class="horizontal-separator2" />
-                </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Projects</h2>
+            <div class="partnersOfProject">
+                 
+              <div class="chip">
+                <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
+                <a href="../WAVE">WAVE</a>
               </div>
-              <br class="horizontal-separator" />
+                                 
             </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Publications </h2>
+            <br class="horizontal-separator2" />
           </div>
-        
-        <!--GET querry for Structured Machine Learning  -->
-        
-        <!--GET querry for Deep Learning  -->
-        
-        <!--GET querry for Semantic Data Management  -->
-        
-        <!--GET querry for SoftwareEngineeringforDataScience  -->
-        
-        <!--GET querry for KnowledgeExtractionandValidation  -->
-        
-      
-        
-        <!--GET querry for Distributed Semantic Analytics  -->
-        
-        <!--GET querry for Semantic Question Answering  -->
-        
-        <!--GET querry for Structured Machine Learning  -->
-        
-          <div id="sml" style="display:none">
-            <div class="post-content">
-              <div>
-                <div class="container">
-                  <br/>
-                  <h2 style="text-align:center;"><i class="fa fa-cube"></i> Structured Machine Learning</h2>
-                  <br class="horizontal-separator" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Group Members</h2>
-                  <div class="membersofProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                          <a href="../OliverOctopus">Jens Lehmann</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlfredEel">Alfred Eel</a>
-                        </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Projects</h2>
-                  <div class="partnersOfProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                        
-                          <div class="chip">
-                            <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
-                            <a href="../WAVE">WAVE</a>
-                          </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Publications </h2>
-                  <br class="horizontal-separator2" />
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        <!--GET querry for Deep Learning  -->
-        
-        <!--GET querry for Semantic Data Management  -->
-        
-        <!--GET querry for SoftwareEngineeringforDataScience  -->
-        
-        <!--GET querry for KnowledgeExtractionandValidation  -->
-        
-      
-        
-        <!--GET querry for Distributed Semantic Analytics  -->
-        
-        <!--GET querry for Semantic Question Answering  -->
-        
-        <!--GET querry for Structured Machine Learning  -->
-        
-        <!--GET querry for Deep Learning  -->
-        
-          <div id="dl" style="display:none">
-            <div class="post-content">
-              <div>
-                <div class="container">
-                  <br/>
-                  <h2 style="text-align:center;"><i class="fa fa-line-chart"></i> Deep Learning</h2>
-                  <br class="horizontal-separator" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Group Members</h2>
-                  <div class="membersofProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                          <a href="../OliverOctopus">Jens Lehmann</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlfredEel">Alfred Eel</a>
-                        </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Projects</h2>
-                  <div class="partnersOfProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                        
-                          <div class="chip">
-                            <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
-                            <a href="../WAVE">WAVE</a>
-                          </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Publications </h2>
-                  <br class="horizontal-separator2" />
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        <!--GET querry for Semantic Data Management  -->
-        
-        <!--GET querry for SoftwareEngineeringforDataScience  -->
-        
-        <!--GET querry for KnowledgeExtractionandValidation  -->
-        
-      
-        
-        <!--GET querry for Distributed Semantic Analytics  -->
-        
-        <!--GET querry for Semantic Question Answering  -->
-        
-        <!--GET querry for Structured Machine Learning  -->
-        
-        <!--GET querry for Deep Learning  -->
-        
-        <!--GET querry for Semantic Data Management  -->
-        
-          <div id="sdm" style="display:none">
-            <div class="post-content">
-              <div>
-                <div class="container">
-                  <br/>
-                  <h2 style="text-align:center;"><i class="fa fa-cogs"></i> Semantic Data Management</h2>
-                  <br class="horizontal-separator" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Group Members</h2>
-                  <div class="membersofProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                          <a href="../OliverOctopus">Jens Lehmann</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlfredEel">Alfred Eel</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png" alt="Person" width="96" height="96">
-                          <a href="../CorneliusCrab">Vitalis Veins</a>
-                        </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Projects</h2>
-                  <div class="partnersOfProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                        
-                          <div class="chip">
-                            <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
-                            <a href="../WAVE">WAVE</a>
-                          </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Publications </h2>
-                  <br class="horizontal-separator2" />
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        <!--GET querry for SoftwareEngineeringforDataScience  -->
-        
-        <!--GET querry for KnowledgeExtractionandValidation  -->
-        
-      
-        
-        <!--GET querry for Distributed Semantic Analytics  -->
-        
-        <!--GET querry for Semantic Question Answering  -->
-        
-        <!--GET querry for Structured Machine Learning  -->
-        
-        <!--GET querry for Deep Learning  -->
-        
-        <!--GET querry for Semantic Data Management  -->
-        
-        <!--GET querry for SoftwareEngineeringforDataScience  -->
-        
-          <div id="seds" style="display:none">
-            <div class="post-content">
-              <div>
-                <div class="container">
-                  <br/>
-                  <h2 style="text-align:center;"><i class="fa fa-bar-chart"></i> Software Engineering for Data Science</h2>
-                  <br class="horizontal-separator" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Group Members</h2>
-                  <div class="membersofProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                          <a href="../OliverOctopus">Jens Lehmann</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlfredEel">Alfred Eel</a>
-                        </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Projects</h2>
-                  <div class="partnersOfProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                        
-                          <div class="chip">
-                            <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
-                            <a href="../WAVE">WAVE</a>
-                          </div>
-                      
-                    
-                      
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Publications </h2>
-                  <br class="horizontal-separator2" />
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        <!--GET querry for KnowledgeExtractionandValidation  -->
-        
-      
-        
-        <!--GET querry for Distributed Semantic Analytics  -->
-        
-        <!--GET querry for Semantic Question Answering  -->
-        
-        <!--GET querry for Structured Machine Learning  -->
-        
-        <!--GET querry for Deep Learning  -->
-        
-        <!--GET querry for Semantic Data Management  -->
-        
-        <!--GET querry for SoftwareEngineeringforDataScience  -->
-        
-        <!--GET querry for KnowledgeExtractionandValidation  -->
-        
-          <div id="knv" style="display:none">
-            <div class="post-content">
-              <div>
-                <div class="container">
-                  <br/>
-                  <h2 style="text-align:center;"><i class="fa fa-search"></i> Knowledge Extraction and Validation</h2>
-                  <br class="horizontal-separator" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Group Members</h2>
-                  <div class="membersofProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
-                          <a href="../OliverOctopus">Jens Lehmann</a>
-                        </div>
-                      
-                    
-                      
-                      
-                      
-                        <div class="chip">
-                          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
-                          <a href="../AlfredEel">Alfred Eel</a>
-                        </div>
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Projects</h2>
-                  <div class="partnersOfProject">
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                        
-                          <div class="chip">
-                            <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
-                            <a href="../WAVE">WAVE</a>
-                          </div>
-                      
-                    
-                  </div>
-                  <br class="horizontal-separator" />
-                  <br class="horizontal-separator" />
-                  <h2>Publications </h2>
-                  <br class="horizontal-separator2" />
-                </div>
-              </div>
-            </div>
-          </div>
-        
-      
+        </div>
+        <br class="horizontal-separator" />
+      </div>
     </div>
+    
+    <!--GET querry for Semantic Question Answering  -->
+    
+    <!--GET querry for Structured Machine Learning  -->
+    
+    <!--GET querry for Deep Learning  -->
+    
+    <!--GET querry for Semantic Data Management  -->
+    
+    <!--GET querry for SoftwareEngineeringforDataScience  -->
+    
+    <!--GET querry for KnowledgeExtractionandValidation  -->
+      
+    <!--GET querry for Distributed Semantic Analytics  -->
+    
+    <!--GET querry for Semantic Question Answering  -->
+    
+    <div id="sqa" style="display:none">
+      <div class="post-content">
+           
+        <div>
+          <div class="container">
+            <br/>
+            <h2 style="text-align:center;"><i class="fa fa-search"></i> Semantic Question Answering</h2>
+            <br class="horizontal-separator" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Group Members</h2>
+            <div class="membersofProject">
+                       
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                <a href="../OliverOctopus">Jens Lehmann</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlfredEel">Alfred Eel</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png" alt="Person" width="96" height="96">
+                <a href="../CorneliusCrab">Vitalis Veins</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png" alt="Person" width="96" height="96">
+                <a href="../LarryLobster">Larry Lobster</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlexanderKister">Dr.Alexander Kister</a>
+              </div>
+                                                
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Projects</h2>
+            <div class="partnersOfProject">
+                    
+              <div class="chip">
+                <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
+                <a href="../WAVE">WAVE</a>
+              </div>
+                              
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Publications </h2>
+            <br class="horizontal-separator2" />
+          </div>
+        </div>
+        <br class="horizontal-separator" />
+      </div>
+    </div>
+    
+    <!--GET querry for Structured Machine Learning  -->
+    
+    <!--GET querry for Deep Learning  -->
+    
+    <!--GET querry for Semantic Data Management  -->
+    
+    <!--GET querry for SoftwareEngineeringforDataScience  -->
+    
+    <!--GET querry for KnowledgeExtractionandValidation  -->
+      
+    <!--GET querry for Distributed Semantic Analytics  -->
+    
+    <!--GET querry for Semantic Question Answering  -->
+    
+    <!--GET querry for Structured Machine Learning  -->
+    
+    <div id="sml" style="display:none">
+      <div class="post-content">
+        <div>
+          <div class="container">
+            <br/>
+            <h2 style="text-align:center;"><i class="fa fa-cube"></i> Structured Machine Learning</h2>
+            <br class="horizontal-separator" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Group Members</h2>
+            <div class="membersofProject">
+                                      
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                <a href="../OliverOctopus">Jens Lehmann</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlfredEel">Alfred Eel</a>
+              </div>
+                                          
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Projects</h2>
+            <div class="partnersOfProject">
+                       
+              <div class="chip">
+                <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
+                <a href="../WAVE">WAVE</a>
+              </div>
+                           
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Publications </h2>
+            <br class="horizontal-separator2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--GET querry for Deep Learning  -->
+    
+    <!--GET querry for Semantic Data Management  -->
+    
+    <!--GET querry for SoftwareEngineeringforDataScience  -->
+    
+    <!--GET querry for KnowledgeExtractionandValidation  -->
+      
+    <!--GET querry for Distributed Semantic Analytics  -->
+    
+    <!--GET querry for Semantic Question Answering  -->
+    
+    <!--GET querry for Structured Machine Learning  -->
+    
+    <!--GET querry for Deep Learning  -->
+    
+    <div id="dl" style="display:none">
+      <div class="post-content">
+        <div>
+          <div class="container">
+            <br/>
+            <h2 style="text-align:center;"><i class="fa fa-line-chart"></i> Deep Learning</h2>
+            <br class="horizontal-separator" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Group Members</h2>
+            <div class="membersofProject">
+                                            
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                <a href="../OliverOctopus">Jens Lehmann</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlfredEel">Alfred Eel</a>
+              </div>
+                                    
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Projects</h2>
+            <div class="partnersOfProject">
+                          
+              <div class="chip">
+                <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
+                <a href="../WAVE">WAVE</a>
+              </div>
+                        
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Publications </h2>
+            <br class="horizontal-separator2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--GET querry for Semantic Data Management  -->
+    
+    <!--GET querry for SoftwareEngineeringforDataScience  -->
+    
+    <!--GET querry for KnowledgeExtractionandValidation  -->
+      
+    <!--GET querry for Distributed Semantic Analytics  -->
+    
+    <!--GET querry for Semantic Question Answering  -->
+    
+    <!--GET querry for Structured Machine Learning  -->
+    
+    <!--GET querry for Deep Learning  -->
+    
+    <!--GET querry for Semantic Data Management  -->
+    
+    <div id="sdm" style="display:none">
+      <div class="post-content">
+        <div>
+          <div class="container">
+            <br/>
+            <h2 style="text-align:center;"><i class="fa fa-cogs"></i> Semantic Data Management</h2>
+            <br class="horizontal-separator" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Group Members</h2>
+            <div class="membersofProject">
+                                                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                <a href="../OliverOctopus">Jens Lehmann</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlfredEel">Alfred Eel</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png" alt="Person" width="96" height="96">
+                <a href="../CorneliusCrab">Vitalis Veins</a>
+              </div>
+                           
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Projects</h2>
+            <div class="partnersOfProject">
+                             
+              <div class="chip">
+                <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
+                <a href="../WAVE">WAVE</a>
+              </div>
+                     
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Publications </h2>
+            <br class="horizontal-separator2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--GET querry for SoftwareEngineeringforDataScience  -->
+    
+    <!--GET querry for KnowledgeExtractionandValidation  -->
+      
+    <!--GET querry for Distributed Semantic Analytics  -->
+    
+    <!--GET querry for Semantic Question Answering  -->
+    
+    <!--GET querry for Structured Machine Learning  -->
+    
+    <!--GET querry for Deep Learning  -->
+    
+    <!--GET querry for Semantic Data Management  -->
+    
+    <!--GET querry for SoftwareEngineeringforDataScience  -->
+    
+    <div id="seds" style="display:none">
+      <div class="post-content">
+        <div>
+          <div class="container">
+            <br/>
+            <h2 style="text-align:center;"><i class="fa fa-bar-chart"></i> Software Engineering for Data Science</h2>
+            <br class="horizontal-separator" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Group Members</h2>
+            <div class="membersofProject">
+                                                           
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                <a href="../OliverOctopus">Jens Lehmann</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlfredEel">Alfred Eel</a>
+              </div>
+                     
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Projects</h2>
+            <div class="partnersOfProject">
+                                
+              <div class="chip">
+                <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
+                <a href="../WAVE">WAVE</a>
+              </div>
+                  
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Publications </h2>
+            <br class="horizontal-separator2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--GET querry for KnowledgeExtractionandValidation  -->
+      
+    <!--GET querry for Distributed Semantic Analytics  -->
+    
+    <!--GET querry for Semantic Question Answering  -->
+    
+    <!--GET querry for Structured Machine Learning  -->
+    
+    <!--GET querry for Deep Learning  -->
+    
+    <!--GET querry for Semantic Data Management  -->
+    
+    <!--GET querry for SoftwareEngineeringforDataScience  -->
+    
+    <!--GET querry for KnowledgeExtractionandValidation  -->
+    
+    <div id="knv" style="display:none">
+      <div class="post-content">
+        <div>
+          <div class="container">
+            <br/>
+            <h2 style="text-align:center;"><i class="fa fa-search"></i> Knowledge Extraction and Validation</h2>
+            <br class="horizontal-separator" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. </p>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Group Members</h2>
+            <div class="membersofProject">
+                                                                 
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96">
+                <a href="../OliverOctopus">Jens Lehmann</a>
+              </div>
+                  
+              <div class="chip">
+                <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg" alt="Person" width="96" height="96">
+                <a href="../AlfredEel">Alfred Eel</a>
+              </div>
+               
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Projects</h2>
+            <div class="partnersOfProject">
+                                   
+              <div class="chip">
+                <img src="https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg" alt="Person" width="96" height="96">
+                <a href="../WAVE">WAVE</a>
+              </div>
+               
+            </div>
+            <br class="horizontal-separator" />
+            <br class="horizontal-separator" />
+            <h2>Publications </h2>
+            <br class="horizontal-separator2" />
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </div>
   </div>
 
 </article>
 
-      </div>
-      <div class="wrapper">
-        <ul>
+    </div>
+    <div class="wrapper">
+      <ul>
         
-        </ul>
-      </div>
-    </main>
+      </ul>
+    </div>
+  </main>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
 
   <div class="wrapper">
 
@@ -2527,9 +1911,7 @@
   </div>
 
 </footer>
-
-
-    <footer class="site-foot">
+ <footer class="site-foot">
   <div class="wrapper">
     <h6 class="foot-heading">
       Smart Data Analytics, © 2017
@@ -2538,7 +1920,7 @@
 </footer>
 
 
-    <script type="text/javascript" src="/assets/heatMapTechnologies.js"></script>
-  </body>
+  <script type="text/javascript" src="/assets/heatMapTechnologies.js"></script>
+</body>
 
 </html>
