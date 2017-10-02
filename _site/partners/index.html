@@ -1322,28 +1322,59 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- QUERRY to GET the PARTNERS -->
+        <!-- SCRIPT to TOGGLE between Partner Types -->
+<script>
+  function allPartners(){
+    document.getElementById('allPartners').style.display = 'block';
+    document.getElementById('allPar').classList.add('active');
+    document.getElementById('industryPartners').style.display = 'none';
+    document.getElementById('industryPar').classList.remove('active');
+    document.getElementById('academicPartners').style.display = 'none';
+    document.getElementById('academicPar').classList.remove('active');
+  }
 
+  function industryPartners(){
+    document.getElementById('allPartners').style.display = 'none';
+    document.getElementById('allPar').classList.remove('active');
+    document.getElementById('industryPartners').style.display = 'block';
+    document.getElementById('industryPar').classList.add('active');
+    document.getElementById('academicPartners').style.display = 'none';
+    document.getElementById('academicPar').classList.remove('active');
+  }
 
-
+  function academicPartners(){
+    document.getElementById('allPartners').style.display = 'none';
+    document.getElementById('allPar').classList.remove('active');
+    document.getElementById('industryPartners').style.display = 'none';
+    document.getElementById('industryPar').classList.remove('active');
+    document.getElementById('academicPartners').style.display = 'block';
+    document.getElementById('academicPar').classList.add('active');
+  }
+</script>
 <!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">
-    <a href="#" id="funded" class="active" onclick="activeFundedProjects()" ><i class="fa fa-list-alt" aria-hidden="true"></i>
+    <a href="#" id="allPar" class="active" onclick="allPartners()" ><i class="fa fa-list-alt" aria-hidden="true"></i>
     All Partners</a>
-    <a href="#" id="funded" class="" onclick="activeFundedProjects()" ><i class="fa fa-industry" aria-hidden="true"></i>
+    <a href="#" id="industryPar" class="" onclick="industryPartners()" ><i class="fa fa-industry" aria-hidden="true"></i>
     Industry Partners</a>
-    <a href="#" id="opensrc" class="" onclick="activeOpenSourceProjects()"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    <a href="#" id="academicPar" class="" onclick="academicPartners()"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
     Academic Partners</a>
-    <!-- <h1 class="post-title">Looking for our Partners ? Yes we have 3 partners.</h1> -->
+    <!-- <h1 class="post-title">Looking for our Partners ? Yes we have  partners.</h1> -->
     <br/>
     <br/>
     <hr />
-    
-    
-    
-      
-        <br class="horizontal-separator"/>
+    <div class="partner-items">
+      <div id="allPartners" style="display:block">
+        <!-- QUERRY to GET ALL the PARTNERS -->
+        
+        
+        
+        <!--Presenting ALL the PARTNERS  -->
+        
+        
+          
+            <br class="horizontal-separator"/>
 <div class="partner-title">
   <a href="http://www.agroknow.com/agroknow/" target="_blank"> <h1>Agroknow</h1></a>
 </div>
@@ -1364,11 +1395,11 @@
   <hr />
 
 
-      
+          
+            
         
-    
-      
-        <br class="horizontal-separator"/>
+          
+            <br class="horizontal-separator"/>
 <div class="partner-title">
   <a href="https://www.agtinternational.com/" target="_blank"> <h1>AGT Group R&D GmbH</h1></a>
 </div>
@@ -1389,11 +1420,11 @@
   <hr />
 
 
-      
+          
+            
         
-    
-      
-        <br class="horizontal-separator"/>
+          
+            <br class="horizontal-separator"/>
 <div class="partner-title">
   <a href="http://ai4bd.com/?page_id=4" target="_blank"> <h1>AI4BD GmbH</h1></a>
 </div>
@@ -1412,9 +1443,101 @@
 <!-- NO RULE FOR LAST ELEMENT -->
 
 
-      
+          
+            
         
-    
+      </div>
+      <div id="industryPartners" style="display:none">
+        <!-- QUERRY to GET the INDUSTRY PARTNERS -->
+        
+        
+        
+        <!--Presenting ALL the INDUSTRY PARTNERS  -->
+        
+        
+          
+            <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="https://www.agtinternational.com/" target="_blank"> <h1>AGT Group R&D GmbH</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="https://www.agtinternational.com/wp-content/themes/AGT/homepage/agt3.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+
+          
+            
+        
+          
+            <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://ai4bd.com/?page_id=4" target="_blank"> <h1>AI4BD GmbH</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://ai4bd.com/wp-content/uploads/2016/09/final-logo-ai4bd.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      AI4BD is based in Switzerland. Provides software solutions across Europe vertical markets such as Health, Security, and Automotive. It develops a semantic framework supporting the Linked Data life-cycle and solutions including a Natural Language Processing (NLP) engine, an RDF store and different Web services and data analytics based on RDF data.  The solutions are distributed on-premise as Software and as a Service (SaaS). AI4BD has expertise in software component integration and in Linked Data technologies. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+
+          
+            
+        
+      </div>
+      <div id="academicPartners" style="display:none">
+        <!-- QUERRY to GET ALL the ACADMEIC PARTNERS -->
+        
+        
+        
+        <!--Presenting ALL the ACADEMIC PARTNERS  -->
+        
+        
+          
+            <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://www.agroknow.com/agroknow/" target="_blank"> <h1>Agroknow</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://www.agroknow.com/agroknow/sites/default/files/agroknowlogo.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+
+          
+            
+        
+      </div>
+    </div>
+
     <br class="horizontal-separator2" />
   </div>
 </article>
