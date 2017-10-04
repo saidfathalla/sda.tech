@@ -22,6 +22,7 @@ ex:OliverOctopus a foaf:Person ;
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg> ;
     foaf:mbox <mailto:Octopus@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
+    ex:publication ex:Publication1, ex:Publication2 ;
     ex:researchinterests ex:linkeddata, ex:opendata;
     ex:group ex:DistributedSemanticAnalytics ;
     ex:project ex:SHORE ,
@@ -79,6 +80,7 @@ ex:AlexanderKister a foaf:Person ;
     foaf:mbox <mailto:Alfred@aksw.org> ;
     foaf:phone <tel:+49-341-123456789> ;
     ex:group ex:SemanticQuestionAnswering ;
+    ex:publication ex:Publication1 ;
     ex:project ex:SHORE ,
         ex:WAVE ,
         ex:CORALS .
@@ -350,8 +352,8 @@ ex:MEXVocabulary a ex:project ;
     ex:summer2017 "Summer Semester 2017";
     foaf:Person ex:OliverOctopus, ex:AlfredEel .
 
-  ex:SemanticDataWebTechnologies a ex:course ;
-    rdfs:label "Semantic Data Web Technologies" ;
+  ex:InformationRetrieval a ex:course ;
+    rdfs:label "Information Retrieval" ;
     ex:description "The Web accompanies the transition from an industrial to an information society and provides the infrastructure for a new quality of information handling regarding acquisition as well as provisioning " ;
     ex:homepage "http://mex.aksw.org/";
     ex:language "English" ;
