@@ -41,6 +41,12 @@ layout: default
       <br class="horizontal-separator" />
       <h3>Publications</h3>
       <div class="publications-project">
+        <!-- Displaying all the publications of the PROJECT  -->
+       {% capture query %} SELECT ?publication ?pubname ?description WHERE{
+       <{{page.rdf}}> ex:publication ?publication . ?publication dc:title ?pubname . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+        {% for result in resultset2 %}
+          {% include pubEntry.html title=result.pubname %}
+        {% endfor %}
         <div>
           <br class="horizontal-separator2" />
         </div>

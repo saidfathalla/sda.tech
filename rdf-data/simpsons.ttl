@@ -197,6 +197,7 @@ ex:BigDataEurope a ex:project ;
     ex:homepage "http://www.big-data-europe.eu/" ;
     ex:source "https://github.com/big-data-europe" ;
     ex:download "undefined" ;
+    ex:publication ex:Publication1 ;
     foaf:Person ex:OliverOctopus, ex:AlfredEel ;
     ex:partners ex:agroknow .
 
@@ -210,6 +211,7 @@ ex:HOBBIT a ex:project ;
     ex:homepage "http://project-hobbit.eu/" ;
     ex:source "https://github.com/hobbit-project" ;
     ex:download "undefined" ;
+    ex:publication ex:Publication2 ;
     foaf:Person ex:OliverOctopus, ex:AlfredEel ;
     ex:partners ex:agroknow .
 
@@ -362,12 +364,16 @@ ex:MEXVocabulary a ex:project ;
 
 ex:Publication1 a ex:publication ;
     rdfs:label "business opportunities" ;
+    dc:date "2012-05-05" ;
+    ex:link "http://mex.aksw.org/";
     dc:title "Powerful rewards as milestone towards accelerated control-based business opportunities" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
     dc:author ex:AlfredEel .
 
 ex:Publication2 a ex:publication ;
     rdfs:label "net value" ;
+    dc:date "2012-09-05" ;
+    ex:link "http://mex.aksw.org/";
     dc:title "Global perspectives for objective driven net value" ;
     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
     dc:author ex:LarryLobster ,
