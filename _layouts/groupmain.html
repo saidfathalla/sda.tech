@@ -69,9 +69,10 @@ layout: default
     <br/>
     <br/>
     <hr class="ruleh" /> {% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
+    </div>
     <!--GET querry for Distributed Semantic Analytics  -->
     {% if name == site.data.groupTypes[0].name %}
-    <div id="dsa" style="display:inline-block">
+    <div id="dsa" class="content-people" style="display:inline-block">
       <div class="post-content">
         {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group ex:project ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {% endcapture %} {% assign
         resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group foaf:Person ?person . ?person foaf:name ?nameperson
@@ -116,7 +117,7 @@ layout: default
     {% endif %}
     <!--GET querry for Semantic Question Answering  -->
     {% if name == site.data.groupTypes[1].name %}
-    <div id="sqa" style="display:none">
+    <div id="sqa" class="content-people" style="display:none">
       <div class="post-content">
         {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group ex:project ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {% endcapture %} {% assign
         resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group foaf:Person ?person . ?person foaf:name ?nameperson
@@ -161,7 +162,7 @@ layout: default
     {% endif %}
     <!--GET querry for Structured Machine Learning  -->
     {% if name == site.data.groupTypes[2].name %}
-    <div id="sml" style="display:none">
+    <div id="sml" class="content-people" style="display:none">
       <div class="post-content">
         <div>
           <div class="container">
@@ -202,7 +203,7 @@ layout: default
     {% endif %}
     <!--GET querry for Deep Learning  -->
     {% if name == site.data.groupTypes[3].name %}
-    <div id="dl" style="display:none">
+    <div id="dl" class="content-people" style="display:none">
       <div class="post-content">
         <div>
           <div class="container">
@@ -243,7 +244,7 @@ layout: default
     {% endif %}
     <!--GET querry for Semantic Data Management  -->
     {% if name == site.data.groupTypes[4].name %}
-    <div id="sdm" style="display:none">
+    <div id="sdm" class="content-people" style="display:none">
       <div class="post-content">
         <div>
           <div class="container">
@@ -284,7 +285,7 @@ layout: default
     {% endif %}
     <!--GET querry for SoftwareEngineeringforDataScience  -->
     {% if name == site.data.groupTypes[5].name %}
-    <div id="seds" style="display:none">
+    <div id="seds" class="content-people" style="display:none">
       <div class="post-content">
         <div>
           <div class="container">
@@ -325,7 +326,7 @@ layout: default
     {% endif %}
     <!--GET querry for KnowledgeExtractionandValidation  -->
     {% if name == site.data.groupTypes[6].name %}
-    <div id="knv" style="display:none">
+    <div id="knv" class="content-people" style="display:none">
       <div class="post-content">
         <div>
           <div class="container">
@@ -364,7 +365,6 @@ layout: default
       </div>
     </div>
     {% endif %} {% endfor %}
-  </div>
   </div>
 
 </article>

@@ -728,6 +728,9 @@ hr {
       }
 
      [class*="pagination"]{
+       padding-top: 0px;
+       padding-bottom: 0px;
+       background-color: #ecf0f1;
        a {
          padding-right: 0px ;
          padding-top: 4px ;

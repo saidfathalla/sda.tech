@@ -707,11 +707,15 @@ hr {
     display: block;
     text-align: left; }
 
-  [class*="pagination"] a {
-    padding-right: 0px;
-    padding-top: 4px;
+  [class*="pagination"] {
+    padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 0px; }
+    background-color: #ecf0f1; }
+    [class*="pagination"] a {
+      padding-right: 0px;
+      padding-top: 4px;
+      padding-bottom: 0px;
+      padding-left: 0px; }
 
   [class*="margin-icon"] {
     margin-left: 8px;
