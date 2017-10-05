@@ -188,7 +188,7 @@ ex:KnowledgeExtractionandValidation a ex:group ;
 
 
 ex:BigDataEurope a ex:project ;
-    rdfs:label "Big Data Europe" ;
+    rdfs:label "Big Data Europe First Convention" ;
     ex:description "Integrating Big Data, Software & Communities for Addressing Europe’s Societal Challenges" ;
     ex:longdescription "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models." ;
     ex:funded "Funded Project" ;

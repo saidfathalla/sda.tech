@@ -725,7 +725,18 @@ hr {
     margin: 8px; }
 
   [class="content-people"] {
-    padding: 4px; } }
+    padding: 4px; }
+
+  [class="job-contents"] {
+    padding: 12px; }
+
+  [class="post-content"] {
+    padding: 0px; }
+    [class="post-content"] .pagination > .post-content {
+      margin-left: 12px;
+      margin-right: 12px;
+      padding-left: 0px;
+      padding-right: 0px; } }
 /**
  * Syntax highlighting styles
  */

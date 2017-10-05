@@ -745,6 +745,7 @@ hr {
        display: none;
      }
 
+    //  Media querry for setting up people home page elements
      [class="cardProfile"]{
        width: 240px;
        margin: 8px;
@@ -752,5 +753,23 @@ hr {
 
      [class="content-people"]{
        padding: 4px;
+     }
+
+     //  Media querry for setting up jobs home page elements
+     [class="job-contents"]{
+       padding: 12px;
+     }
+     [class="post-content"]{
+       padding: 0px;
+
+       .pagination > .post-content{
+         margin-left: 12px;
+         margin-right: 12px;
+         padding-left: 0px;
+         padding-right: 0px;
+       }
+     }
+     [class="chip"]{
+
      }
 }
