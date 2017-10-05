@@ -722,7 +722,8 @@ hr {
 
   [class="cardProfile"] {
     width: 240px;
-    margin: 8px; }
+    margin: 8px;
+    float: initial; }
 
   [class="content-people"] {
     padding: 4px; }
