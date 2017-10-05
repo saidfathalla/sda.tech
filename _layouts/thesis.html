@@ -41,18 +41,18 @@ layout: default
   <article class="post">
     <div class="pagination">
       <div class="status-thesis">
-        <a href="#" id="all" class="active" onclick="allThesisItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
+        <a href="#" id="all" class="" onclick="allThesisItems()"><i class="fa fa-list-alt" aria-hidden="true"></i>
       All Thesis Topics</a>
-        <a href="#" id="start" class="" onclick="activeOpenThesis()"><i class="fa fa-folder-open" aria-hidden="true"></i>
-      Open Thesis Topics</a>
+        <a href="#" id="start" class="active" onclick="activeOpenThesis()"><i class="fa fa-folder-open" aria-hidden="true"></i>
+      Ongoing Thesis</a>
         <a href="#" id="end" class="" onclick="activeFinishedThesis()"><i class="fa fa-folder" aria-hidden="true"></i>
-      Completed Thesis List</a>
+      Archived</a>
         <br/>
         <br/>
         <hr/>
         <br class="horizontal-separator2" />
         <div class="thesis-items">
-          <div id="allThesis" style="display:block">
+          <div id="allThesis" style="display:none">
             {% assign count=1 %}
             <!--Querry to GET ALL Thesis Items-->
             {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?open ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:longdescription ?long . } {%
@@ -68,7 +68,7 @@ layout: default
             <div class="partner-detail">
               <p style="text-align:left; margin:32px;">{{result.long}}</p>
             </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
             <!--Presentation of the resultset  -->
             <div class="person-chips" style="text-align:left; margin-left:32px;">
               {% for result2 in resultset2 %} {% capture topicname %}{{result2.topic}}{% endcapture %} {% if topicname == labelname %} {% assign url = result2.person | remove: "http://example.org/" %}
@@ -83,7 +83,7 @@ layout: default
             <br/>{% if count != size %}
             <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
           </div>
-          <div id="openThesis" style="display:none">
+          <div id="openThesis" style="display:block">
             {% assign count=1 %}
             <!--Querry to GET Open Thesis Items-->
             {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?open ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:open ?open . ?thesisItem ex:longdescription

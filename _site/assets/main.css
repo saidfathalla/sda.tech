@@ -697,6 +697,21 @@ hr {
     text-decoration: none !important;
     color: #0896FE !important; }
 
+.status-projects {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="responsiveTabItem"] {
+    width: 100%;
+    display: block;
+    text-align: left; }
+
+  [class*="pagination"] a {
+    padding-right: 0px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    padding-left: 4px; } }
 /**
  * Syntax highlighting styles
  */
