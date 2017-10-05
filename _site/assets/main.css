@@ -731,12 +731,14 @@ hr {
     padding: 12px; }
 
   [class="post-content"] {
-    padding: 0px; }
-    [class="post-content"] .pagination > .post-content {
-      margin-left: 12px;
-      margin-right: 12px;
-      padding-left: 0px;
-      padding-right: 0px; } }
+    padding: 0px;
+    margin-left: 12px !important;
+    margin-right: 12px !important; }
+
+  [class="partner-item"] {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px; } }
 /**
  * Syntax highlighting styles
  */
