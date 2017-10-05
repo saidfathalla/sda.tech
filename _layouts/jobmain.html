@@ -51,13 +51,13 @@ layout: default
 <article class="post">
   <div class="pagination">
     <div class="job-types">
-      <a href="#" id="akad" class="active" onclick="akademischeJob()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      <a href="#" id="akad" class="active responsiveTabItem" onclick="akademischeJob()"><i class="fa fa-pencil-square-o margin-icon" aria-hidden="true"></i>
       {{site.data.jobTypes[0].name}}</a>
-      <a href="#" id="postdoctoral" class="" onclick="postdoctoralJob()"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
-      {{site.data.jobTypes[1].name}}</a><br/><br/>
-      <a href="#" id="phdpos" class="" onclick="phdJobs()"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      <a href="#" id="postdoctoral" class="responsiveTabItem" onclick="postdoctoralJob()"><i class="fa fa-user-circle-o margin-icon" aria-hidden="true"></i>
+      {{site.data.jobTypes[1].name}}</a><br class="breakpoint-pagination"/><br class="breakpoint-pagination"/>
+      <a href="#" id="phdpos" class="responsiveTabItem" onclick="phdJobs()"><i class="fa fa-graduation-cap margin-icon" aria-hidden="true"></i>
       {{site.data.jobTypes[2].name}}</a>
-      <a href="#" id="studentassistants" class="" onclick="studentAssistantsJob()"><i class="fa fa-user" aria-hidden="true"></i>
+      <a href="#" id="studentassistants" class="responsiveTabItem" onclick="studentAssistantsJob()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
       {{site.data.jobTypes[3].name}}</a>
       <br/>
       <br/>
