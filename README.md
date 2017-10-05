@@ -2,6 +2,8 @@
 This is the source of the [sda.tech](http://sda.tech/) website which is served with
 [OntoWiki](http://ontowiki.net), [Jekyll](https://jekyllrb.com/) and [Jekyll-RDF](https://github.com/white-gecko/jekyll-rdf)'s plugin.
 
+**For the rdf supported beta, please visit: ** [sda.tech]( http://beta.sda.tech)
+
 # Contents
 
 1. [Setup](#setup)
