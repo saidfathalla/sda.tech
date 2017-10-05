@@ -700,6 +700,10 @@ hr {
 .status-projects {
   width: 100%; }
 
+.margin-icon {
+  margin-left: 8px;
+  margin-right: 8px; }
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="responsiveTabItem"] {
@@ -711,7 +715,7 @@ hr {
     padding-right: 0px;
     padding-top: 4px;
     padding-bottom: 0px;
-    padding-left: 4px; } }
+    padding-left: 0px; } }
 /**
  * Syntax highlighting styles
  */
