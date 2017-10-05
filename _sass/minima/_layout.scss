@@ -717,11 +717,6 @@ hr {
   width: 100%;
 }
 
-.margin-icon {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
 // Media Querries
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -739,5 +734,14 @@ hr {
          padding-bottom: 0px;
          padding-left: 0px;
        }
+     }
+
+     [class*="margin-icon"]{
+       margin-left: 8px;
+       margin-right: 8px;
+     }
+
+     [class*="breakpoint-pagination"]{
+       display: none;
      }
 }

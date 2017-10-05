@@ -54,9 +54,9 @@ layout: default
 </script>
 <div class="pagination">
   {% for people in site.data.peopleTypes %} {% assign p = people.name %} {% if site.activePeople == p %}
-  <a href="#" id="{{people.name | remove: " " }}" class="active" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+  <a href="#" id="{{people.name | remove: " " }}" class="active responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-graduation-cap margin-icon" aria-hidden="true"></i>
      {{people.name}}</a> {% else %}
-  <a href="#" id="{{people.name | remove: " " }}" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-level-up" aria-hidden="true"></i> {{people.name}}</a> {% endif%} {% endfor %}
+  <a href="#" id="{{people.name | remove: " " }}" class="responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-level-up  margin-icon" aria-hidden="true"></i> {{people.name}}</a> {% endif%} {% endfor %}
   <br/><br/>
   <hr class="ruleh" />
 </div>

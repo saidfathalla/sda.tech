@@ -60,12 +60,12 @@ layout: default
     %}
     <!-- Paginating logic for all the GROUPS -->
     {% for result in resultset %} {% capture groupname %}{{result.name}}{% endcapture %} {% if site.activeGroup == groupname %}
-    <a href="#" id="{{groupname | remove: " " }}" class="active" onclick="changeActiveGroups('{{groupname}}')"><i class="{{result.imageclass}}"></i>
+    <a href="#" id="{{groupname | remove: " " }}" class="active responsiveTabItem" onclick="changeActiveGroups('{{groupname}}')"><i class="{{result.imageclass}} margin-icon"></i>
             {{groupname}}</a> {% else %}
-    <a href="#" id="{{groupname | remove: " " }}" onclick="changeActiveGroups('{{groupname}}')">
-          <i class="{{result.imageclass}}"></i>
+    <a href="#" id="{{groupname | remove: " " }}" class="responsiveTabItem" onclick="changeActiveGroups('{{groupname}}')">
+          <i class="{{result.imageclass}} margin-icon"></i>
          {{groupname}}</a> {% endif %} {% if groupname == site.data.groupTypes[3].name %}
-    <br/><br/> {% endif %} {% endfor %}
+    <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/> {% endif %} {% endfor %}
     <br/>
     <br/>
     <hr class="ruleh" /> {% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
