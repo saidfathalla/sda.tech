@@ -744,4 +744,13 @@ hr {
      [class*="breakpoint-pagination"]{
        display: none;
      }
+
+     [class="cardProfile"]{
+       width: 240px;
+       margin: 8px;
+     }
+
+     [class="content-people"]{
+       padding: 4px;
+     }
 }

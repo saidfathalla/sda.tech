@@ -718,7 +718,14 @@ hr {
     margin-right: 8px; }
 
   [class*="breakpoint-pagination"] {
-    display: none; } }
+    display: none; }
+
+  [class="cardProfile"] {
+    width: 240px;
+    margin: 8px; }
+
+  [class="content-people"] {
+    padding: 4px; } }
 /**
  * Syntax highlighting styles
  */
