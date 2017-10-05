@@ -44,7 +44,8 @@ layout: default
     <br/>
     <br/>
     <hr />
-    <div class="partner-items">
+  </div>
+    <div class="partner-items content-people">
       <div id="allPartners" style="display:block">
         <!-- QUERRY to GET ALL the PARTNERS -->
         {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a ex:partners . ?partners rdfs:label ?title . ?partners ex:longdescription ?description . ?partners foaf:depiction ?image . ?partners ex:homepage ?homepage . }
@@ -72,5 +73,4 @@ layout: default
     </div>
 
     <br class="horizontal-separator2" />
-  </div>
 </article>

@@ -49,9 +49,7 @@ layout: default
 
   }
 </script>
-
-<div class="post">
-  <div class="pagination">
+<div class="pagination">
     <div class="status-projects">
       <a href="#" id="all" class="active responsiveTabItem" onclick="allProjectItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
       All Projects</a>
@@ -65,7 +63,8 @@ layout: default
       <br/>
       <hr/>
     </div>
-    <div class="projects">
+  </div>
+    <div class="projects content-people">
       <div id="allProjects" style="display:block">
         <!-- QUERRY to GET ALL the FundedProjects -->
         {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a ex:project . ?project rdfs:label ?title . ?project ex:description ?description . ?project ex:longdescription ?longdescription
@@ -105,4 +104,3 @@ layout: default
         endfor %}
       </div>
     </div>
-  </div>
