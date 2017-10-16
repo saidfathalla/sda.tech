@@ -557,8 +557,9 @@ img {
   height: 100%; }
 
 .sitelogo {
-  width: 200px;
-  height: 200px; }
+  padding: 8px;
+  width: 300px;
+  height: 100px; }
 
 .container {
   padding: 2px 16px; }
