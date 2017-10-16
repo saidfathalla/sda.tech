@@ -2,7 +2,6 @@
 import sys
 import requests
 
-#hitting the url to build the site.
 #r = requests.get("http://example.org/buildsite.sh")
 
 branch = sys.argv[1]
