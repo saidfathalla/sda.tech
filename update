@@ -1,16 +1,16 @@
-!/usr/bin/env python
+!/usr/bin python
 import sys
 import requests
 
 #hitting the url to build the site.
-r = requests.get("http://example.org/buildsite.sh")
+#r = requests.get("http://example.org/buildsite.sh")
 
 branch = sys.argv[1]
 old_commit = sys.argv[2]
 new_commit = sys.argv[3]
 print "Moving '%s' from %s to %s" % (branch, old_commit, new_commit)
 
-print "Build Log '%s'" % (print r.content)
+#print "Build Log '%s'" % (print r.content)
 #print r.status_code
 #print r.headers
 
