@@ -128,17 +128,16 @@ ex:DeepLearning a ex:group ;
                 rdfs:label "Deep Learning" ;
                 foaf:Person ex:OliverOctopus, ex:AlfredEel ;
                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                ex:leader ex:AlfredEel ;
-                ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                ex:project ex:SHORE, ex:WAVE ;
+                ex:description "What is this, The future of SHared Ontology REfining for enterprise business" ;
+                ex:longdescription "What is this, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
                 ex:imageclass "fa fa-line-chart" .
 
 ex:DistributedSemanticAnalytics a ex:group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
                                 foaf:Person ex:OliverOctopus, ex:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
+                                ex:project ex:SHORE, ex:WAVE ;
                                 ex:description "The future of SHared Ontology REfining for enterprise business" ;
                                 ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
                                 ex:imageclass "fa fa-bar-chart" .
@@ -377,6 +376,32 @@ ex:StructuredMachineLearning a ex:group ;
                              ex:imageclass "fa fa-cube" .
 
 ex:WAVE a ex:project ;
+        rdfs:label "WAVE" ;
+        foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+        foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+        ex:description "The power of the Qrowd combines with RDF" ;
+        ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
+        ex:twitter "" ;
+        ex:homepage "" ;
+        ex:source "" ;
+        ex:download "" ;
+        ex:partners ex:agroknow ;
+        ex:incubator "Incubator Project" .
+
+ex:SHORE a ex:project ;
+        rdfs:label "WAVE" ;
+        foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+        foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+        ex:description "The power of the Qrowd combines with RDF" ;
+        ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
+        ex:twitter "" ;
+        ex:homepage "" ;
+        ex:source "" ;
+        ex:download "" ;
+        ex:partners ex:agroknow ;
+        ex:incubator "Incubator Project" .
+
+ex:CORALS a ex:project ;
         rdfs:label "WAVE" ;
         foaf:Person ex:OliverOctopus, ex:AlfredEel ;
         foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;

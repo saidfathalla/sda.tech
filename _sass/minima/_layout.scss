@@ -12,12 +12,16 @@
   position: relative;
 }
 
+.blankNode{
+  margin-right: 24px;
+}
+
 .site-rootHead {
   border-bottom: 1px solid #e0e0e0;
   padding: 0px 0;
   color: $carbon-color;
   height: 50px;
-  background-color: #424242;
+  background-color: #055995;
   text-align: right;
   vertical-align: middle;
 
@@ -28,6 +32,10 @@
       padding-top: 20px;
       padding-left: 16px;
     }
+}
+
+.root-heading {
+  font-weight: bolder;
 }
 
 .site-title {

@@ -66,10 +66,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #0896FE;
+  color: #5CBF14;
   text-decoration: none; }
   a:visited {
-    color: #0191fb; }
+    color: #58b613; }
   a:hover {
     color: #fafafa; }
   .social-media-list a:hover {
@@ -161,7 +161,7 @@ pre {
  * Font Awesome Icon Colors
  */
 .fa {
-  color: #460093;
+  color: #087CCD;
   align-self: center; }
 
 /**
@@ -177,12 +177,15 @@ pre {
   /* Modern Browsers */
   position: relative; }
 
+.blankNode {
+  margin-right: 24px; }
+
 .site-rootHead {
   border-bottom: 1px solid #e0e0e0;
   padding: 0px 0;
   color: #A9A9A9;
   height: 50px;
-  background-color: #424242;
+  background-color: #055995;
   text-align: right;
   vertical-align: middle; }
   .site-rootHead a {
@@ -190,6 +193,9 @@ pre {
   .site-rootHead h6 {
     padding-top: 20px;
     padding-left: 16px; }
+
+.root-heading {
+  font-weight: bolder; }
 
 .site-title {
   font-size: 26px;
@@ -209,12 +215,12 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #460093;
+    color: #087CCD;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
     .site-nav .page-link:hover {
-      color: #0896FE; }
+      color: #5CBF14; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
@@ -377,10 +383,10 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
   .post-content a {
-    color: #460093; }
+    color: #087CCD; }
     .post-content a:hover {
       text-decoration: none;
-      color: #0896FE; }
+      color: #5CBF14; }
 
 /**
  * Column Structre or Grid Structure (3 Column Layout)
@@ -413,11 +419,11 @@ pre {
   border-color: #e0e0e0;
   float: left; }
   .groupImage h3 {
-    color: #460093; }
+    color: #087CCD; }
 
 .groupName {
   width: 60%;
-  color: #0896FE;
+  color: #5CBF14;
   padding-top: 16px;
   text-align: center;
   float: left; }
@@ -609,7 +615,7 @@ hr {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #460093;
+    background-color: #087CCD;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -617,7 +623,7 @@ hr {
   .cardProfile a {
     text-decoration: none;
     font-size: 22px;
-    color: #460093;
+    color: #087CCD;
     margin-right: 8px; }
   .cardProfile button:hover, .cardProfile a:hover {
     opacity: 0.7; }
@@ -652,17 +658,17 @@ hr {
 .partner-title {
   margin-left: 8px; }
   .partner-title a {
-    color: #0896FE;
+    color: #5CBF14;
     padding: 0px;
     margin: 0px;
     webkit-margin-after: 0px;
     webkit-margin-before: 0px; }
     .partner-title a:hover {
       text-decoration: none;
-      color: #460093; }
+      color: #087CCD; }
 
 .adressSectionOne a {
-  color: #460093;
+  color: #087CCD;
   padding: 0px;
   margin: 0px;
   webkit-margin-after: 0px;
@@ -671,13 +677,13 @@ hr {
   transition: background-color .3s; }
   .adressSectionOne a:hover {
     text-decoration: none;
-    color: #0896FE; }
+    color: #5CBF14; }
 .adressSectionOne a.active {
   background-color: white; }
 .adressSectionOne a:hover:not(.active) {
   background-color: white; }
 .adressSectionOne h1 {
-  color: #0896FE; }
+  color: #5CBF14; }
 
 .group-Members, .group-partners {
   width: 100%;
@@ -691,12 +697,12 @@ hr {
     font-weight: bold; }
 
 .jobRef {
-  color: #460093 !important;
+  color: #087CCD !important;
   padding: 0px !important;
   background-color: white !important; }
   .jobRef:hover {
     text-decoration: none !important;
-    color: #0896FE !important; }
+    color: #5CBF14 !important; }
 
 .status-projects {
   width: 100%; }

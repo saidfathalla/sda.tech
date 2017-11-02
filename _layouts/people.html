@@ -116,6 +116,5 @@ layout: default
     <!--Display Results for Former Students -->
     {% for result in resultset7 %} {% assign url = result.Person | remove: "http://example.org/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
     image=result.image %} {% endfor %}
-
   </div>
 </div>

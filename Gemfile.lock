@@ -1,3 +1,8 @@
+PATH
+  remote: /home/masmat/Documents/jekyll-Turtle2BiB
+  specs:
+    jekyll-Turtle2BiB (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -189,6 +194,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.5.1)
+  jekyll-Turtle2BiB (= 0.1.0)!
   jekyll-feed (~> 0.6)
   jekyll-rdf
   jekyll-twitter-plugin
@@ -196,4 +202,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.15.3
+   1.16.0.pre.3
