@@ -9,6 +9,16 @@
 @prefix ex: <http://example.org/> .
 @prefix cv: <http://rdfs.org/resume-rdf/> .
 @prefix void: <http://rdfs.org/ns/void#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix sda: <http://beta.sda.tech/> .
+@prefix sdapublication: <http://beta.sda.tech/Publications/> .
+@prefix sdagroup: <http://beta.sda.tech/Groups/> .
+@prefix sdapartner: <http://beta.sda.tech/Partners/> .
+@prefix sdapeople: <http://beta.sda.tech/People/> .
+@prefix sdaproject: <http://beta.sda.tech/Projects/> .
+@prefix sdathesis: <http://beta.sda.tech/Thesis/> .
+@prefix sdateaching: <http://beta.sda.tech/Teaching/> .
+@prefix sdajob: <http://beta.sda.tech/Jobs/> .
 
 
 <> a owl:Ontology, void:Dataset ;
@@ -278,6 +288,15 @@ ex:Publication2 a ex:publication ;
                 dc:date "2012-09-05" ;
                 ex:link "http://mex.aksw.org/" ;
                 dc:author ex:CorneliusCrab, ex:LarryLobster, ex:AlfredEel .
+
+ex:Publication3 a bibo:Article ;
+                dc:title "Global perspectives for objective driven net value" ;
+                dc:date "2000" ;
+                bibo:pages "23-27" ;
+                dc:publisher "IEEE" ;
+                ex:link "http://mex.aksw.org/" ;
+                foaf:Organization "FhG" ;
+                dc:author ex:AlfredEel .
 
 ex:QROWD a ex:project ;
          rdfs:label "QROWD" ;
