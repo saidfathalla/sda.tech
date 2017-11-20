@@ -27,12 +27,18 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix site: <http://beta.sda.tech/SysOnt/Site/> .
 @prefix sdaNavigation: <http://beta.sda.tech/Navigation/> .
-
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix schema: <http://schema.org/> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix sysont: <http://ns.ontowiki.net/SysOnt/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix pf: <http://vocab.ox.ac.uk/projectfunding#> .
+@prefix biboDegree: <http://purl.org/ontology/bibo/degree/> .
 
 #######################################
 ################DataSet################
 #######################################
-
 <> a owl:Ontology, void:Dataset ;
    rdfs:label "sda.tech Smart Data Analytics Research Group" ;
    owl:imports <http://schema.org/> ;
@@ -49,11 +55,11 @@
    void:feature <http://www.w3.org/ns/formats/RDF_XML>, <http://www.w3.org/ns/formats/Turtle> ;
    void:properties "40" ;
    void:rootResource <http://aksw.org/Navigation/Main> ;
-   void:sparqlEndpoint aksworg:sparql ;
+   void:sparqlEndpoint sdatech:sparql ;
    void:triples "700" ;
    void:vocabulary <http://purl.org/dc/terms/>, <http://purl.org/vocab/aiiso/schema#>, <http://rdfs.org/ns/void#>, <http://rdfs.org/sioc/ns#>, <http://usefulinc.com/ns/doap#>, <http://www.w3.org/2004/02/skos/core#>, <http://xmlns.com/foaf/0.1/> ;
    foaf:homepage <http://sda.tech/> ;
-   foaf:page projects:sda.tech .
+   foaf:page sdaproject:sda.tech .
 
 <http://example.org/> a foaf:Document .
 
@@ -61,7 +67,7 @@
 ##########Person Model#################
 #######################################
 
-sda:GezimSejidu a foaf:Person ;
+sda:GezimSejidu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                    owl:sameAs <http://people.comiles.eu/natanael> ;
                    sda:publicationsTag "aX" ;
@@ -80,12 +86,9 @@ sda:GezimSejidu a foaf:Person ;
                    schema:location <http://aksw.org/Address/InfAI> ;
                    foaf:pastProject sdaproject:MobileSocialSemanticWeb, sdaproject:AMSL ;
                    foaf:nick "Nate" ;
-                   aksw:supervisorTag "NatanaelArndt" .
+                   sda:supervisorTag "NatanaelArndt" ;
                    sdapublication:publication sdapublication:Publication1 ;
-                   sdagroup:group sdagroup:SemanticQuestionAnswering ;
-                   sdaproject:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                   ex:phdStudents "Phd Students" .
-
+                   sdagroup:group sdagroup:SemanticQuestionAnswering .
 
 #######################################
 ##########Group Model##################
@@ -93,79 +96,117 @@ sda:GezimSejidu a foaf:Person ;
 
 sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
                                 rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:member sdatech:OliverOctopus, sdatech:AlfredEel ;
+                                foaf:member sda:OliverOctopus, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                ex:project ex:SHORE, ex:WAVE ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description "The future of SHared Ontology REfining for enterprise business" ;
                                 dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
                                 sdatech:imageclass "fa fa-bar-chart" .
-
-
-                                groups:ES a aiiso:ResearchGroup ;
-                                          rdfs:label "Emergent Semantics" ;
-                                          aksw:publicationTag "ES" ;
-                                          dct:abstract "Research in Emergent Semantics revolves around supporting semantic collaboration scenarios in an adaptive way. This work includes especially research on engineering and adoption of semantic collaboration software, semantic collaboration protocols as well as research on distributed / federated semantic social networks. To bootstrap semantic collaboration and the semantic web in general, the Emergent Semantics group also investigates basic semantic technologies and semantic web infrastructures." ;
-                                          site:abbrevation "ES" ;
-                                          aksw:researchAreas "Agile Knowledge Engineering", "Distributed / Federated Social Networks", "Linked Data", "Semantic Software Engineering", "Semantic Web Infrastructure" ;
-                                          aiiso:part_of groups:AKSW ;
-                                          foaf:member aksworg:MichaelMartin, aksworg:NatanaelArndt, aksworg:ClausStadler, aksworg:FranzTeichmann, aksworg:NormanRadtke, aksworg:IvanErmilov, aksworg:JoergUnbehauen, aksworg:MarvinFrommhold, aksworg:PhilippFrischmuth, aksworg:SarvenCapadisli, aksworg:KonradAbicht, ns27:SimeonAckermann, aksworg:AntjeSchlaf, aksworg:RoyMeissner, aksworg:KurtJunghanns .
 
 
 #######################################
 ##########Projects Model###############
 #######################################
 
-
-
-
-#######################################
-##########Publications Model###########
-#######################################
-
-sdapublication:Publication3 a bibo:Article ;
-                dc:title "Global perspectives for objective driven net value" ;
-                dc:date "2000" ;
-                bibo:pages "23-27" ;
-                dc:publisher "IEEE" ;
-                ex:link "http://mex.aksw.org/" ;
-                foaf:Organization "FhG" ;
-                dc:author ex:AlfredEel .
+sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
+                 rdfs:label "Big Data Europe" ;
+                 sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
+                 foaf:Person sda:GezimSejidu, sda:RohanAsmat ;
+                 foaf:homepage <http://www.projekt-geiser.de> ;
+                 foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/logo-BigDataEurope.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "undefined" ;
+                 sda:homepage "http://www.big-data-europe.eu/" ;
+                 sda:source "https://github.com/big-data-europe" ;
+                 sda:download "undefined" ;
+                 site:content """* Duration: 2016–2019
+ * Funding Programme: [BMWi - Smart Service Welt](http://www.bmwi.de/DE/Themen/Digitale-Welt/Digitale-Technologien/smart-service-welt.html \"BMWi - Smart Service Welt\")
+ """^^sysont:Markdown, """Tasks
+ =====
+                  Leipzig University will develop processes for data acquisition, integration and fusion. For data acquisition, we will develop a unified, intelligent and extensible framework for representing data from diverse heterogeneous sources (automotive sensors, Twitter, OpenStreetMap, DBpedia, etc.) in RDF format. The acquired data has to be integrated to be useful for higher-value services. In order to process the high volume of complex geospatial data, we will develop scalable algorithms for efficiently detecting geospatial relations using machine learning techniques. Finally, we will survey if supervised machine learning can reduce the effort required for setting up data fusion pipelines. This will enable an efficient provisioning of fused data to geospatial services."""^^sysont:Markdown ;
+                 sda:publicationTag "geiser" ;
+                 dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
+                 sda:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:AxelNgonga ;
+                 sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
+                 pf:endDate "2019-02-28"^^xsd:date ;
+                 pf:startDate "2016-03-01"^^xsd:date ;
+                 sda:status "active" ;
+                 sdapartner:partners sdapartner:agroknow .
 
 
 #######################################
 ##########Partners Model###############
 #######################################
+#Partner can be an Organization or a person
 
-sdapartner:agt a foaf:Organization ;
-       rdfs:label "AGT Group R&D GmbH" ;
-       foaf:depiction <https://www.agtinternational.com/wp-content/themes/AGT/homepage/agt3.png> ;
-       dct:description "The future of SHared Ontology REfining for enterprise business" ;
-       foaf:homepage "https://www.agtinternational.com/" ;
-       dct:abstract """AGETO is an IT consultancy for web-based business processes. Since 10 years prestigious clients in the retail, logistics, high-tech and automotive industry rely on our expertise in e-commerce, SAP and JAVA consulting and implementation services. Under the slogan \"Better E-Business\" we take responsibility for an integrated consulting approach to implement IT systemsand processes along the entire supply chain. We streamline process cycle times and costs and put the user in the center of our efforts ;
-       ex:industry "industry" .
+sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner ;
+                              foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
+                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
+                              foaf:name "THE INDUsTRY LEADER" ;
+                              foaf:phone <tel:+49-3491-466-141> ;
+                              schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
+                              dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
+                              foaf:logo <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
+
+sdapartner:AlexanderMitterle a foaf:Person ;
+                              foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
+                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
+                              foaf:name "AlexanderMitterle" ;
+                              foaf:phone <tel:+49-3491-466-141> ;
+                              schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
+                              dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
+                              foaf:logo <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
 
 #######################################
 ##########Thesis Model#################
 #######################################
+sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis ;
+    dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
+    dct:creator sda:GezimSejidu, sda:RohanAsmat ;
+    foaf:maker sda:GezimSejidu, sda:RohanAsmat ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "en-US" ;
+    dct:publisher <https://springer.com/> ;
+    bibo:degree biboDegree:phd ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
+
+ex:abc a ex:thesisItem ;
+       rdfs:label "Distributed in-memory Processig" ;
+       foaf:Person ex:OliverOctopus, ex:AlfredEel ;
+       ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
+       ex:homepage "http://ai4bd.com/?page_id=4" ;
+       ex:level "Bachelors,Master" ;
+       ex:open "Open" .
 
 #######################################
 ##########Site Main Navigation#########
 #######################################
 
-sdanavigation:Mainnav a site:navigation ;
-           rdf:_1 sdatech:about ;
-           rdf:_2 sdatech:people ;
-           rdf:_3 sdatech:group ;
-           rdf:_4 sdatech:project ;
-           rdf:_5 sdatech:publication ;
-           rdf:_6 sdatech:job ;
-           rdf:_7 sdatech:teaching ;
-           rdf:_8 sdatech:thesis ;
-           rdf:_9 sdatech:partners .
+<http://beta.sda.tech/Navigation/>  a site:navigation ;
+           rdf:_1 sdatech:About ;
+           rdf:_2 sdatech:People ;
+           rdf:_3 sdatech:Group ;
+           rdf:_4 sdatech:Project ;
+           rdf:_5 sdatech:Publication ;
+           rdf:_6 sdatech:Job ;
+           rdf:_7 sdatech:Teaching ;
+           rdf:_8 sdatech:Thesis ;
+           rdf:_9 sdatech:Partners .
 
 
-rdf:_1 a rdfs:ContainerMembershipProperty ;
+rdf:_1 a rdfs:ContaisnerMembershipProperty ;
        rdfs:label "1" .
 
 rdf:_2 a rdfs:ContainerMembershipProperty ;
@@ -214,6 +255,25 @@ sdapublication:publications a foaf:Document ;
 foaf:mbox a owl:ObjectProperty ;
          rdfs:label "email" .
 
+sda:funded a foaf:Document ;
+          rdfs:label "Funded Project" .
+
+sda:twitter a foaf:Document ;
+         rdfs:label "Twitter" .
+
+sda:homepage a foaf:Document ;
+        rdfs:label "HomePage" .
+
+sda:source a foaf:Document ;
+        rdfs:label "Source Code" .
+
+sda:download a foaf:Document ;
+        rdfs:download "Download" .
+
+sda:status a owl:DatatypeProperty ;
+            rdfs:label "status" ;
+            rdfs:domain foaf:Project .
+
 foaf:member a owl:ObjectProperty ;
            rdfs:label "member" .
 
@@ -226,15 +286,37 @@ foaf:name a rdf:Property, owl:DatatypeProperty ;
          rdfs:subPropertyOf rdfs:label ;
          vs:term_status "testing" .
 
+sda:partner a owl:ObjectProperty ;
+            rdfs:label "Partner" ;
+            rdfs:domain foaf:Project ;
+            rdfs:range foaf:Organization ;
+            rdfs:comment "This links an SDA partner to a project."^^sysont:Markdown .
+
+sda:relatedProject a owl:ObjectProperty ;
+                    rdfs:label "related project" ;
+                    rdfs:domain foaf:Project ;
+                    rdfs:range foaf:Project ;
+                    rdfs:comment "a symmetric relation between two projects" ;
+                    rdfs:subPropertyOf owl:SymmetricProperty .
+
 ###############################################
 ####################SDA Classes################
 ###############################################
 
-sdatech:phdStudents a rdfs:Class ;
+aiiso:ResearchGroup a owl:Class ;
+                    rdfs:label "Research Group" ;
+                    rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                    rdfs:comment "A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group." ;
+                    rdfs:subClassOf foaf:Organization ;
+                    site:classTemplate "group" ;
+                    sysont:creationLabel "Groups" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:phdStudent a rdfs:Class ;
                rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;
                rdfs:subClassOf foaf:Person .
 
-sdatech:seniorResearchers a rdfs:Class ;
+sdatech:seniorResearcher a rdfs:Class ;
               rdfs:comment "People who are working as Senior Researchers at SDA Group."^^sysont:Markdown ;
               rdfs:subClassOf foaf:Person .
 
@@ -242,6 +324,46 @@ sdatech:professor a rdfs:Class ;
               rdfs:comment "People who are working as Professors at SDA Group."^^sysont:Markdown ;
               rdfs:subClassOf foaf:Person .
 
-sdatech:professor a rdfs:Class ;
-              rdfs:comment "People who are working as Professors at SDA Group."^^sysont:Markdown ;
+sdatech:associateResearcher a rdfs:Class ;
+              rdfs:comment "People who are working as Associate Researcher at SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:studentAssistants a rdfs:Class ;
+              rdfs:comment "People who are working as Student Assistants at SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:intern a rdfs:Class ;
+              rdfs:comment "People who are working as Intern at SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:alumni a rdfs:Class ;
+              rdfs:comment "People who were previously working with the SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:fundedProject a rdfs:Class ;
+              rdfs:comment "Projects which are funded by external organizations or partners."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:openSourceProject a rdfs:Class ;
+              rdfs:comment "Open Source projects developed by the SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:incubatorProject a rdfs:Class ;
+              rdfs:comment "Incubator projects developed by the SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:industryPartner a rdfs:Class ;
+              rdfs:comment "Industy partners of the SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:academicPartners a rdfs:Class ;
+              rdfs:comment "Academic partners of the SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:archivedThesis a rdfs:Class ;
+              rdfs:comment "Archived thesis, that has been done under SDA group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .
+
+sdatech:ongoingThesis a rdfs:Class ;
+              rdfs:comment "Thesis that are in progress under the SDA Group."^^sysont:Markdown ;
               rdfs:subClassOf foaf:Person .
