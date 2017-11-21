@@ -172,6 +172,7 @@ sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis
     dct:language "en-US" ;
     dct:publisher <https://springer.com/> ;
     bibo:degree biboDegree:phd ;
+    foaf:homepage <http://ai4bd.com/?page_id=4> ;
     dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
     dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
     dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
@@ -182,13 +183,20 @@ sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis
         This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
 
-ex:abc a ex:thesisItem ;
-       rdfs:label "Distributed in-memory Processig" ;
-       foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-       ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
-       ex:homepage "http://ai4bd.com/?page_id=4" ;
-       ex:level "Bachelors,Master" ;
-       ex:open "Open" .
+#######################################
+##########Teaching Model###############
+#######################################
+sdateaching:DSSNP a sdatech:Course ;
+           rdfs:label "DSSNP" ;
+           dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
+           foaf:homepage <http://ai4bd.com/?page_id=4> ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           doap:maintainer aksworg:NatanaelArndt .
+
+
 
 #######################################
 ##########Site Main Navigation#########
@@ -342,28 +350,33 @@ sdatech:alumni a rdfs:Class ;
 
 sdatech:fundedProject a rdfs:Class ;
               rdfs:comment "Projects which are funded by external organizations or partners."^^sysont:Markdown ;
-              rdfs:subClassOf foaf:Person .
+              rdfs:subClassOf foaf:Project .
 
 sdatech:openSourceProject a rdfs:Class ;
               rdfs:comment "Open Source projects developed by the SDA Group."^^sysont:Markdown ;
-              rdfs:subClassOf foaf:Person .
+              rdfs:subClassOf foaf:Project .
 
 sdatech:incubatorProject a rdfs:Class ;
               rdfs:comment "Incubator projects developed by the SDA Group."^^sysont:Markdown ;
-              rdfs:subClassOf foaf:Person .
+              rdfs:subClassOf foaf:Project .
 
 sdatech:industryPartner a rdfs:Class ;
               rdfs:comment "Industy partners of the SDA Group."^^sysont:Markdown ;
-              rdfs:subClassOf foaf:Person .
+              rdfs:subClassOf aiiso:ResearchGroup .
 
 sdatech:academicPartners a rdfs:Class ;
               rdfs:comment "Academic partners of the SDA Group."^^sysont:Markdown ;
-              rdfs:subClassOf foaf:Person .
+              rdfs:subClassOf aiiso:ResearchGroup .
 
 sdatech:archivedThesis a rdfs:Class ;
               rdfs:comment "Archived thesis, that has been done under SDA group."^^sysont:Markdown ;
-              rdfs:subClassOf foaf:Person .
+              rdfs:subClassOf bibo:Thesis .
 
 sdatech:ongoingThesis a rdfs:Class ;
               rdfs:comment "Thesis that are in progress under the SDA Group."^^sysont:Markdown ;
-              rdfs:subClassOf foaf:Person .
+              rdfs:subClassOf bibo:Thesis .
+
+sdatech:Course a owl:Class ;
+               rdfs:label "Course" ;
+               site:classTemplate "document" ;
+               sysont:creationLabel "Teaching" .
