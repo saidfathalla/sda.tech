@@ -84,11 +84,12 @@ sda:GezimSejidu a foaf:Person, sdatech:phdStudent ;
                    sda:website "http://jens-lehmann.org/" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   foaf:pastProject sdaproject:MobileSocialSemanticWeb, sdaproject:AMSL ;
+                   foaf:pastProject sdaproject:BigDataEurope, sdaproject:AMSL ;
                    foaf:nick "Nate" ;
                    sda:supervisorTag "NatanaelArndt" ;
                    sdapublication:publication sdapublication:Publication1 ;
-                   sdagroup:group sdagroup:SemanticQuestionAnswering .
+                   sdateaching:teaching sdateaching:DSSNP ;
+                   sdagroup:group sdagroup:DistributedSemanticAnalytics .
 
 #######################################
 ##########Group Model##################
@@ -96,10 +97,11 @@ sda:GezimSejidu a foaf:Person, sdatech:phdStudent ;
 
 sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
                                 rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:member sda:OliverOctopus, sda:AlfredEel ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
                                 dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
                                 sdatech:imageclass "fa fa-bar-chart" .
 
@@ -111,7 +113,7 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Europe" ;
                  sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
-                 foaf:Person sda:GezimSejidu, sda:RohanAsmat ;
+                 foaf:member sda:GezimSejidu, sda:RohanAsmat ;
                  foaf:homepage <http://www.projekt-geiser.de> ;
                  foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/logo-BigDataEurope.png> ;
                  sda:funded "Funded Project" ;
@@ -126,13 +128,13 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                   Leipzig University will develop processes for data acquisition, integration and fusion. For data acquisition, we will develop a unified, intelligent and extensible framework for representing data from diverse heterogeneous sources (automotive sensors, Twitter, OpenStreetMap, DBpedia, etc.) in RDF format. The acquired data has to be integrated to be useful for higher-value services. In order to process the high volume of complex geospatial data, we will develop scalable algorithms for efficiently detecting geospatial relations using machine learning techniques. Finally, we will survey if supervised machine learning can reduce the effort required for setting up data fusion pipelines. This will enable an efficient provisioning of fused data to geospatial services."""^^sysont:Markdown ;
                  sda:publicationTag "geiser" ;
                  dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
-                 sda:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
                  doap:maintainer sda:AxelNgonga ;
                  sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
                  pf:endDate "2019-02-28"^^xsd:date ;
                  pf:startDate "2016-03-01"^^xsd:date ;
-                 sda:status "active" ;
-                 sdapartner:partners sdapartner:agroknow .
+                 sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
 
 
 #######################################
@@ -150,7 +152,7 @@ sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
                               foaf:logo <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
 
-sdapartner:AlexanderMitterle a foaf:Person ;
+sdapartner:AlexanderMitterle a foaf:Person, sdatech:professor ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
                               foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
                               foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
@@ -194,9 +196,38 @@ sdateaching:DSSNP a sdatech:Course ;
            dct:educationLevel "" ;
            pf:endDate "2019-02-28"^^xsd:date ;
            pf:startDate "2016-03-01"^^xsd:date ;
-           doap:maintainer aksworg:NatanaelArndt .
+           doap:maintainer sda:NatanaelArndt .
+
+#######################################
+##########Publication Model############
+#######################################
+
+sdapublication:Publication1 a dct:BibliographicResource, bibo:Article ;
+    dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
+    dct:creator <http://aksw.org/NatanaelArndt>, <http://aksw.org/MichaelMartin> ;
+    foaf:maker <http://aksw.org/NatanaelArndt>, <http://aksw.org/MichaelMartin> ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "en-US" ;
+    dct:date "2009-09-01" ;
+    bibo:volume "42" ;
+    bibo:issue "4" ;
+    bibo:pageStart "200" ;
+    bibo:pageEnd "300" ;
+    dct:publisher <https://springer.com/> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
 
+ <icwe2017> a bibo:Journal ;
+    dct:title "Applied Biochemistry and Microbiology"@en ;
+    bibo:shortTitle "App Biochem and Biol"@en .
 
 #######################################
 ##########Site Main Navigation#########
