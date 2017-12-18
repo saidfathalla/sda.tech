@@ -1,6 +1,6 @@
-# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+#sda.org rdf model
 
-@base <http://beta.sda.tech/> .
+@base <http://sda.tech/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,6 +11,8 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix sda: <http://beta.sda.tech/> .
+@prefix sdatech: <http://sda.tech/> .
+@prefix sdaperson: <http://sda.tech/Person/> .
 @prefix sdapublication: <http://beta.sda.tech/Publications/> .
 @prefix sdagroup: <http://beta.sda.tech/Groups/> .
 @prefix sdapartner: <http://beta.sda.tech/Partners/> .
@@ -21,15 +23,21 @@
 @prefix sdajob: <http://beta.sda.tech/Jobs/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
 
+#######################################
+################DataSet################
+#######################################
 
 <> a owl:Ontology, void:Dataset ;
    rdfs:label "beta.sda.tech Smart Data Analytics Research Group" ;
-   foaf:homepage <http://beta.sda.tech/> .
+   foaf:homepage <http://sda.tech/> .
 
 
-<http://example.org/> a foaf:Document .
+<http://sda.tech/> a foaf:Document .
 
-ex:AlexanderKister a foaf:Person ;
+#######################################
+##########Person Model#################
+#######################################
+sdaperson:AlexanderKister a foaf:Person ;
                    foaf:familyName "Kister" ;
                    foaf:mbox <mailto:Alfred@aksw.org> ;
                    foaf:name "Dr.Alexander Kister" ;
@@ -47,22 +55,9 @@ ex:AlexanderKister a foaf:Person ;
                    ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
                    ex:phdStudents "Phd Students" .
 
-ex:AlfredEel a foaf:Person ;
-             foaf:familyName "E. Eel" ;
-             foaf:mbox <mailto:Alfred@aksw.org> ;
-             foaf:name "Alfred Eel" ;
-             foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
-             foaf:phone <tel:+49-341-123456789> ;
-             foaf:firstName "Alfred" ;
-             foaf:title "Mr." ;
-             foaf:status "Head Office" ;
-             ex:room "A-quarium" ;
-             ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-             ex:website "http://jens-lehmann.org/" ;
-             cv:aboutPerson "Lorem ispum espagol" ;
-             ex:group ex:SemanticQuestionAnswering ;
-             ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-             ex:associateResearchers "Associate Researchers" .
+#######################################
+##########Group Model##################
+#######################################
 
 ex:AskNow a ex:project ;
           rdfs:label "AskNow" ;
@@ -90,24 +85,6 @@ ex:BigDataEurope a ex:project ;
                  ex:source "https://github.com/big-data-europe" ;
                  ex:download "undefined" ;
                  ex:partners ex:agroknow .
-
-ex:CorneliusCrab a foaf:Person ;
-                 foaf:familyName "Crab" ;
-                 foaf:mbox <mailto:Cornelius@aksw.org> ;
-                 foaf:name "Vitalis Veins" ;
-                 foaf:depiction <http://clipartix.com/wp-content/uploads/2016/04/Crab-clip-art-5-clipartwiz.png> ;
-                 foaf:phone <tel:+49-341-123456789> ;
-                 foaf:firstName "Cornelius" ;
-                 foaf:title "Dr." ;
-                 foaf:status "Marketing Manager" ;
-                 ex:room "A-quarium" ;
-                 ex:leader "leader" ;
-                 ex:professor "Professors" ;
-                 ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                 ex:website "http://jens-lehmann.org/" ;
-                 cv:aboutPerson "Lorem ispum espagol" ;
-                 ex:group ex:DistributedSemanticAnalytics, ex:SemanticQuestionAnswering ;
-                 ex:project ex:WAVE .
 
 ex:DLLearner a ex:project ;
              rdfs:label "DL-Learner" ;
@@ -166,21 +143,6 @@ ex:GEISER a ex:project ;
           ex:download "undefined" ;
           ex:partners ex:agroknow .
 
-ex:GezimSejdiu a foaf:Person ;
-               foaf:familyName "Sejdiu" ;
-               foaf:mbox <mailto:sejdiu@cs.uni-bonn.de> ;
-               foaf:name "Gezim Sejdiu" ;
-               foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/0a0/145/14cb4e4.jpg> ;
-               foaf:firstName "Gezim" ;
-               foaf:title "PhD Student" ;
-               foaf:status "" ;
-               ex:room "" ;
-               ex:leader "" ;
-               ex:professor "" ;
-               ex:linkedin "" ;
-               ex:website "" ;
-               cv:aboutPerson "" .
-
 ex:HOBBIT a ex:project ;
           rdfs:label "HOBBIT" ;
           foaf:Person ex:OliverOctopus, ex:AlfredEel ;
@@ -212,23 +174,6 @@ ex:KnowledgeExtractionandValidation a ex:group ;
                                     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
                                     ex:imageclass "fa fa-search" .
 
-ex:LarryLobster a foaf:Person ;
-                foaf:familyName "Lobster" ;
-                foaf:mbox <mailto:Larry@aksw.org> ;
-                foaf:name "Larry Lobster" ;
-                foaf:depiction <https://openclipart.org/image/2400px/svg_to_png/172473/cartoon-lobster.png> ;
-                foaf:phone <tel:+49-341-123456789> ;
-                foaf:firstName "Larry" ;
-                foaf:title "Dr." ;
-                foaf:status "HR Manager" ;
-                ex:room "A-quarium" ;
-                ex:leader "leader" ;
-                ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                ex:website "http://jens-lehmann.org/" ;
-                cv:aboutPerson "Lorem ispum espagol" ;
-                ex:group ex:DistributedSemanticAnalytics ;
-                ex:project ex:SHORE ;
-                ex:seniorResearchers "Senior Researchers" .
 
 ex:MEXVocabulary a ex:project ;
                  rdfs:label "MEX Vocabulary" ;
@@ -244,35 +189,16 @@ ex:MEXVocabulary a ex:project ;
                  ex:opensource "Open Source" .
 
 ex:Mainnav a ex:navigation ;
-           rdf:_1 ex:about ;
-           rdf:_2 ex:people ;
-           rdf:_3 ex:group ;
-           rdf:_4 ex:project ;
-           rdf:_5 ex:publication ;
-           rdf:_6 ex:job ;
-           rdf:_7 ex:teaching ;
-           rdf:_8 ex:thesis ;
-           rdf:_9 ex:partners .
+           rdf:_1 sdatech:about ;
+           rdf:_2 sdatech:people ;
+           rdf:_3 sdatech:group ;
+           rdf:_4 sdatech:project ;
+           rdf:_5 sdatech:publication ;
+           rdf:_6 sdatech:job ;
+           rdf:_7 sdatech:teaching ;
+           rdf:_8 sdatech:thesis ;
+           rdf:_9 sdatech:partners .
 
-ex:OliverOctopus a foaf:Person ;
-                 foaf:familyName "van Octopus" ;
-                 foaf:mbox <mailto:Octopus@aksw.org> ;
-                 foaf:name "Jens Lehmann" ;
-                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg> ;
-                 foaf:phone <tel:+49-341-123456789> ;
-                 foaf:firstName "Oliver" ;
-                 foaf:title "Sir" ;
-                 foaf:status "C.E.O." ;
-                 ex:room "A-quarium" ;
-                 ex:leader "leader" ;
-                 ex:professor "Professors" ;
-                 ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                 ex:website "http://jens-lehmann.org/" ;
-                 cv:aboutPerson "Claus Stadler is a PhD Student at the University of Leipzig. Claus’s research interests are in the area of Geospatial Data Lifecycle." ;
-                 ex:publication ex:Publication1, ex:Publication2 ;
-                 ex:researchinterests ex:linkeddata, ex:opendata ;
-                 ex:group ex:DistributedSemanticAnalytics ;
-                 ex:project ex:SHORE, ex:WAVE .
 
 ex:Publication1 a ex:publication ;
                 rdfs:label "business opportunities" ;
@@ -460,7 +386,7 @@ ex:abc a ex:thesisItem ;
        ex:level "Bachelors,Master" ;
        ex:open "Open" .
 
-ex:about a foaf:Document ;
+sda:about a foaf:Document ;
          rdfs:label "About" .
 
 ex:agroknow a ex:partners ;
@@ -552,7 +478,7 @@ ex:entityRes a ex:thesisItem ;
 ex:formerMembers a foaf:Document ;
                  rdfs:label "Former Members" .
 
-ex:group a foaf:Document ;
+sdatech:group a foaf:Document ;
          rdfs:label "Groups" .
 
 ex:inhouse a ex:job ;
@@ -563,7 +489,7 @@ ex:inhouse a ex:job ;
 ex:interns a foaf:Document ;
            rdfs:label "Interns" .
 
-ex:job a foaf:Document ;
+sdatech:job a foaf:Document ;
        rdfs:label "Jobs" .
 
 ex:leader a foaf:Document ;
@@ -584,10 +510,13 @@ ex:outhouse a ex:job ;
             ex:description "The future of SHared Ontology REfining for enterprise business" ;
             ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
-ex:partners a foaf:Document ;
+sdatech:partners a foaf:Document ;
             rdfs:label "Partners" .
 
-ex:people a foaf:Document ;
+sdatech:about a foaf:Document ;
+  rdfs:label "About" .
+
+sdatech:people a foaf:Document ;
           rdfs:label "People" .
 
 ex:phdStudents a foaf:Document ;
@@ -596,10 +525,10 @@ ex:phdStudents a foaf:Document ;
 ex:professor a foaf:Document ;
              rdfs:label "Professors" .
 
-ex:project a foaf:Document ;
+sdatech:project a foaf:Document ;
            rdfs:label "Projects" .
 
-ex:publication a foaf:Document ;
+sdatech:publication a foaf:Document ;
                rdfs:label "Publications" .
 
 sdapublication:publications a foaf:Document ;
@@ -614,10 +543,10 @@ ex:seniorResearchers a foaf:Document ;
 ex:studentAssistants a foaf:Document ;
                      rdfs:label "Student Assistants" .
 
-ex:teaching a foaf:Document ;
+sdatech:teaching a foaf:Document ;
             rdfs:label "Teaching" .
 
-ex:thesis a foaf:Document ;
+sdatech:thesis a foaf:Document ;
           rdfs:label "Thesis" ;
           ex:group ex:DistributedSemanticAnalytics, ex:SemanticQuestionAnswering, ex:StructuredMachineLearning, ex:DeepLearning, ex:SoftwareEngineeringforDataScience ;
           ex:description "The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas" ;
@@ -652,3 +581,11 @@ rdf:_8 a rdfs:ContainerMembershipProperty ;
 
 rdf:_9 a rdfs:ContainerMembershipProperty ;
        rdfs:label "9" .
+
+###############################################
+####################SDA Classes################
+###############################################
+
+sdatech:phdStudent a rdfs:Class ;
+              rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;
+              rdfs:subClassOf foaf:Person .

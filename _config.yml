@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-url: http://example.org/ # the base hostname & protocol for your site, e.g. http://example.com
+url: http://sda.tech/ # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""
 title: Smart Data Analytics
 titleWithAcronym: Smart Data Analytics (SDA)
@@ -79,24 +79,24 @@ jekyll_rdf:
     default_template: "default.html"
     class_template_mappings:
         "http://xmlns.com/foaf/0.1/Person" : "person.html"
-        "http://example.org/group" : "group.html"
-        "http://example.org/project" : "project.html"
-        "http://example.org/job" : "job.html"
-        "http://example.org/teaching" : "teaching.html"
+        # "http://example.org/group" : "group.html"
+        # "http://example.org/project" : "project.html"
+        # "http://example.org/job" : "job.html"
+        # "http://example.org/teaching" : "teaching.html"
         "http://xmlns.com/foaf/0.1/Document" : "document.html"
     instance_template_mappings:
-        "http://example.org/" : "home.html"
-        "http://example.org/group" : "groupmain.html"
-        "http://example.org/publication" : "publicationmain.html"
-        "http://example.org/job" : "jobmain.html"
-        "http://example.org/teaching" : "teachingmain.html"
-        "http://example.org/project" : "projectmain.html"
-        "http://example.org/partners" : "partners.html"
-        "http://example.org/about" : "page.html"
-        "http://example.org/people" : "people.html"
-        "http://example.org/contact" : "contact.html"
-        "http://example.org/blog" : "blog.html"
-        "http://example.org/thesis" : "thesis.html"
+        "http://sda.tech/" : "home.html"
+        "http://sda.tech/group" : "groupmain.html"
+        "http://sda.tech/publication" : "publicationmain.html"
+        "http://sda.tech/job" : "jobmain.html"
+        "http://sda.tech/teaching" : "teachingmain.html"
+        "http://sda.tech/project" : "projectmain.html"
+        "http://sda.tech/partners" : "partners.html"
+        "http://sda.tech/about" : "page.html"
+        "http://sda.tech/people" : "people.html"
+        # "http://example.org/contact" : "contact.html"
+        # "http://example.org/blog" : "blog.html"
+        "http://sda.tech/thesis" : "thesis.html"
 
 
 
