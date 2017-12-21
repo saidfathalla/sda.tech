@@ -62,7 +62,7 @@ plugins:
 
 #Configuration of jekyll-rdf in our template
 jekyll_rdf:
-    path: "rdf-data/simpsons.ttl"
+    path: "rdf-data/sda.tech.ttl"
     language: "en"
     include_blank: true
     render_orphaned_uris: true
