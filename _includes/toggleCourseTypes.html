@@ -1,0 +1,29 @@
+<script>
+  function activeSummerCourses() {
+    document.getElementById('summerCourses').style.display = 'block';
+    document.getElementById('summer').classList.add('active');
+    document.getElementById('winterCourses').style.display = 'none';
+    document.getElementById('winter').classList.remove('active');
+    document.getElementById('allCourses').style.display = 'none';
+    document.getElementById('old').classList.remove('active');
+
+  }
+
+  function activeWinterCourses() {
+    document.getElementById('summerCourses').style.display = 'none';
+    document.getElementById('summer').classList.remove('active');
+    document.getElementById('winterCourses').style.display = 'block';
+    document.getElementById('winter').classList.add('active');
+    document.getElementById('allCourses').style.display = 'none';
+    document.getElementById('old').classList.remove('active');
+  }
+
+  function allOldCourses() {
+    document.getElementById('summerCourses').style.display = 'none';
+    document.getElementById('summer').classList.remove('active');
+    document.getElementById('winterCourses').style.display = 'none';
+    document.getElementById('winter').classList.remove('active');
+    document.getElementById('allCourses').style.display = 'block';
+    document.getElementById('old').classList.add('active');
+  }
+</script>

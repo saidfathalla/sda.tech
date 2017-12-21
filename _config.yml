@@ -80,7 +80,7 @@ jekyll_rdf:
     class_template_mappings:
         "http://xmlns.com/foaf/0.1/Person" : "person.html"
         # "http://example.org/group" : "group.html"
-        # "http://example.org/project" : "project.html"
+        #"http://example.org/project" : "project.html"
         # "http://example.org/job" : "job.html"
         # "http://example.org/teaching" : "teaching.html"
         "http://xmlns.com/foaf/0.1/Document" : "document.html"

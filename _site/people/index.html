@@ -1323,55 +1323,57 @@
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <script>
-  function changeActivePersons(name) {
-    clearAllTypes();
-    clearAllTabs();
+function changeActivePersons(name) {
+  clearAllTypes();
+  clearAllTabs();
 
-    if (name == "Professors") {
-      document.getElementById('Prof').style.display = 'inline-block';
-      document.getElementById('Professors').classList.add('active');
-    } else if (name == "Senior Researchers") {
-      document.getElementById('SeniorResch').style.display = 'inline-block';
-      document.getElementById('SeniorResearchers').classList.add('active');
-    } else if (name == "PhD Students") {
-      document.getElementById('Phd').style.display = 'inline-block';
-      document.getElementById('PhDStudents').classList.add('active');
-    } else if (name == "Associated researches") {
-      document.getElementById('AR').style.display = 'inline-block';
-      document.getElementById('Associatedresearches').classList.add('active');
-    } else if (name == "Student Assistants") {
-      document.getElementById('SA').style.display = 'inline-block';
-      document.getElementById('StudentAssistants').classList.add('active');
-    } else if (name == "Interns") {
-      document.getElementById('Int').style.display = 'inline-block';
-      document.getElementById('Interns').classList.add('active');
-    } else if (name == "Former Members") {
-      document.getElementById('Former').style.display = 'inline-block';
-      document.getElementById('FormerMembers').classList.add('active');
-    } else
-      console.log("Invalid People Type Name");
-  }
+  if (name == "Professors") {
+    document.getElementById('Prof').style.display = 'inline-block';
+    document.getElementById('Professors').classList.add('active');
+  } else if (name == "Senior Researchers") {
+    document.getElementById('SeniorResch').style.display = 'inline-block';
+    document.getElementById('SeniorResearchers').classList.add('active');
+  } else if (name == "PhD Students") {
+    document.getElementById('Phd').style.display = 'inline-block';
+    document.getElementById('PhDStudents').classList.add('active');
+  } else if (name == "Associated researches") {
+    document.getElementById('AR').style.display = 'inline-block';
+    document.getElementById('Associatedresearches').classList.add('active');
+  } else if (name == "Student Assistants") {
+    document.getElementById('SA').style.display = 'inline-block';
+    document.getElementById('StudentAssistants').classList.add('active');
+  } else if (name == "Interns") {
+    document.getElementById('Int').style.display = 'inline-block';
+    document.getElementById('Interns').classList.add('active');
+  } else if (name == "Former Members") {
+    document.getElementById('Former').style.display = 'inline-block';
+    document.getElementById('FormerMembers').classList.add('active');
+  } else
+    console.log("Invalid People Type Name");
+    console.log(name);
+}
 
-  function clearAllTypes() {
-    document.getElementById('Prof').style.display = 'none';
-    document.getElementById('SeniorResch').style.display = 'none';
-    document.getElementById('Phd').style.display = 'none';
-    document.getElementById('AR').style.display = 'none';
-    document.getElementById('SA').style.display = 'none';
-    document.getElementById('Int').style.display = 'none';
-    document.getElementById('Former').style.display = 'none';
-  }
+function clearAllTypes() {
+  document.getElementById('Prof').style.display = 'none';
+  document.getElementById('SeniorResch').style.display = 'none';
+  document.getElementById('Phd').style.display = 'none';
+  document.getElementById('AR').style.display = 'none';
+  document.getElementById('SA').style.display = 'none';
+  document.getElementById('Int').style.display = 'none';
+  document.getElementById('Former').style.display = 'none';
+}
 
-  function clearAllTabs() {
-    document.getElementById('Professors').classList.remove('active');
-    document.getElementById('SeniorResearchers').classList.remove('active');
-    document.getElementById('PhDStudents').classList.remove('active');
-    document.getElementById('Associatedresearches').classList.remove('active');
-    document.getElementById('StudentAssistants').classList.remove('active');
-    document.getElementById('Interns').classList.remove('active');
-    document.getElementById('FormerMembers').classList.remove('active');
-  }
+function clearAllTabs() {
+  document.getElementById('Professors').classList.remove('active');
+  document.getElementById('SeniorResearchers').classList.remove('active');
+  document.getElementById('PhDStudents').classList.remove('active');
+  document.getElementById('Associatedresearches').classList.remove('active');
+  document.getElementById('StudentAssistants').classList.remove('active');
+  document.getElementById('Interns').classList.remove('active');
+  document.getElementById('FormerMembers').classList.remove('active');
+}
 </script>
+
 <div class="pagination">
     
   <a href="#" id="Professors" class="active responsiveTabItem" onclick="changeActivePersons('Professors')"><i class="fa fa-graduation-cap margin-icon" aria-hidden="true"></i>
@@ -1409,7 +1411,7 @@
   <br/>
   <div class="containerProfile">
     <p class="titleProfile">Head Office</p>
-    <p>A-quarium</p>
+    <p>A123</p>
     <div style="margin: 24px 0;">
       <a href="http://jens-lehmann.org/" target="_blank"><i class="fa fa-globe"></i></a>
       <a href="https://www.linkedin.com/in/rohanasmat/" target="_blank"><i class="fa fa-linkedin"></i></a>

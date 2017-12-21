@@ -1,0 +1,46 @@
+<script>
+  function activeFundedProjects() {
+    document.getElementById('fundedProjects').style.display = 'block';
+    document.getElementById('funded').classList.add('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
+
+  function activeOpenSourceProjects() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'block';
+    document.getElementById('opensrc').classList.add('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
+
+  function incubatorProjects() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'block';
+    document.getElementById('incubators').classList.add('active');
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+  }
+
+  function allProjectItems() {
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('funded').classList.remove('active');
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('opensrc').classList.remove('active');
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('incubators').classList.remove('active');
+    document.getElementById('allProjects').style.display = 'block';
+    document.getElementById('all').classList.add('active');
+
+  }
+</script>

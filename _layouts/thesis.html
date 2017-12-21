@@ -1,38 +1,8 @@
 ---
-rdf_prefix_path: simpsons.pref
+rdf_prefix_path: sda.tech.pref
 layout: default
 ---
-<!-- SCRIPT FOR open and finished thesis filters -->
-<script>
-  function activeOpenThesis() {
-    document.getElementById('finishedThesis').style.display = 'none';
-    document.getElementById('end').classList.remove('active');
-    document.getElementById('allThesis').style.display = 'none';
-    document.getElementById('all').classList.remove('active');
-    document.getElementById('openThesis').style.display = 'block';
-    document.getElementById('start').classList.add('active');
-  }
-
-  function activeFinishedThesis() {
-    document.getElementById('openThesis').style.display = 'none';
-    document.getElementById('start').classList.remove('active');
-    document.getElementById('allThesis').style.display = 'none';
-    document.getElementById('all').classList.remove('active');
-    document.getElementById('finishedThesis').style.display = 'block';
-    document.getElementById('end').classList.add('active');
-  }
-
-  function allThesisItems() {
-    document.getElementById('openThesis').style.display = 'none';
-    document.getElementById('start').classList.remove('active');
-    document.getElementById('allThesis').style.display = 'block';
-    document.getElementById('all').classList.add('active');
-    document.getElementById('finishedThesis').style.display = 'none';
-    document.getElementById('end').classList.remove('active');
-  }
-</script>
-<!--END SCRIPT  -->
-
+{% include toggleThesisTypes.html %}
 <!--Querry to GET all the groups of the thesis   -->
 {% capture query %} SELECT ?group ?projectname WHERE{
 <{{page.rdf}}> ex:group ?group . ?group rdfs:label ?projectname . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}

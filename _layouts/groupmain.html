@@ -1,59 +1,9 @@
 ---
-rdf_prefix_path: simpsons.pref
+rdf_prefix_path: sda.tech.pref
 layout: default
 ---
 <article class="post">
-  <script>
-    function changeActiveGroups(name) {
-      clearAllGroupTypes();
-      clearAllGroupTabs();
-
-      if (name == "{{site.data.groupTypes[0].name}}") {
-        document.getElementById('dsa').style.display = 'inline-block';
-        document.getElementById('DistributedSemanticAnalytics').classList.add('active');
-      } else if (name == "{{site.data.groupTypes[1].name}}") {
-        document.getElementById('sqa').style.display = 'inline-block';
-        document.getElementById('SemanticQuestionAnswering').classList.add('active');
-      } else if (name == "{{site.data.groupTypes[2].name}}") {
-        document.getElementById('sml').style.display = 'inline-block';
-        document.getElementById('StructuredMachineLearning').classList.add('active');
-      } else if (name == "{{site.data.groupTypes[3].name}}") {
-        document.getElementById('dl').style.display = 'inline-block';
-        document.getElementById('DeepLearning').classList.add('active');
-      } else if (name == "{{site.data.groupTypes[4].name}}") {
-        document.getElementById('sdm').style.display = 'inline-block';
-        document.getElementById('SemanticDataManagement').classList.add('active');
-      } else if (name == "{{site.data.groupTypes[5].name}}") {
-        document.getElementById('seds').style.display = 'inline-block';
-        document.getElementById('SoftwareEngineeringforDataScience').classList.add('active');
-      } else if (name == "{{site.data.groupTypes[6].name}}") {
-        document.getElementById('knv').style.display = 'inline-block';
-        document.getElementById('KnowledgeExtractionandValidation').classList.add('active');
-      } else
-        console.log("Invalid People Type Name");
-    }
-
-    function clearAllGroupTypes() {
-      document.getElementById('dsa').style.display = 'none';
-      document.getElementById('sqa').style.display = 'none';
-      document.getElementById('sml').style.display = 'none';
-      document.getElementById('dl').style.display = 'none';
-      document.getElementById('sdm').style.display = 'none';
-      document.getElementById('seds').style.display = 'none';
-      document.getElementById('knv').style.display = 'none';
-    }
-
-    function clearAllGroupTabs() {
-      document.getElementById('DistributedSemanticAnalytics').classList.remove('active');
-      document.getElementById('SemanticQuestionAnswering').classList.remove('active');
-      document.getElementById('StructuredMachineLearning').classList.remove('active');
-      document.getElementById('DeepLearning').classList.remove('active');
-      document.getElementById('SemanticDataManagement').classList.remove('active');
-      document.getElementById('SoftwareEngineeringforDataScience').classList.remove('active');
-      document.getElementById('KnowledgeExtractionandValidation').classList.remove('active');
-    }
-  </script>
-
+  {% include toggleGroupTypes.html %}
   <div class="pagination">
     <!--QUERY to GET all the GROUP Items  -->
     {% capture query %} SELECT ?group ?name ?desc ?imageclass WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group ex:longdescription ?desc . ?group ex:imageclass ?imageclass . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query

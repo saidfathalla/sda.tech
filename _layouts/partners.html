@@ -1,36 +1,8 @@
 ---
-rdf_prefix_path: simpsons.pref
+rdf_prefix_path: sda.tech.pref
 layout: default
 ---
-<!-- SCRIPT to TOGGLE between Partner Types -->
-<script>
-  function allPartners() {
-    document.getElementById('allPartners').style.display = 'block';
-    document.getElementById('allPar').classList.add('active');
-    document.getElementById('industryPartners').style.display = 'none';
-    document.getElementById('industryPar').classList.remove('active');
-    document.getElementById('academicPartners').style.display = 'none';
-    document.getElementById('academicPar').classList.remove('active');
-  }
-
-  function industryPartners() {
-    document.getElementById('allPartners').style.display = 'none';
-    document.getElementById('allPar').classList.remove('active');
-    document.getElementById('industryPartners').style.display = 'block';
-    document.getElementById('industryPar').classList.add('active');
-    document.getElementById('academicPartners').style.display = 'none';
-    document.getElementById('academicPar').classList.remove('active');
-  }
-
-  function academicPartners() {
-    document.getElementById('allPartners').style.display = 'none';
-    document.getElementById('allPar').classList.remove('active');
-    document.getElementById('industryPartners').style.display = 'none';
-    document.getElementById('industryPar').classList.remove('active');
-    document.getElementById('academicPartners').style.display = 'block';
-    document.getElementById('academicPar').classList.add('active');
-  }
-</script>
+{% include togglePartnerTypes.html %}
 <!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">

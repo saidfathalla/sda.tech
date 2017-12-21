@@ -1,53 +1,8 @@
 ---
-rdf_prefix_path: simpsons.pref
+rdf_prefix_path: sda.tech.pref
 layout: default
 ---
-<script>
-  function akademischeJob() {
-    document.getElementById('akRat').style.display = 'block';
-    document.getElementById('akad').classList.add('active');
-    document.getElementById('posDoc').style.display = 'none';
-    document.getElementById('postdoctoral').classList.remove('active');
-    document.getElementById('phJob').style.display = 'none';
-    document.getElementById('phdpos').classList.remove('active');
-    document.getElementById('saJob').style.display = 'none';
-    document.getElementById('studentassistants').classList.remove('active');
-  }
-
-  function postdoctoralJob() {
-    document.getElementById('akRat').style.display = 'none';
-    document.getElementById('akad').classList.remove('active');
-    document.getElementById('posDoc').style.display = 'block';
-    document.getElementById('postdoctoral').classList.add('active');
-    document.getElementById('phJob').style.display = 'none';
-    document.getElementById('phdpos').classList.remove('active');
-    document.getElementById('saJob').style.display = 'none';
-    document.getElementById('studentassistants').classList.remove('active');
-  }
-
-  function phdJobs() {
-    document.getElementById('akRat').style.display = 'none';
-    document.getElementById('akad').classList.remove('active');
-    document.getElementById('posDoc').style.display = 'none';
-    document.getElementById('postdoctoral').classList.remove('active');
-    document.getElementById('phJob').style.display = 'block';
-    document.getElementById('phdpos').classList.add('active');
-    document.getElementById('saJob').style.display = 'none';
-    document.getElementById('studentassistants').classList.remove('active');
-  }
-
-  function studentAssistantsJob() {
-    document.getElementById('akRat').style.display = 'none';
-    document.getElementById('akad').classList.remove('none');
-    document.getElementById('posDoc').style.display = 'none';
-    document.getElementById('postdoctoral').classList.remove('active');
-    document.getElementById('phJob').style.display = 'none';
-    document.getElementById('phdpos').classList.remove('active');
-    document.getElementById('saJob').style.display = 'block';
-    document.getElementById('studentassistants').classList.add('active');
-  }
-</script>
-
+{%include toggleJobTypes.html%} 
 <article class="post">
   <div class="pagination">
     <div class="job-types">

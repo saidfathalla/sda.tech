@@ -10,7 +10,7 @@
 @prefix cv: <http://rdfs.org/resume-rdf/> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix sda: <http://beta.sda.tech/> .
+@prefix sda: <http://beta.sda.tech/schema/> .
 @prefix sdatech: <http://sda.tech/> .
 @prefix sdaperson: <http://sda.tech/Person/> .
 @prefix sdapublication: <http://beta.sda.tech/Publications/> .
@@ -37,23 +37,28 @@
 #######################################
 ##########Person Model#################
 #######################################
-sdaperson:AlexanderKister a foaf:Person ;
+sdaperson:AlexanderKister a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
+                   owl:sameAs <http://people.comiles.eu/natanael> ;
+                   sda:publicationsTag "aX" ;
+                   sda:room "A123" ;
                    foaf:familyName "Kister" ;
-                   foaf:mbox <mailto:Alfred@aksw.org> ;
                    foaf:name "Dr.Alexander Kister" ;
+                   foaf:nick "Kister" ;
+                   foaf:mbox <mailto:Alfred@aksw.org> ;
                    foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Alexander" ;
                    foaf:title "Dr." ;
                    foaf:status "Head Office" ;
-                   ex:room "A-quarium" ;
-                   ex:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                   ex:website "http://jens-lehmann.org/" ;
+                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
+                   sda:website "http://jens-lehmann.org/" ;
+                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
+                   schema:location <http://aksw.org/Address/InfAI> ;
                    cv:aboutPerson "Lorem ispum espagol" ;
                    ex:publication ex:Publication1 ;
                    ex:group ex:SemanticQuestionAnswering ;
-                   ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                   ex:phdStudents "Phd Students" .
+                   ex:project ex:SHORE, ex:WAVE, ex:CORALS .
 
 #######################################
 ##########Group Model##################
@@ -589,3 +594,16 @@ rdf:_9 a rdfs:ContainerMembershipProperty ;
 sdatech:phdStudent a rdfs:Class ;
               rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;
               rdfs:subClassOf foaf:Person .
+
+###############################################
+####################SDA Data Properties########
+###############################################
+
+sda:room a owl:DatatypeProperty ;
+          rdfs:label "room" .
+
+sda:linkedin a owl:DatatypeProperty ;
+          rdfs:label "Linkedin" .
+
+sda:website a owl:DatatypeProperty ;
+          rdfs:label "Personal Website" .
