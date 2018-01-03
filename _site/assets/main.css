@@ -531,8 +531,8 @@ pre {
 .content-people {
   background-color: #ffffff;
   text-align: center;
-  padding: 24px;
-  padding-top: 0px; }
+  padding-top: 0px;
+  width: 100%; }
 
 /**
  * list items
@@ -691,10 +691,12 @@ hr {
   text-align: center; }
 
 .job-contents {
-  text-align: left;
-  padding: 40px; }
+  text-align: left; }
   .job-contents h3 {
     font-weight: bold; }
+
+.jobDescription {
+  padding: 40px; }
 
 .jobRef {
   color: #087CCD !important;

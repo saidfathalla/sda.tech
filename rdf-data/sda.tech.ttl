@@ -22,6 +22,7 @@
 @prefix sdateaching: <http://sda.tech/Teaching/> .
 @prefix sdajob: <http://sda.tech/Jobs/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 
 #######################################
 ################DataSet################
@@ -211,6 +212,85 @@ sdaperson:NickBabich a foaf:Person, sdatech:formerMember ;
 ##########Group Model##################
 #######################################
 
+##Distributed Semantic Analytics
+sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
+                                rdfs:label "Distributed Semantic Analytics" ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
+                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                sda:imageclass "fa fa-bar-chart" .
+
+##Deep Learning
+sdagroup:DeepLearning a aiiso:ResearchGroup ;
+                                rdfs:label "Deep Learning" ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
+                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                sda:imageclass "fa fa-bar-chart" .
+
+##Knowledge Extraction and Validation
+sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup ;
+                                rdfs:label "Knowledge Extraction and Validation" ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
+                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                sda:imageclass "fa fa-bar-chart" .
+
+##Semantic Data Management
+sdagroup:SemanticDataManagement a aiiso:ResearchGroup ;
+                                rdfs:label "Semantic Data Management" ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
+                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                sda:imageclass "fa fa-bar-chart" .
+
+##Semantic Question Answering
+sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup ;
+                                rdfs:label "Semantic Question Answering" ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
+                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                sda:imageclass "fa fa-bar-chart" .
+
+##Software Engineering for Data Science
+sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup ;
+                                rdfs:label "Software Engineering for Data Science" ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
+                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                sda:imageclass "fa fa-bar-chart" .
+
+##Structured Machine Learning
+sdagroup:StructuredMachineLearning a aiiso:ResearchGroup ;
+                                rdfs:label "Structured Machine Learning" ;
+                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                sdapublication:publication sdapublication:Publication1 ;
+                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                sda:imageclass "fa fa-bar-chart" .
+
+
+#########################################################
 ex:DeepLearning a ex:group ;
                 rdfs:label "Deep Learning" ;
                 foaf:Person ex:OliverOctopus, ex:AlfredEel ;
@@ -219,7 +299,6 @@ ex:DeepLearning a ex:group ;
                 ex:description "What is this, The future of SHared Ontology REfining for enterprise business" ;
                 ex:longdescription "What is this, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
                 ex:imageclass "fa fa-line-chart" .
-
 
 
 ex:DistributedSemanticAnalytics a ex:group ;
