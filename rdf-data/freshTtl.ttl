@@ -104,7 +104,19 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
                                 dct:description "The future of SHared Ontology REfining for enterprise business" ;
                                 sdapublication:publication sdapublication:Publication1 ;
                                 dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sdatech:imageclass "fa fa-bar-chart" .
+                                sda:imageclass "fa fa-bar-chart" .
+
+                                sdagroup:DeepLearning a aiiso:ResearchGroup ;
+                                                                rdfs:label "Deep Learning" ;
+                                                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
+                                                                sdapublication:publication sdapublication:Publication1 ;
+                                                                dct:abstract "What is this, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                                                sda:imageclass "fa fa-bar-chart" .
+
+
 
 
 #######################################

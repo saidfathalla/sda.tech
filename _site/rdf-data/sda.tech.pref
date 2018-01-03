@@ -7,3 +7,5 @@ PREFIX cv: <http://rdfs.org/resume-rdf/>
 PREFIX sda: <http://beta.sda.tech/schema/>
 PREFIX sdatech: <http://sda.tech/>
 PREFIX sdaperson: <http://sda.tech/Person/>
+PREFIX sdaproject: <http://sda.tech/Project/>
+PREFIX sdapartner: <http://sda.tech/Partner/> 
