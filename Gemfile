@@ -22,7 +22,7 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-rdf"
    gem "jekyll-twitter-plugin"
-   gem 'jekyll-Turtle2BiB', '0.1.0', :path => '/home/masmat/Documents/jekyll-Turtle2BiB'
+#   gem 'jekyll-Turtle2BiB', '0.1.0', :path => '/home/masmat/Documents/jekyll-Turtle2BiB'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
