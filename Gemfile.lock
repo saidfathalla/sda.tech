@@ -109,7 +109,7 @@ GEM
     multi_json (1.12.1)
     namae (0.11.3)
     net-http-persistent (2.9.4)
-    nokogiri (1.8.0)
+    nokogiri (1.8.1)
       mini_portile2 (~> 2.2.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
