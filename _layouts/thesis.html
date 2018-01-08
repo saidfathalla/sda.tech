@@ -57,7 +57,7 @@ layout: default
           <div id="openThesis" style="display:block">
             {% assign count=1 %}
             <!--Querry to GET Open Thesis Items-->
-            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?open ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:open ?open . ?thesisItem ex:longdescription
+            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?long WHERE{ ?thesisItem a dct:BibliographicResource . ?thesisItem a bibo:Thesis . ?thesisItem a sdatech:ongoingThesis . ?thesisItem dct:title ?topic . ?thesisItem sda:thesisLevel ?level . ?thesisItem foaf:homepage ?website . ?thesisItem dct:abstract
             ?long . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
             <!--Querry to Present All the Open Thesis Items  -->
             {% for result in resultset %}
@@ -87,9 +87,9 @@ layout: default
           </div>
           <div id="finishedThesis" style="display:none">
             {% assign count=1 %}
-            <!--Querry to GET Open Thesis Items-->
-            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?closed ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:closed ?closed . ?thesisItem
-            ex:longdescription ?long . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+            <!--Querry to GET Archived Thesis Items-->
+            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?long WHERE{ ?thesisItem a dct:BibliographicResource . ?thesisItem a bibo:Thesis . ?thesisItem a sdatech:archivedThesis . ?thesisItem dct:title ?topic . ?thesisItem sda:thesisLevel ?level . ?thesisItem foaf:homepage ?website . ?thesisItem dct:abstract
+            ?long . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
             <!--Querry to Present All the Open Thesis Items  -->
             {% for result in resultset %}
             <!--QUERY to GET all the people associated with the thesis topic  -->

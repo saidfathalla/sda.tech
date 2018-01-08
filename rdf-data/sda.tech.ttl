@@ -323,7 +323,7 @@ ex:DistributedSemanticAnalytics a ex:group ;
 ##########Projects Model###############
 #######################################
 
-sdaproject:BigDataEurope a foaf:Project, sda:fundedProject ;
+sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Europe" ;
                  sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
                  foaf:member sda:GezimSejidu, sda:RohanAsmat ;
@@ -377,6 +377,7 @@ sdapartner:AlexanderMitterle a foaf:Person, sdatech:Partner, sdatech:phdStudent 
 ##########Thesis Model###############
 #######################################
 
+########################onGoingThesis########################
 sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
     dct:creator sda:GezimSejidu, sda:RohanAsmat ;
@@ -387,6 +388,7 @@ sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis
     dct:publisher <https://springer.com/> ;
     bibo:degree biboDegree:phd ;
     foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    sda:thesisLevel "MS,BS" ;
     dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
     dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
     dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
@@ -396,7 +398,26 @@ sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis
         The system is based on Git and provides distributed collaboration on RDF graphs.
         This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
-
+######################Archived Thesis###########################
+sdathesis:thesisB a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis ;
+    dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
+    dct:creator sda:GezimSejidu, sda:RohanAsmat ;
+    foaf:maker sda:GezimSejidu, sda:RohanAsmat ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "en-US" ;
+    dct:publisher <https://springer.com/> ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
 #######################################
 #######################################
@@ -823,6 +844,7 @@ sdatech:thesis a foaf:Document ;
           ex:description "The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas" ;
           ex:longdescription "Please note that the list below is only a small sample of possible topics and ideas. Please contact us to discuss further, to find new topics, or to suggest a topic of your own." .
 
+
 ex:thesisItem a ex:thesis ;
               rdfs:label "Thesis Item" .
 
@@ -863,11 +885,36 @@ foaf:Project a owl:Class ;
 sdatech:about a foaf:Document ;
   rdfs:label "About" .
 
-sda:fundedProject a owl:Class ;
+sdatech:fundedProject a owl:Class ;
                    rdfs:label "Funded Project" ;
                    rdfs:subClassOf foaf:Project ;
                    site:classTemplate "project" ;
                    sysont:creationLabel "Projects" .
+
+sdatech:openSourceProject a owl:Class ;
+                  rdfs:label "Open Source Project" ;
+                  rdfs:subClassOf foaf:Project ;
+                  site:classTemplate "project" ;
+                  sysont:creationLabel "Projects" .
+
+sdatech:incubatorProject a owl:Class ;
+                   rdfs:label "Incubator Project" ;
+                   rdfs:subClassOf foaf:Project ;
+                   site:classTemplate "project" ;
+                   sysont:creationLabel "Projects" .
+
+sdatech:ongoingThesis a owl:Class ;
+                  rdfs:label "Ongoing Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:archivedThesis a owl:Class ;
+                  rdfs:label "Archived Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
 
 sdatech:phdStudent a rdfs:Class ;
               rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;
@@ -937,3 +984,7 @@ sda:hookline a owl:DatatypeProperty, <http://www.w3.org/2002/07/owl#DatatypeProp
 #Domain of status missing...aksw
 sda:status a owl:DatatypeProperty ;
             rdfs:label "status" .
+
+
+sda:thesisLevel a owl:DatatypeProperty;
+                  rdfs:label "Level of complexity of the thesis." .

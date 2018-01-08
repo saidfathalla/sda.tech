@@ -6,8 +6,6 @@ layout: default
   {% include toggleGroupTypes.html %}
   <div class="pagination">
     <!--QUERY to GET all the GROUP Items  -->
-    <!-- {% capture query %} SELECT ?group ?name ?desc ?imageclass WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group ex:longdescription ?desc . ?group ex:imageclass ?imageclass . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query
-    %} -->
     {% capture query %} SELECT ?group ?name ?desc ?imageclass WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dct:description ?desc . ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query
     %}
     <!-- Paginating logic for all the GROUPS -->
@@ -23,7 +21,6 @@ layout: default
     <br/>
     <hr class="ruleh" /></div>
     {% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
-
     <!--GET querry for Distributed Semantic Analytics  -->
     {% if name == site.data.groupTypes[0].name %}
     <div id="dsa" class="content-people" style="display:none">
