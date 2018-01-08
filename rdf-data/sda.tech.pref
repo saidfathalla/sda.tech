@@ -12,4 +12,4 @@ PREFIX sdapartner: <http://sda.tech/Partner/>
 PREFIX sdagroup: <http://sda.tech/Group/>
 PREFIX aiiso: <http://purl.org/vocab/aiiso/schema#>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX bibo: <http://purl.org/ontology/bibo/> 
+PREFIX bibo: <http://purl.org/ontology/bibo/>

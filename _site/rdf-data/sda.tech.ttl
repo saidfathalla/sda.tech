@@ -221,7 +221,7 @@ sdaperson:NickBabich a foaf:Person, sdatech:formerMember ;
 #######################################
 
 ##Distributed Semantic Analytics
-sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
+sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
                                 foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
@@ -232,7 +232,7 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Deep Learning
-sdagroup:DeepLearning a aiiso:ResearchGroup ;
+sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Deep Learning" ;
                                 foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
@@ -243,7 +243,7 @@ sdagroup:DeepLearning a aiiso:ResearchGroup ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Knowledge Extraction and Validation
-sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup ;
+sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Extraction and Validation" ;
                                 foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
@@ -254,7 +254,7 @@ sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Semantic Data Management
-sdagroup:SemanticDataManagement a aiiso:ResearchGroup ;
+sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Data Management" ;
                                 foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
@@ -265,7 +265,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Semantic Question Answering
-sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup ;
+sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
                                 foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
@@ -276,7 +276,7 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Software Engineering for Data Science
-sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup ;
+sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Software Engineering for Data Science" ;
                                 foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
@@ -287,7 +287,7 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Structured Machine Learning
-sdagroup:StructuredMachineLearning a aiiso:ResearchGroup ;
+sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Structured Machine Learning" ;
                                 foaf:member sda:GezimSejidu, sda:AlfredEel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
@@ -954,6 +954,15 @@ aiiso:ResearchGroup a owl:Class ;
                     dct:issued "2008-05-14" .
 
 sdatech:Partner a owl:Class ;
+                    rdfs:label "Research Group" ;
+                    rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                    rdfs:comment "A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group." ;
+                    rdfs:subClassOf foaf:Organization ;
+                    site:classTemplate "group" ;
+                    sysont:creationLabel "Groups" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:Group a owl:Class ;
                     rdfs:label "Research Group" ;
                     rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
                     rdfs:comment "A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group." ;
