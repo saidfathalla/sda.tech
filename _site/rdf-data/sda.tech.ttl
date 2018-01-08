@@ -23,6 +23,14 @@
 @prefix sdajob: <http://sda.tech/Jobs/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix site: <http://ns.ontowiki.net/SysOnt/Site/> .
+@prefix schema: <http://schema.org/> .
+@prefix sysont: <http://ns.ontowiki.net/SysOnt/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix pf: <http://vocab.ox.ac.uk/projectfunding#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix biboDegree: <http://purl.org/ontology/bibo/degree/> .
 
 #######################################
 ################DataSet################
@@ -921,7 +929,7 @@ sda:website a owl:DatatypeProperty ;
           rdfs:label "Personal Website" .
 
 sda:miniIcon a owl:DataProperty ;
-          rdfs:label "Small Icon"
+          rdfs:label "Small Icon" .
 
 sda:hookline a owl:DatatypeProperty, <http://www.w3.org/2002/07/owl#DatatypeProperty.> ;
           rdfs:label "hookline" .
