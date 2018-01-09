@@ -299,25 +299,6 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 
 
 #########################################################
-ex:DeepLearning a ex:group ;
-                rdfs:label "Deep Learning" ;
-                foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                ex:project ex:SHORE, ex:WAVE ;
-                ex:description "What is this, The future of SHared Ontology REfining for enterprise business" ;
-                ex:longdescription "What is this, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                ex:imageclass "fa fa-line-chart" .
-
-
-ex:DistributedSemanticAnalytics a ex:group ;
-                                rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                ex:project ex:SHORE, ex:WAVE ;
-                                ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                                ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                ex:imageclass "fa fa-bar-chart" .
-
 
 #######################################
 ##########Projects Model###############
@@ -353,6 +334,7 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
 ##########Partners Model###############
 #######################################
 
+############################Industry Partner########################################
 sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
                               foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
@@ -361,17 +343,28 @@ sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               foaf:phone <tel:+49-3491-466-141> ;
                               schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
-                              foaf:logo <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
+                              foaf:depiction <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
 
-sdapartner:AlexanderMitterle a foaf:Person, sdatech:Partner, sdatech:phdStudent ;
+sdapartner:AlexanderMitterle a foaf:Person, sdatech:Partner, sdatech:industryPartner, sdatech:phdStudent ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
                               foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
                               foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
-                              foaf:name "AlexanderMitterle" ;
+                              foaf:name "Alexander Mitterle" ;
                               foaf:phone <tel:+49-3491-466-141> ;
                               schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
-                              foaf:logo <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
+                              foaf:depiction <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
+
+############################Academic Partner########################################
+sdapartner:Slippo a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
+                              foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
+                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
+                              foaf:name "THE INDUsTRY LEADER" ;
+                              foaf:phone <tel:+49-3491-466-141> ;
+                              schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
+                              dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
+                              foaf:depiction <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
 
 #######################################
 ##########Thesis Model###############
@@ -499,15 +492,6 @@ ex:InformationRetrieval a ex:course ;
                         ex:language "English" ;
                         ex:winter2017 "Summer Semester 2017" .
 
-ex:KnowledgeExtractionandValidation a ex:group ;
-                                    rdfs:label "Knowledge Extraction and Validation" ;
-                                    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                                    foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                    ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                                    ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                                    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                    ex:imageclass "fa fa-search" .
-
 
 ex:MEXVocabulary a ex:project ;
                  rdfs:label "MEX Vocabulary" ;
@@ -629,15 +613,6 @@ ex:SMLBench a ex:project ;
             ex:partners ex:agroknow ;
             ex:opensource "Open Source" .
 
-ex:SemanticDataManagement a ex:group ;
-                          rdfs:label "Semantic Data Management" ;
-                          foaf:Person ex:OliverOctopus, ex:CorneliusCrab, ex:AlfredEel ;
-                          foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                          ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                          ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                          ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                          ex:imageclass "fa fa-cogs" .
-
 ex:SemanticDataWebTechnologies a ex:course ;
                                rdfs:label "Semantic Data Web Technologies" ;
                                foaf:Person ex:OliverOctopus, ex:AlfredEel ;
@@ -645,33 +620,6 @@ ex:SemanticDataWebTechnologies a ex:course ;
                                ex:homepage "http://mex.aksw.org/" ;
                                ex:language "English" ;
                                ex:summer2017 "Summer Semester 2017" .
-
-ex:SemanticQuestionAnswering a ex:group ;
-                             rdfs:label "Semantic Question Answering" ;
-                             foaf:Person ex:OliverOctopus, ex:CorneliusCrab, ex:LarryLobster, ex:AlexanderKister, ex:AlfredEel ;
-                             foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                             ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                             ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                             ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                             ex:imageclass "fa fa-search" .
-
-ex:SoftwareEngineeringforDataScience a ex:group ;
-                                     rdfs:label "Software Engineering for Data Science" ;
-                                     foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                                     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                     ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                                     ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                                     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                     ex:imageclass "fa fa-bar-chart" .
-
-ex:StructuredMachineLearning a ex:group ;
-                             rdfs:label "Structured Machine Learning" ;
-                             foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                             foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                             ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                             ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                             ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                             ex:imageclass "fa fa-cube" .
 
 ex:WAVE a ex:project ;
         rdfs:label "WAVE" ;
@@ -719,32 +667,6 @@ ex:abc a ex:thesisItem ;
        ex:homepage "http://ai4bd.com/?page_id=4" ;
        ex:level "Bachelors,Master" ;
        ex:open "Open" .
-
-
-
-ex:agroknow a ex:partners ;
-            rdfs:label "Agroknow" ;
-            foaf:depiction <http://www.agroknow.com/agroknow/sites/default/files/agroknowlogo.png> ;
-            ex:description "The future of SHared Ontology REfining for enterprise business" ;
-            ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-            ex:homepage "http://www.agroknow.com/agroknow/" ;
-            ex:academic "academic" .
-
-ex:agt a ex:partners ;
-       rdfs:label "AGT Group R&D GmbH" ;
-       foaf:depiction <https://www.agtinternational.com/wp-content/themes/AGT/homepage/agt3.png> ;
-       ex:description "The future of SHared Ontology REfining for enterprise business" ;
-       ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-       ex:homepage "https://www.agtinternational.com/" ;
-       ex:industry "industry" .
-
-ex:ai4BD a ex:partners ;
-         rdfs:label "AI4BD GmbH" ;
-         foaf:depiction <http://ai4bd.com/wp-content/uploads/2016/09/final-logo-ai4bd.png> ;
-         ex:description "The future of SHared Ontology REfining for enterprise business" ;
-         ex:longdescription "AI4BD is based in Switzerland. Provides software solutions across Europe vertical markets such as Health, Security, and Automotive. It develops a semantic framework supporting the Linked Data life-cycle and solutions including a Natural Language Processing (NLP) engine, an RDF store and different Web services and data analytics based on RDF data.  The solutions are distributed on-premise as Software and as a Service (SaaS). AI4BD has expertise in software component integration and in Linked Data technologies. " ;
-         ex:homepage "http://ai4bd.com/?page_id=4" ;
-         ex:industry "industry" .
 
 ex:bad a ex:teaching ;
        rdfs:label "bad" ;

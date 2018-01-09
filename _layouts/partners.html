@@ -20,27 +20,33 @@ layout: default
     <div class="partner-items content-people">
       <div id="allPartners" style="display:block">
         <!-- QUERRY to GET ALL the PARTNERS -->
-        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a ex:partners . ?partners rdfs:label ?title . ?partners ex:longdescription ?description . ?partners foaf:depiction ?image . ?partners ex:homepage ?homepage . }
-        {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% assign length = partners | size %}
+        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . ?partners foaf:name ?title . ?partners dct:abstract ?description . ?partners foaf:depiction ?image
+        . ?partners foaf:homepage ?homepage . }{% endcapture %} {% assign partnersArray = page.rdf | sparql_query: query %} {% assign length = partners | size %}
         <!--Presenting ALL the PARTNERS  -->
-        {% assign mainCount = 1 %} {% for partner in partners %} {% if mainCount != length %} {% include partnerItem.html title=partner.title image=partner.image description=partner.description last=0 href=partner.homepage %} {% else %} {% include partnerItem.html
+        {% assign mainCount = 1 %} {% for partner in partnersArray %} {% if mainCount != length %} {% include partnerItem.html title=partner.title image=partner.image description=partner.description last=0 href=partner.homepage %} {% else %} {% include partnerItem.html
         title=partner.title image=partner.image description=partner.description last=1 href=partner.homepage %} {% endif %} {% assign mainCount = mainCount | plus:1 %} {% endfor %}
       </div>
       <div id="industryPartners" style="display:none">
         <!-- QUERRY to GET the INDUSTRY PARTNERS -->
-        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage ?industry WHERE{ ?partners a ex:partners . ?partners rdfs:label ?title . ?partners ex:longdescription ?description . ?partners ex:industry ?industry . ?partners foaf:depiction ?image
-        . ?partners ex:homepage ?homepage . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% assign length = partners | size %}
+        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . ?partners a sdatech:industryPartner . ?partners foaf:name ?title . ?partners dct:abstract ?description . ?partners foaf:depiction ?image
+        . ?partners foaf:homepage ?homepage . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% assign length = partners | size %}
         <!--Presenting ALL the INDUSTRY PARTNERS  -->
         {% assign mainCount = 1 %} {% for partner in partners %} {% if mainCount != length %} {% include partnerItem.html title=partner.title image=partner.image description=partner.description last=0 href=partner.homepage %} {% else %} {% include partnerItem.html
         title=partner.title image=partner.image description=partner.description last=1 href=partner.homepage %} {% endif %} {% assign mainCount = mainCount | plus:1 %} {% endfor %}
       </div>
       <div id="academicPartners" style="display:none">
         <!-- QUERRY to GET ALL the ACADMEIC PARTNERS -->
-        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage ?academic WHERE{ ?partners a ex:partners . ?partners rdfs:label ?title . ?partners ex:longdescription ?description . ?partners ex:academic ?academic . ?partners foaf:depiction ?image
-        . ?partners ex:homepage ?homepage . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% assign length = partners | size %}
+        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . ?partners a sdatech:academicPartner . ?partners foaf:name ?title . ?partners dct:abstract ?description . ?partners foaf:depiction ?image
+        . ?partners foaf:homepage ?homepage . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% assign length = partners | size %}
+        {% capture query %} SELECT ?partners ?project  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . }
+        {% endcapture %} {% assign partnersWithProjects = page.rdf | sparql_query: query %} {% assign length = partners | size %}
+
         <!--Presenting ALL the ACADEMIC PARTNERS  -->
-        {% assign mainCount = 1 %} {% for partner in partners %} {% if mainCount != length %} {% include partnerItem.html title=partner.title image=partner.image description=partner.description last=0 href=partner.homepage %} {% else %} {% include partnerItem.html
+        {% assign mainCount = 1 %} {% for partner in partners %}{% capture partnerName %}{{partner.title}}{% endcapture %}{% if mainCount != length %} {% include partnerItem.html title=partner.title image=partner.image description=partner.description last=0 href=partner.homepage %} {% else %} {% include partnerItem.html
         title=partner.title image=partner.image description=partner.description last=1 href=partner.homepage %} {% endif %} {% assign mainCount = mainCount | plus:1 %} {% endfor %}
+        <!-- {% for partners in partnersWithProjects %}
+          {{partners.project}}
+        {% endfor %} -->
       </div>
     </div>
 

@@ -49,7 +49,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Projects</h2>
             <div class="partnersOfProject">
-              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://example.org/" %}
+              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result2.nameproject}}</a>

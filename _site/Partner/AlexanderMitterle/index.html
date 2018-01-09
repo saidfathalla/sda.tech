@@ -152,22 +152,6 @@
                       
                   
                       
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
                         <a class="page-link" href="/about/index.html">
                           About
                         </a>
@@ -183,6 +167,10 @@
                   
                       
                   
+                      
+                  
+                      
+                  
               
           
 
@@ -191,6 +179,8 @@
             
 
               
+                  
+                      
                   
                       
                   
@@ -292,20 +282,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
 
@@ -314,32 +290,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -429,6 +379,20 @@
                   
                       
                   
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
               
           
 
@@ -437,16 +401,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -550,8 +504,6 @@
                   
                       
                   
-                      
-                  
               
           
 
@@ -560,16 +512,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -673,8 +615,6 @@
                   
                       
                   
-                      
-                  
               
           
 
@@ -683,28 +623,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -798,6 +716,16 @@
                   
                       
                   
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
               
           
 
@@ -806,24 +734,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -921,16 +831,20 @@
                   
                       
                   
-              
-          
-
-          
-            
-            
-
-              
+                      
                   
                       
+                  
+                      
+                  
+              
+          
+
+          
+            
+            
+
+              
                   
                       
                   
@@ -1034,16 +948,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
 
@@ -1052,12 +956,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -1161,12 +1059,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
               
           
         </div>
@@ -1178,47 +1070,196 @@
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
-      <article class="post">
-  <div class="pagination">
-    <div class="post-content">
-      <br class="horizontal-separator" />
-      <h2 style="text-align:center;"><img class="img-circle-small" src=""></img> AlexanderMitterle</h2>
-      <h4 class="dynamicChange" style="text-align:center;"></h4>
-      <br class="horizontal-separator2" />
-      <div class="description-project">
-        <p></p>
-      </div>
-      <br class="horizontal-separator" />
-      <div class="members-projects">
-        <h3>Contact</h3>
-        <div class="membersofProject">
+      <script>
+  function allPartners() {
+    document.getElementById('allPartners').style.display = 'block';
+    document.getElementById('allPar').classList.add('active');
+    document.getElementById('industryPartners').style.display = 'none';
+    document.getElementById('industryPar').classList.remove('active');
+    document.getElementById('academicPartners').style.display = 'none';
+    document.getElementById('academicPar').classList.remove('active');
+  }
 
-        </div>
-        <br class="horizontal-separator2" />
-        <br class="horizontal-separator2" />
-        <h3>Research Groups</h3>
-        <div class="partnersOfProject">
-           
-            <!--Displaying all the reseach interests of the person x  -->
-            
-        </div>
-        <br class="horizontal-separator2" />
-        <br class="horizontal-separator2" />
-        <h3>Projects</h3>
-        <div class="membersofProject">
-           
-            <!--Displaying all the reseach interests of the person x  -->
-            
-        </div>
-      </div>
-      <br class="horizontal-separator2" />
-      <h3>Publications</h3>
-      <!-- Displaying all the publications of the PERSON  -->
-      
-      
-      <br class="horizontal-separator" />
+  function industryPartners() {
+    document.getElementById('allPartners').style.display = 'none';
+    document.getElementById('allPar').classList.remove('active');
+    document.getElementById('industryPartners').style.display = 'block';
+    document.getElementById('industryPar').classList.add('active');
+    document.getElementById('academicPartners').style.display = 'none';
+    document.getElementById('academicPar').classList.remove('active');
+  }
+
+  function academicPartners() {
+    document.getElementById('allPartners').style.display = 'none';
+    document.getElementById('allPar').classList.remove('active');
+    document.getElementById('industryPartners').style.display = 'none';
+    document.getElementById('industryPar').classList.remove('active');
+    document.getElementById('academicPartners').style.display = 'block';
+    document.getElementById('academicPar').classList.add('active');
+  }
+</script>
+
+<!-- Presenting the PARTNERS -->
+<article class="post">
+  <div class="pagination">
+    <a href="#" id="allPar" class="active responsiveTabItem" onclick="allPartners()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
+    All Partners</a>
+    <a href="#" id="industryPar" class="responsiveTabItem" onclick="industryPartners()"><i class="fa fa-industry margin-icon" aria-hidden="true"></i>
+    Industry Partners</a>
+    <a href="#" id="academicPar" class="responsiveTabItem" onclick="academicPartners()"><i class="fa fa-graduation-cap margin-icon" aria-hidden="true"></i>
+    Academic Partners</a>
+    <!-- <h1 class="post-title">Looking for our Partners ? Yes we have  partners.</h1> -->
+    <br/>
+    <br/>
+    <hr />
+  </div>
+    <div class="partner-items content-people">
+      <div id="allPartners" style="display:block">
+        <!-- QUERRY to GET ALL the PARTNERS -->
+          
+        <!--Presenting ALL the PARTNERS  -->
+           <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm" target="_blank"> <h1>THE INDUsTRY LEADER</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. 
     </div>
   </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+     <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm" target="_blank"> <h1>THE INDUsTRY LEADER</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+     <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm" target="_blank"> <h1>Alexander Mitterle</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+   
+      </div>
+      <div id="industryPartners" style="display:none">
+        <!-- QUERRY to GET the INDUSTRY PARTNERS -->
+          
+        <!--Presenting ALL the INDUSTRY PARTNERS  -->
+           <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm" target="_blank"> <h1>THE INDUsTRY LEADER</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+     <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm" target="_blank"> <h1>Alexander Mitterle</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+   
+      </div>
+      <div id="academicPartners" style="display:none">
+        <!-- QUERRY to GET ALL the ACADMEIC PARTNERS -->
+          
+          
+
+        <!--Presenting ALL the ACADEMIC PARTNERS  -->
+          <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm" target="_blank"> <h1>THE INDUsTRY LEADER</h1></a>
+</div>
+<div class="partner-item">
+  <br class="horizontal-separator"/>
+  <div class="partner-icon">
+    <img style="padding:0px;" src="http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png" alt="">
+  </div>
+  <div class="partner-detail">
+    <div class="partner-description">
+      Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. 
+    </div>
+  </div>
+  <br class="horizontal-separator"/>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+   
+        <!-- 
+          http://sda.tech/Project/DigitaleForschungskollaboration
+        
+          http://sda.tech/Project/DigitaleForschungskollaboration
+        
+          http://sda.tech/Project/DigitaleForschungskollaboration
+         -->
+      </div>
+    </div>
+
+    <br class="horizontal-separator2" />
 </article>
 
     </div>
