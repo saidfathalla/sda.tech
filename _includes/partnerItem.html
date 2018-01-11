@@ -12,6 +12,18 @@
       {{include.description}}
     </div>
   </div>
+  <div class="partnerProjects post-content">
+    {% for partners in include.projectList %}
+      {% capture partnerNameinArray %}{{partners.partnername}}{% endcapture%}
+      {% if partnerNameinArray == include.name %}
+        {% assign url= partners.project | remove: "http://sda.tech/" %}
+        <div class="chip">
+          <img src="{{partners.image}}" alt="Project" width="96" height="96">
+          <a href="../{{url}}">{{partners.name}}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
   <br class="horizontal-separator"/>
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->

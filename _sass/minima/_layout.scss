@@ -377,7 +377,7 @@ text-align: center;
     margin-left: 24px;
 }
 
- .membersofProject, .partnersOfProject{
+ .membersofProject, .partnersOfProject, .partnerProjects {
   display: inline-block;
 }
 
@@ -698,6 +698,12 @@ hr {
   text-align: center;
 }
 
+// Thesis
+.toggleOpenArchived {
+  float: right;
+  display: inline-block;
+  margin-right: 24px;
+}
 // Job
 
 .job-contents{

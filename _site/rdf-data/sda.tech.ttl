@@ -304,12 +304,40 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 ##########Projects Model###############
 #######################################
 
+##########################Funded Project#######################
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Europe" ;
                  sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
                  foaf:member sda:GezimSejidu, sda:RohanAsmat ;
                  foaf:homepage <http://www.projekt-geiser.de> ;
                  foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/logo-BigDataEurope.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "undefined" ;
+                 sda:homepage "http://www.big-data-europe.eu/" ;
+                 sda:source "https://github.com/big-data-europe" ;
+                 sda:download "undefined" ;
+                 site:content """* Duration: 2016–2019
+ * Funding Programme: [BMWi - Smart Service Welt](http://www.bmwi.de/DE/Themen/Digitale-Welt/Digitale-Technologien/smart-service-welt.html \"BMWi - Smart Service Welt\")
+ """^^sysont:Markdown, """Tasks
+ =====
+                  Leipzig University will develop processes for data acquisition, integration and fusion. For data acquisition, we will develop a unified, intelligent and extensible framework for representing data from diverse heterogeneous sources (automotive sensors, Twitter, OpenStreetMap, DBpedia, etc.) in RDF format. The acquired data has to be integrated to be useful for higher-value services. In order to process the high volume of complex geospatial data, we will develop scalable algorithms for efficiently detecting geospatial relations using machine learning techniques. Finally, we will survey if supervised machine learning can reduce the effort required for setting up data fusion pipelines. This will enable an efficient provisioning of fused data to geospatial services."""^^sysont:Markdown ;
+                 sda:publicationTag "geiser" ;
+                 dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
+                 sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:AxelNgonga ;
+                 sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
+                 pf:endDate "2019-02-28"^^xsd:date ;
+                 pf:startDate "2016-03-01"^^xsd:date ;
+                 sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+############################Open Source Projects##########################
+sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
+                 rdfs:label "DL Learner" ;
+                 sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
+                 foaf:member sda:GezimSejidu, sda:RohanAsmat ;
+                 foaf:homepage <http://www.projekt-geiser.de> ;
+                 foaf:logo <http://dl-learner.org/Images/dllearner.gif> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "undefined" ;
                  sda:homepage "http://www.big-data-europe.eu/" ;
@@ -337,9 +365,9 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
 ############################Industry Partner########################################
 sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
-                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:currentProject sdaproject:BigDataEurope ;
                               foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
-                              foaf:name "THE INDUsTRY LEADER" ;
+                              foaf:name "THE INDUsTRY LEADER 2.0" ;
                               foaf:phone <tel:+49-3491-466-141> ;
                               schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
@@ -347,7 +375,7 @@ sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partne
 
 sdapartner:AlexanderMitterle a foaf:Person, sdatech:Partner, sdatech:industryPartner, sdatech:phdStudent ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
-                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:currentProject sdaproject:BigDataEurope ;
                               foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
                               foaf:name "Alexander Mitterle" ;
                               foaf:phone <tel:+49-3491-466-141> ;
@@ -358,9 +386,9 @@ sdapartner:AlexanderMitterle a foaf:Person, sdatech:Partner, sdatech:industryPar
 ############################Academic Partner########################################
 sdapartner:Slippo a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
-                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:currentProject sdaproject:DLLearner ;
                               foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
-                              foaf:name "THE INDUsTRY LEADER" ;
+                              foaf:name "THE INDUsTRY LEADER 1.0" ;
                               foaf:phone <tel:+49-3491-466-141> ;
                               schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
@@ -622,7 +650,7 @@ ex:SemanticDataWebTechnologies a ex:course ;
                                ex:summer2017 "Summer Semester 2017" .
 
 ex:WAVE a ex:project ;
-        rdfs:label "WAVE" ;
+        rdfs:label "WAVE is a Project" ;
         foaf:Person ex:OliverOctopus, ex:AlfredEel ;
         foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
         ex:description "The power of the Qrowd combines with RDF" ;

@@ -3,6 +3,8 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 ---
 {% include toggleThesisTypes.html %}
+{% include toggleBachelorThesis.html %}
+
 <!--Querry to GET all the groups of the thesis   -->
 {% capture query %} SELECT ?group ?projectname WHERE{
 <{{page.rdf}}> ex:group ?group . ?group rdfs:label ?projectname . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
@@ -12,11 +14,11 @@ layout: default
     <div class="pagination">
       <div class="status-thesis">
         <a href="#" id="all" class="responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
-      All Thesis Topics</a>
+          Bachelor Theses</a>
         <a href="#" id="start" class="active responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
-      Ongoing Thesis</a>
+          Master Theses</a>
         <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
-      Archived</a>
+          On Going Theses</a>
         <br/>
         <br/>
         <hr/>
@@ -24,35 +26,48 @@ layout: default
         <div class="thesis-items content-people">
           <br class="horizontal-separator" />
           <div id="allThesis" style="display:none">
-            {% assign count=1 %}
-            <!--Querry to GET ALL Thesis Items-->
-            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?open ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:longdescription ?long . } {%
-            endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-            <!--Querry to Present All the Open Thesis Items  -->
-            {% for result in resultset %}
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            {% capture query2 %} SELECT ?thesisItem ?person ?name ?topic ?img WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem foaf:Person ?person . ?person foaf:name ?name . ?person foaf:depiction ?img . } {% endcapture %} {% assign
-            resultset2 = page.rdf | sparql_query: query2 %} {% assign size = resultset | size %} {% capture labelname %}{{result.topic}}{% endcapture %}
-            <div class="partner-title">
-              <a><h1>{{result.topic}}</h1></a>
+            <div class="toggleOpenArchived" >
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round" onclick="switchBachelorThesis();"></span>
+              </label>
             </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">{{result.long}}</p>
-            </div>
-            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              {% for result2 in resultset2 %} {% capture topicname %}{{result2.topic}}{% endcapture %} {% if topicname == labelname %} {% assign url = result2.person | remove: "http://example.org/" %}
-              <div class="partnersOfProject">
-                <div class="chip">
-                  <img src="{{result2.img}}" alt="Person" width="96" height="96">
-                  <a href="../{{url}}">{{result2.name}}</a>
-                </div>
+            <br/>
+            <br/>
+            <div id="openBachelorsTheses" style="display:block">
+              {% assign count=1 %}
+              <!--Querry to GET ALL Thesis Items-->
+              {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?open ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:longdescription ?long . } {%
+              endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+              <!--Querry to Present All the Open Thesis Items  -->
+              {% for result in resultset %}
+              <!--QUERY to GET all the people associated with the thesis topic  -->
+              {% capture query2 %} SELECT ?thesisItem ?person ?name ?topic ?img WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem foaf:Person ?person . ?person foaf:name ?name . ?person foaf:depiction ?img . } {% endcapture %} {% assign
+              resultset2 = page.rdf | sparql_query: query2 %} {% assign size = resultset | size %} {% capture labelname %}{{result.topic}}{% endcapture %}
+              <div class="partner-title">
+                <a><h1>{{result.topic}}</h1></a>
               </div>
-              {% else %} {% endif %} {% endfor %}
+              <div class="partner-detail">
+                <p style="text-align:left; margin:32px;">{{result.long}}</p>
+              </div>
+              <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
+              <!--Presentation of the resultset  -->
+              <div class="person-chips" style="text-align:left; margin-left:32px;">
+                {% for result2 in resultset2 %} {% capture topicname %}{{result2.topic}}{% endcapture %} {% if topicname == labelname %} {% assign url = result2.person | remove: "http://example.org/" %}
+                <div class="partnersOfProject">
+                  <div class="chip">
+                    <img src="{{result2.img}}" alt="Person" width="96" height="96">
+                    <a href="../{{url}}">{{result2.name}}</a>
+                  </div>
+                </div>
+                {% else %} {% endif %} {% endfor %}
+              </div>
+              <br/>{% if count != size %}
+              <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
             </div>
-            <br/>{% if count != size %}
-            <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
+            <div id="archivedBachelorThesis" style="display:none">
+              ABC
+            </div>
           </div>
           <div id="openThesis" style="display:block">
             {% assign count=1 %}
