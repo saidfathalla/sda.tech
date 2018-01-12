@@ -1,0 +1,23 @@
+<script>
+  masterThesisActive = 1 ;
+  function switchMasterThesis() {
+    console.log(masterThesisActive);
+    if(masterThesisActive == 1 )
+    {
+      document.getElementById('openMasterTheses').style.display = 'none';
+      document.getElementById('archivedMasterThesis').style.display = 'block';
+    }else if(masterThesisActive == 0)
+    {
+      document.getElementById('openMasterTheses').style.display = 'block';
+      document.getElementById('archivedMasterThesis').style.display = 'none';
+    }else{
+      console.log("Faulty Master Thesis Div Active");
+    }
+    // toggle Var
+    if(masterThesisActive  == 1 )
+      masterThesisActive = 0 ;
+    else if(masterThesisActive == 0 ){
+      masterThesisActive = 1 ;
+    }
+}
+</script>

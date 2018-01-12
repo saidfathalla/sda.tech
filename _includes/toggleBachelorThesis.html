@@ -1,9 +1,6 @@
 <script>
   bachelorThesisActive = 1 ;
-
   function switchBachelorThesis() {
-    console.log("Hi atleast i am in the function");
-    console.log(bachelorThesisActive);
     if(bachelorThesisActive == 1 )
     {
       document.getElementById('openBachelorsTheses').style.display = 'none';
@@ -15,7 +12,7 @@
     }else{
       console.log("Faulty Bachelor Thesis Div Active");
     }
-
+    // toggle Var
     if(bachelorThesisActive  == 1 )
       bachelorThesisActive = 0 ;
     else if(bachelorThesisActive == 0 ){

@@ -1119,10 +1119,7 @@
 
 <script>
   bachelorThesisActive = 1 ;
-
   function switchBachelorThesis() {
-    console.log("Hi atleast i am in the function");
-    console.log(bachelorThesisActive);
     if(bachelorThesisActive == 1 )
     {
       document.getElementById('openBachelorsTheses').style.display = 'none';
@@ -1134,11 +1131,35 @@
     }else{
       console.log("Faulty Bachelor Thesis Div Active");
     }
-
+    // toggle Var
     if(bachelorThesisActive  == 1 )
       bachelorThesisActive = 0 ;
     else if(bachelorThesisActive == 0 ){
       bachelorThesisActive = 1 ;
+    }
+}
+</script>
+
+<script>
+  masterThesisActive = 1 ;
+  function switchMasterThesis() {
+    console.log(masterThesisActive);
+    if(masterThesisActive == 1 )
+    {
+      document.getElementById('openMasterTheses').style.display = 'none';
+      document.getElementById('archivedMasterThesis').style.display = 'block';
+    }else if(masterThesisActive == 0)
+    {
+      document.getElementById('openMasterTheses').style.display = 'block';
+      document.getElementById('archivedMasterThesis').style.display = 'none';
+    }else{
+      console.log("Faulty Master Thesis Div Active");
+    }
+    // toggle Var
+    if(masterThesisActive  == 1 )
+      masterThesisActive = 0 ;
+    else if(masterThesisActive == 0 ){
+      masterThesisActive = 1 ;
     }
 }
 </script>
@@ -1170,8 +1191,7 @@
                 <span class="slider round" onclick="switchBachelorThesis();"></span>
               </label>
             </div>
-            <br/>
-            <br/>
+            <br/><br/>
             <div id="openBachelorsTheses" style="display:block">
               
               <!--Querry to GET ALL Thesis Items-->
@@ -1258,30 +1278,42 @@
             </div>
           </div>
           <div id="openThesis" style="display:block">
-            
-            <!--Querry to GET Open Thesis Items-->
-             
-            <!--Querry to Present All the Open Thesis Items  -->
-            
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-               
-            <div class="partner-title">
-              <a><h1>Decentralized Evolution and Consolidation of RDF Graphs</h1></a>
+            <div class="toggleOpenArchived" >
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round" onclick="switchMasterThesis();"></span>
+              </label>
             </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+            <br/><br/>
+            <div id="openMasterTheses">
+              
+              <!--Querry to GET Open Thesis Items-->
+               
+              <!--Querry to Present All the Open Thesis Items  -->
+              
+              <!--QUERY to GET all the people associated with the thesis topic  -->
+                 
+              <div class="partner-title">
+                <a><h1>Decentralized Evolution and Consolidation of RDF Graphs</h1></a>
+              </div>
+              <div class="partner-detail">
+                <p style="text-align:left; margin:32px;">The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
         In this network and its genesis, collaboration played and still plays a crucial role.
         But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
         Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
         The system is based on Git and provides distributed collaboration on RDF graphs.
         This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.</p>
+              </div>
+              <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
+              <!--Presentation of the resultset  -->
+              <div class="person-chips" style="text-align:left; margin-left:32px;">
+                
+              </div>
+              <br/><br class="horizontal-separator" />  
             </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
+            <div id="archivedMasterThesis">
+
             </div>
-            <br/><br class="horizontal-separator" />  
           </div>
           <div id="finishedThesis" style="display:none">
             
