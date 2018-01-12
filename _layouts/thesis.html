@@ -20,6 +20,8 @@ layout: default
           Master Theses</a>
         <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
           On Going Theses</a>
+        <a href="#" id="faqThesis" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
+          FAQ</a>
         <br/>
         <br/>
         <hr/>
@@ -142,6 +144,8 @@ layout: default
             </div>
             <br/>{% if count != size %}
             <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
+          </div>
+          <div class="faqThesisContent">
           </div>
         </div>
         <br class="horizontal-separator2" />

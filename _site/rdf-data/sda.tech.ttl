@@ -306,7 +306,7 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 
 ##########################Funded Project#######################
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
-                 rdfs:label "Big Data Europe" ;
+                 rdfs:label "Big Data Europe is a Big Project" ;
                  sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
                  foaf:member sda:GezimSejidu, sda:RohanAsmat ;
                  foaf:homepage <http://www.projekt-geiser.de> ;
