@@ -399,7 +399,7 @@ sdapartner:Slippo a foaf:Organization, sdatech:academicPartner, sdatech:Partner 
 #######################################
 
 ########################onGoingThesis########################
-sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis ;
+sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:bachelorThesis ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
     dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
     foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
@@ -420,7 +420,7 @@ sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis
         This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
 ######################Archived Thesis###########################
-sdathesis:thesisB a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis ;
+sdathesis:thesisB a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis , sdatech:masterThesis ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
     dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
     foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
@@ -865,6 +865,17 @@ sdatech:archivedThesis a owl:Class ;
                   site:classTemplate "thesis" ;
                   sysont:creationLabel "Thesis" .
 
+sdatech:bachelorThesis a owl:Class ;
+                  rdfs:label "Bachelor Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:masterThesis a owl:Class ;
+                  rdfs:label "Master Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
 
 sdatech:phdStudent a rdfs:Class ;
               rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;

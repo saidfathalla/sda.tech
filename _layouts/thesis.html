@@ -37,6 +37,9 @@ layout: default
             <br/><br/>
             <div id="openBachelorsTheses" style="display:block">
               <!--QUERY for open Bachelor Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:nick ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
+
               {% include thesisItem.html %}
               {{personsInThesis}}
 

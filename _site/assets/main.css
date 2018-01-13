@@ -502,7 +502,8 @@ input:checked + .slider:before {
   margin: 0 10px 0 -25px !important;
   height: 50px !important;
   width: 50px !important;
-  border-radius: 50% !important; }
+  border-radius: 50% !important;
+  background-color: #e0e0e0; }
 
 .chipForSmall {
   margin-left: 24px; }
