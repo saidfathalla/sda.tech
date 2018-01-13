@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: #5CBF14;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: 0; }
   a:visited {
     color: #58b613; }
   a:hover {

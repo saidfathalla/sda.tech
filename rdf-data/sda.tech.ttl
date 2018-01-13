@@ -401,8 +401,8 @@ sdapartner:Slippo a foaf:Organization, sdatech:academicPartner, sdatech:Partner 
 ########################onGoingThesis########################
 sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
-    dct:creator sda:GezimSejidu, sda:RohanAsmat ;
-    foaf:maker sda:GezimSejidu, sda:RohanAsmat ;
+    dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+    foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
     dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:isPartOf <icwe2017> ;
     dct:language "en-US" ;
@@ -422,8 +422,8 @@ sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis
 ######################Archived Thesis###########################
 sdathesis:thesisB a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis ;
     dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
-    dct:creator sda:GezimSejidu, sda:RohanAsmat ;
-    foaf:maker sda:GezimSejidu, sda:RohanAsmat ;
+    dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+    foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
     dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:isPartOf <icwe2017> ;
     dct:language "en-US" ;
