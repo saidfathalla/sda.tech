@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
-  background-color: #EEEFEF;
+  background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -492,7 +492,10 @@ input:checked + .slider:before {
   font-size: 16px;
   line-height: 50px;
   border-radius: 25px;
-  background-color: #F1F1F1; }
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 8px 6px -6px #e0e0e0;
+  -moz-box-shadow: 0 8px 6px -6px #e0e0e0;
+  box-shadow: 0 8px 6px -6px #e0e0e0; }
 
 .chip img {
   float: left !important;
@@ -558,7 +561,7 @@ input:checked + .slider:before {
   padding-bottom: 24px;
   padding-top: 32px;
   width: 100%;
-  background-color: #ffffff; }
+  background-color: #F5F5F5; }
   .pagination > .post-content {
     text-align: left;
     padding-bottom: 16px;
@@ -583,7 +586,7 @@ input:checked + .slider:before {
   background-color: #ddd; }
 
 .content-people {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   text-align: center;
   padding-top: 0px;
   width: 100%; }
