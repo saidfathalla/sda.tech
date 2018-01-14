@@ -5,7 +5,8 @@ layout: default
 <div class="home">
   <!-- Main informative content -->
   <br class="horizontal-separator" />
-  <article class="post maininfo">
+  <article class="post ">
+    <!--  maininfo-->
     <header class="post-header">
       <h1 class="post-title">{{ site.title | escape }}</h1>
     </header>
@@ -28,14 +29,17 @@ layout: default
       <!-- HeatMap goes into this div id, called by the script heatmaptechnologies.js -->
     <!-- </div> -->
     {% include slider.html %}
-    <div class="post-content quote-alignment">
+    <!-- <div class="post-content quote-alignment">
       <q>Our researchers and developers are working continoulsy on emerging technolgies and research as shown above.</q>
-    </div>
+    </div> -->
   </article>
+  <br class="horizontal-separator" />
+  <br class="horizontal-separator" />
   <!-- Icon representation of Group and the Activities -->
-  <article class="post content-container-separation">
+  <article class="post backgroundMain">
+     <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass WHERE{ ?group a ex:group . ?group rdfs:label ?description . ?group ex:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?group ?description ?imageclass WHERE{ ?group a aiiso:researchGroup . ?group rdfs:label ?description . ?group ex:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
@@ -55,8 +59,11 @@ layout: default
     </div>
     {% endfor %}
   </article>
+  <br class="horizontal-separator" />
+  <br class="horizontal-separator" />
   <!--Blog posts excerpt: List of lates three or four blog posts  -->
-  <article class="post blogAndTweetPosts">
+  <article class="post backgroundMain ">
+    <!-- blogAndTweetPosts -->
     <header class="post-header">
       <h2 class="post-title">Keep Connected with Our Posts</h2>
     </header>
