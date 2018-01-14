@@ -239,7 +239,8 @@ input:checked + .slider:before {
   background-color: #F5F5F5;
   border-radius: 8px;
   border: 1px solid #EEEEEE;
-  padding: 40px; }
+  padding: 40px;
+  overflow: hidden; }
 
 .site-rootHead {
   border-bottom: 1px solid #e0e0e0;
@@ -458,12 +459,12 @@ input:checked + .slider:before {
   text-align: center; }
 
 .groupCard {
-  background-color: #FAFAFA;
-  height: 16%;
+  background-color: #FFFFFF;
+  min-height: 180px;
   width: 45%;
   padding: 16px;
-  margin-bottom: 16px;
-  margin-left: 16px;
+  margin-bottom: 32px;
+  margin-left: 36px;
   border-radius: 4px;
   border: 1px solid #EEEEEE;
   float: left;
