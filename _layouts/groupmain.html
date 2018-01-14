@@ -2,6 +2,7 @@
 rdf_prefix_path: sda.tech.pref
 layout: default
 ---
+<br class="horizontal-separator" />
 <article class="post">
   {% include toggleGroupTypes.html %}
   <div class="pagination">
@@ -21,13 +22,15 @@ layout: default
     <br/>
     <hr class="ruleh" /></div>
     {% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
+    {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:currentProject ?project . ?project rdfs:label ?nameproject . ?project foaf:logo ?image . } {% endcapture %} {% assign
+    resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:member ?person . ?person foaf:name ?nameperson
+    . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querythree %}
+    {% capture queryfour %} SELECT ?group ?name ?publication ?title ?date ?publisher ?link  WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group sda:publication ?publication . ?publication dc:title ?title
+    . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
     <!--GET querry for Distributed Semantic Analytics  -->
     {% if name == site.data.groupTypes[0].name %}
     <div id="dsa" class="content-people" style="display:none">
       <div class="post-content">
-        {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group ex:project ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {% endcapture %} {% assign
-        resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group foaf:Person ?person . ?person foaf:name ?nameperson
-        . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querythree %}
         <div>
           <div class="container">
             <br/>
@@ -38,7 +41,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Group Members</h2>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://example.org/" %}
+              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result3.nameperson}}</a>
@@ -59,6 +62,9 @@ layout: default
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h2>Publications </h2>
+            {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endif %} {% endfor %}
             <br class="horizontal-separator2" />
           </div>
         </div>
@@ -68,11 +74,8 @@ layout: default
     {% endif %}
     <!--GET querry for Semantic Question Answering  -->
     {% if name == site.data.groupTypes[1].name %}
-    <div id="sqa" class="content-people" style="display:none">
+    <div id="sqa" class="content-people" style="display:inline-block">
       <div class="post-content">
-        {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group ex:project ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {% endcapture %} {% assign
-        resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a ex:group . ?group rdfs:label ?name . ?group foaf:Person ?person . ?person foaf:name ?nameperson
-        . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querythree %}
         <div>
           <div class="container">
             <br/>
@@ -83,7 +86,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Group Members</h2>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://example.org/" %}
+              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result3.nameperson}}</a>
@@ -94,7 +97,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Projects</h2>
             <div class="partnersOfProject">
-              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://example.org/" %}
+              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result2.nameproject}}</a>
@@ -104,6 +107,9 @@ layout: default
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h2>Publications </h2>
+            {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endif %} {% endfor %}
             <br class="horizontal-separator2" />
           </div>
         </div>
@@ -125,7 +131,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Group Members</h2>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://example.org/" %}
+              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result3.nameperson}}</a>
@@ -136,7 +142,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Projects</h2>
             <div class="partnersOfProject">
-              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://example.org/" %}
+              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result2.nameproject}}</a>
@@ -146,6 +152,9 @@ layout: default
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h2>Publications </h2>
+            {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endif %} {% endfor %}
             <br class="horizontal-separator2" />
           </div>
         </div>
@@ -154,7 +163,7 @@ layout: default
     {% endif %}
     <!--GET querry for Deep Learning  -->
     {% if name == site.data.groupTypes[3].name %}
-    <div id="dl" class="content-people" style="display:inline-block">
+    <div id="dl" class="content-people" style="display:none">
       <div class="post-content">
         <div>
           <div class="container">
@@ -166,7 +175,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Group Members</h2>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://example.org/" %}
+              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result3.nameperson}}</a>
@@ -177,7 +186,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Projects</h2>
             <div class="partnersOfProject">
-              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://example.org/" %}
+              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result2.nameproject}}</a>
@@ -187,6 +196,9 @@ layout: default
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h2>Publications</h2>
+            {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endif %} {% endfor %}
             <br class="horizontal-separator2" />
           </div>
         </div>
@@ -207,7 +219,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Group Members</h2>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://example.org/" %}
+              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result3.nameperson}}</a>
@@ -218,7 +230,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Projects</h2>
             <div class="partnersOfProject">
-              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://example.org/" %}
+              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result2.nameproject}}</a>
@@ -228,6 +240,9 @@ layout: default
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h2>Publications </h2>
+            {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endif %} {% endfor %}
             <br class="horizontal-separator2" />
           </div>
         </div>
@@ -248,7 +263,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Group Members</h2>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://example.org/" %}
+              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result3.nameperson}}</a>
@@ -259,7 +274,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Projects</h2>
             <div class="partnersOfProject">
-              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://example.org/" %}
+              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result2.nameproject}}</a>
@@ -269,6 +284,9 @@ layout: default
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h2>Publications </h2>
+            {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endif %} {% endfor %}
             <br class="horizontal-separator2" />
           </div>
         </div>
@@ -289,7 +307,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Group Members</h2>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://example.org/" %}
+              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result3.nameperson}}</a>
@@ -300,7 +318,7 @@ layout: default
             <br class="horizontal-separator" />
             <h2>Projects</h2>
             <div class="partnersOfProject">
-              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://example.org/" %}
+              {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
                 <img src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../{{url}}">{{result2.nameproject}}</a>
@@ -310,6 +328,9 @@ layout: default
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h2>Publications </h2>
+            {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endif %} {% endfor %}
             <br class="horizontal-separator2" />
           </div>
         </div>
@@ -317,5 +338,5 @@ layout: default
     </div>
     {% endif %} {% endfor %}
   </div>
-
 </article>
+<br class="horizontal-separator" />

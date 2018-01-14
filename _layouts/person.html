@@ -2,12 +2,13 @@
 rdf_prefix_path: sda.tech.pref
 layout: default
 ---
+<br class="horizontal-separator" />
 <article class="post">
   <div class="pagination">
     <div class="post-content">
       <br class="horizontal-separator" />
-      <h2 style="text-align:center;"><img class="img-circle-small" src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img> {{ page.rdf | rdf_property: 'foaf:name' }}</h2>
-      <h4 class="dynamicChange" style="text-align:center;"></h4>
+      <h2 style="text-align:center;"><img class="img-circle-small" src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img> {{ page.rdf | rdf_property: 'foaf:title' }} {{ page.rdf | rdf_property: 'foaf:firstName' }} {{ page.rdf | rdf_property: 'foaf:familyName' }}</h2>
+      <h4 class="dynamicChange" style="text-align:center;">{{ page.rdf | rdf_property: 'foaf:status' }}</h4>
       <br class="horizontal-separator2" />
       <div class="description-project">
         <p>{{page.rdf | rdf_property: 'cv:aboutPerson'}}</p>
@@ -37,9 +38,9 @@ layout: default
         <h3>Projects</h3>
         <div class="membersofProject">
           {% capture query %} SELECT ?project ?projectname ?image WHERE{
-          <{{page.rdf}}> ex:project ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+          <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:logo ?image . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
             <!--Displaying all the reseach interests of the person x  -->
-            {% for result in resultset2 %} {% assign url= result.project | remove: "http://example.org/" %}
+            {% for result in resultset2 %} {% assign url= result.project | remove: "http://sda.tech/" %}
             <div class="chip">
               <img src="{{result.image}}" alt="Person" width="96" height="96">
               <a href="../{{url}}">{{result.projectname}}</a>
@@ -59,3 +60,4 @@ layout: default
     </div>
   </div>
 </article>
+<br class="horizontal-separator" />

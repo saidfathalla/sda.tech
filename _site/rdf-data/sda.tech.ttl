@@ -69,8 +69,8 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    schema:location <http://aksw.org/Address/InfAI> ;
                    cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
                    ex:publication ex:Publication1 ;
-                   ex:group ex:SemanticQuestionAnswering ;
-                   ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:BigDataEurope .
 
 
 ##############################Professors#########################
@@ -95,7 +95,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a Full Professor at the University of Bonn and a researcher at the University of Leipzig where he is co-leading the AKSW group with 40 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web, machine learning and knowledge representation. He is founder, leader or contributor of several open source projects, including DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 70 articles in international journals and conferences cited more than 9000 times according to Google Scholar." ;
                   ex:publication ex:Publication1 ;
                   ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Senior Researchers#########################
 sdaperson:NickBabich a foaf:Person, sdatech:seniorResearcher ;
@@ -119,7 +119,7 @@ sdaperson:NickBabich a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
                   ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Associated Researchers#####################
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
@@ -143,7 +143,7 @@ sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
                   ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Student Assistants#########################
 sdaperson:CalvinHidermanns a foaf:Person, sdatech:studentAssistant ;
@@ -167,7 +167,7 @@ sdaperson:CalvinHidermanns a foaf:Person, sdatech:studentAssistant ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
                   ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Interns####################################
 sdaperson:JonDoe a foaf:Person, sdatech:intern ;
@@ -191,7 +191,7 @@ sdaperson:JonDoe a foaf:Person, sdatech:intern ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
                   ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Former Members#############################
 sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
@@ -215,7 +215,7 @@ sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
                   ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 #######################################
 ##########Group Model##################
@@ -224,79 +224,79 @@ sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
 ##Distributed Semantic Analytics
 sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
-                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:member sdaperson:JensLehmann ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Deep Learning
 sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Deep Learning" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-globe" .
 
 ##Knowledge Extraction and Validation
 sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Extraction and Validation" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-table" .
 
 ##Semantic Data Management
 sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Data Management" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "Lorem ispum dagor. The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-sitemap" .
 
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "Semantic Question answering is a group. The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-search" .
 
 ##Software Engineering for Data Science
 sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Software Engineering for Data Science" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-cogs" .
 
 ##Structured Machine Learning
 sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Structured Machine Learning" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-cube" .
 
 
 #########################################################
@@ -309,7 +309,7 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Europe is a Big Project" ;
                  sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
-                 foaf:member sda:GezimSejidu, sda:RohanAsmat ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                  foaf:homepage <http://www.projekt-geiser.de> ;
                  foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/logo-BigDataEurope.png> ;
                  sda:funded "Funded Project" ;
@@ -563,21 +563,21 @@ ex:Publication2 a ex:publication ;
                 ex:link "http://mex.aksw.org/" ;
                 dc:author ex:CorneliusCrab, ex:LarryLobster, ex:AlfredEel .
 
-sdapublication:Publication3 a bibo:Article ;
+sdapublication:Publication1 a bibo:Article ;
                 dc:title "Global perspectives for objective driven net value" ;
                 dc:date "2000" ;
                 bibo:pages "23-27" ;
                 dc:publisher "IEEE" ;
-                ex:link "http://mex.aksw.org/" ;
+                foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "FhG" ;
-                dc:author ex:AlfredEel .
+                dc:author sdaperson:RajKapoor, sdaperson:JonDoe .
 
 sdapublication:Publication4 a bibo:Article ;
                 dc:title "Global perspectives for Market Driven Values" ;
                 dc:date "2000" ;
                 bibo:pages "23-27" ;
                 dc:publisher "IEEE" ;
-                ex:link "http://mex.aksw.org/" ;
+                foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "Bonn, FhG" ;
                 dc:author ex:AlfredEel .
 
@@ -586,9 +586,9 @@ sdapublication:Publication5 a bibo:Article ;
                 dc:date "2000" ;
                 bibo:pages "23-27" ;
                 dc:publisher "IEEE" ;
-                ex:link "http://mex.aksw.org/" ;
+                foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "FhG" ;
-                dc:author ex:AlfredEel .
+                dc:author sdaperson:RajKapoor .
 
 ex:QROWD a ex:project ;
          rdfs:label "QROWD" ;
