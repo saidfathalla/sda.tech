@@ -24,12 +24,12 @@ layout: default
         <h3>Research Groups</h3>
         <div class="partnersOfProject">
           {% capture query %} SELECT ?researchinterests ?projectname ?img WHERE{
-          <{{page.rdf}}> ex:group ?researchinterests . ?researchinterests rdfs:label ?projectname . ?researchinterests ex:imageclass ?img . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+          <{{page.rdf}}> sda:group ?researchinterests . ?researchinterests rdfs:label ?projectname . ?researchinterests foaf:depiction ?img . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
             <!--Displaying all the reseach interests of the person x  -->
-            {% for result in resultset %} {% assign url= result.researchinterests | remove: "http://example.org/" %}
+            {% for result in resultset %} {% assign url= result.researchinterests | remove: "http://sda.tech/" %}
             <div class="chip">
               <i class="{{result.img}}" width="96" height="96"></i>
-              <a href="../{{url}}">{{result.projectname}}</a>
+              <a href="../../{{url}}">{{result.projectname}}</a>
             </div>
             {% endfor %}
         </div>
@@ -40,10 +40,11 @@ layout: default
           {% capture query %} SELECT ?project ?projectname ?image WHERE{
           <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:logo ?image . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
             <!--Displaying all the reseach interests of the person x  -->
+
             {% for result in resultset2 %} {% assign url= result.project | remove: "http://sda.tech/" %}
             <div class="chip">
               <img src="{{result.image}}" alt="Person" width="96" height="96">
-              <a href="../{{url}}">{{result.projectname}}</a>
+              <a href="../../{{url}}">{{result.projectname}}</a>
             </div>
             {% endfor %}
         </div>

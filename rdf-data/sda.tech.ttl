@@ -94,7 +94,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   schema:location <http://aksw.org/Address/InfAI> ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a Full Professor at the University of Bonn and a researcher at the University of Leipzig where he is co-leading the AKSW group with 40 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web, machine learning and knowledge representation. He is founder, leader or contributor of several open source projects, including DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 70 articles in international journals and conferences cited more than 9000 times according to Google Scholar." ;
                   ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Senior Researchers#########################
@@ -118,7 +118,7 @@ sdaperson:NickBabich a foaf:Person, sdatech:seniorResearcher ;
                   schema:location <http://aksw.org/Address/InfAI> ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Associated Researchers#####################
@@ -142,7 +142,7 @@ sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
                   schema:location <http://aksw.org/Address/InfAI> ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Student Assistants#########################
@@ -166,7 +166,7 @@ sdaperson:CalvinHidermanns a foaf:Person, sdatech:studentAssistant ;
                   schema:location <http://aksw.org/Address/InfAI> ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Interns####################################
@@ -190,7 +190,7 @@ sdaperson:JonDoe a foaf:Person, sdatech:intern ;
                   schema:location <http://aksw.org/Address/InfAI> ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Former Members#############################
@@ -214,7 +214,7 @@ sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
                   schema:location <http://aksw.org/Address/InfAI> ;
                   cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
                   ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 #######################################
