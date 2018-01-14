@@ -1,6 +1,7 @@
 /**
  * Reset some basic elements
  */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -497,6 +498,11 @@ input:checked + .slider:before {
   -moz-box-shadow: 0 8px 6px -6px #e0e0e0;
   box-shadow: 0 8px 6px -6px #e0e0e0; }
 
+.chip:hover {
+  -webkit-box-shadow: 0 24px 24px -10px #e0e0e0;
+  -moz-box-shadow: 0 24px 24px -10px #e0e0e0;
+  box-shadow: 0 24px 24px -10px #e0e0e0; }
+
 .chip img {
   float: left !important;
   margin: 0 10px 0 -25px !important;
@@ -683,6 +689,8 @@ hr {
     font-size: 22px;
     color: #087CCD;
     margin-right: 8px; }
+  .cardProfile h4 {
+    margin: 12px; }
   .cardProfile button:hover, .cardProfile a:hover {
     opacity: 0.7; }
   .cardProfile img {
@@ -691,6 +699,9 @@ hr {
     border-radius: 50%;
     margin: 16px;
     margin-bottom: 32px; }
+
+.cardProfile:hover {
+  box-shadow: 0 0 10px 0 #e0e0e0; }
 
 .containerProfile {
   padding: 0 8px; }
@@ -771,6 +782,77 @@ hr {
 
 .status-projects {
   width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+button:focus {
+  outline: 0; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+.radial {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: #ff4081;
+  border-radius: 50%;
+  transition: all 0.5s;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), 0px 4px 8px rgba(0, 0, 0, 0.2); }
+
+.fab {
+  border: none;
+  color: white;
+  background-color: #ff4081;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  transition: all 0.5s; }
+  .fab:hover {
+    background-color: #f30053; }
+
+#plus {
+  transition: all 0.5s;
+  margin-top: 7px; }
+
+#fa-1, #fa-2, #fa-3 {
+  position: fixed;
+  background: transparent;
+  border: none;
+  right: 60px;
+  bottom: 57px;
+  transition: all 0.5s;
+  color: white; }
+  #fa-1:hover, #fa-2:hover, #fa-3:hover {
+    tansition-delay: 0s;
+    color: #ff8db3; }
+
+.radial.open {
+  height: 400px;
+  width: 400px;
+  right: -125px;
+  bottom: -125px;
+  outline: 0; }
+  .radial.open .fab {
+    background-color: #f30053;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), 0px 4px 8px rgba(0, 0, 0, 0.2); }
+  .radial.open #plus {
+    transform: rotateZ(135deg) translate(-1px, 3px); }
+  .radial.open #fa-1 {
+    transition-delay: 0s;
+    transform: translate(-110px, 10px); }
+  .radial.open #fa-2 {
+    transition-delay: 0.1s;
+    transform: translate(-85px, -85px); }
+  .radial.open #fa-3 {
+    transition-delay: 0.2s;
+    transform: translate(10px, -110px); }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */

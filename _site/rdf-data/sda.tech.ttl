@@ -877,6 +877,18 @@ sdatech:masterThesis a owl:Class ;
                   site:classTemplate "thesis" ;
                   sysont:creationLabel "Thesis" .
 
+sdatech:masterThesis a owl:Class ;
+                  rdfs:label "Master Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:openThesis a owl:Class ;
+                  rdfs:label "Open Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
 sdatech:phdStudent a rdfs:Class ;
               rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;
               rdfs:subClassOf foaf:Person .

@@ -34,7 +34,6 @@
   
 </head>
 
-
 <body>
   <header class="site-header" role="banner">
   <div class="wrapper">
@@ -1085,7 +1084,6 @@
   </div>
 </header>
 
-
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <script>
@@ -1122,7 +1120,7 @@
     document.getElementById('faqThesis').classList.remove('active');
   }
 
-  function faqThesis() {
+  function faqThesisToggle() {
     document.getElementById('openThesis').style.display = 'none';
     document.getElementById('start').classList.remove('active');
     document.getElementById('allThesis').style.display = 'none';
@@ -1188,21 +1186,22 @@
   <article class="post">
     <div class="pagination">
       <div class="status-thesis">
-        <a href="#" id="all" class="responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
+        <a href="#" id="all" class="active responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-users margin-icon" aria-hidden="true"></i>
           Bachelor Theses</a>
-        <a href="#" id="start" class="active responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
+        <a href="#" id="start" class="responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
           Master Theses</a>
-        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
+        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
           On Going Theses</a>
-        <a href="#" id="faqThesis" class="responsiveTabItem" onclick="faqThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
+        <a href="#" id="faqThesis" class="responsiveTabItem" onclick="faqThesisToggle()"><i class="fa fa-question-circle" aria-hidden="true"></i>
           FAQ</a>
         <br/>
         <br/>
         <hr/>
       </div>
+    </div>
         <div class="thesis-items content-people">
           <br class="horizontal-separator" />
-          <div id="allThesis" style="display:none">
+          <div id="allThesis" style="display:block">
             <div class="toggleOpenArchived" >
               <label class="switch">
                 <input type="checkbox" checked>
@@ -1238,15 +1237,28 @@
   <hr />
 
 
-              {"thesis"=>#<RdfResource:0x0055cbf5c09c90 @iri=http://sda.tech/Thesis/thesis @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf5c09c18 @term=Decentralized Evolution and Consolidation of RDF Graphs>}{"thesis"=>#<RdfResource:0x0055cbf5c09948 @iri=http://sda.tech/Thesis/thesis @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf5c098d0 @term=Decentralized Evolution and Consolidation of RDF Graphs>}{"thesis"=>#<RdfResource:0x0055cbf5c09538 @iri=http://sda.tech/Thesis/thesisB @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf5c094e8 @term=Decentralized Evolution and Consolidation of RDF Graphs>}{"thesis"=>#<RdfResource:0x0055cbf5c091c8 @iri=http://sda.tech/Thesis/thesisB @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf5c09178 @term=Decentralized Evolution and Consolidation of RDF Graphs>}
-
+              {"thesis"=>#<RdfResource:0x0055cbf360fda0 @iri=http://sda.tech/Thesis/thesis @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf360fbe8 @term=Decentralized Evolution and Consolidation of RDF Graphs>, "person"=>#<RdfResource:0x0055cbf360fa80 @iri=http://sda.tech/Person/JensLehmann @subResources=[]>, "personName"=>#<RdfLiteral:0x0055cbf360f788 @term=Kister>, "personImage"=>#<RdfResource:0x0055cbf360f5a8 @iri=http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg @subResources=[]>}{"thesis"=>#<RdfResource:0x0055cbf360e180 @iri=http://sda.tech/Thesis/thesis @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf360dff0 @term=Decentralized Evolution and Consolidation of RDF Graphs>, "person"=>#<RdfResource:0x0055cbf360dbb8 @iri=http://sda.tech/Person/AlexanderKister @subResources=[]>, "personName"=>#<RdfLiteral:0x0055cbf360da50 @term=Kister>, "personImage"=>#<RdfResource:0x0055cbf360da28 @iri=http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg @subResources=[]>}{"thesis"=>#<RdfResource:0x0055cbf360c4c0 @iri=http://sda.tech/Thesis/thesisB @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf360c2e0 @term=Decentralized Evolution and Consolidation of RDF Graphs>, "person"=>#<RdfResource:0x0055cbf360c2b8 @iri=http://sda.tech/Person/JensLehmann @subResources=[]>, "personName"=>#<RdfLiteral:0x0055cbf3607f10 @term=Kister>, "personImage"=>#<RdfResource:0x0055cbf3607e48 @iri=http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg @subResources=[]>}{"thesis"=>#<RdfResource:0x0055cbf3605f30 @iri=http://sda.tech/Thesis/thesisB @subResources=[]>, "thesisTitle"=>#<RdfLiteral:0x0055cbf3605968 @term=Decentralized Evolution and Consolidation of RDF Graphs>, "person"=>#<RdfResource:0x0055cbf36058c8 @iri=http://sda.tech/Person/AlexanderKister @subResources=[]>, "personName"=>#<RdfLiteral:0x0055cbf36049a0 @term=Kister>, "personImage"=>#<RdfResource:0x0055cbf35ffba8 @iri=http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg @subResources=[]>}
+              
+                Kister
+                Decentralized Evolution and Consolidation of RDF Graphs
+              
+                Kister
+                Decentralized Evolution and Consolidation of RDF Graphs
+              
+                Kister
+                Decentralized Evolution and Consolidation of RDF Graphs
+              
+                Kister
+                Decentralized Evolution and Consolidation of RDF Graphs
+              
             </div>
             <div id="archivedBachelorThesis" style="display:none">
               <!--QUERY for archived Bachelor Thesis  -->
+               
 
             </div>
           </div>
-          <div id="openThesis" style="display:block">
+          <div id="openThesis" style="display:none">
             <div class="toggleOpenArchived" >
               <label class="switch">
                 <input type="checkbox" checked>
@@ -1256,44 +1268,24 @@
             <br/><br/>
             <div id="openMasterTheses">
               <!--QUERY for open Master Thesis  -->
+               
 
             </div>
             <div id="archivedMasterThesis">
               <!--QUERY for archived Master Thesis  -->
+               
 
             </div>
           </div>
           <div id="finishedThesis" style="display:none">
-            
-            <!--Querry to GET Archived Thesis Items-->
-             
-            <!--Querry to Present All the Open Thesis Items  -->
-            
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+              <!-- QUERY for OnGoingThesis  -->
                
-            <div class="partner-title">
-              <a><h1>Decentralized Evolution and Consolidation of RDF Graphs</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
-        In this network and its genesis, collaboration played and still plays a crucial role.
-        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
-        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
-        The system is based on Git and provides distributed collaboration on RDF graphs.
-        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/><br class="horizontal-separator" />  
+
           </div>
-          <div class="faqThesisContent" style="display:none">
+          <div id="faqThesisContent" style="display:none">
           </div>
         </div>
         <br class="horizontal-separator2" />
-      </div>
   </article>
 
     </div>
@@ -1302,6 +1294,22 @@
         
       </ul>
     </div>
+    <script>
+  $(document).ready(function(){
+    $('.fab').click (function(){
+      $('.radial').toggleClass('open');
+    });
+  });
+</script>
+<div class="radial">
+  <button class="fa fa-paper-plane fa-3x" id="fa-1"></button>
+  <button class="fa fa-home fa-3x" id="fa-2"></button>
+  <button class="fa fa-search fa-3x" id="fa-3"></button>
+  <button class="fab">
+    <div class="fa fa-plus fa-3x" id="plus"></div>
+  </button>
+</div>
+
   </main>
 
   <footer class="site-footer">

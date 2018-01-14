@@ -13,21 +13,22 @@ layout: default
   <article class="post">
     <div class="pagination">
       <div class="status-thesis">
-        <a href="#" id="all" class="responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
+        <a href="#" id="all" class="active responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-users margin-icon" aria-hidden="true"></i>
           Bachelor Theses</a>
-        <a href="#" id="start" class="active responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
+        <a href="#" id="start" class="responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
           Master Theses</a>
-        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
+        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
           On Going Theses</a>
-        <a href="#" id="faqThesis" class="responsiveTabItem" onclick="faqThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
+        <a href="#" id="faqThesis" class="responsiveTabItem" onclick="faqThesisToggle()"><i class="fa fa-question-circle" aria-hidden="true"></i>
           FAQ</a>
         <br/>
         <br/>
         <hr/>
       </div>
+    </div>
         <div class="thesis-items content-people">
           <br class="horizontal-separator" />
-          <div id="allThesis" style="display:none">
+          <div id="allThesis" style="display:block">
             <div class="toggleOpenArchived" >
               <label class="switch">
                 <input type="checkbox" checked>
@@ -37,19 +38,24 @@ layout: default
             <br/><br/>
             <div id="openBachelorsTheses" style="display:block">
               <!--QUERY for open Bachelor Thesis  -->
-              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link WHERE{
-               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:nick ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:bachelorThesis .  ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
 
               {% include thesisItem.html %}
               {{personsInThesis}}
-
+              {% for p in personsInThesis %}
+                {{p.personName}}
+                {{p.thesisTitle}}
+              {% endfor %}
             </div>
             <div id="archivedBachelorThesis" style="display:none">
               <!--QUERY for archived Bachelor Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:bachelorThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
 
             </div>
           </div>
-          <div id="openThesis" style="display:block">
+          <div id="openThesis" style="display:none">
             <div class="toggleOpenArchived" >
               <label class="switch">
                 <input type="checkbox" checked>
@@ -59,47 +65,25 @@ layout: default
             <br/><br/>
             <div id="openMasterTheses">
               <!--QUERY for open Master Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
 
             </div>
             <div id="archivedMasterThesis">
               <!--QUERY for archived Master Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
 
             </div>
           </div>
           <div id="finishedThesis" style="display:none">
-            {% assign count=1 %}
-            <!--Querry to GET Archived Thesis Items-->
-            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?long WHERE{ ?thesisItem a dct:BibliographicResource . ?thesisItem a bibo:Thesis . ?thesisItem a sdatech:archivedThesis . ?thesisItem dct:title ?topic . ?thesisItem sda:thesisLevel ?level . ?thesisItem foaf:homepage ?website . ?thesisItem dct:abstract
-            ?long . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-            <!--Querry to Present All the Open Thesis Items  -->
-            {% for result in resultset %}
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            {% capture query2 %} SELECT ?thesisItem ?closed ?person ?name ?topic ?img WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:closed ?closed . ?thesisItem foaf:Person ?person . ?person foaf:name ?name . ?person foaf:depiction
-            ?img . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query2 %} {% assign size = resultset | size %} {% capture labelname %}{{result.topic}}{% endcapture %}
-            <div class="partner-title">
-              <a><h1>{{result.topic}}</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">{{result.long}}</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              {% for result2 in resultset2 %} {% capture topicname %}{{result2.topic}}{% endcapture %} {% if topicname == labelname %} {% assign url = result2.person | remove: "http://example.org/" %}
-              <div class="partnersOfProject">
-                <div class="chip">
-                  <img src="{{result2.img}}" alt="Person" width="96" height="96">
-                  <a href="../{{url}}">{{result2.name}}</a>
-                </div>
-              </div>
-              {% else %} {% endif %} {% endfor %}
-            </div>
-            <br/>{% if count != size %}
-            <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
+              <!-- QUERY for OnGoingThesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
+
           </div>
-          <div class="faqThesisContent" style="display:none">
+          <div id="faqThesisContent" style="display:none">
           </div>
         </div>
         <br class="horizontal-separator2" />
-      </div>
   </article>
