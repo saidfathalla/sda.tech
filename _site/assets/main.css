@@ -239,8 +239,8 @@ input:checked + .slider:before {
   border-bottom: 1px solid #e0e0e0;
   padding: 0px 0;
   color: #A9A9A9;
-  height: 50px;
-  background-color: #055995;
+  height: 12px;
+  background-color: #00358f;
   text-align: right;
   vertical-align: middle; }
   .site-rootHead a {
@@ -797,7 +797,7 @@ button::-moz-focus-inner {
   position: fixed;
   right: 25px;
   bottom: 25px;
-  background: #ff4081;
+  background: #2979FF;
   border-radius: 50%;
   transition: all 0.5s;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), 0px 4px 8px rgba(0, 0, 0, 0.2); }
@@ -805,7 +805,7 @@ button::-moz-focus-inner {
 .fab {
   border: none;
   color: white;
-  background-color: #ff4081;
+  background-color: #2196F3;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -814,11 +814,12 @@ button::-moz-focus-inner {
   bottom: 25px;
   transition: all 0.5s; }
   .fab:hover {
-    background-color: #f30053; }
+    background-color: #0052dc; }
 
 #plus {
   transition: all 0.5s;
-  margin-top: 7px; }
+  margin-top: 7px;
+  color: white !important; }
 
 #fa-1, #fa-2, #fa-3 {
   position: fixed;
@@ -830,7 +831,7 @@ button::-moz-focus-inner {
   color: white; }
   #fa-1:hover, #fa-2:hover, #fa-3:hover {
     tansition-delay: 0s;
-    color: #ff8db3; }
+    color: #76a9ff; }
 
 .radial.open {
   height: 400px;
@@ -839,7 +840,7 @@ button::-moz-focus-inner {
   bottom: -125px;
   outline: 0; }
   .radial.open .fab {
-    background-color: #f30053;
+    background-color: #0052dc;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), 0px 4px 8px rgba(0, 0, 0, 0.2); }
   .radial.open #plus {
     transform: rotateZ(135deg) translate(-1px, 3px); }

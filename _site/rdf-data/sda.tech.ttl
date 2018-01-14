@@ -21,6 +21,7 @@
 @prefix sdathesis: <http://sda.tech/Thesis/> .
 @prefix sdateaching: <http://sda.tech/Teaching/> .
 @prefix sdajob: <http://sda.tech/Jobs/> .
+@prefix sdacontact: <http://sda.tech/Contact/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ov: <http://open.vocab.org/terms/> .
@@ -180,7 +181,7 @@ sdaperson:JonDoe a foaf:Person, sdatech:intern ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
                   foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Doe" ;
+                  foaf:firstName "Jon" ;
                   foaf:title "" ;
                   foaf:status "Writing Parsers" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
@@ -204,7 +205,7 @@ sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
                   foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Alexander" ;
+                  foaf:firstName "Steve" ;
                   foaf:title "Dr." ;
                   foaf:status "Revolutionizing Technology" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
@@ -755,6 +756,9 @@ ex:inhouse a ex:job ;
 
 sdatech:job a foaf:Document ;
        rdfs:label "Jobs" .
+
+sdatech:contact a foaf:Document ;
+      rdfs:label "Contact" .
 
 ex:linkeddata a ex:researchinterests ;
               rdfs:label "linked data" ;
