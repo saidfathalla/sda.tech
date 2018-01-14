@@ -206,7 +206,7 @@ input:checked + .slider:before {
  * Separators and Dividers
  */
 .horizontal-separator {
-  line-height: 30px; }
+  line-height: 32px; }
 
 .horizontal-separator2 {
   line-height: 45px; }
@@ -774,8 +774,7 @@ hr {
 
 .jobRef {
   color: #087CCD !important;
-  padding: 0px !important;
-  background-color: white !important; }
+  padding: 0px !important; }
   .jobRef:hover {
     text-decoration: none !important;
     color: #5CBF14 !important; }
