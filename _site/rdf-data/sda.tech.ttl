@@ -21,8 +21,17 @@
 @prefix sdathesis: <http://sda.tech/Thesis/> .
 @prefix sdateaching: <http://sda.tech/Teaching/> .
 @prefix sdajob: <http://sda.tech/Jobs/> .
+@prefix sdacontact: <http://sda.tech/Contact/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix site: <http://ns.ontowiki.net/SysOnt/Site/> .
+@prefix schema: <http://schema.org/> .
+@prefix sysont: <http://ns.ontowiki.net/SysOnt/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix pf: <http://vocab.ox.ac.uk/projectfunding#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix biboDegree: <http://purl.org/ontology/bibo/degree/> .
 
 #######################################
 ################DataSet################
@@ -40,28 +49,30 @@
 #######################################
 
 ##############################PHD Students#########################
-sdaperson:AlexanderKister a foaf:Person, sdatech:phdStudent ;
+sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                    owl:sameAs <http://people.comiles.eu/natanael> ;
                    sda:publicationsTag "aX" ;
-                   sda:room "A123" ;
-                   foaf:familyName "Kister" ;
-                   foaf:name "Dr.Alexander Kister" ;
-                   foaf:nick "Kister" ;
+                   sda:room "A120" ;
+                   foaf:familyName "Sejdiu" ;
+                   foaf:name "Gezim" ;
+                   foaf:nick "Gezim" ;
                    foaf:mbox <mailto:Alfred@aksw.org> ;
-                   foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
+                   foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/14cb4e4.jpg> ;
                    foaf:phone <tel:+49-341-123456789> ;
-                   foaf:firstName "Alexander" ;
-                   foaf:title "Dr." ;
-                   foaf:status "Head Office" ;
+                   foaf:firstName "Gezim" ;
+                   foaf:title "" ;
+                   foaf:status "Phd Student" ;
                    sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
                    sda:website "http://jens-lehmann.org/" ;
+                   sda:twitter "http://jens-lehmann.org/" ;
+                   sda:facebook "http://jens-lehmann.org/" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "Lorem ispum espagol" ;
-                   ex:publication ex:Publication1 ;
-                   ex:group ex:SemanticQuestionAnswering ;
-                   ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                   cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
+                   sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:BigDataEurope .
 
 
 ##############################Professors#########################
@@ -69,72 +80,78 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                   owl:sameAs <http://people.comiles.eu/natanael> ;
                   sda:publicationsTag "aX" ;
-                  sda:room "A123" ;
+                  sda:room "A109" ;
                   foaf:familyName "Lehmann" ;
                   foaf:name "Jens" ;
-                  foaf:nick "Kister" ;
+                  foaf:nick "Lehmann" ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
+                  foaf:depiction <http://jens-lehmann.org/images/passbild_lehmann.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Alexander" ;
+                  foaf:firstName "Jens" ;
                   foaf:title "Dr." ;
-                  foaf:status "Head Office" ;
+                  foaf:status "Head of Department" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
                   sda:website "http://jens-lehmann.org/" ;
+                  sda:twitter "http://jens-lehmann.org/" ;
+                  sda:facebook "http://jens-lehmann.org/" ;
                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                   schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem ispum espagol" ;
-                  ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a Full Professor at the University of Bonn and a researcher at the University of Leipzig where he is co-leading the AKSW group with 40 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web, machine learning and knowledge representation. He is founder, leader or contributor of several open source projects, including DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 70 articles in international journals and conferences cited more than 9000 times according to Google Scholar." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Senior Researchers#########################
-sdaperson:VitalisWeins a foaf:Person, sdatech:seniorResearcher ;
+sdaperson:NickBabich a foaf:Person, sdatech:seniorResearcher ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                   owl:sameAs <http://people.comiles.eu/natanael> ;
                   sda:publicationsTag "aX" ;
-                  sda:room "A123" ;
-                  foaf:familyName "Wein" ;
-                  foaf:name "Vitalis" ;
-                  foaf:nick "Kister" ;
+                  sda:room "C132" ;
+                  foaf:familyName "Babich" ;
+                  foaf:name "Nick" ;
+                  foaf:nick "Nick" ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
+                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
                   foaf:firstName "Alexander" ;
-                  foaf:title "Dr." ;
-                  foaf:status "Head Office" ;
+                  foaf:title "" ;
+                  foaf:status "Open Scholarly Researcher" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
                   sda:website "http://jens-lehmann.org/" ;
+                  sda:twitter "http://jens-lehmann.org/" ;
+                  sda:facebook "http://jens-lehmann.org/" ;
                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                   schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem ispum espagol" ;
-                  ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Associated Researchers#####################
-sdaperson:DileepKumar a foaf:Person, sdatech:associateResearcher ;
+sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                   owl:sameAs <http://people.comiles.eu/natanael> ;
                   sda:publicationsTag "aX" ;
-                  sda:room "A123" ;
-                  foaf:familyName "Kumar" ;
-                  foaf:name "Dileep" ;
-                  foaf:nick "Kister" ;
+                  sda:room "D123" ;
+                  foaf:familyName "Kapoor" ;
+                  foaf:name "Raj" ;
+                  foaf:nick "Raj" ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
                   foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
                   foaf:firstName "Alexander" ;
-                  foaf:title "Dr." ;
-                  foaf:status "Head Office" ;
+                  foaf:title "" ;
+                  foaf:status "Researching & Applying" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
                   sda:website "http://jens-lehmann.org/" ;
+                  sda:twitter "http://jens-lehmann.org/" ;
+                  sda:facebook "http://jens-lehmann.org/" ;
                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                   schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem ispum espagol" ;
-                  ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Student Assistants#########################
 sdaperson:CalvinHidermanns a foaf:Person, sdatech:studentAssistant ;
@@ -144,183 +161,198 @@ sdaperson:CalvinHidermanns a foaf:Person, sdatech:studentAssistant ;
                   sda:room "A123" ;
                   foaf:familyName "Hidermanns" ;
                   foaf:name "Calvin" ;
-                  foaf:nick "Kister" ;
+                  foaf:nick "Calvin" ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
+                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Alexander" ;
-                  foaf:title "Dr." ;
-                  foaf:status "Head Office" ;
+                  foaf:firstName "Calvin" ;
+                  foaf:title "" ;
+                  foaf:status "Assisting Infrastructure" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
                   sda:website "http://jens-lehmann.org/" ;
+                  sda:twitter "http://jens-lehmann.org/" ;
+                  sda:facebook "http://jens-lehmann.org/" ;
                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                   schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem ispum espagol" ;
-                  ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Interns####################################
 sdaperson:JonDoe a foaf:Person, sdatech:intern ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                   owl:sameAs <http://people.comiles.eu/natanael> ;
                   sda:publicationsTag "aX" ;
-                  sda:room "A123" ;
-                  foaf:familyName "Jon" ;
-                  foaf:name "Doe" ;
-                  foaf:nick "Kister" ;
+                  sda:room "V123" ;
+                  foaf:familyName "Doe" ;
+                  foaf:name "Jon" ;
+                  foaf:nick "Jon" ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
+                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Alexander" ;
-                  foaf:title "Dr." ;
-                  foaf:status "Head Office" ;
+                  foaf:firstName "Jon" ;
+                  foaf:title "" ;
+                  foaf:status "Writing Parsers" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
                   sda:website "http://jens-lehmann.org/" ;
+                  sda:twitter "http://jens-lehmann.org/" ;
+                  sda:facebook "http://jens-lehmann.org/" ;
                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                   schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem ispum espagol" ;
-                  ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Former Members#############################
-sdaperson:NickBabich a foaf:Person, sdatech:formerMember ;
+sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                   owl:sameAs <http://people.comiles.eu/natanael> ;
                   sda:publicationsTag "aX" ;
-                  sda:room "A123" ;
-                  foaf:familyName "Babich" ;
-                  foaf:name "Nick" ;
-                  foaf:nick "Kister" ;
+                  sda:room "C100" ;
+                  foaf:familyName "Jobs" ;
+                  foaf:name "Steve" ;
+                  foaf:nick "Steve" ;
                   foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
+                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Alexander" ;
+                  foaf:firstName "Steve" ;
                   foaf:title "Dr." ;
-                  foaf:status "Head Office" ;
+                  foaf:status "Revolutionizing Technology" ;
                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
                   sda:website "http://jens-lehmann.org/" ;
+                  sda:twitter "http://jens-lehmann.org/" ;
+                  sda:facebook "http://jens-lehmann.org/" ;
                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                   schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem ispum espagol" ;
-                  ex:publication ex:Publication1 ;
-                  ex:group ex:SemanticQuestionAnswering ;
-                  ex:project ex:SHORE, ex:WAVE, ex:CORALS .
+                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 #######################################
 ##########Group Model##################
 #######################################
 
 ##Distributed Semantic Analytics
-sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup ;
+sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
-                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:member sdaperson:JensLehmann ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
+                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-bar-chart" .
 
 ##Deep Learning
-sdagroup:DeepLearning a aiiso:ResearchGroup ;
+sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Deep Learning" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-globe" .
 
 ##Knowledge Extraction and Validation
-sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup ;
+sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Extraction and Validation" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-table" .
 
 ##Semantic Data Management
-sdagroup:SemanticDataManagement a aiiso:ResearchGroup ;
+sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Data Management" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "Lorem ispum dagor. The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-sitemap" .
 
 ##Semantic Question Answering
-sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup ;
+sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                dct:description "Semantic Question answering is a group. The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-search" .
 
 ##Software Engineering for Data Science
-sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup ;
+sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Software Engineering for Data Science" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-cogs" .
 
 ##Structured Machine Learning
-sdagroup:StructuredMachineLearning a aiiso:ResearchGroup ;
+sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Structured Machine Learning" ;
-                                foaf:member sda:GezimSejidu, sda:AlfredEel ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The future of SHared Ontology REfining for enterprise business" ;
-                                sdapublication:publication sdapublication:Publication1 ;
-                                dct:abstract "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-cube" .
 
 
 #########################################################
-ex:DeepLearning a ex:group ;
-                rdfs:label "Deep Learning" ;
-                foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                ex:project ex:SHORE, ex:WAVE ;
-                ex:description "What is this, The future of SHared Ontology REfining for enterprise business" ;
-                ex:longdescription "What is this, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                ex:imageclass "fa fa-line-chart" .
-
-
-ex:DistributedSemanticAnalytics a ex:group ;
-                                rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                ex:project ex:SHORE, ex:WAVE ;
-                                ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                                ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                ex:imageclass "fa fa-bar-chart" .
-
 
 #######################################
 ##########Projects Model###############
 #######################################
 
-sdaproject:BigDataEurope a foaf:Project, sda:fundedProject ;
-                 rdfs:label "Big Data Europe" ;
+##########################Funded Project#######################
+sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
+                 rdfs:label "Big Data Europe is a Big Project" ;
+                 sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
+                 foaf:homepage <http://www.projekt-geiser.de> ;
+                 foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/logo-BigDataEurope.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "undefined" ;
+                 sda:homepage "http://www.big-data-europe.eu/" ;
+                 sda:source "https://github.com/big-data-europe" ;
+                 sda:download "undefined" ;
+                 site:content """* Duration: 2016–2019
+ * Funding Programme: [BMWi - Smart Service Welt](http://www.bmwi.de/DE/Themen/Digitale-Welt/Digitale-Technologien/smart-service-welt.html \"BMWi - Smart Service Welt\")
+ """^^sysont:Markdown, """Tasks
+ =====
+                  Leipzig University will develop processes for data acquisition, integration and fusion. For data acquisition, we will develop a unified, intelligent and extensible framework for representing data from diverse heterogeneous sources (automotive sensors, Twitter, OpenStreetMap, DBpedia, etc.) in RDF format. The acquired data has to be integrated to be useful for higher-value services. In order to process the high volume of complex geospatial data, we will develop scalable algorithms for efficiently detecting geospatial relations using machine learning techniques. Finally, we will survey if supervised machine learning can reduce the effort required for setting up data fusion pipelines. This will enable an efficient provisioning of fused data to geospatial services."""^^sysont:Markdown ;
+                 sda:publicationTag "geiser" ;
+                 dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
+                 sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:AxelNgonga ;
+                 sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
+                 pf:endDate "2019-02-28"^^xsd:date ;
+                 pf:startDate "2016-03-01"^^xsd:date ;
+                 sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+############################Open Source Projects##########################
+sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
+                 rdfs:label "DL Learner" ;
                  sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
                  foaf:member sda:GezimSejidu, sda:RohanAsmat ;
                  foaf:homepage <http://www.projekt-geiser.de> ;
-                 foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/logo-BigDataEurope.png> ;
+                 foaf:logo <http://dl-learner.org/Images/dllearner.gif> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "undefined" ;
                  sda:homepage "http://www.big-data-europe.eu/" ;
@@ -345,40 +377,96 @@ sdaproject:BigDataEurope a foaf:Project, sda:fundedProject ;
 ##########Partners Model###############
 #######################################
 
+############################Industry Partner########################################
 sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
-                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:currentProject sdaproject:BigDataEurope ;
                               foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
-                              foaf:name "THE INDUsTRY LEADER" ;
+                              foaf:name "THE INDUsTRY LEADER 2.0" ;
                               foaf:phone <tel:+49-3491-466-141> ;
                               schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
-                              foaf:logo <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
+                              foaf:depiction <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
 
-sdapartner:AlexanderMitterle a foaf:Person, sdatech:Partner, sdatech:phdStudent ;
+sdapartner:AlexanderMitterle a foaf:Person, sdatech:Partner, sdatech:industryPartner, sdatech:phdStudent ;
                               foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
-                              foaf:currentProject sdaproject:DigitaleForschungskollaboration ;
+                              foaf:currentProject sdaproject:BigDataEurope ;
                               foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
-                              foaf:name "AlexanderMitterle" ;
+                              foaf:name "Alexander Mitterle" ;
                               foaf:phone <tel:+49-3491-466-141> ;
                               schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
-                              foaf:logo <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
+                              foaf:depiction <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
+
+############################Academic Partner########################################
+sdapartner:Slippo a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
+                              foaf:homepage <http://www.hof.uni-halle.de/mitarbeiter/alexander_mitterle.htm> ;
+                              foaf:currentProject sdaproject:DLLearner ;
+                              foaf:mbox <mailto:alexander.mitterle@hof.uni-halle.de> ;
+                              foaf:name "THE INDUsTRY LEADER 1.0" ;
+                              foaf:phone <tel:+49-3491-466-141> ;
+                              schema:location <http://aksw.org/Address/InstitutFuerHochschulforschungWittenberg> ;
+                              dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
+                              foaf:depiction <http://www.agroknow.gr/agroknow/sites/default/files/agroknow_1.png> .
 
 #######################################
 ##########Thesis Model###############
 #######################################
 
-sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis ;
-    dct:title "Decentralized Evolution and Consolidation of RDF Graphs" ;
-    dct:creator sda:GezimSejidu, sda:RohanAsmat ;
-    foaf:maker sda:GezimSejidu, sda:RohanAsmat ;
+########################onGoingThesis########################
+sdathesis:thesisC a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:bachelorThesis ;
+    dct:title "Decentralized  and Consolidation of RDF Graphs" ;
+    dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+    foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
     dct:issued "2017-06"^^xsd:gYearMonth ;
     dct:isPartOf <icwe2017> ;
     dct:language "en-US" ;
     dct:publisher <https://springer.com/> ;
     bibo:degree biboDegree:phd ;
     foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+
+###############################################################
+sdathesis:thesisE a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis , sdatech:bachelorThesis ;
+    dct:title "Decentralizing Evolution and  of RDF Graphs" ;
+    dct:creator sdaperson:JensLehmann, sdaperson:SteveJobs ;
+    foaf:maker sdaperson:JensLehmann, sdaperson:SteveJobs ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "en-US" ;
+    dct:publisher <https://springer.com/> ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+
+######################Archived Thesis###########################
+sdathesis:thesisB a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis , sdatech:bachelorThesis ;
+    dct:title "Decentralized Evolution and  of RDF Graphs" ;
+    dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+    foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "en-US" ;
+    dct:publisher <https://springer.com/> ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    sda:thesisLevel "MS,BS" ;
     dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
     dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
     dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
@@ -389,6 +477,25 @@ sdathesis:thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis
         This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
 
+sdathesis:RohanThesis a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis , sdatech:masterThesis ;
+    dct:title "SANSA & the unspoken Tale" ;
+    dct:creator sdaperson:JensLehmann, sdaperson:JonDoe ;
+    foaf:maker sdaperson:JensLehmann, sdaperson:JonDoe ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "de-GR" ;
+    dct:publisher <https://springer.com/> ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
 #######################################
 #######################################
@@ -470,15 +577,6 @@ ex:InformationRetrieval a ex:course ;
                         ex:language "English" ;
                         ex:winter2017 "Summer Semester 2017" .
 
-ex:KnowledgeExtractionandValidation a ex:group ;
-                                    rdfs:label "Knowledge Extraction and Validation" ;
-                                    foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                                    foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                    ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                                    ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                                    ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                    ex:imageclass "fa fa-search" .
-
 
 ex:MEXVocabulary a ex:project ;
                  rdfs:label "MEX Vocabulary" ;
@@ -521,21 +619,21 @@ ex:Publication2 a ex:publication ;
                 ex:link "http://mex.aksw.org/" ;
                 dc:author ex:CorneliusCrab, ex:LarryLobster, ex:AlfredEel .
 
-sdapublication:Publication3 a bibo:Article ;
+sdapublication:Publication1 a bibo:Article ;
                 dc:title "Global perspectives for objective driven net value" ;
                 dc:date "2000" ;
                 bibo:pages "23-27" ;
                 dc:publisher "IEEE" ;
-                ex:link "http://mex.aksw.org/" ;
+                foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "FhG" ;
-                dc:author ex:AlfredEel .
+                dc:author sdaperson:RajKapoor, sdaperson:JonDoe .
 
 sdapublication:Publication4 a bibo:Article ;
                 dc:title "Global perspectives for Market Driven Values" ;
                 dc:date "2000" ;
                 bibo:pages "23-27" ;
                 dc:publisher "IEEE" ;
-                ex:link "http://mex.aksw.org/" ;
+                foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "Bonn, FhG" ;
                 dc:author ex:AlfredEel .
 
@@ -544,9 +642,9 @@ sdapublication:Publication5 a bibo:Article ;
                 dc:date "2000" ;
                 bibo:pages "23-27" ;
                 dc:publisher "IEEE" ;
-                ex:link "http://mex.aksw.org/" ;
+                foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "FhG" ;
-                dc:author ex:AlfredEel .
+                dc:author sdaperson:RajKapoor .
 
 ex:QROWD a ex:project ;
          rdfs:label "QROWD" ;
@@ -600,15 +698,6 @@ ex:SMLBench a ex:project ;
             ex:partners ex:agroknow ;
             ex:opensource "Open Source" .
 
-ex:SemanticDataManagement a ex:group ;
-                          rdfs:label "Semantic Data Management" ;
-                          foaf:Person ex:OliverOctopus, ex:CorneliusCrab, ex:AlfredEel ;
-                          foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                          ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                          ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                          ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                          ex:imageclass "fa fa-cogs" .
-
 ex:SemanticDataWebTechnologies a ex:course ;
                                rdfs:label "Semantic Data Web Technologies" ;
                                foaf:Person ex:OliverOctopus, ex:AlfredEel ;
@@ -617,35 +706,8 @@ ex:SemanticDataWebTechnologies a ex:course ;
                                ex:language "English" ;
                                ex:summer2017 "Summer Semester 2017" .
 
-ex:SemanticQuestionAnswering a ex:group ;
-                             rdfs:label "Semantic Question Answering" ;
-                             foaf:Person ex:OliverOctopus, ex:CorneliusCrab, ex:LarryLobster, ex:AlexanderKister, ex:AlfredEel ;
-                             foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                             ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                             ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                             ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                             ex:imageclass "fa fa-search" .
-
-ex:SoftwareEngineeringforDataScience a ex:group ;
-                                     rdfs:label "Software Engineering for Data Science" ;
-                                     foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                                     foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                     ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                                     ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                                     ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                                     ex:imageclass "fa fa-bar-chart" .
-
-ex:StructuredMachineLearning a ex:group ;
-                             rdfs:label "Structured Machine Learning" ;
-                             foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                             foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                             ex:project ex:SHORE, ex:WAVE, ex:CORALS ;
-                             ex:description "The future of SHared Ontology REfining for enterprise business" ;
-                             ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-                             ex:imageclass "fa fa-cube" .
-
 ex:WAVE a ex:project ;
-        rdfs:label "WAVE" ;
+        rdfs:label "WAVE is a Project" ;
         foaf:Person ex:OliverOctopus, ex:AlfredEel ;
         foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
         ex:description "The power of the Qrowd combines with RDF" ;
@@ -690,32 +752,6 @@ ex:abc a ex:thesisItem ;
        ex:homepage "http://ai4bd.com/?page_id=4" ;
        ex:level "Bachelors,Master" ;
        ex:open "Open" .
-
-
-
-ex:agroknow a ex:partners ;
-            rdfs:label "Agroknow" ;
-            foaf:depiction <http://www.agroknow.com/agroknow/sites/default/files/agroknowlogo.png> ;
-            ex:description "The future of SHared Ontology REfining for enterprise business" ;
-            ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-            ex:homepage "http://www.agroknow.com/agroknow/" ;
-            ex:academic "academic" .
-
-ex:agt a ex:partners ;
-       rdfs:label "AGT Group R&D GmbH" ;
-       foaf:depiction <https://www.agtinternational.com/wp-content/themes/AGT/homepage/agt3.png> ;
-       ex:description "The future of SHared Ontology REfining for enterprise business" ;
-       ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " ;
-       ex:homepage "https://www.agtinternational.com/" ;
-       ex:industry "industry" .
-
-ex:ai4BD a ex:partners ;
-         rdfs:label "AI4BD GmbH" ;
-         foaf:depiction <http://ai4bd.com/wp-content/uploads/2016/09/final-logo-ai4bd.png> ;
-         ex:description "The future of SHared Ontology REfining for enterprise business" ;
-         ex:longdescription "AI4BD is based in Switzerland. Provides software solutions across Europe vertical markets such as Health, Security, and Automotive. It develops a semantic framework supporting the Linked Data life-cycle and solutions including a Natural Language Processing (NLP) engine, an RDF store and different Web services and data analytics based on RDF data.  The solutions are distributed on-premise as Software and as a Service (SaaS). AI4BD has expertise in software component integration and in Linked Data technologies. " ;
-         ex:homepage "http://ai4bd.com/?page_id=4" ;
-         ex:industry "industry" .
 
 ex:bad a ex:teaching ;
        rdfs:label "bad" ;
@@ -777,6 +813,9 @@ ex:inhouse a ex:job ;
 sdatech:job a foaf:Document ;
        rdfs:label "Jobs" .
 
+sdatech:contact a foaf:Document ;
+      rdfs:label "Contact" .
+
 ex:linkeddata a ex:researchinterests ;
               rdfs:label "linked data" ;
               ex:description "The future of SHared Ontology REfining for enterprise business" ;
@@ -814,6 +853,7 @@ sdatech:thesis a foaf:Document ;
           ex:group ex:DistributedSemanticAnalytics, ex:SemanticQuestionAnswering, ex:StructuredMachineLearning, ex:DeepLearning, ex:SoftwareEngineeringforDataScience ;
           ex:description "The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas" ;
           ex:longdescription "Please note that the list below is only a small sample of possible topics and ideas. Please contact us to discuss further, to find new topics, or to suggest a topic of your own." .
+
 
 ex:thesisItem a ex:thesis ;
               rdfs:label "Thesis Item" .
@@ -855,11 +895,59 @@ foaf:Project a owl:Class ;
 sdatech:about a foaf:Document ;
   rdfs:label "About" .
 
-sda:fundedProject a owl:Class ;
+sdatech:fundedProject a owl:Class ;
                    rdfs:label "Funded Project" ;
                    rdfs:subClassOf foaf:Project ;
                    site:classTemplate "project" ;
                    sysont:creationLabel "Projects" .
+
+sdatech:openSourceProject a owl:Class ;
+                  rdfs:label "Open Source Project" ;
+                  rdfs:subClassOf foaf:Project ;
+                  site:classTemplate "project" ;
+                  sysont:creationLabel "Projects" .
+
+sdatech:incubatorProject a owl:Class ;
+                   rdfs:label "Incubator Project" ;
+                   rdfs:subClassOf foaf:Project ;
+                   site:classTemplate "project" ;
+                   sysont:creationLabel "Projects" .
+
+sdatech:ongoingThesis a owl:Class ;
+                  rdfs:label "Ongoing Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:archivedThesis a owl:Class ;
+                  rdfs:label "Archived Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:bachelorThesis a owl:Class ;
+                  rdfs:label "Bachelor Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:masterThesis a owl:Class ;
+                  rdfs:label "Master Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:masterThesis a owl:Class ;
+                  rdfs:label "Master Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
+
+sdatech:openThesis a owl:Class ;
+                  rdfs:label "Open Thesis" ;
+                  rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
+                  site:classTemplate "thesis" ;
+                  sysont:creationLabel "Thesis" .
 
 sdatech:phdStudent a rdfs:Class ;
               rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;
@@ -907,6 +995,15 @@ sdatech:Partner a owl:Class ;
                     sysont:creationLabel "Groups" ;
                     dct:issued "2008-05-14" .
 
+sdatech:Group a owl:Class ;
+                    rdfs:label "Research Group" ;
+                    rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                    rdfs:comment "A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group." ;
+                    rdfs:subClassOf foaf:Organization ;
+                    site:classTemplate "group" ;
+                    sysont:creationLabel "Groups" ;
+                    dct:issued "2008-05-14" .
+
 ###############################################
 ####################SDA Data Properties########
 ###############################################
@@ -917,11 +1014,17 @@ sda:room a owl:DatatypeProperty ;
 sda:linkedin a owl:DatatypeProperty ;
           rdfs:label "Linkedin" .
 
+sda:facebook a owl:DatatypeProperty ;
+          rdfs:label "Facebook" .
+
+sda:twitter a owl:DatatypeProperty ;
+          rdfs:label "Twitter" .
+
 sda:website a owl:DatatypeProperty ;
           rdfs:label "Personal Website" .
 
 sda:miniIcon a owl:DataProperty ;
-          rdfs:label "Small Icon"
+          rdfs:label "Small Icon" .
 
 sda:hookline a owl:DatatypeProperty, <http://www.w3.org/2002/07/owl#DatatypeProperty.> ;
           rdfs:label "hookline" .
@@ -929,3 +1032,7 @@ sda:hookline a owl:DatatypeProperty, <http://www.w3.org/2002/07/owl#DatatypeProp
 #Domain of status missing...aksw
 sda:status a owl:DatatypeProperty ;
             rdfs:label "status" .
+
+
+sda:thesisLevel a owl:DatatypeProperty;
+                  rdfs:label "Level of complexity of the thesis." .

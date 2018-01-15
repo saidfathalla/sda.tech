@@ -70,7 +70,7 @@ jekyll_rdf:
                  { ?resourceUri a <http://example.org/group> . }
                 UNION { ?resourceUri a <http://example.org/project> . }
                 UNION { ?resourceUri a <http://example.org/publication> . }
-                UNION { ?resourceUri a <http://example.org/job> . }
+                UNION { ?resourceUri a <http://sda.tech/Group> . }
                 UNION { ?resourceUri a <http://sda.tech/Partner> . }
                 UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Project> . }
                 UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Person> . }
@@ -79,7 +79,7 @@ jekyll_rdf:
     default_template: "default.html"
     class_template_mappings:
         "http://xmlns.com/foaf/0.1/Person" : "person.html"
-        #"http://example.org/group" : "group.html"
+        "http://sda.tech/Group" : "group.html"
         "http://xmlns.com/foaf/0.1/Project" : "project.html"
         "http://sda.tech/Partner" : "partners.html"
         # "http://example.org/job" : "job.html"
@@ -95,7 +95,7 @@ jekyll_rdf:
         "http://sda.tech/partners" : "partners.html"
         "http://sda.tech/about" : "page.html"
         "http://sda.tech/people" : "people.html"
-        # "http://example.org/contact" : "contact.html"
+        "http://sda.tech/contact" : "contact.html"
         # "http://example.org/blog" : "blog.html"
         "http://sda.tech/thesis" : "thesis.html"
 

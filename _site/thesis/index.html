@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:xlink="http://www.w3.org/1999/xlink" lang=" en ">
-<footer class="site-rootHead">
-  <div class="wrapper">
-    <a href="../blog" class="blankNode"><i class="fa fa-rss" aria-hidden="true"></i>
-      <h6 class="root-heading">
-      Blog
-    </h6></a>
-    <a href="../contact"><i class="fa fa-address-card-o" aria-hidden="true"></i>
-      <h6 class="root-heading">Contact</h6></a>
-  </div>
-</footer>
- <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,8 +24,18 @@
   
 </head>
 
-
 <body>
+  <footer class="site-rootHead">
+  <div class="wrapper">
+    <!-- <a href="../blog" class="blankNode"><i class="fa fa-rss" aria-hidden="true"></i>
+      <h6 class="root-heading">
+      Blog
+    </h6></a>
+    <a href="../contact"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+      <h6 class="root-heading">Contact</h6></a> -->
+  </div>
+</footer>
+
   <header class="site-header" role="banner">
   <div class="wrapper">
     
@@ -169,6 +169,12 @@
                   
                       
                   
+                      
+                  
+                      
+                  
+                      
+                  
               
           
 
@@ -177,6 +183,8 @@
             
 
               
+                  
+                      
                   
                       
                   
@@ -278,6 +286,10 @@
                   
                       
                   
+                      
+                  
+                      
+                  
               
           
 
@@ -286,6 +298,26 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -373,20 +405,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
 
@@ -395,12 +413,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -496,6 +508,18 @@
                   
                       
                   
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
               
           
 
@@ -504,6 +528,10 @@
             
 
               
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -605,6 +633,8 @@
                   
                       
                   
+                      
+                  
               
           
 
@@ -613,6 +643,22 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -704,16 +750,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
 
@@ -722,6 +758,12 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -921,6 +963,8 @@
                       
                   
                       
+                  
+                      
                         <a class="page-link" href="/thesis/index.html">
                           Thesis
                         </a>
@@ -932,6 +976,10 @@
                   
                       
                   
+                      
+                  
+                      
+                  
               
           
 
@@ -940,6 +988,20 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -1033,14 +1095,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
         </div>
@@ -1049,7 +1103,8 @@
   </div>
 </header>
 
-
+  <br class="horizontal-separator-fixed" />
+  <br class="horizontal-separator" />
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <script>
@@ -1060,6 +1115,8 @@
     document.getElementById('all').classList.remove('active');
     document.getElementById('openThesis').style.display = 'block';
     document.getElementById('start').classList.add('active');
+    document.getElementById('faqThesisContent').style.display = 'none';
+    document.getElementById('faqThesis').classList.remove('active');
   }
 
   function activeFinishedThesis() {
@@ -1069,6 +1126,8 @@
     document.getElementById('all').classList.remove('active');
     document.getElementById('finishedThesis').style.display = 'block';
     document.getElementById('end').classList.add('active');
+    document.getElementById('faqThesisContent').style.display = 'none';
+    document.getElementById('faqThesis').classList.remove('active');
   }
 
   function allThesisItems() {
@@ -1078,199 +1137,303 @@
     document.getElementById('all').classList.add('active');
     document.getElementById('finishedThesis').style.display = 'none';
     document.getElementById('end').classList.remove('active');
+    document.getElementById('faqThesisContent').style.display = 'none';
+    document.getElementById('faqThesis').classList.remove('active');
+  }
+
+  function faqThesisToggle() {
+    document.getElementById('openThesis').style.display = 'none';
+    document.getElementById('start').classList.remove('active');
+    document.getElementById('allThesis').style.display = 'none';
+    document.getElementById('all').classList.remove('active');
+    document.getElementById('finishedThesis').style.display = 'none';
+    document.getElementById('end').classList.remove('active');
+    document.getElementById('faqThesisContent').style.display = 'block';
+    document.getElementById('faqThesis').classList.add('active');
   }
 </script>
 
-<!--Querry to GET all the groups of the thesis   -->
- 
+<script>
+  bachelorThesisActive = 1 ;
+  function switchBachelorThesis() {
+    if(bachelorThesisActive == 1 )
+    {
+      document.getElementById('openBachelorsTheses').style.display = 'none';
+      document.getElementById('archivedBachelorThesis').style.display = 'block';
+    }else if(bachelorThesisActive == 0)
+    {
+      document.getElementById('openBachelorsTheses').style.display = 'block';
+      document.getElementById('archivedBachelorThesis').style.display = 'none';
+    }else{
+      console.log("Faulty Bachelor Thesis Div Active");
+    }
+    // toggle Var
+    if(bachelorThesisActive  == 1 )
+      bachelorThesisActive = 0 ;
+    else if(bachelorThesisActive == 0 ){
+      bachelorThesisActive = 1 ;
+    }
+}
+</script>
 
+<script>
+  masterThesisActive = 1 ;
+  function switchMasterThesis() {
+    console.log(masterThesisActive);
+    if(masterThesisActive == 1 )
+    {
+      document.getElementById('openMasterTheses').style.display = 'none';
+      document.getElementById('archivedMasterThesis').style.display = 'block';
+    }else if(masterThesisActive == 0)
+    {
+      document.getElementById('openMasterTheses').style.display = 'block';
+      document.getElementById('archivedMasterThesis').style.display = 'none';
+    }else{
+      console.log("Faulty Master Thesis Div Active");
+    }
+    // toggle Var
+    if(masterThesisActive  == 1 )
+      masterThesisActive = 0 ;
+    else if(masterThesisActive == 0 ){
+      masterThesisActive = 1 ;
+    }
+}
+</script>
+
+
+<!--Querry to GET all the Contact Persons of the Thesis   -->
+ 
   <!-- Presentation of thesis Items  -->
   <article class="post">
     <div class="pagination">
       <div class="status-thesis">
-        <a href="#" id="all" class="responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
-      All Thesis Topics</a>
-        <a href="#" id="start" class="active responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
-      Ongoing Thesis</a>
-        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
-      Archived</a>
+        <a href="#" id="all" class="active responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-users margin-icon" aria-hidden="true"></i>
+          Bachelor Theses</a>
+        <a href="#" id="start" class="responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
+          Master Theses</a>
+        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
+          On Going Theses</a>
+        <a href="#" id="faqThesis" class="responsiveTabItem" onclick="faqThesisToggle()"><i class="fa fa-question-circle" aria-hidden="true"></i>
+          FAQ</a>
         <br/>
         <br/>
         <hr/>
       </div>
+    </div>
         <div class="thesis-items content-people">
           <br class="horizontal-separator" />
-          <div id="allThesis" style="display:none">
-            
-            <!--Querry to GET ALL Thesis Items-->
-             
-            <!--Querry to Present All the Open Thesis Items  -->
-            
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+          <div id="allThesis" style="display:block">
+            <div class="toggleOpenArchived" >
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round" onclick="switchBachelorThesis();"></span>
+              </label>
+            </div>
+            <br/><br/>
+            <div id="openBachelorsTheses" style="display:block">
+              <!--QUERY for open Bachelor Thesis  -->
                
-            <div class="partner-title">
-              <a><h1>Entity Resolution of Unfinished topics</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-            </div>
-            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/>
-            <hr/><br class="horizontal-separator" />  
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+               <!-- Presentation for Open Bachelor Thesis  -->
                
-            <div class="partner-title">
-              <a><h1>Distributed in-memory Processig</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-            </div>
-            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/>
-            <hr/><br class="horizontal-separator" />  
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+                  
+                <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://ai4bd.com/?page_id=4" target="_blank"> <h1>Decentralizing Evolution and  of RDF Graphs Blank <sup>(en-US)</sup></h1></a>
+</div>
+<div class="partner-item">
+  <div class="partner-detail">
+    <div class="partner-description">
+      The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.
+    </div>
+  </div>
+  <div class="partnerProjects post-content">
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        
+        <div class="chip">
+          <img src="https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg" alt="Project" width="96" height="96">
+          <a href="../Person/SteveJobs">Steve</a>
+        </div>
+      
+    
+      
+      
+        
+        <div class="chip">
+          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Project" width="96" height="96">
+          <a href="../Person/JensLehmann">Lehmann</a>
+        </div>
+      
+    
+      
+      
+    
+      
+      
+    
+  </div>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+
                
-            <div class="partner-title">
-              <a><h1>Distributed in-memory SPARQL Processing</h1></a>
             </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-            </div>
-            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/>
-            <hr/><br class="horizontal-separator" />  
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+            <div id="archivedBachelorThesis" style="display:none">
+              <!--QUERY for archived Bachelor Thesis  -->
                
-            <div class="partner-title">
-              <a><h1>Entity Resolution of particular Topics</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-            </div>
-            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/>
-            <hr/><br class="horizontal-separator" />  
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+               <!-- PRESENTATION for ARCHIVED BACHELOR THESIS -->
                
-            <div class="partner-title">
-              <a><h1>Entity Resolution of Closed Subjects</h1></a>
+                  
+                <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://ai4bd.com/?page_id=4" target="_blank"> <h1>Decentralized Evolution and  of RDF Graphs Blank <sup>(en-US)</sup></h1></a>
+</div>
+<div class="partner-item">
+  <div class="partner-detail">
+    <div class="partner-description">
+      The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.
+    </div>
+  </div>
+  <div class="partnerProjects post-content">
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        
+        <div class="chip">
+          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Project" width="96" height="96">
+          <a href="../Person/JensLehmann">Lehmann</a>
+        </div>
+      
+    
+      
+      
+    
+  </div>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+
+               
             </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-            </div>
-            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/><br class="horizontal-separator" />  
           </div>
-          <div id="openThesis" style="display:block">
-            
-            <!--Querry to GET Open Thesis Items-->
-             
-            <!--Querry to Present All the Open Thesis Items  -->
-            
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+          <div id="openThesis" style="display:none">
+            <div class="toggleOpenArchived" >
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round" onclick="switchMasterThesis();"></span>
+              </label>
+            </div>
+            <br/><br/>
+            <div id="openMasterTheses" style="display:block">
+              <!--QUERY for open Master Thesis  -->
                
-            <div class="partner-title">
-              <a><h1>Distributed in-memory Processig</h1></a>
+
             </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
+            <div id="archivedMasterThesis" style="display:none">
+              <!--QUERY for archived Master Thesis  -->
+               
+              <!--PRESENTATION Of Archived Master Thesis  -->
+              
+                 
+               <br class="horizontal-separator"/>
+<div class="partner-title">
+  <a href="http://ai4bd.com/?page_id=4" target="_blank"> <h1>SANSA & the unspoken Tale Blank <sup>(de-GR)</sup></h1></a>
+</div>
+<div class="partner-item">
+  <div class="partner-detail">
+    <div class="partner-description">
+      The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.
+    </div>
+  </div>
+  <div class="partnerProjects post-content">
+    
+      
+      
+        
+        <div class="chip">
+          <img src="https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg" alt="Project" width="96" height="96">
+          <a href="../Person/JonDoe">Jon</a>
+        </div>
+      
+    
+      
+      
+        
+        <div class="chip">
+          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Project" width="96" height="96">
+          <a href="../Person/JensLehmann">Lehmann</a>
+        </div>
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  </div>
+</div>
+<!-- NO RULE FOR LAST ELEMENT -->
+
+  <hr />
+
+
               
             </div>
-            <br/>
-            <hr/><br class="horizontal-separator" />  
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-               
-            <div class="partner-title">
-              <a><h1>Distributed in-memory SPARQL Processing</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/><br class="horizontal-separator" />  
           </div>
           <div id="finishedThesis" style="display:none">
-            
-            <!--Querry to GET Open Thesis Items-->
-             
-            <!--Querry to Present All the Open Thesis Items  -->
-            
-            <!--QUERY to GET all the people associated with the thesis topic  -->
+              <!-- QUERY for OnGoingThesis  -->
                
-            <div class="partner-title">
-              <a><h1>Entity Resolution of Unfinished topics</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/>
-            <hr/><br class="horizontal-separator" />  
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-               
-            <div class="partner-title">
-              <a><h1>Entity Resolution of particular Topics</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/>
-            <hr/><br class="horizontal-separator" />  
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-               
-            <div class="partner-title">
-              <a><h1>Entity Resolution of Closed Subjects</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              
-            </div>
-            <br/><br class="horizontal-separator" />  
+
+          </div>
+          <div id="faqThesisContent" style="display:none">
           </div>
         </div>
         <br class="horizontal-separator2" />
-      </div>
   </article>
 
     </div>
@@ -1279,6 +1442,28 @@
         
       </ul>
     </div>
+    <script>
+  $(document).ready(function(){
+    $('.fab').click (function(){
+      $('.radial').toggleClass('open');
+    });
+  });
+</script>
+<div class="radial">
+  <form action="../contact" method="get">
+    <button class="fa fa-location-arrow fa-3x" id="fa-1" ></button>
+  </form>
+  <form action="../about" method="get">
+    <button class="fa fa-home fa-3x" id="fa-2"></button>
+  </form>
+  <form action="http://sda.cs.uni-bonn.de/blog/" method="get">
+    <button class="fa fa-rss fa-3x" id="fa-3"></button>
+  </form>
+  <button class="fab">
+    <div class="fa fa-plus fa-3x" id="plus"></div>
+  </button>
+</div>
+
   </main>
 
   <footer class="site-footer">

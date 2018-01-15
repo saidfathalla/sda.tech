@@ -5,67 +5,69 @@ layout: default
 {% include togglePeopleTypes.html %}
 <div class="pagination">
   {% for people in site.data.peopleTypes %} {% assign p = people.name %} {% if site.activePeople == p %}
-  <a href="#" id="{{people.name | remove: " " }}" class="active responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-graduation-cap margin-icon" aria-hidden="true"></i>
+  <a href="#" id="{{people.name | remove: " " }}" class="active responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i>
      {{people.name}}</a> {% else %}
-  <a href="#" id="{{people.name | remove: " " }}" class="responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="fa fa-level-up  margin-icon" aria-hidden="true"></i> {{people.name}}</a> {% endif%} {% endfor %}
+  <a href="#" id="{{people.name | remove: " " }}" class="responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i> {{people.name}}</a> {% endif%} {% endfor %}
   <br/><br/>
   <hr class="ruleh" />
 </div>
 <div class="content-people">
   <div id="Prof" style="display:inline-block">
     <!-- GET  querry for Professors -->
-    {% capture query %} SELECT ?Person ?name ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:professor . ?Person foaf:name ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
-      ?Person sda:room ?room . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign professorsArray = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:professor . ?Person foaf:familyName ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+      ?Person sda:room ?room . ?Person foaf:firstName ?fname . ?Person foaf:title ?title . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign professorsArray = page.rdf | sparql_query: query %}
     <!-- Displaying Results  -->
-    {% for result in professorsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+    {% for result in professorsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
     image=result.image %} {% endfor %}
   </div>
   <div id="SeniorResch" style="display:none">
     <!--GET querry for Senior Researchers  -->
-  {% capture query %} SELECT ?Person ?name ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:seniorResearcher . ?Person foaf:name ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
-      ?Person sda:room ?room . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign seniorResearchersArray = page.rdf | sparql_query: query %}
+  {% capture query %} SELECT ?Person ?name ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:seniorResearcher . ?Person foaf:familyName ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+      ?Person sda:room ?room . ?Person foaf:firstName ?fname . ?Person foaf:title ?title . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign seniorResearchersArray = page.rdf | sparql_query: query %}
     <!-- Displaying Results for Senior Researchers  -->
-    {% for result in seniorResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
-    image=result.image %} {% endfor %}
+    {% for result in seniorResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+    image=result.image %}{% endfor %}
   </div>
   <div id="Phd" style="display:none">
     <!--GET querry for Phd Setudents  -->
-    {% capture query %} SELECT ?Person ?name ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:phdStudent . ?Person foaf:name ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
-      ?Person sda:room ?room . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign phdStudentsArray = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:phdStudent . ?Person foaf:familyName ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+      ?Person sda:room ?room . ?Person foaf:firstName ?fname . ?Person foaf:title ?title . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign phdStudentsArray = page.rdf | sparql_query: query %}
     <!--Display Results for Phd Students  -->
-    {% for result in phdStudentsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+    {% for result in phdStudentsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
     image=result.image %}{% endfor %}
   </div>
   <div id="AR" style="display:none">
     <!--Get querry for Associate Researchers  -->
-    {% capture query %} SELECT ?Person ?name ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:associateResearcher . ?Person foaf:name ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
-      ?Person sda:room ?room . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign associateResearchersArray = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:associateResearcher . ?Person foaf:familyName ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+      ?Person sda:room ?room . ?Person foaf:firstName ?fname . ?Person foaf:title ?title . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign associateResearchersArray = page.rdf | sparql_query: query %}
     <!--Display results for Associate Researchers  -->
-    {% for result in associateResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+    {% for result in associateResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
     image=result.image %} {% endfor %}
   </div>
   <div id="SA" style="display:none">
     <!--GET querry for Student Assistants  -->
-    {% capture query %} SELECT ?Person ?name ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:studentAssistant . ?Person foaf:name ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
-      ?Person sda:room ?room . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign studentAssistantsArray = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:studentAssistant . ?Person foaf:familyName ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+      ?Person sda:room ?room . ?Person foaf:firstName ?fname . ?Person foaf:title ?title . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign studentAssistantsArray = page.rdf | sparql_query: query %}
     <!--Display Results for Student Assistants -->
-    {% for result in studentAssistantsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+    {% for result in studentAssistantsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
     image=result.image %} {% endfor %}
   </div>
   <div id="Int" style="display:none">
     <!--GET querry for Internees -->
-    {% capture query %} SELECT ?Person ?name ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:intern . ?Person foaf:name ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
-      ?Person sda:room ?room . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign interneesArray = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:intern . ?Person foaf:familyName ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+      ?Person sda:room ?room . ?Person foaf:firstName ?fname . ?Person foaf:title ?title . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign interneesArray = page.rdf | sparql_query: query %}
     <!--Display Results for Interness -->
-    {% for result in interneesArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+    {% for result in interneesArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
     image=result.image %} {% endfor %}
   </div>
   <div id="Former" style="display:none">
     <!--GET querry for Former Students  -->
-    {% capture query %} SELECT ?Person ?name ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:formerMember . ?Person foaf:name ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
-      ?Person sda:room ?room . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign formerMembersArray = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:formerMember . ?Person foaf:familyName ?name . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+      ?Person sda:room ?room . ?Person foaf:firstName ?fname . ?Person foaf:title ?title . ?Person sda:website ?website . ?Person sda:linkedin ?linkedin .} {% endcapture %} {% assign formerMembersArray = page.rdf | sparql_query: query %}
     <!--Display Results for Former Students -->
-    {% for result in formerMembersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+    {% for result in formerMembersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
     image=result.image %} {% endfor %}
   </div>
+  <br/><br/>
 </div>
+<br class="horizontal-separator" />

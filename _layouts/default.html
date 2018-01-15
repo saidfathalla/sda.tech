@@ -3,11 +3,12 @@ rdf_prefix_path: sda.tech.pref
 ---
 <!DOCTYPE html>
 <html xmlns:xlink="http://www.w3.org/1999/xlink" lang="{{ page.lang | default: site.lang | default: " en " }}">
-{% include rootHead.html %} {% include head.html %}
-
+{% include head.html %}
 <body>
+  {% include rootHead.html %}
   {% include header.html %}
-
+  <br class="horizontal-separator-fixed" />
+  <br class="horizontal-separator" />
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       {{ content }}
@@ -23,6 +24,7 @@ rdf_prefix_path: sda.tech.pref
         {% endfor %}
       </ul>
     </div>
+    {% include bodyFab.html %}
   </main>
 
   {% include footer.html %} {% include foot.html %}

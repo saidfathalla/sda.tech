@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:xlink="http://www.w3.org/1999/xlink" lang=" en ">
-<footer class="site-rootHead">
-  <div class="wrapper">
-    <a href="../blog" class="blankNode"><i class="fa fa-rss" aria-hidden="true"></i>
-      <h6 class="root-heading">
-      Blog
-    </h6></a>
-    <a href="../contact"><i class="fa fa-address-card-o" aria-hidden="true"></i>
-      <h6 class="root-heading">Contact</h6></a>
-  </div>
-</footer>
- <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,8 +24,18 @@
   
 </head>
 
-
 <body>
+  <footer class="site-rootHead">
+  <div class="wrapper">
+    <!-- <a href="../blog" class="blankNode"><i class="fa fa-rss" aria-hidden="true"></i>
+      <h6 class="root-heading">
+      Blog
+    </h6></a>
+    <a href="../contact"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+      <h6 class="root-heading">Contact</h6></a> -->
+  </div>
+</footer>
+
   <header class="site-header" role="banner">
   <div class="wrapper">
     
@@ -169,6 +169,12 @@
                   
                       
                   
+                      
+                  
+                      
+                  
+                      
+                  
               
           
 
@@ -177,6 +183,8 @@
             
 
               
+                  
+                      
                   
                       
                   
@@ -278,6 +286,10 @@
                   
                       
                   
+                      
+                  
+                      
+                  
               
           
 
@@ -286,6 +298,26 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -373,20 +405,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
 
@@ -395,12 +413,6 @@
             
 
               
-                  
-                      
-                  
-                      
-                  
-                      
                   
                       
                   
@@ -496,6 +508,18 @@
                   
                       
                   
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
               
           
 
@@ -504,6 +528,10 @@
             
 
               
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -605,6 +633,8 @@
                   
                       
                   
+                      
+                  
               
           
 
@@ -613,6 +643,22 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -704,16 +750,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
 
@@ -722,6 +758,12 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -921,6 +963,8 @@
                       
                   
                       
+                  
+                      
                         <a class="page-link" href="/thesis/index.html">
                           Thesis
                         </a>
@@ -932,6 +976,10 @@
                   
                       
                   
+                      
+                  
+                      
+                  
               
           
 
@@ -940,6 +988,20 @@
             
 
               
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
+                  
+                      
                   
                       
                   
@@ -1033,14 +1095,6 @@
                   
                       
                   
-                      
-                  
-                      
-                  
-                      
-                  
-                      
-                  
               
           
         </div>
@@ -1049,7 +1103,8 @@
   </div>
 </header>
 
-
+  <br class="horizontal-separator-fixed" />
+  <br class="horizontal-separator" />
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <p>SDA offers following open positions. We are looking for young scientists with a vivid interest in interdisciplinary projects.</p>
@@ -1080,6 +1135,28 @@ application guidelines below depending on the type of position you want to apply
         
       </ul>
     </div>
+    <script>
+  $(document).ready(function(){
+    $('.fab').click (function(){
+      $('.radial').toggleClass('open');
+    });
+  });
+</script>
+<div class="radial">
+  <form action="../contact" method="get">
+    <button class="fa fa-location-arrow fa-3x" id="fa-1" ></button>
+  </form>
+  <form action="../about" method="get">
+    <button class="fa fa-home fa-3x" id="fa-2"></button>
+  </form>
+  <form action="http://sda.cs.uni-bonn.de/blog/" method="get">
+    <button class="fa fa-rss fa-3x" id="fa-3"></button>
+  </form>
+  <button class="fab">
+    <div class="fa fa-plus fa-3x" id="plus"></div>
+  </button>
+</div>
+
   </main>
 
   <footer class="site-footer">

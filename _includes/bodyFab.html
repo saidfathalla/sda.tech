@@ -1,0 +1,21 @@
+<script>
+  $(document).ready(function(){
+    $('.fab').click (function(){
+      $('.radial').toggleClass('open');
+    });
+  });
+</script>
+<div class="radial">
+  <form action="../contact" method="get">
+    <button class="fa fa-location-arrow fa-3x" id="fa-1" ></button>
+  </form>
+  <form action="../about" method="get">
+    <button class="fa fa-home fa-3x" id="fa-2"></button>
+  </form>
+  <form action="http://sda.cs.uni-bonn.de/blog/" method="get">
+    <button class="fa fa-rss fa-3x" id="fa-3"></button>
+  </form>
+  <button class="fab">
+    <div class="fa fa-plus fa-3x" id="plus"></div>
+  </button>
+</div>

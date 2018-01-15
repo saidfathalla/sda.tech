@@ -3,120 +3,93 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 ---
 {% include toggleThesisTypes.html %}
-<!--Querry to GET all the groups of the thesis   -->
-{% capture query %} SELECT ?group ?projectname WHERE{
-<{{page.rdf}}> ex:group ?group . ?group rdfs:label ?projectname . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+{% include toggleBachelorThesis.html %}
+{% include toggleMasterThesis.html %}
 
+<!--Querry to GET all the Contact Persons of the Thesis   -->
+{% capture query %} SELECT  ?thesis ?thesisTitle ?person ?personName ?personImage WHERE{
+ ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:nick ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
   <!-- Presentation of thesis Items  -->
   <article class="post">
     <div class="pagination">
       <div class="status-thesis">
-        <a href="#" id="all" class="responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
-      All Thesis Topics</a>
-        <a href="#" id="start" class="active responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
-      Ongoing Thesis</a>
-        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder margin-icon" aria-hidden="true"></i>
-      Archived</a>
+        <a href="#" id="all" class="active responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-users margin-icon" aria-hidden="true"></i>
+          Bachelor Theses</a>
+        <a href="#" id="start" class="responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
+          Master Theses</a>
+        <a href="#" id="end" class="responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
+          On Going Theses</a>
+        <a href="#" id="faqThesis" class="responsiveTabItem" onclick="faqThesisToggle()"><i class="fa fa-question-circle" aria-hidden="true"></i>
+          FAQ</a>
         <br/>
         <br/>
         <hr/>
       </div>
+    </div>
         <div class="thesis-items content-people">
           <br class="horizontal-separator" />
-          <div id="allThesis" style="display:none">
-            {% assign count=1 %}
-            <!--Querry to GET ALL Thesis Items-->
-            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?open ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:longdescription ?long . } {%
-            endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-            <!--Querry to Present All the Open Thesis Items  -->
-            {% for result in resultset %}
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            {% capture query2 %} SELECT ?thesisItem ?person ?name ?topic ?img WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem foaf:Person ?person . ?person foaf:name ?name . ?person foaf:depiction ?img . } {% endcapture %} {% assign
-            resultset2 = page.rdf | sparql_query: query2 %} {% assign size = resultset | size %} {% capture labelname %}{{result.topic}}{% endcapture %}
-            <div class="partner-title">
-              <a><h1>{{result.topic}}</h1></a>
+          <div id="allThesis" style="display:block">
+            <div class="toggleOpenArchived" >
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round" onclick="switchBachelorThesis();"></span>
+              </label>
             </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">{{result.long}}</p>
+            <br/><br/>
+            <div id="openBachelorsTheses" style="display:block">
+              <!--QUERY for open Bachelor Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:bachelorThesis .  ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
+               <!-- Presentation for Open Bachelor Thesis  -->
+               {% for thesis in openBachelorsThesis %}
+                  {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+                {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+               {% endfor %}
             </div>
-            <!-- <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3> -->
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              {% for result2 in resultset2 %} {% capture topicname %}{{result2.topic}}{% endcapture %} {% if topicname == labelname %} {% assign url = result2.person | remove: "http://example.org/" %}
-              <div class="partnersOfProject">
-                <div class="chip">
-                  <img src="{{result2.img}}" alt="Person" width="96" height="96">
-                  <a href="../{{url}}">{{result2.name}}</a>
-                </div>
-              </div>
-              {% else %} {% endif %} {% endfor %}
+            <div id="archivedBachelorThesis" style="display:none">
+              <!--QUERY for archived Bachelor Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:bachelorThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign archivedBachelorsThesis = page.rdf | sparql_query: query %}
+               <!-- PRESENTATION for ARCHIVED BACHELOR THESIS -->
+               {% for thesis in archivedBachelorsThesis %}
+                  {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+                {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+               {% endfor %}
             </div>
-            <br/>{% if count != size %}
-            <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
           </div>
-          <div id="openThesis" style="display:block">
-            {% assign count=1 %}
-            <!--Querry to GET Open Thesis Items-->
-            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?open ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:open ?open . ?thesisItem ex:longdescription
-            ?long . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-            <!--Querry to Present All the Open Thesis Items  -->
-            {% for result in resultset %}
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            {% capture query2 %} SELECT ?thesisItem ?open ?person ?name ?topic ?img WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:open ?open . ?thesisItem foaf:Person ?person . ?person foaf:name ?name . ?person foaf:depiction
-            ?img . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query2 %} {% assign size = resultset | size %} {% capture labelname %}{{result.topic}}{% endcapture %}
-            <div class="partner-title">
-              <a><h1>{{result.topic}}</h1></a>
+          <div id="openThesis" style="display:none">
+            <div class="toggleOpenArchived" >
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round" onclick="switchMasterThesis();"></span>
+              </label>
             </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">{{result.long}}</p>
+            <br/><br/>
+            <div id="openMasterTheses" style="display:block">
+              <!--QUERY for open Master Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
+
             </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              {% for result2 in resultset2 %} {% capture topicname %}{{result2.topic}}{% endcapture %} {% if topicname == labelname %} {% assign url = result2.person | remove: "http://example.org/" %}
-              <div class="partnersOfProject">
-                <div class="chip">
-                  <img src="{{result2.img}}" alt="Person" width="96" height="96">
-                  <a href="../{{url}}">{{result2.name}}</a>
-                </div>
-              </div>
-              {% else %} {% endif %} {% endfor %}
+            <div id="archivedMasterThesis" style="display:none">
+              <!--QUERY for archived Master Thesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign archivedMasterThesis = page.rdf | sparql_query: query %}
+              <!--PRESENTATION Of Archived Master Thesis  -->
+              {% for thesis in archivedMasterThesis %}
+                 {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+               {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+              {% endfor %}
             </div>
-            <br/>{% if count != size %}
-            <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
           </div>
           <div id="finishedThesis" style="display:none">
-            {% assign count=1 %}
-            <!--Querry to GET Open Thesis Items-->
-            {% capture query %} SELECT ?thesisItem ?topic ?level ?website ?closed ?long WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:level ?level . ?thesisItem ex:homepage ?website . ?thesisItem ex:closed ?closed . ?thesisItem
-            ex:longdescription ?long . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-            <!--Querry to Present All the Open Thesis Items  -->
-            {% for result in resultset %}
-            <!--QUERY to GET all the people associated with the thesis topic  -->
-            {% capture query2 %} SELECT ?thesisItem ?closed ?person ?name ?topic ?img WHERE{ ?thesisItem a ex:thesisItem . ?thesisItem rdfs:label ?topic . ?thesisItem ex:closed ?closed . ?thesisItem foaf:Person ?person . ?person foaf:name ?name . ?person foaf:depiction
-            ?img . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query2 %} {% assign size = resultset | size %} {% capture labelname %}{{result.topic}}{% endcapture %}
-            <div class="partner-title">
-              <a><h1>{{result.topic}}</h1></a>
-            </div>
-            <div class="partner-detail">
-              <p style="text-align:left; margin:32px;">{{result.long}}</p>
-            </div>
-            <h3 style="text-align:left; margin-left:32px;">Contact Person(s)</h3>
-            <!--Presentation of the resultset  -->
-            <div class="person-chips" style="text-align:left; margin-left:32px;">
-              {% for result2 in resultset2 %} {% capture topicname %}{{result2.topic}}{% endcapture %} {% if topicname == labelname %} {% assign url = result2.person | remove: "http://example.org/" %}
-              <div class="partnersOfProject">
-                <div class="chip">
-                  <img src="{{result2.img}}" alt="Person" width="96" height="96">
-                  <a href="../{{url}}">{{result2.name}}</a>
-                </div>
-              </div>
-              {% else %} {% endif %} {% endfor %}
-            </div>
-            <br/>{% if count != size %}
-            <hr/>{% endif %}<br class="horizontal-separator" /> {% assign count = count | plus: 1 %} {% endfor %}
+              <!-- QUERY for OnGoingThesis  -->
+              {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+               ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
+
+          </div>
+          <div id="faqThesisContent" style="display:none">
           </div>
         </div>
         <br class="horizontal-separator2" />
-      </div>
   </article>

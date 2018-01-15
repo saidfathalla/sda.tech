@@ -1,0 +1,22 @@
+<script>
+  bachelorThesisActive = 1 ;
+  function switchBachelorThesis() {
+    if(bachelorThesisActive == 1 )
+    {
+      document.getElementById('openBachelorsTheses').style.display = 'none';
+      document.getElementById('archivedBachelorThesis').style.display = 'block';
+    }else if(bachelorThesisActive == 0)
+    {
+      document.getElementById('openBachelorsTheses').style.display = 'block';
+      document.getElementById('archivedBachelorThesis').style.display = 'none';
+    }else{
+      console.log("Faulty Bachelor Thesis Div Active");
+    }
+    // toggle Var
+    if(bachelorThesisActive  == 1 )
+      bachelorThesisActive = 0 ;
+    else if(bachelorThesisActive == 0 ){
+      bachelorThesisActive = 1 ;
+    }
+}
+</script>

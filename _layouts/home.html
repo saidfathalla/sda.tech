@@ -4,7 +4,9 @@ layout: default
 ---
 <div class="home">
   <!-- Main informative content -->
-  <article class="post maininfo">
+  <br class="horizontal-separator" />
+  <article class="post ">
+    <!--  maininfo-->
     <header class="post-header">
       <h1 class="post-title">{{ site.title | escape }}</h1>
     </header>
@@ -23,17 +25,21 @@ layout: default
     </div>
     <br class="horizontal-separator2" />
     <!--Heat Map Area for representing research areas.  -->
-    <div id="basic">
+    <!-- <div id="basic"> -->
       <!-- HeatMap goes into this div id, called by the script heatmaptechnologies.js -->
-    </div>
-    <div class="post-content quote-alignment">
+    <!-- </div> -->
+    {% include slider.html %}
+    <!-- <div class="post-content quote-alignment">
       <q>Our researchers and developers are working continoulsy on emerging technolgies and research as shown above.</q>
-    </div>
+    </div> -->
   </article>
+  <br class="horizontal-separator" />
+  <br class="horizontal-separator" />
   <!-- Icon representation of Group and the Activities -->
-  <article class="post content-container-separation">
+  <article class="post backgroundMain">
+     <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass WHERE{ ?group a ex:group . ?group rdfs:label ?description . ?group ex:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?group ?description ?imageclass WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
@@ -53,8 +59,11 @@ layout: default
     </div>
     {% endfor %}
   </article>
+  <br class="horizontal-separator" />
+  <br class="horizontal-separator" />
   <!--Blog posts excerpt: List of lates three or four blog posts  -->
-  <article class="post blogAndTweetPosts">
+  <article class="post backgroundMain ">
+    <!-- blogAndTweetPosts -->
     <header class="post-header">
       <h2 class="post-title">Keep Connected with Our Posts</h2>
     </header>
@@ -78,5 +87,4 @@ layout: default
     </div>
   </article>
   <br class="horizontal-separator2" />
-
 </div>
