@@ -3,6 +3,8 @@ DIR="/var/www/"
 PROJECT="sda.tech"
 BRANCH="develop"
 
+chown www-data /var/www
+
 if [ "$(ls -A $DIR/$PROJECT)" ]; then
      mkdir -p $DIR/$PROJECT && cd $DIR/$PROJECT
      git pull origin $BRANCH
@@ -20,12 +22,16 @@ then
     bundle install
 
     # generate the site with jekyll
-    bundle exec jekyll build -s $DIR/$PROJECT -d $DIR/$PROJECT
+    bundle exec jekyll serve #jekyll build -s $DIR/$PROJECT -d $DIR/$PROJECT
 else
     echo "No Gemfile found use standard jekyll installation"
     # generate the site with jekyll
-    jekyll build -s $DIR/$PROJECT -d $DIR/$PROJECT
+    jekyll build -s $DIR/$PROJECT -d $DIR/$PROJECT/_site
 fi
 
 echo
 date
+LOG="/var/log/sdasite.log"
+touch $LOG
+chmod a+w $LOG
+tail -f $LOG
