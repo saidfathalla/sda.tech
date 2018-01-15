@@ -1,5 +1,6 @@
 sda:
-  build: ./docker/
+  #build: ./docker/
+  image: smartdataanalytics/site:develop
   container_name: sda
   ports:
     - 8080:80

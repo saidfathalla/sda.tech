@@ -1,4 +1,3 @@
-
 FROM ubuntu:zesty
 MAINTAINER Gezim Sejdiu <g.sejdiu@gmail.com>
 
@@ -18,5 +17,7 @@ RUN gem install --no-rdoc --no-ri jekyll bundler
 
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh
+
+EXPOSE 80
 
 CMD ["/run.sh"]

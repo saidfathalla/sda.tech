@@ -7,7 +7,7 @@ chown www-data /var/www
 
 if [ "$(ls -A $DIR/$PROJECT)" ]; then
      mkdir -p $DIR/$PROJECT && cd $DIR/$PROJECT
-     git pull origin $BRANCH
+     git checkout $BRANCH && git pull origin $BRANCH 
 else
     git clone -b $BRANCH https://github.com/SmartDataAnalytics/sda.tech.git $DIR/$PROJECT
     cd $DIR/$PROJECT && git pull
