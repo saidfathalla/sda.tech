@@ -3,28 +3,23 @@
   <a href="{{include.href}}" target="_blank"> <h1>{{include.title}} Blank <sup>({{include.language}})</sup></h1></a>
 </div>
 <div class="partner-item">
-  <br class="horizontal-separator"/>
-  <div class="partner-icon">
-    <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}">
-  </div>
   <div class="partner-detail">
     <div class="partner-description">
       {{include.description}}
     </div>
   </div>
   <div class="partnerProjects post-content">
-    {% for partners in include.projectList %}
-      {% capture partnerNameinArray %}{{partners.partnername}}{% endcapture%}
-      {% if partnerNameinArray == include.name %}
-        {% assign url= partners.project | remove: "http://sda.tech/" %}
+    {% for person in include.personList %}
+      {% capture thesisNameinArray %}{{person.thesisTitle}}{% endcapture%}
+      {% if thesisNameinArray == include.title %}
+        {% assign url= person.person | remove: "http://sda.tech/" %}
         <div class="chip">
-          <img src="{{partners.image}}" alt="Project" width="96" height="96">
-          <a href="../{{url}}">{{partners.name}}</a>
+          <img src="{{person.personImage}}" alt="Project" width="96" height="96">
+          <a href="../{{url}}">{{person.personName}}</a>
         </div>
       {% endif %}
     {% endfor %}
   </div>
-  <br class="horizontal-separator"/>
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
 {% if include.last != 1 %}
