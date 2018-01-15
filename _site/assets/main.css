@@ -211,6 +211,9 @@ input:checked + .slider:before {
 .horizontal-separator2 {
   line-height: 45px; }
 
+.horizontal-separator-fixed {
+  line-height: 126px; }
+
 /**
  * Font Awesome Icon Colors
  */
@@ -230,7 +233,10 @@ input:checked + .slider:before {
   background-color: #ffffff;
   /* Modern Browsers */
   box-shadow: 8px 5px 4px rgba(224, 224, 224, 0.7);
-  position: relative; }
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9999; }
 
 .blankNode {
   margin-right: 24px; }
@@ -249,7 +255,11 @@ input:checked + .slider:before {
   height: 12px;
   background-color: #00358f;
   text-align: right;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9999; }
   .site-rootHead a {
     display: inline-flex; }
   .site-rootHead h6 {

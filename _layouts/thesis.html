@@ -40,7 +40,7 @@ layout: default
               <!--QUERY for open Bachelor Thesis  -->
               {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
                ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:bachelorThesis .  ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
-
+               <!-- QUERY for Contact People in Bachelor Thesis  -->
               {% include thesisItem.html %}
               {{personsInThesis}}
               {% for p in personsInThesis %}

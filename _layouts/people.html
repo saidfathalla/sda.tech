@@ -3,7 +3,6 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 ---
 {% include togglePeopleTypes.html %}
-<br class="horizontal-separator" />
 <div class="pagination">
   {% for people in site.data.peopleTypes %} {% assign p = people.name %} {% if site.activePeople == p %}
   <a href="#" id="{{people.name | remove: " " }}" class="active responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i>
