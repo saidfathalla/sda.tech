@@ -415,7 +415,7 @@ sdapartner:Slippo a foaf:Organization, sdatech:academicPartner, sdatech:Partner 
 
 ########################onGoingThesis########################
 sdathesis:thesisC a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:bachelorThesis ;
-    dct:title "Decentralized  and Consolidation of RDF Graphs" ;
+    dct:title "CEUR MAKE Graphical User Interface CEUR GUI" ;
     dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
     foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
     dct:issued "2017-06"^^xsd:gYearMonth ;
@@ -496,6 +496,27 @@ sdathesis:RohanThesis a dct:BibliographicResource, bibo:Thesis, sdatech:archived
         Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
         The system is based on Git and provides distributed collaboration on RDF graphs.
         This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+
+sdathesis:HangtongThesis a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis , sdatech:masterThesis ;
+    dct:title "A disciplined approach of Querryin on Distributed Systems-SANSA" ;
+    dct:creator sdaperson:JensLehmann, sdaperson:JonDoe ;
+    foaf:maker sdaperson:JensLehmann, sdaperson:JonDoe ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <icwe2017> ;
+    dct:language "en-UK" ;
+    dct:publisher <https://springer.com/> ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+
 
 #######################################
 #######################################
