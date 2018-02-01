@@ -1,37 +1,45 @@
 #!/bin/bash
-DIR="/var/www"
-PROJECT="sda.tech"
-BRANCH="develop"
 
-chown www-data /var/www
+SOURCE="/data/jekyll/source"
+TARGET="/data/jekyll/_site"
 
-if [ "$(ls -A $DIR/$PROJECT)" ]; then
-     cd $DIR/$PROJECT
-     git checkout $BRANCH && git pull origin $BRANCH 
+if [ -z "$(ls -A $SOURCE)" ]
+then
+    # $SOURCE is empty
+    if [ -z "$REPO" ]
+    then
+        echo "The source directory is empty and no repository is specified. I don't know what to build. :-("
+        exit 1
+    else
+        # pull down the repo
+        if [ -z "$BRANCH" ]
+        then
+            git clone $REPO $SOURCE
+        else
+            git clone --branch "$BRANCH" $REPO $SOURCE
+        fi
+    fi
 else
-    git clone -b $BRANCH https://github.com/SmartDataAnalytics/sda.tech.git $DIR/$PROJECT
-    cd $DIR/$PROJECT && git pull
+    cd $SOURCE
+    git pull || true
 fi
 
-if [ -s $DIR/$PROJECT/Gemfile ]
+if [ -s $SOURCE/Gemfile ]
 then
-    cd $DIR/$PROJECT
+    cd $SOURCE
 
     echo "Install dependencies from Gemfile"
     # update gems
     bundle install
 
     # generate the site with jekyll
-    bundle exec jekyll serve #jekyll build -s $DIR/$PROJECT -d $DIR/$PROJECT
+    bundle exec jekyll build -s $SOURCE -d $TARGET
 else
-    cd $DIR/$PROJECT
     echo "No Gemfile found use standard jekyll installation"
     # generate the site with jekyll
-    jekyll build -s $DIR/$PROJECT -d $DIR/$PROJECT/_site
+    jekyll build -s $SOURCE -d $TARGET
 fi
 
-echo
-date
 LOG="/var/log/sdasite.log"
 touch $LOG
 chmod a+w $LOG

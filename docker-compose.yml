@@ -2,7 +2,11 @@ sda:
   #build: ./docker/
   image: smartdataanalytics/site:develop
   container_name: sda
+  hostname: sda.tech
+  environment:
+    - REPO=https://github.com/SmartDataAnalytics/sda.tech
+    - BRANCH=master
   ports:
     - 8080:80
   volumes:
-    - /var/www/:/var/www/
+    - /var/www/sda.tech/:/data/jekyll/
