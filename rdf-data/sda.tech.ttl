@@ -74,6 +74,28 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
                    foaf:currentProject sdaproject:BigDataEurope .
 
+sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/LorenzBuehmann> ;
+                   owl:sameAs <http://aksw.org/LorenzBuehmann> ;
+                   sda:publicationsTag "buehmann" ;
+                   sda:room "A120" ;
+                   foaf:givenName "Lorenz" ;
+                   foaf:familyName "Bühmann" ;
+                   foaf:name "Lorenz Bühmann" ;
+                   foaf:mbox <mailto:buehmann@informatik.uni-leipzig.de> ;
+                   foaf:depiction <http://ldap.aksw.org/pic/sn/Bühmann/gn/Lorenz> ;
+                   foaf:phone <tel:+49-341-9732253> ;
+                   foaf:title "" ;
+                   foaf:status "Phd Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/lorenz-b%C3%BChmann-09486861/" ;
+                   sda:website "http://aksw.org/LorenzBuehmann.html" ;
+                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
+                   schema:location <http://aksw.org/Address/InfAI> ;
+                   cv:aboutPerson "Lorenz Bühmann is a PhD Student & Research Associate at the University of Leipzig. His research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
+                   sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:StructuredMachineLearning ;
+                   foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench  .
+
 
 ##############################Professors#########################
 sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
