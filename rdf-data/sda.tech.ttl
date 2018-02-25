@@ -122,30 +122,41 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench  .
 
 ##############################Senior Researchers#########################
-sdaperson:NickBabich a foaf:Person, sdatech:seniorResearcher ;
-                  rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
-                  owl:sameAs <http://people.comiles.eu/natanael> ;
-                  sda:publicationsTag "aX" ;
-                  sda:room "C132" ;
-                  foaf:familyName "Babich" ;
-                  foaf:name "Nick" ;
-                  foaf:nick "Nick" ;
-                  foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
+sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
+                  rdfs:seeAlso <http://aksw.org/HajiraJabeen> ;
+                  owl:sameAs <http://aksw.org/HajiraJabeen> ;
+                  sda:publicationsTag "jabeen" ;
+                  sda:room "A108" ;
+                  foaf:familyName "Jabeen" ;
+                  foaf:name "Hajira" ;
+                  foaf:mbox <mailto:jabeen@cs.uni-bonn.de> ;
+                  foaf:depiction <https://scholar.google.de/citations?view_op=view_photo&user=52Q9BbMAAAAJ&citpid=1> ;
                   foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Alexander" ;
-                  foaf:title "" ;
-                  foaf:status "Open Scholarly Researcher" ;
-                  sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                  sda:website "http://jens-lehmann.org/" ;
-                  sda:twitter "http://jens-lehmann.org/" ;
-                  sda:facebook "http://jens-lehmann.org/" ;
-                  ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
-                  schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://de.linkedin.com/in/hajirajabeen" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
                   sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering ;
-                  foaf:currentProject sdaproject:BigDataEurope .
+                  sda:group sdagroup:DistributedSemanticAnalytics ;
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner .
+
+sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "kniesel" ;
+                  sda:room "A107" ;
+                  foaf:familyName "Kniesel" ;
+                  foaf:name "Günter" ;
+                  foaf:mbox <mailto:gk@cs.uni-bonn.de> ;
+                  foaf:depiction <https://media.licdn.com/media/p/1/000/014/170/1da7f5b.jpg> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior lecturer" ;
+                  sda:linkedin "https://www.linkedin.com/in/kniesel/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Günter Jabeen is a Senior lecturer at the University of Bonn." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SoftwareEngineeringforDataScience ;
 
 ##############################Associated Researchers#####################
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
