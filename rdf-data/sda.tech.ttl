@@ -1105,15 +1105,15 @@ ex:QROWD a ex:project ;
 
 ex:SANSAStack a ex:project ;
               rdfs:label "SANSA Stack" ;
-              foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-              foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-              ex:description "The power of the Qrowd combines with RDF" ;
-              ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
-              ex:twitter "" ;
-              ex:homepage "" ;
-              ex:source "" ;
-              ex:download "" ;
-              ex:partners ex:agroknow ;
+              foaf:Person ex:JensLehmann, ex:GezimSejdiu, ex:LorenzBuehmann, ex:HajiraJabeen ;
+              foaf:depiction <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
+              ex:description "Semantic Analytics Stack (SANSA)" ;
+              ex:longdescription "Semantic Analytics Stack (SANSA): Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs." ;
+              ex:twitter "https://twitter.com/SANSA_Stack" ;
+              ex:homepage "http://sansa-stack.net/" ;
+              ex:source "https://github.com/SANSA-Stack" ;
+              ex:download "http://sansa-stack.net/downloads-usage/" ;
+              #ex:partners ex:agroknow ;
               ex:opensource "Open Source" .
 
 ex:SLIPO a ex:project ;
