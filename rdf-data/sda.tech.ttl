@@ -48,31 +48,56 @@
 ##########Person Model#################
 #######################################
 
+##############################Professors#########################
+sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
+                  rdfs:seeAlso <http://aksw.org/JensLehmann> ;
+                  owl:sameAs <http://aksw.org/JensLehmann> ;
+                  sda:publicationsTag "lehman" ;
+                  sda:room "A109" ;
+                  foaf:familyName "Lehmann" ;
+                  foaf:name "Jens" ;
+                  foaf:nick "Lehmann" ;
+                  foaf:mbox <mailto:jens.lehman@sc.uni-bonn.de.> ;
+                  foaf:depiction <http://jens-lehmann.org/images/passbild_lehmann.jpg> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:firstName "Jens" ;
+                  foaf:title "Prof. Dr." ;
+                  foaf:status "Head of Department" ;
+                  sda:linkedin "https://de.linkedin.com/in/jenslehmann82/en" ;
+                  sda:website "http://jens-lehmann.org/" ;
+                  sda:twitter "https://twitter.com/JLehmann82" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a Full Professor at the University of Bonn and a researcher at the University of Leipzig where he is co-leading the AKSW group with 40 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web, machine learning and knowledge representation. He is founder, leader or contributor of several open source projects, including DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 70 articles in international journals and conferences cited more than 9000 times according to Google Scholar." ;
+                  sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:DeepLearning ;
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow .
+
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
-                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
-                   owl:sameAs <http://people.comiles.eu/natanael> ;
-                   sda:publicationsTag "aX" ;
+                   rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
+                   owl:sameAs <http://aksw.org/GezimSejdiu> ;
+                   sda:publicationsTag "sejdiu" ;
                    sda:room "A120" ;
                    foaf:familyName "Sejdiu" ;
                    foaf:name "Gezim" ;
                    foaf:nick "Gezim" ;
-                   foaf:mbox <mailto:Alfred@aksw.org> ;
-                   foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/14cb4e4.jpg> ;
+                   foaf:mbox <mailto:sejdiu@cs.uni-bonn.de> ;
+                   foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/0a0/145/14cb4e4.jpg> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Gezim" ;
                    foaf:title "" ;
                    foaf:status "Phd Student" ;
-                   sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                   sda:website "http://jens-lehmann.org/" ;
-                   sda:twitter "http://jens-lehmann.org/" ;
-                   sda:facebook "http://jens-lehmann.org/" ;
-                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
-                   schema:location <http://aksw.org/Address/InfAI> ;
+                   sda:linkedin "https://www.linkedin.com/in/g%C3%ABzim-sejdiu-08b1761b/" ;
+                   sda:website "https://gezimsejdiu.github.io/" ;
+                   sda:twitter "https://twitter.com/Gezim_Sejdiu" ;
+                   sda:github "https://github.com/GezimSejdiu" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
                    sda:publication sdapublication:Publication1 ;
-                   sda:group sdagroup:SemanticQuestionAnswering ;
-                   foaf:currentProject sdaproject:BigDataEurope .
+                   sda:group sdagroup:DistributedSemanticAnalytics ;
+                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack .
 
 sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/LorenzBuehmann> ;
@@ -95,33 +120,6 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench  .
-
-
-##############################Professors#########################
-sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
-                  rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
-                  owl:sameAs <http://people.comiles.eu/natanael> ;
-                  sda:publicationsTag "aX" ;
-                  sda:room "A109" ;
-                  foaf:familyName "Lehmann" ;
-                  foaf:name "Jens" ;
-                  foaf:nick "Lehmann" ;
-                  foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <http://jens-lehmann.org/images/passbild_lehmann.jpg> ;
-                  foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Jens" ;
-                  foaf:title "Dr." ;
-                  foaf:status "Head of Department" ;
-                  sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                  sda:website "http://jens-lehmann.org/" ;
-                  sda:twitter "http://jens-lehmann.org/" ;
-                  sda:facebook "http://jens-lehmann.org/" ;
-                  ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
-                  schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a Full Professor at the University of Bonn and a researcher at the University of Leipzig where he is co-leading the AKSW group with 40 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web, machine learning and knowledge representation. He is founder, leader or contributor of several open source projects, including DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 70 articles in international journals and conferences cited more than 9000 times according to Google Scholar." ;
-                  sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering ;
-                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Senior Researchers#########################
 sdaperson:NickBabich a foaf:Person, sdatech:seniorResearcher ;
@@ -1063,6 +1061,9 @@ sda:facebook a owl:DatatypeProperty ;
 sda:twitter a owl:DatatypeProperty ;
           rdfs:label "Twitter" .
 
+sda:github a owl:DatatypeProperty ;
+          rdfs:label "GitHub" .
+
 sda:website a owl:DatatypeProperty ;
           rdfs:label "Personal Website" .
 
@@ -1079,3 +1080,14 @@ sda:status a owl:DatatypeProperty ;
 
 sda:thesisLevel a owl:DatatypeProperty;
                   rdfs:label "Level of complexity of the thesis." .
+
+<http://sda.tech/Address/SDA> a schema:PostalAddress ;
+                                rdfs:label "Smart Data Analytics, Römerstraße 164, 53117 Bonn" ;
+                                schema:addressCountry "Germany" ;
+                                schema:addressLocality "Bonn" ;
+                                schema:postalCode "53117" ;
+                                schema:streetAddress "Römerstraße 164" ;
+                                sysont:range "164" ;
+                                geo:lat "50.7519185"^^xsd:float ;
+                                geo:long "7.0943671"^^xsd:float ;
+                                geo:geometry "POINT(7.0943671 50.7519185)" .
