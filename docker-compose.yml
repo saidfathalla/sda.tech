@@ -17,5 +17,5 @@ watchtower:
     container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /root/.docker/config.json:/config.json
-    command: watchtower sda --interval 30
+ #     - /root/.docker/config.json:/config.json
+    command: watchtower smartdataanalytics/site:develop --interval 30
