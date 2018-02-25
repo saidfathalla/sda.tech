@@ -104,7 +104,7 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    owl:sameAs <http://aksw.org/LorenzBuehmann> ;
                    sda:publicationsTag "buehmann" ;
                    #sda:room "A120" ;
-                   foaf:givenName "Lorenz" ;
+                   foaf:firstName "Lorenz" ;
                    foaf:familyName "Bühmann" ;
                    foaf:name "Lorenz Bühmann" ;
                    foaf:mbox <mailto:buehmann@informatik.uni-leipzig.de> ;
