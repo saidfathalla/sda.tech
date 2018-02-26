@@ -52,12 +52,12 @@
 sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   rdfs:seeAlso <http://aksw.org/JensLehmann> ;
                   owl:sameAs <http://aksw.org/JensLehmann> ;
-                  sda:publicationsTag "lehman" ;
+                  sda:publicationsTag "lehmann" ;
                   sda:room "A109" ;
                   foaf:familyName "Lehmann" ;
                   foaf:name "Jens" ;
                   foaf:nick "Lehmann" ;
-                  foaf:mbox <mailto:jens.lehman@sc.uni-bonn.de.> ;
+                  foaf:mbox <mailto:jens.lehman@cs.uni-bonn.de.> ;
                   foaf:depiction <http://jens-lehmann.org/images/passbild_lehmann.jpg> ;
                   foaf:phone <tel:+49-341-123456789> ;
                   foaf:firstName "Jens" ;
@@ -66,9 +66,8 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   sda:linkedin "https://de.linkedin.com/in/jenslehmann82/en" ;
                   sda:website "http://jens-lehmann.org/" ;
                   sda:twitter "https://twitter.com/JLehmann82" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a Full Professor at the University of Bonn and a researcher at the University of Leipzig where he is co-leading the AKSW group with 40 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web, machine learning and knowledge representation. He is founder, leader or contributor of several open source projects, including DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 70 articles in international journals and conferences cited more than 9000 times according to Google Scholar." ;
+                  cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:DeepLearning ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow .
