@@ -404,6 +404,25 @@ sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
+sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
+                 rdfs:label "Semantic Analytics Stack (SANSA)" ;
+                 sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs
+" ;
+                 foaf:member sda:GezimSejidu, sda:LorenzBuehmann ;
+                 foaf:homepage <http://sansa-stack.net> ;
+                 foaf:logo <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
+                 sda:twitter "https://twitter.com/SANSA_Stack" ;
+                 sda:homepage "http://sansa-stack.net" ;
+                 sda:source "https://github.com/SANSA-Stack" ;
+                 #sda:download "undefined" ;
+                 site:content "";
+                 sda:publicationTag "sansa-stack" ;
+                 #dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
+                 doap:maintainer sda:JensLehmann ;
+                 sda:relatedProject sdaproject:BDE ;
+                 sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
 #######################################
 ##########Partners Model###############
 #######################################
