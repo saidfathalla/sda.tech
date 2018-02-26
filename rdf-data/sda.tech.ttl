@@ -470,6 +470,19 @@ sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
          ex:download "undefined" ;
          ex:partners ex:InfAI .
 
+sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
+           rdfs:label "WDAqua ITN" ;
+           foaf:Person sdaperson:HarshThakkar, sdaperson:DenisLukovnikov ;
+           foaf:depiction <http://wdaqua.eu/assets/images/wdaqua.png> ;
+           ex:description "WDAqua (Answering Questions using Web Data) is a Marie Skłodowska-Curie Innovative Training Network (ITN)." ;
+           ex:longdescription "Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists as well as further research in the field. WDAqua aims to advance the field of data-driven question answering through a combination of training, research and innovation. Question answering is relevant to a diverse range of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities." ;
+           ex:twitter "https://twitter.com/WDAqua" ;
+           ex:homepage "http://wdaqua.eu/" ;
+           ex:source "https://github.com/WDAqua" ;
+           ex:download "undefined" ;
+           ex:opensource "Open Source" ;
+           sda:status "active" .
+
 ############################Open Source Projects##########################
 
 # DL-Learner
@@ -508,24 +521,27 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
-ex:WDAqua a ex:project ;
-           rdfs:label "WDAqua ITN" ;
-           foaf:Person ex:HarshThakkar, ex:DenisLukovnikov ;
-           foaf:depiction <http://wdaqua.eu/assets/images/wdaqua.png> ;
-           ex:description "WDAqua (Answering Questions using Web Data) is a Marie Skłodowska-Curie Innovative Training Network (ITN)." ;
-           ex:longdescription "Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists as well as further research in the field. 
-           WDAqua aims to advance the field of data-driven question answering through a combination of training, research and innovation. Question answering is relevant to a diverse range of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities." ;
-           ex:twitter "https://twitter.com/WDAqua" ;
-           ex:homepage "http://wdaqua.eu/" ;
-           ex:source "https://github.com/WDAqua" ;
-           ex:download "undefined" ;
-           ex:opensource "Open Source" ;
-           sda:status "active" .
 
+# AskNow
+sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
+                 rdfs:label "AskNow" ;
+                 sda:hookline "Question Answering over RDF Knowledge Graphs" ;
+                 foaf:member sda:JensLehmann, sda:MohnishDubey ;
+                 foaf:homepage <https://github.com/AskNowQA> ;
+                 foaf:logo <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
+                 sda:twitter "https://twitter.com/AskNowQA" ;
+                 sda:homepage "http://sansa-stack.net" ;
+                 sda:source "https://github.com/AskNowQA" ;
+                 site:content "";
+                 sda:publicationTag "asknow" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
 
-ex:LITMUS a ex:project ;
+# LITMUS
+sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "LITMUS Benchmark Suite" ;
-           foaf:Person ex:HarshThakkar ;
+           foaf:Person sdaperson:HarshThakkar ;
            foaf:depiction <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
            ex:description "An Open, Extensible Benchmarking Suite for Cross Domain RDF Data Management Systems" ;
            ex:longdescription "LITMUS Benchmark Suite, is an open extensible framework for benchmarking a plethora of cross-domain DMSs. Apart from automating the tedious process of benchmarking, it also offers: (i) An efficient way for replicating existing benchmarks (e.g., BSBM, WAT-DIV). (ii) A wide set of performance evaluation measures/indicators tailored specifically for needs and, (iii) Present a custom visualization via custom charts, graphs and tabular data of the benchmark results for a faster insight." ;
