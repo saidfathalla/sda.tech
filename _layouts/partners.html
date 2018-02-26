@@ -18,7 +18,7 @@ layout: default
     <hr />
   </div>
     <!-- FOR GETTING ASSOCIATED PROJECTS -->
-    {% capture query %} SELECT ?partners ?project ?partnername ?name ?image  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . OPTIONAL { ?partners foaf:name ?partnername } . OPTIONAL { ?project rdfs:label ?name } . OPTIONAL { ?project foaf:logo ?image } }
+    {% capture query %} SELECT ?partners ?project ?partnername ?name ?image  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . ?partners foaf:name ?partnername . ?project rdfs:label ?name  . OPTIONAL { ?project foaf:logo ?image } }
     {% endcapture %} {% assign partnersWithProjects = page.rdf | sparql_query: query %} {% assign length2 = partners | size %}
     <div class="partner-items content-people">
       <div id="allPartners" style="display:block">

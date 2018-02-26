@@ -70,7 +70,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   sda:twitter "https://twitter.com/JLehmann82" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;               
+                  cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:DeepLearning ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow .
@@ -355,14 +355,14 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 
 ##########################Funded Project#######################
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
-                 rdfs:label "Big Data Europe is a Big Project" ;
-                 sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
+                 foaf:name "BDE"
+                 rdfs:label "Big Data Europe" ;
+                 ex:description "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
                  foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
-                 foaf:homepage <http://www.projekt-geiser.de> ;
-                 foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/logo-BigDataEurope.png> ;
+                 foaf:homepage <http://www.big-data-europe.eu/> ;
+                 foaf:depiction <https://www.big-data-europe.eu/wp-content/uploads/logo-BigDataEurope.png> ;
                  sda:funded "Funded Project" ;
-                 sda:twitter "undefined" ;
-                 sda:homepage "http://www.big-data-europe.eu/" ;
+                 sda:twitter "https://twitter.com/BigData_Europe" ;
                  sda:source "https://github.com/big-data-europe" ;
                  sda:download "undefined" ;
                  site:content """* Duration: 2016–2019
@@ -379,7 +379,7 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  pf:startDate "2016-03-01"^^xsd:date ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
-                 
+
 sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
          rdfs:label "QROWD" ;
          foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/cropped-Hobbit_Logo_Claim_2015_rgb_300_130.png> ;
@@ -408,7 +408,7 @@ sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
                  doap:maintainer sda:JensLehmann ;
                  sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
                  sda:status "active" .
-                 
+
 # SANSA Stack
 sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "Semantic Analytics Stack (SANSA)" ;
@@ -472,7 +472,7 @@ sdapartner:AI4BG a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Artificial Intelligence for Big Data" ;
                               foaf:phone <tel:+49-341-2155910> ;
                               schema:location <http://ai4bd.com/?page_id=10> ;
-                              dct:abstract "ai4bd is working with business, scientists, researchers, and governments to solve business problems. " .                            
+                              dct:abstract "ai4bd is working with business, scientists, researchers, and governments to solve business problems. " .
 
 sdapartner:AthenaRC a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.imsi.athenarc.gr/> ;
@@ -554,7 +554,7 @@ sdapartner:ComuneDiTrento a foaf:Organization, sdatech:industryPartner, sdatech:
                               rdfs:label "Comune Di Trento" ;
                               foaf:phone <tel:+39-461-884111> ;
                               schema:location <http://www.comune.trento.it/> ;
-                              dct:abstract "Trento is an Italian town of ca. 116,000 inhabitants located in Trentino-Alto Adige/Südtirol. It has historically represented an ideal bridge between the Italian and the German culture. Trento is positioned at the top of Italian cities’ rankings concerning aspects like the education system, business and job opportunities, quality of life, the satisfaction of public services and environmental sustainability. " .                              
+                              dct:abstract "Trento is an Italian town of ca. 116,000 inhabitants located in Trentino-Alto Adige/Südtirol. It has historically represented an ideal bridge between the Italian and the German culture. Trento is positioned at the top of Italian cities’ rankings concerning aspects like the education system, business and job opportunities, quality of life, the satisfaction of public services and environmental sustainability. " .
 
 sdapartner:CRES a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.cres.gr/cres/index_uk.html> ;
@@ -655,7 +655,7 @@ sdapartner:GET a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Geospital Enabling Technologies" ;
                               foaf:phone <tel:+30-210-6664192> ;
                               schema:location <http://www.getmap.eu/en/contact/> ;
-                              dct:abstract "GET is a high-tech SME, with solutions covering the entire lifecycle of geospatial data. " .                                                            
+                              dct:abstract "GET is a high-tech SME, with solutions covering the entire lifecycle of geospatial data. " .
 
 sdapartner:imec a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;     #========= former iMinds, merged with imec =====================
                               foaf:homepage <https://www.imec-int.com/en/home> ;
@@ -686,11 +686,11 @@ sdapartner:InfAI a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               sdaproject:BigDataEurope,
                               sdaproject:DBPedia;
                               foaf:mbox <mailto:info@infai.org> ;
-                              rdfs:label "Institut für Angewandte Informatik"@de, 
+                              rdfs:label "Institut für Angewandte Informatik"@de,
                                          "Institute for Applied Computer Science"@en ;
                               foaf:phone <tel:+49-341-2290370> ;
                               schema:location <https://infai.org/das-institut/kontakt/> ;
-                              dct:abstract "The Institute for Applied Informatics (InfAI) e. V. is an institute founded in 2006 as a non-profit association, which pursues the promotion of science and research in the fields of computer science and business informatics." .                              
+                              dct:abstract "The Institute for Applied Informatics (InfAI) e. V. is an institute founded in 2006 as a non-profit association, which pursues the promotion of science and research in the fields of computer science and business informatics." .
 
 sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.grupoinmark.com/en/> ;
@@ -704,7 +704,7 @@ sdapartner:KDNuggets a foaf:Organization, sdatech:industryPartner, sdatech:Partn
                               foaf:homepage <https://www.kdnuggets.com/> ;
                               foaf:mbox <mailto:editor1@kdnuggets.com> ;
                               rdfs:label "KDNuggets - Machine Learning, Data Science, Data Mining, Big Data, Analytics, AI" ;
-                              dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " .     
+                              dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " .
 
 sdapartner:metaphacts a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.metaphacts.com/> ;
@@ -722,7 +722,7 @@ sdapartner:UniversityOfAthens a foaf:Organization, sdatech:academicPartner, sdat
                               rdfs:label "National and Kapodistrian University of Athens" ;
                               foaf:phone <tel:+30-210-7275064> ;
                               schema:location <http://en.uoa.gr/contact-and-maps.html> ;
-                              dct:abstract "The National and Kapodistrian University of Athens is the largest state institution of higher learning in Greece, and among the largest universities in Europe. " .                              
+                              dct:abstract "The National and Kapodistrian University of Athens is the largest state institution of higher learning in Greece, and among the largest universities in Europe. " .
 
 sdapartner:NCSR a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.iit.demokritos.gr/> ;
@@ -743,7 +743,7 @@ sdapartner:Ontos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Ontos GmbH" ;
                               foaf:phone <tel:+49-341-2155910> ;
                               schema:location <http://ontos.com/contact/> ;
-                              dct:abstract "Ontos develops and sells software to manage the linked data life-cycle. The portfolio includes the Linked Data Suite, OntosMiner (NLP) and the OntoQUAD graph based store. " . 
+                              dct:abstract "Ontos develops and sells software to manage the linked data life-cycle. The portfolio includes the Linked Data Suite, OntosMiner (NLP) and the OntoQUAD graph based store. " .
 
 sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.openphacts.org/> ;
@@ -753,7 +753,7 @@ sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               rdfs:label "The Open PHACTS Foundation" ;
                               foaf:phone <tel:+44-1223-432344> ;
                               schema:location <http://www.openphactsfoundation.org/contact/> ;
-                              dct:abstract "Open PHACTS began as an Innovative Medicines Initiative (IMI) project to build a platform for researchers to access and query publicly-available pharmacological data. Together we have built the Open PHACTS Discovery Platform by bringing together vast amounts of linked data in a single integrated, open infrastructure. " .                                                           
+                              dct:abstract "Open PHACTS began as an Innovative Medicines Initiative (IMI) project to build a platform for researchers to access and query publicly-available pharmacological data. Together we have built the Open PHACTS Discovery Platform by bringing together vast amounts of linked data in a single integrated, open infrastructure. " .
 
 sdapartner:OpenLink a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.openlinksw.com/> ;
@@ -786,7 +786,7 @@ sdapartner:TenForce a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               rdfs:label "TenForce" ;
                               foaf:phone <tel:+32-473-740942> ;
                               schema:location <https://www.tenforce.com/contact/> ;
-                              dct:abstract "TenForce is a Belgian Software Company known for its pragmatic solutions, built with innovative technology. Experts in Scrum from the early stages on A European thought-leader in Semantic Technology An international company – towards partners, employees & customers. " .   
+                              dct:abstract "TenForce is a Belgian Software Company known for its pragmatic solutions, built with innovative technology. Experts in Scrum from the early stages on A European thought-leader in Semantic Technology An international company – towards partners, employees & customers. " .
 
 sdapartner:TomTom a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.tomtom.com/en_us/> ;
@@ -794,7 +794,7 @@ sdapartner:TomTom a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               rdfs:label "TomTom Development Germany GmbH" ;
                               foaf:phone <tel:+31-20-7575000> ;
                               schema:location <https://mydrive.tomtom.com/en_gb/#mode=search+viewport=52.3773,4.90956,16,0,-0+search=%7B%22input%22:%22TomTom%20De%20Ruijterkade%22,%22coords%22:%5B52.3773,4.90956%5D%7D+ver=2> ;
-                              dct:abstract "TomTom founded in 1991 is a world leader of products for in-car location and navigation products. " .   
+                              dct:abstract "TomTom founded in 1991 is a world leader of products for in-car location and navigation products. " .
 
 sdapartner:UniversityOfLeipzig a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.uni-leipzig.de/en/> ;
@@ -804,7 +804,7 @@ sdapartner:UniversityOfLeipzig a foaf:Organization, sdatech:academicPartner, sda
                               rdfs:label "University of Leipzig" ;
                               foaf:phone <tel:+49-341-97108> ;
                               schema:location <https://www.uni-leipzig.de/en/service/contacts.html> ;
-                              dct:abstract "University of Leipzig is one of the oldest universities in Europe. It has a long tradition of globally oriented and culturally comparative historical research and third-level teaching. " .                                                                                    
+                              dct:abstract "University of Leipzig is one of the oldest universities in Europe. It has a long tradition of globally oriented and culturally comparative historical research and third-level teaching. " .
 
 sdapartner:UniversityOfSouthampton a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.southampton.ac.uk/> ;
@@ -853,7 +853,7 @@ sdapartner:YellowMap a foaf:Organization, sdatech:industryPartner, sdatech:Partn
                               rdfs:label "YellowMap" ;
                               foaf:phone <tel:+49-721-9638600> ;
                               schema:location <https://www.yellowmap.com/kontakt/> ;
-                              dct:abstract "Experienced specialist for card-based geographic information systems and everyday companion in the search for local information. " .                                                         
+                              dct:abstract "Experienced specialist for card-based geographic information systems and everyday companion in the search for local information. " .
 
 #######################################
 ##########Thesis Model###############
