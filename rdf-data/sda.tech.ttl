@@ -175,7 +175,7 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Mr. Harsh V. Thakkar is currently pursuing Doctoral studies at the University of Bonn under the supervision of Prof. Dr. Jens Lehmann and Prof. Dr. Sören Auer. His research areas are not limited to Graph Data Management, Formal Query Translation, Benchmarking and Linked Open Data Quality. Currently, he works as Marie-Curie Early Stage Researcher (ESR) in the EU funded project WDAqua ITN. " ;
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
-                   foaf:currentProject sdaproject:WDAqua .
+                   foaf:currentProject sdaproject:WDAqua, sdaproject:LITMUS .
 
 ##############################Senior Researchers#########################
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
