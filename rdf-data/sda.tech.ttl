@@ -406,8 +406,7 @@ sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
 
 sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "Semantic Analytics Stack (SANSA)" ;
-                 sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs
-" ;
+                 sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
                  foaf:member sda:GezimSejidu, sda:LorenzBuehmann ;
                  foaf:homepage <http://sansa-stack.net> ;
                  foaf:logo <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
@@ -455,7 +454,7 @@ sdapartner:AGTinternational a foaf:Organization, sdatech:industryPartner, sdatec
                               rdfs:label "AGT International GmbH" ;
                               foaf:phone <tel:+41-58-2018000> ;
                               schema:location <https://www.agtinternational.com/contact/> ;
-                              dct:abstract "AGT and its family of companies provide advanced IoT solution to customers in different industries all over the world. " ;
+                              dct:abstract "AGT and its family of companies provide advanced IoT solution to customers in different industries all over the world. " .
 
 sdapartner:AI4BG a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://ai4bd.com/> ;
@@ -468,7 +467,7 @@ sdapartner:AI4BG a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Artificial Intelligence for Big Data" ;
                               foaf:phone <tel:+49-341-2155910> ;
                               schema:location <http://ai4bd.com/?page_id=10> ;
-                              dct:abstract "ai4bd is working with business, scientists, researchers, and governments to solve business problems. " ;                            
+                              dct:abstract "ai4bd is working with business, scientists, researchers, and governments to solve business problems. " .                            
 
 sdapartner:AthenaRC a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.imsi.athenarc.gr/> ;
@@ -515,7 +514,7 @@ sdapartner:AthenaRC a foaf:Organization, sdatech:academicPartner, sdatech:Partne
                               rdfs:label "Information Management Systems Institute Athena" ;
                               foaf:phone <tel:+30-210-6875403> ;
                               schema:location <http://www.imsi.athenarc.gr/en/contact> ;
-                              dct:abstract "The mission of IMSI is to conduct research, develop innovative applications and products, and provide services in the areas of data management and large scale information systems. " ;
+                              dct:abstract "The mission of IMSI is to conduct research, develop innovative applications and products, and provide services in the areas of data management and large scale information systems. " .
 
 sdapartner:Atos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://atos.net/es/spain> ;
@@ -524,7 +523,7 @@ sdapartner:Atos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Atos" ;
                             #  foaf:phone <tel:+44-207-8304444> ;
                               schema:location <https://atos.net/en-gb/united-kingdom/contact-us-uk> ;
-                              dct:abstract "Atos' keywords are digital transformation, innovation and value creation, both for our own company and for our clients.. " ;
+                              dct:abstract "Atos' keywords are digital transformation, innovation and value creation, both for our own company and for our clients.. " .
 
 sdapartner:cessda a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.cessda.eu/> ;
@@ -542,7 +541,7 @@ sdapartner:cessda a foaf:Organization, sdatech:academicPartner, sdatech:Partner 
                               rdfs:label "Consortium of European Social Science Data Archives" ;
                               foaf:phone <tel:+47-55-583648> ;
                               schema:location <https://www.cessda.eu/Contact> ;
-                              dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " ;
+                              dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " .
 
 sdapartner:ComuneDiTrento a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.comune.trento.it/> ;
@@ -550,7 +549,7 @@ sdapartner:ComuneDiTrento a foaf:Organization, sdatech:industryPartner, sdatech:
                               rdfs:label "Comune Di Trento" ;
                               foaf:phone <tel:+39-461-884111> ;
                               schema:location <http://www.comune.trento.it/> ;
-                              dct:abstract "Trento is an Italian town of ca. 116,000 inhabitants located in Trentino-Alto Adige/Südtirol. It has historically represented an ideal bridge between the Italian and the German culture. Trento is positioned at the top of Italian cities’ rankings concerning aspects like the education system, business and job opportunities, quality of life, the satisfaction of public services and environmental sustainability. " ;                              
+                              dct:abstract "Trento is an Italian town of ca. 116,000 inhabitants located in Trentino-Alto Adige/Südtirol. It has historically represented an ideal bridge between the Italian and the German culture. Trento is positioned at the top of Italian cities’ rankings concerning aspects like the education system, business and job opportunities, quality of life, the satisfaction of public services and environmental sustainability. " .                              
 
 sdapartner:CRES a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.cres.gr/cres/index_uk.html> ;
@@ -580,8 +579,8 @@ sdapartner:CRES a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:mbox <mailto:cres@cres.gr> ;
                               rdfs:label "Center for renewable Energy Sources & Saving" ;
                               foaf:phone <tel:+30-210-6603300> ;
-                              schema:location <http://www.cres.gr/cres/images/demo/map_cres_uk.jpg> ;
-                              #dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " ;
+                              schema:location <http://www.cres.gr/cres/images/demo/map_cres_uk.jpg> .
+                              #dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " .
 
 sdapartner:ERCIM a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.ercim.eu/> ;
@@ -594,7 +593,7 @@ sdapartner:ERCIM a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               rdfs:label "European Research Consortium for Informatics and Mathematics" ;
                               foaf:phone <tel:+30-210-6603300> ;
                               schema:location <https://www.ercim.eu/contact> ;
-                              dct:abstract "ERCIM - the European Research Consortium for Informatics and Mathematics - aims to foster collaborative work within the European research community and to increase co-operation with European industry. Leading European research institutes are members of ERCIM. " ;
+                              dct:abstract "ERCIM - the European Research Consortium for Informatics and Mathematics - aims to foster collaborative work within the European research community and to increase co-operation with European industry. Leading European research institutes are members of ERCIM. " .
 
 sdapartner:SatCen a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.satcen.europa.eu/> ;
@@ -603,7 +602,7 @@ sdapartner:SatCen a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               rdfs:label "European Union Satellite Centre" ;
                               foaf:phone <tel:+32-2-230-5787> ;
                               schema:location <https://www.satcen.europa.eu/contact> ;
-                              dct:abstract "The Centre supports the decision making of the European Union in the field of the Common Foreign and Security Policy (CFSP), in particular the Common Security and Defence Policy (CSDP), including European Union crisis management missions and operations, by providing products and services resulting from the exploitation of relevant space assets and collateral data, including satellite imagery and aerial imagery, and related services. " ;
+                              dct:abstract "The Centre supports the decision making of the European Union in the field of the Common Foreign and Security Policy (CFSP), in particular the Common Security and Defence Policy (CSDP), including European Union crisis management missions and operations, by providing products and services resulting from the exploitation of relevant space assets and collateral data, including satellite imagery and aerial imagery, and related services. " .
 
 sdapartner:FAO a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.fao.org/home/en/> ;
@@ -612,7 +611,7 @@ sdapartner:FAO a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Food and Agriculture Organization of the United Nations" ;
                               foaf:phone <tel:+39-06-57051> ;
                               schema:location <http://www.fao.org/about/who-we-are/worldwide-offices/en/> ;
-                              dct:abstract "The Food and Agriculture Organization (FAO) is specialized agency of the United Nations that leads international efforts to defeat hunger. Their goal is to achieve food security for all and make sure that people have regular access to enough high-quality food to lead active, healthy lives. With over 194 member states, FAO works in over 130 countries worldwide. " ;
+                              dct:abstract "The Food and Agriculture Organization (FAO) is specialized agency of the United Nations that leads international efforts to defeat hunger. Their goal is to achieve food security for all and make sure that people have regular access to enough high-quality food to lead active, healthy lives. With over 194 member states, FAO works in over 130 countries worldwide. " .
 
 sdapartner:FORTH a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.forth.gr/> ;
@@ -620,7 +619,7 @@ sdapartner:FORTH a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               rdfs:label "Foundation for Research and Technology Hellas" ;
                               foaf:phone <tel:+30-2810-3915002> ;
                               schema:location <http://www.forth.gr/index_main.php?c=81&l=e> ;
-                              dct:abstract "The Foundation for Research and Technology-Hellas (FORTH), established in 1983, is one of the largest research centers in Greece with well organized facilities, highly qualified personnel and a reputation as a top-level research foundation worldwide. FORTH reports to the General Secretariat for Research and Technology of the Hellenic Ministry of Education, Research and Religious Affairs. The Foundation, with headquarters in Heraklion, includes six Research Institutes in different parts of the country. " ;
+                              dct:abstract "The Foundation for Research and Technology-Hellas (FORTH), established in 1983, is one of the largest research centers in Greece with well organized facilities, highly qualified personnel and a reputation as a top-level research foundation worldwide. FORTH reports to the General Secretariat for Research and Technology of the Hellenic Ministry of Education, Research and Religious Affairs. The Foundation, with headquarters in Heraklion, includes six Research Institutes in different parts of the country. " .
 
 sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.iais.fraunhofer.de/> ;
@@ -631,7 +630,7 @@ sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:
                               rdfs:label "Fraunhofer Institute for Intelligent Analysis nad Information Systems IAIS" ;
                               foaf:phone <tel:+49-2241-143000> ;
                               schema:location <https://www.iais.fraunhofer.de/en/footer/contact.html> ;
-                              dct:abstract "Fraunhofer IAIS is a leading scientific institute specializing in applied research into intelligent data and knowledge analysis. 250 data scientists and IT experts support companies and organizations putting intelligent information management into practice. " ;
+                              dct:abstract "Fraunhofer IAIS is a leading scientific institute specializing in applied research into intelligent data and knowledge analysis. 250 data scientists and IT experts support companies and organizations putting intelligent information management into practice. " .
 
 sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.iais.fraunhofer.de/> ;
@@ -642,7 +641,7 @@ sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:
                               rdfs:label "Fraunhofer Institute for Intelligent Analysis nad Information Systems IAIS" ;
                               foaf:phone <tel:+49-2241-143000> ;
                               schema:location <https://www.iais.fraunhofer.de/en/footer/contact.html> ;
-                              dct:abstract "Fraunhofer IAIS is a leading scientific institute specializing in applied research into intelligent data and knowledge analysis. 250 data scientists and IT experts support companies and organizations putting intelligent information management into practice. " ;
+                              dct:abstract "Fraunhofer IAIS is a leading scientific institute specializing in applied research into intelligent data and knowledge analysis. 250 data scientists and IT experts support companies and organizations putting intelligent information management into practice. " .
 
 sdapartner:GET a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.getmap.eu/en/> ;
@@ -651,7 +650,7 @@ sdapartner:GET a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Geospital Enabling Technologies" ;
                               foaf:phone <tel:+30-210-6664192> ;
                               schema:location <http://www.getmap.eu/en/contact/> ;
-                              dct:abstract "GET is a high-tech SME, with solutions covering the entire lifecycle of geospatial data. " ;                                                            
+                              dct:abstract "GET is a high-tech SME, with solutions covering the entire lifecycle of geospatial data. " .                                                            
 
 sdapartner:imec a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;     #========= former iMinds, merged with imec =====================
                               foaf:homepage <https://www.imec-int.com/en/home> ;
@@ -672,7 +671,7 @@ sdapartner:imec a foaf:Organization, sdatech:industryPartner, sdatech:Partner ; 
                               rdfs:label "Interuniversity MicroElectronics Center" ;
                               foaf:phone <tel:+32-16-281211> ;
                               schema:location <https://www.imec-int.com/en/connect-with-us> ;
-                              dct:abstract "Imec is the world-leading R&D and innovation hub in nanoelectronics and digital technologies. " ;
+                              dct:abstract "Imec is the world-leading R&D and innovation hub in nanoelectronics and digital technologies. " .
 
 sdapartner:InfAI a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://infai.org/> ;
@@ -686,7 +685,7 @@ sdapartner:InfAI a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                                          "Institute for Applied Computer Science"@en ;
                               foaf:phone <tel:+49-341-2290370> ;
                               schema:location <https://infai.org/das-institut/kontakt/> ;
-                              dct:abstract "The Institute for Applied Informatics (InfAI) e. V. is an institute founded in 2006 as a non-profit association, which pursues the promotion of science and research in the fields of computer science and business informatics." ;                              
+                              dct:abstract "The Institute for Applied Informatics (InfAI) e. V. is an institute founded in 2006 as a non-profit association, which pursues the promotion of science and research in the fields of computer science and business informatics." .                              
 
 sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.grupoinmark.com/en/> ;
@@ -694,13 +693,13 @@ sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               rdfs:label "Consulting services, information and business development" ;
                               foaf:phone <tel:+34-91-4480203> ;
                               schema:location <http://www.grupoinmark.com/en/index.php/about-inmark/> ;
-                              dct:abstract "INMARK is a business and marketing consulting company based in Madrid and operating throughout Europe and Latin America. INMARK has branches in 7 countries, totaling +200 qualified staff members. INMARK delivers fieldwork, analytic and strategic market research studies for leading financial banking institutions, governments, and ICT industry analysts, covering the different market segments." ;
+                              dct:abstract "INMARK is a business and marketing consulting company based in Madrid and operating throughout Europe and Latin America. INMARK has branches in 7 countries, totaling +200 qualified staff members. INMARK delivers fieldwork, analytic and strategic market research studies for leading financial banking institutions, governments, and ICT industry analysts, covering the different market segments." .
 
 sdapartner:KDNuggets a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.kdnuggets.com/> ;
                               foaf:mbox <mailto:editor1@kdnuggets.com> ;
                               rdfs:label "KDNuggets - Machine Learning, Data Science, Data Mining, Big Data, Analytics, AI" ;
-                              dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " ;     
+                              dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " .     
 
 sdapartner:metaphacts a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.metaphacts.com/> ;
@@ -711,14 +710,14 @@ sdapartner:metaphacts a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               rdfs:label "Metaphacts Software Development" ;
                               foaf:phone <tel:+49-6227-6989965> ;
                               schema:location <http://www.metaphacts.com/> ;
-                              dct:abstract "metaphacts is a Germany-based company offering products, solutions and services for describing, interchanging and querying graph data, as well as a user-oriented open platform for visualizing and interacting with knowledge graphs. " ;
+                              dct:abstract "metaphacts is a Germany-based company offering products, solutions and services for describing, interchanging and querying graph data, as well as a user-oriented open platform for visualizing and interacting with knowledge graphs. " .
 
 sdapartner:UniversityOfAthens a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://en.uoa.gr/> ;
                               rdfs:label "National and Kapodistrian University of Athens" ;
                               foaf:phone <tel:+30-210-7275064> ;
                               schema:location <http://en.uoa.gr/contact-and-maps.html> ;
-                              dct:abstract "The National and Kapodistrian University of Athens is the largest state institution of higher learning in Greece, and among the largest universities in Europe. " ;                              
+                              dct:abstract "The National and Kapodistrian University of Athens is the largest state institution of higher learning in Greece, and among the largest universities in Europe. " .                              
 
 sdapartner:NCSR a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.iit.demokritos.gr/> ;
@@ -728,7 +727,7 @@ sdapartner:NCSR a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               rdfs:label "National VCentre for Scientific Research Demokritis - Institute of Informatics and Telecommunications" ;
                               foaf:phone <tel:+30-210-6503153> ;
                               schema:location <https://www.iit.demokritos.gr/contact> ;
-                              dct:abstract "The Institute of Informatics and Telecommunications (IIT) focuses on research and development in the areas of Telecommunications, Networks, Web Technologies and Intelligent Systems. The main strategic objective of IIT is to excel in research and innovation required for the development of the knowledge society. " ;
+                              dct:abstract "The Institute of Informatics and Telecommunications (IIT) focuses on research and development in the areas of Telecommunications, Networks, Web Technologies and Intelligent Systems. The main strategic objective of IIT is to excel in research and innovation required for the development of the knowledge society. " .
 
 sdapartner:Ontos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://ontos.com/> ;
@@ -739,7 +738,7 @@ sdapartner:Ontos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "Ontos GmbH" ;
                               foaf:phone <tel:+49-341-2155910> ;
                               schema:location <http://ontos.com/contact/> ;
-                              dct:abstract "Ontos develops and sells software to manage the linked data life-cycle. The portfolio includes the Linked Data Suite, OntosMiner (NLP) and the OntoQUAD graph based store. " ; 
+                              dct:abstract "Ontos develops and sells software to manage the linked data life-cycle. The portfolio includes the Linked Data Suite, OntosMiner (NLP) and the OntoQUAD graph based store. " . 
 
 sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.openphacts.org/> ;
@@ -749,14 +748,14 @@ sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               rdfs:label "The Open PHACTS Foundation" ;
                               foaf:phone <tel:+44-1223-432344> ;
                               schema:location <http://www.openphactsfoundation.org/contact/> ;
-                              dct:abstract "Open PHACTS began as an Innovative Medicines Initiative (IMI) project to build a platform for researchers to access and query publicly-available pharmacological data. Together we have built the Open PHACTS Discovery Platform by bringing together vast amounts of linked data in a single integrated, open infrastructure. " ;                                                           
+                              dct:abstract "Open PHACTS began as an Innovative Medicines Initiative (IMI) project to build a platform for researchers to access and query publicly-available pharmacological data. Together we have built the Open PHACTS Discovery Platform by bringing together vast amounts of linked data in a single integrated, open infrastructure. " .                                                           
 
 sdapartner:OpenLink a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.openlinksw.com/> ;
                               rdfs:label "Open Link Software - Making Technology Work for You" ;
                               foaf:phone <tel:+44-20-86817701> ;
                               schema:location <https://www.openlinksw.com/contact/> ;
-                              dct:abstract "OpenLink Software is an acclaimed technology innovator and leading vendor of industry standards compliant data access, integration, and management technology. " ;
+                              dct:abstract "OpenLink Software is an acclaimed technology innovator and leading vendor of industry standards compliant data access, integration, and management technology. " .
 
 sdapartner:SemanticWebCompany a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://semantic-web.com/> ;
@@ -774,7 +773,7 @@ sdapartner:SemanticWebCompany a foaf:Organization, sdatech:industryPartner, sdat
                               rdfs:label "Semantic Web Company - Linking Data to Knowledge" ;
                               foaf:phone <tel:+43-1-4021235> ;
                               schema:location <https://semantic-web.com/contact/> ;
-                              dct:abstract "Semantic Web Company (SWC) is a technology provider headquartered in Vienna (Austria). SWC supports organizations from all industrial sectors worldwide to improve their information management. Our core product has outstanding capabilities to extract meaning from big data by making use of linked data technologies. " ;
+                              dct:abstract "Semantic Web Company (SWC) is a technology provider headquartered in Vienna (Austria). SWC supports organizations from all industrial sectors worldwide to improve their information management. Our core product has outstanding capabilities to extract meaning from big data by making use of linked data technologies. " .
 
 sdapartner:TenForce a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.tenforce.com/> ;
@@ -782,7 +781,7 @@ sdapartner:TenForce a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               rdfs:label "TenForce" ;
                               foaf:phone <tel:+32-473-740942> ;
                               schema:location <https://www.tenforce.com/contact/> ;
-                              dct:abstract "TenForce is a Belgian Software Company known for its pragmatic solutions, built with innovative technology. Experts in Scrum from the early stages on A European thought-leader in Semantic Technology An international company – towards partners, employees & customers. " ;   
+                              dct:abstract "TenForce is a Belgian Software Company known for its pragmatic solutions, built with innovative technology. Experts in Scrum from the early stages on A European thought-leader in Semantic Technology An international company – towards partners, employees & customers. " .   
 
 sdapartner:TomTom a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.tomtom.com/en_us/> ;
@@ -790,7 +789,7 @@ sdapartner:TomTom a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               rdfs:label "TomTom Development Germany GmbH" ;
                               foaf:phone <tel:+31-20-7575000> ;
                               schema:location <https://mydrive.tomtom.com/en_gb/#mode=search+viewport=52.3773,4.90956,16,0,-0+search=%7B%22input%22:%22TomTom%20De%20Ruijterkade%22,%22coords%22:%5B52.3773,4.90956%5D%7D+ver=2> ;
-                              dct:abstract "TomTom founded in 1991 is a world leader of products for in-car location and navigation products. " ;   
+                              dct:abstract "TomTom founded in 1991 is a world leader of products for in-car location and navigation products. " .   
 
 sdapartner:UniversityOfLeipzig a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.uni-leipzig.de/en/> ;
@@ -800,7 +799,7 @@ sdapartner:UniversityOfLeipzig a foaf:Organization, sdatech:academicPartner, sda
                               rdfs:label "University of Leipzig" ;
                               foaf:phone <tel:+49-341-97108> ;
                               schema:location <https://www.uni-leipzig.de/en/service/contacts.html> ;
-                              dct:abstract "University of Leipzig is one of the oldest universities in Europe. It has a long tradition of globally oriented and culturally comparative historical research and third-level teaching. " ;                                                                                    
+                              dct:abstract "University of Leipzig is one of the oldest universities in Europe. It has a long tradition of globally oriented and culturally comparative historical research and third-level teaching. " .                                                                                    
 
 sdapartner:UniversityOfSouthampton a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.southampton.ac.uk/> ;
@@ -808,7 +807,7 @@ sdapartner:UniversityOfSouthampton a foaf:Organization, sdatech:academicPartner,
                               rdfs:label "University of Southampton" ;
                               foaf:phone <tel:+44-23-80595000> ;
                               schema:location <https://www.southampton.ac.uk/contact.page> ;
-                              dct:abstract "The University of Southampton is one of the most prestigious universities in the United Kingdom. It is ranked in the top ten of research led universities in the UK, and participates in a high number of collaborative research projects and related initiatives. " ;
+                              dct:abstract "The University of Southampton is one of the most prestigious universities in the United Kingdom. It is ranked in the top ten of research led universities in the UK, and participates in a high number of collaborative research projects and related initiatives. " .
 
 sdapartner:UniversityOfTrento a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <http://www.unitn.it/en/> ;
@@ -816,7 +815,7 @@ sdapartner:UniversityOfTrento a foaf:Organization, sdatech:academicPartner, sdat
                               rdfs:label "University Degli Studi di Trento" ;
                               foaf:phone <tel:+39-0461-281111> ;
                               schema:location <https://www.unitn.it/en/ateneo/933/contact-the-university-of-trento> ;
-                              dct:abstract "Established in 1962, the University of Trento is nowadays recognized as a leading academic institution in Italy and Europe for its quality of research and international outreach, particularly in ICT, economics and sociology. " ;
+                              dct:abstract "Established in 1962, the University of Trento is nowadays recognized as a leading academic institution in Italy and Europe for its quality of research and international outreach, particularly in ICT, economics and sociology. " .
 
 sdapartner:USU a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.usu.de/en/> ;
@@ -825,7 +824,7 @@ sdapartner:USU a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               rdfs:label "USU Software AG" ;
                               foaf:phone <tel:+49-7141-4867440> ;
                               schema:location <https://www.usu.de/en/usu-group/companies/usu-software-ag/> ;
-                              dct:abstract "USU and its subsidiaries develop and sell complete software solutions for knowledge-based IT service management. " ;
+                              dct:abstract "USU and its subsidiaries develop and sell complete software solutions for knowledge-based IT service management. " .
 
 sdapartner:VUAmsterdam a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.vu.nl/en/> ;
@@ -833,15 +832,15 @@ sdapartner:VUAmsterdam a foaf:Organization, sdatech:academicPartner, sdatech:Par
                               rdfs:label "Vrije Universiteit Amsterdam" ;
                               foaf:phone <tel:+31-20-5985777> ;
                               schema:location <https://www.vu.nl/en/about-vu-amsterdam/contact-info-and-route/route-description/index.aspx> ;
-                              dct:abstract "Ever since it was founded in 1880, VU Amsterdam has been known for its distinctive approach to knowledge. VU is an open organization, strongly linked to people and society. " ;
+                              dct:abstract "Ever since it was founded in 1880, VU Amsterdam has been known for its distinctive approach to knowledge. VU is an open organization, strongly linked to people and society. " .
 
 sdapartner:WIGeoGIS a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.wigeogis.com/en/home> ;
                               foaf:mbox <mailto:muc@wigeogis.com> ;
                               rdfs:label "WIGeoGIS" ;
-                              foaf:phone <tel:+49-89-321998 0> ;
+                              foaf:phone <tel:+49-89-321998-0> ;
                               schema:location <https://www.wigeogis.com/en/company> ;
-                              dct:abstract "WIGeoGIS is among Europe’s leading companies in spatial business intelligence and geo marketing. " ;
+                              dct:abstract "WIGeoGIS is among Europe’s leading companies in spatial business intelligence and geo marketing. " .
 
 sdapartner:YellowMap a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.yellowmap.de/> ;
@@ -849,7 +848,7 @@ sdapartner:YellowMap a foaf:Organization, sdatech:industryPartner, sdatech:Partn
                               rdfs:label "YellowMap" ;
                               foaf:phone <tel:+49-721-9638600> ;
                               schema:location <https://www.yellowmap.com/kontakt/> ;
-                              dct:abstract "Experienced specialist for card-based geographic information systems and everyday companion in the search for local information. " ;                                                         
+                              dct:abstract "Experienced specialist for card-based geographic information systems and everyday companion in the search for local information. " .                                                         
 
 #######################################
 ##########Thesis Model###############
