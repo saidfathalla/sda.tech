@@ -491,7 +491,7 @@ sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "A framework for Machine Learning in Semantic Knowledge Graphs." ;
                  ex:description "A framework for Machine Learning in Semantic Knowledge Graphs." ;
                  ex:longdescription "DL-Learner is a framework for supervised Machine Learning in OWL, RDF and Description Logics. The framework contains several algorithms for supervised machine learning using structured data as background knowledge, can use various RDF and OWL formats as input, can connect to most popular OWL reasoners and is easily and flexibly configurable. It extends the ideas of Inductive Logic Programming and Relational Learning to the Semantic Web in order to allow to analyse data in knowledge bases or help in constructing knowledge bases from data." ;
-                 foaf:member sda:JensLehmann, sda:LorenzBuehmann, sda:PatrickWestphal, sda:SimonBin, ;
+                 foaf:member sda:JensLehmann, sda:LorenzBuehmann, sda:PatrickWestphal, sda:SimonBin;
                  foaf:homepage <http://www.dl-learner.org> ;
                  foaf:logo <http://dl-learner.org/Images/dllearner.gif> ;
                  sda:twitter "undefined" ;
