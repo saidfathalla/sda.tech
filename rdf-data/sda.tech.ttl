@@ -479,6 +479,22 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
+# AskNow
+sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
+                 rdfs:label "AskNow" ;
+                 sda:hookline "Question Answering over RDF Knowledge Graphs" ;
+                 foaf:member sda:JensLehmann, sda:MohnishDubey ;
+                 foaf:homepage <https://github.com/AskNowQA> ;
+                 foaf:logo <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
+                 sda:twitter "https://twitter.com/AskNowQA" ;
+                 sda:homepage "http://sansa-stack.net" ;
+                 sda:source "https://github.com/AskNowQA" ;
+                 site:content "";
+                 sda:publicationTag "asknow" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
 #######################################
 ##########Partners Model###############
 #######################################
