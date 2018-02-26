@@ -76,6 +76,9 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow .
 
 ##############################PHD Students#########################
+
+
+
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
                    owl:sameAs <http://aksw.org/GezimSejdiu> ;
@@ -123,12 +126,40 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench, sdaproject:DLLearner  .
 
+
+sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/MohnishDubey> ;
+                   owl:sameAs <http://aksw.org/MohnishDubey> ;
+                   sda:publicationsTag "dubey" ;
+                   sda:room "A123" ;
+                   foaf:familyName "Dubey" ;
+                   foaf:name "Mohnish" ;
+                   foaf:nick "Mohnish" ;
+                   foaf:mbox <mailto:dubey@cs.uni-bonn.de> ;
+                   foaf:depiction <https://image.ibb.co/k3mRsc/download.jpg> ;
+                   foaf:phone <tel:+49-341-123456789> ;
+                   foaf:firstName "Mohnish" ;
+                   foaf:title "" ;
+                   foaf:status "Ph.D. Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/mohnish-dubey-bonn" ;
+                   sda:website "sda.tech/people/mohnish-dubey/" ;
+                   sda:twitter "https://twitter.com/MohnishDubey" ;
+                   sda:github "https://github.com/mohnish-rygbee" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Mohnish Dubey is a PhD Student & Research Associate at the University of Bonn. Mohnish’s research interest are in the area of Question Answering, Semantic Web and Machine Learning." ;
+                   #sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:AskNow .
+
+
 ##############################Senior Researchers#########################
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   rdfs:seeAlso <http://aksw.org/HajiraJabeen> ;
                   owl:sameAs <http://aksw.org/HajiraJabeen> ;
                   sda:publicationsTag "jabeen" ;
                   sda:room "A108" ;
+                  foaf:firstName "Hajira" ;
                   foaf:familyName "Jabeen" ;
                   foaf:name "Hajira" ;
                   foaf:mbox <mailto:jabeen@cs.uni-bonn.de> ;
@@ -140,13 +171,14 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
-                  sda:publication sdapublication:Publication1 ;
+                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DistributedSemanticAnalytics ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner .
 
 sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "kniesel" ;
                   sda:room "A107" ;
+                  foaf:firstName "Günter" ;
                   foaf:familyName "Kniesel" ;
                   foaf:name "Günter" ;
                   foaf:mbox <mailto:gk@cs.uni-bonn.de> ;
@@ -157,8 +189,27 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Günter Jabeen is a Senior lecturer at the University of Bonn." ;
-                  sda:publication sdapublication:Publication1 ;
+                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SoftwareEngineeringforDataScience .
+
+sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "fischer" ;
+                  sda:room "A108" ;
+                  foaf:firstName "Asja" ;
+                  foaf:familyName "Fischer" ;
+                  foaf:name "Fischer" ;
+                  foaf:mbox <mailto:asja.fischer@gmail.com> ;
+                  foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAKsAAAAJGI2OGY1ODM0LTQwMGEtNGVjNi1hMzI0LTE4YzJmNzkwOTg2Yw.jpg> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/asja-fischer-32007a94" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Asja Fischer is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:DeepLearning .
+                  #foaf:currentProject sdaproject: .
 
 ##############################Associated Researchers#####################
 
@@ -355,7 +406,7 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 
 ##########################Funded Project#######################
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
-                 foaf:name "BDE" ;
+                 foaf:name "BDE";
                  rdfs:label "Big Data Europe" ;
                  ex:description "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
                  ex:longdescription "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
