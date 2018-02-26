@@ -450,7 +450,7 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Europe" ;
                  ex:description "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
                  ex:longdescription "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
-                 foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
+                 foaf:Person sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen ;
                  foaf:homepage <http://www.big-data-europe.eu/> ;
                  foaf:depiction <https://www.big-data-europe.eu/wp-content/uploads/logo-BigDataEurope.png> ;
                  sda:funded "Funded Project" ;
@@ -573,13 +573,14 @@ sdaproject:SMLBench a foaf:Project, sdatech:openSourceProject ;
                  ex:longdescription "The ultimate goal of SML-Bench is to foster research in machine learning from structured data as well as increase the reproducibility and comparability of algorithms in that area. This is important, since a) the preparation of machine learning tasks in that area involves a significant amount of work and b) there are hardly any cross comparisions across languages as this requires data conversion processes. " ;
                  foaf:member sdaproject:JensLehmann, sdaproject:LorenzBuehmann, sdaproject:HajiraJabeen ;
                  foaf:homepage <hhttp://sml-bench.sda.tech/> ;
-                 foaf:logo <https://pbs.twimg.com/profile_images/732611105730744320/1UrgJ0Kd_400x400.jpg> ;
+                 foaf:depiction <https://pbs.twimg.com/profile_images/732611105730744320/1UrgJ0Kd_400x400.jpg> ;
                  sda:twitter "https://twitter.com/smlbench" ;
                  sda:source "https://github.com/SmartDataAnalytics/SML-Bench" ;
                  site:content "";
                  sda:publicationTag "sml-bench" ;
                  doap:maintainer sda:JensLehmann ;
                  sda:relatedProject sdaproject:DLLearner ;
+                 ex:opensource "Open Source" ;
                  sda:status "active" .
 
 # AskNow
