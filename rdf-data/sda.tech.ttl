@@ -76,6 +76,9 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow .
 
 ##############################PHD Students#########################
+
+
+
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
                    owl:sameAs <http://aksw.org/GezimSejdiu> ;
@@ -122,6 +125,33 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench, sdaproject:DLLearner  .
+
+
+sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/MohnishDubey> ;
+                   owl:sameAs <http://aksw.org/MohnishDubey> ;
+                   sda:publicationsTag "dubey" ;
+                   sda:room "A123" ;
+                   foaf:familyName "Dubey" ;
+                   foaf:name "Mohnish" ;
+                   foaf:nick "Mohnish" ;
+                   foaf:mbox <mailto:dubey@cs.uni-bonn.de> ;
+                   foaf:depiction <https://image.ibb.co/k3mRsc/download.jpg> ;
+                   foaf:phone <tel:+49-341-123456789> ;
+                   foaf:firstName "Mohnish" ;
+                   foaf:title "" ;
+                   foaf:status "Ph.D. Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/g%C3%ABzim-sejdiu-08b1761b/" ;
+                   sda:website "sda.tech/people/mohnish-dubey/" ;
+                   sda:twitter "https://twitter.com/MohnishDubey" ;
+                   sda:github "https://github.com/mohnish-rygbee" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Mohnish Dubey is a PhD Student & Research Associate at the University of Bonn. Mohnish’s research interest are in the area of Question Answering, Semantic Web and Machine Learning." ;
+                   sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:AskNow .
+
 
 ##############################Senior Researchers#########################
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
