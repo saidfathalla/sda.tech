@@ -31,7 +31,9 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix pf: <http://vocab.ox.ac.uk/projectfunding#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix biboDegree: <http://purl.org/ontology/bibo/degree/> .
+
 
 #######################################
 ################DataSet################
@@ -156,9 +158,10 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Günter Jabeen is a Senior lecturer at the University of Bonn." ;
                   sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SoftwareEngineeringforDataScience ;
+                  sda:group sdagroup:SoftwareEngineeringforDataScience .
 
 ##############################Associated Researchers#####################
+
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
                   owl:sameAs <http://people.comiles.eu/natanael> ;
@@ -443,7 +446,7 @@ sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               rdfs:label "THE INDUsTRY LEADER 2.0" ;
                               foaf:phone <tel:+30-210-6897905> ;
                               schema:location <http://www.agroknow.com/agroknow/contact> ;
-                              dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " ;
+                              dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " .
 
 sdapartner:AGTinternational a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.agtinternational.com/> ;
@@ -453,7 +456,6 @@ sdapartner:AGTinternational a foaf:Organization, sdatech:industryPartner, sdatec
                               sdaproject:EnergyManagement,
                               sdaproject:TrafficIncidentManagement,
                               sdaproject:IndustrialIoT ;
-                             # foaf:mbox <mailto:info@agroknow.com> ;
                               rdfs:label "AGT International GmbH" ;
                               foaf:phone <tel:+41-58-2018000> ;
                               schema:location <https://www.agtinternational.com/contact/> ;
@@ -504,7 +506,7 @@ sdapartner:AthenaRC a foaf:Organization, sdatech:academicPartner, sdatech:Partne
                               sdaproject:SimpleFleet,
                               sdaproject:EFG1914,
                               sdaproject:EICOS,
-                              sdaproject:DYAS/DARIAH-GR,
+                              <http://sda.tech/Project/DYAS/DARIAH-GR>,
                               sdaproject:3DIcons,
                               sdaproject:ESPAS,
                               sdaproject:EarthServer,
