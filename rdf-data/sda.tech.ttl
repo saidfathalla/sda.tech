@@ -198,7 +198,7 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Lorenz Bühmann is a PhD Student & Research Associate at the University of Leipzig. His research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
                    sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:StructuredMachineLearning ;
-                   foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench, sdaproject:DLLearner  .
+                   foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner  .
 
 
 sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
@@ -484,7 +484,7 @@ sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
          ex:homepage "http://qrowd-project.eu/" ;
          ex:source "undefined" ;
          ex:download "undefined" ;
-         ex:partners ex:InfAI .
+         ex:partners sdapartner:InfAI .
 
 sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            rdfs:label "WDAqua ITN" ;
@@ -498,6 +498,20 @@ sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            ex:download "undefined" ;
            ex:opensource "Open Source" ;
            sda:status "active" .
+
+sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
+          rdfs:label "HOBBIT" ;
+          foaf:member sdaperson:jens ;
+          foaf:depiction <https://project-hobbit.eu/wp-content/uploads/2017/11/Hobbit_Logo_2015_rgb_cropped2.png> ;
+          ex:publication ex:Publication2 ;
+          ex:description "Holistic Benchmarking of Big Linked Data" ;
+          ex:longdescription "HOBBIT is a European project that develops a holistic open-source platform and industry-grade benchmarks for benchmarking big linked data." ;
+          ex:funded "Funded Project" ;
+          ex:twitter "undefined" ;
+          ex:homepage "http://project-hobbit.eu/" ;
+          ex:source "https://github.com/hobbit-project" ;
+          ex:download "undefined" ;
+          ex:partners sdapartner:AgroKnow .
 
 ############################Open Source Projects##########################
 
@@ -558,7 +572,7 @@ sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
 sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "LITMUS Benchmark Suite" ;
            foaf:member sdaperson:HarshThakkar ;
-           foaf:depiction <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
+           foaf:logo <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
            ex:description "An Open, Extensible Benchmarking Suite for Cross Domain RDF Data Management Systems" ;
            ex:longdescription "LITMUS Benchmark Suite, is an open extensible framework for benchmarking a plethora of cross-domain DMSs. Apart from automating the tedious process of benchmarking, it also offers: (i) An efficient way for replicating existing benchmarks (e.g., BSBM, WAT-DIV). (ii) A wide set of performance evaluation measures/indicators tailored specifically for needs and, (iii) Present a custom visualization via custom charts, graphs and tabular data of the benchmark results for a faster insight." ;
            ex:twitter "undefined" ;
@@ -567,6 +581,20 @@ sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            ex:download "undefined" ;
            ex:opensource "Open Source" ;
            sda:status "active" .
+
+# DeFacto
+ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
+           rdfs:label "DeFacto" ;
+           foaf:member sdaperson:JensLehmann, sdaperson:DiegoEsteves ;
+           foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/candidate1.png> ;
+           ex:description "Deep Fact Validation" ;
+           ex:longdescription "DeFacto (Deep Fact Validation) is an algorithm for validating statements by finding confirming sources for it on the web. It takes a statement (such as “Jamaica Inn was directed by Alfred Hitchcock”) as input and then tries to find evidence for the truth of that statement by searching for information in the web." ;
+           ex:twitter "undefined" ;
+           ex:homepage "undefined" ;
+           ex:source "http://defacto.aksw.org/" ;
+           ex:download "undefined" ;
+           ex:opensource "Open Source" .
+
 
 #######################################
 ##########Partners Model###############
@@ -1107,63 +1135,6 @@ sdathesis:HangtongThesis a dct:BibliographicResource, bibo:Thesis, sdatech:openT
 #######################################
 #######################################
 #######################################
-
-ex:AskNow a ex:project ;
-          rdfs:label "AskNow" ;
-          foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-          foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-          ex:description "The power of the Qrowd combines with RDF" ;
-          ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
-          ex:twitter "" ;
-          ex:homepage "" ;
-          ex:source "" ;
-          ex:download "" ;
-          ex:partners ex:agroknow ;
-          ex:opensource "Open Source" .
-
-
-
-
-ex:DeFacto a ex:project ;
-           rdfs:label "DeFacto" ;
-           foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-           foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/candidate1.png> ;
-           ex:description "Deep Fact Validation" ;
-           ex:longdescription "DeFacto (Deep Fact Validation) is an algorithm for validating statements by finding confirming sources for it on the web. It takes a statement (such as “Jamaica Inn was directed by Alfred Hitchcock”) as input and then tries to find evidence for the truth of that statement by searching for information in the web." ;
-           ex:twitter "undefined" ;
-           ex:homepage "undefined" ;
-           ex:source "http://defacto.aksw.org/" ;
-           ex:download "undefined" ;
-           ex:partners ex:agroknow ;
-           ex:opensource "Open Source" .
-
-
-ex:GEISER a ex:project ;
-          rdfs:label "GEISER" ;
-          foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-          foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/GEISER.jpg> ;
-          ex:description "Von Sensordaten zu internetbasierten Geo-Services" ;
-          ex:longdescription "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
-          ex:funded "Funded Project" ;
-          ex:twitter "undefined" ;
-          ex:homepage "https://projekt-geiser.de/en/welcome/" ;
-          ex:source "undefined" ;
-          ex:download "undefined" ;
-          ex:partners ex:agroknow .
-
-ex:HOBBIT a ex:project ;
-          rdfs:label "HOBBIT" ;
-          foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-          foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/cropped-Hobbit_Logo_Claim_2015_rgb_300_130.png> ;
-          ex:publication ex:Publication2 ;
-          ex:description "Holistic Benchmarking of Big Linked Data" ;
-          ex:longdescription "HOBBIT is a European project that develops a holistic open-source platform and industry-grade benchmarks for benchmarking big linked data." ;
-          ex:funded "Funded Project" ;
-          ex:twitter "undefined" ;
-          ex:homepage "http://project-hobbit.eu/" ;
-          ex:source "https://github.com/hobbit-project" ;
-          ex:download "undefined" ;
-          ex:partners ex:agroknow .
 
 ex:InformationRetrieval a ex:course ;
                         rdfs:label "Information Retrieval" ;
