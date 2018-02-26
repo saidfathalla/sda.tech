@@ -73,12 +73,86 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:DeepLearning ;
-                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow .
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench .
+
+##############################Senior Researchers#########################
+sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
+                  rdfs:seeAlso <http://aksw.org/HajiraJabeen> ;
+                  owl:sameAs <http://aksw.org/HajiraJabeen> ;
+                  sda:publicationsTag "jabeen" ;
+                  sda:room "A108" ;
+                  foaf:firstName "Hajira" ;
+                  foaf:familyName "Jabeen" ;
+                  foaf:name "Hajira" ;
+                  foaf:mbox <mailto:jabeen@cs.uni-bonn.de> ;
+                  foaf:depiction <https://scholar.google.de/citations?view_op=view_photo&user=52Q9BbMAAAAJ&citpid=1> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://de.linkedin.com/in/hajirajabeen" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:DistributedSemanticAnalytics ;
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner .
+
+sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "kniesel" ;
+                  sda:room "A107" ;
+                  foaf:firstName "Günter" ;
+                  foaf:familyName "Kniesel" ;
+                  foaf:name "Günter" ;
+                  foaf:mbox <mailto:gk@cs.uni-bonn.de> ;
+                  foaf:depiction <https://media.licdn.com/media/p/1/000/014/170/1da7f5b.jpg> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior lecturer" ;
+                  sda:linkedin "https://www.linkedin.com/in/kniesel/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Günter Jabeen is a Senior lecturer at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SoftwareEngineeringforDataScience .
+
+sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "fischer" ;
+                  sda:room "A108" ;
+                  foaf:firstName "Asja" ;
+                  foaf:familyName "Fischer" ;
+                  foaf:name "Fischer" ;
+                  foaf:mbox <mailto:asja.fischer@gmail.com> ;
+                  foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAKsAAAAJGI2OGY1ODM0LTQwMGEtNGVjNi1hMzI0LTE4YzJmNzkwOTg2Yw.jpg> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/asja-fischer-32007a94" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Asja Fischer is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:DeepLearning .
+                  #foaf:currentProject sdaproject: .
+
+sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "kister" ;
+                  sda:room "A108" ;
+                  foaf:firstName "Alexander" ;
+                  foaf:familyName "Kister" ;
+                  foaf:name "Kister" ;
+                  foaf:mbox <mailto:Alexander.Kister@iais.fraunhofer.de> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  #sda:linkedin "" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Alexander Kister is a Senior Researcher at the Fraunhofer IAIS" ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:DeepLearning .
+                  #foaf:currentProject sdaproject: .
 
 ##############################PHD Students#########################
-
-
-
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
                    owl:sameAs <http://aksw.org/GezimSejdiu> ;
@@ -176,64 +250,6 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:WDAqua, sdaproject:LITMUS .
-
-##############################Senior Researchers#########################
-sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
-                  rdfs:seeAlso <http://aksw.org/HajiraJabeen> ;
-                  owl:sameAs <http://aksw.org/HajiraJabeen> ;
-                  sda:publicationsTag "jabeen" ;
-                  sda:room "A108" ;
-                  foaf:firstName "Hajira" ;
-                  foaf:familyName "Jabeen" ;
-                  foaf:name "Hajira" ;
-                  foaf:mbox <mailto:jabeen@cs.uni-bonn.de> ;
-                  foaf:depiction <https://scholar.google.de/citations?view_op=view_photo&user=52Q9BbMAAAAJ&citpid=1> ;
-                  foaf:phone <tel:+49-341-123456789> ;
-                  foaf:title "Dr. " ;
-                  foaf:status "Senior Researcher" ;
-                  sda:linkedin "https://de.linkedin.com/in/hajirajabeen" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:DistributedSemanticAnalytics ;
-                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner .
-
-sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "kniesel" ;
-                  sda:room "A107" ;
-                  foaf:firstName "Günter" ;
-                  foaf:familyName "Kniesel" ;
-                  foaf:name "Günter" ;
-                  foaf:mbox <mailto:gk@cs.uni-bonn.de> ;
-                  foaf:depiction <https://media.licdn.com/media/p/1/000/014/170/1da7f5b.jpg> ;
-                  foaf:title "Dr. " ;
-                  foaf:status "Senior lecturer" ;
-                  sda:linkedin "https://www.linkedin.com/in/kniesel/" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Günter Jabeen is a Senior lecturer at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SoftwareEngineeringforDataScience .
-
-sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "fischer" ;
-                  sda:room "A108" ;
-                  foaf:firstName "Asja" ;
-                  foaf:familyName "Fischer" ;
-                  foaf:name "Fischer" ;
-                  foaf:mbox <mailto:asja.fischer@gmail.com> ;
-                  foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAKsAAAAJGI2OGY1ODM0LTQwMGEtNGVjNi1hMzI0LTE4YzJmNzkwOTg2Yw.jpg> ;
-                  foaf:phone <tel:+49-341-123456789> ;
-                  foaf:title "Dr. " ;
-                  foaf:status "Senior Researcher" ;
-                  sda:linkedin "https://www.linkedin.com/in/asja-fischer-32007a94" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Asja Fischer is a Senior Researcher at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:DeepLearning .
-                  #foaf:currentProject sdaproject: .
 
 ##############################Associated Researchers#####################
 
@@ -472,7 +488,7 @@ sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
 
 sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            rdfs:label "WDAqua ITN" ;
-           foaf:Person sdaperson:HarshThakkar, sdaperson:DenisLukovnikov ;
+           foaf:member sdaperson:HarshThakkar, sdaperson:DenisLukovnikov ;
            foaf:depiction <http://wdaqua.eu/assets/images/wdaqua.png> ;
            ex:description "WDAqua (Answering Questions using Web Data) is a Marie Skłodowska-Curie Innovative Training Network (ITN)." ;
            ex:longdescription "Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists as well as further research in the field. WDAqua aims to advance the field of data-driven question answering through a combination of training, research and innovation. Question answering is relevant to a diverse range of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities." ;
@@ -541,7 +557,7 @@ sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
 # LITMUS
 sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "LITMUS Benchmark Suite" ;
-           foaf:Person sdaperson:HarshThakkar ;
+           foaf:member sdaperson:HarshThakkar ;
            foaf:depiction <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
            ex:description "An Open, Extensible Benchmarking Suite for Cross Domain RDF Data Management Systems" ;
            ex:longdescription "LITMUS Benchmark Suite, is an open extensible framework for benchmarking a plethora of cross-domain DMSs. Apart from automating the tedious process of benchmarking, it also offers: (i) An efficient way for replicating existing benchmarks (e.g., BSBM, WAT-DIV). (ii) A wide set of performance evaluation measures/indicators tailored specifically for needs and, (iii) Present a custom visualization via custom charts, graphs and tabular data of the benchmark results for a faster insight." ;
