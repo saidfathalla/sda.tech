@@ -355,10 +355,10 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 
 ##########################Funded Project#######################
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
-                 foaf:name "BDE"
+                 foaf:name "BDE";
                  rdfs:label "Big Data Europe" ;
                  ex:description "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
-                 foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu sdaperson:HajiraJabeen ;
                  foaf:homepage <http://www.big-data-europe.eu/> ;
                  foaf:depiction <https://www.big-data-europe.eu/wp-content/uploads/logo-BigDataEurope.png> ;
                  sda:funded "Funded Project" ;
