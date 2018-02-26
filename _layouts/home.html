@@ -43,7 +43,7 @@ layout: default
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
-    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://example.org/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% assign
+    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% assign
     image=imageClass | append:' fa-3x' %}
     <div class="groupCard">
       <div class="groupImage">
@@ -53,7 +53,7 @@ layout: default
       <div class="groupName">
 
         <div class="chip chipForSmall">
-          <img src="http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/passbild_lehmann.jpg" alt="Person" width="96" height="96"> Jens Lehmann
+          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Person" width="96" height="96"> Prof. Dr. Jens Lehmann
         </div>
       </div>
     </div>
