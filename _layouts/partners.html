@@ -23,8 +23,8 @@ layout: default
     <div class="partner-items content-people">
       <div id="allPartners" style="display:block">
         <!-- QUERRY to GET ALL the PARTNERS -->
-        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . ?partners foaf:name ?title . ?partners dct:abstract ?description . ?partners foaf:depiction ?image
-        . ?partners foaf:homepage ?homepage . }{% endcapture %} {% assign partnersArray = page.rdf | sparql_query: query %} {% assign length = partners | size %}
+        {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . OPTIONAL { ?partners foaf:name ?title } . OPTIONAL { ?partners dct:abstract ?description } . OPTIONAL { ?partners foaf:depiction ?image }
+        . OPTIONAL { ?partners foaf:homepage ?homepage } . }{% endcapture %} {% assign partnersArray = page.rdf | sparql_query: query %} {% assign length = partners | size %}
         <!--Presenting ALL the PARTNERS  -->
         {% assign mainCount = 1 %} {% for partner in partnersArray %}{% capture partnerName %}{{partner.title}}{% endcapture %}{% if mainCount != length %} {% include partnerItem.html title=partner.title image=partner.image description=partner.description last=0 href=partner.homepage projectList=partnersWithProjects name=partnerName %} {% else %} {% include partnerItem.html
         title=partner.title image=partner.image description=partner.description last=1 href=partner.homepage projectList=partnersWithProjects name=partnerName %} {% endif %} {% assign mainCount = mainCount | plus:1 %} {% endfor %}
