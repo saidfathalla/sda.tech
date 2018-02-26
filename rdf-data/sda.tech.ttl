@@ -92,7 +92,7 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://de.linkedin.com/in/hajirajabeen" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DistributedSemanticAnalytics ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner .
@@ -110,7 +110,7 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/kniesel/" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Günter Jabeen is a Senior lecturer at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Günter Jabeen is a Senior lecturer at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SoftwareEngineeringforDataScience .
 
@@ -128,7 +128,7 @@ sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/asja-fischer-32007a94" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Asja Fischer is a Senior Researcher at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Asja Fischer is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DeepLearning .
                   #foaf:currentProject sdaproject: .
@@ -147,10 +147,51 @@ sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   #sda:linkedin "" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Alexander Kister is a Senior Researcher at the Fraunhofer IAIS" ;
+                  cv:aboutPerson "Dr. Alexander Kister is a Senior Researcher at the Fraunhofer IAIS." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DeepLearning .
                   #foaf:currentProject sdaproject: .
+
+sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "yazdi" ;
+                  sda:room "A108" ;
+                  foaf:firstName "Hamed" ;
+                  foaf:familyName "Shariat Yazdi" ;
+                  foaf:name "Hamed" ;
+                  foaf:mbox <mailto:shariat@cs.uni-bonn.de> ;
+                  foaf:depiction <https://media.licdn.com/media/AAMAAgDuAAgAAQAAAAAAABBwAAAAJDIzMDNiNDg0LTk5ZTctNGRjOC1hNDg3LWQ3YjQ0NTYzZWE4Mw.bin> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/hamed-shariat-yazdi-phd-5aa70182/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Hamed Shariat Yazdi is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SoftwareEngineeringForDataScience .
+                  #foaf:currentProject sdaproject: .
+
+sdaperson:LuisPauloGarcia a foaf:Person, sdatech:seniorResearcher ;
+                  rdfs:seeAlso <http://aksw.org/LuisGarcia> ;
+                  owl:sameAs <http://aksw.org/LuisGarcia> ;
+                  sda:publicationsTag "garcia" ;
+                  sda:room "A108" ;
+                  foaf:firstName "Luís" ;
+                  foaf:familyName "Paulo Garcia" ;
+                  foaf:name "Luís" ;
+                  foaf:mbox <mailto:shariat@cs.uni-bonn.de> ;
+                  foaf:depiction <http://ldap.aksw.org/pic/sn/Faina%20Garcia> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  #sda:linkedin "" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Luís Paulo Garcia is a Senior Researcher at the University of Leipzig." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SoftwareEngineeringForDataScience .
+                  #foaf:currentProject sdaproject: .
+
 
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
@@ -363,10 +404,10 @@ sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
 ##Distributed Semantic Analytics
 sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:member sdaperson:JensLehmann ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen, sdaperson:HarshThakkar ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack ;
                                 dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-bar-chart" .
@@ -407,10 +448,10 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sdaperson:CalvinHidermanns ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                foaf:currentProject sdaproject:AskNow ;
                                 dct:description "Semantic Question answering is a group. The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-search" .
@@ -429,9 +470,9 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
 ##Structured Machine Learning
 sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Structured Machine Learning" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:CalvinHidermanns ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
                                 sda:publication sdapublication:Publication1 ;
@@ -1001,6 +1042,7 @@ sdapartner:UniversityOfLeipzig a foaf:Organization, sdatech:academicPartner, sda
                               sdaproject:ScaDS ;
                               foaf:mbox <mailto:kommunikation@uni-leipzig.de> ;
                               rdfs:label "University of Leipzig" ;
+                              foaf:depiction "http://www.uni-leipzig.de/fileadmin/www.uni-leipzig.de/images/logo/logo-uni-leipzig.png"
                               foaf:phone <tel:+49-341-97108> ;
                               schema:location <https://www.uni-leipzig.de/en/service/contacts.html> ;
                               dct:abstract "University of Leipzig is one of the oldest universities in Europe. It has a long tradition of globally oriented and culturally comparative historical research and third-level teaching. " .
