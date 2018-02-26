@@ -119,7 +119,7 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Lorenz Bühmann is a PhD Student & Research Associate at the University of Leipzig. His research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
                    sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:StructuredMachineLearning ;
-                   foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench  .
+                   foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack , sdaproject:SMLBench, sdaproject:DLLearner  .
 
 ##############################Senior Researchers#########################
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
@@ -376,34 +376,37 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  pf:startDate "2016-03-01"^^xsd:date ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
+                 
+sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
+         rdfs:label "QROWD" ;
+         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/cropped-Hobbit_Logo_Claim_2015_rgb_300_130.png> ;
+         ex:description "The power of the Qrowd combines with RDF" ;
+         ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
+         sda:funded "Funded Project" ;
+         ex:twitter "undefined" ;
+         ex:homepage "http://qrowd-project.eu/" ;
+         ex:source "undefined" ;
+         ex:download "undefined" ;
+         ex:partners ex:agroknow .
 
 ############################Open Source Projects##########################
+
+# DL-Learner
 sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "DL Learner" ;
-                 sda:hookline "Von Sensordaten zu internetbasierten Geo-Services" ;
-                 foaf:member sda:GezimSejidu, sda:RohanAsmat ;
-                 foaf:homepage <http://www.projekt-geiser.de> ;
+                 sda:hookline "A framework for Machine Learning in Semantic Knowledge Graphs." ;
+                 foaf:member sda:JensLehmann, sda:LorenzBuehmann, sda:PatrickWestphal, sda:SimonBin, ;
+                 foaf:homepage <http://www.dl-learner.org> ;
                  foaf:logo <http://dl-learner.org/Images/dllearner.gif> ;
-                 sda:funded "Funded Project" ;
                  sda:twitter "undefined" ;
-                 sda:homepage "http://www.big-data-europe.eu/" ;
-                 sda:source "https://github.com/big-data-europe" ;
-                 sda:download "undefined" ;
-                 site:content """* Duration: 2016–2019
- * Funding Programme: [BMWi - Smart Service Welt](http://www.bmwi.de/DE/Themen/Digitale-Welt/Digitale-Technologien/smart-service-welt.html \"BMWi - Smart Service Welt\")
- """^^sysont:Markdown, """Tasks
- =====
-                  Leipzig University will develop processes for data acquisition, integration and fusion. For data acquisition, we will develop a unified, intelligent and extensible framework for representing data from diverse heterogeneous sources (automotive sensors, Twitter, OpenStreetMap, DBpedia, etc.) in RDF format. The acquired data has to be integrated to be useful for higher-value services. In order to process the high volume of complex geospatial data, we will develop scalable algorithms for efficiently detecting geospatial relations using machine learning techniques. Finally, we will survey if supervised machine learning can reduce the effort required for setting up data fusion pipelines. This will enable an efficient provisioning of fused data to geospatial services."""^^sysont:Markdown ;
-                 sda:publicationTag "geiser" ;
-                 dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
-                 sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:AxelNgonga ;
+                 sda:source "https://github.com/SmartDataAnalytics/DL-Learner" ;
+                 sda:download "https://github.com/SmartDataAnalytics/DL-Learner/releases" ;
+                 sda:publicationTag "dllearner" ;
+                 doap:maintainer sda:JensLehmann ;
                  sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
-                 pf:endDate "2019-02-28"^^xsd:date ;
-                 pf:startDate "2016-03-01"^^xsd:date ;
-                 sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
-
+                 
+# SANSA Stack
 sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "Semantic Analytics Stack (SANSA)" ;
                  sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
@@ -977,18 +980,7 @@ ex:AskNow a ex:project ;
           ex:opensource "Open Source" .
 
 
-ex:DLLearner a ex:project ;
-             rdfs:label "DL-Learner" ;
-             foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-             foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-             ex:description "The power of the Qrowd combines with RDF" ;
-             ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
-             ex:twitter "" ;
-             ex:homepage "" ;
-             ex:source "" ;
-             ex:download "" ;
-             ex:partners ex:agroknow ;
-             ex:opensource "Open Source" .
+
 
 ex:DeFacto a ex:project ;
            rdfs:label "DeFacto" ;
@@ -1108,18 +1100,7 @@ sdapublication:Publication5 a bibo:Article ;
                 foaf:Organization "FhG" ;
                 dc:author sdaperson:RajKapoor .
 
-ex:QROWD a ex:project ;
-         rdfs:label "QROWD" ;
-         foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/cropped-Hobbit_Logo_Claim_2015_rgb_300_130.png> ;
-         ex:description "The power of the Qrowd combines with RDF" ;
-         ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
-         ex:funded "Funded Project" ;
-         ex:twitter "undefined" ;
-         ex:homepage "http://qrowd-project.eu/" ;
-         ex:source "undefined" ;
-         ex:download "undefined" ;
-         ex:partners ex:agroknow .
+
 
 ex:SANSAStack a ex:project ;
               rdfs:label "SANSA Stack" ;
@@ -1147,10 +1128,11 @@ ex:SLIPO a ex:project ;
          ex:download "undefined" ;
          ex:partners ex:agroknow .
 
-ex:SMLBench a ex:project ;
+sdaproject:SMLBench a sda:OpenSourceProject ;
             rdfs:label "SML-Bench" ;
             foaf:Person ex:OliverOctopus, ex:AlfredEel ;
             foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/11/sml-bench.jpg> ;
+            foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/11/sml-bench.jpg> ;
             ex:description "A Benchmark for Symbolic Supervised Machine Learning from Expressive Structured Data" ;
             ex:longdescription "The ultimate goal of SML-Bench is to foster research in machine learning from structured data as well as increase the reproducibility and comparability of algorithms in that area. This is important, since a) the preparation of machine learning tasks in that area involves a significant amount of work and b) there are hardly any cross comparisions across languages as this requires data conversion processes. " ;
             ex:twitter "undefined" ;
