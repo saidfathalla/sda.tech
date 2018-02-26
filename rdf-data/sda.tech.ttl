@@ -152,6 +152,30 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
                    foaf:currentProject sdaproject:AskNow .
 
+sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://harshthakkar.in/> ;
+                   owl:sameAs <http://aksw.org/HarshThakkar> ;
+                   sda:publicationsTag "thakkar" ;
+                   sda:room "1.052" ;
+                   foaf:familyName "Thakkar" ;
+                   foaf:name "Harsh" ;
+                   foaf:nick "Harsh" ;
+                   foaf:mbox <mailto:thakkar@cs.uni-bonn.de> ;
+                   foaf:depiction <http://harshthakkar.in/wp-content/uploads/2009/12/Harsh.jpg> ;
+                   foaf:phone <tel:+49-151-45501359> ;
+                   foaf:firstName "Harsh" ;
+                   foaf:title "" ;
+                   foaf:status "Ph.D. Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/thakkarharsh/" ;
+                   sda:website "http://harshthakkar.in/" ;
+                   sda:twitter "https://twitter.com/harsh9t" ;
+                   sda:github "https://github.com/harsh9t" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Mr. Harsh V. Thakkar is currently pursuing Doctoral studies at the University of Bonn under the supervision of Prof. Dr. Jens Lehmann and Prof. Dr. Sören Auer. His research areas are not limited to Graph Data Management, Formal Query Translation, Benchmarking and Linked Open Data Quality. Currently, he works as Marie-Curie Early Stage Researcher (ESR) in the EU funded project WDAqua ITN. " ;
+                   #sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:DistributedSemanticAnalytics ;
+                   foaf:currentProject sdaproject:WDAqua .
 
 ##############################Senior Researchers#########################
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
@@ -478,6 +502,34 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  sda:relatedProject sdaproject:BDE ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
+
+ex:WDAqua a ex:project ;
+           rdfs:label "WDAqua ITN" ;
+           foaf:Person ex:HarshThakkar, ex:DenisLukovnikov ;
+           foaf:depiction <http://wdaqua.eu/assets/images/wdaqua.png> ;
+           ex:description "WDAqua (Answering Questions using Web Data) is a Marie Skłodowska-Curie Innovative Training Network (ITN)." ;
+           ex:longdescription "Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists as well as further research in the field. 
+           WDAqua aims to advance the field of data-driven question answering through a combination of training, research and innovation. Question answering is relevant to a diverse range of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities." ;
+           ex:twitter "https://twitter.com/WDAqua" ;
+           ex:homepage "http://wdaqua.eu/" ;
+           ex:source "https://github.com/WDAqua" ;
+           ex:download "undefined" ;
+           ex:opensource "Open Source" ;
+           sda:status "active" .
+
+
+ex:LITMUS a ex:project ;
+           rdfs:label "LITMUS Benchmark Suite" ;
+           foaf:Person ex:HarshThakkar ;
+           foaf:depiction <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
+           ex:description "An Open, Extensible Benchmarking Suite for Cross Domain RDF Data Management Systems" ;
+           ex:longdescription "LITMUS Benchmark Suite, is an open extensible framework for benchmarking a plethora of cross-domain DMSs. Apart from automating the tedious process of benchmarking, it also offers: (i) An efficient way for replicating existing benchmarks (e.g., BSBM, WAT-DIV). (ii) A wide set of performance evaluation measures/indicators tailored specifically for needs and, (iii) Present a custom visualization via custom charts, graphs and tabular data of the benchmark results for a faster insight." ;
+           ex:twitter "undefined" ;
+           ex:homepage "https://litmus-benchmark-suite.github.io/" ;
+           ex:source "https://github.com/LITMUS-Benchmark-Suite" ;
+           ex:download "undefined" ;
+           ex:opensource "Open Source" ;
+           sda:status "active" .
 
 #######################################
 ##########Partners Model###############
