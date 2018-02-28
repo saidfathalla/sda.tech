@@ -1,11 +1,11 @@
 <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
-  <a href="{{include.homepage}}"> <h1>{{include.title}}</h1></a>
+  <a href="../{{include.href}}"> <h1>{{include.title}}</h1></a> 
 </div>
 <div class="partner-item">
   <br class="horizontal-separator"/>
   <div class="partner-icon">
-    <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}">
+    <a href="../{{include.href}}"> <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}"> </a> 
   </div>
   <div class="partner-detail">
     <div class="partner-description">
@@ -24,7 +24,7 @@
     {% endif %}
     {% capture count %}{{include.source}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.project.source}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
+      <a href="{{include.source}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
     {% endif %}
     {% capture count %}{{include.download}}{% endcapture %}
     {% if count != 'undefined' %}
