@@ -812,6 +812,25 @@ sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Student Assistants#########################
+sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "kaufmann" ;
+                   sda:room "" ;
+                   foaf:familyName "Kaufmann" ;
+                   foaf:name "Julius Kaufmann" ;
+                   foaf:nick "Kaufmann" ;
+                   foaf:mbox <mailto:julius.kaufmann@uni-bonn.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAfMAAAAJDAxYWY5NmM2LTY1M2ItNDFjYS1iODE2LTlkZjI4ZDk1ZTFmZA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Julius" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/julius-kaufmann-474953137/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
 
 ##############################Interns####################################
 sdaperson:JonDoe a foaf:Person, sdatech:intern ;
