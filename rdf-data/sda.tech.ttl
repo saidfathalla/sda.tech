@@ -672,7 +672,7 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 
 ##########################Funded Project#######################
 sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
-                 foaf:name "BDE";
+                 foaf:name "BDE" ;
                  rdfs:label "Big Data Europe" ;
                  ex:description "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
                  ex:longdescription "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
@@ -683,15 +683,16 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  sda:twitter "https://twitter.com/BigData_Europe" ;
                  sda:source "https://github.com/big-data-europe" ;
                  sda:download "undefined" ;
-                 sda:publicationTag "geiser" ;
-                 dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
+                 sda:publicationTag "bde" ;
+                 dct:abstract "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
                  sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:AxelNgonga ;
-                 sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
+                 doap:maintainer sda:JensLehmann ;
+                 sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  pf:endDate "2019-02-28"^^xsd:date ;
                  pf:startDate "2016-03-01"^^xsd:date ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
+
 
 sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
          rdfs:label "QROWD" ;
@@ -774,7 +775,7 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  ex:description "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
                  foaf:member sdaperson:GezimSejidu, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen, sdaperson:AnisaRula ;
                  foaf:homepage <http://sansa-stack.net> ;
-                 foaf:logo <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
+                 foaf:depiction <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
                  sda:twitter "https://twitter.com/SANSA_Stack" ;
                  sda:homepage "http://sansa-stack.net" ;
                  sda:source "https://github.com/SANSA-Stack" ;
