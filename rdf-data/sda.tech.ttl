@@ -485,11 +485,12 @@ sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    foaf:status "Phd Student" ;
                    sda:linkedin "https://www.linkedin.com/in/debanjan-chaudhuri-206062b8" ;
                    sda:twitter "" ;
-                   sda:github "" ;
+                   sda:github "https://github.com/DeepInEvil" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" ;
-                   sda:publication sdapublication:Publication1 .
+                   sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:SemanticQuestionAnswering .
 
 ##############################Associated Researchers#####################
 
