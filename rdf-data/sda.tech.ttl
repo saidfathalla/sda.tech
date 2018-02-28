@@ -754,7 +754,7 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "Semantic Analytics Stack (SANSA)" ;
                  sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
                  ex:description "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
-                 foaf:member sdaperson:GezimSejidu, sdaperson:LorenzBuehmann. sdaperson ;
+                 foaf:member sdaperson:GezimSejidu, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen, sdaperson:AnisaRula ;
                  foaf:homepage <http://sansa-stack.net> ;
                  foaf:logo <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
                  sda:twitter "https://twitter.com/SANSA_Stack" ;
