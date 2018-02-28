@@ -254,7 +254,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   sda:room "C-326" ;
                   foaf:firstName "Christoph" ;
                   foaf:familyName "Lange" ;
-                  foaf:name "ChristophLange" ;
+                  foaf:name "Christoph Lange" ;
                   foaf:mbox <mailto:christoph.lange-bever@iais.fraunhofer.de> ;
                   foaf:depiction <https://media.licdn.com/media/p/5/000/2bc/3fd/3fef14e.jpg> ;
                   #foaf:phone <tel:+49-341-123456789> ;
@@ -268,6 +268,24 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   sda:group sdagroup:SemanticDataManagement ;
                   foaf:currentProject sdaproject:WDAqua .
 
+sdaperson:FabrizioOrlandi a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "orlandi" ;
+                  sda:room "C-326" ;
+                  foaf:firstName "Fabrizio" ;
+                  foaf:familyName "Orlandi" ;
+                  foaf:name "Fabrizio Orlandi" ;
+                  foaf:mbox <mailto:fabrizio.orlandi@iais.fraunhofer.de> ;
+                  foaf:depiction <https://media.licdn.com/media/p/4/005/07f/2b9/0c0b9c2.jpg> ;
+                  #foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/fabriziorlandi/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Christoph Lange is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                  foaf:currentProject sdaproject:SLIPO .
 
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
