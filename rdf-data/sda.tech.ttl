@@ -676,7 +676,7 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Europe" ;
                  ex:description "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
                  ex:longdescription "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
-                 foaf:Person sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen ;
                  foaf:homepage <http://www.big-data-europe.eu/> ;
                  foaf:depiction <https://www.big-data-europe.eu/wp-content/uploads/logo-BigDataEurope.png> ;
                  sda:funded "Funded Project" ;
@@ -1106,6 +1106,7 @@ sdapartner:InfAI a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               sdaproject:SlideWiki,
                               sdaproject:BigDataEurope,
                               sdaproject:DBPedia;
+                              foaf:depiction <https://infai.org/wp-content/uploads/2017/08/InfAI-Logo.png> ;
                               foaf:mbox <mailto:info@infai.org> ;
                               rdfs:label "Institut für Angewandte Informatik"@de,
                                          "Institute for Applied Computer Science"@en ;

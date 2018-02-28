@@ -15,7 +15,7 @@ layout: default
         <h3>Team</h3>
         <div class="membersofProject">
           {% capture query %} SELECT ?person ?personname ?image WHERE{
-          <{{page.rdf}}> foaf:Person ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image . } {% endcapture %} {% assign team = page.rdf | sparql_query: query %} {% for person in team %} {% assign url= person.person | remove: "http://example.org/"
+          <{{page.rdf}}> foaf:member ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image . } {% endcapture %} {% assign team = page.rdf | sparql_query: query %} {% for person in team %} {% assign url= person.person | remove: "http://sda.tech/"
             %}
             <div class="chip">
               <img src="{{person.image}}" alt="Person" width="96" height="96">
@@ -28,7 +28,7 @@ layout: default
         <h3>Partners</h3>
         <div class="partnersOfProject">
           {% capture query %} SELECT ?partner ?partnername ?image WHERE{
-          <{{page.rdf}}> ex:partners ?partner . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% for partner in partners %} {% assign url= partner.partner | remove: "http://example.org/"
+          <{{page.rdf}}> sda:partners ?partner . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% for partner in partners %} {% assign url= partner.partner | remove: "http://sda.tech/"
             %}
             <div class="chip">
               <img src="{{partner.image}}" alt="Person" width="96" height="96">
