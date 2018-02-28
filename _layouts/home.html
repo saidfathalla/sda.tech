@@ -39,7 +39,7 @@ layout: default
   <article class="post backgroundMain">
      <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?group ?description ?imageclass ?leader WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group sda:imageclass ?imageclass . OPTIONAL {?group dbo:leader ?leader} . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
@@ -52,7 +52,7 @@ layout: default
       </div>
       <div class="groupName">
         <div class="chip chipForSmall">
-          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Person" width="96" height="96"> Prof. Dr. Jens Lehmann
+          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Person" width="96" height="96"> {{group.leader}}
         </div>
       </div>
     </div>

@@ -33,6 +33,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix biboDegree: <http://purl.org/ontology/bibo/degree/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
 
 
 #######################################
@@ -563,6 +564,7 @@ sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
 sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen, sdaperson:HarshThakkar, sdaperson:AnisaRula ;
+                                dbo:leader sdaperson:JensLehmann ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack ;
@@ -574,6 +576,7 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
 sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Deep Learning" ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:AsjaFischer ;
+                                dbo:leader sdaperson:AsjaFischer ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
