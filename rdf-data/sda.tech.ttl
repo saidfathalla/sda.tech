@@ -1108,8 +1108,7 @@ sdapartner:InfAI a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               sdaproject:DBPedia;
                               foaf:depiction <https://infai.org/wp-content/uploads/2017/08/InfAI-Logo.png> ;
                               foaf:mbox <mailto:info@infai.org> ;
-                              rdfs:label "Institut für Angewandte Informatik"@de,
-                                         "Institute for Applied Computer Science"@en ;
+                              rdfs:label "Institute for Applied Computer Science" ;
                               foaf:phone <tel:+49-341-2290370> ;
                               schema:location <https://infai.org/das-institut/kontakt/> ;
                               dct:abstract "The Institute for Applied Informatics (InfAI) e. V. is an institute founded in 2006 as a non-profit association, which pursues the promotion of science and research in the fields of computer science and business informatics." .
