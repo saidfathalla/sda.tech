@@ -232,7 +232,7 @@ sdaperson:AnisaRula a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "lytra" ;
-                  #sda:room "C-306" ;
+                  sda:room "A207" ;
                   foaf:firstName "Ioanna" ;
                   foaf:familyName "Lytra" ;
                   foaf:name "Ioanna Lytra" ;
@@ -244,10 +244,29 @@ sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/ioanna-lytra-77369417" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Ioanna Lytra is a Senior Researcher at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Ioanna Lytra is a Senior Researcher at the Fraunhofer IAIS." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua .
+
+sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "lange" ;
+                  sda:room "C-326" ;
+                  foaf:firstName "Christoph" ;
+                  foaf:familyName "Lange" ;
+                  foaf:name "ChristophLange" ;
+                  foaf:mbox <mailto:christoph.lange-bever@iais.fraunhofer.de> ;
+                  foaf:depiction <https://media.licdn.com/media/p/5/000/2bc/3fd/3fef14e.jpg> ;
+                  #foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher/ Head of EIS department @ IAIS" ;
+                  sda:linkedin "https://www.linkedin.com/in/langechristoph/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Christoph Lange is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticDataManagement ;
+                  foaf:currentProject sdaproject:WDAqua .
 
 
 ##############################PHD Students#########################
