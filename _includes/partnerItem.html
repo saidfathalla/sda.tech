@@ -13,9 +13,9 @@
     </div>
   </div>
   <div class="partnerProjects post-content">
-      We are partner in the following project(s) with {{include.name}}:
     {% for partners in include.projectList %}
       {% capture partnerNameinArray %}{{partners.partnername}}{% endcapture%}
+      We are partner in the following project(s) with {{include.name}}:
       {% if partnerNameinArray == include.name %}
         {% assign url= partners.project | remove: "http://sda.tech/" %}
         <div class="chip">
