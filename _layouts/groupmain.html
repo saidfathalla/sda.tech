@@ -21,7 +21,7 @@ layout: default
     <br/>
     <hr class="ruleh" /></div>
     {% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
-    {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:currentProject ?project . ?project rdfs:label ?nameproject . ?project foaf:logo ?image . } {% endcapture %} {% assign
+    {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:currentProject ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {% endcapture %} {% assign
     resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:member ?person . ?person foaf:name ?nameperson
     . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querythree %}
     {% capture queryfour %} SELECT ?group ?name ?publication ?title ?date ?publisher ?link  WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group sda:publication ?publication . ?publication dc:title ?title
