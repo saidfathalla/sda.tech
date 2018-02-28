@@ -282,10 +282,29 @@ sdaperson:FabrizioOrlandi a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/fabriziorlandi/" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Christoph Lange is a Senior Researcher at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Fabrizio Orlandi is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
                   foaf:currentProject sdaproject:SLIPO .
+
+sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "scerri" ;
+                  sda:room "C-326" ;
+                  foaf:firstName "Simon" ;
+                  foaf:familyName "Scerri" ;
+                  foaf:name "Simon Scerri" ;
+                  foaf:mbox <mailto:simon.scerri@iais.fraunhofer.de> ;
+                  foaf:depiction <https://media.licdn.com/media/p/3/005/049/3b4/34b87fa.jpg> ;
+                  #foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/scerrisimon/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Simon Scerri is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
