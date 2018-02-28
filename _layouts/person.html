@@ -29,11 +29,12 @@ layout: default
         <h3>Research Groups</h3>
         <div class="partnersOfProject">
           {% capture query %} SELECT ?researchinterests ?projectname ?img WHERE{
-          <{{page.rdf}}> sda:group ?researchinterests . ?researchinterests rdfs:label ?projectname . ?researchinterests foaf:depiction ?img . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+          <{{page.rdf}}> sda:group ?researchinterests . ?researchinterests rdfs:label ?projectname . ?researchinterests sda:imageclass ?imageclass . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
             <!--Displaying all the reseach interests of the person x  -->
             {% for result in resultset %} {% assign url= result.researchinterests | remove: "http://sda.tech/" %}
             <div class="chip">
-              <i class="{{result.img}}" width="96" height="96"></i>
+              <!-- <i class="{{result.img}}" width="96" height="96"></i> -->
+              <i class="{{result.imageclass}} margin-icon"></i>
               <a href="../../{{url}}">{{result.projectname}}</a>
             </div>
             {% endfor %}
