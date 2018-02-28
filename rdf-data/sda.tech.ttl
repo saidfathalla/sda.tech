@@ -192,6 +192,25 @@ sdaperson:LuisPauloGarcia a foaf:Person, sdatech:seniorResearcher ;
                   sda:group sdagroup:SoftwareEngineeringForDataScience .
                   #foaf:currentProject sdaproject: .
 
+sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "napolitano" ;
+                  sda:room "C-306" ;
+                  foaf:firstName "Giulio" ;
+                  foaf:familyName "Napolitano" ;
+                  foaf:name "Giulio Napolitano" ;
+                  foaf:mbox <mailto:shariat@cs.uni-bonn.de> ;
+                  foaf:depiction <https://scholar.google.com/citations?view_op=view_photo&user=H0pe9pgAAAAJ&citpid=2> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  #sda:linkedin "" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Giulio Napolitano is a Senior Researcher at the Fraunhofer IAIS." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:AskNow, sdaproject:HOBBIT .
+
 
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
