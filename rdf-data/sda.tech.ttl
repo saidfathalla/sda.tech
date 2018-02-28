@@ -322,7 +322,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Gezim" ;
                    foaf:title "" ;
-                   foaf:status "Phd Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/g%C3%ABzim-sejdiu-08b1761b/" ;
                    sda:website "https://gezimsejdiu.github.io/" ;
                    sda:twitter "https://twitter.com/Gezim_Sejdiu" ;
@@ -330,7 +330,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
-                   sda:publication sdapublication:Publication1 ;
+                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack .
 
@@ -346,13 +346,13 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    foaf:depiction <http://ldap.aksw.org/pic/sn/Bühmann/gn/Lorenz> ;
                    foaf:phone <tel:+49-341-9732253> ;
                    #foaf:title "" ;
-                   foaf:status "Phd Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/lorenz-b%C3%BChmann-09486861/" ;
                    sda:website "http://aksw.org/LorenzBuehmann.html" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
                    cv:aboutPerson "Lorenz Bühmann is a PhD Student & Research Associate at the University of Leipzig. His research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
-                   sda:publication sdapublication:Publication1 ;
+                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner  .
 
@@ -370,7 +370,7 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Mohnish" ;
                    foaf:title "" ;
-                   foaf:status "Ph.D. Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/mohnish-dubey-bonn" ;
                    sda:website "sda.tech/people/mohnish-dubey/" ;
                    sda:twitter "https://twitter.com/MohnishDubey" ;
@@ -395,7 +395,7 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    foaf:phone <tel:+49-151-45501359> ;
                    foaf:firstName "Harsh" ;
                    foaf:title "" ;
-                   foaf:status "Ph.D. Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/thakkarharsh/" ;
                    sda:website "http://harshthakkar.in/" ;
                    sda:twitter "https://twitter.com/harsh9t" ;
@@ -420,7 +420,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Diego" ;
                    foaf:title "" ;
-                   foaf:status "Phd Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/diegoestevesde/" ;
                    sda:website "https://diegoesteves.github.io/" ;
                    sda:twitter "https://twitter.com/dne5pt" ;
@@ -428,7 +428,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Diego Esteves is a PhD Student & Research Associate at the University of Bonn. Esteves’ research interest are in the area of Natural Language Processing, Machine Learning and Semantic Web." ;
-                   sda:publication sdapublication:Publication1 ;
+                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:KnowledgeExtractionAndValidation ;
                    foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX .
 
@@ -443,13 +443,13 @@ sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Fathoni" ;
                    foaf:title "" ;
-                   foaf:status "Ph.D Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "www.linkedin.com/in/fathoni" ;
                    sda:twitter "https://twitter.com/fathoni_am" ;
                    sda:github "https://github.com/fathoni" ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Fathoni Musyaffa is a PhD Student & Research Associate at the University of Bonn. Fathoni's research interest are in the area of Semantic Web, Linked and Open Data especially in the domain of budget and spending from public administrations. He is also interested in the area of data interlinking and natural language processing." ;
-                   sda:publication sdapublication:Publication1 ;
+                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics .
 
 sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
@@ -458,18 +458,18 @@ sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    foaf:familyName "Mousavi Nejad" ;
                    foaf:name "Najmeh Mousavi Nejad" ;
                    foaf:nick "Najmeh" ;
-                   foaf:mbox <mailto:nejad(at)cs.uni-bonn.de> ;
+                   foaf:mbox <mailto:nejad@cs.uni-bonn.de> ;
                    foaf:depiction <https://avatars0.githubusercontent.com/u/15237228?s=400&v=4> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Najmeh" ;
                    foaf:title "" ;
-                   foaf:status "Ph.D Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "www.linkedin.com/in/najmeh-mousavi" ;
                    sda:twitter "https://twitter.com/Najme_M" ;
                    sda:github "https://github.com/Najmeh-M" ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Najmeh Mousavi Nejad is a PhD student in the Smart Data Analytics group at University of Bonn. She received her master's degree in Artificial Intelligence in 2011 in Iran, following which she accumulated research experience supported by publications as well as working experience in industry. Since 2015, she is the recipient of a DAAD scholarship (German Academic Exchange Service) for PhD studies in Germany and continues to conduct research (also received a nomination for Best Research and Innovation Paper award in an international conference). Her research interests are semantic web, text mining and analysis, information extraction & retrieval and Natural language processing." ;
-                   sda:publication sdapublication:Publication1 ;
+                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:KnowledgeExtractionAndValidation .
 
 sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
@@ -483,14 +483,14 @@ sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Debanjan" ;
                    foaf:title "" ;
-                   foaf:status "Phd Student" ;
+                   foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/debanjan-chaudhuri-206062b8" ;
                    sda:twitter "" ;
                    sda:github "https://github.com/DeepInEvil" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" ;
-                   sda:publication sdapublication:Publication1 ;
+                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:SemanticQuestionAnswering .
 
 sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
@@ -502,7 +502,7 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Simon Bin" ;
                    foaf:nick "Simon" ;
                    foaf:mbox <mailto:sbin@informatik.uni-leipzig.de> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:depiction <http://ldap.aksw.org/pic/sn/Bin> ;
                    foaf:phone <> ;
                    foaf:firstName "Simon" ;
                    foaf:title "" ;
@@ -511,7 +511,7 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    sda:website "" ;
                    sda:twitter "" ;
                    sda:github "" ;
-                   ov:businessCard <> ;
+                   ov:businessCard "" ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" ;
                    sda:publication sdapublication:Publication1 .
@@ -525,7 +525,7 @@ sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Patrick Westphal" ;
                    foaf:nick "Patrick" ;
                    foaf:mbox <mailto:patrick.westphal@informatik.uni-leipzig.de> ;
-                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAQuAAAAJDkwZWZkNjdiLTE3MGQtNDdkZS04ZjJiLTA3MWQyMjk1MTQ0Ng.jpg> ;
+                   foaf:depiction <http://ldap.aksw.org/pic/sn/Westphal/gn/Patrick> ;
                    foaf:phone "" ;
                    foaf:firstName "Patrick" ;
                    foaf:title "" ;
@@ -536,8 +536,7 @@ sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" ;
-                   sda:publication sdapublication:Publication1 .
+                   cv:aboutPerson "" .
 
 sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/ClausStadler> ;
@@ -559,8 +558,7 @@ sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI>;
-                   cv:aboutPerson "" ;
-                   sda:publication sdapublication:Publication1 .
+                   cv:aboutPerson "" .
 
 sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/KonradHoeffner> ;
@@ -582,8 +580,7 @@ sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" ;
-                   sda:publication sdapublication:Publication1 .
+                   cv:aboutPerson "" .
 
 sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/MofeedHassan> ;
@@ -605,8 +602,7 @@ sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" ;
-                   sda:publication sdapublication:Publication1 .
+                   cv:aboutPerson "" .
 
 sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "zafar" ;
@@ -668,26 +664,6 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" .
 
-sdaperson:NajmehMousaviNejad a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "nejad" ;
-                   sda:room "" ;
-                   foaf:familyName "Nejad" ;
-                   foaf:name "Najmeh Mousavi Nejad" ;
-                   foaf:nick "Najmeh" ;
-                   foaf:mbox <mailto:nejad@cs.uni-bonn.de> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Najmeh" ;
-                   foaf:title "" ;
-                   foaf:status "PhD Student" ;
-                   sda:linkedin "https://www.linkedin.com/in/najmeh-mousavi-03b9a636/" ;
-                   sda:website "" ;
-                   sda:twitter "" ;
-                   sda:github "" ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
-
 sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "Sibarani" ;
                    sda:room "" ;
@@ -708,6 +684,105 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" .
 
+sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "sadeghi" ;
+                   sda:room "" ;
+                   foaf:familyName "Afshin" ;
+                   foaf:name "Afshin Sadeghi" ;
+                   foaf:nick "Afshin" ;
+                   foaf:mbox <mailto:sadeghi@cs.uni-bonn.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAM1AAAAJDQyODdlMWNhLWRiMDAtNDUxMy1iYTU0LWEzZGU1N2Y5ZmYyMQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Afshin" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/afshin-sadeghi-b58a72b3/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "mulang" ;
+                   sda:room "" ;
+                   foaf:familyName "Mulang" ;
+                   foaf:name "Isaiah Onando Mulang'" ;
+                   foaf:nick "Isaiah" ;
+                   foaf:mbox <mailto:mulang.onando@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAIABADGAAAAAQAAAAAAAAmqAAAAJDE3Mjc1YzNhLTI3OTItNDJjMS1hZWFiLTU0MjllYjk5OTRjOA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Isaiah" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/onando-mulang-31a16ab1/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "lukovnikov" ;
+                   sda:room "" ;
+                   foaf:familyName "Lukovnikov" ;
+                   foaf:name "Denis Lukovnikov" ;
+                   foaf:nick "Denis" ;
+                   foaf:mbox <mailto:lukovnikov@outlook.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAIHAAAAJDE5N2IzMDU2LWYwNzQtNGY1ZC1hYjY1LTg1MTFmM2U2ZGUxOA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Denis" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/lukovnikovdenis/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "fathalla" ;
+                   sda:room "" ;
+                   foaf:familyName "Fathalla" ;
+                   foaf:name "Said Fathalla" ;
+                   foaf:nick "Said" ;
+                   foaf:mbox <mailto:fathalla@cs.uni-bonn.de> ;
+                   foaf:depiction <https://scholar.google.com/citations?view_op=view_photo&user=JOI-7d0AAAAJ&citpid=2> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Said" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "" ;
+                   sda:website "https://scholar.google.com/citations?user=JOI-7d0AAAAJ" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "galkin" ;
+                   sda:room "" ;
+                   foaf:familyName "Michael" ;
+                   foaf:name "Michael Galkin" ;
+                   foaf:nick "Michael" ;
+                   foaf:mbox <mailto:mikhgalkin@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAh7AAAAJDIzM2YxZDNiLWE1MGMtNGY2NC05M2I3LWVlOGNhOWFjMmNmZg.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Michael" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/michael-galkin-80b71294/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
 
 ##############################Associated Researchers#####################
 
