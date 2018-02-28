@@ -493,6 +493,29 @@ sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:SemanticQuestionAnswering .
 
+sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/SimonBin> ;
+                   owl:sameAs <http://aksw.org/SimonBin> ;
+                   sda:publicationsTag "bin" ;
+                   sda:room "" ;
+                   foaf:familyName "Bin" ;
+                   foaf:name "Simon Bin" ;
+                   foaf:nick "Simon" ;
+                   foaf:mbox <mailto:sbin@informatik.uni-leipzig.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone <> ;
+                   foaf:firstName "Simon" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" ;
+                   sda:publication sdapublication:Publication1 .
+
 ##############################Associated Researchers#####################
 
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
@@ -521,30 +544,6 @@ sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Student Assistants#########################
-sdaperson:CalvinHidermanns a foaf:Person, sdatech:studentAssistant ;
-                  rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
-                  owl:sameAs <http://people.comiles.eu/natanael> ;
-                  sda:publicationsTag "aX" ;
-                  sda:room "A123" ;
-                  foaf:familyName "Hidermanns" ;
-                  foaf:name "Calvin" ;
-                  foaf:nick "Calvin" ;
-                  foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
-                  foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Calvin" ;
-                  foaf:title "" ;
-                  foaf:status "Assisting Infrastructure" ;
-                  sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                  sda:website "http://jens-lehmann.org/" ;
-                  sda:twitter "http://jens-lehmann.org/" ;
-                  sda:facebook "http://jens-lehmann.org/" ;
-                  ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
-                  schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
-                  sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering ;
-                  foaf:currentProject sdaproject:BigDataEurope .
 
 ##############################Interns####################################
 sdaperson:JonDoe a foaf:Person, sdatech:intern ;
