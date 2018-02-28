@@ -608,6 +608,107 @@ sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "" ;
                    sda:publication sdapublication:Publication1 .
 
+sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "zafar" ;
+                   sda:room "" ;
+                   foaf:familyName "Zafar" ;
+                   foaf:name "Hamid Zafar" ;
+                   foaf:nick "Hamid" ;
+                   foaf:mbox <mailto:hamid.zafar.tud@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAfVAAAAJDQ0ODU1MTkzLTU4YjUtNDkzNi1hZDI1LTY5YWY5NmYxMGEzZA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Hamid" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/hamid-zafar-138a0a46/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "ibrahim" ;
+                   sda:room "" ;
+                   foaf:familyName "Ibrahim" ;
+                   foaf:name "Shimaa Ibrahim" ;
+                   foaf:nick "Shimaa" ;
+                   foaf:mbox <mailto:shmkhaled@gmail.com> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Shimaa" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/shimaa-khaled-57a23b21/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "vahdati" ;
+                   sda:room "" ;
+                   foaf:familyName "Vahdati" ;
+                   foaf:name "Sahar Vahdati" ;
+                   foaf:nick "Sahar" ;
+                   foaf:mbox <mailto:s6savahd@uni-bonn.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Gezim" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/saharvahdati/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:NajmehMousaviNejad a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "nejad" ;
+                   sda:room "" ;
+                   foaf:familyName "Nejad" ;
+                   foaf:name "Najmeh Mousavi Nejad" ;
+                   foaf:nick "Najmeh" ;
+                   foaf:mbox <mailto:nejad@cs.uni-bonn.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Najmeh" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/najmeh-mousavi-03b9a636/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "Sibarani" ;
+                   sda:room "" ;
+                   foaf:familyName "Sibarani" ;
+                   foaf:name "Elisa Margareth Sibarani" ;
+                   foaf:nick "Sibarani" ;
+                   foaf:mbox <mailto:elisamargareth.sibarani@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/p/8/005/0b4/145/0bc9834.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Elisa" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/elisa-margareth-sibarani-652545b1/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+
 ##############################Associated Researchers#####################
 
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
