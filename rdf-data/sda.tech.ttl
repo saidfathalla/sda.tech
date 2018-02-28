@@ -225,10 +225,29 @@ sdaperson:AnisaRula a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/anisa-rula-ph-d-9a258919" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Anisa Rula is a Senior Researcher at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Anisa Rula is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DistributedSemanticAnalytics ;
                   foaf:currentProject sdaproject:SANSA .
+
+sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "lytra" ;
+                  #sda:room "C-306" ;
+                  foaf:firstName "Ioanna" ;
+                  foaf:familyName "Lytra" ;
+                  foaf:name "Ioanna Lytra" ;
+                  foaf:mbox <mailto:lytra@cs.uni-bonn.de> ;
+                  foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAANnAAAAJDU0MDMwODBlLTNmNzYtNGUxNy1hMWVjLWVjOWJiNjI5NDczMg.jpg> ;
+                  #foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/ioanna-lytra-77369417" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Ioanna Lytra is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
+                  foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua .
 
 
 ##############################PHD Students#########################
