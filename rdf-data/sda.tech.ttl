@@ -405,6 +405,51 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:WDAqua, sdaproject:LITMUS .
 
+sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/DiegoEsteves> ;
+                   owl:sameAs <http://aksw.org/DiegoEsteves> ;
+                   sda:publicationsTag "esteves" ;
+                   sda:room "A120" ;
+                   foaf:familyName "Esteves" ;
+                   foaf:name "Diego Esteves" ;
+                   foaf:nick "Diego" ;
+                   foaf:mbox <mailto:esteves@cs.uni-bonn.de> ;
+                   foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA1lAAAAJDExODVjNjQyLWFkOGEtNGI5OS04OTU4LThhZjU2OTMzYTk0Yw.jpg> ;
+                   foaf:phone <tel:+49-341-123456789> ;
+                   foaf:firstName "Diego" ;
+                   foaf:title "" ;
+                   foaf:status "Phd Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/diegoestevesde/" ;
+                   sda:website "https://diegoesteves.github.io/" ;
+                   sda:twitter "https://twitter.com/dne5pt" ;
+                   sda:github "https://github.com/diegoesteves" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Diego Esteves is a PhD Student & Research Associate at the University of Bonn. Esteves’ research interest are in the area of Natural Language Processing, Machine Learning and Semantic Web." ;
+                   sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX .
+
+sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "musyaffa" ;
+                   sda:room "A119" ;
+                   foaf:familyName "Musyaffa" ;
+                   foaf:name "Fathoni A. Musyaffa" ;
+                   foaf:nick "Fathoni" ;
+                   foaf:mbox <mailto:musyaffa(at)cs.uni-bonn.de> ;
+                   foaf:depiction <https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/117/1c5/34d913c.jpg> ;
+                   foaf:phone <tel:+49-341-123456789> ;
+                   foaf:firstName "Fathoni" ;
+                   foaf:title "" ;
+                   foaf:status "Ph.D Student" ;
+                   sda:linkedin "www.linkedin.com/in/fathoni" ;
+                   sda:twitter "https://twitter.com/fathoni_am" ;
+                   sda:github "https://github.com/fathoni" ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Fathoni Musyaffa is a PhD Student & Research Associate at the University of Bonn. Fathoni's research interest are in the area of Semantic Web, Linked and Open Data especially in the domain of budget and spending from public administrations. He is also interested in the area of data interlinking and natural language processing." ;
+                   sda:publication sdapublication:Publication1 ;
+                   sda:group sdagroup:DistributedSemanticAnalytics .
+
 ##############################Associated Researchers#####################
 
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
