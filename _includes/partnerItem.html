@@ -13,6 +13,7 @@
     </div>
   </div>
   <div class="partnerProjects post-content">
+      We are partner in the following project(s) with {{include.name}}:
     {% for partners in include.projectList %}
       {% capture partnerNameinArray %}{{partners.partnername}}{% endcapture%}
       {% if partnerNameinArray == include.name %}
