@@ -683,11 +683,6 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  sda:twitter "https://twitter.com/BigData_Europe" ;
                  sda:source "https://github.com/big-data-europe" ;
                  sda:download "undefined" ;
-                 site:content """* Duration: 2016–2019
- * Funding Programme: [BMWi - Smart Service Welt](http://www.bmwi.de/DE/Themen/Digitale-Welt/Digitale-Technologien/smart-service-welt.html \"BMWi - Smart Service Welt\")
- """^^sysont:Markdown, """Tasks
- =====
-                  Leipzig University will develop processes for data acquisition, integration and fusion. For data acquisition, we will develop a unified, intelligent and extensible framework for representing data from diverse heterogeneous sources (automotive sensors, Twitter, OpenStreetMap, DBpedia, etc.) in RDF format. The acquired data has to be integrated to be useful for higher-value services. In order to process the high volume of complex geospatial data, we will develop scalable algorithms for efficiently detecting geospatial relations using machine learning techniques. Finally, we will survey if supervised machine learning can reduce the effort required for setting up data fusion pipelines. This will enable an efficient provisioning of fused data to geospatial services."""^^sysont:Markdown ;
                  sda:publicationTag "geiser" ;
                  dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
                  sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
@@ -706,11 +701,11 @@ sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
          sda:hookline "Making transport smarter, leveraging the human factor" ;
          ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
          sda:funded "Funded Project" ;
-         ex:twitter "https://twitter.com/QrowdProject" ;
-         ex:homepage "http://qrowd-project.eu/" ;
-         ex:source "undefined" ;
-         ex:download "undefined" ;
-         ex:partners sdapartner:InfAI .
+         sda:twitter "https://twitter.com/QrowdProject" ;
+         sda:homepage "http://qrowd-project.eu/" ;
+         sda:source "undefined" ;
+         sda:download "undefined" ;
+         sda:partners sdapartner:InfAI .
 
 sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            rdfs:label "WDAqua ITN" ;
@@ -718,11 +713,11 @@ sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            foaf:depiction <http://wdaqua.eu/assets/images/wdaqua.png> ;
            ex:description "WDAqua (Answering Questions using Web Data) is a Marie Skłodowska-Curie Innovative Training Network (ITN)." ;
            ex:longdescription "Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists as well as further research in the field. WDAqua aims to advance the field of data-driven question answering through a combination of training, research and innovation. Question answering is relevant to a diverse range of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities." ;
-           ex:twitter "https://twitter.com/WDAqua" ;
-           ex:homepage "http://wdaqua.eu/" ;
-           ex:source "https://github.com/WDAqua" ;
-           ex:download "undefined" ;
-           ex:opensource "Open Source" ;
+           sda:twitter "https://twitter.com/WDAqua" ;
+           sda:homepage "http://wdaqua.eu/" ;
+           sda:source "https://github.com/WDAqua" ;
+           sda:download "undefined" ;
+           sda:opensource "Open Source" ;
            sda:status "active" .
 
 sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
@@ -733,11 +728,11 @@ sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
           ex:description "Holistic Benchmarking of Big Linked Data" ;
           ex:longdescription "HOBBIT is a European project that develops a holistic open-source platform and industry-grade benchmarks for benchmarking big linked data." ;
           ex:funded "Funded Project" ;
-          ex:twitter "undefined" ;
-          ex:homepage "http://project-hobbit.eu/" ;
-          ex:source "https://github.com/hobbit-project" ;
-          ex:download "undefined" ;
-          ex:partners sdapartner:AgroKnow .
+          sda:twitter "undefined" ;
+          sda:homepage "http://project-hobbit.eu/" ;
+          sda:source "https://github.com/hobbit-project" ;
+          sda:download "undefined" ;
+          sda:partners sdapartner:AgroKnow .
 
 sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
          rdfs:label "SLIPO" ;
@@ -746,11 +741,11 @@ sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
          ex:description "Scalable Linking and Integration of Big POI data" ;
          ex:longdescription "SLIPO aim is to transfer the research output generated by our work in project GeoKnow, to the specific challenge of POI data, introducing validated and cost-effective innovations across their value chain." ;
          ex:funded "Funded Project" ;
-         ex:twitter "undefined" ;
-         ex:homepage "http://www.slipo.eu/" ;
-         ex:source "https://github.com/SLIPO-EU" ;
-         ex:download "undefined" ;
-         ex:partners sdapartner:InfAI .
+         sda:twitter "undefined" ;
+         sda:homepage "http://www.slipo.eu/" ;
+         sda:source "https://github.com/SLIPO-EU" ;
+         sda:download "undefined" ;
+         sda:partners sdapartner:InfAI .
 
 
 ############################Open Source Projects##########################
@@ -833,11 +828,11 @@ sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            foaf:logo <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
            ex:description "An Open, Extensible Benchmarking Suite for Cross Domain RDF Data Management Systems" ;
            ex:longdescription "LITMUS Benchmark Suite, is an open extensible framework for benchmarking a plethora of cross-domain DMSs. Apart from automating the tedious process of benchmarking, it also offers: (i) An efficient way for replicating existing benchmarks (e.g., BSBM, WAT-DIV). (ii) A wide set of performance evaluation measures/indicators tailored specifically for needs and, (iii) Present a custom visualization via custom charts, graphs and tabular data of the benchmark results for a faster insight." ;
-           ex:twitter "undefined" ;
-           ex:homepage "https://litmus-benchmark-suite.github.io/" ;
-           ex:source "https://github.com/LITMUS-Benchmark-Suite" ;
-           ex:download "undefined" ;
-           ex:opensource "Open Source" ;
+           sda:twitter "undefined" ;
+           sda:homepage "https://litmus-benchmark-suite.github.io/" ;
+           sda:source "https://github.com/LITMUS-Benchmark-Suite" ;
+           sda:download "undefined" ;
+           sda:opensource "Open Source" ;
            sda:status "active" .
 
 # DeFacto
@@ -847,10 +842,10 @@ ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
            foaf:logo <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/candidate1.png> ;
            ex:description "Deep Fact Validation" ;
            ex:longdescription "DeFacto (Deep Fact Validation) is an algorithm for validating statements by finding confirming sources for it on the web. It takes a statement (such as “Jamaica Inn was directed by Alfred Hitchcock”) as input and then tries to find evidence for the truth of that statement by searching for information in the web." ;
-           ex:twitter "undefined" ;
-           ex:homepage "undefined" ;
-           ex:source "http://defacto.aksw.org/" ;
-           ex:download "undefined" ;
+           sda:twitter "undefined" ;
+           sda:homepage "undefined" ;
+           sda:source "http://defacto.aksw.org/" ;
+           sda:download "undefined" ;
            ex:opensource "Open Source" .
 
 
