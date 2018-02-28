@@ -22,7 +22,7 @@ layout: default
       <div id="allProjects" style="display:block">
         <!-- QUERRY to GET ALL the PROJECTS -->
         {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project rdfs:label ?title . ?project ex:description ?description . optional {?project ex:longdescription ?longdescription }
-         optional {?project foaf:depiction ?image } optional { ?project ex:homepage ?homepage } optional {?project ex:twitter ?twitter } optional {?project ex:source ?source } optional { ?project ex:download ?download } } {% endcapture %} {% assign allProjects = page.rdf | sparql_query: query %}
+         optional {?project foaf:depiction ?image } optional { ?project sda:homepage ?homepage } optional {?project sda:twitter ?twitter } optional {?project sda:source ?source } optional { ?project sda:download ?download } } {% endcapture %} {% assign allProjects = page.rdf | sparql_query: query %}
         <!-- Presentation of the ALL Projects  -->
         {% assign allProjectCount = allProjects | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %} {% for project in allProjects %} {% if iterator == allProjectCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign
         url= project.project | remove: "http://sda.tech/" %} {% include projectItem.html title=project.title image=project.image description=project.longdescription last=lastItem href=url homepage=project.homepage twitter=project.twitter source=project.source
