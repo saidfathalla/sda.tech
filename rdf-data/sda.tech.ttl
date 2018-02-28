@@ -471,6 +471,26 @@ sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:KnowledgeExtractionAndValidation .
 
+sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "chaudhuri" ;
+                   sda:room "A120" ;
+                   foaf:familyName "Chaudhuri" ;
+                   foaf:name "Debanjan Chaudhuri" ;
+                   foaf:nick "Debanjan" ;
+                   foaf:mbox <mailto:deba.kgec@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAhRAAAAJGJjNjA1Nzc2LTA1NDgtNDk0My1hZmIyLTQ0NTM5MTAzOTI5NQ.jpg> ;
+                   foaf:phone <tel:+49-341-123456789> ;
+                   foaf:firstName "Debanjan" ;
+                   foaf:title "" ;
+                   foaf:status "Phd Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/debanjan-chaudhuri-206062b8" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" ;
+                   sda:publication sdapublication:Publication1 .
+
 ##############################Associated Researchers#####################
 
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
