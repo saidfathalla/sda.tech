@@ -6,7 +6,7 @@ layout: default
   {% include toggleGroupTypes.html %}
   <div class="pagination">
     <!--QUERY to GET all the GROUP Items  -->
-    {% capture query %} SELECT ?group ?name ?desc ?imageclass WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dct:description ?desc . ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query
+    {% capture query %} SELECT ?group ?name ?desc ?imageclass WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dct:description ?desc . ?group foaf:depiction ?imageclass . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query
     %}
     <!-- Paginating logic for all the GROUPS -->
     {% assign count = 1 %}
