@@ -211,6 +211,25 @@ sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:HOBBIT .
 
+sdaperson:AnisaRula a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "rula" ;
+                  #sda:room "C-306" ;
+                  foaf:firstName "Anisa" ;
+                  foaf:familyName "Rula" ;
+                  foaf:name "Anisa Rula" ;
+                  foaf:mbox <mailto:rula@cs.uni-bonn.de> ;
+                  foaf:depiction <https://media.licdn.com/media/p/1/000/083/185/14e1e0e.jpg> ;
+                  #foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/anisa-rula-ph-d-9a258919" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Anisa Rula is a Senior Researcher at the University of Bonn." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:DistributedSemanticAnalytics ;
+                  foaf:currentProject sdaproject:SANSA .
+
 
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
