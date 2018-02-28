@@ -516,6 +516,98 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "" ;
                    sda:publication sdapublication:Publication1 .
 
+sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/PatrickWestphal.html> ;
+                   owl:sameAs <http://aksw.org/PatrickWestphal.html> ;
+                   sda:publicationsTag "westphal" ;
+                   sda:room "" ;
+                   foaf:familyName "Westphal" ;
+                   foaf:name "Patrick Westphal" ;
+                   foaf:nick "Patrick" ;
+                   foaf:mbox <mailto:patrick.westphal@informatik.uni-leipzig.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAQuAAAAJDkwZWZkNjdiLTE3MGQtNDdkZS04ZjJiLTA3MWQyMjk1MTQ0Ng.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Patrick" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
+                   schema:location <http://aksw.org/Address/InfAI> ;
+                   cv:aboutPerson "" ;
+                   sda:publication sdapublication:Publication1 .
+
+sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/ClausStadler> ;
+                   owl:sameAs <http://aksw.org/ClausStadler> ;
+                   sda:publicationsTag "stadler" ;
+                   sda:room "" ;
+                   foaf:familyName "Stadler" ;
+                   foaf:name "Claus Stadler" ;
+                   foaf:nick "Claus" ;
+                   foaf:mbox <mailto:cstadler@informatik.uni-leipzig.de> ;
+                   foaf:depiction <http://ldap.aksw.org/pic/sn/Stadler/gn/Claus> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Claus" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/claus-stadler-89154b61/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
+                   schema:location <http://aksw.org/Address/InfAI>;
+                   cv:aboutPerson "" ;
+                   sda:publication sdapublication:Publication1 .
+
+sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/KonradHoeffner> ;
+                   owl:sameAs <http://aksw.org/KonradHoeffner> ;
+                   sda:publicationsTag "hoeffner" ;
+                   sda:room "" ;
+                   foaf:familyName "Hoeffner" ;
+                   foaf:name "Konrad Hoeffner" ;
+                   foaf:nick "Konrad" ;
+                   foaf:mbox <mailto:konrad.hoeffner@uni-leipzig.de> ;
+                   foaf:depiction <http://ldap.aksw.org/pic/sn/Hoeffner/gn/Konrad> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Konrad" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
+                   schema:location <http://aksw.org/Address/InfAI> ;
+                   cv:aboutPerson "" ;
+                   sda:publication sdapublication:Publication1 .
+
+sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
+                   rdfs:seeAlso <http://aksw.org/MofeedHassan> ;
+                   owl:sameAs <http://aksw.org/MofeedHassan> ;
+                   sda:publicationsTag "hassan" ;
+                   sda:room "" ;
+                   foaf:familyName "Hassan" ;
+                   foaf:name "Mofeed Hassan" ;
+                   foaf:nick "Mofeed" ;
+                   foaf:mbox <mailto:mounir@informatik.uni-leipzig.de> ;
+                   foaf:depiction <http://ldap.aksw.org/pic/sn/Hassan/gn/Mofeed> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Mofeed" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
+                   schema:location <http://aksw.org/Address/InfAI> ;
+                   cv:aboutPerson "" ;
+                   sda:publication sdapublication:Publication1 .
+
 ##############################Associated Researchers#####################
 
 sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
