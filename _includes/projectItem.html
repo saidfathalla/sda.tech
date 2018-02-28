@@ -1,6 +1,7 @@
 <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
-  <a href="../{{include.href}}"> <h1>{{include.title}}</h1></a>
+  <!-- <a href="../{{include.href}}"> <h1>{{include.title}}</h1></a> -->
+    <h1>{{include.title}} : {{include.homepage}}</h1>
 </div>
 <div class="partner-item">
   <br class="horizontal-separator"/>
@@ -16,11 +17,11 @@
   <div class="links-to-social" style="text-align:left;">
     {% capture count %}{{include.twitter}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+      <a href={{include.twitter}} target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
     {% endif %}
     {% capture count %}{{include.homepage}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.homepage}}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
+      <a href="{{ include.homepage }}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
     {% endif %}
     {% capture count %}{{include.source}}{% endcapture %}
     {% if count != 'undefined' %}
