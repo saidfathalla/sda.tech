@@ -738,22 +738,23 @@ sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "A framework for Machine Learning in Semantic Knowledge Graphs." ;
                  ex:description "A framework for Machine Learning in Semantic Knowledge Graphs." ;
                  ex:longdescription "DL-Learner is a framework for supervised Machine Learning in OWL, RDF and Description Logics. The framework contains several algorithms for supervised machine learning using structured data as background knowledge, can use various RDF and OWL formats as input, can connect to most popular OWL reasoners and is easily and flexibly configurable. It extends the ideas of Inductive Logic Programming and Relational Learning to the Semantic Web in order to allow to analyse data in knowledge bases or help in constructing knowledge bases from data." ;
-                 foaf:member sda:JensLehmann, sda:LorenzBuehmann, sda:PatrickWestphal, sda:SimonBin;
+                 foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:PatrickWestphal, sdaperson:SimonBin;
                  foaf:homepage <http://www.dl-learner.org> ;
                  foaf:logo <http://dl-learner.org/Images/dllearner.gif> ;
                  sda:twitter "undefined" ;
                  sda:source "https://github.com/SmartDataAnalytics/DL-Learner" ;
                  sda:download "https://github.com/SmartDataAnalytics/DL-Learner/releases" ;
                  sda:publicationTag "dllearner" ;
-                 doap:maintainer sda:JensLehmann ;
-                 sda:relatedProject sdaproject:GeoKnow, sdaproject:BDE ;
+                 doap:maintainer sdaperson:JensLehmann ;
+                 sda:relatedProject sdaproject:GeoKnow, sdaproject:BigDataEurope ;
                  sda:status "active" .
 
 # SANSA Stack
 sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "Semantic Analytics Stack (SANSA)" ;
                  sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
-                 foaf:member sda:GezimSejidu, sda:LorenzBuehmann ;
+                 ex:description "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
+                 foaf:member sdaperson:GezimSejidu, sdaperson:LorenzBuehmann. sdaperson ;
                  foaf:homepage <http://sansa-stack.net> ;
                  foaf:logo <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
                  sda:twitter "https://twitter.com/SANSA_Stack" ;
@@ -763,8 +764,8 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  site:content "";
                  sda:publicationTag "sansa-stack" ;
                  #dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
-                 doap:maintainer sda:JensLehmann ;
-                 sda:relatedProject sdaproject:BDE ;
+                 doap:maintainer sdaperson:JensLehmann ;
+                 sda:relatedProject sdaproject:BigDataEurope ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
