@@ -489,7 +489,7 @@ sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    sda:github "https://github.com/DeepInEvil" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Debanjan Chaudhuri is a PhD Student at the University of Bonn." ;
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:SemanticQuestionAnswering .
 
@@ -513,7 +513,7 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Simon Bin is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench, sdaproject:SANSAStack, sdaproject:SAKE .
 
@@ -537,7 +537,7 @@ sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Patrick Westphal is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench, sdaproject:SANSAStack, sdaproject:QROWD .
 
@@ -561,7 +561,7 @@ sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI>;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Claus Stadler is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:DLLearner, sdaproject:SANSAStack .
 
@@ -585,7 +585,7 @@ sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Konrad Hoeffner is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:SemanticQuestionAnswering .
 
 
@@ -609,7 +609,7 @@ sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Mofeed Hassan is a PhD Student at the University of Leipzig." .
 
 sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "zafar" ;
@@ -629,7 +629,7 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Hamid Zafar is a PhD Student at the University of Bonn." ;
                    sda:group sdagroup:SemanticQuestionAnswering .
                    
 
@@ -651,7 +651,7 @@ sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Shimaa Ibrahim is a PhD Student at the University of Bonn." ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:SANSAStack .
 
@@ -674,7 +674,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Sahar Vahdati is a PhD Student at the University of Bonn." .
 
 sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "Sibarani" ;
@@ -694,7 +694,7 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Elisa Margareth Sibarani is a PhD Student at the University of Bonn." .
 
 sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "sadeghi" ;
@@ -714,7 +714,7 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Afshin Sadeghi is a PhD Student at the University of Bonn." ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:SANSAStack .
 
@@ -736,7 +736,7 @@ sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Isaiah Onando Mulang' is a PhD Student at the University of Bonn." .
 
 sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "lukovnikov" ;
@@ -756,7 +756,7 @@ sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Denis Lukovnikov is a PhD Student at the University of Bonn." ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
                    foaf:currentProject sdaproject:WDAqua .
 
@@ -778,7 +778,7 @@ sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Said Fathalla is a PhD Student at the University of Bonn." .
 
 sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "galkin" ;
@@ -798,7 +798,7 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Michael Galkin is a PhD Student at the University of Bonn." .
 
 ##############################Associated Researchers#####################
 
