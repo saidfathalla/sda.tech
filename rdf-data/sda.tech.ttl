@@ -503,7 +503,7 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    foaf:nick "Simon" ;
                    foaf:mbox <mailto:sbin@informatik.uni-leipzig.de> ;
                    foaf:depiction <http://ldap.aksw.org/pic/sn/Bin> ;
-                   foaf:phone <> ;
+                   foaf:phone "" ;
                    foaf:firstName "Simon" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
@@ -511,10 +511,11 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    sda:website "" ;
                    sda:twitter "" ;
                    sda:github "" ;
-                   ov:businessCard "" ;
-                   schema:location <http://sda.tech/Address/SDA> ;
+                   ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
+                   schema:location <http://aksw.org/Address/InfAI> ;
                    cv:aboutPerson "" ;
-                   sda:publication sdapublication:Publication1 .
+                   sda:group sdagroup:StructuredMachineLearning ;
+                   foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench, sdaproject:SANSAStack, sdaproject:SAKE .
 
 sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/PatrickWestphal.html> ;
@@ -536,7 +537,9 @@ sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   sda:group sdagroup:StructuredMachineLearning ;
+                   foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench, sdaproject:SANSAStack, sdaproject:QROWD .
 
 sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/ClausStadler> ;
@@ -558,7 +561,9 @@ sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI>;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   sda:group sdagroup:StructuredMachineLearning ;
+                   foaf:currentProject sdaproject:DLLearner, sdaproject:SANSAStack .
 
 sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/KonradHoeffner> ;
@@ -580,7 +585,9 @@ sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    schema:location <http://aksw.org/Address/InfAI> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   sda:group sdagroup:SemanticQuestionAnswering .
+
 
 sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/MofeedHassan> ;
@@ -622,7 +629,9 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   sda:group sdagroup:SemanticQuestionAnswering .
+                   
 
 sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "ibrahim" ;
@@ -642,7 +651,10 @@ sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   sda:group sdagroup:DistributedSemanticAnalytics ;
+                   foaf:currentProject sdaproject:SANSAStack .
+
 
 sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "vahdati" ;
@@ -653,7 +665,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    foaf:mbox <mailto:s6savahd@uni-bonn.de> ;
                    foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
-                   foaf:firstName "Gezim" ;
+                   foaf:firstName "Sahar" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/saharvahdati/" ;
@@ -702,12 +714,14 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   sda:group sdagroup:DistributedSemanticAnalytics ;
+                   foaf:currentProject sdaproject:SANSAStack .
 
 sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "mulang" ;
                    sda:room "" ;
-                   foaf:familyName "Mulang" ;
+                   foaf:familyName "Onando Mulang'" ;
                    foaf:name "Isaiah Onando Mulang'" ;
                    foaf:nick "Isaiah" ;
                    foaf:mbox <mailto:mulang.onando@gmail.com> ;
@@ -742,7 +756,9 @@ sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:WDAqua .
 
 sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "fathalla" ;
