@@ -1352,6 +1352,21 @@ sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
          sda:download "undefined" ;
          sda:partners sdapartner:InfAI .
 
+sdaproject:GEISER a foaf:Project, sdatech:fundedProject ;
+         rdfs:label "GEISER" ;
+         foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+         foaf:depiction <http://www.slipo.eu/wp-content/uploads/2017/02/Slipo_vertical_1.png> ;
+         ex:description "Benchmarking sensor data to Internet-based Geo-Services" ;
+         ex:longdescription "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
+         ex:funded "Funded Project" ;
+         sda:twitter "undefined" ;
+         foaf:homepage "http://www.projekt-geiser.de/" ;
+         sda:source "" ;
+         sda:download "undefined" ;
+         sda:partners "" .
+
+
+
 
 ############################Open Source Projects##########################
 
@@ -1452,6 +1467,21 @@ ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
            sda:source "http://defacto.aksw.org/" ;
            sda:download "undefined" ;
            ex:opensource "Open Source" .
+
+# MEX Vocabulary
+sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
+                 rdfs:label "MEX Vocabulary" ;
+                 sda:hookline "A Light-Weight Interchange Format for Machine Learning Experiments" ;
+                 foaf:member sda:JensLehmann, sda:DiegoEsteves ;
+                 foaf:homepage <http://mex.aksw.org/> ;
+                 foaf:depiction "" ;
+                 sda:twitter "" ;
+                 sda:source "https://github.com/SmartDataAnalytics/mexproject" ;
+                 site:content "";
+                 sda:publicationTag "mex" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
 
 
 #######################################
