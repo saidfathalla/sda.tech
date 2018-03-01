@@ -699,7 +699,7 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
 sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "sadeghi" ;
                    sda:room "" ;
-                   foaf:familyName "Afshin" ;
+                   foaf:familyName "Sadeghi" ;
                    foaf:name "Afshin Sadeghi" ;
                    foaf:nick "Afshin" ;
                    foaf:mbox <mailto:sadeghi@cs.uni-bonn.de> ;
