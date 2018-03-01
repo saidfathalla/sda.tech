@@ -783,7 +783,7 @@ sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
 sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "galkin" ;
                    sda:room "" ;
-                   foaf:familyName "Michael" ;
+                   foaf:familyName "Galkin" ;
                    foaf:name "Michael Galkin" ;
                    foaf:nick "Michael" ;
                    foaf:mbox <mailto:mikhgalkin@gmail.com> ;
@@ -833,7 +833,7 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
                    sda:room "" ;
                    foaf:familyName "Kaufmann" ;
                    foaf:name "Julius Kaufmann" ;
-                   foaf:nick "Kaufmann" ;
+                   foaf:nick "Julius" ;
                    foaf:mbox <mailto:julius.kaufmann@uni-bonn.de> ;
                    foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAfMAAAAJDAxYWY5NmM2LTY1M2ItNDFjYS1iODE2LTlkZjI4ZDk1ZTFmZA.jpg> ;
                    foaf:phone "" ;
@@ -847,6 +847,86 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" .
+
+sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "chakraborty" ;
+                   sda:room "" ;
+                   foaf:familyName "Chakraborty" ;
+                   foaf:name "Nilesh Chakraborty" ;
+                   foaf:nick "Nilesh" ;
+                   foaf:mbox <mailto:nilesh@nileshc.com> ;
+                   foaf:depiction <https://avatars0.githubusercontent.com/u/1786561?s=460&v=4> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Nilesh" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/nileshchakraborty/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "https://github.com/nilesh-c" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Nilesh Chakraborty is a Graduate Research Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "maheshwari" ;
+                   sda:room "" ;
+                   foaf:familyName "Maheshwari" ;
+                   foaf:name "Gaurav Maheshwari" ;
+                   foaf:nick "Gaurav" ;
+                   foaf:mbox <mailto:gaurav.rygbee@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAARPAAAAJDZjMDliM2FjLTRmODQtNDg3My1iMmIwLWNjNTM3NzAwZWU5MA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Gaurav" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Gaurav Maheshwari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "trivedi" ;
+                   sda:room "" ;
+                   foaf:familyName "Trivedi" ;
+                   foaf:name "Priyansh Trivedi" ;
+                   foaf:nick "Priyansh" ;
+                   foaf:mbox <mailto:pc.priyansh@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAIA_wDGAAAAAQAAAAAAAAoKAAAAJDJiMmMzM2E2LTk1ZTgtNDc0MS1hMjk3LTE0OGQxNGExY2UyMQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Priyansh" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Priyansh Trivedi is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:HebaIbrahim a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "ibrahim" ;
+                   sda:room "" ;
+                   foaf:familyName "Ibrahim" ;
+                   foaf:name "Heba Ibrahim" ;
+                   foaf:nick "Heba" ;
+                   foaf:mbox <mailto:heba.a.ibrahim@gmail.com> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Heba" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Heba Ibrahim is a Student Assistant at the Computer Science Department III of the University of Bonn.".
 
 ##############################Interns####################################
 sdaperson:JonDoe a foaf:Person, sdatech:intern ;
