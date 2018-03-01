@@ -1180,6 +1180,126 @@ sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
+sdaperson:FrankNietzsche a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "nietzsche" ;
+                   sda:room "" ;
+                   foaf:familyName "Nietzsche" ;
+                   foaf:name "Frank Nietzsche" ;
+                   foaf:nick "Frank" ;
+                   foaf:mbox <frank.nietzsche88@gmail.com> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Frank" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:BastianHaarmann a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "haarmann" ;
+                   sda:room "" ;
+                   foaf:familyName "Haarmann" ;
+                   foaf:name "Bastian Haarmann" ;
+                   foaf:nick "Bastian" ;
+                   foaf:mbox <bastian.haarmann@iais.fraunhofer.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Bastian" ;
+                   foaf:title "" ;
+                   foaf:status "Senior Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:HenningPetzka a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "petzka" ;
+                   sda:room "" ;
+                   foaf:familyName "Petzka" ;
+                   foaf:name "Henning Petzka" ;
+                   foaf:nick "Henning" ;
+                   foaf:mbox <Henning.Petzka@iais.fraunhofer.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Henning" ;
+                   foaf:title "" ;
+                   foaf:status "Senior Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "sherif" ;
+                   sda:room "" ;
+                   foaf:familyName "Sherif" ;
+                   foaf:name "Mohamed Sherif" ;
+                   foaf:nick "Mohamed" ;
+                   foaf:mbox <sherif@informatik.uni-leipzig.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Mohamed" ;
+                   foaf:title "" ;
+                   foaf:status "Senior Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:TiansiDong a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "dong" ;
+                   sda:room "" ;
+                   foaf:familyName "Dong" ;
+                   foaf:name "Tiansi Dong" ;
+                   foaf:nick "Tiansi" ;
+                   foaf:mbox <mailto:tian1shi2@gmail.com> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Tiansi" ;
+                   foaf:title "" ;
+                   foaf:status "Senior Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "modi" ;
+                   sda:room "" ;
+                   foaf:familyName "Modi" ;
+                   foaf:name "Vinay Modi" ;
+                   foaf:nick "Vinay" ;
+                   foaf:mbox <mailto:tian1shi2@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAlpAAAAJDI2MDQ1ZjRmLWUyYTgtNDMxMS1hZDM5LTU1NzU5NDUxOGViMQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Vinai" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/vinaymodi/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
 #######################################
 ##########Group Model##################
 #######################################
