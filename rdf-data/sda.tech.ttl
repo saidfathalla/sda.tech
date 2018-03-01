@@ -928,6 +928,86 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:studentAssistant ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Heba Ibrahim is a Student Assistant at the Computer Science Department III of the University of Bonn.".
 
+sdaperson:JeanHernandez a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "hernandez" ;
+                   sda:room "" ;
+                   foaf:familyName "Hernandez" ;
+                   foaf:name "Jean Hernandez" ;
+                   foaf:nick "Jean" ;
+                   foaf:mbox <jeanhernandezmeze@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAL4AAAAJDQ1YTFhYmRkLTY4OGEtNDk1OC05NDljLTgwZTIxNWYxZTJjNQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Jean" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/jeanpierohm/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Jean Hernandez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
+
+sdaperson:GabrielGimenez a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "gimenez" ;
+                   sda:room "" ;
+                   foaf:familyName "Gimenez" ;
+                   foaf:name "Gabriel Gimenez" ;
+                   foaf:nick "Gabriel" ;
+                   foaf:mbox <mailto:12-11006@usb.ve> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAxmAAAAJDFmZWEwZGEzLWU1OTctNDgyYi1hNDE0LTA1NWE0OGYyNmVkZA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Gabriel" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/ggcatu/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Gabriel Gimenez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
+
+sdaperson:GuillermoBetancourt a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "betancourt" ;
+                   sda:room "" ;
+                   foaf:familyName "Betancourt" ;
+                   foaf:name "Guillermo Betancourt" ;
+                   foaf:nick "Guillermo" ;
+                   foaf:mbox <mailto:11-10103@usb.ve> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Guillermo" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Guillermo Betancourt is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:YersonRoa a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "roa" ;
+                   sda:room "" ;
+                   foaf:familyName "Roa" ;
+                   foaf:name "Yerson Roa" ;
+                   foaf:nick "Yerson" ;
+                   foaf:mbox <mailto:yerson132@gmail.com> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Yerson" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Yerson Roa is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
 ##############################Interns####################################
 sdaperson:JonDoe a foaf:Person, sdatech:intern ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
