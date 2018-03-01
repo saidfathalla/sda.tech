@@ -827,6 +827,227 @@ sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
 
+sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "petersen" ;
+                   sda:room "" ;
+                   foaf:familyName "Petersen" ;
+                   foaf:name "Niklas Petersen" ;
+                   foaf:nick "Niklas" ;
+                   foaf:mbox <mailto:niklas.petersen@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAADyAAAAJDNiYmM2M2NjLTFhZTItNDAxMi05N2NiLWU5ZjRjZTExZTJhZA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Niklas" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/niklas-petersen-a8ab5765/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "mami" ;
+                   sda:room "" ;
+                   foaf:familyName "Mami" ;
+                   foaf:name "Mohamed Nadjib" ;
+                   foaf:nick "Mohamed" ;
+                   foaf:mbox <mailto:mohamed.nadjib.mami@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAIAAQDGAAAAAQAAAAAAAApRAAAAJDgzYjlhMDMzLTU2MDctNDAzNS1hNjM5LWVlNDY3ZDY1MmEwNQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Mohamed" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/mohamednadjibmami/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "halilaj" ;
+                   sda:room "" ;
+                   foaf:familyName "Halilaj" ;
+                   foaf:name "Lavdim Halilaj" ;
+                   foaf:nick "Lavdim" ;
+                   foaf:mbox <mailto:mohamed.nadjib.mami@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAIAAQDGAAAAAQAAAAAAAApRAAAAJDgzYjlhMDMzLTU2MDctNDAzNS1hNjM5LWVlNDY3ZDY1MmEwNQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Lavdim" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/lavdim-halilaj-843b1522" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "grangel" ;
+                   sda:room "" ;
+                   foaf:familyName "Grangel-Gonzales" ;
+                   foaf:name "Irlan Grangel-Gonzales" ;
+                   foaf:nick "Irlan" ;
+                   foaf:mbox <mailto:Irlan.Grangel@iais.fraunhofer.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Irlan" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "collarana" ;
+                   sda:room "" ;
+                   foaf:familyName "Collarana" ;
+                   foaf:name "Diego Collarana" ;
+                   foaf:nick "Diego" ;
+                   foaf:mbox <mailto:collaran@iai.uni-bonn.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAIA_wDGAAAAAQAAAAAAAAtrAAAAJDQwMzAxMjQ5LWIwZGItNGFlZi1hMTY5LWQ0M2M3YmY1NDljNA.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Diego" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/diego-collarana-60ab6127/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "singh" ;
+                   sda:room "" ;
+                   foaf:familyName "Singh" ;
+                   foaf:name "Kuldeep Singh" ;
+                   foaf:nick "Kuldeep" ;
+                   foaf:mbox <mailto:kuldeep.singh@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAo0AAAAJDFhYzc1OTA0LThjMzItNGU1NS04ZDJkLTlhNzJiMGZmYjM5Ng.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Kuldeep" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/kuldeep-singh-67a4a840/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:JewgeniRose a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "rose" ;
+                   sda:room "" ;
+                   foaf:familyName "Rose" ;
+                   foaf:name "Jewgeni Rose" ;
+                   foaf:nick "Jewgeni" ;
+                   foaf:mbox <mailto:jewgeni.rose@gmx.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Jewgeni" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "kumar" ;
+                   sda:room "" ;
+                   foaf:familyName "Kumar" ;
+                   foaf:name "Ashwini Jaya Kumar" ;
+                   foaf:nick "Ashwini" ;
+                   foaf:mbox <mailto:ashwini.jaya.kumar@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/media/p/2/005/0b0/208/29f9ed5.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Ashwini" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/ashwini-jaya-kumar-bab04216/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "kumar" ;
+                   sda:room "" ;
+                   foaf:familyName "Kumar" ;
+                   foaf:name "Ashwini Jaya Kumar" ;
+                   foaf:nick "Ashwini" ;
+                   foaf:mbox <mailto:jewgeni.rose@gmx.de> ;
+                   foaf:depiction <https://media.licdn.com/media/p/2/005/0b0/208/29f9ed5.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Ashwini" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/ashwini-jaya-kumar-bab04216/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "elias" ;
+                   sda:room "" ;
+                   foaf:familyName "Elias" ;
+                   foaf:name "Mirette Elias" ;
+                   foaf:nick "Mirette" ;
+                   foaf:mbox <mailto:mirettemagdy@gmail.com> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Mirette" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "wiens" ;
+                   sda:room "" ;
+                   foaf:familyName "Vitalis" ;
+                   foaf:name "Vitalis Wiens" ;
+                   foaf:nick "Vitalis" ;
+                   foaf:mbox <mailto:wiens@informatik.uni-bonn.de> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Vitalis" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+
 ##############################Student Assistants#########################
 sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "kaufmann" ;
