@@ -111,7 +111,7 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/kniesel/" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Günter Jabeen is a Senior lecturer at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Günter Kniesel is a Senior lecturer at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SoftwareEngineeringforDataScience .
 
@@ -1093,6 +1093,66 @@ sdaperson:JonDoe a foaf:Person, sdatech:intern ;
                   sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:BigDataEurope .
+
+sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
+                   sda:publicationsTag "kashiparekh" ;
+                   sda:room "" ;
+                   foaf:familyName "Kashiparekh" ;
+                   foaf:name "Kathan Kashiparek" ;
+                   foaf:nick "Kathan" ;
+                   foaf:mbox <mailto:kathan.kparekh@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAA0lAAAAJGM0MzI2NWZjLTczZTgtNDVmYS04MGY5LTA1NDMzNGNhZjQ5OQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Kathan" ;
+                   foaf:title "" ;
+                   foaf:status "Intern" ;
+                   sda:linkedin "https://www.linkedin.com/in/kathan-kashiparekh-094606b8/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:PiyushChawla a foaf:Person, sdatech:intern ;
+                   sda:publicationsTag "chawla" ;
+                   sda:room "" ;
+                   foaf:familyName "Chawla" ;
+                   foaf:name "Piyush Chawla" ;
+                   foaf:nick "Piyush" ;
+                   foaf:mbox <mailto:f2014120@hyderabad.bits-pilani.ac.in> ;
+                   foaf:depiction <https://media.licdn.com/media/AAMABADGAAwAAQAAAAAAAA45AAAAJGEwZGE4NjI2LTQ3OWMtNGViZi04NTJmLWU5NGNhZGFjM2Q4NQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Piyush" ;
+                   foaf:title "" ;
+                   foaf:status "Intern" ;
+                   sda:linkedin "https://www.linkedin.com/in/piyush-chawla-36020111a" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
+
+sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
+                   sda:publicationsTag "reddy" ;
+                   sda:room "" ;
+                   foaf:familyName "Aniketh" ;
+                   foaf:name "Aniketh Reddy" ;
+                   foaf:nick "Aniketh" ;
+                   foaf:mbox <mailto:anikethjr@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAqDAAAAJGVkMDI1OTQ3LTlmNzItNGM1NS04ZWI0LWJjNmEyZmIwNzI2MQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Aniketh" ;
+                   foaf:title "" ;
+                   foaf:status "Intern" ;
+                   sda:linkedin "https://www.linkedin.com/in/aniketh-reddy/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "" .
 
 ##############################Former Members#############################
 sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
