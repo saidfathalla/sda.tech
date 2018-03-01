@@ -663,7 +663,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Sahar Vahdati" ;
                    foaf:nick "Sahar" ;
                    foaf:mbox <mailto:s6savahd@uni-bonn.de> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:depiction <https://media.licdn.com/media/AAIA_wDGAAAAAQAAAAAAAAzoAAAAJDBlYTVlMGNlLTk3NTktNGI4OC1hMWNmLTg3ZTcwNzUxMTlmNQ.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Sahar" ;
                    foaf:title "" ;
