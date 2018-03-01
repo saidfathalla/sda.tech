@@ -1008,6 +1008,66 @@ sdaperson:YersonRoa a foaf:Person, sdatech:studentAssistant ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Yerson Roa is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
+sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "banerjee" ;
+                   sda:room "" ;
+                   foaf:familyName "Banerjee" ;
+                   foaf:name "Debayan Banerjee" ;
+                   foaf:nick "Debayan" ;
+                   foaf:mbox <mailto:debayan@uni-bonn.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAnoAAAAJGQ5MWVhNDE5LTkyOGQtNDc1Zi05ZjE1LTE1ZjZiNDFmZTVkMg.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Debayan" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/debayan-banerjee-93608b57" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Debayan Banerjee is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "qu" ;
+                   sda:room "" ;
+                   foaf:familyName "Qu" ;
+                   foaf:name "Ming Qu" ;
+                   foaf:nick "Ming" ;
+                   foaf:mbox <mailto:ming.qu0202@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAeaAAAAJDJjNGUwN2VhLTZkOGEtNGQ3My05YWI0LTZmYTM1YmVjNDBhNQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Ming" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/ming-qu-51229711b/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Ming Qu is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "khan" ;
+                   sda:room "" ;
+                   foaf:familyName "Khan" ;
+                   foaf:name "Asif Khan" ;
+                   foaf:nick "ASif" ;
+                   foaf:mbox <mailto:mak4086@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/media/AAMABADuAAgAAQAAAAAAABG8AAAAJGFkODcwZDUzLTk2YmYtNDM4OC1iMzYzLTlhYTZiMDQxNjhjMg.bin> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Asif" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/mak4086/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Asif Khan is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
 ##############################Interns####################################
 sdaperson:JonDoe a foaf:Person, sdatech:intern ;
                   rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
