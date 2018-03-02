@@ -800,6 +800,26 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Michael Galkin is a PhD Student at the University of Bonn." .
 
+sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "ibrahim" ;
+                   sda:room "" ;
+                   foaf:familyName "Ibrahim" ;
+                   foaf:name "Heba Ibrahim" ;
+                   foaf:nick "Heba" ;
+                   foaf:mbox <mailto:heba.a.ibrahim@gmail.com> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Heba" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Heba Ibrahim is a PhD Student at the University of Bonn.".
+
 ##############################Associated Researchers#####################
 
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
@@ -1085,26 +1105,6 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Priyansh Trivedi is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
-sdaperson:HebaIbrahim a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "ibrahim" ;
-                   sda:room "" ;
-                   foaf:familyName "Ibrahim" ;
-                   foaf:name "Heba Ibrahim" ;
-                   foaf:nick "Heba" ;
-                   foaf:mbox <mailto:heba.a.ibrahim@gmail.com> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Heba" ;
-                   foaf:title "" ;
-                   foaf:status "Student Assistant" ;
-                   sda:linkedin "" ;
-                   sda:website "" ;
-                   sda:twitter "" ;
-                   sda:github "" ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "Heba Ibrahim is a Student Assistant at the Computer Science Department III of the University of Bonn.".
-
 sdaperson:JeanHernandez a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "hernandez" ;
                    sda:room "" ;
@@ -1245,6 +1245,26 @@ sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Asif Khan is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
+sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "chawla" ;
+                   sda:room "" ;
+                   foaf:familyName "Chawla" ;
+                   foaf:name "Piyush Chawla" ;
+                   foaf:nick "Piyush" ;
+                   foaf:mbox <mailto:f2014120@hyderabad.bits-pilani.ac.in> ;
+                   foaf:depiction <https://media.licdn.com/media/AAMABADGAAwAAQAAAAAAAA45AAAAJGEwZGE4NjI2LTQ3OWMtNGViZi04NTJmLWU5NGNhZGFjM2Q4NQ.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Piyush" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:linkedin "https://www.linkedin.com/in/piyush-chawla-36020111a" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Piyush Chawla is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
 ##############################Interns####################################
 
 sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
@@ -1260,26 +1280,6 @@ sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
                    foaf:title "" ;
                    foaf:status "Intern" ;
                    sda:linkedin "https://www.linkedin.com/in/kathan-kashiparekh-094606b8/" ;
-                   sda:website "" ;
-                   sda:twitter "" ;
-                   sda:github "" ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
-
-sdaperson:PiyushChawla a foaf:Person, sdatech:intern ;
-                   sda:publicationsTag "chawla" ;
-                   sda:room "" ;
-                   foaf:familyName "Chawla" ;
-                   foaf:name "Piyush Chawla" ;
-                   foaf:nick "Piyush" ;
-                   foaf:mbox <mailto:f2014120@hyderabad.bits-pilani.ac.in> ;
-                   foaf:depiction <https://media.licdn.com/media/AAMABADGAAwAAQAAAAAAAA45AAAAJGEwZGE4NjI2LTQ3OWMtNGViZi04NTJmLWU5NGNhZGFjM2Q4NQ.jpg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Piyush" ;
-                   foaf:title "" ;
-                   foaf:status "Intern" ;
-                   sda:linkedin "https://www.linkedin.com/in/piyush-chawla-36020111a" ;
                    sda:website "" ;
                    sda:twitter "" ;
                    sda:github "" ;
