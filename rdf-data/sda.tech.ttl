@@ -841,6 +841,26 @@ sdaperson:SteffenLohmann a foaf:Person, sdatech:seniorResearcher ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement .
 
+sdaperson:DamienGraux a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "graux" ;
+                  sda:room "B3-226" ;
+                  foaf:firstName "Damien" ;
+                  foaf:familyName "Graux" ;
+                  foaf:name "Dr. Damien Graux" ;
+                  foaf:mbox <mailto:damien.graux@iais.fraunhofer.de> ;
+                  foaf:depiction <http://tyrex.inria.fr/people/img/damien.jpg> ;
+                  #foaf:phone <tel:+49-2241-14-1234> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Damien Graux is a Senior Researcher at the Fraunhofer IAIS." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
+                  foaf:currentProject sdaproject:SANSAStack .
+
+
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "petersen" ;
                    sda:room "" ;
