@@ -243,7 +243,6 @@ sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
-                  sda:linkedin "https://www.linkedin.com/in/ioanna-lytra-77369417" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Dr. Ioanna Lytra is a senior researcher at the Smart Data Analytics research group, University of Bonn. She has completed her PhD thesis on Software Architecture at the University of Vienna. Before that, she worked as a software engineer in the telecommunications area. She received my Diploma in Electrical and Computer Engineering with specialization in Computer Networks and Telecommunications from the National Technical University of Athens in 2006." ;
