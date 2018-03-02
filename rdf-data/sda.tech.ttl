@@ -821,7 +821,7 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
 
 ##############################Associated Researchers#####################
 
-sdaperson:SteffenLohmann a foaf:Person, sdatech:seniorResearcher ;
+sdaperson:SteffenLohmann a foaf:Person, sdatech:associateResearcher ;
                   sda:publicationsTag "lohmann" ;
                   sda:room "B3-226" ;
                   foaf:firstName "Steffen" ;
@@ -840,7 +840,7 @@ sdaperson:SteffenLohmann a foaf:Person, sdatech:seniorResearcher ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement .
 
-sdaperson:DamienGraux a foaf:Person, sdatech:seniorResearcher ;
+sdaperson:DamienGraux a foaf:Person, sdatech:associateResearcher ;
                   sda:publicationsTag "graux" ;
                   sda:room "B3-226" ;
                   foaf:firstName "Damien" ;
@@ -1414,7 +1414,7 @@ sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
                    foaf:name "Mohamed Sherif" ;
                    foaf:nick "Mohamed" ;
                    foaf:mbox <sherif@informatik.uni-leipzig.de> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:depiction <http://ldap.aksw.org/pic/sn/Sherif/gn/Mohamed> ;
                    foaf:phone "" ;
                    foaf:firstName "Mohamed" ;
                    foaf:title "" ;
