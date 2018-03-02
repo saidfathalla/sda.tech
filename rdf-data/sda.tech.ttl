@@ -822,6 +822,25 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
 
 ##############################Associated Researchers#####################
 
+sdaperson:SteffenLohmann a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "lohmann" ;
+                  sda:room "B3-226" ;
+                  foaf:firstName "Steffen" ;
+                  foaf:familyName "Lohmann" ;
+                  foaf:name "Dr. Steffen Lohmann" ;
+                  foaf:mbox <mailto:steffen.lohmann@iais.fraunhofer.de> ;
+                  foaf:depiction <http://steffen-lohmann.de/img/steffen_lohmann_large.jpg> ;
+                  foaf:phone <tel:+49-2241-14-3021> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:website "http://steffen-lohmann.de/" ;
+                  sda:linkedin "https://www.linkedin.com/in/steffen-lohmann-b19267123/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Steffen Lohmann is a researcher and deputy head of the Enterprise Information Systems (EIS) department at the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS), and associated member of the Smart Data Analytics (SDA) research group of the University of Bonn. My research is devoted to all exciting topics related to Semantic Technologies, Knowledge Engineering, Interactive Systems, Information Visualization, and the Web. At Fraunhofer IAIS, I am leading the business unit on Enterprise Information Integration concerned with research and development in areas such as Industry 4.0, Internet of Things, Semantic Interoperability, and Data Integration." ;
+                  #sda:publication sdapublication:Publication1 ;
+                  sda:group sdagroup:SemanticDataManagement .
+
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "petersen" ;
                    sda:room "" ;
