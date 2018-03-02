@@ -802,31 +802,6 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
 
 ##############################Associated Researchers#####################
 
-sdaperson:RajKapoor a foaf:Person, sdatech:associateResearcher ;
-                  rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
-                  owl:sameAs <http://people.comiles.eu/natanael> ;
-                  sda:publicationsTag "aX" ;
-                  sda:room "D123" ;
-                  foaf:familyName "Kapoor" ;
-                  foaf:name "Raj" ;
-                  foaf:nick "Raj" ;
-                  foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/04/Kister_Foto1439x200.jpg> ;
-                  foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Alexander" ;
-                  foaf:title "" ;
-                  foaf:status "Researching & Applying" ;
-                  sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                  sda:website "http://jens-lehmann.org/" ;
-                  sda:twitter "http://jens-lehmann.org/" ;
-                  sda:facebook "http://jens-lehmann.org/" ;
-                  ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
-                  schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
-                  sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering ;
-                  foaf:currentProject sdaproject:BigDataEurope .
-
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "petersen" ;
                    sda:room "" ;
@@ -851,7 +826,7 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "mami" ;
                    sda:room "" ;
                    foaf:familyName "Mami" ;
-                   foaf:name "Mohamed Nadjib" ;
+                   foaf:name "Mohamed Nadjib Mami" ;
                    foaf:nick "Mohamed" ;
                    foaf:mbox <mailto:mohamed.nadjib.mami@iais.fraunhofer.de> ;
                    foaf:depiction <https://media.licdn.com/media/AAIAAQDGAAAAAQAAAAAAAApRAAAAJDgzYjlhMDMzLTU2MDctNDAzNS1hNjM5LWVlNDY3ZDY1MmEwNQ.jpg> ;
@@ -987,26 +962,6 @@ sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" .
 
-sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "kumar" ;
-                   sda:room "" ;
-                   foaf:familyName "Kumar" ;
-                   foaf:name "Ashwini Jaya Kumar" ;
-                   foaf:nick "Ashwini" ;
-                   foaf:mbox <mailto:jewgeni.rose@gmx.de> ;
-                   foaf:depiction <https://media.licdn.com/media/p/2/005/0b0/208/29f9ed5.jpg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Ashwini" ;
-                   foaf:title "" ;
-                   foaf:status "Researcher" ;
-                   sda:linkedin "https://www.linkedin.com/in/ashwini-jaya-kumar-bab04216/" ;
-                   sda:website "" ;
-                   sda:twitter "" ;
-                   sda:github "" ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
-
 sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "elias" ;
                    sda:room "" ;
@@ -1049,6 +1004,7 @@ sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
 
 
 ##############################Student Assistants#########################
+
 sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "kaufmann" ;
                    sda:room "" ;
@@ -1290,30 +1246,6 @@ sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
                    cv:aboutPerson "Asif Khan is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 ##############################Interns####################################
-sdaperson:JonDoe a foaf:Person, sdatech:intern ;
-                  rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
-                  owl:sameAs <http://people.comiles.eu/natanael> ;
-                  sda:publicationsTag "aX" ;
-                  sda:room "V123" ;
-                  foaf:familyName "Doe" ;
-                  foaf:name "Jon" ;
-                  foaf:nick "Jon" ;
-                  foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
-                  foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Jon" ;
-                  foaf:title "" ;
-                  foaf:status "Writing Parsers" ;
-                  sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                  sda:website "http://jens-lehmann.org/" ;
-                  sda:twitter "http://jens-lehmann.org/" ;
-                  sda:facebook "http://jens-lehmann.org/" ;
-                  ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
-                  schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
-                  sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering ;
-                  foaf:currentProject sdaproject:BigDataEurope .
 
 sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
                    sda:publicationsTag "kashiparekh" ;
@@ -1376,30 +1308,6 @@ sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
                    cv:aboutPerson "" .
 
 ##############################Former Members#############################
-sdaperson:SteveJobs a foaf:Person, sdatech:formerMember ;
-                  rdfs:seeAlso <http://fb.comiles.eu/?c=person&id=natanael> ;
-                  owl:sameAs <http://people.comiles.eu/natanael> ;
-                  sda:publicationsTag "aX" ;
-                  sda:room "C100" ;
-                  foaf:familyName "Jobs" ;
-                  foaf:name "Steve" ;
-                  foaf:nick "Steve" ;
-                  foaf:mbox <mailto:Alfred@aksw.org> ;
-                  foaf:depiction <https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg> ;
-                  foaf:phone <tel:+49-341-123456789> ;
-                  foaf:firstName "Steve" ;
-                  foaf:title "Dr." ;
-                  foaf:status "Revolutionizing Technology" ;
-                  sda:linkedin "https://www.linkedin.com/in/rohanasmat/" ;
-                  sda:website "http://jens-lehmann.org/" ;
-                  sda:twitter "http://jens-lehmann.org/" ;
-                  sda:facebook "http://jens-lehmann.org/" ;
-                  ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
-                  schema:location <http://aksw.org/Address/InfAI> ;
-                  cv:aboutPerson "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." ;
-                  sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering ;
-                  foaf:currentProject sdaproject:BigDataEurope .
 
 sdaperson:FrankNietzsche a foaf:Person, sdatech:formerMember ;
                    sda:publicationsTag "nietzsche" ;
