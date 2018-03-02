@@ -878,12 +878,13 @@ sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Niklas Petersen is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticDataManagement .
 
 sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "mami" ;
                    sda:room "" ;
-                   foaf:familyName "Mami" ;
+                   foaf:familyName "Nadjib Mami" ;
                    foaf:name "Mohamed Nadjib Mami" ;
                    foaf:nick "Mohamed" ;
                    foaf:mbox <mailto:mohamed.nadjib.mami@iais.fraunhofer.de> ;
@@ -898,7 +899,9 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Mohamed Nadjib Mami is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
+                   foaf:currentProject sdaproject:SANSAStack, sdaproject:BigDataEurope .
 
 sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "halilaj" ;
@@ -906,8 +909,8 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    foaf:familyName "Halilaj" ;
                    foaf:name "Lavdim Halilaj" ;
                    foaf:nick "Lavdim" ;
-                   foaf:mbox <mailto:mohamed.nadjib.mami@iais.fraunhofer.de> ;
-                   foaf:depiction <https://media.licdn.com/media/AAIAAQDGAAAAAQAAAAAAAApRAAAAJDgzYjlhMDMzLTU2MDctNDAzNS1hNjM5LWVlNDY3ZDY1MmEwNQ.jpg> ;
+                   foaf:mbox <mailto:lavdim.halilaj@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAlSAAAAJDAzNjc0MjBkLTFmMzktNDljNi05MzExLWZhMWIwMzY1Mzg2YQ.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Lavdim" ;
                    foaf:title "" ;
@@ -918,7 +921,8 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Lavdim Halilaj is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:KnowledgeExtractionAndValidation .
 
 sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "grangel" ;
@@ -938,7 +942,8 @@ sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Irlan Grangel-Gonzales is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:KnowledgeExtractionAndValidation .
 
 sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "collarana" ;
@@ -958,7 +963,8 @@ sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Diego Collarana is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:KnowledgeExtractionAndValidation .
 
 sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "singh" ;
@@ -978,7 +984,9 @@ sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Kuldeep Singh is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticQuestionAnswering;
+                   foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua .
 
 sdaperson:JewgeniRose a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "rose" ;
@@ -998,7 +1006,8 @@ sdaperson:JewgeniRose a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Jewgeni Rose is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticQuestionAnswering .
 
 sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "kumar" ;
@@ -1018,7 +1027,7 @@ sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Ashwini Jaya Kumar is a Researcher at the Fraunhofer IAIS." .
 
 sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "elias" ;
@@ -1038,12 +1047,12 @@ sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Mirette Elias is a Researcher at the Fraunhofer IAIS." .
 
 sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "wiens" ;
                    sda:room "" ;
-                   foaf:familyName "Vitalis" ;
+                   foaf:familyName "Wiens" ;
                    foaf:name "Vitalis Wiens" ;
                    foaf:nick "Vitalis" ;
                    foaf:mbox <mailto:wiens@informatik.uni-bonn.de> ;
@@ -1058,7 +1067,7 @@ sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Vitalis Wiens is a Researcher at the Fraunhofer IAIS." .
 
 
 ##############################Student Assistants#########################
