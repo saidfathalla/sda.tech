@@ -12,7 +12,7 @@ layout: default
     </header>
     <br class="horizontal-separator" />
     <!-- Query to Get the department leaders -->
-    {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name . ?Person ex:leader ?leader . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name . ?Person dbo:leader ?leader . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
     <div class="post-content">
       The <b>{{site.titleWithAcronym}}</b> research group, led by
       <!-- Logic for presenting a leader or multiple leaders -->
@@ -55,6 +55,7 @@ layout: default
           <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Person" width="96" height="96"> Prof. Dr. Jens Lehmann
         </div>
       </div>
+      <br class="horizontal-separator" />
       <div class="description-project">
         <p>{{group.longdescription}}</p>
       </div>
