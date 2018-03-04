@@ -27,10 +27,10 @@ So after setting up Jekyll on your computer you can clone sda.tech repository at
 bundle exec jekyll serve
 ```
 ## Using Docker
-We make use of a [docker image](https://github.com/white-gecko/dockerjekyllpages) to build a sda.tech page from a Git repository or local sources. This is essentially githubpages in a docker image. This docker image uses nginx, Jekyll, uwsgi and supervisor.
+We extend the Jekyll Pages [docker image](https://github.com/white-gecko/dockerjekyllpages) to build a sda.tech page from a Git repository or local sources. This is essentially githubpages in a docker image. We have deployed our docker image on Docker Hub [`smartdataanalytics/site`](https://hub.docker.com/r/smartdataanalytics/site/) in order to build the site automatically. The [`v2tec/watchtower`](https://hub.docker.com/r/v2tec/watchtower/) image is used for watching our sda container and automatically restart it whenever the image is refreshed. Simply you could use Docker Compose to set up the whole pipeline.
 
 ```sh
-docker run -d --name sdatech --hostname sda.tech -p 8080:80 -v /var/www/sda.tech/:/data/jekyll/ whitegecko/dockerjekyllpages
+docker-compose up -d
 ```
 
 # Plugins & Externals Used
