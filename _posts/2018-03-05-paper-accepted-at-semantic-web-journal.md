@@ -5,7 +5,6 @@ date:   2018-03-05 11:07:37 +0100
 categories: paper accepted
 ---
 We are very pleased to announce that our group got a paper accepted at Semantic Web Journal on the Benchmarking Linked Data 2017 issue.
-
 The journal Semantic Web – Interoperability, Usability, Applicability (published and printed by IOS Press, ISSN: 1570-0844), in short Semantic Web journal, brings together researchers from various fields which share the vision and need for more effective and meaningful ways to share information across agents and services on the future internet and elsewhere. As such, Semantic Web technologies shall support the seamless integration of data, on-the-fly composition and interoperation of Web services, as well as more intuitive search engines. The semantics – or meaning – of information, however, cannot be defined without a context, which makes personalization, trust, and provenance core topics for Semantic Web research. New retrieval paradigms, user interfaces, and visualization techniques have to unleash the power of the Semantic Web and at the same time hide its complexity from the user. Based on this vision, the journal welcomes contributions ranging from theoretical and foundational research over methods and tools to descriptions of concrete ontologies and applications in all areas.
 
 Here is the accepted paper with its abstract:

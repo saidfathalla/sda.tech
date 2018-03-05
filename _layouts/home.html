@@ -1,7 +1,4 @@
----
-rdf_prefix_path: sda.tech.pref
-layout: default
----
+--- rdf_prefix_path: sda.tech.pref layout: default ---
 <div class="home">
   <!-- Main informative content -->
   <br class="horizontal-separator" />
@@ -12,23 +9,29 @@ layout: default
     </header>
     <br class="horizontal-separator" />
     <!-- Query to Get the department leaders -->
-    {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name . ?Person dbo:leader ?leader . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name . ?Person dbo:leader
+    ?leader . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
     <div class="post-content">
-      The <b>{{site.titleWithAcronym}}</b> research group, led by
+      The
+      <b>{{site.titleWithAcronym}}</b> research group, led by
       <!-- Logic for presenting a leader or multiple leaders -->
       {% assign numberOfLeaders = resultset.size %} {% if numberOfLeaders
-      <=1 %} {% for result in resultset %} {{result.name}}, {% endfor %} {% elsif numberOfLeaders> 1 %} {% assign count = 1 %} {% assign secondlast = numberOfLeaders %} {% assign secondlast = secondlast | minus:1 %} {% for result in resultset %} {% if count == secondlast %} {{result.name}} and {% elsif count
-        <=numberOfLeaders %} {{result.name}},
-          {% else %} the group leader {% endif %} {% assign count=count | plus: 1 %} {% endfor %} {% else %} the group leader {% endif %} has members from the <a href="{{site.eisHomePage}}">{{site.eisName}}</a> at the <a href="{{site.uniBonnHomePage}}">{{site.uniBonnName}}</a>, the <a href="{{site.fraunhoferHomePage}}">{{site.fraunhoferDepartmentName}}</a> and the <a href="{{site.LeipzigHomePage}}">{{site.leipzigDepName}}</a>. At
-          its core, the group investigates machine learning techniques ("analytics") using structured knowledge ("smart data"). The group aims at covering the full spectrum of research including theoretical foundations, algorithms, prototypes and industrial
-          applications.
+      <=1 %} {% for result in resultset %} {{result.name}}, {% endfor %} {% elsif numberOfLeaders> 1 %} {% assign count = 1 %} {% assign secondlast = numberOfLeaders %} {% assign secondlast = secondlast | minus:1 %}
+        {% for result in resultset %} {% if count == secondlast %} {{result.name}} and {% elsif count
+        <=numberOfLeaders %} {{result.name}}, {% else %} the group leader {% endif %} {% assign count=count | plus: 1 %} {% endfor
+          %} {% else %} the group leader {% endif %} has members from the <a href="{{site.eisHomePage}}">{{site.eisName}}</a> at the
+          <a href="{{site.uniBonnHomePage}}">{{site.uniBonnName}}</a>, the
+          <a href="{{site.fraunhoferHomePage}}">{{site.fraunhoferDepartmentName}}</a> and the
+          <a href="{{site.LeipzigHomePage}}">{{site.leipzigDepName}}</a>. At its core, the group investigates machine learning techniques ("analytics") using
+          structured knowledge ("smart data"). The group aims at covering the full spectrum of research including theoretical
+          foundations, algorithms, prototypes and industrial applications.
     </div>
     <br class="horizontal-separator2" />
     <!--Heat Map Area for representing research areas.  -->
     <!-- <div id="basic"> -->
-      <!-- HeatMap goes into this div id, called by the script heatmaptechnologies.js -->
+    <!-- HeatMap goes into this div id, called by the script heatmaptechnologies.js -->
     <!-- </div> -->
-   <!-- {% include slider.html %} -->
+    <!-- {% include slider.html %} -->
     <!-- <div class="post-content quote-alignment">
       <q>Our researchers and developers are working continoulsy on emerging technolgies and research as shown above.</q>
     </div> -->
@@ -37,17 +40,22 @@ layout: default
   <br class="horizontal-separator" />
   <!-- Icon representation of Group and the Activities -->
   <article class="post backgroundMain">
-     <!-- class to be added back if like old style content-container-separation -->
+    <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass  WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?group ?description ?imageclass WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description
+    . ?group dct:description ?longdescription. ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups =
+    page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
-    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture name %}{{group.longdescription}}{% endcapture %} {% assign
-    image=imageClass | append:' fa-3x' %}
+    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{%
+    endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture name %}{{group.longdescription}}{% endcapture
+    %} {% assign image=imageClass | append:' fa-3x' %}
     <div class="groupCard">
       <div class="groupImage">
-        <a href="../{{url}}"><i class="{{image}}"></i></a>
+        <a href="../{{url}}">
+          <i class="{{image}}"></i>
+        </a>
         <h3>{{group.description}}</h3>
       </div>
       <div class="groupName">
@@ -76,9 +84,12 @@ layout: default
         <ul>
           {% for post in site.posts %}
           <li>
-            <a href="{{ post.permalink }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
             <p>{{ post.excerpt }}</p>
           </li>
+          {% if post.excerpt != post.content %}
+          <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+          {% endif %} 
           {% endfor %}
         </ul>
       </div>
