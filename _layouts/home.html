@@ -84,27 +84,13 @@ layout: default
     <br class="horizontal-separator" />
     <div class="blogAndTweet">
       <div class="twoCol1">
-        <!--<ul>
-          {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <p>
-              <small>
-                <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-              </small>
-              {{ post.excerpt }}</p>
-          </li>
-          {% if post.excerpt != post.content %}
-          <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-          {% endif %} {% endfor %}
-        </ul>-->
         <!-- using the split filter -->
         {% for post in site.posts limit:5 %}
         <div class="post-preview">
           <h2>
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h2>
-          <small></small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></div>small>
+          <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></div></small>
           {{ post.content | split:'<!--more-->' | first }} {% if post.content contains '<!--more-->' %}
           <a href="{{ post.url }}">Read more</a>
           {% endif %}
