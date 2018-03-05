@@ -88,13 +88,13 @@ layout: default
        <ul>
           {% for post in site.posts limit:5 %}
           <li>
-            <h2>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h2>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>
             <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></div></small>
             {{ post.content | split:'<!--more-->' | first }} {% if post.content contains '<!--more-->' %}
             <a href="{{ post.url }}">Read more</a>
             {% endif %}
+          </p>
           </li>
           <hr> 
           {% endfor %}
