@@ -1,4 +1,6 @@
-# sda.tech  [![Twitter](https://img.shields.io/twitter/follow/SDA_Research.svg?style=social)](https://twitter.com/SDA_Research)
+# sda.tech 
+[![Build Status](https://travis-ci.org/SmartDataAnalytics/sda.tech.svg?branch=develop)](https://travis-ci.org/SmartDataAnalytics/sda.tech) [![Twitter](https://img.shields.io/twitter/follow/SDA_Research.svg?style=social)](https://twitter.com/SDA_Research)
+
 This is the source of the [sda.tech](http://sda.tech/) website which is served with
 [OntoWiki](http://ontowiki.net), [Jekyll](https://jekyllrb.com/) and [Jekyll-RDF](https://github.com/white-gecko/jekyll-rdf)'s plugin. 
 
