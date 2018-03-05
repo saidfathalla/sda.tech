@@ -15,7 +15,7 @@ layout: default
     {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name .  } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
     <div class="post-content">
       The
-      <b>{{site.titleWithAcronym}}</b> research group, led by [Prof. Dr. Jens Lehmann](http://jens-lehmann.org/)
+      <b>{{site.titleWithAcronym}}</b> research group, led by <a href="{{site.leaderHomePage}}">{{site.leader}}</a>
       <!-- Logic for presenting a leader or multiple leaders -->
       <!-- {% assign numberOfLeaders = resultset.size %} {% if numberOfLeaders
       <=1 %} {% for result in resultset %} {{result.name}}, {% endfor %} {% elsif numberOfLeaders> 1 %} {% assign count = 1 %} {% assign secondlast = numberOfLeaders %} {% assign secondlast = secondlast | minus:1 %}
