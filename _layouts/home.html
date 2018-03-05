@@ -11,8 +11,8 @@ layout: default
       <h1 class="post-title">{{ site.title | escape }}</h1>
     </header>
     <br class="horizontal-separator" />
-    <!-- Query to Get the department leaders -->
-    {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name . ?Person dbo:leader ?leader . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+    <!-- Query to Get the department leaders ?Person dbo:leader ?leader . -->
+    {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name .  } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
     <div class="post-content">
       The <b>{{site.titleWithAcronym}}</b> research group, led by
       <!-- Logic for presenting a leader or multiple leaders -->
@@ -39,25 +39,26 @@ layout: default
   <article class="post backgroundMain">
      <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass  WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?group ?description ?imageclass ?longdescription WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
-    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture name %}{{group.longdescription}}{% endcapture %} {% assign
+    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %} {% assign
     image=imageClass | append:' fa-3x' %}
     <div class="groupCard">
       <div class="groupImage">
         <a href="../{{url}}"><i class="{{image}}"></i></a>
-        <h3>{{group.description}}</h3>
+        <br/><br/>
+        <a href="../{{url}}"><h3>{{group.description}}</h3></a>
       </div>
       <div class="groupName">
-        <div class="chip chipForSmall">
-          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Person" width="96" height="96"> Prof. Dr. Jens Lehmann
+        <div class="groupAbstract">
+          <h4>{{group.longdescription}}</h4>
         </div>
-      </div>
-      <br class="horizontal-separator" />
-      <div class="description-project">
-        <p>{{group.longdescription}}</p>
+        <br/>
+        <div class="chip chipForSmall">
+          <img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Person" width="96" height="96"> Prof. Dr. Jens Lehmann -->
+        </div>
       </div>
     </div>
     {% endfor %}
