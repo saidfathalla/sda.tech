@@ -5,7 +5,7 @@ date:   2018-03-05 11:07:37 +0100
 categories: paper accepted
 ---
 ![SWJ](http://www.semantic-web-journal.net/sites/default/files/blogbuzz_logo.png){:class="img-responsive"}
-![My helpful screenshot]({{ "http://www.semantic-web-journal.net/sites/default/files/blogbuzz_logo.png" | absolute_url }})
+![SWJ]({{ "http://www.semantic-web-journal.net/sites/default/files/blogbuzz_logo.png" | absolute_url }})
 
 We are very pleased to announce that our group got a paper accepted at Semantic Web Journal on the Benchmarking Linked Data 2017 issue.
 
