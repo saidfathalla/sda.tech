@@ -49,7 +49,8 @@ linkedin_username: SDA
 #activeVars
 activePeople: Professors
 activeGroup: Distributed Semantic Analytics
-leader: Larry Lobster
+leader: Prof.Dr. Jens Lehmann
+leaderHomePage: http://jens-lehmann.org/
 
 # Build settings
 markdown: kramdown
