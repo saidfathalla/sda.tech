@@ -55,7 +55,7 @@ leaderHomePage: http://jens-lehmann.org/
 # Build settings
 markdown: kramdown
 theme: minima
-permalink: /:title
+permalink: /:title.html
 plugins:
   - jekyll-feed
   - jekyll-rdf
