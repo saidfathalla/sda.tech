@@ -45,7 +45,7 @@ layout: default
   <article class="post backgroundMain">
     <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass ?longdescription ?leader WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. optional { ?group dbo:leader ?leader }.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?group ?description ?imageclass ?longdescription ?leader ?leadername ?leaderimage WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. optional { ?group dbo:leader ?leader }. optional { ?leader foaf:name ?leadername }. optional { ?leader  foaf:depiction ?leaderimage }.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
@@ -62,10 +62,11 @@ layout: default
           <h4>{{group.longdescription}}</h4>
         </div>
         <br/>
-        
+
         <div class="chip chipForSmall">
-            <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leader}}</a>
-          <!--<img src="http://jens-lehmann.org/images/passbild_lehmann.jpg" alt="Person" width="96" height="96"> Prof. Dr. Jens Lehmann -->
+          {% assign url= group.leader | remove: "http://sda.tech/" %}
+            <!-- <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leadername}}</a> -->
+          <img src="{{group.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{group.leadername}}</a>
         </div>
       </div>
     </div>
@@ -91,7 +92,9 @@ layout: default
             <a href="{{ post.url }}">Read more</a>
             {% endif %}
           </li>
+          <br/>
           <hr>
+          <br/>
           {% endfor %}
         </ul>
       </div>
