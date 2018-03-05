@@ -82,15 +82,12 @@ layout: default
         <!-- using the split filter -->
        <ul>
           {% for post in site.posts limit:5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a>
-          <p>
-            <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></div></small>
+          <li><h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></small>
             {{ post.content | split:'<!--more-->' | first }} {% if post.content contains '<!--more-->' %}
             <a href="{{ post.url }}">Read more</a>
             {% endif %}
-          </p>
           </li>
-          <hr>
           {% endfor %}
         </ul>
       </div>
