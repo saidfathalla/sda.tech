@@ -45,7 +45,7 @@ layout: default
   <article class="post backgroundMain">
     <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass ?longdescription WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. optional { ?group dbo:leader ?leader }.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?group ?description ?imageclass ?longdescription ?leader WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. optional { ?group dbo:leader ?leader }.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
