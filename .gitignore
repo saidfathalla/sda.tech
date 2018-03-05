@@ -1,3 +1,4 @@
- /_site/
- /.saas-cache/*
- /.tweet-cache/*
+.tweet-cache/
+.sass-cache/
+_site/
+_site/**
