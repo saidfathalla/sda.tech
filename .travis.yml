@@ -1,12 +1,11 @@
 language: ruby
 rvm:
-  - 2.2.9
+  - 2.2.2
 install:
   - bundle update
   - bundle install
   - bundle exec jekyll build
-  - bundle exec jekyll serve  
-#- bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://sda.tech/feed.xml"
+  - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://sda.tech/feed.xml"
 
 script: true
 sudo: false
