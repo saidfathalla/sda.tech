@@ -33,7 +33,7 @@ then
     bundle install
 
     # generate the site with jekyll
-    bundle exec jekyll build -s $SOURCE -d $TARGET
+    bundle exec jekyll build -s $SOURCE -d $TARGET --watch
 else
     echo "No Gemfile found use standard jekyll installation"
     # generate the site with jekyll
