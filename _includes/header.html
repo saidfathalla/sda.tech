@@ -48,7 +48,8 @@
               {% for result2 in resultset2 %}
                   {% for page in site.pages %}
                       {% if page.rdf.iri == result2.resource.iri %}
-                        <a class="page-link" href="{{ page.url }}">
+                        {% capture urlNav %}{{page.url}}{% endcapture %}
+                        <a class="page-link" href="{{ urlNav | remove:"index.html" }}">
                           {{ result2.label }}
                         </a>
                       {% endif %}
