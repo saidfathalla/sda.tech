@@ -44,30 +44,38 @@ layout: default
   <!-- Icon representation of Group and the Activities -->
   <article class="post backgroundMain">
     <!-- class to be added back if like old style content-container-separation -->
-    <!--Query to GET all the groupnames and descriptions  -->
-    {% capture query %} SELECT ?group ?description ?imageclass ?longdescription ?leader ?leadername ?leaderimage WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription. optional { ?group dbo:leader ?leader }. optional { ?leader foaf:name ?leadername }. optional { ?leader  foaf:depiction ?leaderimage }.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    <!--Query to GET all the groupnames and metaInformation  -->
+    {% capture query %} SELECT ?group ?description ?imageclass ?longdescription WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:description ?longdescription.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
+    <!--Query to GET associated leaders with the Groupnames-->
+    {% capture query %} SELECT ?group ?description ?leader ?leadername ?leaderimage WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description .  optional { ?group dbo:leader ?leader }. optional { ?leader foaf:name ?leadername }. optional { ?leader  foaf:depiction ?leaderimage }. } {% endcapture %} {% assign groupsWithdbo = page.rdf | sparql_query: query %}
     <header class="post-header">
       <h2 class="post-title">Specialized Groups Working under SDA</h2>
     </header>
-    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %}  {% capture leader %}{{group.leader}}{% endcapture %} {% assign
+    <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %}  {% capture leader %}{{group.leadername}}{% endcapture %} {% assign
     image=imageClass | append:' fa-3x' %}
     <div class="groupCard">
       <div class="groupImage">
-        <a href="../{{url}}"><i class="{{image}}"></i></a>
-        <br/><br/>
-        <a href="../{{url}}"><h3>{{group.description}}</h3></a>
+        <div>
+          <a href="../{{url}}"><i class="{{image}}"></i></a>
+          <br/><br/>
+          <a href="../{{url}}"><h3>{{group.description}}</h3></a>
+        </div>
       </div>
       <div class="groupName">
         <div class="groupAbstract">
           <h4>{{group.longdescription}}</h4>
         </div>
         <br/>
-
-        <div class="chip chipForSmall">
-          {% assign url= group.leader | remove: "http://sda.tech/" %}
-            <!-- <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leadername}}</a> -->
-          <img src="{{group.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{group.leadername}}</a>
-        </div>
+        {% for leaders in groupsWithdbo %}
+          {% capture nameInDbo %}{{leaders.description}}{% endcapture %}
+            {% if name == nameInDbo  %}
+              <div class="chip chipForSmall">
+                {% assign url= leaders.leader | remove: "http://sda.tech/" %}
+                  <!-- <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leadername}}</a> -->
+                <img src="{{leaders.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{leaders.leadername}}</a>
+              </div>
+            {% endif %}
+        {% endfor %}
       </div>
     </div>
     {% endfor %}
@@ -89,16 +97,21 @@ layout: default
         </div>
         <div class="blogContent">
           {% for post in site.posts limit:5 %}
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></small>
-            {{ post.content | split:'<!--more-->' | first }} {% if post.content contains '<!--more-->' %}
-            <a href="{{ post.url }}">Read more</a>
-            {% endif %}
-          </li>
+          <div class="blogItem">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></small>
+              {{ post.content | split:'<!--more-->' | first }} {% if post.content contains '<!--more-->' %}
+              <a href="{{ post.url }}">Read more</a>
+              {% endif %}
+            </li>
+          </div>
           <br/>
           <hr>
           <br/>
           {% endfor %}
+        </div>
+        <div class="blogFooter">
+          <p></p>
         </div>
       </div>
       <div class="twoCol2">

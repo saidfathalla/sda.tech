@@ -334,9 +334,9 @@ text-align: center;
 
 .groupCard {
   background-color: #FFFFFF;
-  min-height: 180px;
+  min-height: 280px;
   width: 94%;
-  padding: 16px;
+  padding-right: 16px;
   margin-bottom: 32px;
   margin-left: 36px;
   margin-right: 36px;
@@ -344,6 +344,7 @@ text-align: center;
   border: 1px solid #EEEEEE;
   float: left;
   display: inline-flex;
+  box-shadow: 0 0 2px 0 rgba(224, 224, 224, 1.0);
 
   .groupAbstract{
     text-align: left;
@@ -359,23 +360,46 @@ text-align: center;
       color: $blue-sda-color;
     }
   }
+
+  .chip {
+      border: 1px solid #E0E0E0;
+      -webkit-box-shadow: 0 0 0 0 #e0e0e0;
+  	   -moz-box-shadow: 0 0 0 0  #e0e0e0;
+  	  box-shadow: 0 0 0 0 #e0e0e0;
+  }
+
+  .chip:hover {
+    background-color: #EEEEEE;
+    -webkit-box-shadow: 0 0 0 0 #e0e0e0;
+    -moz-box-shadow: 0 0 0 0 #e0e0e0;
+    box-shadow: 0 0 0 0 #e0e0e0;
+
+    a {
+      text-decoration: none;
+      color: $blue-sda-color;
+    }
+  }
+
+}
+
+.groupCard:hover {
+  box-shadow: 0 0 10px 0 rgba(224, 224, 224, 1.0);
 }
 
 .groupImage {
   width: 40%;
   text-align: center;
-  padding: 10%;
-  padding-left: 8px;
   padding-right: 8px;
-  vertical-align: middle;
-  border-right: 1px solid;
-  border-color: #e0e0e0;
+  padding-left: 24px;
   float: left;
+  background-color: #EEEEEE;
+  padding-top: 80px;
 
   h3 {
     color: $purple-sda-color;
   }
 }
+
 
 .groupName {
   width: 60%;
@@ -409,7 +433,7 @@ text-align: center;
 
 .chip img {
     float: left !important;
-    margin: 0 10px 0 -25px !important;
+    margin: 0 10px 0 -26px !important;
     height: 50px !important;
     width: 50px !important;
     border-radius: 50% !important;
@@ -482,6 +506,15 @@ text-align: center;
     color: #292F33;
     margin-bottom: 0px;
   }
+}
+
+.blogContent{
+  padding: 10px;
+
+}
+
+.blogItem:hover {
+  background-color: #FAFAFA;
 }
 
 .quote-alignment {
