@@ -6,7 +6,6 @@ install:
   - bundle install
   - bundle exec jekyll build
   # - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://sda.tech/feed.xml"
-  # - bundle exec jekyll serve
 
 script: true
 sudo: false
