@@ -1792,7 +1792,7 @@ sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
 
 ############################Industry Partner########################################
 sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
-                              foaf:homepage <http://www.agroknow.com/agroknow/> ;
+                              foaf:homepage <http://www.agroknow.com/> ;
                               foaf:currentProject sdaproject:BigDataEurope, sdaproject:CAPSELLA,
                               sdaproject:OpenMinTed,
                               sdaproject:FREME,
@@ -1816,6 +1816,7 @@ sdapartner:AGTinternational a foaf:Organization, sdatech:industryPartner, sdatec
                               sdaproject:IndustrialIoT ;
                               rdfs:label "AGT International GmbH" ;
                               foaf:phone <tel:+41-58-2018000> ;
+                              foaf:depiction <https://www.agtinternational.com/wp-content/themes/AGT/homepage/agt3.png> ;
                               schema:location <https://www.agtinternational.com/contact/> ;
                               dct:abstract "AGT and its family of companies provide advanced IoT solution to customers in different industries all over the world. " .
 
@@ -1829,6 +1830,7 @@ sdapartner:AI4BG a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:mbox <mailto:info@ai4bd.com> ;
                               rdfs:label "Artificial Intelligence for Big Data" ;
                               foaf:phone <tel:+49-341-2155910> ;
+                              foaf:depiction <http://ai4bd.com/wp-content/uploads/2016/09/final-logo-ai4bd.png> ;
                               schema:location <http://ai4bd.com/?page_id=10> ;
                               dct:abstract "ai4bd is working with business, scientists, researchers, and governments to solve business problems. " .
 
@@ -1885,6 +1887,7 @@ sdapartner:Atos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                             #  foaf:mbox <mailto:info@ai4bd.com> ;
                               rdfs:label "Atos" ;
                             #  foaf:phone <tel:+44-207-8304444> ;
+                              foaf:depiction <https://atos.net/wp-content/themes/atos/images/atos-logo-menu-bar.png> ;
                               schema:location <https://atos.net/en-gb/united-kingdom/contact-us-uk> ;
                               dct:abstract "Atos' keywords are digital transformation, innovation and value creation, both for our own company and for our clients.. " .
 
@@ -1942,6 +1945,7 @@ sdapartner:CRES a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:mbox <mailto:cres@cres.gr> ;
                               rdfs:label "Center for renewable Energy Sources & Saving" ;
                               foaf:phone <tel:+30-210-6603300> ;
+                              foaf:depiction <http://www.cres.gr/cres/images/demo/cres-logo.png> ;
                               schema:location <http://www.cres.gr/cres/images/demo/map_cres_uk.jpg> .
                               #dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " .
 
@@ -1955,6 +1959,7 @@ sdapartner:ERCIM a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:mbox <mailto:contact@ercim.eu> ;
                               rdfs:label "European Research Consortium for Informatics and Mathematics" ;
                               foaf:phone <tel:+30-210-6603300> ;
+                              foaf:depiction: <https://www.ercim.eu/images/logo-alt.png> ;
                               schema:location <https://www.ercim.eu/contact> ;
                               dct:abstract "ERCIM - the European Research Consortium for Informatics and Mathematics - aims to foster collaborative work within the European research community and to increase co-operation with European industry. Leading European research institutes are members of ERCIM. " .
 
@@ -1964,6 +1969,7 @@ sdapartner:SatCen a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               foaf:mbox <mailto:WEU.RATU@SATCEN.EUROPA.EU> ;
                               rdfs:label "European Union Satellite Centre" ;
                               foaf:phone <tel:+32-2-230-5787> ;
+                              foaf:depiction <https://www.satcen.europa.eu/assets/img/logo_top_3.png> ;
                               schema:location <https://www.satcen.europa.eu/contact> ;
                               dct:abstract "The Centre supports the decision making of the European Union in the field of the Common Foreign and Security Policy (CFSP), in particular the Common Security and Defence Policy (CSDP), including European Union crisis management missions and operations, by providing products and services resulting from the exploitation of relevant space assets and collateral data, including satellite imagery and aerial imagery, and related services. " .
 
@@ -1981,6 +1987,7 @@ sdapartner:FORTH a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:mbox <mailto:central@admin.forth.gr> ;
                               rdfs:label "Foundation for Research and Technology Hellas" ;
                               foaf:phone <tel:+30-2810-3915002> ;
+                              foaf:depiction <https://www.forth.gr/_gfx/bg_index_logo_en.png> ;
                               schema:location <http://www.forth.gr/index_main.php?c=81&l=e> ;
                               dct:abstract "The Foundation for Research and Technology-Hellas (FORTH), established in 1983, is one of the largest research centers in Greece with well organized facilities, highly qualified personnel and a reputation as a top-level research foundation worldwide. FORTH reports to the General Secretariat for Research and Technology of the Hellenic Ministry of Education, Research and Religious Affairs. The Foundation, with headquarters in Heraklion, includes six Research Institutes in different parts of the country. " .
 
@@ -2033,6 +2040,7 @@ sdapartner:imec a foaf:Organization, sdatech:industryPartner, sdatech:Partner ; 
                               foaf:mbox <mailto:info@imec.be> ;
                               rdfs:label "Interuniversity MicroElectronics Center" ;
                               foaf:phone <tel:+32-16-281211> ;
+                              foaf:depiction <https://www.imec-int.com/assets/img/imec-logo.svg> ;
                               schema:location <https://www.imec-int.com/en/connect-with-us> ;
                               dct:abstract "Imec is the world-leading R&D and innovation hub in nanoelectronics and digital technologies. " .
 
@@ -2055,6 +2063,7 @@ sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               foaf:mbox <mailto:info@grupoinmark.com> ;
                               rdfs:label "Consulting services, information and business development" ;
                               foaf:phone <tel:+34-91-4480203> ;
+                              foaf:depiction <http://www.grupoinmark.com/en/wp-content/uploads/2017/04/inmark-logo40a-e1491308242105.png> ;
                               schema:location <http://www.grupoinmark.com/en/index.php/about-inmark/> ;
                               dct:abstract "INMARK is a business and marketing consulting company based in Madrid and operating throughout Europe and Latin America. INMARK has branches in 7 countries, totaling +200 qualified staff members. INMARK delivers fieldwork, analytic and strategic market research studies for leading financial banking institutions, governments, and ICT industry analysts, covering the different market segments." .
 
@@ -2079,6 +2088,7 @@ sdapartner:UniversityOfAthens a foaf:Organization, sdatech:academicPartner, sdat
                               foaf:homepage <http://en.uoa.gr/> ;
                               rdfs:label "National and Kapodistrian University of Athens" ;
                               foaf:phone <tel:+30-210-7275064> ;
+                              foaf:depiction <https://en.uoa.gr/fileadmin/user_upload/uoa_logo_eng.svg> ;
                               schema:location <http://en.uoa.gr/contact-and-maps.html> ;
                               dct:abstract "The National and Kapodistrian University of Athens is the largest state institution of higher learning in Greece, and among the largest universities in Europe. " .
 
@@ -2089,6 +2099,7 @@ sdapartner:NCSR a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               sdaproject:YDS;
                               rdfs:label "National VCentre for Scientific Research Demokritis - Institute of Informatics and Telecommunications" ;
                               foaf:phone <tel:+30-210-6503153> ;
+                              foaf:depiction <https://www.iit.demokritos.gr/resources/images/logo_iit_long.png> ;
                               schema:location <https://www.iit.demokritos.gr/contact> ;
                               dct:abstract "The Institute of Informatics and Telecommunications (IIT) focuses on research and development in the areas of Telecommunications, Networks, Web Technologies and Intelligent Systems. The main strategic objective of IIT is to excel in research and innovation required for the development of the knowledge society. " .
 
@@ -2100,6 +2111,7 @@ sdapartner:Ontos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:mbox <mailto:martin.voigt@ontos.com> ;
                               rdfs:label "Ontos GmbH" ;
                               foaf:phone <tel:+49-341-2155910> ;
+                              foaf:depiction: <http://ontos.com/wp-content/uploads/2016/02/Ontos_logo1_big.png> ;
                               schema:location <http://ontos.com/contact/> ;
                               dct:abstract "Ontos develops and sells software to manage the linked data life-cycle. The portfolio includes the Linked Data Suite, OntosMiner (NLP) and the OntoQUAD graph based store. " .
 
@@ -2110,6 +2122,7 @@ sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               foaf:mbox <mailto:info@openphactsfoundation.org> ;
                               rdfs:label "The Open PHACTS Foundation" ;
                               foaf:phone <tel:+44-1223-432344> ;
+                              foaf:depiction <https://www.openphacts.org/2/images/OP_logo_300dpi.jpg> ;
                               schema:location <http://www.openphactsfoundation.org/contact/> ;
                               dct:abstract "Open PHACTS began as an Innovative Medicines Initiative (IMI) project to build a platform for researchers to access and query publicly-available pharmacological data. Together we have built the Open PHACTS Discovery Platform by bringing together vast amounts of linked data in a single integrated, open infrastructure. " .
 
@@ -2151,6 +2164,7 @@ sdapartner:TomTom a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               foaf:mbox <mailto:tomtom.pr@tomtom.com> ;
                               rdfs:label "TomTom Development Germany GmbH" ;
                               foaf:phone <tel:+31-20-7575000> ;
+                              foaf:depiction <https://webassets.tomtom.com/otf/images/media/E9AEF784-275F-4FA2-A17793784C546C84> ;
                               schema:location <https://mydrive.tomtom.com/en_gb/#mode=search+viewport=52.3773,4.90956,16,0,-0+search=%7B%22input%22:%22TomTom%20De%20Ruijterkade%22,%22coords%22:%5B52.3773,4.90956%5D%7D+ver=2> ;
                               dct:abstract "TomTom founded in 1991 is a world leader of products for in-car location and navigation products. " .
 
@@ -2160,7 +2174,7 @@ sdapartner:UniversityOfLeipzig a foaf:Organization, sdatech:academicPartner, sda
                               sdaproject:ScaDS ;
                               foaf:mbox <mailto:kommunikation@uni-leipzig.de> ;
                               rdfs:label "University of Leipzig" ;
-                              foaf:depiction "http://www.uni-leipzig.de/fileadmin/www.uni-leipzig.de/images/logo/logo-uni-leipzig.png" ;
+                              foaf:depiction <https://upload.wikimedia.org/wikipedia/commons/4/4e/Universit%C3%A4t_Leipzig_logo.svg> ;
                               foaf:phone <tel:+49-341-97108> ;
                               schema:location <https://www.uni-leipzig.de/en/service/contacts.html> ;
                               dct:abstract "University of Leipzig is one of the oldest universities in Europe. It has a long tradition of globally oriented and culturally comparative historical research and third-level teaching. " .
@@ -2178,6 +2192,7 @@ sdapartner:UniversityOfTrento a foaf:Organization, sdatech:academicPartner, sdat
                               foaf:mbox <mailto:ateneo@unitn.it> ;
                               rdfs:label "University Degli Studi di Trento" ;
                               foaf:phone <tel:+39-0461-281111> ;
+                              foaf:depiction <http://static-cdn.unitn.it/sites/www.unitn.it/themes/unitn_theme/images/logo_unitn_en.png> ;
                               schema:location <https://www.unitn.it/en/ateneo/933/contact-the-university-of-trento> ;
                               dct:abstract "Established in 1962, the University of Trento is nowadays recognized as a leading academic institution in Italy and Europe for its quality of research and international outreach, particularly in ICT, economics and sociology. " .
 
@@ -2187,6 +2202,7 @@ sdapartner:USU a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:mbox <mailto:t.gerick@usu.de> ;
                               rdfs:label "USU Software AG" ;
                               foaf:phone <tel:+49-7141-4867440> ;
+                              foaf:depiction <https://cdn.usu.de/typo3conf/ext/imia_usu/Resources/Public/Images/logo-usu.svg> ;
                               schema:location <https://www.usu.de/en/usu-group/companies/usu-software-ag/> ;
                               dct:abstract "USU and its subsidiaries develop and sell complete software solutions for knowledge-based IT service management. " .
 
@@ -2195,6 +2211,7 @@ sdapartner:VUAmsterdam a foaf:Organization, sdatech:academicPartner, sdatech:Par
                               foaf:mbox <mailto:fh@dienst.vu.nl> ;
                               rdfs:label "Vrije Universiteit Amsterdam" ;
                               foaf:phone <tel:+31-20-5985777> ;
+                              foaf:depiction <https://www.vu.nl/en/Images/VUlogo_Wit_RGB_mettekst_tcm270-835563.svg> ;
                               schema:location <https://www.vu.nl/en/about-vu-amsterdam/contact-info-and-route/route-description/index.aspx> ;
                               dct:abstract "Ever since it was founded in 1880, VU Amsterdam has been known for its distinctive approach to knowledge. VU is an open organization, strongly linked to people and society. " .
 
@@ -2203,6 +2220,7 @@ sdapartner:WIGeoGIS a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               foaf:mbox <mailto:muc@wigeogis.com> ;
                               rdfs:label "WIGeoGIS" ;
                               foaf:phone <tel:+49-89-321998-0> ;
+                              foaf:depiction <https://www.wigeogis.com/homepage/hp16/img/logo.png> ;
                               schema:location <https://www.wigeogis.com/en/company> ;
                               dct:abstract "WIGeoGIS is among Europe’s leading companies in spatial business intelligence and geo marketing. " .
 
