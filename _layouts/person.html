@@ -28,16 +28,22 @@ layout: default
       <div class="members-projects links">
         <h3>Research Groups</h3>
         <div class="partnersOfProject">
-          {% capture query %} SELECT ?researchinterests ?projectname ?img WHERE{
-          <{{page.rdf}}> sda:group ?researchinterests . ?researchinterests rdfs:label ?projectname . ?researchinterests sda:imageclass ?imageclass . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-            <!--Displaying all the reseach interests of the person x  -->
-            {% for result in resultset %} {% assign url= result.researchinterests | remove: "http://sda.tech/" %}
-            <div class="chip">
-              <!-- <i class="{{result.img}}" width="96" height="96"></i> -->
-              <i class="{{result.imageclass}} margin-icon"></i>
-              <a href="../../{{url}}">{{result.projectname}}</a>
-            </div>
-            {% endfor %}
+          {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
+          {% capture query %} SELECT ?group ?groupName ?groupImage ?member ?memberName WHERE { ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage . ?group foaf:member ?member . ?member foaf:name ?memberName . }  {% endcapture %}{% assign groups = page.rdf | sparql_query: query %}
+
+          {% for group in groups %}
+            {% capture groupMemeberName %}{{group.memberName}}{% endcapture %}
+            {% assign url= group.group | remove: "http://sda.tech/" %}
+            {% if personName == groupMemeberName %}
+              <div class="chip">
+                <!-- <i class="{{result.img}}" width="96" height="96"></i> -->
+                <i class="{{group.groupImage}} margin-icon"></i>
+                <a href="../../{{url}}">{{group.groupName}}</a>
+              </div>
+            {% endif %}
+          {% endfor %}
+
+
         </div>
         <br class="horizontal-separator2" />
         <br class="horizontal-separator2" />
