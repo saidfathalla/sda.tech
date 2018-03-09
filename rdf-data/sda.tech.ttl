@@ -1548,11 +1548,7 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description """The group focuses on combining Semantic Web and Software Engineering technologies
-* to develop novel methods, techniques, and tools that advance the way in which software is designed, synthetised and assessed;
-* to ensure that our research results have a lasting impact in software development practice;
-* to offer students an education that prepares them to take a leading role in complex software development projects; and
-* to contribute to improve the competetiveness of the industry.""" ;
+                                dct:description """The group focuses on combining Semantic Web and Software Engineering technologies to develop novel methods, techniques, and tools that advance the way in which software is designed, synthetised and assessed.""" ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cogs" .
 
