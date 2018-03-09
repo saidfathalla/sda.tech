@@ -1,7 +1,7 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-permalink: mypageurl.html
+<!-- permalink: mypageurl.html -->
 ---
 {% capture query %} SELECT ?projects ?projectname ?image WHERE{
 <{{page.rdf}}> sdaproject:project ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
