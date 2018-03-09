@@ -2617,8 +2617,21 @@ rdf:_9 a rdfs:ContainerMembershipProperty ;
 foaf:Project a owl:Class ;
              rdfs:label "Project"  .
 
+foaf:Organization sysont:creationLabel "Partner" ;
+                  a owl:Class ;
+                  rdfs:label "Organization" .
+
+foaf:Person sysont:instanceNamingScheme "label" ;
+            a owl:Class ;
+            rdfs:label "Person" .
+
+foaf:Document sysont:instanceNamingScheme "label" ;
+              a owl:Class ;
+              rdfs:label "Document" .
+
 sdatech:about a foaf:Document ;
   rdfs:label "About" .
+  
 
 sdatech:fundedProject a owl:Class ;
                    rdfs:label "Funded Project" ;
