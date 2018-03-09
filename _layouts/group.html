@@ -14,7 +14,7 @@ layout: default
           <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'sda:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
           <br class="horizontal-separator2" />
           <div class="description-project">
-            <p>{{ page.rdf | rdf_property: 'ex:longdescription'}}</p>
+            <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
           </div>
           <br class="horizontal-separator" />
           <div class="members-projects">
@@ -32,7 +32,7 @@ layout: default
             </div>
             <br class="horizontal-separator2" />
             <br class="horizontal-separator2" />
-            <h3>Partners</h3>
+            <h3>Projects</h3>
             <div class="partnersOfProject">
               {% for result in resultset %} {% assign url= result.projects | remove: "http://sda.tech/" %}
               <div class="chip">
