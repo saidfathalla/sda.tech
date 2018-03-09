@@ -312,7 +312,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
                    owl:sameAs <http://aksw.org/GezimSejdiu> ;
                    sda:publicationsTag "sejdiu" ;
-                   sda:room "A120" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Sejdiu" ;
                    foaf:name "Gezim Sejdiu" ;
                    foaf:nick "Gezim" ;
@@ -635,7 +635,7 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "ibrahim" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Ibrahim" ;
                    foaf:name "Shimaa Ibrahim" ;
                    foaf:nick "Shimaa" ;
@@ -698,7 +698,7 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "sadeghi" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Sadeghi" ;
                    foaf:name "Afshin Sadeghi" ;
                    foaf:nick "Afshin" ;
@@ -762,7 +762,7 @@ sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "fathalla" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Fathalla" ;
                    foaf:name "Said Fathalla" ;
                    foaf:nick "Said" ;
@@ -802,7 +802,7 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "ibrahim" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Ibrahim" ;
                    foaf:name "Heba Ibrahim" ;
                    foaf:nick "Heba" ;
@@ -1095,7 +1095,7 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "chakraborty" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Chakraborty" ;
                    foaf:name "Nilesh Chakraborty" ;
                    foaf:nick "Nilesh" ;
