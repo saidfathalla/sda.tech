@@ -1910,6 +1910,7 @@ sdapartner:ComuneDiTrento a foaf:Organization, sdatech:industryPartner, sdatech:
                               foaf:mbox <mailto:comurp@comune.trento.it> ;
                               rdfs:label "Comune Di Trento" ;
                               foaf:phone <tel:+39-461-884111> ;
+                              foaf:depiction <http://www.comune.trento.it/var/comunetn/storage/images/10010715-611-ita-IT/Trento-Citta-Sito-ufficiale-del-Comune-di-Trento_header_only_logo.png> ;
                               schema:location <http://www.comune.trento.it/> ;
                               dct:abstract "Trento is an Italian town of ca. 116,000 inhabitants located in Trentino-Alto Adige/Südtirol. It has historically represented an ideal bridge between the Italian and the German culture. Trento is positioned at the top of Italian cities’ rankings concerning aspects like the education system, business and job opportunities, quality of life, the satisfaction of public services and environmental sustainability. " .
 
@@ -1975,6 +1976,7 @@ sdapartner:FAO a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:mbox <mailto:FAO-HQ@fao.org> ;
                               rdfs:label "Food and Agriculture Organization of the United Nations" ;
                               foaf:phone <tel:+39-06-57051> ;
+                              foaf:depiction <http://www.fao.org/fileadmin/templates/faoboot/css/img/fao-logo-white.svg> ;
                               schema:location <http://www.fao.org/about/who-we-are/worldwide-offices/en/> ;
                               dct:abstract "The Food and Agriculture Organization (FAO) is specialized agency of the United Nations that leads international efforts to defeat hunger. Their goal is to achieve food security for all and make sure that people have regular access to enough high-quality food to lead active, healthy lives. With over 194 member states, FAO works in over 130 countries worldwide. " .
 
@@ -2066,6 +2068,7 @@ sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
 sdapartner:KDNuggets a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.kdnuggets.com/> ;
                               foaf:mbox <mailto:editor1@kdnuggets.com> ;
+                              foaf:depiction <https://www.kdnuggets.com/> ;
                               rdfs:label "KDNuggets - Machine Learning, Data Science, Data Mining, Big Data, Analytics, AI" ;
                               dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " .
 
@@ -2076,6 +2079,7 @@ sdapartner:metaphacts a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               sdaproject:RESEARCHSPACE ;
                               foaf:mbox <mailto:info@metaphacts.com> ;
                               rdfs:label "Metaphacts Software Development" ;
+                              foaf:depiction <http://www.metaphacts.com/images/logo_farbe.png> ;
                               foaf:phone <tel:+49-6227-6989965> ;
                               schema:location <http://www.metaphacts.com/> ;
                               dct:abstract "metaphacts is a Germany-based company offering products, solutions and services for describing, interchanging and querying graph data, as well as a user-oriented open platform for visualizing and interacting with knowledge graphs. " .
@@ -2226,6 +2230,7 @@ sdapartner:YellowMap a foaf:Organization, sdatech:industryPartner, sdatech:Partn
                               rdfs:label "YellowMap" ;
                               foaf:phone <tel:+49-721-9638600> ;
                               schema:location <https://www.yellowmap.com/kontakt/> ;
+                              foaf:depiction <http://www.yellowmap.de/Presentation/YellowMap/Layout/img/Logo_mit_Claim.png> ;
                               dct:abstract "Experienced specialist for card-based geographic information systems and everyday companion in the search for local information. " .
 
 #######################################

@@ -6,7 +6,7 @@ This is the source of the [sda.tech](http://sda.tech/) website which is served w
 
 **For the rdf supported beta, please visit: ** [sda.tech]( http://beta.sda.tech)
 #### Declaimer
-This work it's under heavy development.
+This work is under heavy development.
 # Contents
 
 1. [Setup](#setup)
