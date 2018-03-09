@@ -612,11 +612,11 @@ sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "zafar" ;
-                   sda:room "" ;
+                   sda:room "1.064" ;
                    foaf:familyName "Zafar" ;
                    foaf:name "Hamid Zafar" ;
                    foaf:nick "Hamid" ;
-                   foaf:mbox <mailto:hamid.zafar.tud@gmail.com> ;
+                   foaf:mbox <mailto:hzafarta@cs.uni-bonn.de> ;
                    foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAfVAAAAJDQ0ODU1MTkzLTU4YjUtNDkzNi1hZDI1LTY5YWY5NmYxMGEzZA.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Hamid" ;
@@ -629,7 +629,8 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Hamid Zafar is a PhD Student at the University of Bonn." ;
-                   sda:group sdagroup:SemanticQuestionAnswering .
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:AskNow .
 
 
 sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
@@ -1531,7 +1532,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar ;
                                 dbo:leader sdaperson:GiulioNapolitano ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
