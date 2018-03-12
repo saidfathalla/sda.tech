@@ -312,7 +312,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
                    owl:sameAs <http://aksw.org/GezimSejdiu> ;
                    sda:publicationsTag "sejdiu" ;
-                   sda:room "A120" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Sejdiu" ;
                    foaf:name "Gezim Sejdiu" ;
                    foaf:nick "Gezim" ;
@@ -612,11 +612,11 @@ sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "zafar" ;
-                   sda:room "" ;
+                   sda:room "1.064" ;
                    foaf:familyName "Zafar" ;
                    foaf:name "Hamid Zafar" ;
                    foaf:nick "Hamid" ;
-                   foaf:mbox <mailto:hamid.zafar.tud@gmail.com> ;
+                   foaf:mbox <mailto:hzafarta@cs.uni-bonn.de> ;
                    foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAfVAAAAJDQ0ODU1MTkzLTU4YjUtNDkzNi1hZDI1LTY5YWY5NmYxMGEzZA.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Hamid" ;
@@ -629,12 +629,13 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Hamid Zafar is a PhD Student at the University of Bonn." ;
-                   sda:group sdagroup:SemanticQuestionAnswering .
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:AskNow .
 
 
 sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "ibrahim" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Ibrahim" ;
                    foaf:name "Shimaa Ibrahim" ;
                    foaf:nick "Shimaa" ;
@@ -697,7 +698,7 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "sadeghi" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Sadeghi" ;
                    foaf:name "Afshin Sadeghi" ;
                    foaf:nick "Afshin" ;
@@ -761,7 +762,7 @@ sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "fathalla" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Fathalla" ;
                    foaf:name "Said Fathalla" ;
                    foaf:nick "Said" ;
@@ -801,7 +802,7 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "ibrahim" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Ibrahim" ;
                    foaf:name "Heba Ibrahim" ;
                    foaf:nick "Heba" ;
@@ -1094,7 +1095,7 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "chakraborty" ;
-                   sda:room "" ;
+                   sda:room "1.052" ;
                    foaf:familyName "Chakraborty" ;
                    foaf:name "Nilesh Chakraborty" ;
                    foaf:nick "Nilesh" ;
@@ -1531,7 +1532,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar ;
                                 dbo:leader sdaperson:GiulioNapolitano ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
@@ -1548,11 +1549,7 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description """The group focuses on combining Semantic Web and Software Engineering technologies
-* to develop novel methods, techniques, and tools that advance the way in which software is designed, synthetised and assessed;
-* to ensure that our research results have a lasting impact in software development practice;
-* to offer students an education that prepares them to take a leading role in complex software development projects; and
-* to contribute to improve the competetiveness of the industry.""" ;
+                                dct:description """The group focuses on combining Semantic Web and Software Engineering technologies to develop novel methods, techniques, and tools that advance the way in which software is designed, synthetised and assessed.""" ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cogs" .
 
@@ -1914,6 +1911,7 @@ sdapartner:ComuneDiTrento a foaf:Organization, sdatech:industryPartner, sdatech:
                               foaf:mbox <mailto:comurp@comune.trento.it> ;
                               rdfs:label "Comune Di Trento" ;
                               foaf:phone <tel:+39-461-884111> ;
+                              foaf:depiction <http://www.comune.trento.it/var/comunetn/storage/images/10010715-611-ita-IT/Trento-Citta-Sito-ufficiale-del-Comune-di-Trento_header_only_logo.png> ;
                               schema:location <http://www.comune.trento.it/> ;
                               dct:abstract "Trento is an Italian town of ca. 116,000 inhabitants located in Trentino-Alto Adige/Südtirol. It has historically represented an ideal bridge between the Italian and the German culture. Trento is positioned at the top of Italian cities’ rankings concerning aspects like the education system, business and job opportunities, quality of life, the satisfaction of public services and environmental sustainability. " .
 
@@ -1979,6 +1977,7 @@ sdapartner:FAO a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:mbox <mailto:FAO-HQ@fao.org> ;
                               rdfs:label "Food and Agriculture Organization of the United Nations" ;
                               foaf:phone <tel:+39-06-57051> ;
+                              foaf:depiction <http://www.fao.org/fileadmin/templates/faoboot/css/img/fao-logo-white.svg> ;
                               schema:location <http://www.fao.org/about/who-we-are/worldwide-offices/en/> ;
                               dct:abstract "The Food and Agriculture Organization (FAO) is specialized agency of the United Nations that leads international efforts to defeat hunger. Their goal is to achieve food security for all and make sure that people have regular access to enough high-quality food to lead active, healthy lives. With over 194 member states, FAO works in over 130 countries worldwide. " .
 
@@ -2070,6 +2069,7 @@ sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
 sdapartner:KDNuggets a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.kdnuggets.com/> ;
                               foaf:mbox <mailto:editor1@kdnuggets.com> ;
+                              foaf:depiction <https://www.kdnuggets.com/> ;
                               rdfs:label "KDNuggets - Machine Learning, Data Science, Data Mining, Big Data, Analytics, AI" ;
                               dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " .
 
@@ -2080,6 +2080,7 @@ sdapartner:metaphacts a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               sdaproject:RESEARCHSPACE ;
                               foaf:mbox <mailto:info@metaphacts.com> ;
                               rdfs:label "Metaphacts Software Development" ;
+                              foaf:depiction <http://www.metaphacts.com/images/logo_farbe.png> ;
                               foaf:phone <tel:+49-6227-6989965> ;
                               schema:location <http://www.metaphacts.com/> ;
                               dct:abstract "metaphacts is a Germany-based company offering products, solutions and services for describing, interchanging and querying graph data, as well as a user-oriented open platform for visualizing and interacting with knowledge graphs. " .
@@ -2230,6 +2231,7 @@ sdapartner:YellowMap a foaf:Organization, sdatech:industryPartner, sdatech:Partn
                               rdfs:label "YellowMap" ;
                               foaf:phone <tel:+49-721-9638600> ;
                               schema:location <https://www.yellowmap.com/kontakt/> ;
+                              foaf:depiction <http://www.yellowmap.de/Presentation/YellowMap/Layout/img/Logo_mit_Claim.png> ;
                               dct:abstract "Experienced specialist for card-based geographic information systems and everyday companion in the search for local information. " .
 
 #######################################
@@ -2619,8 +2621,21 @@ rdf:_9 a rdfs:ContainerMembershipProperty ;
 foaf:Project a owl:Class ;
              rdfs:label "Project"  .
 
+foaf:Organization sysont:creationLabel "Partner" ;
+                  a owl:Class ;
+                  rdfs:label "Organization" .
+
+foaf:Person sysont:instanceNamingScheme "label" ;
+            a owl:Class ;
+            rdfs:label "Person" .
+
+foaf:Document sysont:instanceNamingScheme "label" ;
+              a owl:Class ;
+              rdfs:label "Document" .
+
 sdatech:about a foaf:Document ;
   rdfs:label "About" .
+  
 
 sdatech:fundedProject a owl:Class ;
                    rdfs:label "Funded Project" ;

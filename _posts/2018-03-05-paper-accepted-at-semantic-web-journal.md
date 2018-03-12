@@ -1,10 +1,11 @@
 ---
+rdf_prefix_path: sda.tech.pref
 layout: post
 title:  "Paper accepted at Semantic Web Journal"
 date:   2018-03-05 11:07:37 +0100
 #categories: paper accepted
 author: Gezim Sejdiu
-permalink: paper-accepted-at-semantic-web-journal
+#permalink: paper-accepted-at-semantic-web-journal
 ---
 We are very pleased to announce that our group got a paper accepted at [Semantic Web Journal](http://www.semantic-web-journal.net/) on the Benchmarking Linked Data 2017 issue.
 <!--more-->

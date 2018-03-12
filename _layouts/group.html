@@ -1,10 +1,10 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-permalink: mypageurl.html
+<!-- permalink: mypageurl.html -->
 ---
 {% capture query %} SELECT ?projects ?projectname ?image WHERE{
-<{{page.rdf}}> sdaproject:project ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
+<{{page.rdf}}> foaf:currentProject ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
   <{{page.rdf}}> foaf:member ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
     <!--Presentation of the GROUP Items-->
     <article class="post">
@@ -14,7 +14,7 @@ permalink: mypageurl.html
           <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'sda:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
           <br class="horizontal-separator2" />
           <div class="description-project">
-            <p>{{ page.rdf | rdf_property: 'ex:longdescription'}}</p>
+            <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
           </div>
           <br class="horizontal-separator" />
           <div class="members-projects">
@@ -32,7 +32,7 @@ permalink: mypageurl.html
             </div>
             <br class="horizontal-separator2" />
             <br class="horizontal-separator2" />
-            <h3>Partners</h3>
+            <h3>Projects</h3>
             <div class="partnersOfProject">
               {% for result in resultset %} {% assign url= result.projects | remove: "http://sda.tech/" %}
               <div class="chip">
