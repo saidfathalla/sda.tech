@@ -2540,6 +2540,9 @@ sdatech:job a foaf:Document ;
 sdatech:contact a foaf:Document ;
       rdfs:label "Contact" .
 
+sdatech:blog a foaf:Document ;
+      rdfs:label "Blog" .
+
 ex:linkeddata a ex:researchinterests ;
               rdfs:label "linked data" ;
               ex:description "The future of SHared Ontology REfining for enterprise business" ;

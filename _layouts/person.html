@@ -30,7 +30,7 @@ layout: default
         <div class="partnersOfProject">
           {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
           {% capture query %} SELECT ?group ?groupName ?groupImage ?member ?memberName WHERE { ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage . ?group foaf:member ?member . ?member foaf:name ?memberName . }  {% endcapture %}{% assign groups = page.rdf | sparql_query: query %}
-
+          <!-- Dieplaying the groups of particular members -->
           {% for group in groups %}
             {% capture groupMemeberName %}{{group.memberName}}{% endcapture %}
             {% assign url= group.group | remove: "http://sda.tech/" %}
@@ -42,8 +42,6 @@ layout: default
               </div>
             {% endif %}
           {% endfor %}
-
-
         </div>
         <br class="horizontal-separator2" />
         <br class="horizontal-separator2" />

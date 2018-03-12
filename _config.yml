@@ -97,6 +97,7 @@ jekyll_rdf:
         "http://sda.tech/about" : "page.html"
         "http://sda.tech/people" : "people.html"
         "http://sda.tech/contact" : "contact.html"
+        "http://sda.tech/blog" : "blog.html"
         # "http://example.org/blog" : "blog.html"
         "http://sda.tech/thesis" : "thesis.html"
 

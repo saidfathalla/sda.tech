@@ -66,6 +66,7 @@ layout: default
           <h4>{{group.longdescription}}</h4>
         </div>
         <br/>
+        <h3 style="text-align:left;color:black;margin-left:24px;">Group Leader</h3>
         {% for leaders in groupsWithdbo %}
           {% capture nameInDbo %}{{leaders.description}}{% endcapture %}
             {% if name == nameInDbo  %}
@@ -105,21 +106,29 @@ layout: default
               {% endif %}
             </li>
           </div>
-          <br/>
-          <hr>
-          <br/>
           {% endfor %}
         </div>
         <div class="blogFooter">
-          <p></p>
+          <p>ABC</p>
         </div>
       </div>
       <div class="twoCol2">
         <div class='jekyll-twitter-plugin'>
-          {% twitter https://twitter.com/sda_research maxwidth=500 align=right link-color=#0896fe limit=3 %}
+          {% twitter https://twitter.com/sda_research maxwidth=500 align=right link-color=#0896fe limit=5 %}
         </div>
       </div>
     </div>
   </article>
+  <br class="horizontal-separator" />
+  <br class="horizontal-separator" />
+  <!-- <article class="post backgroundMain ">
+    <header class="post-header">
+      <h2 class="post-title">Our Group is Funded By </h2>
+      <br class="horizontal-separator" />
+      <div class="cardItem">
+        Rohan Asmat
+      </div>
+    </header>
+  </article> -->
   <br class="horizontal-separator2" />
 </div>
