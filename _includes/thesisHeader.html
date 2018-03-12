@@ -1,0 +1,15 @@
+<div class="pagination">
+  <div class="status-thesis">
+    <a href="#" id="all" class="{% if include.active == 'bachelor' %}active{% endif %} responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-users margin-icon" aria-hidden="true"></i>
+      Bachelor Theses</a>
+    <a href="#" id="start" class="{% if include.active == 'master' %}active{% endif %} responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
+      Master Theses</a>
+    <a href="#" id="end" class="{% if include.active == 'ongoing' %}active{% endif %} responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
+      On Going Theses</a>
+    <a href="#" id="faqThesis" class="{% if include.active == 'faq' %}active{% endif %} responsiveTabItem" onclick="faqThesisToggle()"><i class="fa fa-question-circle" aria-hidden="true"></i>
+      FAQ</a>
+    <br/>
+    <br/>
+    <hr/>
+  </div>
+</div>

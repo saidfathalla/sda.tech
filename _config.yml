@@ -100,6 +100,11 @@ jekyll_rdf:
         "http://sda.tech/blog" : "blog.html"
         # "http://example.org/blog" : "blog.html"
         "http://sda.tech/thesis" : "thesis.html"
+        "http://sda.tech/bachelorthesis" : "bachelorthesis.html"
+        "http://sda.tech/masterthesis" : "masterthesis.html"
+        "http://sda.tech/ongoingthesis" : "ongoingthesis.html"
+        "http://sda.tech/faqthesis" : "faqthesis.html"
+
 
 
 

@@ -2583,6 +2583,20 @@ sdatech:thesis a foaf:Document ;
           ex:description "The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas" ;
           ex:longdescription "Please note that the list below is only a small sample of possible topics and ideas. Please contact us to discuss further, to find new topics, or to suggest a topic of your own." .
 
+sdatech:bachelorthesis a foaf:Document ;
+          rdfs:label "Bachelor Thesis" .
+
+sdatech:faqthesis a foaf:Document ;
+          rdfs:label "FAQ Thesis" .
+
+
+sdatech:masterthesis a foaf:Document ;
+          rdfs:label "Master Thesis" .
+
+
+sdatech:ongoingthesis a foaf:Document ;
+          rdfs:label "On Going Thesis" .
+
 
 ex:thesisItem a ex:thesis ;
               rdfs:label "Thesis Item" .
@@ -2635,7 +2649,7 @@ foaf:Document sysont:instanceNamingScheme "label" ;
 
 sdatech:about a foaf:Document ;
   rdfs:label "About" .
-  
+
 
 sdatech:fundedProject a owl:Class ;
                    rdfs:label "Funded Project" ;

@@ -8,6 +8,7 @@
     document.getElementById('start').classList.add('active');
     document.getElementById('faqThesisContent').style.display = 'none';
     document.getElementById('faqThesis').classList.remove('active');
+    history.pushState(null, null, '/masterthesis/');
   }
 
   function activeFinishedThesis() {
@@ -19,6 +20,7 @@
     document.getElementById('end').classList.add('active');
     document.getElementById('faqThesisContent').style.display = 'none';
     document.getElementById('faqThesis').classList.remove('active');
+    history.pushState(null, null, '/ongoing/');
   }
 
   function allThesisItems() {
@@ -30,6 +32,7 @@
     document.getElementById('end').classList.remove('active');
     document.getElementById('faqThesisContent').style.display = 'none';
     document.getElementById('faqThesis').classList.remove('active');
+    history.pushState(null, null, '/bachelorthesis/');
   }
 
   function faqThesisToggle() {
@@ -41,5 +44,6 @@
     document.getElementById('end').classList.remove('active');
     document.getElementById('faqThesisContent').style.display = 'block';
     document.getElementById('faqThesis').classList.add('active');
+    history.pushState(null, null, '/faqthesis/');
   }
 </script>

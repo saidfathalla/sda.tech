@@ -1,0 +1,73 @@
+<div class="thesis-items content-people">
+  <br class="horizontal-separator" />
+  <div id="allThesis" style="{% if include.active == 'bachelor' %}display:block{% else %}display:none{% endif %}">
+    <div class="toggleOpenArchived" >
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round" onclick="switchBachelorThesis();"></span>
+      </label>
+    </div>
+    <br/><br/>
+    <div id="openBachelorsTheses" style="display:block">
+      <!--QUERY for open Bachelor Thesis  -->
+      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:bachelorThesis .  ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
+       <!-- Presentation for Open Bachelor Thesis  -->
+       {% for thesis in openBachelorsThesis %}
+          {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+        {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+       {% endfor %}
+    </div>
+    <div id="archivedBachelorThesis" style="display:none">
+      <!--QUERY for archived Bachelor Thesis  -->
+      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:bachelorThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign archivedBachelorsThesis = page.rdf | sparql_query: query %}
+       <!-- PRESENTATION for ARCHIVED BACHELOR THESIS -->
+       {% for thesis in archivedBachelorsThesis %}
+          {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+        {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+       {% endfor %}
+    </div>
+  </div>
+  <div id="openThesis" style="{% if include.active == 'master' %}display:block{% else %}display:none{% endif %}">
+    <div class="toggleOpenArchived" >
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round" onclick="switchMasterThesis();"></span>
+      </label>
+    </div>
+    <br/><br/>
+    <div id="openMasterTheses" style="display:block">
+      <!--QUERY for open Master Thesis  -->
+      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openMasterThesis = page.rdf | sparql_query: query %}
+       <!--PRESENTATION Of open Master Thesis  -->
+       {% for thesis in openMasterThesis %}
+          {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+        {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+       {% endfor %}
+    </div>
+    <div id="archivedMasterThesis" style="display:none">
+      <!--QUERY for archived Master Thesis  -->
+      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign archivedMasterThesis = page.rdf | sparql_query: query %}
+      <!--PRESENTATION Of Archived Master Thesis  -->
+      {% for thesis in archivedMasterThesis %}
+         {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+       {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+      {% endfor %}
+    </div>
+  </div>
+  <div id="finishedThesis" style="{% if include.active == 'ongoing' %}display:block{% else %}display:none{% endif %}">
+      <!-- QUERY for OnGoingThesis  -->
+      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
+       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:ongoingThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . ?thesis foaf:homepage ?link . } {% endcapture %} {% assign openOngoingThesis = page.rdf | sparql_query: query %}
+       <!--PRESENTATION Of OnGoing Thesis  -->
+       {% for thesis in openOngoingThesis %}
+          {% capture thesisTitle %}{{thesis.thesisTitle}}{% endcapture %}
+        {% include  thesisItem.html title=thesisTitle href=thesis.link language=thesis.language description=thesis.abstract personList=personsInThesis %}
+       {% endfor %}
+  </div>
+  <div id="faqThesisContent" style="{% if include.active == 'faq' %}display:block{% else %}display:none{% endif %}">
+  </div>
+</div>
