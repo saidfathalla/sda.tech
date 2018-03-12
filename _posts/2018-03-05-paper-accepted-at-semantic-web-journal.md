@@ -3,6 +3,7 @@ rdf_prefix_path: sda.tech.pref
 layout: post
 title:  "Paper accepted at Semantic Web Journal"
 date:   2018-03-05 11:07:37 +0100
+genre:  "blog"
 #categories: paper accepted
 author: Gezim Sejdiu
 #permalink: paper-accepted-at-semantic-web-journal
@@ -14,7 +15,7 @@ The journal Semantic Web – _Interoperability, Usability, Applicability_ (publi
 Here is the accepted paper with its abstract:
 * “**[SML-Bench -- A Benchmarking Framework for Structured Machine Learning](http://www.semantic-web-journal.net/system/files/swj1810.pdf)**”
  by Patrick Westphal, Lorenz Bühmann, Simon Bin, Hajira Jabeen, Jens Lehmann
- 
+
  >**Abstract**: _The availability of structured data has increased significantly over the past decade and several approaches to learn from structured data have been proposed. These logic-based, inductive learning methods are often conceptually similar, which would allow a comparison among them even if they stem from different research communities. However, so far no efforts were made to define an environment for running learning tasks on a variety of tools, covering multiple knowledge representation languages. With SML-Bench, we propose a benchmarking framework to run inductive learning tools from the ILP and semantic web communities on a selection of learning problems. In this paper, we present the foundations of SML-Bench, discuss the systematic selection of benchmarking datasets and learning problems, and showcase an actual benchmark run on the currently supported tools._
 
 #### Acknowledgement

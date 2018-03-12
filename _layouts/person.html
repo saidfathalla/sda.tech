@@ -16,8 +16,10 @@ layout: default
           <a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
       </div>
       <br class="horizontal-separator2" />
-      <div class="membersofProject" style="text-align:center;">
-        <p><span style="padding-right:8px;"><i class="fa fa-home" aria-hidden="true"></i> Room Number: {{page.rdf | rdf_property: 'sda:room'}}</span> <span style="padding-right:8px;"> <i class="fa fa-phone" aria-hidden="true"></i> {{page.rdf | rdf_property: 'foaf:phone'}} </span> <span style="padding-right:8px;"> <i class="fa fa-envelope" aria-hidden="true"></i> {{page.rdf | rdf_property: 'foaf:mbox'}} </span>  </p>
+      <div style="text-align:center;">
+        <div class="membersofProject" >
+          <p><span style="padding-right:8px;"><i class="fa fa-home" aria-hidden="true"></i> Room Number: {{page.rdf | rdf_property: 'sda:room'}}</span> <span style="padding-right:8px;"> <i class="fa fa-phone" aria-hidden="true"></i> {{page.rdf | rdf_property: 'foaf:phone'}} </span> <span style="padding-right:8px;"> <i class="fa fa-envelope" aria-hidden="true"></i> {{page.rdf | rdf_property: 'foaf:mbox'}} </span>  </p>
+        </div>
       </div>
       <br class="horizontal-separator2" />
       <br class="horizontal-separator2" />
