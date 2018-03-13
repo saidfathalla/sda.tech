@@ -655,8 +655,9 @@ img {
 
 .sitelogo {
   padding: 8px;
-  width: 300px;
+  width: 220px;
   height: 100px;
+  object-fit: contain;
 }
 
 .container {
