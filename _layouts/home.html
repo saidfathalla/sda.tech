@@ -14,7 +14,7 @@ layout: default
     <br class="horizontal-separator" />
     <!-- Query to Get the department leaders ?Person dbo:leader ?leader . -->
     {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name .  } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-    <div class="post-content">
+    <div class="post-content ">
       The
       <b>{{site.titleWithAcronym}}</b> research group, led by <a href="{{site.leaderHomePage}}">{{site.leader}}</a>
       <!-- Logic for presenting a leader or multiple leaders -->

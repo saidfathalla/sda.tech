@@ -1,6 +1,6 @@
 ---
 rdf_prefix_path: sda.tech.pref
-layout: post
+layout: default
 title:  "Paper accepted at Semantic Web Journal"
 date:   2018-03-05 11:07:37 +0100
 genre:  "blog"
