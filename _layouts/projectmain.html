@@ -44,7 +44,7 @@ layout: default
         . ?project ex:longdescription ?longdescription . ?project foaf:depiction ?image . ?project ex:homepage ?homepage . ?project ex:twitter ?twitter . ?project ex:source ?source . ?project ex:download ?download . } {% endcapture %} {% assign opensource
         = page.rdf | sparql_query: query %} {% assign opensourceCount = opensource | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
         <!-- Presentation of the Incubators Projects  -->
-        {% for open in opensource %} {% if iterator == opensourceCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign url= open.project | remove: "http://example.org/" %} {% include projectItem.html title=open.title image=open.image
+        {% for open in opensource %} {% if iterator == opensourceCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign url= open.project | remove: "http://sda.tech/" %} {% include projectItem.html title=open.title image=open.image
         description=open.longdescription last=lastItem href=url homepage=open.homepage twitter=open.twitter source=open.source download=open.download %} {% assign iterator = iterator | plus:1 %} {% endfor %}
       </div>
       <div id="incubatorProjects" style="display:none">
@@ -53,7 +53,7 @@ layout: default
         . ?project ex:longdescription ?longdescription . ?project foaf:depiction ?image . ?project ex:homepage ?homepage . ?project ex:twitter ?twitter . ?project ex:source ?source . ?project ex:download ?download . } {% endcapture %} {% assign incubators
         = page.rdf | sparql_query: query %} {% assign incubatorsCount = incubators | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
         <!-- Presentation of the Open Source Projects  -->
-        {% for incubator in incubators %} {% if iterator == incubatorsCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign url= incubator.project | remove: "http://example.org/" %} {% include projectItem.html title=incubator.title
+        {% for incubator in incubators %} {% if iterator == incubatorsCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign url= incubator.project | remove: "http://sda.tech/" %} {% include projectItem.html title=incubator.title
         image=incubator.image description=incubator.longdescription last=lastItem href=url homepage=incubator.homepage twitter=incubator.twitter source=incubator.source download=incubator.download url=url %} {% assign iterator = iterator | plus:1 %} {%
         endfor %}
       </div>

@@ -1653,7 +1653,7 @@ sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
 sdaproject:GEISER a foaf:Project, sdatech:fundedProject ;
          rdfs:label "GEISER" ;
          foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister ;
-         foaf:depiction <http://www.slipo.eu/wp-content/uploads/2017/02/Slipo_vertical_1.png> ;
+         foaf:depiction <https://www.projekt-geiser.de/wp-content/uploads/2016/06/Geiser_Logo2016_rgb.png> ;
          ex:description "Benchmarking sensor data to Internet-based Geo-Services" ;
          ex:longdescription "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
          ex:funded "Funded Project" ;
@@ -1758,7 +1758,7 @@ sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
 ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "DeFacto" ;
            foaf:member sdaperson:JensLehmann, sdaperson:DiegoEsteves ;
-           foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/candidate1.png> ;
+           foaf:depiction </assets/sdalogo.png> ;
            ex:description "Deep Fact Validation" ;
            ex:longdescription "DeFacto (Deep Fact Validation) is an algorithm for validating statements by finding confirming sources for it on the web. It takes a statement (such as “Jamaica Inn was directed by Alfred Hitchcock”) as input and then tries to find evidence for the truth of that statement by searching for information in the web." ;
            sda:twitter "undefined" ;
@@ -2338,7 +2338,7 @@ sdathesis:HangtongThesis a dct:BibliographicResource, bibo:Thesis, sdatech:openT
     dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
         In this network and its genesis, collaboration played and still plays a crucial role.
         But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
-        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        Ingitspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
         The system is based on Git and provides distributed collaboration on RDF graphs.
         This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
@@ -2359,7 +2359,7 @@ ex:InformationRetrieval a ex:course ;
 ex:MEXVocabulary a ex:project ;
                  rdfs:label "MEX Vocabulary" ;
                  foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2016/02/candidate1.png> ;
+                 foaf:depiction </assets/sdalogo.png> ;
                  ex:description "A Light-Weight Interchange Format for Machine Learning Experiments" ;
                  ex:longdescription "MEX Vocabulary: A Light-Weight Interchange Format for Machine Learning Experiments" ;
                  ex:twitter "undefined" ;
