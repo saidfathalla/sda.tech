@@ -2238,111 +2238,142 @@ sdapartner:YellowMap a foaf:Organization, sdatech:industryPartner, sdatech:Partn
 ##########Thesis Model###############
 #######################################
 
-########################onGoingThesis########################
-sdathesis:thesisC a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:bachelorThesis ;
-    dct:title "CEUR MAKE Graphical User Interface CEUR GUI" ;
-    dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
-    foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+########################Open Thesis########################
+sdathesis:distributed-in-memory-SPARQL-processing a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Distributed in-memory SPARQL Processing" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
     dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:isPartOf <icwe2017> ;
     dct:language "en-US" ;
-    dct:publisher <https://springer.com/> ;
     bibo:degree biboDegree:phd ;
-    foaf:homepage <http://ai4bd.com/?page_id=4> ;
+    foaf:homepage <http://sansa-stack.net/> ;
     sda:thesisLevel "MS,BS" ;
-    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
-    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
-    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
-        In this network and its genesis, collaboration played and still plays a crucial role.
-        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
-        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
-        The system is based on Git and provides distributed collaboration on RDF graphs.
-        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+    dct:abstract """SPARQL queries search for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.""" .
+
+sdathesis:entity-resolution a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Entity Resolution" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://sansa-stack.net/> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy.""" .
+
+sdathesis:rule_concept-learning-using-swarm-and-evolutionary-computation a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Rule/Concept Learning using Swarm and Evolutionary Computation" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """In the Semantic Web context, OWL ontologies play the key role of domain conceptualizations while the corresponding assertional knowledge is given by the heterogeneous Web resources referring to them. However, being strongly decoupled, ontologies and assertional bases can be out of sync. In particular, an ontology may be incomplete, noisy, and sometimes inconsistent with the actual usage of its conceptual vocabulary in the assertions. Despite of such problematic situations, we aim at discovering hidden knowledge patterns from ontological knowledge bases, in the form of multi-relational association rules, by exploiting the evidence coming from the (evolving) assertional data. The final goal is to make use of such patterns for (semi-)automatically enriching/completing existing ontologies.""" .
+
+sdathesis:intelligent-semantic-creativity_culinarian a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Intelligent Semantic Creativity : Culinarian" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """Computational creativity is an emerging branch of artificial intelligence that places computers in the center of the creative process. We aimt to create a computational system that creates flavorful, novel, and perhaps healthy culinary recipes by drawing on big data techniques. It brings analytics algorithms together with disparate data sources from culinary science.
+In the most ambitious form, the system would employ human-computer interaction for rating different recipes and model the human cogitive ability for the cooking process.
+The end result is going to be an ingredient list, proportions, and as well as a directed acyclic graph representing a partial ordering of culinary recipe steps.""" .
+
+sdathesis:iot-data-catalogues a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "IoT Data Catalogues" ;
+    dct:creator sdaperson:JensLehmann ;
+    foaf:maker sdaperson:JensLehmann ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage </assets/JD-Master-Thesis-IoT-Data-Catalogues.pdf> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """While platforms and tools such as Hadoop and Apache Spark allow for efficient processing of Big Data sets, it becomes increasingly challenging to organize and structure these data sets. Data sets have various forms ranging from unstructured data in files to structured data in databases. Often the data sets reside in different storage systems ranging from traditional file systems, over Big Data files systems (HDFS) to heterogeneous storage systems (S3, RDBMS, MongoDB, Elastic Search, …). At AGT International, we are dealing primarily with IoT data sets, i.e. data sets that have been collected from sensors and that are processed using Machine Learning-based (ML) analytic pipelines. The number of these data sets is rapidly growing increasing the importance of generating metadata that captures both technical (e.g. storage location, size) and domain metadata and correlates the data sets with each other, e.g. by storing provenance (data set x is a processed version of data set y) and domain relationships.""" .
+
+sdathesis:understanding-short-text-a-named-entity-recognition-perspective  a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Understanding Short-Text: a Named Entity Recognition perspective " ;
+    dct:creator sdaperson:DiegoEsteves ;
+    foaf:maker sdaperson:DiegoEsteves ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage  <https://www.researchgate.net/project/Boosting-Named-Entity-Recognition-NER-Systems> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """ Named Entity Recognition (NER) models play an important role in the Information Extraction (IE) pipeline. However, despite decent performance of NER models on newswire datasets, to date, conventional approaches are not able to successfully identify classical named-entity types in short/noisy texts. This thesis will thoroughly investigate NER in microblogs and propose new algorithms to overcome current state-of-the-art models in this research area.""" .
+
+sdathesis:multilingual-fact-validation-algorithms a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Multilingual Fact Validation Algorithms" ;
+    dct:creator sdaperson:DiegoEsteves ;
+    foaf:maker sdaperson:DiegoEsteves ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <https://github.com/SmartDataAnalytics/DeFacto> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """DeFacto (Deep Fact Validation) is an algorithm able to validate facts by finding trustworthy sources for them on the Web. Currently, it supports 3 main languages (en, de and fr). The goal of this thesis is to explore and implement alternative information retrieval (IR) methods to minimize the dependency of external tools on verbalizing natural language patterns. As result, we expect to enhance the algorithm performance by expanding its coverage.""" .
+
+sdathesis:experimental-analysis-of-class-cs-problems a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Experimental Analysis of Class CS Problems" ;
+    dct:creator sdaperson:DiegoEsteves ;
+    foaf:maker sdaperson:DiegoEsteves ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """In this thesis, we explore unsolved problems of theoretical computer science with machine learning methods, especially reinforcement learning.""" .
+
+sdathesis:generating-property-graphs-from-rdf-using-a-semantic-preserving-conversion-approach a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:bachelorThesis ;
+    dct:title "Generating Property Graphs from RDF using a semantic preserving conversion approach" ;
+    dct:creator sdaperson:HarshThakkar ;
+    foaf:maker sdaperson:HarshThakkar ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "BS" ;
+    dct:abstract """Graph Databases are on a rise since the last decade due to their dominance in mining and analysis of complex networks. Property Graphs (PGs), one of the graph data models which Graph Databases use, are suitable for the representation of many real-life application scenarios. They allow to efficiently represent complex networks (e.g. social networks, E-commerce) and interactions. In order to leverage this advantage of graph databases, conversions of other data models to property graphs are a current area of research. The aim of this thesis is to (i) propose a novel systematic conversion approach for generating PGs from RDF (one of the graph data models) (ii) and carry out exhaustive experiments on both RDF and PG datasets with respect to their native storage databases (i.e. Graph DBs vs Triplestores). This will allow to identify the types of queries for which graph databases offer performance advantages and ideally allow to adapt the storage mechanism accordingly. The outcome of this work will be integrated into the LITMUS framework, which is an open extensible framework for benchmarking of diverse Data Management Solutions.""" .
+
+sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Recommendation system for RDF partitioners" ;
+    dct:creator sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
+    foaf:maker sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
+
+
+
+########################onGoingThesis########################
+sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+    dct:title "Big Data quality Assessment" ;
+    dct:creator sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://sansa-stack.net/> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """Data quality is considered as a multidimensional concept that covers different aspects of quality such as accuracy, completeness, and timeliness. With the advent of Big Data, traditional quality assessment techniques are facing different challenges. Therefore, we should adopt the traditional techniques to big data technologies. The goal of this thesis is to re-implement the assessment techniques in the SANSA framework.""" .
+
+sdathesis:graph-partitioning-for-rdf-data  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+    dct:title "Graph partitioning for RDF data" ;
+    dct:creator sdaperson:IoannaLytra, sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:IoannaLytra, sdaperson:GezimSejdiu ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://sansa-stack.net/> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """Big RDF datasets need to be stored and processed in distributed RDF data stores that are built on top of cluster servers. Several partitioning schemes like horizontal, vertical, and hash partitioning, exist that allow for splitting the datasets into several nodes, in order to achieve scalability and efficient query processing. The goal of this thesis is to study graph partitioning approaches for RDF data, compare the state of the art, and implement corresponding algorithms that will be integrated into the <a href='http://sansa-stack.net/'>SANSA</a> framework.""" .
 
 ###############################################################
-sdathesis:thesisE a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis , sdatech:bachelorThesis ;
-    dct:title "Decentralizing Evolution and  of RDF Graphs" ;
-    dct:creator sdaperson:JensLehmann, sdaperson:SteveJobs ;
-    foaf:maker sdaperson:JensLehmann, sdaperson:SteveJobs ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:isPartOf <icwe2017> ;
-    dct:language "en-US" ;
-    dct:publisher <https://springer.com/> ;
-    bibo:degree biboDegree:phd ;
-    foaf:homepage <http://ai4bd.com/?page_id=4> ;
-    sda:thesisLevel "MS,BS" ;
-    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
-    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
-    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
-        In this network and its genesis, collaboration played and still plays a crucial role.
-        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
-        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
-        The system is based on Git and provides distributed collaboration on RDF graphs.
-        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
 
 ######################Archived Thesis###########################
-sdathesis:thesisB a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis , sdatech:bachelorThesis ;
-    dct:title "Decentralized Evolution and  of RDF Graphs" ;
-    dct:creator sdaperson:JensLehmann, sdaperson:AlexanderKister ;
-    foaf:maker sdaperson:JensLehmann, sdaperson:AlexanderKister ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:isPartOf <icwe2017> ;
-    dct:language "en-US" ;
-    dct:publisher <https://springer.com/> ;
-    bibo:degree biboDegree:phd ;
-    foaf:homepage <http://ai4bd.com/?page_id=4> ;
-    sda:thesisLevel "MS,BS" ;
-    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
-    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
-    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
-        In this network and its genesis, collaboration played and still plays a crucial role.
-        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
-        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
-        The system is based on Git and provides distributed collaboration on RDF graphs.
-        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
-
-
-sdathesis:RohanThesis a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis , sdatech:masterThesis ;
-    dct:title "SANSA & the unspoken Tale" ;
-    dct:creator sdaperson:JensLehmann, sdaperson:JonDoe ;
-    foaf:maker sdaperson:JensLehmann, sdaperson:JonDoe ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:isPartOf <icwe2017> ;
-    dct:language "de-GR" ;
-    dct:publisher <https://springer.com/> ;
-    bibo:degree biboDegree:phd ;
-    foaf:homepage <http://ai4bd.com/?page_id=4> ;
-    sda:thesisLevel "MS,BS" ;
-    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
-    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
-    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
-        In this network and its genesis, collaboration played and still plays a crucial role.
-        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
-        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
-        The system is based on Git and provides distributed collaboration on RDF graphs.
-        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
-
-sdathesis:HangtongThesis a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis , sdatech:masterThesis ;
-    dct:title "A disciplined approach of Querryin on Distributed Systems-SANSA" ;
-    dct:creator sdaperson:JensLehmann, sdaperson:JonDoe ;
-    foaf:maker sdaperson:JensLehmann, sdaperson:JonDoe ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:isPartOf <icwe2017> ;
-    dct:language "en-UK" ;
-    dct:publisher <https://springer.com/> ;
-    bibo:degree biboDegree:phd ;
-    foaf:homepage <http://ai4bd.com/?page_id=4> ;
-    sda:thesisLevel "MS,BS" ;
-    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
-    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
-    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
-        In this network and its genesis, collaboration played and still plays a crucial role.
-        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
-        Ingitspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
-        The system is based on Git and provides distributed collaboration on RDF graphs.
-        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
-
-
 #######################################
 #######################################
 #######################################
