@@ -818,7 +818,29 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:DistributedSemanticAnalytics ;
                    cv:aboutPerson "Heba Ibrahim is a PhD Student at the University of Bonn.".
+
+sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "nayyeri" ;
+                   sda:room "1.052" ;
+                   foaf:familyName "Nayyeri" ;
+                   foaf:name "Mojtaba Nayyeri" ;
+                   foaf:nick "Mojtaba" ;
+                   foaf:mbox <mailto:mojtabanayyeri@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQFj5EKyzFf6RA/profile-displayphoto-shrink_800_800/0?e=1526907600&v=alpha&t=pVJ_6gLv5Z2OdB1ovWCydjRAsBdQX7_KMEvy-ujhqkQ> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Mojtaba" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:linkedin "https://www.linkedin.com/in/mojtaba-nayyeri-a2047378/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:DeepLearning ;
+                   cv:aboutPerson "Mojtaba Nayyeri is a PhD Student at the University of Bonn.".
 
 ##############################Associated Researchers#####################
 
