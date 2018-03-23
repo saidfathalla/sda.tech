@@ -239,7 +239,7 @@ sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   foaf:name "Dr. Ioanna Lytra" ;
                   foaf:mbox <mailto:lytra@cs.uni-bonn.de> ;
                   sda:linkedin "https://www.linkedin.com/in/ioanna-lytra" ;
-                  foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAANnAAAAJDU0MDMwODBlLTNmNzYtNGUxNy1hMWVjLWVjOWJiNjI5NDczMg.jpg> ;
+                  foaf:depiction <https://media.licdn.com/dms/image/C4D03AQHI0f1CdDK-GQ/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=MAYnbJcgfGDDw3izW8ROb1sMozqzeuMx1L9nYn5Y6oc> ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
@@ -257,7 +257,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   foaf:familyName "Lange" ;
                   foaf:name "Dr. Christoph Lange" ;
                   foaf:mbox <mailto:christoph.lange-bever@iais.fraunhofer.de> ;
-                  foaf:depiction <https://media.licdn.com/media/p/5/000/2bc/3fd/3fef14e.jpg> ;
+                  foaf:depiction <https://media.licdn.com/dms/image/C4D03AQGKn7XOr9Esog/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=ZClhrNl_pkpp81cSAcmj83MICP0veEejDxKj6OwEKlg> ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher/ Head of EIS department @ IAIS" ;
@@ -295,7 +295,7 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   foaf:familyName "Scerri" ;
                   foaf:name "Dr. Simon Scerri" ;
                   foaf:mbox <mailto:simon.scerri@iais.fraunhofer.de> ;
-                  foaf:depiction <https://media.licdn.com/media/p/3/005/049/3b4/34b87fa.jpg> ;
+                  foaf:depiction <https://media.licdn.com/dms/image/C4E03AQFYrSvoRm3jaw/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=IydYWESG1lK05G0rsoVqHbnNAPoHTyJa3Blrw_Gec5k> ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
@@ -617,7 +617,7 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Hamid Zafar" ;
                    foaf:nick "Hamid" ;
                    foaf:mbox <mailto:hzafarta@cs.uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAfVAAAAJDQ0ODU1MTkzLTU4YjUtNDkzNi1hZDI1LTY5YWY5NmYxMGEzZA.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQFruxv8nBzQXg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=kZzbl-L4YnYpCFeOzOmIuDB9U763a1y70uiWsTOzUfo> ;
                    foaf:phone "" ;
                    foaf:firstName "Hamid" ;
                    foaf:title "" ;
@@ -663,7 +663,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Sahar Vahdati" ;
                    foaf:nick "Sahar" ;
                    foaf:mbox <mailto:s6savahd@uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/media/AAIA_wDGAAAAAQAAAAAAAAzoAAAAJDBlYTVlMGNlLTk3NTktNGI4OC1hMWNmLTg3ZTcwNzUxMTlmNQ.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQF_3TRWcxe4ng/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=7SHt6hl2T7wBZCrRnxTCiNStF9EFoJzX3AjNER54qG0> ;
                    foaf:phone "" ;
                    foaf:firstName "Sahar" ;
                    foaf:title "" ;
@@ -725,7 +725,7 @@ sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Isaiah Onando Mulang'" ;
                    foaf:nick "Isaiah" ;
                    foaf:mbox <mailto:mulang.onando@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/media/AAIABADGAAAAAQAAAAAAAAmqAAAAJDE3Mjc1YzNhLTI3OTItNDJjMS1hZWFiLTU0MjllYjk5OTRjOA.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQF8UpTccQMLyg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=YRodvU8JfxVSwCXA_5E0uqrlrBbqPawmDSAInlY39RY> ;
                    foaf:phone "" ;
                    foaf:firstName "Isaiah" ;
                    foaf:title "" ;
@@ -787,7 +787,7 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Michael Galkin" ;
                    foaf:nick "Michael" ;
                    foaf:mbox <mailto:mikhgalkin@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAh7AAAAJDIzM2YxZDNiLWE1MGMtNGY2NC05M2I3LWVlOGNhOWFjMmNmZg.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQGKsvVhBV187Q/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=Yx1aB_m69OUSpDjO7HP6AdATnrkms602_KEXGjrYww0> ;
                    foaf:phone "" ;
                    foaf:firstName "Michael" ;
                    foaf:title "" ;
@@ -844,7 +844,7 @@ sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
 
 ##############################Associated Researchers#####################
 
-sdaperson:SteffenLohmann a foaf:Person, sdatech:associateResearcher ;
+sdaperson:SteffenLohmann a foaf:Person, sdatech:associateReseracher ;
                   sda:publicationsTag "lohmann" ;
                   sda:room "B3-226" ;
                   foaf:firstName "Steffen" ;
@@ -857,13 +857,14 @@ sdaperson:SteffenLohmann a foaf:Person, sdatech:associateResearcher ;
                   foaf:status "Senior Researcher" ;
                   sda:website "http://steffen-lohmann.de/" ;
                   sda:linkedin "https://www.linkedin.com/in/steffen-lohmann-b19267123/" ;
+                  sda:twitter "" ;
+                  sda:github "" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Dr. Steffen Lohmann is a researcher and deputy head of the Enterprise Information Systems (EIS) department at the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS), and associated member of the Smart Data Analytics (SDA) research group of the University of Bonn. My research is devoted to all exciting topics related to Semantic Technologies, Knowledge Engineering, Interactive Systems, Information Visualization, and the Web. At Fraunhofer IAIS, I am leading the business unit on Enterprise Information Integration concerned with research and development in areas such as Industry 4.0, Internet of Things, Semantic Interoperability, and Data Integration." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement .
 
-sdaperson:DamienGraux a foaf:Person, sdatech:associateResearcher ;
+sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   sda:publicationsTag "graux" ;
                   sda:room "B3-226" ;
                   foaf:firstName "Damien" ;
@@ -871,14 +872,16 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateResearcher ;
                   foaf:name "Dr. Damien Graux" ;
                   foaf:mbox <mailto:damien.graux@iais.fraunhofer.de> ;
                   foaf:depiction <http://tyrex.inria.fr/people/img/damien.jpg> ;
+                  foaf:phone "" ;
                   #foaf:phone <tel:+49-2241-14-1234> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
-                  sda:linkedin "" ;
+                  sda:website "" ;
+                  sda:twitter "" ;
+                  sda:github "" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Dr. Damien Graux is a Senior Researcher at the Fraunhofer IAIS." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
                   foaf:currentProject sdaproject:SANSAStack .
 
@@ -911,7 +914,7 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    foaf:name "Mohamed Nadjib Mami" ;
                    foaf:nick "Mohamed" ;
                    foaf:mbox <mailto:mohamed.nadjib.mami@iais.fraunhofer.de> ;
-                   foaf:depiction <https://media.licdn.com/media/AAIAAQDGAAAAAQAAAAAAAApRAAAAJDgzYjlhMDMzLTU2MDctNDAzNS1hNjM5LWVlNDY3ZDY1MmEwNQ.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQG-3TpJ3MJGVg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=u8J_sXEaBG7NAKNfzUv_dIfP3dzaAoOOnwS_UexVCiE> ;
                    foaf:phone "" ;
                    foaf:firstName "Mohamed" ;
                    foaf:title "" ;
@@ -1162,12 +1165,12 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Priyansh Trivedi" ;
                    foaf:nick "Priyansh" ;
                    foaf:mbox <mailto:pc.priyansh@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/media/AAIA_wDGAAAAAQAAAAAAAAoKAAAAJDJiMmMzM2E2LTk1ZTgtNDc0MS1hMjk3LTE0OGQxNGExY2UyMQ.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQE7bqx0JPzQBg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=5M_SqyJArZO6cpt9XipqTCkx8XQE1WdJv3DeYPrPqgs> ;
                    foaf:phone "" ;
                    foaf:firstName "Priyansh" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
-                   sda:linkedin "" ;
+                   sda:linkedin "https://www.linkedin.com/in/priyanshtrivedi/" ;
                    sda:website "" ;
                    sda:twitter "" ;
                    sda:github "" ;
@@ -1282,7 +1285,7 @@ sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Ming Qu" ;
                    foaf:nick "Ming" ;
                    foaf:mbox <mailto:ming.qu0202@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAeaAAAAJDJjNGUwN2VhLTZkOGEtNGQ3My05YWI0LTZmYTM1YmVjNDBhNQ.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5103AQHh5XnoZ-18DQ/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=l_LFDZFXYHrFl7ApWnGyEcBBBmZ6-PbMP6ACHedYGw4> ;
                    foaf:phone "" ;
                    foaf:firstName "Ming" ;
                    foaf:title "" ;
@@ -1344,7 +1347,7 @@ sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
                    foaf:name "Kathan Kashiparek" ;
                    foaf:nick "Kathan" ;
                    foaf:mbox <mailto:kathan.kparekh@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAA0lAAAAJGM0MzI2NWZjLTczZTgtNDVmYS04MGY5LTA1NDMzNGNhZjQ5OQ.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQF9ObyWN5qiAw/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=wO_T1tKgGaMX61ptwkIr69GcNndfYiiomKRercTRFwE> ;
                    foaf:phone "" ;
                    foaf:firstName "Kathan" ;
                    foaf:title "" ;
@@ -1364,7 +1367,7 @@ sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
                    foaf:name "Aniketh Reddy" ;
                    foaf:nick "Aniketh" ;
                    foaf:mbox <mailto:anikethjr@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAqDAAAAJGVkMDI1OTQ3LTlmNzItNGM1NS04ZWI0LWJjNmEyZmIwNzI2MQ.jpg> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQE11UwC64C41w/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=388QHBnqMz3A2Z2Ndeautib1TdEAUpb2eRYkvWt50nQ> ;
                    foaf:phone "" ;
                    foaf:firstName "Aniketh" ;
                    foaf:title "" ;
@@ -2368,6 +2371,126 @@ sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource
     sda:thesisLevel "MS,BS" ;
     dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
 
+sdathesis:relation-linking-for-question-answering-in-german a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Relation Linking for Question Answering in German" ;
+    dct:creator sdaperson:IoannaLytra ;
+    foaf:maker sdaperson:IoannaLytra ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """The task of relation linking in question answering is the identification of the relation (predicate) in a given question and its linking to the corresponding entity in a knowledge base. It is an important step in question answering, which allows us afterwards to build formal queries against, e.g., a knowledge graph. Most of the existing question answering systems focus on the English language and very few question answering components support other languages like German. The goal of this thesis is to identify from the literature as well as develop relation extraction tools that could be adapted to work for German questions.""" .
+
+sdathesis:query-decomposer-and-optimizer-for-querying-scientific-datasets a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Query Decomposer and Optimizer for querying scientific datasets" ;
+    dct:creator sdaperson:IoannaLytra ;
+    foaf:maker sdaperson:IoannaLytra ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """The task of relation linking in question answering is the identification of the relation (predicate) in a given question and its linking to the corresponding entity in a knowledge base. It is an important step in question answering, which allows us afterwards to build formal queries against, e.g., a knowledge graph. Most of the existing question answering systems focus on the English language and very few question answering components support other languages like German. The goal of this thesis is to identify from the literature as well as develop relation extraction tools that could be adapted to work for German questions.The amount of scientific datasets has increased dramatically in recent years. Copernicus data repository – <a href="http://www.copernicus.eu/">http://www.copernicus.eu/</a> is a prominent example of a collection of datasets related to climate, atmosphere, agriculture, and marine domains, publicly available on the Web. Until now, scientists have to look for the appropriate datasets, download them, and query/analyze them using their own infrastructure. Being able to query/analyze scientific data without knowing about the underlying datasets is not at the moment possible. The goal of this thesis will be to create a query engine that will be able to query scientific datasets transparently, without being aware of the available datasets.""" .
+
+sdathesis:knowledge-data-containers-with-access-control-and-security-capabilities a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Knowledge Data Containers with Access Control and Security Capabilities" ;
+    dct:creator sdaperson:IoannaLytra ;
+    foaf:maker sdaperson:IoannaLytra ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """The amount of Linked Data both open, made available on the Web, and private, exchanged across companies and organizations, have been increasing in recent years. This data can be distributed in form of Knowledge Graphs (KGs), but maintaining these KGs is mainly the responsibility of data owners or providers. Moreover, building applications on top of KGs in order to provide, for instance, analytics, data access control, and privacy is left to the end user or data consumers. However, many resources in terms of development costs and equipment are required by both data providers and consumers, thus impeding the development of real-world applications over KGs. KGs as well as data processing functionalities can be encapsulated in a client-side system called Knowledge Graph Container, intended to be used by data providers or data consumers. The goal of this thesis is to integrate access control and security capabilities in these KG containers.""" .
+
+sdathesis:hidden-research-comunity-detection2_0 a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Hidden Research Comunity Detection 2.0" ;
+    dct:creator sdaperson:SaharVahdati ;
+    foaf:maker sdaperson:SaharVahdati ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """Scientific communities are well known as research fields, however, researchers communicate in hidden communities that are built considering the types of communities considering the co-authorship, topic interest, attended events etc. In this thesis which will be the second phase of an already done master thesis, we will focus on identifying more of such communities by defining similarity metrics inside objects of a research knowledge graph we will build using several datasets.""" .
+
+sdathesis:movement-of-research-results-and-education-through-opencourseware a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Movement of Research Results and Education through OpenCourseWare" ;
+    dct:creator sdaperson:SaharVahdati ;
+    foaf:maker sdaperson:SaharVahdati ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """This thesis is a research based work in which we will build a knowledge graph for OCW (online courses) and development of research topics considered in this KG, we will use an analytics tool to define interesting queries that can give us insights on answering the research question of how aligned is research with teaching material.""" .
+
+sdathesis:development-and-implementation-of-a-semantic-configuration-and-change-management  a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Development and implementation of a semantic Configuration- and Change-Management" ;
+    dct:creator sdaperson:NiklasPetersen ;
+    foaf:maker sdaperson:NiklasPetersen ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """This thesis is offered in cooperation with Schaeffler Technologies AG & Co. KG. A solid knowledge of OWL and RDF is needed and a general interest in configuration and change management. The thesis is available and work environment is possible in English. A more detailed description in German is available <a href="https://uni-bonn.sciebo.de/index.php/s/blNsyL12wiNahaR">here (pdf)</a>.""" .
+
+sdathesis:an-approach-for-big-product-matching a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "An Approach for (Big) Product Matching" ;
+    dct:creator sdaperson:GiulioNapolitano, sdaperson:DebanjanChaudhuri ;
+    foaf:maker sdaperson:SaharVahdati ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Consider comparing the same product data from thousands of e-shops. However, there are two main challenges that make the comparison difficult. First, the completeness of the product specifications used for organizing the products differs across different e-shops. Second, the ability to represent information about product data and their taxonomy is very diverse. To improve the consumer experience, e.g., by allowing for easily comparing offers by different vendors, approaches for product integration on the Web are needed.
+The main focus of this work is on data modeling and semantic enrichment of product data in order to obtain an effective and efficient product matching result.""" .
+
+sdathesis:learning-word-representations-for-out-of-vocabulary-words-using-their-contexts a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Learning word representations for out-of-vocabulary words using their contexts." ;
+    dct:creator sdaperson:GiulioNapolitano, sdaperson:DebanjanChaudhuri ;
+    foaf:maker sdaperson:GiulioNapolitano, sdaperson:DebanjanChaudhuri;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """Natural language processing (NLP) research has recently witnessed a significant boost, following the introduction of word embeddings as proposed by Mikolov et. al. (2013) (Distributed Representations of Words and Phrases and their Compositionality). However, one of the biggest challenges of using word embeddings using the vanilla neural net architecture with words as input and context as outputs is the handling of out-of-vocabulary (oov) words, as the model fails badly on unseen words. In this project we are suggesting an architecture using the proposed word2vec model only. Here, given an unseen word, we would predict a distributed embedding for it using the contexts it is being used in using the matrix that has learned to predict context given the word. (<a href="https://docs.google.com/document/d/15Y7ueU-7DBi2xDOBmmZ34BxRe0ag1cFBWzYGSEIw-b4/edit">More details</a>)""" .
+
+sdathesis:reflecting-on-the-user-experience-challenges-of-ceur-make-gui-and-harnessing-the-experience_ceur-make-gui a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Reflecting on the User Experience Challenges of CEUR Make GUI and Harnessing the Experience: CEUR Make GUI" ;
+    dct:creator sdaperson:ChristophLange ;
+    foaf:maker sdaperson:ChristophLange ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """CEUR Make GUI is a graphical user interface supporting the workflow of publishing open access proceedings of scientific workshops via CEUR-WS.org, one of the largest open access repositories. For more details on the topic please go through the publications mentioned below. In this thesis we aim to work on producing a collaborative workspace for editing workshop proceedings and enhancing the user experience of the software. Based on the development of collaborative workspace we would also like to address the user experience and collaborative and cooperative workspace challenges through a structured protocol.Email:Muhammad.rohan.ali.asmat@iais.fraunhofer.de <a href="https://github.com/ceurws/ceur-make-ui">Current Repository</a> . <a href="http://eis-bonn.github.io/Theses/2016/Rohan_Asmat/thesis.pdf">Thesis</a> . <a href="http://sda.cs.uni-bonn.de/wp-content/uploads/2018/Publications/camera_ready_ceur.pdf">Publication</a> . <a href="https://github.com/ceurws/ceur-make-ui/projects/3">Task Board</a>""" .
+
+sdathesis:rdf-compression-techniques a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "RDF compression techniques" ;
+    dct:creator sdaperson:DamienGraux ;
+    foaf:maker sdaperson:DamienGraux ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """As a starting point, realizing a fresh state-of-the-art of compression techniques for RDF could be made. These techniques can mainly be divided into two families: the ones that compress as much as possible datasets in order to make transfers easier (see e.g. the study of Fernández et al.) and the ones which still allow data to be queried (see e.g. the HDT structure). Secondly, a reflexion on a new compression model may be thought about and then realized/implemented successfully -obviously, a already have some suggestion which could help the student 😉 like for instance try to compress the RDF graphs according to patterns which could be used in parallel of SPARQL query shapes.""" .
+
+sdathesis:provide-tools-for-latex-leveraging-semantic-web-standards a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Provide tools for LaTeX leveraging semantic web standards" ;
+    dct:creator sdaperson:DamienGraux ;
+    foaf:maker sdaperson:DamienGraux ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """When articles are written (and submitted to pear review), one of the biggest fear of researchers is to forget some state-of-the-art works. Indeed, articles should be positioned among the already existing ones to show they are new. However, a specific relevant paper can sometimes be forgotten by authors. To avoid this unpleasant situation, one could imagine a LaTeX package able to check if no citation is missing in a manuscript. To do so, several things might be implemented: (i) extending the already existing pdf2rdf tool by implementing a tex2rdf module; (ii) generating bib-code from these RDF data; (iii) extracting RDF data from the reference sections of articles; (iv) aggregating all these RDF data and loading this dataset into a store; (v) developing a LaTeX package which would be able to automatically query this endpoint to possibly provide missing references.""" .
+
+sdathesis:rdf-2-resume a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:bachelorThesis ;
+    dct:title "RDF2Résumé" ;
+    dct:creator sdaperson:DamienGraux ;
+    foaf:maker sdaperson:DamienGraux ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "BS" ;
+    dct:abstract """Basically, this subject would offer the student the possibility of entering in the SemanticWeb world while creating a fancy and useful tool. In a nutshell, RDF2Résumé would imply (1) to design a résumé ontology; (2) to be provide a simple tool (a simple piece of software such as a script) able to generate -let’s say- LaTeX code from an RDF file compliant with the aforementioned ontology; (3) in parallel to propose several final résumé templates; (4) and finally to realize a basic user-interface; (+) to give the possibility of automatically changing languages.""" .
 
 
 ########################onGoingThesis########################
