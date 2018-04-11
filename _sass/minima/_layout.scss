@@ -109,7 +109,7 @@
       float: right;
       width: 36px;
       height: 36px;
-      z-index: 2;
+      z-index: 9999 !important;
       cursor: pointer;
     }
 

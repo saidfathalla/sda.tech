@@ -2539,6 +2539,24 @@ ex:inhouse a ex:job ;
 sdatech:job a foaf:Document ;
        rdfs:label "Jobs" .
 
+sdatech:akademischeJob a foaf:Document ;
+       rdfs:label "Akademischer Rat" .
+
+sdatech:postdocjob a foaf:Document ;
+      rdfs:label "Postdoctoral/Senior Researcher Positions" .
+
+sdatech:researchAssociateandPhd a foaf:Document ;
+       rdfs:label "Research Associate/PhD Student Positions" .
+
+sdatech:studentassistants a foaf:Document ;
+      rdfs:label "Student Assistants" .
+
+sdatech:jobEnvoirnment a foaf:Document ;
+       rdfs:label "Job Envoirnment" .
+
+sdatech:faqjob a foaf:Document ;
+      rdfs:label "Job FAQ" .
+
 sdatech:contact a foaf:Document ;
       rdfs:label "Contact" .
 

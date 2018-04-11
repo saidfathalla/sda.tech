@@ -104,6 +104,12 @@ jekyll_rdf:
         "http://sda.tech/masterthesis" : "masterthesis.html"
         "http://sda.tech/ongoingthesis" : "ongoingthesis.html"
         "http://sda.tech/faqthesis" : "faqthesis.html"
+        "http://sda.tech/akademischeJob" : "akadJob.html"
+        "http://sda.tech/postdocjob" : "postdocJob.html"
+        "http://sda.tech/researchAssociateandPhd" : "researchAssocJob.html"
+        "http://sda.tech/studentassistants" : "studentAssistantJob.html"
+        "http://sda.tech/jobEnvoirnment" : "EnvoirnmentJob.html"
+        "http://sda.tech/faqjob" : "FAQJob.html"
 
 
 

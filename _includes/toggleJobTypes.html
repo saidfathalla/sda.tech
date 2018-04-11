@@ -8,6 +8,12 @@
     document.getElementById('phdpos').classList.remove('active');
     document.getElementById('saJob').style.display = 'none';
     document.getElementById('studentassistants').classList.remove('active');
+    document.getElementById('jobEnv').style.display = 'none';
+    document.getElementById('envoirnmentjob').classList.remove('active');
+    document.getElementById('jobFaq').style.display = 'none';
+    document.getElementById('faqjob').classList.remove('active');
+    history.pushState(null, null, '/akademischeJob/');
+
   }
 
   function postdoctoralJob() {
@@ -19,6 +25,12 @@
     document.getElementById('phdpos').classList.remove('active');
     document.getElementById('saJob').style.display = 'none';
     document.getElementById('studentassistants').classList.remove('active');
+    document.getElementById('jobEnv').style.display = 'none';
+    document.getElementById('envoirnmentjob').classList.remove('active');
+    document.getElementById('jobFaq').style.display = 'none';
+    document.getElementById('faqjob').classList.remove('active');
+    history.pushState(null, null, '/postdocjob/');
+
   }
 
   function phdJobs() {
@@ -30,6 +42,12 @@
     document.getElementById('phdpos').classList.add('active');
     document.getElementById('saJob').style.display = 'none';
     document.getElementById('studentassistants').classList.remove('active');
+    document.getElementById('jobEnv').style.display = 'none';
+    document.getElementById('envoirnmentjob').classList.remove('active');
+    document.getElementById('jobFaq').style.display = 'none';
+    document.getElementById('faqjob').classList.remove('active');
+    history.pushState(null, null, '/researchAssociateandPhd/');
+
   }
 
   function studentAssistantsJob() {
@@ -41,5 +59,46 @@
     document.getElementById('phdpos').classList.remove('active');
     document.getElementById('saJob').style.display = 'block';
     document.getElementById('studentassistants').classList.add('active');
+    document.getElementById('jobEnv').style.display = 'none';
+    document.getElementById('envoirnmentjob').classList.remove('active');
+    document.getElementById('jobFaq').style.display = 'none';
+    document.getElementById('faqjob').classList.remove('active');
+    history.pushState(null, null, '/studentassistants/');
+
   }
+
+  function jobFaq() {
+    document.getElementById('akRat').style.display = 'none';
+    document.getElementById('akad').classList.remove('active');
+    document.getElementById('posDoc').style.display = 'none';
+    document.getElementById('postdoctoral').classList.remove('active');
+    document.getElementById('phJob').style.display = 'none';
+    document.getElementById('phdpos').classList.remove('active');
+    document.getElementById('saJob').style.display = 'none';
+    document.getElementById('studentassistants').classList.remove('active');
+    document.getElementById('jobEnv').style.display = 'none';
+    document.getElementById('envoirnmentjob').classList.remove('active');
+    document.getElementById('jobFaq').style.display = 'block';
+    document.getElementById('faqjob').classList.add('active');
+    history.pushState(null, null, '/faqjob/');
+
+  }
+
+  function jobEnvoirnment() {
+    document.getElementById('akRat').style.display = 'none';
+    document.getElementById('akad').classList.remove('active');
+    document.getElementById('posDoc').style.display = 'none';
+    document.getElementById('postdoctoral').classList.remove('active');
+    document.getElementById('phJob').style.display = 'none';
+    document.getElementById('phdpos').classList.remove('active');
+    document.getElementById('saJob').style.display = 'none';
+    document.getElementById('studentassistants').classList.remove('active');
+    document.getElementById('jobEnv').style.display = 'block';
+    document.getElementById('envoirnmentjob').classList.add('active');
+    document.getElementById('jobFaq').style.display = 'none';
+    document.getElementById('faqjob').classList.remove('active');
+    history.pushState(null, null, '/jobEnvoirnment/');
+
+  }
+
 </script>

@@ -1,0 +1,20 @@
+<div class="job-contents content-people">
+  <div class="jobDescription" id="akRat" style="{% if include.active == 'akadRat' %}display:block{% else %}display:none{% endif %}">
+    {% include jobType0.html %}
+  </div>
+  <div class="jobDescription" id="posDoc" style="{% if include.active == 'postDoc' %}display:block{% else %}display:none{% endif %}">
+    {% include jobType1.html %}
+  </div>
+  <div class="jobDescription" id="phJob" style="{% if include.active == 'researchAss' %}display:block{% else %}display:none{% endif %}">
+    {% include jobType2.html %}
+  </div>
+  <div class="jobDescription" id="saJob" style="{% if include.active == 'studentAss' %}display:block{% else %}display:none{% endif %}">
+    {% include jobType3.html %}
+  </div>
+  <div class="jobDescription" id="jobEnv" style="{% if include.active == 'envJob' %}display:block{% else %}display:none{% endif %}">
+    {% include jobEnvoirnment.html %}
+  </div>
+  <div class="jobDescription" id="jobFaq" style="{% if include.active == 'faqJob' %}display:block{% else %}display:none{% endif %}">
+    {% include jobFaq.html %}
+  </div>
+</div>
