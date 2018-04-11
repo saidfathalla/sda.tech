@@ -9,7 +9,7 @@ layout: default
 
 <!--Querry to GET all the Contact Persons of the Thesis   -->
 {% capture query %} SELECT  ?thesis ?thesisTitle ?person ?personName ?personImage WHERE{
- ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:nick ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
+ ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:name ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
   <!-- Presentation of thesis Items  -->
   <article class="post">
     <!--Thesis Header  -->
