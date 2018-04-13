@@ -286,7 +286,7 @@ sdaperson:FabrizioOrlandi a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Dr. Fabrizio Orlandi is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
-                  foaf:currentProject sdaproject:SLIPO .
+                  foaf:currentProject sdaproject:SLIPO, sdaproject:LinDA .
 
 sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "scerri" ;
@@ -1709,7 +1709,23 @@ sdaproject:GEISER a foaf:Project, sdatech:fundedProject ;
          sda:download "undefined" ;
          sda:partners "" .
 
-
+# LinDA
+sdaproject:LinDA a foaf:Project, sdatech:fundedProject ;
+                 rdfs:label "LinDA" ;
+                 sda:hookline "Enabling Linked Data and Analytics for SMEs by renovating public sector information" ;
+                 ex:description "Enabling Linked Data and Analytics for SMEs by renovating public sector information" ;
+                 ex:longdescription "The LinDA project addresses one of the most significant challenges of the usage and publication of Linked Data, the renovation and conversion of existing data formats into structures that support the semantic enrichment and interlinking of data. The set of tools provided by LinDA will assist enterprises, especially SMEs which often cannot afford the development and maintenance of dedicated information analysis and management departments, in efficiently developing novel data analytical services that are linked to the available public data therefore contributing to improve their competitiveness and stimulating the emergence of innovative business models." ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:FabrizioOrlandi, sdaperson:MichaelGalkin ;
+                 foaf:homepage "http://linda-project.eu/" ;
+                 foaf:depiction <http://linda-project.eu/wp-content/uploads/2014/02/linda_logo11.png> ;
+                 sda:twitter "https://twitter.com/LinDa_FP7" ;
+                 sda:source "https://github.com/LinDA-tools" ;
+                 site:content "";
+                 sda:funded "Funded Project" ;
+                 sda:publicationTag "linda" ;
+                 doap:maintainer sda:FabrizioOrlandi ;
+                 sda:status "active" ;
+                 sda:partners sdapartner:UniversityOfAthens .
 
 
 ############################Open Source Projects##########################
@@ -1758,8 +1774,8 @@ sdaproject:SMLBench a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "A Benchmark for Symbolic Supervised Machine Learning from Expressive Structured Data" ;
                  ex:description "A Benchmark for Symbolic Supervised Machine Learning from Expressive Structured Data" ;
                  ex:longdescription "The ultimate goal of SML-Bench is to foster research in machine learning from structured data as well as increase the reproducibility and comparability of algorithms in that area. This is important, since a) the preparation of machine learning tasks in that area involves a significant amount of work and b) there are hardly any cross comparisions across languages as this requires data conversion processes. " ;
-                 foaf:member sdaproject:JensLehmann, sdaproject:LorenzBuehmann, sdaproject:HajiraJabeen ;
-                 foaf:homepage <hhttp://sml-bench.sda.tech/> ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen ;
+                 foaf:homepage <http://sml-bench.sda.tech/> ;
                  foaf:depiction <https://pbs.twimg.com/profile_images/732611105730744320/1UrgJ0Kd_400x400.jpg> ;
                  sda:twitter "https://twitter.com/smlbench" ;
                  sda:source "https://github.com/SmartDataAnalytics/SML-Bench" ;
