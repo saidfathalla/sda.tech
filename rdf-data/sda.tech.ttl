@@ -2382,16 +2382,6 @@ sdathesis:generating-property-graphs-from-rdf-using-a-semantic-preserving-conver
     sda:thesisLevel "BS" ;
     dct:abstract """Graph Databases are on a rise since the last decade due to their dominance in mining and analysis of complex networks. Property Graphs (PGs), one of the graph data models which Graph Databases use, are suitable for the representation of many real-life application scenarios. They allow to efficiently represent complex networks (e.g. social networks, E-commerce) and interactions. In order to leverage this advantage of graph databases, conversions of other data models to property graphs are a current area of research. The aim of this thesis is to (i) propose a novel systematic conversion approach for generating PGs from RDF (one of the graph data models) (ii) and carry out exhaustive experiments on both RDF and PG datasets with respect to their native storage databases (i.e. Graph DBs vs Triplestores). This will allow to identify the types of queries for which graph databases offer performance advantages and ideally allow to adapt the storage mechanism accordingly. The outcome of this work will be integrated into the LITMUS framework, which is an open extensible framework for benchmarking of diverse Data Management Solutions.""" .
 
-sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
-    dct:title "Recommendation system for RDF partitioners" ;
-    dct:creator sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
-    foaf:maker sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:language "en-US" ;
-    bibo:degree biboDegree:phd ;
-    sda:thesisLevel "MS,BS" ;
-    dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
-
 sdathesis:relation-linking-for-question-answering-in-german a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Relation Linking for Question Answering in German" ;
     dct:creator sdaperson:IoannaLytra ;
@@ -2536,6 +2526,16 @@ sdathesis:graph-partitioning-for-rdf-data  a dct:BibliographicResource, bibo:The
     foaf:homepage <http://sansa-stack.net/> ;
     sda:thesisLevel "MS,BS" ;
     dct:abstract """Big RDF datasets need to be stored and processed in distributed RDF data stores that are built on top of cluster servers. Several partitioning schemes like horizontal, vertical, and hash partitioning, exist that allow for splitting the datasets into several nodes, in order to achieve scalability and efficient query processing. The goal of this thesis is to study graph partitioning approaches for RDF data, compare the state of the art, and implement corresponding algorithms that will be integrated into the <a href='http://sansa-stack.net/'>SANSA</a> framework.""" .
+
+sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+    dct:title "Recommendation system for RDF partitioners" ;
+    dct:creator sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
+    foaf:maker sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
 
 ###############################################################
 
