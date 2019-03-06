@@ -776,10 +776,9 @@ sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
                    sda:website "https://scholar.google.com/citations?user=JOI-7d0AAAAJ" ;
                    sda:twitter "" ;
                    sda:github "" ;
-				   sda:group sdagroup:SemanticDataManagement ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "Said Fathalla received the M.S. degree in Computer Science from Alexandria University, Alexandria, Egypt, in 2013. In 2007-2016 he has been working as Assistant Lecturer at Department of Mathematics and Computer Science, Faculty of Science, Alexandria University, Alexandria, Egypt. He is currently pursuing the Ph.D. degree in Computer Science at Smart Data Analytics (SDA), University of Bonn, Bonn, Germany. His research focus in semantic web technologies, scholarly communication, knowledge graph construction, semantic reasoning and natural language processing. He has several conference and journal publications in semantic web, text classification, Bioinformatics, scholarly communication, and knowledge engineering.  He participated in the program committee of several conferences, such as ACM SAC and he is a reviewer in several journal, such as IJSWIS and TKDE." .
+                   cv:aboutPerson "Said Fathalla is a PhD Student at the University of Bonn." .
 
 sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "galkin" ;
